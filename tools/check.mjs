@@ -15,11 +15,13 @@
  *   - an entry's measure word matches its picture: a measure with
  *     dish "steamer" needs a steamer() drawing, "plate" a plate()
  *   - img/*.svg match art.mjs exactly (else run node tools/draw.mjs)
+ *   - every tools/*.test.mjs passes
  */
 import { createHash } from 'node:crypto';
 import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative, extname } from 'node:path';
 import vm from 'node:vm';
+import { spawnSync } from 'node:child_process';
 import { ROOT, unitDirs, loadVocab, entries, loadArt } from './site.mjs';
 const fix = process.argv.includes('--fix');
 const problems = [];
@@ -98,6 +100,12 @@ for (const unit of unitDirs()) {
   const list = sub => existsSync(join(dir, sub)) ? readdirSync(join(dir, sub)) : [];
   for (const f of list('audio')) if (f.endsWith('.mp3') && !ids.has(f.slice(0, -4))) bad(join(dir, 'audio', f), 'orphan (no vocab entry)');
   for (const f of list('img')) if (f.endsWith('.svg') && !art[f.slice(0, -4)]) bad(join(dir, 'img', f), 'orphan (not in art.mjs)');
+}
+
+// Tests
+for (const test of readdirSync(join(ROOT, 'tools')).filter(f => f.endsWith('.test.mjs'))) {
+  const r = spawnSync(process.execPath, [join(ROOT, 'tools', test), '--quiet'], { encoding: 'utf8' });
+  if (r.status !== 0) bad(join(ROOT, 'tools', test), `failed:\n${r.stdout}${r.stderr}`);
 }
 
 if (fixed) console.log(`Updated ${fixed} cache stamp(s).`);

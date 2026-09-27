@@ -9,7 +9,7 @@
  * Pills:    .pill (small rounded label)
  * Buttons:  .btn, .btn.primary, .btn:disabled
  * Cards:    .card-grid > a.card (.card.soon for "Coming soon")
- * Feedback: .feedback.good / .feedback.bad
+ * Feedback: .feedback.good / .feedback.bad; .tip (callout box)
  * Answers:  .pic-grid > button.pic-btn (Canto.picButton): .picked .right .wrong
  *           .choice-grid > button.choice (text answers), same states
  * Text:     [lang="zh-HK"] gets the Chinese font; .jp is jyutping,
@@ -172,6 +172,15 @@ a.card:hover { border-color: var(--accent); }
 }
 .feedback.good { border-color: var(--good); color: var(--good); }
 .feedback.bad { border-color: var(--bad); color: var(--bad); }
+
+.tip {
+  margin: 16px 0;
+  padding: 12px 16px;
+  border-left: 4px solid var(--gold);
+  border-radius: 0 10px 10px 0;
+  background: var(--surface-2);
+}
+.tip strong { color: var(--gold); }
 
 /* Answer buttons */
 .pic-grid, .choice-grid {

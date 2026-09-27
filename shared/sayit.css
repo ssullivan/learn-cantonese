@@ -1,0 +1,61 @@
+/*
+ * sayit.css — styles for sayit.js (speaking practice). Load after theme.css.
+ *
+ * .say-chips > .say-chip (word picker; .got, [aria-current]), .say-card,
+ * .say-word, .say-actions, .btn.rec(.recording), .pitch-box > .pitch-chart
+ * (polylines .model and .mine), .pitch-legend, .say-rate, .say-nav.
+ */
+
+.say-progress { margin: 12px 0 8px; color: var(--ink-soft); font-weight: 600; }
+
+.say-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+.say-chip {
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: inherit;
+  font-size: 17px;
+  cursor: pointer;
+}
+.say-chip.got { border-color: var(--good); color: var(--good); }
+.say-chip[aria-current="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+
+.say-card {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  max-width: 640px;
+}
+.say-word { display: flex; align-items: center; gap: 16px; }
+.say-word img { width: 96px; height: 96px; flex: none; }
+.say-word .hanzi { display: block; font-size: 38px; font-weight: 700; line-height: 1.2; }
+.say-word .jp { display: block; font-size: 20px; }
+.say-word .en { display: block; font-weight: 600; }
+
+.say-actions, .say-rate, .say-nav { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.say-nav { justify-content: space-between; padding-top: 14px; border-top: 1px solid var(--line); }
+.btn.rec { color: var(--bad); }
+.btn.rec.recording { background: var(--bad); border-color: var(--bad); color: var(--accent-ink); animation: rec 1s ease-in-out infinite; }
+@keyframes rec { 50% { opacity: 0.6; } }
+.btn.good { border-color: var(--good); color: var(--good); }
+
+.pitch-box { margin-top: 14px; }
+.pitch-chart {
+  display: block;
+  width: 100%;
+  height: 140px;
+  border-radius: 10px;
+  background: var(--surface-2);
+}
+.pitch-chart .axis { stroke: var(--line); stroke-dasharray: 4 4; }
+.pitch-chart polyline { stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.pitch-chart .model { stroke: var(--accent); }
+.pitch-chart .mine { stroke: var(--jade); }
+.pitch-legend { margin: 6px 0 0; color: var(--ink-soft); font-size: 14px; }
+.pitch-legend .key { display: inline-block; width: 18px; height: 4px; border-radius: 2px; margin: 0 6px 3px 10px; vertical-align: middle; }
+.pitch-legend .key:first-child { margin-left: 0; }
+.pitch-legend .key.model { background: var(--accent); }
+.pitch-legend .key.mine { background: var(--jade); }

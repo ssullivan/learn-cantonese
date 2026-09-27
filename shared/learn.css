@@ -4,7 +4,7 @@
  *
  * .steps (numbered step dots), .step-body/.step-title/.step-content,
  * .step-foot (Back/Next), .word-grid(.wide) > button.word (word cards),
- * .quiz-* (listen quiz; answer buttons are .pic-btn from theme.css), .tip (callout).
+ * .quiz-* (listen quiz; answer buttons are .pic-btn from theme.css).
  */
 
 .steps {
@@ -100,14 +100,6 @@
   to { box-shadow: 0 0 0 14px transparent; }
 }
 
-.tip {
-  margin: 16px 0;
-  padding: 12px 16px;
-  border-left: 4px solid var(--gold);
-  border-radius: 0 10px 10px 0;
-  background: var(--surface-2);
-}
-.tip strong { color: var(--gold); }
 
 /* Listen quiz */
 .quiz-top { display: flex; gap: 8px; margin-bottom: 12px; }
