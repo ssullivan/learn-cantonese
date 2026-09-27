@@ -1,0 +1,176 @@
+/*
+ * theme.css — look and feel shared by every page.
+ *
+ * Tokens:   --bg --surface --surface-2 --ink --ink-soft --line
+ *           --accent --accent-ink --gold --jade --good --bad
+ *           Light by default; dark follows prefers-color-scheme.
+ * Layout:   .page (centered column, 16px gutter)
+ * Header:   .page-header > a.back, .eyebrow, h1, p.lede
+ * Pills:    .pill (small rounded label)
+ * Buttons:  .btn, .btn.primary, .btn:disabled
+ * Cards:    .card-grid > a.card (.card.soon for "Coming soon")
+ * Feedback: .feedback.good / .feedback.bad
+ * Text:     [lang="zh-HK"] gets the Chinese font; .jp is jyutping,
+ *           its tone digits are <sup> (see Learn.jyutping in learn.js).
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;700&display=swap");
+
+:root {
+  --bg: #fbf6ee;
+  --surface: #ffffff;
+  --surface-2: #f4ece0;
+  --ink: #2a211b;
+  --ink-soft: #6b5d52;
+  --line: #e6d9c7;
+  --accent: #b8342a;
+  --accent-ink: #ffffff;
+  --gold: #c88a1e;
+  --jade: #2f7d6d;
+  --good: #2f7d4a;
+  --bad: #b8342a;
+  --radius: 14px;
+  --shadow: 0 1px 2px rgb(60 40 20 / 0.08), 0 4px 14px rgb(60 40 20 / 0.06);
+  --font-zh: "Noto Sans HK", "PingFang HK", "Microsoft JhengHei", sans-serif;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, var(--font-zh);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1613;
+    --surface: #26201b;
+    --surface-2: #312822;
+    --ink: #f3ebe1;
+    --ink-soft: #b9aa9b;
+    --line: #3d332b;
+    --accent: #e0655a;
+    --accent-ink: #1b1613;
+    --gold: #e0ad4a;
+    --jade: #5fb8a4;
+    --good: #6cc98a;
+    --bad: #ef7b70;
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 4px 14px rgb(0 0 0 / 0.25);
+    color-scheme: dark;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.55 var(--font);
+}
+
+[lang="zh-HK"], .hanzi { font-family: var(--font-zh); }
+
+a { color: var(--accent); }
+
+.page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 20px 16px 64px;
+}
+
+/* Header */
+.page-header { margin-bottom: 28px; }
+.page-header .back {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-size: 15px;
+}
+.page-header .back:hover { color: var(--accent); }
+.eyebrow {
+  margin: 0 0 4px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.page-header h1 {
+  margin: 0;
+  font-size: clamp(28px, 6vw, 40px);
+  line-height: 1.15;
+}
+.page-header h1 .hanzi { color: var(--accent); margin-right: 0.3em; }
+.lede { margin: 8px 0 0; color: var(--ink-soft); max-width: 60ch; }
+
+/* Pills */
+.pill {
+  display: inline-block;
+  width: fit-content;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--ink-soft);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Buttons */
+.btn {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn:hover { border-color: var(--accent); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn:disabled { opacity: 0.45; cursor: not-allowed; border-color: var(--line); }
+.btn:focus-visible, .card:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+
+/* Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  color: inherit;
+  text-decoration: none;
+}
+a.card:hover { border-color: var(--accent); }
+.card h2, .card h3 { margin: 0; font-size: 20px; }
+.card p { margin: 0; color: var(--ink-soft); }
+.card img { width: 72px; height: 72px; }
+.card .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.card.soon { opacity: 0.6; box-shadow: none; border-style: dashed; }
+
+/* Feedback */
+.feedback {
+  margin: 12px 0 0;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+}
+.feedback.good { border-color: var(--good); color: var(--good); }
+.feedback.bad { border-color: var(--bad); color: var(--bad); }
+
+/* Jyutping */
+.jp { color: var(--ink-soft); font-size: 0.95em; }
+.jp sup { font-size: 0.65em; margin-left: 1px; color: var(--gold); font-weight: 700; }

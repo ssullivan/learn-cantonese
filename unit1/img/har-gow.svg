@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Har gow (shrimp dumplings)</title>
+<defs><g id="d">
+<path d="M-20 4 C-22 -8 -14 -20 0 -21 C14 -20 22 -8 20 4 C8 9 -8 9 -20 4Z" fill="#f7f2ea" fill-opacity=".95" stroke="#cfc1a8" stroke-width="1.5"/>
+<path d="M-13 0 C-11 -11 9 -13 13 -2 C7 3 -7 4 -13 0Z" fill="#f08e70" opacity=".5"/>
+<path d="M-9 -3 C-5 -7 3 -8 8 -4" fill="none" stroke="#f6b8a2" stroke-width="1.5" opacity=".8"/>
+<path d="M-15 -11 Q0 -25 15 -11" fill="none" stroke="#e2d6c2" stroke-width="2.5"/>
+<path d="M-11 -15 l-2.5 -4 M-5 -18 l-1.2 -4.5 M1 -19 l0 -4.5 M7 -17.5 l1.2 -4.5 M12 -14 l2.5 -4" stroke="#cfc1a8" stroke-width="1.8" stroke-linecap="round"/>
+</g></defs>
+<ellipse cx="64" cy="74" rx="52" ry="15" fill="#9c6528" stroke="#7d4f1e" stroke-width="2"/>
+<ellipse cx="64" cy="75" rx="45" ry="11" fill="#f1e3bd"/>
+<use href="#d" transform="translate(64 66)"/>
+<use href="#d" transform="translate(41 78)"/>
+<use href="#d" transform="translate(87 78)"/>
+<path d="M12 74 A52 15 0 0 0 116 74 L112 104 A48 13 0 0 1 16 104 Z" fill="#dcaa5e" stroke="#7d4f1e" stroke-width="2" stroke-linejoin="round"/>
+<path d="M14 90 A50 14 0 0 0 114 90" fill="none" stroke="#b07a35" stroke-width="2"/>
+<path d="M13 76 A51 15 0 0 0 115 76" fill="none" stroke="#f2cf8a" stroke-width="2.5"/>
+</svg>

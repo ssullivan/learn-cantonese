@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Daan taat (egg tarts)</title>
+<defs><g id="t">
+<path d="M-24 -4 L-17 14 Q0 19 17 14 L24 -4 Z" fill="#cf8a34" stroke="#a5661f" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M-18 -1 L-13 15 M-9 0 L-6 17 M0 0 v18 M9 0 L6 17 M18 -1 L13 15" stroke="#b5752a" stroke-width="1.5"/>
+<ellipse cx="0" cy="-4" rx="24" ry="8" fill="#e3a24a" stroke="#a5661f" stroke-width="1.5"/>
+<ellipse cx="0" cy="-4" rx="18.5" ry="5.5" fill="#f8d23a"/>
+<ellipse cx="-5" cy="-5.5" rx="6" ry="1.6" fill="#fff3b0" opacity=".85"/>
+<ellipse cx="8" cy="-3" rx="3" ry="1.2" fill="#d69a1e" opacity=".6"/>
+</g></defs>
+<ellipse cx="64" cy="93" rx="56" ry="21" fill="#9fb0bb" opacity=".35"/>
+<ellipse cx="64" cy="90" rx="56" ry="21" fill="#ffffff" stroke="#9fb0bb" stroke-width="2"/>
+<ellipse cx="64" cy="90" rx="45" ry="16" fill="#eef3f6"/>
+<use href="#t" transform="translate(82 76)"/>
+<use href="#t" transform="translate(46 86)"/>
+</svg>
