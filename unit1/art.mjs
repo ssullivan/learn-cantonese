@@ -157,4 +157,12 @@ export default {
 <g fill="#9a5f24"><ellipse cx="38" cy="62" rx="1.8" ry="2.4"/><ellipse cx="48" cy="70" rx="1.5" ry="2"/><ellipse cx="42" cy="76" rx="2" ry="2.6"/><ellipse cx="56" cy="66" rx="1.4" ry="1.9"/><ellipse cx="55" cy="80" rx="1.8" ry="2.3"/><ellipse cx="36" cy="72" rx="1.3" ry="1.7"/></g>
 <g fill="#8a531c"><ellipse cx="72" cy="66" rx="1.8" ry="2.4"/><ellipse cx="84" cy="62" rx="1.5" ry="2"/><ellipse cx="90" cy="72" rx="2" ry="2.6"/><ellipse cx="76" cy="78" rx="1.4" ry="1.9"/><ellipse cx="86" cy="80" rx="1.3" ry="1.7"/></g>
 <g fill="#c98a42" opacity=".6"><circle cx="54" cy="51" r="1.3"/><circle cx="66" cy="49" r="1.1"/><circle cx="76" cy="53" r="1.3"/><circle cx="62" cy="55" r="1"/></g>`)),
+
+  'pineapple-bun': svg("Bo lo baau (pineapple buns)", `<defs><g id="b">
+<path d="M-24 6 C-26 -8 -14 -20 0 -20 C14 -20 26 -8 24 6 C12 11 -12 11 -24 6Z" fill="#f2cf86" stroke="#b9802c" stroke-width="1.5"/>
+<path d="M-23 0 C-24 -10 -13 -20 0 -20 C13 -20 24 -10 23 0 C12 4 -12 4 -23 0Z" fill="#e9ab45"/>
+<path d="M-20 -6 L-16 -12 L-8 -6 L-12 1 M-8 -6 L0 -12 L6 -4 L0 3 M6 -4 L14 -12 L19 -6 M6 -4 L15 1 M-8 -6 L-2 -1 M0 -12 L-2 -19 M14 -12 L11 -18 M-16 -12 L-12 -17" stroke="#c07a22" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M-12 -15 Q-4 -19 4 -18" stroke="#f7d27f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</g></defs>` + plate(`<use href="#b" transform="translate(84 78)"/>
+<use href="#b" transform="translate(48 88)"/>`, { cy: 90 })),
 };

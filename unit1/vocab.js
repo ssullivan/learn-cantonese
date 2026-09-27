@@ -48,6 +48,8 @@ window.VOCAB = {
       note: '"Flowing sand bun": salted egg-yolk custard runs out when you bite it.' },
     { id: 'ma-lai-go', group: 'sweet', hanzi: '馬拉糕', jyutping: 'maa5 laai1 gou1', english: 'Malay sponge cake',
       note: 'A tall, fluffy, brown-sugar sponge cake, steamed.' },
+    { id: 'pineapple-bun', group: 'sweet', hanzi: '菠蘿包', jyutping: 'bo1 lo4 baau1', english: 'pineapple bun',
+      note: 'No pineapple inside! The crackly sugar top just looks like pineapple skin.' },
   ],
 
   phrases: [

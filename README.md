@@ -2,7 +2,7 @@
 
 Cantonese lessons and games with native-sounding audio, served at https://ssullivan.github.io/learn-cantonese/.
 
-- **Unit 1 · 點心 Dim Sum**: 12 dishes with pictures and audio, a listening quiz, and phrases for ordering at yum cha.
+- **Unit 1 · 點心 Dim Sum**: classic dishes with pictures and audio, a listening quiz, and phrases for ordering at yum cha.
 
 ## Working on it
 
