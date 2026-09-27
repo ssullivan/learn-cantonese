@@ -12,6 +12,8 @@
  *   - each unit<N>/vocab.js: unique ids, tone numbers in jyutping,
  *     audio/<id>.mp3 for every entry, a drawing in art.mjs for every
  *     entry without img:false, and no orphan .mp3 files or drawings
+ *   - an entry's measure word matches its picture: a measure with
+ *     dish "steamer" needs a steamer() drawing, "plate" a plate()
  *   - img/*.svg match art.mjs exactly (else run node tools/draw.mjs)
  */
 import { createHash } from 'node:crypto';
@@ -79,6 +81,13 @@ for (const unit of unitDirs()) {
     if (e.jyutping && !/^[a-z]+[1-6]( [a-z]+[1-6])*$/.test(e.jyutping)) bad(vocabFile, `${e.id}: jyutping "${e.jyutping}" needs a tone number on every syllable`);
     if (!existsSync(join(dir, 'audio', `${e.id}.mp3`))) bad(vocabFile, `${e.id} has no audio (run node tools/tts.mjs ${unit})`);
     if (e.img !== false && !art[e.id]) bad(vocabFile, `${e.id} has no drawing in art.mjs`);
+  }
+  const measures = Object.fromEntries((vocab.measures ?? []).map(m => [m.id, m]));
+  for (const e of all.filter(e => e.measure)) {
+    const m = measures[e.measure];
+    if (!m) { bad(vocabFile, `${e.id}: unknown measure ${e.measure}`); continue; }
+    const dish = /data-dish="(\w+)"/.exec(art[e.id] ?? '')?.[1];
+    if (dish !== m.dish) bad(vocabFile, `${e.id}: ordered by ${m.hanzi} (${m.dish}) but drawn on a ${dish ?? 'nothing'}`);
   }
   const withImg = new Set(all.filter(e => e.img !== false).map(e => e.id));
   for (const id of Object.keys(art)) {

@@ -1,0 +1,101 @@
+/*
+ * core.js — helpers shared by learn.js, game.js and unit scripts.
+ * Load first. Needs audio.js for play().
+ *
+ *   Canto.el(tag, cls?, html?)   create an element
+ *   Canto.esc(text)              HTML-escape
+ *   Canto.jyutping("haa1 gaau2") HTML with tone digits in <sup>
+ *   Canto.zh(hanzi, jyutping)    HTML: characters followed by jyutping
+ *   Canto.shuffle(list)          shuffled copy
+ *   Canto.pick(list, n)          n random items
+ *   Canto.imgSrc(entry)          "img/<id>.svg"
+ *   Canto.audioSrc(entry)        "audio/<id>.mp3"
+ *   Canto.play(entries)          play one entry's clip, or several in a row;
+ *                                resolves when done (see Speak.play)
+ *   Canto.entries(vocab)         every entry from every list in a vocab object
+ *   Canto.picButton(entry)       picture-only answer <button data-id> (.pic-btn)
+ *   Canto.speech(who, html, onReplay?)
+ *                                speech bubble (.speech, game.css): a round
+ *                                badge with one character `who` (客 customer,
+ *                                你 you...), the text, and a "▶ Again" button
+ *   Canto.store(key, blank)      { get(), set(value) } over localStorage;
+ *                                get() returns `blank` if nothing is saved
+ */
+(function () {
+  const el = (tag, cls, html) => {
+    const e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (html != null) e.innerHTML = html;
+    return e;
+  };
+
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+  const jyutping = s => esc(s).replace(/([a-z]+)([1-6])/g, '$1<sup>$2</sup>');
+
+  const zh = (hanzi, jp) => `<span class="hanzi" lang="zh-HK">${esc(hanzi)}</span> <span class="jp">${jyutping(jp)}</span>`;
+
+  function shuffle(list) {
+    const a = list.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  const pick = (list, n) => shuffle(list).slice(0, n);
+
+  const imgSrc = entry => `img/${entry.id}.svg`;
+  const audioSrc = entry => `audio/${entry.id}.mp3`;
+
+  function play(entries) {
+    const list = [].concat(entries);
+    return Speak.play(list.map(audioSrc), list.map(e => e.say || e.hanzi).join('，'));
+  }
+
+  function picButton(entry) {
+    const b = el('button', 'pic-btn');
+    b.type = 'button';
+    b.dataset.id = entry.id;
+    b.setAttribute('aria-label', entry.english);
+    const img = el('img');
+    img.src = imgSrc(entry);
+    img.alt = '';
+    b.append(img);
+    return b;
+  }
+
+  function speech(who, html, onReplay) {
+    const b = el('div', 'speech');
+    const badge = el('span', 'who hanzi', esc(who));
+    badge.lang = 'zh-HK';
+    b.append(badge, el('p', null, html));
+    if (onReplay) {
+      const again = el('button', 'btn small', '▶ Again');
+      again.type = 'button';
+      again.addEventListener('click', onReplay);
+      b.append(again);
+    }
+    return b;
+  }
+
+  const entries = vocab => Object.values(vocab).filter(Array.isArray).flat();
+
+  function store(key, blank) {
+    return {
+      get() {
+        try {
+          const v = JSON.parse(localStorage.getItem(key));
+          if (v && typeof v === 'object') return v;
+        } catch (e) { /* storage unavailable */ }
+        return structuredClone(blank);
+      },
+      set(value) {
+        try { localStorage.setItem(key, JSON.stringify(value)); } catch (e) { /* ignore */ }
+      },
+    };
+  }
+
+  window.Canto = { el, esc, jyutping, zh, shuffle, pick, imgSrc, audioSrc, play, picButton, speech, entries, store };
+})();

@@ -4,7 +4,7 @@
  *
  * .steps (numbered step dots), .step-body/.step-title/.step-content,
  * .step-foot (Back/Next), .word-grid(.wide) > button.word (word cards),
- * .quiz-* (listen quiz), .tip (callout).
+ * .quiz-* (listen quiz; answer buttons are .pic-btn from theme.css), .tip (callout).
  */
 
 .steps {
@@ -112,28 +112,6 @@
 /* Listen quiz */
 .quiz-top { display: flex; gap: 8px; margin-bottom: 12px; }
 .listen { margin-bottom: 14px; }
-.quiz-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-  max-width: 640px;
-}
-@media (max-width: 560px) {
-  .quiz-grid { grid-template-columns: repeat(2, 1fr); }
-}
-.quiz-opt {
-  aspect-ratio: 1;
-  padding: 8px;
-  border: 2px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--surface);
-  cursor: pointer;
-}
-.quiz-opt img { width: 100%; height: 100%; }
-.quiz-opt:hover:not(:disabled) { border-color: var(--accent); }
-.quiz-opt:disabled { cursor: default; }
-.quiz-opt.right { border-color: var(--good); background: color-mix(in srgb, var(--good) 14%, var(--surface)); }
-.quiz-opt.wrong { border-color: var(--bad); background: color-mix(in srgb, var(--bad) 14%, var(--surface)); }
 .quiz-feedback .btn { margin-top: 10px; }
 .quiz-done { text-align: center; padding: 20px 0; }
 .quiz-score { margin: 0; font-size: 48px; font-weight: 800; color: var(--accent); }

@@ -1,11 +1,11 @@
 /*
- * learn.js — engine for step-by-step learn pages. Needs audio.js.
+ * learn.js — engine for step-by-step learn pages. Needs core.js, audio.js.
  *
  *   Learn.init({
  *     root,          element to render into
  *     key,           localStorage key, unique across the site (e.g. "u1-learn")
  *     vocab,         { items: [...], phrases: [...], ... } entries with
- *                    { id, hanzi, jyutping, english, note? }
+ *                    { id, hanzi, jyutping, english, note?, img? }
  *     steps: [{
  *       id, title,
  *       gate,        true: Next stays locked until the step calls ctx.complete()
@@ -18,74 +18,33 @@
  *   ctx.entry(id)              look up any entry by id
  *   ctx.card(entry)            <button> word card; tap plays the audio
  *   ctx.grid(entries)          grid of word cards (wider columns if none has a picture)
- *   ctx.play(entry)            play an entry's clip (audio/<id>.mp3)
+ *   ctx.play(entry)            play an entry's clip
  *   ctx.complete()             mark this step done (unlocks Next if gated)
  *   ctx.listenQuiz(el, { pool, rounds, choices })
  *                              hear a word, pick its picture from `choices`
  *                              (entries need a picture); completes the
  *                              step when the last round is answered
  *
- * Helpers (return HTML strings or elements for step content):
- *   Learn.jyutping("haa1 gaau2")  HTML with tone digits in <sup>
- *   Learn.zh(hanzi, jyutping)     HTML: characters followed by jyutping
- *   Learn.p(html)                 <p> element
- *   Learn.tip(html)               callout box element
- *
- * Files: an entry's picture is img/<id>.svg, its audio audio/<id>.mp3.
+ * Helpers for step content (Canto.zh etc. are in core.js):
+ *   Learn.p(html)              <p> element
+ *   Learn.tip(html)            callout box element
  *
  * Progress ({ step, done: [ids] }) is saved under `key`.
  */
 (function () {
-  const $ = (tag, cls, html) => {
-    const e = document.createElement(tag);
-    if (cls) e.className = cls;
-    if (html != null) e.innerHTML = html;
-    return e;
-  };
+  const { el: $, esc, jyutping, zh, shuffle, imgSrc, play, picButton } = Canto;
 
-  const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-
-  function jyutping(s) {
-    return esc(s).replace(/([a-z]+)([1-6])/g, '$1<sup>$2</sup>');
-  }
-
-  const zh = (hanzi, jp) => `<span class="hanzi" lang="zh-HK">${esc(hanzi)}</span> <span class="jp">${jyutping(jp)}</span>`;
   const p = html => $('p', null, html);
   const tip = html => $('div', 'tip', html);
 
-  const imgSrc = entry => `img/${entry.id}.svg`;
-  const audioSrc = entry => `audio/${entry.id}.mp3`;
-
-  function shuffle(a) {
-    a = a.slice();
-    for (let i = a.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [a[i], a[j]] = [a[j], a[i]];
-    }
-    return a;
-  }
-
-  function load(key) {
-    try {
-      const s = JSON.parse(localStorage.getItem(key));
-      if (s && Array.isArray(s.done)) return s;
-    } catch (e) { /* storage unavailable */ }
-    return { step: 0, done: [] };
-  }
-
-  function save(key, state) {
-    try { localStorage.setItem(key, JSON.stringify(state)); } catch (e) { /* ignore */ }
-  }
-
   function init(opts) {
     const { root, key, vocab, steps } = opts;
-    const byId = {};
-    Object.values(vocab).forEach(v => Array.isArray(v) && v.forEach(e => { byId[e.id] = e; }));
+    const byId = Object.fromEntries(Canto.entries(vocab).map(e => [e.id, e]));
 
-    const state = load(key);
+    const store = Canto.store(key, { step: 0, done: [] });
+    const state = store.get();
+    if (!Array.isArray(state.done)) state.done = [];
     state.step = Math.min(Math.max(0, state.step | 0), steps.length - 1);
-
-    const play = entry => Speak.play(audioSrc(entry), entry.say || entry.hanzi);
 
     function card(entry) {
       const b = $('button', 'word' + (entry.img === false ? ' no-img' : ''));
@@ -140,7 +99,7 @@
 
     function markDone(i) {
       if (!isDone(i)) state.done.push(steps[i].id);
-      save(key, state);
+      store.set(state);
       paintNav();
       paintFoot();
     }
@@ -163,15 +122,14 @@
     function paintFoot() {
       const i = state.step;
       back.disabled = i === 0;
-      const last = i === steps.length - 1;
-      next.hidden = last;
+      next.hidden = i === steps.length - 1;
       next.disabled = !!steps[i].gate && !isDone(i);
     }
 
     function go(i) {
       Speak.stop();
       state.step = i;
-      save(key, state);
+      store.set(state);
       const step = steps[i];
       title.textContent = step.title;
       content.replaceChildren();
@@ -215,33 +173,25 @@
       answered = false;
       const answer = order[round];
       const others = shuffle(pool.filter(e => e.id !== answer.id)).slice(0, choices - 1);
-      const opts = shuffle([answer, ...others]);
 
       const top = $('div', 'quiz-top');
       top.append($('span', 'pill', `${round + 1} / ${order.length}`), $('span', 'pill', `Score ${score}`));
       const listen = $('button', 'btn primary listen', '▶ Listen again');
       listen.type = 'button';
-      listen.addEventListener('click', () => ctx.play(answer));
+      listen.addEventListener('click', () => play(answer));
 
-      const grid = $('div', 'quiz-grid');
+      const grid = $('div', 'pic-grid');
       const fb = $('div', 'quiz-feedback');
       fb.setAttribute('aria-live', 'polite');
 
-      opts.forEach(o => {
-        const b = $('button', 'quiz-opt');
-        b.type = 'button';
-        b.setAttribute('aria-label', o.english);
-        b.dataset.id = o.id;
-        const img = $('img');
-        img.src = imgSrc(o);
-        img.alt = '';
-        b.append(img);
+      shuffle([answer, ...others]).forEach(o => {
+        const b = picButton(o);
         b.addEventListener('click', () => pick(o, b, grid, fb, answer));
         grid.append(b);
       });
 
       el.replaceChildren(top, listen, grid, fb);
-      ctx.play(answer);
+      play(answer);
     }
 
     function pick(o, b, grid, fb, answer) {
@@ -251,9 +201,7 @@
       if (right) score++;
       [...grid.children].forEach(c => { c.disabled = true; });
       b.classList.add(right ? 'right' : 'wrong');
-      if (!right) {
-        grid.querySelector(`[data-id="${answer.id}"]`).classList.add('right');
-      }
+      if (!right) grid.querySelector(`[data-id="${answer.id}"]`).classList.add('right');
       fb.className = 'quiz-feedback feedback ' + (right ? 'good' : 'bad');
       fb.innerHTML = (right ? '對！ Correct: ' : 'Not quite. That was ') +
         `${zh(answer.hanzi, answer.jyutping)} — ${esc(answer.english)}`;
@@ -267,10 +215,7 @@
     function finish() {
       const done = $('div', 'quiz-done');
       const msg = score === order.length ? '好叻！ Perfect!' : score >= order.length * 0.75 ? '好好！ Great job!' : 'Keep practising!';
-      done.append(
-        $('p', 'quiz-score', `${score} / ${order.length}`),
-        $('p', null, msg),
-      );
+      done.append($('p', 'quiz-score', `${score} / ${order.length}`), $('p', null, msg));
       const again = $('button', 'btn', 'Play again');
       again.type = 'button';
       again.addEventListener('click', start);
@@ -282,5 +227,5 @@
     start();
   }
 
-  window.Learn = { init, jyutping, zh, p, tip };
+  window.Learn = { init, p, tip };
 })();

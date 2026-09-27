@@ -4,7 +4,8 @@
   const group = id => V.groups.find(g => g.id === id);
   const inGroup = id => V.items.filter(i => i.group === id);
 
-  const { p, tip, zh } = Learn;
+  const { p, tip } = Learn;
+  const { zh } = Canto;
 
   function groupStep(id, intro) {
     const g = group(id);
@@ -51,6 +52,8 @@
         title: 'At the table',
         render(el, ctx) {
           el.append(
+            p(`To order, say how it comes: ${zh('籠', 'lung4')} for a steamer basket, ${zh('碟', 'dip6')} for a plate.`),
+            ctx.grid(V.measures),
             p('A few phrases for ordering, asking, and paying.'),
             ctx.grid(V.phrases),
             tip(`<strong>Tea manners:</strong> when someone pours tea for you, tap two fingers on the table to say thanks. Pour for others before yourself.`),

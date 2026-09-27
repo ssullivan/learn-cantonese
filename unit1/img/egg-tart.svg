@@ -8,9 +8,11 @@
 <ellipse cx="-5" cy="-5.5" rx="6" ry="1.6" fill="#fff3b0" opacity=".85"/>
 <ellipse cx="8" cy="-3" rx="3" ry="1.2" fill="#d69a1e" opacity=".6"/>
 </g></defs>
+<g data-dish="plate">
 <ellipse cx="64" cy="93" rx="56" ry="21" fill="#9fb0bb" opacity=".35"/>
 <ellipse cx="64" cy="90" rx="56" ry="21" fill="#ffffff" stroke="#9fb0bb" stroke-width="2"/>
 <ellipse cx="64" cy="90" rx="45" ry="16" fill="#eef3f6"/>
 <use href="#t" transform="translate(82 76)"/>
 <use href="#t" transform="translate(46 86)"/>
+</g>
 </svg>

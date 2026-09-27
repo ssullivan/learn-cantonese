@@ -7,6 +7,7 @@
 <ellipse cx="-3" cy="-14" rx="5" ry="1.6" fill="#f3c6b0"/>
 <circle cx="1" cy="-14" r="3.2" fill="#f36b1c"/>
 </g></defs>
+<g data-dish="steamer">
 <ellipse cx="64" cy="74" rx="52" ry="15" fill="#9c6528" stroke="#7d4f1e" stroke-width="2"/>
 <ellipse cx="64" cy="75" rx="45" ry="11" fill="#f1e3bd"/>
 <use href="#d" transform="translate(50 67)"/>
@@ -16,4 +17,5 @@
 <path d="M12 74 A52 15 0 0 0 116 74 L112 104 A48 13 0 0 1 16 104 Z" fill="#dcaa5e" stroke="#7d4f1e" stroke-width="2" stroke-linejoin="round"/>
 <path d="M14 90 A50 14 0 0 0 114 90" fill="none" stroke="#b07a35" stroke-width="2"/>
 <path d="M13 76 A51 15 0 0 0 115 76" fill="none" stroke="#f2cf8a" stroke-width="2.5"/>
+</g>
 </svg>

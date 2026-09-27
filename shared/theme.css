@@ -10,8 +10,10 @@
  * Buttons:  .btn, .btn.primary, .btn:disabled
  * Cards:    .card-grid > a.card (.card.soon for "Coming soon")
  * Feedback: .feedback.good / .feedback.bad
+ * Answers:  .pic-grid > button.pic-btn (Canto.picButton): .picked .right .wrong
+ *           .choice-grid > button.choice (text answers), same states
  * Text:     [lang="zh-HK"] gets the Chinese font; .jp is jyutping,
- *           its tone digits are <sup> (see Learn.jyutping in learn.js).
+ *           its tone digits are <sup> (see Canto.jyutping in core.js).
  */
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;700&display=swap");
@@ -170,6 +172,38 @@ a.card:hover { border-color: var(--accent); }
 }
 .feedback.good { border-color: var(--good); color: var(--good); }
 .feedback.bad { border-color: var(--bad); color: var(--bad); }
+
+/* Answer buttons */
+.pic-grid, .choice-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  max-width: 640px;
+}
+.choice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 560px) {
+  .pic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .choice-grid { grid-template-columns: 1fr; }
+}
+.pic-grid.cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.pic-btn, .choice {
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.pic-btn { aspect-ratio: 1; padding: 8px; }
+.pic-btn img { width: 100%; height: 100%; }
+.choice { padding: 14px 16px; font-size: 20px; text-align: center; }
+.choice .hanzi { font-size: 24px; font-weight: 700; }
+:is(.pic-btn, .choice):hover:not(:disabled) { border-color: var(--accent); }
+:is(.pic-btn, .choice):disabled { cursor: default; }
+:is(.pic-btn, .choice):focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+:is(.pic-btn, .choice).picked { border-color: var(--gold); background: color-mix(in srgb, var(--gold) 16%, var(--surface)); }
+:is(.pic-btn, .choice).right { border-color: var(--good); background: color-mix(in srgb, var(--good) 14%, var(--surface)); }
+:is(.pic-btn, .choice).wrong { border-color: var(--bad); background: color-mix(in srgb, var(--bad) 14%, var(--surface)); }
 
 /* Jyutping */
 .jp { color: var(--ink-soft); font-size: 0.95em; }

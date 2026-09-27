@@ -6,6 +6,7 @@
 <ellipse cx="10" cy="1" rx="8" ry="4" fill="#f08e70" opacity=".45"/>
 <path d="M-26 -3 Q-4 -7 24 -3" fill="none" stroke="#ffffff" stroke-width="2" opacity=".9"/>
 </g></defs>
+<g data-dish="plate">
 <ellipse cx="64" cy="91" rx="58" ry="22" fill="#9fb0bb" opacity=".35"/>
 <ellipse cx="64" cy="88" rx="58" ry="22" fill="#ffffff" stroke="#9fb0bb" stroke-width="2"/>
 <ellipse cx="64" cy="88" rx="47" ry="17" fill="#eef3f6"/>
@@ -15,4 +16,5 @@
 <use href="#r" transform="translate(62 84)"/>
 <use href="#r" transform="translate(66 95)"/>
 <g fill="#5fa33a"><rect x="44" y="70" width="4" height="3" rx="1"/><rect x="72" y="80" width="4" height="3" rx="1"/><rect x="56" y="92" width="4" height="3" rx="1"/><rect x="84" y="69" width="4" height="3" rx="1"/><circle cx="80" cy="93" r="1.8"/></g>
+</g>
 </svg>

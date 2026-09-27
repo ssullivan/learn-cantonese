@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
 <title>Lo mai gai (sticky rice in lotus leaf)</title>
+<g data-dish="plate">
 <ellipse cx="64" cy="93" rx="56" ry="21" fill="#9fb0bb" opacity=".35"/>
 <ellipse cx="64" cy="90" rx="56" ry="21" fill="#ffffff" stroke="#9fb0bb" stroke-width="2"/>
 <ellipse cx="64" cy="90" rx="45" ry="16" fill="#eef3f6"/>
@@ -12,4 +13,5 @@
 <ellipse cx="78" cy="79" rx="6" ry="4.5" fill="#4b2e1c"/>
 <ellipse cx="77" cy="78" rx="3" ry="1.5" fill="#6d4a33"/>
 <circle cx="46" cy="78" r="4.5" fill="#f0a020" stroke="#c77d10" stroke-width="1"/>
+</g>
 </svg>

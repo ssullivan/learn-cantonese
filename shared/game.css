@@ -1,0 +1,119 @@
+/*
+ * game.css — styles for games built with game.js. Load after theme.css.
+ *
+ * .level-list > button.level (level menu), .hud, .timer > .timer-fill,
+ * .stage (.locked after answering), .game-feedback, .game-end,
+ * .stars, .btn.small, .speech (a speech bubble), .tray (labelled box
+ * of answer buttons), .prompt-pic (big picture to answer about),
+ * .tone-chart (tone reference table).
+ */
+
+.btn.small { padding: 6px 12px; font-size: 14px; }
+
+/* Level menu */
+.level-list { display: grid; gap: 12px; margin-top: 16px; }
+.level {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.level:hover:not(:disabled) { border-color: var(--accent); }
+.level:disabled { opacity: 0.55; cursor: not-allowed; box-shadow: none; }
+.level:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.level-num {
+  flex: none;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 800;
+}
+.level-text { flex: 1; display: flex; flex-direction: column; }
+.level-text span { color: var(--ink-soft); font-size: 15px; }
+.level-best { flex: none; text-align: right; font-weight: 700; color: var(--ink-soft); display: flex; flex-direction: column; }
+.stars { color: var(--gold); letter-spacing: 2px; }
+.stars.big { font-size: 40px; margin: 0; }
+
+/* Play screen */
+.hud { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 10px; }
+.hud-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.pill.streak { background: color-mix(in srgb, var(--gold) 22%, var(--surface)); color: var(--ink); }
+.timer { height: 10px; border-radius: 999px; background: var(--surface-2); overflow: hidden; margin-bottom: 16px; }
+.timer-fill { height: 100%; background: var(--jade); transform-origin: left; transition: background 0.3s; }
+.timer-fill.low { background: var(--bad); }
+.stage.locked { pointer-events: none; }
+.game-feedback { min-height: 3.5em; }
+.game-feedback .btn { margin-left: 8px; vertical-align: middle; }
+
+/* Speech bubble */
+.speech {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 22px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  max-width: 520px;
+}
+.speech::after {
+  content: "";
+  position: absolute;
+  left: 34px;
+  bottom: -10px;
+  width: 18px;
+  height: 18px;
+  background: var(--surface);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  transform: rotate(45deg);
+}
+.speech .who {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-size: 22px;
+  font-weight: 700;
+}
+.speech p { margin: 0; flex: 1; }
+
+/* Tray of answers */
+.tray {
+  border: 3px solid var(--gold);
+  border-radius: 18px;
+  padding: 12px;
+  background: color-mix(in srgb, var(--gold) 8%, var(--surface));
+  max-width: 664px;
+}
+.tray-label { margin: 0 0 8px; color: var(--ink-soft); font-size: 14px; font-weight: 700; }
+.prompt-pic { display: block; width: 160px; height: 160px; margin: 0 0 16px; }
+
+/* Tone chart */
+.tone-chart { border-collapse: collapse; margin: 10px 0 4px; font-size: 15px; }
+.tone-chart td { padding: 3px 12px 3px 0; vertical-align: middle; }
+.tone-chart svg { display: block; }
+
+/* End screen */
+.game-end { text-align: center; padding: 16px 0; }
+.end-score { margin: 0; font-size: 56px; font-weight: 800; color: var(--accent); }
+.end-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 16px; }

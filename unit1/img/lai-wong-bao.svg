@@ -4,6 +4,7 @@
 <path d="M-21 5 C-24 -10 -12 -21 0 -21 C12 -21 24 -10 21 5 C8 10 -8 10 -21 5Z" fill="#fff9ec" stroke="#d8c9ad" stroke-width="1.5"/>
 <path d="M-11 -14 Q-4 -18 3 -17" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round"/>
 </g></defs>
+<g data-dish="steamer">
 <ellipse cx="64" cy="74" rx="52" ry="15" fill="#9c6528" stroke="#7d4f1e" stroke-width="2"/>
 <ellipse cx="64" cy="75" rx="45" ry="11" fill="#f1e3bd"/>
 <use href="#b" transform="translate(50 65)"/>
@@ -19,4 +20,5 @@
 <path d="M12 74 A52 15 0 0 0 116 74 L112 104 A48 13 0 0 1 16 104 Z" fill="#dcaa5e" stroke="#7d4f1e" stroke-width="2" stroke-linejoin="round"/>
 <path d="M14 90 A50 14 0 0 0 114 90" fill="none" stroke="#b07a35" stroke-width="2"/>
 <path d="M13 76 A51 15 0 0 0 115 76" fill="none" stroke="#f2cf8a" stroke-width="2.5"/>
+</g>
 </svg>

@@ -3,6 +3,8 @@
 Cantonese lessons and games with native-sounding audio, served at https://ssullivan.github.io/learn-cantonese/.
 
 - **Unit 1 · 點心 Dim Sum**: classic dishes with pictures and audio, a listening quiz, and phrases for ordering at yum cha.
+  - *Trolley Rush*: hear customers' orders (唔該，一籠蝦餃！) and serve the right dishes; learn 一籠 vs 一碟.
+  - *Tone Detective*: hear a word and pick its tones.
 
 ## Working on it
 
