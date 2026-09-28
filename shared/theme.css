@@ -9,7 +9,7 @@
  * Pills:    .pill (small rounded label)
  * Buttons:  .btn, .btn.primary, .btn:disabled
  * Cards:    .card-grid > a.card; div.card.soon for "Coming soon"
- *           h2.stage heads a group of card grids
+ *           h2.stage-head heads a group of card grids
  * Feedback: .feedback.good / .feedback.bad; .tip (callout box)
  * Answers:  .pic-grid > button.pic-btn (Canto.picButton): .picked .right .wrong
  *           .choice-grid > button.choice (text answers), same states
@@ -163,8 +163,8 @@ a.card:hover { border-color: var(--accent); }
 .card img { width: 72px; height: 72px; }
 .card .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
 .card.soon { opacity: 0.6; box-shadow: none; border-style: dashed; }
-.stage { margin: 32px 0 12px; font-size: 15px; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.06em; }
-.page-header + .stage { margin-top: 0; }
+.stage-head { margin: 32px 0 12px; font-size: 15px; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.06em; }
+.page-header + .stage-head { margin-top: 0; }
 
 /* Feedback */
 .feedback {

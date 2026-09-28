@@ -12,6 +12,9 @@
  *   - each unit<N>/vocab.js: unique ids, tone numbers in jyutping,
  *     audio/<id>.mp3 for every entry, a drawing in art.mjs for every
  *     entry without img:false, and no orphan .mp3 files or drawings
+ *   - a word borrowed with Units.word(n, ...) has its audio and picture
+ *     checked in unit n, and every page that loads a borrowing vocab.js
+ *     loads shared/units.js and ../unit<n>/vocab.js before it
  *   - an entry's measure word matches its picture: a measure with
  *     dish "steamer" needs a steamer() drawing, "plate" a plate()
  *   - img/*.svg match art.mjs exactly (else run node tools/draw.mjs)
@@ -22,7 +25,7 @@ import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from '
 import { dirname, join, relative, extname } from 'node:path';
 import vm from 'node:vm';
 import { spawnSync } from 'node:child_process';
-import { ROOT, unitDirs, loadVocab, entries, loadArt } from './site.mjs';
+import { ROOT, unitDirs, loadVocab, entries, own, loadArt } from './site.mjs';
 const fix = process.argv.includes('--fix');
 const problems = [];
 const bad = (file, msg) => problems.push(`${relative(ROOT, file)}: ${msg}`);
@@ -81,6 +84,7 @@ for (const unit of unitDirs()) {
     ids.add(e.id);
     for (const f of ['id', 'hanzi', 'jyutping', 'english']) if (!e[f]) bad(vocabFile, `${e.id ?? '?'} is missing ${f}`);
     if (e.jyutping && !/^[a-z]+[1-6]( [a-z]+[1-6])*$/.test(e.jyutping)) bad(vocabFile, `${e.id}: jyutping "${e.jyutping}" needs a tone number on every syllable`);
+    if (!own(e, unit)) continue;
     if (!existsSync(join(dir, 'audio', `${e.id}.mp3`))) bad(vocabFile, `${e.id} has no audio (run node tools/tts.mjs ${unit})`);
     if (e.img !== false && !art[e.id]) bad(vocabFile, `${e.id} has no drawing in art.mjs`);
   }
@@ -91,7 +95,7 @@ for (const unit of unitDirs()) {
     const dish = /data-dish="(\w+)"/.exec(art[e.id] ?? '')?.[1];
     if (dish !== m.dish) bad(vocabFile, `${e.id}: ordered by ${m.hanzi} (${m.dish}) but drawn on a ${dish ?? 'nothing'}`);
   }
-  const withImg = new Set(all.filter(e => e.img !== false).map(e => e.id));
+  const withImg = new Set(all.filter(e => e.img !== false && own(e, unit)).map(e => e.id));
   for (const id of Object.keys(art)) {
     if (!withImg.has(id)) bad(join(dir, 'art.mjs'), `${id} has no vocab entry with a picture`);
     const svg = join(dir, 'img', `${id}.svg`);
@@ -100,6 +104,21 @@ for (const unit of unitDirs()) {
   const list = sub => existsSync(join(dir, sub)) ? readdirSync(join(dir, sub)) : [];
   for (const f of list('audio')) if (f.endsWith('.mp3') && !ids.has(f.slice(0, -4))) bad(join(dir, 'audio', f), 'orphan (no vocab entry)');
   for (const f of list('img')) if (f.endsWith('.svg') && !art[f.slice(0, -4)]) bad(join(dir, 'img', f), 'orphan (not in art.mjs)');
+}
+
+// Pages load shared/units.js and the vocab of every unit they borrow from
+// before the unit's own vocab.js
+for (const html of files.filter(f => f.endsWith('.html'))) {
+  const srcs = [...readFileSync(html, 'utf8').matchAll(/<script src="([^"?]+)/g)].map(m => m[1]);
+  const at = src => srcs.indexOf(src);
+  if (at('vocab.js') < 0) continue;
+  if (at('../shared/units.js') < 0 || at('../shared/units.js') > at('vocab.js')) bad(html, 'load ../shared/units.js before vocab.js');
+  const vocabSrc = readFileSync(join(dirname(html), 'vocab.js'), 'utf8');
+  for (const n of new Set([...vocabSrc.matchAll(/Units\.word\((\d+)/g)].map(m => m[1]))) {
+    const need = `../unit${n}/vocab.js`;
+    const i = at(need);
+    if (i < 0 || i > at('vocab.js') || i < at('../shared/units.js')) bad(html, `vocab.js borrows from unit ${n}: load ${need} after units.js and before vocab.js`);
+  }
 }
 
 // Tests

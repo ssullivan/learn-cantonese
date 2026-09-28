@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Moon and stars (good night)</title>
+<path d="M78 18 A44 44 0 1 0 110 90 A36 36 0 1 1 78 18 Z" fill="#f4d774" stroke="#c9a53a" stroke-width="3" stroke-linejoin="round"/>
+<path d="M98 20 l3 7 7 1 -5 5 1 7 -6 -3 -6 3 1 -7 -5 -5 7 -1 Z" fill="#f4d774" stroke="#c9a53a" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M112 52 l2 4 4 .5 -3 3 .8 4 -3.8 -2 -3.8 2 .8 -4 -3 -3 4 -.5 Z" fill="#f4d774" stroke="#c9a53a" stroke-width="1.2" stroke-linejoin="round"/>
+</svg>

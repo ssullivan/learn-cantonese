@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reply Match · Greetings</title>
+<link rel="stylesheet" href="../shared/theme.css?v=7968c009">
+<link rel="stylesheet" href="../shared/game.css?v=c6970d29">
+</head>
+<body>
+<main class="page">
+  <header class="page-header">
+    <a class="back" href="../">← Unit 2</a>
+    <p class="eyebrow">Unit 2 · Game</p>
+    <h1><span class="hanzi" lang="zh-HK">回應</span>Reply Match</h1>
+    <p class="lede">Someone greets you, thanks you or says sorry. Pick the right answer, then say it out loud.</p>
+  </header>
+  <div id="game"></div>
+</main>
+<script src="../shared/core.js?v=8bec73e4"></script>
+<script src="../shared/audio.js?v=f296d05e"></script>
+<script src="../shared/game.js?v=b82b218e"></script>
+<script src="../shared/reply.js?v=172f18dd"></script>
+<script src="../shared/units.js?v=d9fa5fbd"></script>
+<script src="vocab.js?v=5242e509"></script>
+<script>
+  const V = window.VOCAB;
+  const all = Canto.entries(V);
+  Reply.init({
+    root: document.getElementById('game'),
+    key: 'u2-reply',
+    vocab: V,
+    levels: [
+      { id: 'meaning', name: 'Hear it', blurb: 'Hear a phrase and pick what it means.', modes: ['meaning'], pool: all },
+      { id: 'reply', name: 'Answer back', blurb: 'Someone speaks to you. What do you say back?', modes: ['reply'], pool: all.filter(e => e.reply) },
+      { id: 'when', name: 'What do you say?', blurb: '唔該, 多謝 or 對唔住? Pick the phrase for the situation.', modes: ['when'], pool: all.filter(e => e.when) },
+      { id: 'rush', name: 'Rush', blurb: 'Answers and situations mixed, eight seconds each.', modes: ['reply', 'when'], pool: all.filter(e => e.reply || e.when), time: 8 },
+    ],
+  });
+</script>
+</body>
+</html>

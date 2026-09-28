@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Tea being poured (唔該: thanks for the service)</title>
+<g transform="translate(2 -10) scale(.8) rotate(24 56 80)">
+<path d="M22 66 C6 66 6 94 26 92" stroke="#2e5a88" stroke-width="6" fill="none" stroke-linecap="round"/>
+<path d="M88 76 C100 74 104 60 110 46 L118 48 C112 66 106 84 90 92 Z" fill="#fbf8f1" stroke="#2e5a88" stroke-width="2.5" stroke-linejoin="round"/>
+<ellipse cx="56" cy="80" rx="36" ry="28" fill="#fbf8f1" stroke="#2e5a88" stroke-width="3"/>
+<path d="M22 78 q8 -8 17 0 t17 0 t17 0 t17 0" stroke="#2e5a88" stroke-width="2.5" fill="none"/>
+<path d="M28 90 q7 -6 14 0 t14 0 t14 0 t14 0" stroke="#6f9bc6" stroke-width="2" fill="none"/>
+<ellipse cx="56" cy="54" rx="22" ry="6" fill="#fbf8f1" stroke="#2e5a88" stroke-width="2.5"/>
+<circle cx="56" cy="46" r="5" fill="#2e5a88"/>
+</g>
+<path d="M100 53 Q105 76 104 100" stroke="#c8913a" stroke-width="4" fill="none" stroke-linecap="round"/>
+<path d="M92 100 L96 116 Q104 120 112 116 L116 100 Z" fill="#fbf8f1" stroke="#2e5a88" stroke-width="2.5" stroke-linejoin="round"/>
+<ellipse cx="104" cy="100" rx="12" ry="3.5" fill="#c8913a" stroke="#2e5a88" stroke-width="2"/>
+</svg>

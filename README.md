@@ -6,6 +6,9 @@ The course plans 18 units (see the roadmap in CLAUDE.md); built so far:
 
 - **Unit 1 · 聲調 Sounds & Tones**: the six tones on one syllable at a time, and how to read Jyutping.
   - *Tone Detective*: from high-or-low up to all six tones.
+- **Unit 2 · 打招呼 Greetings**: hello and goodbye, how are you, and when to say 唔該, 多謝 or 對唔住.
+  - *Reply Match*: hear a phrase, answer back, or pick what to say in a situation.
+  - *Tone Detective* and *Say It Back* for greetings.
 - **Unit 7 · 點心 Dim Sum**: classic dishes with pictures and audio, a listening quiz, and phrases for ordering at yum cha.
   - *Trolley Rush*: hear customers' orders (唔該，一籠蝦餃！) and serve the right dishes; learn 一籠 vs 一碟.
   - *Tone Detective*: hear a word and pick its tones.

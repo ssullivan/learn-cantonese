@@ -2,19 +2,11 @@
  * Unit 7 illustrations: one entry per vocab entry with a picture.
  * Run `node tools/draw.mjs` after editing to rewrite img/<id>.svg.
  */
-import { svg, steamer, plate } from '../tools/svg.mjs';
+import { svg, steamer, plate, teapot, teacup } from '../tools/svg.mjs';
 
 export default {
   'yum-cha': svg("Yum cha (teapot and teacup)", `<path d="M84 22 c-4 -6 4 -10 0 -16 M94 26 c-4 -6 4 -10 0 -16" stroke="#9fb0bb" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-<path d="M22 66 C6 66 6 94 26 92" stroke="#2e5a88" stroke-width="6" fill="none" stroke-linecap="round"/>
-<path d="M88 76 C100 74 104 60 110 46 L118 48 C112 66 106 84 90 92 Z" fill="#fbf8f1" stroke="#2e5a88" stroke-width="2.5" stroke-linejoin="round"/>
-<ellipse cx="56" cy="80" rx="36" ry="28" fill="#fbf8f1" stroke="#2e5a88" stroke-width="3"/>
-<path d="M22 78 q8 -8 17 0 t17 0 t17 0 t17 0" stroke="#2e5a88" stroke-width="2.5" fill="none"/>
-<path d="M28 90 q7 -6 14 0 t14 0 t14 0 t14 0" stroke="#6f9bc6" stroke-width="2" fill="none"/>
-<ellipse cx="56" cy="54" rx="22" ry="6" fill="#fbf8f1" stroke="#2e5a88" stroke-width="2.5"/>
-<circle cx="56" cy="46" r="5" fill="#2e5a88"/>
-<path d="M92 100 L96 116 Q104 120 112 116 L116 100 Z" fill="#fbf8f1" stroke="#2e5a88" stroke-width="2.5" stroke-linejoin="round"/>
-<ellipse cx="104" cy="100" rx="12" ry="3.5" fill="#c8913a" stroke="#2e5a88" stroke-width="2"/>`),
+` + teapot() + '\n' + teacup()),
 
   'har-gow': svg("Har gow (shrimp dumplings)", `<defs><g id="d">
 <path d="M-20 4 C-22 -8 -14 -20 0 -21 C14 -20 22 -8 20 4 C8 9 -8 9 -20 4Z" fill="#f7f2ea" fill-opacity=".95" stroke="#cfc1a8" stroke-width="1.5"/>

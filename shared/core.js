@@ -12,7 +12,8 @@
  *   Canto.shuffle(list)          shuffled copy
  *   Canto.pick(list, n)          n random items
  *   Canto.imgSrc(entry)          "img/<id>.svg"
- *   Canto.audioSrc(entry)        "audio/<id>.mp3"
+ *   Canto.audioSrc(entry)        "audio/<id>.mp3"; both use ../unit<n>/ for
+ *                                an entry borrowed from unit n (Units.word)
  *   Canto.play(entries)          play one entry's clip, or several in a row;
  *                                resolves when done (see Speak.play)
  *   Canto.entries(vocab)         every entry from every list in a vocab object
@@ -72,8 +73,9 @@
 
   const pick = (list, n) => shuffle(list).slice(0, n);
 
-  const imgSrc = entry => `img/${entry.id}.svg`;
-  const audioSrc = entry => `audio/${entry.id}.mp3`;
+  const home = entry => entry.unit ? `../unit${entry.unit}/` : '';
+  const imgSrc = entry => `${home(entry)}img/${entry.id}.svg`;
+  const audioSrc = entry => `${home(entry)}audio/${entry.id}.mp3`;
 
   function play(entries) {
     const list = [].concat(entries);

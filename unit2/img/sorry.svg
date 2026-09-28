@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A knocked-over drink (對唔住: sorry)</title>
+<path d="M20 104 C30 96 56 98 70 102 C86 106 108 100 116 108 C104 116 40 118 20 104 Z" fill="#c8913a" opacity=".8"/>
+<g transform="translate(0 14) rotate(-80 64 84)">
+<path d="M46 56 L50 104 C50 108 78 108 78 104 L82 56 Z" fill="#fbf8f1" stroke="#6f8796" stroke-width="3" stroke-linejoin="round"/>
+<ellipse cx="64" cy="56" rx="18" ry="5" fill="#c8913a" stroke="#6f8796" stroke-width="3"/>
+</g>
+<path d="M88 34 l6 -10 M100 40 l10 -6 M80 30 l0 -12" stroke="#d6453a" stroke-width="4" stroke-linecap="round"/>
+</svg>

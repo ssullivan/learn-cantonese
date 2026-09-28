@@ -9,7 +9,7 @@
  * say? (text to speak if not hanzi), ssml? (SSML inside <voice> to
  * force a reading the voice gets wrong).
  */
-window.VOCAB = {
+Units.add(7, {
   voice: 'zh-HK-HiuMaanNeural',
 
   basics: [
@@ -63,8 +63,6 @@ window.VOCAB = {
   ],
 
   phrases: [
-    { id: 'm-goi', hanzi: '唔該', jyutping: 'm4 goi1', english: 'please / thank you (for a service)', img: false,
-      note: 'Use it to get a server\'s attention and to thank them.' },
     { id: 'order-har-gow', hanzi: '我要一籠蝦餃', jyutping: 'ngo5 jiu3 jat1 lung4 haa1 gaau2', english: 'I\'d like a basket of har gow', img: false,
       note: '籠 (lung4) is a steamer basket. Swap in any dish.' },
     { id: 'more-water', hanzi: '唔該加水', jyutping: 'm4 goi1 gaa1 seoi2', english: 'more hot water, please', img: false,
@@ -72,7 +70,7 @@ window.VOCAB = {
     { id: 'bill', hanzi: '唔該埋單', jyutping: 'm4 goi1 maai4 daan1', english: 'the bill, please', img: false,
       note: 'Staff tally your order on a card stamped at each table.' },
   ],
-};
+});
 
 // Derived: "one basket/plate of X" for every dish (一籠蝦餃), used for
 // orders in the trolley game. Audio is generated like any other entry.
@@ -87,3 +85,6 @@ window.VOCAB = {
     img: false,
   }));
 })(window.VOCAB);
+
+// Borrowed: 唔該 is taught in unit 2; the trolley game says it before every order.
+window.VOCAB.phrases.unshift(Units.word(2, 'm-goi'));

@@ -17,7 +17,7 @@ import { createHash } from 'node:crypto';
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { homedir } from 'node:os';
 import { join } from 'node:path';
-import { ROOT, unitDirs, loadVocab, entries } from './site.mjs';
+import { ROOT, unitDirs, loadVocab, entries, own } from './site.mjs';
 
 const CONFIG = join(homedir(), '.config/learning-cantonese/config.env');
 const FORMAT = 'audio-24khz-48kbitrate-mono-mp3';
@@ -85,7 +85,10 @@ for (const unit of units) {
   const manifestPath = join(audioDir, 'manifest.json');
   const manifest = existsSync(manifestPath) ? JSON.parse(readFileSync(manifestPath, 'utf8')) : {};
 
-  for (const entry of entries(vocab)) {
+  const mine = entries(vocab).filter(e => own(e, unit)); // borrowed words have audio in their own unit
+  if (!only) for (const id of Object.keys(manifest)) if (!mine.some(e => e.id === id)) delete manifest[id];
+
+  for (const entry of mine) {
     if (only && !only.has(entry.id)) continue;
     const voice = entry.voice ?? vocab.voice;
     const ssml = ssmlFor(entry, voice);

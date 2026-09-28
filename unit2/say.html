@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Say It Back · Dim Sum</title>
+<title>Say It Back · Greetings</title>
 <link rel="stylesheet" href="../shared/theme.css?v=7968c009">
 <link rel="stylesheet" href="../shared/sayit.css?v=53e6d081">
 </head>
 <body>
 <main class="page">
   <header class="page-header">
-    <a class="back" href="../">← Unit 7</a>
-    <p class="eyebrow">Unit 7 · Speaking</p>
+    <a class="back" href="../">← Unit 2</a>
+    <p class="eyebrow">Unit 2 · Speaking</p>
     <h1><span class="hanzi" lang="zh-HK">講</span>Say It Back</h1>
-    <p class="lede">Say each dim sum word yourself and see how your tones compare with a native speaker's.</p>
+    <p class="lede">Say each greeting yourself and see how your tones compare with a native speaker's.</p>
   </header>
   <div id="say"></div>
 </main>
@@ -22,13 +22,12 @@
 <script src="../shared/pitch.js?v=e95f83fc"></script>
 <script src="../shared/sayit.js?v=324ac8e7"></script>
 <script src="../shared/units.js?v=d9fa5fbd"></script>
-<script src="../unit2/vocab.js?v=5242e509"></script>
-<script src="vocab.js?v=94b0471c"></script>
+<script src="vocab.js?v=5242e509"></script>
 <script>
   SayIt.init({
     root: document.getElementById('say'),
-    key: 'u7-say',
-    pool: [...VOCAB.items, ...VOCAB.basics, ...VOCAB.phrases],
+    key: 'u2-say',
+    pool: Canto.entries(VOCAB),
   });
 </script>
 </body>

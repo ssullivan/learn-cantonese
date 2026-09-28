@@ -14,11 +14,13 @@ shared/                  used by every page; each file's header comment document
   learn.css, learn.js    learn-page engine (Learn.init, word cards, listen quiz)
   game.css, game.js      game engine (Game.init: levels, rounds, timer, score, stars, unlocks)
   tones.js               Tone Detective, usable by any unit (Tones.init)
+  reply.js               Reply Match (hear it / answer back / what do you say), usable by any unit (Reply.init)
+  units.js               registry of unit vocabularies (Units.add, Units.word for borrowing)
   pitch.js               pitch tracking + contour charts (Pitch.*); runs in Node too
   sayit.css, sayit.js    Say It Back speaking practice, usable by any unit (SayIt.init)
 unit<N>/
   index.html             unit page: a card per learn page / game
-  vocab.js               window.VOCAB: every word in the unit (source of truth)
+  vocab.js               Units.add(N, {...}): every word in the unit (source of truth)
   art.mjs                the unit's SVG drawings, built from tools/svg.mjs parts
   learn.html, lessons.js learn page and its steps
   <game>.html, <game>.js unit games on Game.init (unit7/trolley.*); tones.html and say.html configure the shared ones
@@ -31,11 +33,13 @@ tools/
   tts.mjs                vocab.js → audio/*.mp3 (Azure Speech)
   check.mjs              site checks; --fix writes cache stamps; runs tools/*.test.mjs
   pitch.test.mjs         pitch.js on synthetic voices with known pitch
+  units.test.mjs         borrowing words between units (units.js, loadVocab, asset paths)
   core.test.mjs          core.js's pure helpers (tones, toneChart)
 ```
 
 ## Words, audio and pictures
-- Every word lives once, in `unit<N>/vocab.js`: `{ id, hanzi, jyutping, english, note?, img?, measure?, say?, ssml? }`. `id` names its files. `img: false` means no picture.
+- Every word lives once, in `unit<N>/vocab.js`: `{ id, hanzi, jyutping, english, note?, img?, measure?, say?, ssml?, reply?, when? }`. `id` names its files. `img: false` means no picture. `reply` (ids of good answers) and `when` (situations for saying it) feed Reply Match.
+- A word belongs to the first unit that teaches it. A later unit borrows it with `Units.word(n, id)` in the derived section of its `vocab.js` (see unit 7's 唔該); its audio and picture stay in `unit<n>/`. Borrow only from earlier units, never copy a word into a second vocab.js.
 - Derive, don't copy: phrases built from words (like unit 7's `portions`, 一籠蝦餃) are computed at the bottom of `vocab.js`, and get audio like any entry.
 - Measure words: a dish's `measure` must match its picture (籠 ↔ `steamer()`, 碟 ↔ `plate()`); check.mjs enforces it.
 - Jyutping uses tone numbers on every syllable (`haa1 gaau2`). Double-check sandhi/changed tones (腸粉 coeng2, 燒賣 maai2) and words with several readings.
@@ -47,11 +51,11 @@ tools/
 - Pages load `shared/` with `../shared/...` and use relative links only (the site is served under `/learn-cantonese/`, not `/`).
 - Local CSS and JS are loaded with a `?v=<hash>` cache stamp; `node tools/check.mjs --fix` writes them. Never edit a stamp by hand.
 - Learn pages run on `shared/learn.js`; `unit7/learn.html` + `lessons.js` is the template. Games run on `shared/game.js`; `unit7/trolley.*` is the template. Put reusable UI in `shared/`, not in a unit's script.
-- Script order: `core.js`, `audio.js`, then `learn.js` or `game.js`, then the unit's `vocab.js` and page script.
+- Script order: `core.js`, `audio.js`, then `learn.js` or `game.js` (+ `tones.js`, `reply.js`...), then `units.js`, the `../unit<n>/vocab.js` of every unit it borrows from, the unit's own `vocab.js`, and the page script. check.mjs enforces the vocab part.
 - No emoji in the UI (they break on systems without an emoji font); use text, ▶, ★, or a Chinese character badge (`Canto.speech`).
 - Game pages and learn pages link back to their unit page with `href="../"` ("← Unit N").
 - When adding a learn page or game, add its card to `unit<N>/index.html` (turning a "Coming soon" card into a real one).
-- The root `index.html` lists every unit in the Roadmap, grouped by stage (`h2.stage`); units not built yet are `div.card.soon` placeholders. When adding a unit, create `unit<N>/` like `unit7/` and turn its placeholder into a real `a.card` with a picture. When the roadmap changes, update the placeholders and the "N units" eyebrow to match.
+- The root `index.html` lists every unit in the Roadmap, grouped by stage (`h2.stage-head`); units not built yet are `div.card.soon` placeholders. When adding a unit, create `unit<N>/` like `unit7/` and turn its placeholder into a real `a.card` with a picture. When the roadmap changes, update the placeholders and the "N units" eyebrow to match.
 - `localStorage` is shared by the whole site, so keys must be unique: `u<N>-learn`, `u<N>-<game>`.
 - `.nojekyll` disables Jekyll processing so files are served as-is.
 - Avoid gendered pronouns for named people in lessons; reword instead.
@@ -68,7 +72,7 @@ Units build on each other: each one reuses earlier words and adds one grammar po
 |---|------|------------------|---------------|------|
 | **Foundations** |
 | 1 | Sounds & Tones 聲調 (built) | Jyutping, the 6 tones on si / fu / fan, spelling traps (j, z, c, eo, oe, yu, aa vs a, ng) | Tone numbers 1–6 only (no 7/8/9), tone changes | Tone Detective only |
-| 2 | Greetings 打招呼 | 你好, 早晨, 唔該 vs 多謝, 對唔住, 拜拜, 冇問題 | Politeness: 唔該 vs 多謝 | Reply Match (hear a situation, pick the reply) |
+| 2 | Greetings 打招呼 (built) | 你好, 早晨 / 早唞, 拜拜, 最近點呀, 唔該 vs 多謝 and their replies, 對唔住 vs 唔好意思 | Politeness: 唔該 vs 多謝 | Reply Match (built), Tone Detective, Say It Back |
 | 3 | Me & You 我同你 | 我 你 佢 (+ 哋), 我叫…, 係 / 唔係, 邊個, 乜嘢 | 係, 唔 negation, A唔A questions, 呀 / 嗎 | Question Builder |
 | 4 | Numbers 數字 | 零–十, 百 千 萬, 廿 / 卅, 幾多, 第 | 二 vs 兩 | Number Dash (hear a number, tap it) |
 | 5 | Measure Words 量詞 | 個 隻 本 張 條 枝 架 件 杯 碗 對 啲, nouns sorted by shape | number + measure + noun; measure + noun = "the"; 呢 / 嗰 | Measure Sort, Count It |
@@ -90,5 +94,4 @@ Units build on each other: each one reuses earlier words and adds one grammar po
 
 Planned changes and shared pieces this needs:
 - `shared/numbers.js`: `Canto.number(n, { measure })` gives hanzi and jyutping for 0–9999 (兩 before measures and 百/千, 廿 / 卅 / 四十 aa6 forms, 零 for gaps). Units 4–9 derive numbers, prices, counts and times from it instead of listing them. `tools/site.mjs` `loadVocab` loads it before a unit's vocab.js. Test it in `tools/numbers.test.mjs`.
-- A word used again in a later unit is shared, not copied. Before unit 5, decide how a unit uses another unit's words and audio (for example, vocab.js lists `uses: ['unit4']` and the loaders resolve it).
 - The Dim Sum "一籠 or 一碟?" level and unit 5's Measure Sort are the same round. Move that round into `shared/` when unit 5 is built.

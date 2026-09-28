@@ -7,7 +7,7 @@
  * speak if not hanzi), ssml? (SSML inside <voice> to force a reading
  * the voice gets wrong).
  */
-window.VOCAB = {
+Units.add(1, {
   voice: 'zh-HK-HiuMaanNeural',
 
   basics: [
@@ -64,7 +64,7 @@ window.VOCAB = {
     { id: 'street', hanzi: '街', jyutping: 'gaai1', english: 'street', img: false,
       note: 'aa is long, like "ah". 雞 gai1 and 街 gaai1 differ only in vowel length.' },
   ],
-};
+});
 
 // Derived: set entries in the given tones, e.g. VOCAB.inTones(2, 5). Set
 // entries are one syllable, so the tone is the last character.

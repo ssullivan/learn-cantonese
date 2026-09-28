@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tone Detective · Dim Sum</title>
+<title>Tone Detective · Greetings</title>
 <link rel="stylesheet" href="../shared/theme.css?v=7968c009">
 <link rel="stylesheet" href="../shared/game.css?v=c6970d29">
 </head>
 <body>
 <main class="page">
   <header class="page-header">
-    <a class="back" href="../">← Unit 7</a>
-    <p class="eyebrow">Unit 7 · Game</p>
+    <a class="back" href="../">← Unit 2</a>
+    <p class="eyebrow">Unit 2 · Game</p>
     <h1><span class="hanzi" lang="zh-HK">聲調</span>Tone Detective</h1>
-    <p class="lede">Hear a dim sum word and catch its tones. The same sounds with different tones are different words.</p>
+    <p class="lede">Hear a greeting and catch its tones. 唔該 is m4 goi1: low, then high.</p>
   </header>
   <div id="game"></div>
 </main>
@@ -22,17 +22,16 @@
 <script src="../shared/game.js?v=b82b218e"></script>
 <script src="../shared/tones.js?v=1e42a794"></script>
 <script src="../shared/units.js?v=d9fa5fbd"></script>
-<script src="../unit2/vocab.js?v=5242e509"></script>
-<script src="vocab.js?v=94b0471c"></script>
+<script src="vocab.js?v=5242e509"></script>
 <script>
   const V = window.VOCAB;
   Tones.init({
     root: document.getElementById('game'),
-    key: 'u7-tones',
+    key: 'u2-tones',
     levels: [
-      { id: 'dishes', name: 'Dishes', blurb: 'Dim sum names, three choices.', pool: V.items, choices: 3 },
-      { id: 'sharp-ears', name: 'Sharp ears', blurb: 'Dim sum names, four choices.', pool: V.items, choices: 4 },
-      { id: 'orders', name: 'Orders & phrases', blurb: 'Longer phrases from the table.', pool: [...V.basics, ...V.phrases, ...V.portions], choices: 4 },
+      { id: 'greetings', name: 'Greetings', blurb: 'Hello, good morning, goodbye. Three choices.', pool: V.greetings, choices: 3 },
+      { id: 'polite', name: 'Please & sorry', blurb: '唔該, 多謝, 對唔住 and their replies.', pool: V.polite, choices: 4 },
+      { id: 'chat', name: 'Small talk', blurb: 'Longer questions and answers.', pool: V.howAreYou, choices: 4 },
     ],
   });
 </script>

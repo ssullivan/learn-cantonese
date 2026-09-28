@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Sunrise (good morning)</title>
+<path d="M8 92 H120" stroke="#6f8796" stroke-width="3" stroke-linecap="round"/>
+<path d="M28 92 A36 36 0 0 1 100 92 Z" fill="#f7b538" stroke="#d98c1a" stroke-width="3" stroke-linejoin="round"/>
+<path d="M64 46 V30 M36 58 L26 48 M92 58 L102 48 M24 80 H10 M104 80 H118" stroke="#f2a93b" stroke-width="5" stroke-linecap="round"/>
+<path d="M24 104 H56 M72 104 H104 M40 114 H88" stroke="#8cc8ea" stroke-width="4" stroke-linecap="round"/>
+</svg>
