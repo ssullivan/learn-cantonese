@@ -33,7 +33,7 @@ tools/
   site.mjs               shared helpers for the scripts (unitDirs, loadVocab, loadArt)
   svg.mjs                shared drawing parts (svg, steamer, plate, bowl, cup)
   draw.mjs               art.mjs → img/*.svg
-  tts.mjs                vocab.js → audio/*.mp3 (Azure Speech)
+  tts.mjs                vocab.js → audio/*.mp3 (Azure Speech; MiniMax for a word with a `minimax:` voice)
   audio-check.mjs        machine checks on clips: ffmpeg, Azure speech-to-text, per-syllable tones (see "Verifying audio")
   check.mjs              site checks; --fix writes cache stamps; runs tools/*.test.mjs; fails if any file holds the Azure key
   pitch.test.mjs         pitch.js on synthetic voices with known pitch
@@ -43,13 +43,13 @@ tools/
 ```
 
 ## Words, audio and pictures
-- Every word lives once, in `unit<N>/vocab.js`: `{ id, hanzi, jyutping, english, note?, img?, measure?, say?, ssml?, phoneme?, reply?, when?, words? }`. `id` names its files. `img: false` means no picture. `reply` (ids of good answers) and `when` (situations for saying it) feed Reply Match. `words` (the ids a derived sentence is made of) feeds Tiles.round.
+- Every word lives once, in `unit<N>/vocab.js`: `{ id, hanzi, jyutping, english, note?, img?, measure?, say?, ssml?, phoneme?, voice?, reply?, when?, words? }`. `id` names its files. `img: false` means no picture. `reply` (ids of good answers) and `when` (situations for saying it) feed Reply Match. `words` (the ids a derived sentence is made of) feeds Tiles.round.
 - A word belongs to the first unit that teaches it. A later unit borrows it with `Units.word(n, id)` in the derived section of its `vocab.js` (see unit 7's 唔該); its audio and picture stay in `unit<n>/`. Borrow only from earlier units, never copy a word into a second vocab.js.
 - Derive, don't copy: phrases built from words (like unit 7's `portions`, 一籠蝦餃, and sentences made with `Units.sentences`) are computed at the bottom of `vocab.js`, and get audio like any entry. Numbers, counts and times come from `Canto.number` (see unit 4's `vocab.js`) and prices from `Canto.price` (see unit 6's), never typed out.
 - Measure words: a thing's `measure` must match its picture (籠 ↔ `steamer()`, 碟 ↔ `plate()`, 碗 ↔ `bowl()`, 杯 ↔ `cup()`, and no dish for the rest); check.mjs enforces it, looking up a borrowed word's picture in its own unit. A borrowed noun can gain a `measure` (unit 5 borrows unit 1's 魚 車 水 雞 牛).
 - Jyutping uses tone numbers on every syllable (`haa1 gaau2`). Double-check sandhi/changed tones (腸粉 coeng2, 燒賣 maai2) and words with several readings.
 - Use colloquial Cantonese (佢, 係, 唔, 咗), not Mandarin or written-Chinese forms.
-- Audio: `node tools/tts.mjs [unitN] [--only id,id] [--force]`. It only regenerates entries whose text or voice changed. Credentials come from `~/.config/learning-cantonese/config.env` (`AZURE_SPEECH_KEY`, `AZURE_SPEECH_REGION`), read at runtime by `azureConfig()` in `tools/site.mjs`. **Never put the key in any committed file** (code, docs, fixtures, cached responses, logs, commit messages), and never print it; `check.mjs` fails if any file contains it. If a word is misread, set `phoneme: true` to read its jyutping exactly (particles like 呀 嗎 呢, changed tones like 名 meng2), or add an `ssml` override. A person still has to listen to new clips, but run the machine checks first (below) so they know which ones to listen to.
+- Audio: `node tools/tts.mjs [unitN] [--only id,id] [--force]`. It only regenerates entries whose text or voice changed. Credentials come from `~/.config/learning-cantonese/config.env` (`AZURE_SPEECH_KEY`, `AZURE_SPEECH_REGION`, `MINIMAX_KEY`), read at runtime by `tools/site.mjs`. **Never put a key in any committed file** (code, docs, fixtures, cached responses, logs, commit messages), and never print one; `check.mjs` fails if any file contains one. If a word is misread, set `phoneme: true` to read its jyutping exactly (particles like 呀 嗎 呢, changed tones like 名 meng2), or add an `ssml` override. If Azure can't say it at all, give that word `voice: 'minimax:Cantonese_ProfessionalHost（F)'` (unit 9's 今年 舊年 出年: Azure has no nin2). MiniMax is told the jyutping, but it varies from take to take and sometimes adds syllables, so `tts.mjs` makes up to five takes and keeps the first that passes `audio-check`. Keep it to the few words that need it: every MiniMax voice failed tone drills on single syllables in a trial, where Azure passed them all, and the voice differs from the rest of the site. A person still has to listen to new clips, but run the machine checks first (below) so they know which ones to listen to.
 
 ### Verifying audio
 Run after every `tts.mjs` run. It needs ffmpeg, the Azure key, and once: `npm install --prefix ~/.cache/learning-cantonese to-jyutping` (outside the repo, which has no dependencies).
@@ -69,7 +69,7 @@ Limits, learned the hard way:
 - Pronunciation assessment scores the reference text highly even for the wrong word (琴日 against 今日 scores 100). It's used only for timing, never as proof; speech-to-text without a reference is the word check.
 - Speech-to-text is weak on bare single syllables (詩 is heard as the letter "C") and biased towards common words (毫 → 號).
 - Assessment's syllable timings run late. Short syllables ending in p/t/k (十 一 七) are judged by height only: their glottal stop throws the pitch tracker.
-- Azure's sapi phonemes honor tones (`gei 6` falls), except where the voice lacks the syllable: `nin 2` comes out as nin4, so 今年 / 舊年 / 出年 are read nin4 whatever the SSML says.
+- Azure's sapi phonemes honor tones (`gei 6` falls), except where the voice lacks the syllable: `nin 2` comes out as nin4 whatever the SSML says (hence MiniMax for 今年 / 舊年 / 出年).
 - A small rise on a short final syllable can't be told from a level tone.
 - Azure sometimes answers 401 to a burst of requests; the tools retry.
 - Pictures: add a drawing to `unit<N>/art.mjs`, run `node tools/draw.mjs`. Reuse or extend the parts in `tools/svg.mjs` instead of copying markup. Keep the 128×128 flat style, fixed colors, transparent background, and a `<title>`. Render and look at new drawings before committing.

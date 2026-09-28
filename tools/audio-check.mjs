@@ -6,6 +6,9 @@
  *
  *   node tools/audio-check.mjs unit9 [--only id,id] [--all] [--json out.json]
  *
+ * Also a module: checkClip(unit, entry, voice) checks one clip (tts.mjs
+ * uses it to pick a good take from a voice that varies).
+ *
  * For each of the unit's own entries it:
  *   1. decodes audio/<id>.mp3 with ffmpeg: fails on a broken, silent or
  *      clipped file, or one too short or long for its syllable count
@@ -40,18 +43,10 @@ import { execFileSync } from 'node:child_process';
 import vm from 'node:vm';
 import { ROOT, loadVocab, entries, own, azureConfig } from './site.mjs';
 
-const args = process.argv.slice(2);
-const flag = name => { const i = args.indexOf(name); return i < 0 ? null : args[i + 1]; };
-const only = flag('--only') && new Set(flag('--only').split(','));
-const showAll = args.includes('--all');
-const jsonOut = flag('--json');
-const unit = args.find((a, i) => /^unit\d+$/.test(a) && !['--only', '--json'].includes(args[i - 1]));
-if (!unit) { console.error('usage: node tools/audio-check.mjs unit<N> [--only id,id] [--all] [--json out.json]'); process.exit(1); }
-
 const HOME_CACHE = join(homedir(), '.cache/learning-cantonese');
 const CACHE = join(HOME_CACHE, 'audio-check');
 mkdirSync(CACHE, { recursive: true });
-const { key: KEY, region: REGION } = azureConfig();
+let KEY, REGION, getJyutpingList, refs, refVoice;
 
 const sb = { window: {} };
 vm.runInNewContext(readFileSync(join(ROOT, 'shared/pitch.js'), 'utf8'), sb);
@@ -60,8 +55,6 @@ const { track } = sb.window.Pitch;
 // to-jyutping (npm), kept outside the repo: reads what speech-to-text
 // heard as jyutping, so a homophone (分 for 墳) isn't a mismatch.
 const TO_JYUTPING = join(HOME_CACHE, 'node_modules/to-jyutping/dist/index.mjs');
-if (!existsSync(TO_JYUTPING)) { console.error(`Install to-jyutping first: npm install --prefix ${HOME_CACHE} to-jyutping`); process.exit(1); }
-const { getJyutpingList } = await import(pathToFileURL(TO_JYUTPING));
 const toneless = jp => jp.replace(/[1-6]/g, '');
 
 const RATE = 16000;
@@ -181,7 +174,7 @@ function nearest(refs, s, offset) {
 }
 
 // 3. Tones: syllable timings from pronunciation assessment, pitch per syllable.
-async function tones(file, x, e, refs) {
+async function tones(file, x, e, refs, otherVoice) {
   const chars = [...hanziOf(e.hanzi)];
   const want = e.jyutping.split(' ').map(s => +s.slice(-1));
   if (chars.length !== want.length) return { note: 'hanzi and jyutping differ in length; tones not checked' };
@@ -218,8 +211,10 @@ async function tones(file, x, e, refs) {
   // up with the references on its level tones before comparing heights.
   // Shorter clips are compared as they are: this is the references' own
   // voice, and a shift would hide a whole word said too low (琴日 for 今日).
+  // Another voice (a word with its own `voice`) sits at its own pitch, so
+  // it is always lined up.
   const levels = shapes.map((s, i) => s && [1, 3, 6].includes(want[i]) ? (s.start + s.end) / 2 - (refs[want[i]].start + refs[want[i]].end) / 2 : null).filter(v => v != null);
-  const offset = chars.length >= 4 && levels.length ? levels.reduce((a, b) => a + b) / levels.length : 0;
+  const offset = (chars.length >= 4 || otherVoice) && levels.length ? levels.reduce((a, b) => a + b) / levels.length : 0;
   const per = shapes.map((s, i) => {
     if (!s) return { char: chars[i], want: want[i], heard: '?' };
     return { char: chars[i], want: want[i], heard: nearest(refs, s, offset), shape: `${s.start.toFixed(1)}→${s.end.toFixed(1)}`, clash: clash(want[i], s, refs, offset, chars.length === 1) };
@@ -227,18 +222,25 @@ async function tones(file, x, e, refs) {
   return { per };
 }
 
-const vocab = loadVocab(unit);
-const list = entries(vocab).filter(e => own(e, unit) && (!only || only.has(e.id)));
-const refs = referenceTones();
-const report = [];
-let n = 0;
-for (const e of list) {
-  const file = clip(unit, e.id);
+async function setup() {
+  if (refs) return;
+  ({ key: KEY, region: REGION } = azureConfig());
+  if (!existsSync(TO_JYUTPING)) { console.error(`Install to-jyutping first: npm install --prefix ${HOME_CACHE} to-jyutping`); process.exit(1); }
+  ({ getJyutpingList } = await import(pathToFileURL(TO_JYUTPING)));
+  refs = referenceTones();
+  refVoice = loadVocab('unit1').voice;
+}
+
+// Check one entry's clip (unit<N>/audio/<id>.mp3, or `file`). `voice` is
+// the voice it was made with. Returns { id, hanzi, jyutping, secs, heard,
+// tones, problems: [...], notes: [...] }: problems are likely wrong,
+// notes worth a listen.
+export async function checkClip(unit, e, voice, file = clip(unit, e.id)) {
+  await setup();
   const r = { id: e.id, hanzi: e.hanzi, jyutping: e.jyutping, problems: [], notes: [] };
-  report.push(r);
-  if (!existsSync(file)) { r.problems.push('no audio file'); continue; }
+  if (!existsSync(file)) { r.problems.push('no audio file'); return r; }
   let x;
-  try { x = decode(file); } catch (err) { r.problems.push(`ffmpeg can't decode it: ${err.message.split('\n')[0]}`); continue; }
+  try { x = decode(file); } catch (err) { r.problems.push(`ffmpeg can't decode it: ${err.message.split('\n')[0]}`); return r; }
   const syllables = e.jyutping.split(' ').length;
   const b = basics(x, syllables);
   r.secs = +b.secs.toFixed(2);
@@ -251,25 +253,43 @@ for (const e of list) {
     r.notes.push(`speech-to-text heard ${r.heard || 'nothing'} ${r.heardJyutping}`);
   }
 
-  const t = await tones(file, x, e, refs);
+  const t = await tones(file, x, e, refs, voice !== refVoice);
   if (t.note) r.notes.push(t.note);
   r.tones = t.per;
   // Syllable timing and coarticulation make tones in a longer clip less
   // certain: a clash there is worth a listen, in a word it's a problem.
   const clashes = (t.per ?? []).filter(p => p.clash);
   if (clashes.length) (syllables > 3 ? r.notes : r.problems).push(`tone shape: ${clashes.map(p => `${p.char} tone ${p.want} ${p.clash} (measured ${p.shape})`).join('; ')}`);
-  process.stderr.write(`\r${++n}/${list.length}`);
+  return r;
 }
-process.stderr.write('\n');
 
-const tonesText = r => (r.tones ?? []).map(p => `${p.char}${p.want}${p.heard === p.want ? '' : `(~${p.heard})`}`).join(' ');
-const flagged = report.filter(r => r.problems.length || r.notes.length);
-for (const r of showAll ? report : flagged) {
-  console.log(`${r.problems.length ? 'CHECK' : r.notes.length ? 'LISTEN' : 'ok'}  ${r.id}  ${r.hanzi} ${r.jyutping}  [${tonesText(r)}]`);
-  for (const p of r.problems) console.log(`      problem: ${p}`);
-  for (const p of r.notes) console.log(`      ${p}`);
+if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+  const args = process.argv.slice(2);
+  const flag = name => { const i = args.indexOf(name); return i < 0 ? null : args[i + 1]; };
+  const only = flag('--only') && new Set(flag('--only').split(','));
+  const showAll = args.includes('--all');
+  const jsonOut = flag('--json');
+  const unit = args.find((a, i) => /^unit\d+$/.test(a) && !['--only', '--json'].includes(args[i - 1]));
+  if (!unit) { console.error('usage: node tools/audio-check.mjs unit<N> [--only id,id] [--all] [--json out.json]'); process.exit(1); }
+
+  const vocab = loadVocab(unit);
+  const list = entries(vocab).filter(e => own(e, unit) && (!only || only.has(e.id)));
+  const report = [];
+  for (const e of list) {
+    report.push(await checkClip(unit, e, e.voice ?? vocab.voice));
+    process.stderr.write(`\r${report.length}/${list.length}`);
+  }
+  process.stderr.write('\n');
+
+  const tonesText = r => (r.tones ?? []).map(p => `${p.char}${p.want}${p.heard === p.want ? '' : `(~${p.heard})`}`).join(' ');
+  const flagged = report.filter(r => r.problems.length || r.notes.length);
+  for (const r of showAll ? report : flagged) {
+    console.log(`${r.problems.length ? 'CHECK' : r.notes.length ? 'LISTEN' : 'ok'}  ${r.id}  ${r.hanzi} ${r.jyutping}  [${tonesText(r)}]`);
+    for (const p of r.problems) console.log(`      problem: ${p}`);
+    for (const p of r.notes) console.log(`      ${p}`);
+  }
+  const bad = report.filter(r => r.problems.length).length, listen = flagged.length - bad;
+  console.log(`\n${unit}: ${report.length} clips; ${bad} with problems, ${listen} worth a listen, ${report.length - flagged.length} ok.`);
+  console.log('Tones in [ ]: expected tone, (~n) where the nearest of the voice\'s own tones differs; a hint only.');
+  if (jsonOut) writeFileSync(jsonOut, JSON.stringify(report, null, 1));
 }
-const bad = report.filter(r => r.problems.length).length, listen = flagged.length - bad;
-console.log(`\n${unit}: ${report.length} clips; ${bad} with problems, ${listen} worth a listen, ${report.length - flagged.length} ok.`);
-console.log('Tones in [ ]: expected tone, (~n) where the nearest of the voice\'s own tones differs; a hint only.');
-if (jsonOut) writeFileSync(jsonOut, JSON.stringify(report, null, 1));

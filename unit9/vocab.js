@@ -4,7 +4,8 @@
  *
  * Entry fields: id (unique in the unit, used for file names), hanzi,
  * jyutping, english, note?, img (false = no picture), phoneme? (true:
- * tools/tts.mjs reads the jyutping exactly), plus h and m (hour and
+ * tools/tts.mjs reads the jyutping exactly), voice? (another voice for
+ * this word, e.g. 'minimax:<voice id>'), plus h and m (hour and
  * minute, drawn as a clock by art.mjs) on times, and n on weekdays,
  * months and dates.
  *
@@ -60,11 +61,11 @@ Units.add(9, {
       note: 'High tone 1: 今日 gam1, but 琴日 kam4 is yesterday.' },
     { id: 'ting-jat', hanzi: '聽日', jyutping: 'ting1 jat6', english: 'tomorrow', img: false },
     { id: 'hau-jat', hanzi: '後日', jyutping: 'hau6 jat6', english: 'the day after tomorrow', img: false },
-    { id: 'gam-nin', hanzi: '今年', jyutping: 'gam1 nin2', english: 'this year', img: false, phoneme: true,
+    { id: 'gam-nin', hanzi: '今年', jyutping: 'gam1 nin2', english: 'this year', img: false,
       note: '年 is nin4, but changes to nin2 in 今年, 舊年 and 出年.' },
-    { id: 'gau-nin', hanzi: '舊年', jyutping: 'gau6 nin2', english: 'last year', img: false, phoneme: true,
+    { id: 'gau-nin', hanzi: '舊年', jyutping: 'gau6 nin2', english: 'last year', img: false,
       note: 'Literally "old year".' },
-    { id: 'ceot-nin', hanzi: '出年', jyutping: 'ceot1 nin2', english: 'next year', img: false, phoneme: true,
+    { id: 'ceot-nin', hanzi: '出年', jyutping: 'ceot1 nin2', english: 'next year', img: false,
       note: 'Literally "out year". 明年 ming4 nin2 also works.' },
   ],
 
@@ -78,6 +79,12 @@ Units.add(9, {
       note: 'After a time, "see you then": 聽日見！' },
   ],
 });
+
+// Azure reads 年 nin2 as nin4 whatever it's told, so 今年 舊年 出年 are
+// made with MiniMax (see tools/tts.mjs), which is given the jyutping.
+(V => {
+  for (const id of ['gam-nin', 'gau-nin', 'ceot-nin']) V.days.find(e => e.id === id).voice = 'minimax:Cantonese_ProfessionalHost（F)';
+})(window.VOCAB);
 
 // Borrowed: 半 from unit 6, 個 from unit 4, people and 係 / 呀 from unit 3,
 // and 飲茶 from unit 7.

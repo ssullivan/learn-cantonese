@@ -13,8 +13,10 @@
  *   azureConfig()    { key, region } for Azure Speech, from the environment
  *                    or ~/.config/learning-cantonese/config.env; exits if
  *                    missing (tts.mjs, audio-check.mjs)
- *   azureSecrets()   the same, but { key: undefined, ... } instead of
- *                    exiting (check.mjs, to make sure no file holds the key)
+ *   minimaxConfig()  { key } for MiniMax (MINIMAX_KEY), the same way (tts.mjs)
+ *   secrets()        { azureKey, azureRegion, minimaxKey }, undefined when
+ *                    not set, without exiting (check.mjs, to make sure no
+ *                    file holds a key)
  */
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { homedir } from 'node:os';
@@ -53,23 +55,33 @@ export async function loadArt(unit) {
 
 const CONFIG = join(homedir(), '.config/learning-cantonese/config.env');
 
-// The Azure key and region from the environment or CONFIG, or undefined.
-export function azureSecrets() {
+// Keys from the environment, or from CONFIG (never from the repo), or
+// undefined when not set.
+export function secrets() {
   if (existsSync(CONFIG)) {
     for (const line of readFileSync(CONFIG, 'utf8').split('\n')) {
       const m = line.match(/^\s*(?:export\s+)?([A-Z_]+)\s*=\s*"?([^"\n]*)"?\s*$/);
       if (m && !process.env[m[1]]) process.env[m[1]] = m[2];
     }
   }
-  const { AZURE_SPEECH_KEY: key, AZURE_SPEECH_REGION: region } = process.env;
-  return { key, region };
+  const env = process.env;
+  return { azureKey: env.AZURE_SPEECH_KEY, azureRegion: env.AZURE_SPEECH_REGION, minimaxKey: env.MINIMAX_API_KEY || env.MINIMAX_KEY };
 }
 
 export function azureConfig() {
-  const { key, region } = azureSecrets();
+  const { azureKey: key, azureRegion: region } = secrets();
   if (!key || !region) {
     console.error(`Set AZURE_SPEECH_KEY and AZURE_SPEECH_REGION (env or ${CONFIG}).`);
     process.exit(1);
   }
   return { key, region };
+}
+
+export function minimaxConfig() {
+  const { minimaxKey: key } = secrets();
+  if (!key) {
+    console.error(`Set MINIMAX_KEY (env or ${CONFIG}).`);
+    process.exit(1);
+  }
+  return { key };
 }
