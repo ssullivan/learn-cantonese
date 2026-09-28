@@ -5,7 +5,16 @@
  *   Canto.el(tag, cls?, html?)   create an element
  *   Canto.esc(text)              HTML-escape
  *   Canto.jyutping("haa1 gaau2") HTML with tone digits in <sup>
- *   Canto.zh(hanzi, jyutping)    HTML: characters followed by jyutping
+ *   Canto.zh(hanzi, jyutping)    HTML: the characters and their jyutping
+ *                                (span.zh > span.hanzi + span.jp). Each
+ *                                character also carries its syllable as
+ *                                ruby: theme.css shows it over the
+ *                                character in words on their own on wide
+ *                                screens, and the jyutping after the word
+ *                                elsewhere (see "Chinese with Jyutping")
+ *   Canto.pairs(hanzi, jyutping) [[character, syllable or null]], or null
+ *                                if the characters and syllables don't pair
+ *                                up one to one (卅 saa1 aa6)
  *   Canto.tones("haa1 gaau2")    tone number of each syllable: [1, 2]
  *   Canto.toneChart()            HTML table of the six tones (.tone-chart):
  *                                contour, number, name, example word
@@ -43,7 +52,29 @@
 
   const jyutping = s => esc(s).replace(/([a-z]+)([1-6])/g, '$1<sup>$2</sup>');
 
-  const zh = (hanzi, jp) => `<span class="hanzi" lang="zh-HK">${esc(hanzi)}</span> <span class="jp">${jyutping(jp)}</span>`;
+  // Characters paired with their syllables: [[char, syllable or null]], a
+  // Han character taking the next syllable and anything else (punctuation)
+  // none; null if the counts differ (卅 is saa1 aa6).
+  const isHan = c => /\p{Script=Han}/u.test(c);
+  function pairs(hanzi, jp) {
+    const sylls = jp.split(' ').filter(Boolean);
+    const chars = [...hanzi];
+    if (chars.filter(isHan).length !== sylls.length) return null;
+    let k = 0;
+    return chars.map(c => [c, isHan(c) ? sylls[k++] : null]);
+  }
+
+  // Both forms in one: each character with its syllable as ruby, and the
+  // Jyutping after the word. theme.css shows the ruby only in words on
+  // their own on wide screens, and the Jyutping after the word elsewhere.
+  function zh(hanzi, jp) {
+    const p = pairs(hanzi, jp);
+    // <wbr>: a line may break before a character, as in plain Chinese text
+    // (a run of <ruby> elements has no break opportunities of its own), but
+    // never before punctuation, which stays with the character before it.
+    const chars = p ? p.map(([c, syl], i) => syl ? `${i ? '<wbr>' : ''}<ruby>${esc(c)}<rt>${jyutping(syl)}</rt></ruby>` : esc(c)).join('') : esc(hanzi);
+    return `<span class="zh${p ? '' : ' zh-flat'}"><span class="hanzi" lang="zh-HK">${chars}</span> <span class="jp">${jyutping(jp)}</span></span>`;
+  }
 
   const tones = jp => jp.split(' ').map(syl => +syl.slice(-1));
 
@@ -138,5 +169,5 @@
     };
   }
 
-  window.Canto = { el, esc, jyutping, zh, tones, toneChart, shuffle, pick, confusable, imgSrc, audioSrc, play, picButton, speech, entries, store };
+  window.Canto = { el, esc, jyutping, zh, pairs, tones, toneChart, shuffle, pick, confusable, imgSrc, audioSrc, play, picButton, speech, entries, store };
 })();

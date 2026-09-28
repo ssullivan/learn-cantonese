@@ -17,7 +17,7 @@
  * you a student?"). The sentence plays afterwards.
  */
 (function () {
-  const { el: $, esc, zh, jyutping, shuffle, pick } = Canto;
+  const { el: $, esc, zh, shuffle, pick } = Canto;
 
   function round({ pool, vocab, decoys = [], extra = 2 }) {
     const byId = Object.fromEntries(Canto.entries(vocab).map(e => [e.id, e]));
@@ -34,7 +34,7 @@
       check.disabled = true;
 
       shuffle([...words, ...wrong]).forEach(w => {
-        const t = $('button', 'tile', `<span class="hanzi" lang="zh-HK">${esc(w.hanzi)}</span><span class="jp">${jyutping(w.jyutping)}</span>`);
+        const t = $('button', 'tile', zh(w.hanzi, w.jyutping));
         t.type = 'button';
         t.dataset.hanzi = w.hanzi;
         t.addEventListener('click', () => {

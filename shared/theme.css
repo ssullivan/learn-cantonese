@@ -17,6 +17,8 @@
  * Tones:    .tone-chart (Canto.toneChart)
  * Text:     [lang="zh-HK"] gets the Chinese font; .jp is jyutping,
  *           its tone digits are <sup> (see Canto.jyutping in core.js).
+ *           .zh (Canto.zh): Jyutping over each character in words on
+ *           their own on wide screens, after the word elsewhere.
  */
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;700&display=swap");
@@ -236,4 +238,23 @@ a.card:hover { border-color: var(--accent); }
 
 /* Jyutping */
 .jp { color: var(--ink-soft); font-size: 0.95em; }
-.jp sup { font-size: 0.65em; margin-left: 1px; color: var(--gold); font-weight: 700; }
+:is(.jp, .zh rt) sup { font-size: 0.65em; margin-left: 1px; color: var(--gold); font-weight: 700; }
+
+/* Chinese with Jyutping (Canto.zh). In prose, and on phones, the Jyutping
+   follows the word. In words on their own (word cards, answers, tiles,
+   speech bubbles, Say It Back) on wider screens, each syllable sits over
+   its character, and the Jyutping after the word is hidden (display: none,
+   so screen readers read it once). .zh-flat: characters and syllables
+   don't pair up (卅 saa1 aa6), so it keeps the Jyutping after the word. */
+.zh rt { display: none; }
+:is(.word, .tile) .zh { display: contents; }
+@media (min-width: 700px) {
+  :is(.word, .choice, .tile, .speech, .say-word) .zh:not(.zh-flat) rt {
+    display: revert;
+    font: 400 14px/1.3 var(--font);
+    color: var(--ink-soft);
+    padding-bottom: 2px;
+  }
+  :is(.word, .choice, .tile, .speech, .say-word) .zh:not(.zh-flat) .jp { display: none; }
+  :is(.word, .choice, .tile, .speech, .say-word) .zh ruby { ruby-position: over; ruby-align: center; margin: 0 0.1em; }
+}

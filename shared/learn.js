@@ -59,14 +59,10 @@
         img.width = img.height = 128;
         b.append(img);
       }
-      b.append(
-        $('span', 'hanzi', esc(entry.hanzi)),
-        $('span', 'jp', jyutping(entry.jyutping)),
-        $('span', 'en', esc(entry.english)),
-      );
+      b.insertAdjacentHTML('beforeend', zh(entry.hanzi, entry.jyutping));
+      b.append($('span', 'en', esc(entry.english)));
       if (entry.note) b.append($('span', 'note', esc(entry.note)));
       b.append($('span', 'play', '▶'));
-      b.querySelector('.hanzi').lang = 'zh-HK';
       b.addEventListener('click', () => {
         play(entry);
         b.classList.remove('pulse');

@@ -49,6 +49,9 @@
   margin: 16px 0;
 }
 .word-grid.wide { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+/* Where Jyutping sits over each character (theme.css), a syllable takes
+   ~50px: give sentence cards two columns so most fit on one line. */
+@media (min-width: 700px) { .word-grid.wide { grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); } }
 @media (max-width: 560px) {
   .word-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
   .word-grid.wide { grid-template-columns: 1fr; }

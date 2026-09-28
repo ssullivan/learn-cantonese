@@ -12,7 +12,7 @@
  * "Sounds right" are saved under `key` as { got: [ids] }.
  */
 (function () {
-  const { el: $, esc, jyutping, audioSrc, imgSrc } = Canto;
+  const { el: $, esc, audioSrc, imgSrc } = Canto;
   const MAX_SECONDS = 4;
 
   function init({ root, key, pool }) {
@@ -80,8 +80,7 @@
         img.alt = '';
         head.append(img);
       }
-      const text = $('div', null, `<span class="hanzi" lang="zh-HK">${esc(e.hanzi)}</span>
-        <span class="jp">${jyutping(e.jyutping)}</span><span class="en">${esc(e.english)}</span>`);
+      const text = $('div', null, `${Canto.zh(e.hanzi, e.jyutping)}<span class="en">${esc(e.english)}</span>`);
       head.append(text);
 
       const box = $('div', 'pitch-box');

@@ -84,6 +84,7 @@ Limits, learned the hard way:
 - Local CSS and JS are loaded with a `?v=<hash>` cache stamp; `node tools/check.mjs --fix` writes them. Never edit a stamp by hand.
 - Learn pages run on `shared/learn.js`; `unit7/learn.html` + `lessons.js` is the template. Games run on `shared/game.js`; `unit7/trolley.*` is the template. Put reusable UI in `shared/`, not in a unit's script.
 - Script order: `core.js`, `audio.js`, then `learn.js` or `game.js` (+ `tones.js`, `reply.js`...), then `numbers.js` if any loaded vocab uses `Canto.number`, then `units.js`, the `../unit<n>/vocab.js` of every unit it borrows from, the unit's own `vocab.js`, and the page script. check.mjs enforces the vocab part.
+- Show Chinese with its Jyutping through `Canto.zh(hanzi, jyutping)`, never hand-built spans. It puts each syllable over its character (ruby) in words on their own (word cards, answers, tiles, speech bubbles, Say It Back) at 700 px and wider, and the Jyutping after the word in prose and on phones (theme.css "Chinese with Jyutping"). A word whose characters and syllables don't pair up (卅 saa1 aa6) keeps the Jyutping after the word.
 - No emoji in the UI (they break on systems without an emoji font); use text, ▶, ★, or a Chinese character badge (`Canto.speech`).
 - Game pages and learn pages link back to their unit page with `href="../"` ("← Unit N").
 - When adding a learn page or game, add its card to `unit<N>/index.html` (turning a "Coming soon" card into a real one).
