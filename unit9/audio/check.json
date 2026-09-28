@@ -1,0 +1,453 @@
+{
+ "aan-zau": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 蘭州 laan zau"
+  ],
+  "audio": "51567f51e957"
+ },
+ "d12": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 二 tone 6 sounds like 3 (p 0.09)"
+  ],
+  "audio": "5511698427af"
+ },
+ "d15": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 五 tone 5 sounds like 2 (p 0.03)"
+  ],
+  "audio": "af6b24fb9b69"
+ },
+ "d22": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 二 tone 6 sounds like 3 (p 0.18)"
+  ],
+  "audio": "13394d6523dd"
+ },
+ "d24": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 號 tone 6 sounds like 3 (p 0.45)"
+  ],
+  "audio": "ac741a13689a"
+ },
+ "d25": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 五 tone 5 sounds like 2 (p 0.03)",
+   "tone doubtful: 廿 tone 6 sounds like 4 (p 0.20)"
+  ],
+  "audio": "da057eb5da79"
+ },
+ "d5": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 五 tone 5 sounds like 2 (p 0.18)"
+  ],
+  "audio": "c81667c7c53a"
+ },
+ "gam-jat-gei-jyut-gei-hou6-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 幾 tone 2 sounds like 4 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 月 tone 6 sounds like 3 (p 0.34); 號 tone 6 sounds like 5 (p 0.06)"
+  ],
+  "audio": "2d61b5840fde"
+ },
+ "gam-jat-m5-d3": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 五 tone 5 sounds like 2 (p 0.37); 月 tone 6 sounds like 3 (p 0.16)"
+  ],
+  "audio": "a645d9f4846b"
+ },
+ "gam-jat-sing-kei-gei-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 幾 tone 2 sounds like 4 (p 0.00); 呀 tone 3 sounds like 2 (p 0.00)"
+  ],
+  "audio": "64e957dae953"
+ },
+ "gau-nin": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 舊 tone 6 sounds like 4 (p 0.03)"
+  ],
+  "audio": "a34e18a1492c"
+ },
+ "gei": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard gay g a y"
+  ],
+  "audio": "dae7402f4051"
+ },
+ "gei-dim": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 幾 tone 2 sounds like 5 (p 0.01)"
+  ],
+  "audio": "b007748122d6"
+ },
+ "gei-jyut-gei-hou6": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 號 tone 6 sounds like 2 (p 0.00)",
+   "tone doubtful: 幾 tone 2 sounds like 4 (p 0.05); 月 tone 6 sounds like 3 (p 0.34)"
+  ],
+  "audio": "ebbe730227c7"
+ },
+ "gin": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard G g"
+  ],
+  "audio": "7ad933e626b1"
+ },
+ "haa": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 怕 paa"
+  ],
+  "audio": "7b1cd089d1fd"
+ },
+ "hou6": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 鋪 pou"
+  ],
+  "audio": "e60e69ff8a27"
+ },
+ "ji-gaa-gei-dim-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 而 tone 4 sounds like 3 (p 0.10)"
+  ],
+  "audio": "39def4704c1c"
+ },
+ "ji-gaa-t0330": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 而 tone 4 sounds like 2 (p 0.09)"
+  ],
+  "audio": "c4642e0ff983"
+ },
+ "m12": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 二 tone 6 sounds like 3 (p 0.03)",
+   "tone doubtful: 月 tone 6 sounds like 3 (p 0.46)"
+  ],
+  "audio": "e62dbe01e6ba"
+ },
+ "m4": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 月 tone 6 sounds like 3 (p 0.03)"
+  ],
+  "audio": "9aff8afbbdd6"
+ },
+ "m5": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 月 tone 6 sounds like 3 (p 0.37)"
+  ],
+  "audio": "3f93329860c5"
+ },
+ "nei-gei-dim-faan-gung-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 返 tone 1 sounds like 2 (p 0.00); 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "f9aebb35b0a2"
+ },
+ "nei-gei-dim-sik-faan-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 飯 tone 6 sounds like 2 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 你 tone 5 sounds like 4 (p 0.26)"
+  ],
+  "audio": "0be6e24fd167"
+ },
+ "nei-gei-si-yum-cha-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 2 (p 0.00)",
+   "speech-to-text heard 你幾時飲茶 nei gei si jam caa"
+  ],
+  "audio": "d008c49ce41d"
+ },
+ "ngo-wk6-yum-cha": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.34)"
+  ],
+  "audio": "771eeefd8a5e"
+ },
+ "soeng": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Song s o n g"
+  ],
+  "audio": "d04b55694fcf"
+ },
+ "t0105": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 點 tone 2 sounds like 6 (p 0.02)"
+  ],
+  "audio": "5c78a5b15137"
+ },
+ "t0125": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 五 tone 5 sounds like 2 (p 0.41)"
+  ],
+  "audio": "3f9c79d38999"
+ },
+ "t0205": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 個 tone 3 sounds like 6 (p 0.09)"
+  ],
+  "audio": "46953fe136dd"
+ },
+ "t0225": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 點 tone 2 sounds like 1 (p 0.28); 五 tone 5 sounds like 2 (p 0.40); 個 tone 3 sounds like 3 (p 0.44)"
+  ],
+  "audio": "93487334870f"
+ },
+ "t0305-fan": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 3點05分 saam dim ng fan",
+   "tone doubtful: 五 tone 5 sounds like 2 (p 0.18)"
+  ],
+  "audio": "eb59581ce2e7"
+ },
+ "t0310": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 兩 tone 5 sounds like 2 (p 0.33)"
+  ],
+  "audio": "a986d396d3dc"
+ },
+ "t0315-fan": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 五 tone 5 sounds like 2 (p 0.41)"
+  ],
+  "audio": "8ec876d097b7"
+ },
+ "t0325": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 點 tone 2 sounds like 5 (p 0.27)"
+  ],
+  "audio": "b4c6841f6678"
+ },
+ "t0345-fan": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 五 tone 5 sounds like 2 (p 0.35)"
+  ],
+  "audio": "48b45dc02d46"
+ },
+ "t0405": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 個 tone 3 sounds like 6 (p 0.31)"
+  ],
+  "audio": "ad2c4e8f41e0"
+ },
+ "t0455": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 個 tone 3 sounds like 6 (p 0.34)"
+  ],
+  "audio": "fec1c9bea1e3"
+ },
+ "t0505": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 五 tone 5 sounds like 2 (p 0.42)"
+  ],
+  "audio": "c9fde624f0bd"
+ },
+ "t0510": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 點 tone 2 sounds like 6 (p 0.00)",
+   "speech-to-text heard 唔掂2個字 m dim ji go zi",
+   "tone doubtful: 兩 tone 5 sounds like 2 (p 0.09)"
+  ],
+  "audio": "1e7c7fd50936"
+ },
+ "t0515": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 點 tone 2 sounds like 6 (p 0.01)"
+  ],
+  "audio": "8b7b6f84f04f"
+ },
+ "t0520": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 點 tone 2 sounds like 6 (p 0.01)"
+  ],
+  "audio": "684431a26189"
+ },
+ "t0525": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 點 tone 2 sounds like 6 (p 0.00)",
+   "tone doubtful: 五 tone 5 sounds like 2 (p 0.05); 個 tone 3 sounds like 6 (p 0.27)"
+  ],
+  "audio": "d17d9500081c"
+ },
+ "t0530": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 點 tone 2 sounds like 6 (p 0.01)"
+  ],
+  "audio": "55b3510e9a22"
+ },
+ "t0535": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 點 tone 2 sounds like 6 (p 0.01)"
+  ],
+  "audio": "8d6d94cbe154"
+ },
+ "t0540": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 點 tone 2 sounds like 6 (p 0.00)",
+   "tone doubtful: 五 tone 5 sounds like 2 (p 0.40)"
+  ],
+  "audio": "624a7bd39df9"
+ },
+ "t0545": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 點 tone 2 sounds like 6 (p 0.00)",
+   "speech-to-text heard 唔掂9個字 m dim gau go zi"
+  ],
+  "audio": "5fd6a46de03b"
+ },
+ "t0550": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 點 tone 2 sounds like 6 (p 0.00)",
+   "speech-to-text heard 唔掂10個字 m dim sap go zi"
+  ],
+  "audio": "6af3df56f079"
+ },
+ "t0555": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 點 tone 2 sounds like 6 (p 0.00)",
+   "tone doubtful: 十 tone 6 sounds like 1 (p 0.14)"
+  ],
+  "audio": "53f38ee2a944"
+ },
+ "t0625": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 個 tone 3 sounds like 6 (p 0.17)"
+  ],
+  "audio": "89d6682ea363"
+ },
+ "t0655": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 十 tone 6 sounds like 1 (p 0.15)"
+  ],
+  "audio": "c179c50dd4ed"
+ },
+ "t0708-fan": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 7點08分 cat dim baat fan"
+  ],
+  "audio": "784edb4a0821"
+ },
+ "t0720-fan": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 二 tone 6 sounds like 3 (p 0.02)"
+  ],
+  "audio": "b1452b9500fa"
+ },
+ "t0725": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 點 tone 2 sounds like 6 (p 0.04); 五 tone 5 sounds like 4 (p 0.03)"
+  ],
+  "audio": "41ea594826f0"
+ },
+ "t0805": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 個 tone 3 sounds like 6 (p 0.21)"
+  ],
+  "audio": "94d082e22841"
+ },
+ "t0825": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 點 tone 2 sounds like 5 (p 0.04)",
+   "tone doubtful: 五 tone 5 sounds like 6 (p 0.09)"
+  ],
+  "audio": "4783e63d35ab"
+ },
+ "t1005": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 個 tone 3 sounds like 6 (p 0.15)"
+  ],
+  "audio": "cf00c4f83dd0"
+ },
+ "t1025": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 點 tone 2 sounds like 1 (p 0.28); 五 tone 5 sounds like 2 (p 0.21)"
+  ],
+  "audio": "78b767afef5b"
+ },
+ "t1050-fan": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 五 tone 5 sounds like 6 (p 0.11)"
+  ],
+  "audio": "70ccd1d33cda"
+ },
+ "t1125": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 點 tone 2 sounds like 6 (p 0.02)"
+  ],
+  "audio": "7fe1b7fabb75"
+ },
+ "t1225": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 五 tone 5 sounds like 6 (p 0.04)",
+   "tone doubtful: 點 tone 2 sounds like 5 (p 0.15)"
+  ],
+  "audio": "bff5f21bfb02"
+ },
+ "ting-jat-hai-wk6": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 六 tone 6 sounds like 1 (p 0.31)"
+  ],
+  "audio": "6c3f3f90aadf"
+ }
+}

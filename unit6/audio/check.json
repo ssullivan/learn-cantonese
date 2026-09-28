@@ -1,0 +1,190 @@
+{
+ "dak": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard nothing "
+  ],
+  "audio": "e1ae4318aadc"
+ },
+ "gei-do-cin-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 幾 tone 2 sounds like 5 (p 0.45); 錢 tone 2 sounds like 2 (p 0.39)"
+  ],
+  "audio": "72f184eed9b9"
+ },
+ "go2-go-gei-do-cin-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 嗰 tone 2 sounds like 5 (p 0.06)"
+  ],
+  "audio": "09bd41d9d2bf"
+ },
+ "jiu": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard you y o u"
+  ],
+  "audio": "88e915f0586f"
+ },
+ "maai6": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard my m y"
+  ],
+  "audio": "5453c62db4bc"
+ },
+ "ngo-jiu-loeng-go-orange": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 兩 tone 5 sounds like 2 (p 0.24)"
+  ],
+  "audio": "6ed562f01153"
+ },
+ "ngo-maai5-ni-go": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 買 tone 5 sounds like 2 (p 0.14)"
+  ],
+  "audio": "abfd6071022f"
+ },
+ "ni-bun-book-gei-do-cin-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "speech-to-text heard 呢本書幾多錢吖 ne bun syu gei do cin aa"
+  ],
+  "audio": "fd2706a8bb1d"
+ },
+ "ni-go-gei-do-cin-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 幾 tone 2 sounds like 5 (p 0.38)"
+  ],
+  "audio": "58f0f9daf906"
+ },
+ "no-need-zaau": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 唔使走 m si zau"
+  ],
+  "audio": "77b0dfb8af34"
+ },
+ "one-bread": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 一 tone 1 sounds like 3 (p 0.07)"
+  ],
+  "audio": "1f41042fc282"
+ },
+ "one-orange": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 一 tone 1 sounds like 6 (p 0.23); 個 tone 3 sounds like 6 (p 0.09)"
+  ],
+  "audio": "ce6b256f7b23"
+ },
+ "orange": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 慘 caam"
+  ],
+  "audio": "1ab88dbf05f3"
+ },
+ "p1250": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 二 tone 6 sounds like 3 (p 0.41)"
+  ],
+  "audio": "fa63552a40d1"
+ },
+ "p20": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 兩 tone 5 sounds like 2 (p 0.04)"
+  ],
+  "audio": "1fa25f9600e2"
+ },
+ "p200": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 兩 tone 5 sounds like 2 (p 0.03)"
+  ],
+  "audio": "9e9a452fa8a6"
+ },
+ "p250": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 兩 tone 5 sounds like 2 (p 0.16)"
+  ],
+  "audio": "846eea84b9e8"
+ },
+ "p25000": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 2005蚊 ji cin ling ng man"
+  ],
+  "audio": "a24f27a536ea"
+ },
+ "p250000": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 20005蚊 ji maan ling ng man",
+   "tone doubtful: 五 tone 5 sounds like 2 (p 0.36)"
+  ],
+  "audio": "3336afe229be"
+ },
+ "p35000": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 3005蚊 saam cin ling ng man",
+   "tone doubtful: 五 tone 5 sounds like 2 (p 0.46)"
+  ],
+  "audio": "61a6a5a6bd83"
+ },
+ "p38000": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 3008蚊 saam cin ling baat man"
+  ],
+  "audio": "d6f883ec27a2"
+ },
+ "p45000": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 4005蚊 sei cin ling ng man"
+  ],
+  "audio": "560d9103ae67"
+ },
+ "p50": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 五 tone 5 sounds like 2 (p 0.01)"
+  ],
+  "audio": "e41637f89c3b"
+ },
+ "p88000": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 8008蚊 baat cin ling baat man"
+  ],
+  "audio": "cb4cf8036d65"
+ },
+ "peng": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 停 ting"
+  ],
+  "audio": "a695ffa98d08"
+ },
+ "peng-di-dak-m-dak-aa": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 平啲得唔得架 ping di dak m dak gaa"
+  ],
+  "audio": "371ce2f1554e"
+ }
+}

@@ -1,0 +1,237 @@
+{
+ "bui": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard nothing "
+  ],
+  "audio": "5d9dd1e14209"
+ },
+ "di": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard d d"
+  ],
+  "audio": "8f2e63154111"
+ },
+ "gin": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 二 ji"
+  ],
+  "audio": "83c133c1586e"
+ },
+ "go2": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 果 gwo"
+  ],
+  "audio": "a4a514d0eb22"
+ },
+ "go2-go-hai-mat-je-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 嘢 tone 5 sounds like 2 (p 0.00); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 嗰 tone 2 sounds like 5 (p 0.10)"
+  ],
+  "audio": "b6ef1ef2d01a"
+ },
+ "keoi-jau-n1-deoi-shoes": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 佢 tone 5 sounds like 6 (p 0.13); 有 tone 5 sounds like 6 (p 0.18)"
+  ],
+  "audio": "f39f8cc7edc2"
+ },
+ "keoi-jau-n1-gaa-car": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 佢 tone 5 sounds like 6 (p 0.16); 有 tone 5 sounds like 2 (p 0.17)"
+  ],
+  "audio": "15b8d63105ca"
+ },
+ "n5-trousers": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 五 tone 5 sounds like 2 (p 0.18)"
+  ],
+  "audio": "bafd64d61dae"
+ },
+ "n6-fish": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 魚 tone 4 sounds like 2 (p 0.00)"
+  ],
+  "audio": "1e1bf212eb25"
+ },
+ "n8-flower": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 白枝花 baak zi faa"
+  ],
+  "audio": "36f88dc95e31"
+ },
+ "nei-jau-gei-do-bun-book-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "3a497b7fa365"
+ },
+ "nei-jau-gei-do-zek-dog-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 幾 tone 2 sounds like 5 (p 0.09)"
+  ],
+  "audio": "0585e4993682"
+ },
+ "ngo-dei-jau-loeng-bui-tea": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 兩 tone 5 sounds like 2 (p 0.06)"
+  ],
+  "audio": "c533a65fdaad"
+ },
+ "ngo-jau-loeng-zek-cat": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 兩 tone 5 sounds like 2 (p 0.10)"
+  ],
+  "audio": "ec7d30428013"
+ },
+ "ni": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard nothing "
+  ],
+  "audio": "721fc7ba4eee"
+ },
+ "ni-di-hai-mat-je-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 嘢 tone 5 sounds like 2 (p 0.00); 呀 tone 3 sounds like 1 (p 0.00)",
+   "speech-to-text heard 呢啲係乜嘢吖 ne di hai mat je aa"
+  ],
+  "audio": "456b8127507b"
+ },
+ "ni-go-hai-mat-je-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 嘢 tone 5 sounds like 2 (p 0.00); 呀 tone 3 sounds like 1 (p 0.00)",
+   "speech-to-text heard 呢個係乜嘢吖 ne go hai mat je aa"
+  ],
+  "audio": "06ad9ffbbfdc"
+ },
+ "one-cake": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 一 tone 1 sounds like 6 (p 0.04)"
+  ],
+  "audio": "da81f3df51cb"
+ },
+ "one-fish": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 魚 tone 4 sounds like 2 (p 0.00)"
+  ],
+  "audio": "5497aa6ad018"
+ },
+ "paper": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard nothing "
+  ],
+  "audio": "0f072008f77b"
+ },
+ "pen": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 八 baat"
+  ],
+  "audio": "00cae19e0bbd"
+ },
+ "tea": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 七 cat"
+  ],
+  "audio": "0c615fcf3542"
+ },
+ "that-fish": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 魚 tone 4 sounds like 5 (p 0.00)"
+  ],
+  "audio": "cabdad238f92"
+ },
+ "that-flower": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 果枝花 gwo zi faa"
+  ],
+  "audio": "c4ca0a628f89"
+ },
+ "that-noodles": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 果碗麵 gwo wun min"
+  ],
+  "audio": "715b9373fbc4"
+ },
+ "that-rice": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 果碗飯 gwo wun faan"
+  ],
+  "audio": "29949c15bca1"
+ },
+ "the-fish": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 魚 tone 4 sounds like 2 (p 0.00)"
+  ],
+  "audio": "df3f4032eaf5"
+ },
+ "this-fish": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 魚 tone 4 sounds like 5 (p 0.00)"
+  ],
+  "audio": "0140da7ed20e"
+ },
+ "this-noodles": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 你碗麵 nei wun min"
+  ],
+  "audio": "dd3e0173a69f"
+ },
+ "this-pen": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 你知不 nei zi bat"
+  ],
+  "audio": "b74efe4266b1"
+ },
+ "tiu": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard two t w o"
+  ],
+  "audio": "8d1925d04100"
+ },
+ "two-fish": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 魚 tone 4 sounds like 5 (p 0.00)"
+  ],
+  "audio": "2bb86f54c7b2"
+ },
+ "wun": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 搵 wan"
+  ],
+  "audio": "8f57772bceee"
+ }
+}

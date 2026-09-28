@@ -1,0 +1,46 @@
+{
+ "cow": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 歐元 au jyun"
+  ],
+  "audio": "0d86695bdf74"
+ },
+ "fish": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 魚 tone 4 sounds like 2 (p 0.00)",
+   "speech-to-text heard 二 ji"
+  ],
+  "audio": "ea55a19f1796"
+ },
+ "jyutping": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 粵 tone 6 sounds like 3 (p 0.32)"
+  ],
+  "audio": "3ce8edb2a713"
+ },
+ "ng": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard nothing ",
+   "tone doubtful: 吳 tone 4 sounds like 5 (p 0.27)"
+  ],
+  "audio": "567fbb88f4d0"
+ },
+ "si1": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard c c"
+  ],
+  "audio": "6df070a62635"
+ },
+ "water": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard sir s i r"
+  ],
+  "audio": "32484cd074ca"
+ }
+}

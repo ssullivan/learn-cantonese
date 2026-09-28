@@ -33,6 +33,8 @@ The course plans 18 units (see the roadmap in CLAUDE.md); built so far:
   - *Family Tree*: find people on the family tree and name them, follow 嘅 chains (爸爸嘅媽媽 is 嫲嫲), say whose things are whose, and build sentences.
   - *Tone Detective* (媽媽 or 嫲嫲?) and *Say It Back* for family words and sentences.
 
+**Reviewing the audio:** native speakers can listen to every recording and mark any that sound wrong on the [audio review page](https://ssullivan.github.io/learn-cantonese/review/) (also listed in [AUDIO-REVIEW.md](AUDIO-REVIEW.md)).
+
 ## Working on it
 
 ```sh

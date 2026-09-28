@@ -17,6 +17,8 @@
  * first that passes audio-check.mjs is kept (the best one, with a
  * warning, if none does).
  *
+ * Afterwards it rewrites AUDIO-REVIEW.md (tools/review.mjs).
+ *
  * Credentials: AZURE_SPEECH_KEY, AZURE_SPEECH_REGION and (for MiniMax)
  * MINIMAX_KEY from the environment, or from
  * ~/.config/learning-cantonese/config.env (read by site.mjs). Never commit
@@ -156,3 +158,7 @@ for (const unit of units) {
 }
 
 console.log(`${made} generated, ${skipped} unchanged.`);
+
+// Keep the review table in step with the vocab.
+const { reviewMarkdown, REVIEW_FILE } = await import('./review.mjs');
+writeFileSync(REVIEW_FILE, reviewMarkdown());

@@ -1,0 +1,130 @@
+{
+ "baak": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 八 baat"
+  ],
+  "audio": "ec5be7faac9e"
+ },
+ "dai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard d d"
+  ],
+  "audio": "d99075d9c87b"
+ },
+ "gei-do": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 幾 tone 2 sounds like 5 (p 0.35)"
+  ],
+  "audio": "e655cc1d7e30"
+ },
+ "gei-do-go": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 個 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 幾 tone 2 sounds like 5 (p 0.35)"
+  ],
+  "audio": "e1bf4ba6fd2c"
+ },
+ "go": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 個 tone 3 sounds like 6 (p 0.07)"
+  ],
+  "audio": "aa3a58ad5ae1"
+ },
+ "n100": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 一八 jat baat",
+   "tone doubtful: 百 tone 3 sounds like 6 (p 0.43)"
+  ],
+  "audio": "0d3da2a7fb21"
+ },
+ "n101": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 一八零一 jat baat ling jat"
+  ],
+  "audio": "c4f2b0ea693d"
+ },
+ "n23": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 廿 tone 6 sounds like 5 (p 0.15)"
+  ],
+  "audio": "eede58f06971"
+ },
+ "n24": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 廿 tone 6 sounds like 5 (p 0.33)"
+  ],
+  "audio": "533c3013d9eb"
+ },
+ "n25": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 廿 tone 6 sounds like 4 (p 0.35)"
+  ],
+  "audio": "dade207db797"
+ },
+ "n25000": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 五 tone 5 sounds like 2 (p 0.08)"
+  ],
+  "audio": "88f377362cd0"
+ },
+ "n3008": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 八 tone 3 sounds like 6 (p 0.04)"
+  ],
+  "audio": "3feee480c693"
+ },
+ "n32": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 二 tone 6 sounds like 3 (p 0.23)"
+  ],
+  "audio": "83cfea35d4c2"
+ },
+ "n75": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 十 tone 6 sounds like 6 (p 0.41)"
+  ],
+  "audio": "b00b79148114"
+ },
+ "short-31": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 三啞一 saam aa jat"
+  ],
+  "audio": "1e54ea930177"
+ },
+ "short-45": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 四硬 sei ngaang"
+  ],
+  "audio": "1084e7fb670f"
+ },
+ "short-58": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 亞八 aa baat"
+  ],
+  "audio": "abd8d298cf25"
+ },
+ "short-99": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 十 tone 6 sounds like 3 (p 0.00)"
+  ],
+  "audio": "ea41f4770078"
+ }
+}

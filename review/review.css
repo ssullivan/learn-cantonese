@@ -1,0 +1,100 @@
+/*
+ * review.css — the audio review page (review/). Load after theme.css.
+ * A table per unit; on phones each row stacks into a small card.
+ */
+
+.btn.small { padding: 6px 12px; font-size: 14px; }
+
+.review-bar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  padding: 10px 0;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+.review-progress { margin: 0; flex: 1 1 100%; }
+.review-bar select {
+  font: inherit;
+  padding: 6px 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+}
+.review-flags { display: flex; align-items: center; gap: 6px; color: var(--ink-soft); }
+.review-copy {
+  display: block;
+  width: 100%;
+  min-height: 8em;
+  margin: 10px 0;
+  font: 14px/1.4 monospace;
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.review-jump { font-size: 14px; color: var(--ink-soft); }
+
+.review-unit h2 { margin: 28px 0 8px; font-size: 20px; scroll-margin-top: 110px; }
+.review-count { font-size: 14px; font-weight: 400; color: var(--ink-soft); }
+
+.review-table { width: 100%; border-collapse: collapse; }
+.review-table th { text-align: left; font-size: 13px; color: var(--ink-soft); font-weight: 400; padding: 4px 6px; }
+.review-table td { padding: 8px 6px; border-top: 1px solid var(--line); vertical-align: middle; }
+.review-num { color: var(--ink-soft); font-size: 13px; }
+.review-zh { font-size: 20px; }
+.review-jp, .review-en { font-size: 14px; }
+.review-en { color: var(--ink-soft); }
+.review-en .pill { margin-left: 4px; white-space: nowrap; }
+.review-mark { white-space: nowrap; }
+.review-mark .btn + .btn { margin-left: 4px; }
+.review-ok[aria-pressed="true"] { background: var(--good); border-color: var(--good); color: var(--accent-ink); }
+.review-wrong[aria-pressed="true"] { background: var(--bad); border-color: var(--bad); color: var(--accent-ink); }
+.review-play.playing { border-color: var(--accent); color: var(--accent); }
+.review-note {
+  width: 100%;
+  min-width: 8em;
+  font: inherit;
+  font-size: 14px;
+  padding: 6px 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+}
+tr.is-ok td { background: color-mix(in srgb, var(--good) 8%, transparent); }
+tr.is-wrong td { background: color-mix(in srgb, var(--bad) 9%, transparent); }
+.review-status { font-size: 12px; color: var(--ink-soft); margin-top: 4px; }
+.review-status:empty { display: none; }
+.review-changed { color: var(--gold); font-weight: 700; }
+.review-flag { font-weight: 700; }
+.review-flag.check { color: var(--bad); }
+.review-flag.listen { color: var(--gold); }
+
+/* Phones: each row is a card. */
+@media (max-width: 700px) {
+  .review-bar { position: static; }   /* too tall to keep on screen */
+  .review-table thead { display: none; }
+  .review-table, .review-table tbody { display: block; }
+  .review-table tr {
+    display: grid;
+    grid-template-columns: 2em minmax(0, 1fr) auto;
+    grid-template-areas: "num zh listen" "num jp listen" "num en en" "mark mark mark" "note note note";
+    gap: 2px 8px;
+    padding: 10px 4px;
+    border-top: 1px solid var(--line);
+  }
+  .review-table td { border: 0; padding: 0; }
+  .review-num { grid-area: num; }
+  .review-zh { grid-area: zh; }
+  .review-jp { grid-area: jp; }
+  .review-en { grid-area: en; }
+  .review-listen { grid-area: listen; align-self: center; }
+  .review-mark { grid-area: mark; margin-top: 6px; }
+  .review-note-cell { grid-area: note; }
+}

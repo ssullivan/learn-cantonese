@@ -1,0 +1,960 @@
+# Audio review
+
+Every clip on the site (910), unit by unit. **Listen on the [review page](https://ssullivan.github.io/learn-cantonese/review/)**, where you can mark each clip and copy your notes; the links below play one clip each.
+
+Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this file by hand.
+
+## Unit 1
+
+| # | Chinese | Jyutping | English | Audio |
+|---|---|---|---|---|
+| 1 | 廣東話 | gwong2 dung1 waa2 | Cantonese | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/cantonese.mp3) |
+| 2 | 粵拼 | jyut6 ping3 | Jyutping | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/jyutping.mp3) |
+| 3 | 聲調 | sing1 diu6 | tone | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/tone.mp3) |
+| 4 | 詩 | si1 | poem _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/si1.mp3) |
+| 5 | 史 | si2 | history _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/si2.mp3) |
+| 6 | 試 | si3 | to try _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/si3.mp3) |
+| 7 | 時 | si4 | time _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/si4.mp3) |
+| 8 | 市 | si5 | market _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/si5.mp3) |
+| 9 | 事 | si6 | matter, thing _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/si6.mp3) |
+| 10 | 夫 | fu1 | husband _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fu1.mp3) |
+| 11 | 苦 | fu2 | bitter _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fu2.mp3) |
+| 12 | 富 | fu3 | rich _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fu3.mp3) |
+| 13 | 扶 | fu4 | to help up _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fu4.mp3) |
+| 14 | 婦 | fu5 | woman _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fu5.mp3) |
+| 15 | 父 | fu6 | father _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fu6.mp3) |
+| 16 | 分 | fan1 | to share out _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fan1.mp3) |
+| 17 | 粉 | fan2 | powder, rice noodles _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fan2.mp3) |
+| 18 | 瞓 | fan3 | to sleep _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fan3.mp3) |
+| 19 | 墳 | fan4 | grave _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fan4.mp3) |
+| 20 | 憤 | fan5 | anger _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fan5.mp3) |
+| 21 | 份 | fan6 | portion, share _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fan6.mp3) |
+| 22 | 魚 | jyu4 | fish | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fish.mp3) |
+| 23 | 牛 | ngau4 | cow | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/cow.mp3) |
+| 24 | 吳 | ng4 | Ng (a family name) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/ng.mp3) |
+| 25 | 粥 | zuk1 | congee (rice porridge) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/congee.mp3) |
+| 26 | 車 | ce1 | car | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/car.mp3) |
+| 27 | 水 | seoi2 | water | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/water.mp3) |
+| 28 | 香港 | hoeng1 gong2 | Hong Kong | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/hong-kong.mp3) |
+| 29 | 雞 | gai1 | chicken | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/chicken.mp3) |
+| 30 | 街 | gaai1 | street | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/street.mp3) |
+
+## Unit 2
+
+| # | Chinese | Jyutping | English | Audio |
+|---|---|---|---|---|
+| 1 | 你好 | nei5 hou2 | hello | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/hello.mp3) |
+| 2 | 早晨 | zou2 san4 | good morning | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/good-morning.mp3) |
+| 3 | 早唞 | zou2 tau2 | good night | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/good-night.mp3) |
+| 4 | 拜拜 | baai1 baai3 | bye-bye | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/bye.mp3) |
+| 5 | 再見 | zoi3 gin3 | goodbye | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/goodbye.mp3) |
+| 6 | 你好嗎？ | nei5 hou2 maa3 | how are you? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/how-are-you.mp3) |
+| 7 | 最近點呀？ | zeoi3 gan6 dim2 aa3 | how have you been? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/how-lately.mp3) |
+| 8 | 幾好 | gei2 hou2 | pretty good | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/pretty-good.mp3) |
+| 9 | 麻麻哋 | maa4 maa2 dei2 | so-so | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/so-so.mp3) |
+| 10 | 好耐冇見 | hou2 noi6 mou5 gin3 | long time no see | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/long-time.mp3) |
+| 11 | 食咗飯未呀？ | sik6 zo2 faan6 mei6 aa3 | have you eaten yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/eaten-yet.mp3) |
+| 12 | 食咗喇 | sik6 zo2 laa3 | I have eaten | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/eaten.mp3) |
+| 13 | 唔該 | m4 goi1 | thank you (for a service); excuse me | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/m-goi.mp3) |
+| 14 | 唔該晒 | m4 goi1 saai3 | thanks a lot | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/m-goi-saai.mp3) |
+| 15 | 多謝 | do1 ze6 | thank you (for a gift) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/thanks.mp3) |
+| 16 | 唔使 | m4 sai2 | no need; you're welcome | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/no-need.mp3) |
+| 17 | 唔使客氣 | m4 sai2 haak3 hei3 | you're welcome | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/welcome.mp3) |
+| 18 | 對唔住 | deoi3 m4 zyu6 | sorry | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/sorry.mp3) |
+| 19 | 唔好意思 | m4 hou2 ji3 si3 | excuse me; sorry (small) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/excuse-me.mp3) |
+| 20 | 唔緊要 | m4 gan2 jiu3 | never mind; it's OK | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/never-mind.mp3) |
+| 21 | 冇問題 | mou5 man6 tai4 | no problem | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/no-problem.mp3) |
+
+## Unit 3
+
+| # | Chinese | Jyutping | English | Audio |
+|---|---|---|---|---|
+| 1 | 我 | ngo5 | I; me | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/ngo.mp3) |
+| 2 | 你 | nei5 | you | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/nei.mp3) |
+| 3 | 佢 | keoi5 | he; she; it | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/keoi.mp3) |
+| 4 | 我哋 | ngo5 dei6 | we; us | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/ngo-dei.mp3) |
+| 5 | 你哋 | nei5 dei6 | you (more than one) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/nei-dei.mp3) |
+| 6 | 佢哋 | keoi5 dei6 | they; them | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/keoi-dei.mp3) |
+| 7 | 係 | hai6 | am; is; are | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/hai.mp3) |
+| 8 | 唔 | m4 | not | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/m.mp3) |
+| 9 | 叫 | giu3 | to be called | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/giu.mp3) |
+| 10 | 名 | meng2 | name | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/meng.mp3) |
+| 11 | 識 | sik1 | to know how to; can | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/sik.mp3) |
+| 12 | 講 | gong2 | to speak; to say | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/gong.mp3) |
+| 13 | 都 | dou1 | also; too | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/dou.mp3) |
+| 14 | 阿明 | aa3 ming4 | Ah Ming (a name) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/aa-ming.mp3) |
+| 15 | 老師 | lou5 si1 | teacher | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/lou-si.mp3) |
+| 16 | 學生 | hok6 saang1 | student | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/hok-saang.mp3) |
+| 17 | 朋友 | pang4 jau5 | friend | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/pang-jau.mp3) |
+| 18 | 香港人 | hoeng1 gong2 jan4 | Hongkonger | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/hoeng-gong-jan.mp3) |
+| 19 | 英國人 | jing1 gwok3 jan4 | British person | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/jing-gwok-jan.mp3) |
+| 20 | 美國人 | mei5 gwok3 jan4 | American | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/mei-gwok-jan.mp3) |
+| 21 | 廣東話 | gwong2 dung1 waa2 | Cantonese | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/gwong-dung-waa.mp3) |
+| 22 | 英文 | jing1 man2 | English | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/jing-man.mp3) |
+| 23 | 邊個 | bin1 go3 | who | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/bin-go.mp3) |
+| 24 | 乜嘢 | mat1 je5 | what | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/mat-je.mp3) |
+| 25 | 嗎 | maa3 | (turns a sentence into a yes/no question) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/maa.mp3) |
+| 26 | 呀 | aa3 | (softens a question or an answer) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/aa.mp3) |
+| 27 | 呢 | ne1 | and ...? (what about) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/ne.mp3) |
+| 28 | 少少 | siu2 siu2 | a little | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/siu-siu.mp3) |
+| 29 | 係咪 | hai6 mai6 | is it? (short for 係唔係) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/hai-mai.mp3) |
+| 30 | 我係學生 | ngo5 hai6 hok6 saang1 | I am a student. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/ngo-hai-hok-saang.mp3) |
+| 31 | 佢係老師 | keoi5 hai6 lou5 si1 | He / she is a teacher. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/keoi-hai-lou-si.mp3) |
+| 32 | 佢係學生 | keoi5 hai6 hok6 saang1 | He / she is a student. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/keoi-hai-hok-saang.mp3) |
+| 33 | 佢係香港人 | keoi5 hai6 hoeng1 gong2 jan4 | He / she is a Hongkonger. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/keoi-hai-hoeng-gong-jan.mp3) |
+| 34 | 我哋係朋友 | ngo5 dei6 hai6 pang4 jau5 | We are friends. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/ngo-dei-hai-pang-jau.mp3) |
+| 35 | 佢係我朋友 | keoi5 hai6 ngo5 pang4 jau5 | He / she is my friend. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/keoi-hai-ngo-pang-jau.mp3) |
+| 36 | 我唔係老師 | ngo5 m4 hai6 lou5 si1 | I am not a teacher. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/ngo-m-hai-lou-si.mp3) |
+| 37 | 佢哋唔係英國人 | keoi5 dei6 m4 hai6 jing1 gwok3 jan4 | They are not British. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/keoi-dei-m-hai-jing-gwok-jan.mp3) |
+| 38 | 你哋係美國人 | nei5 dei6 hai6 mei5 gwok3 jan4 | You (all) are American. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/nei-dei-hai-mei-gwok-jan.mp3) |
+| 39 | 我叫阿明 | ngo5 giu3 aa3 ming4 | My name is Ah Ming. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/ngo-giu-aa-ming.mp3) |
+| 40 | 我識講廣東話 | ngo5 sik1 gong2 gwong2 dung1 waa2 | I can speak Cantonese. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/ngo-sik-gong-gwong-dung-waa.mp3) |
+| 41 | 佢唔識講英文 | keoi5 m4 sik1 gong2 jing1 man2 | He / she can't speak English. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/keoi-m-sik-gong-jing-man.mp3) |
+| 42 | 我都係香港人 | ngo5 dou1 hai6 hoeng1 gong2 jan4 | I am a Hongkonger too. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/ngo-dou-hai-hoeng-gong-jan.mp3) |
+| 43 | 你係學生嗎？ | nei5 hai6 hok6 saang1 maa3 | Are you a student? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/nei-hai-hok-saang-maa.mp3) |
+| 44 | 佢係老師嗎？ | keoi5 hai6 lou5 si1 maa3 | Is he / she a teacher? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/keoi-hai-lou-si-maa.mp3) |
+| 45 | 佢係學生嗎？ | keoi5 hai6 hok6 saang1 maa3 | Is he / she a student? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/keoi-hai-hok-saang-maa.mp3) |
+| 46 | 佢係香港人嗎？ | keoi5 hai6 hoeng1 gong2 jan4 maa3 | Is he / she a Hongkonger? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/keoi-hai-hoeng-gong-jan-maa.mp3) |
+| 47 | 佢哋係朋友嗎？ | keoi5 dei6 hai6 pang4 jau5 maa3 | Are they friends? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/keoi-dei-hai-pang-jau-maa.mp3) |
+| 48 | 你識講廣東話嗎？ | nei5 sik1 gong2 gwong2 dung1 waa2 maa3 | Can you speak Cantonese? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/nei-sik-gong-gwong-dung-waa-maa.mp3) |
+| 49 | 你係唔係學生呀？ | nei5 hai6 m4 hai6 hok6 saang1 aa3 | Are you a student? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/nei-hai-m-hai-hok-saang-aa.mp3) |
+| 50 | 佢係唔係老師呀？ | keoi5 hai6 m4 hai6 lou5 si1 aa3 | Is he / she a teacher? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/keoi-hai-m-hai-lou-si-aa.mp3) |
+| 51 | 佢係唔係學生呀？ | keoi5 hai6 m4 hai6 hok6 saang1 aa3 | Is he / she a student? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/keoi-hai-m-hai-hok-saang-aa.mp3) |
+| 52 | 佢係唔係香港人呀？ | keoi5 hai6 m4 hai6 hoeng1 gong2 jan4 aa3 | Is he / she a Hongkonger? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/keoi-hai-m-hai-hoeng-gong-jan-aa.mp3) |
+| 53 | 你哋係唔係美國人呀？ | nei5 dei6 hai6 m4 hai6 mei5 gwok3 jan4 aa3 | Are you (all) American? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/nei-dei-hai-m-hai-mei-gwok-jan-aa.mp3) |
+| 54 | 你識唔識講英文呀？ | nei5 sik1 m4 sik1 gong2 jing1 man2 aa3 | Can you speak English? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/nei-sik-m-sik-gong-jing-man-aa.mp3) |
+| 55 | 佢係邊個呀？ | keoi5 hai6 bin1 go3 aa3 | Who is he / she? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/keoi-hai-bin-go-aa.mp3) |
+| 56 | 邊個係老師呀？ | bin1 go3 hai6 lou5 si1 aa3 | Who is the teacher? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/bin-go-hai-lou-si-aa.mp3) |
+| 57 | 你叫乜嘢名呀？ | nei5 giu3 mat1 je5 meng2 aa3 | What is your name? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/nei-giu-mat-je-meng-aa.mp3) |
+| 58 | 佢叫乜嘢名呀？ | keoi5 giu3 mat1 je5 meng2 aa3 | What is his / her name? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/keoi-giu-mat-je-meng-aa.mp3) |
+| 59 | 你講乜嘢呀？ | nei5 gong2 mat1 je5 aa3 | What are you saying? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/nei-gong-mat-je-aa.mp3) |
+| 60 | 你呢？ | nei5 ne1 | And you? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/nei-ne.mp3) |
+| 61 | 係呀 | hai6 aa3 | Yes (I am / it is). | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/hai-aa.mp3) |
+| 62 | 唔係呀 | m4 hai6 aa3 | No (I'm not / it isn't). | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/m-hai-aa.mp3) |
+| 63 | 識呀 | sik1 aa3 | Yes, I can. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/sik-aa.mp3) |
+| 64 | 唔識呀 | m4 sik1 aa3 | No, I can't. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/m-sik-aa.mp3) |
+| 65 | 識少少 | sik1 siu2 siu2 | A little. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/sik-siu-siu.mp3) |
+| 66 | 我都係 | ngo5 dou1 hai6 | Me too. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/ngo-dou-hai.mp3) |
+
+## Unit 4
+
+| # | Chinese | Jyutping | English | Audio |
+|---|---|---|---|---|
+| 1 | 百 | baak3 | hundred | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/baak.mp3) |
+| 2 | 千 | cin1 | thousand | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/cin.mp3) |
+| 3 | 萬 | maan6 | ten thousand | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/maan.mp3) |
+| 4 | 兩 | loeng5 | two (of something) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/loeng.mp3) |
+| 5 | 個 | go3 | the everyday measure word | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/go.mp3) |
+| 6 | 第 | dai6 | -th (makes an ordinal) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/dai.mp3) |
+| 7 | 幾多 | gei2 do1 | how many; how much | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/gei-do.mp3) |
+| 8 | 幾多個？ | gei2 do1 go3 | how many (of them)? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/gei-do-go.mp3) |
+| 9 | 零 | ling4 | 0 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n0.mp3) |
+| 10 | 一 | jat1 | 1 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n1.mp3) |
+| 11 | 二 | ji6 | 2 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n2.mp3) |
+| 12 | 三 | saam1 | 3 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n3.mp3) |
+| 13 | 四 | sei3 | 4 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n4.mp3) |
+| 14 | 五 | ng5 | 5 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n5.mp3) |
+| 15 | 六 | luk6 | 6 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n6.mp3) |
+| 16 | 七 | cat1 | 7 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n7.mp3) |
+| 17 | 八 | baat3 | 8 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n8.mp3) |
+| 18 | 九 | gau2 | 9 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n9.mp3) |
+| 19 | 十 | sap6 | 10 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n10.mp3) |
+| 20 | 十一 | sap6 jat1 | 11 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n11.mp3) |
+| 21 | 十二 | sap6 ji6 | 12 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n12.mp3) |
+| 22 | 十三 | sap6 saam1 | 13 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n13.mp3) |
+| 23 | 十四 | sap6 sei3 | 14 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n14.mp3) |
+| 24 | 十五 | sap6 ng5 | 15 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n15.mp3) |
+| 25 | 十六 | sap6 luk6 | 16 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n16.mp3) |
+| 26 | 十七 | sap6 cat1 | 17 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n17.mp3) |
+| 27 | 十八 | sap6 baat3 | 18 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n18.mp3) |
+| 28 | 十九 | sap6 gau2 | 19 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n19.mp3) |
+| 29 | 二十 | ji6 sap6 | 20 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n20.mp3) |
+| 30 | 廿一 | jaa6 jat1 | 21 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n21.mp3) |
+| 31 | 廿二 | jaa6 ji6 | 22 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n22.mp3) |
+| 32 | 廿三 | jaa6 saam1 | 23 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n23.mp3) |
+| 33 | 廿四 | jaa6 sei3 | 24 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n24.mp3) |
+| 34 | 廿五 | jaa6 ng5 | 25 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n25.mp3) |
+| 35 | 廿六 | jaa6 luk6 | 26 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n26.mp3) |
+| 36 | 廿七 | jaa6 cat1 | 27 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n27.mp3) |
+| 37 | 廿八 | jaa6 baat3 | 28 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n28.mp3) |
+| 38 | 廿九 | jaa6 gau2 | 29 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n29.mp3) |
+| 39 | 三十 | saam1 sap6 | 30 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n30.mp3) |
+| 40 | 三十一 | saam1 sap6 jat1 | 31 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n31.mp3) |
+| 41 | 三十二 | saam1 sap6 ji6 | 32 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n32.mp3) |
+| 42 | 三十三 | saam1 sap6 saam1 | 33 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n33.mp3) |
+| 43 | 三十四 | saam1 sap6 sei3 | 34 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n34.mp3) |
+| 44 | 三十五 | saam1 sap6 ng5 | 35 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n35.mp3) |
+| 45 | 三十六 | saam1 sap6 luk6 | 36 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n36.mp3) |
+| 46 | 三十七 | saam1 sap6 cat1 | 37 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n37.mp3) |
+| 47 | 三十八 | saam1 sap6 baat3 | 38 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n38.mp3) |
+| 48 | 三十九 | saam1 sap6 gau2 | 39 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n39.mp3) |
+| 49 | 四十 | sei3 sap6 | 40 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n40.mp3) |
+| 50 | 四十一 | sei3 sap6 jat1 | 41 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n41.mp3) |
+| 51 | 四十二 | sei3 sap6 ji6 | 42 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n42.mp3) |
+| 52 | 四十三 | sei3 sap6 saam1 | 43 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n43.mp3) |
+| 53 | 四十四 | sei3 sap6 sei3 | 44 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n44.mp3) |
+| 54 | 四十五 | sei3 sap6 ng5 | 45 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n45.mp3) |
+| 55 | 四十六 | sei3 sap6 luk6 | 46 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n46.mp3) |
+| 56 | 四十七 | sei3 sap6 cat1 | 47 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n47.mp3) |
+| 57 | 四十八 | sei3 sap6 baat3 | 48 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n48.mp3) |
+| 58 | 四十九 | sei3 sap6 gau2 | 49 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n49.mp3) |
+| 59 | 五十 | ng5 sap6 | 50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n50.mp3) |
+| 60 | 五十一 | ng5 sap6 jat1 | 51 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n51.mp3) |
+| 61 | 五十二 | ng5 sap6 ji6 | 52 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n52.mp3) |
+| 62 | 五十三 | ng5 sap6 saam1 | 53 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n53.mp3) |
+| 63 | 五十四 | ng5 sap6 sei3 | 54 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n54.mp3) |
+| 64 | 五十五 | ng5 sap6 ng5 | 55 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n55.mp3) |
+| 65 | 五十六 | ng5 sap6 luk6 | 56 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n56.mp3) |
+| 66 | 五十七 | ng5 sap6 cat1 | 57 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n57.mp3) |
+| 67 | 五十八 | ng5 sap6 baat3 | 58 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n58.mp3) |
+| 68 | 五十九 | ng5 sap6 gau2 | 59 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n59.mp3) |
+| 69 | 六十 | luk6 sap6 | 60 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n60.mp3) |
+| 70 | 六十一 | luk6 sap6 jat1 | 61 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n61.mp3) |
+| 71 | 六十二 | luk6 sap6 ji6 | 62 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n62.mp3) |
+| 72 | 六十三 | luk6 sap6 saam1 | 63 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n63.mp3) |
+| 73 | 六十四 | luk6 sap6 sei3 | 64 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n64.mp3) |
+| 74 | 六十五 | luk6 sap6 ng5 | 65 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n65.mp3) |
+| 75 | 六十六 | luk6 sap6 luk6 | 66 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n66.mp3) |
+| 76 | 六十七 | luk6 sap6 cat1 | 67 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n67.mp3) |
+| 77 | 六十八 | luk6 sap6 baat3 | 68 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n68.mp3) |
+| 78 | 六十九 | luk6 sap6 gau2 | 69 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n69.mp3) |
+| 79 | 七十 | cat1 sap6 | 70 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n70.mp3) |
+| 80 | 七十一 | cat1 sap6 jat1 | 71 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n71.mp3) |
+| 81 | 七十二 | cat1 sap6 ji6 | 72 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n72.mp3) |
+| 82 | 七十三 | cat1 sap6 saam1 | 73 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n73.mp3) |
+| 83 | 七十四 | cat1 sap6 sei3 | 74 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n74.mp3) |
+| 84 | 七十五 | cat1 sap6 ng5 | 75 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n75.mp3) |
+| 85 | 七十六 | cat1 sap6 luk6 | 76 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n76.mp3) |
+| 86 | 七十七 | cat1 sap6 cat1 | 77 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n77.mp3) |
+| 87 | 七十八 | cat1 sap6 baat3 | 78 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n78.mp3) |
+| 88 | 七十九 | cat1 sap6 gau2 | 79 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n79.mp3) |
+| 89 | 八十 | baat3 sap6 | 80 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n80.mp3) |
+| 90 | 八十一 | baat3 sap6 jat1 | 81 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n81.mp3) |
+| 91 | 八十二 | baat3 sap6 ji6 | 82 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n82.mp3) |
+| 92 | 八十三 | baat3 sap6 saam1 | 83 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n83.mp3) |
+| 93 | 八十四 | baat3 sap6 sei3 | 84 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n84.mp3) |
+| 94 | 八十五 | baat3 sap6 ng5 | 85 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n85.mp3) |
+| 95 | 八十六 | baat3 sap6 luk6 | 86 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n86.mp3) |
+| 96 | 八十七 | baat3 sap6 cat1 | 87 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n87.mp3) |
+| 97 | 八十八 | baat3 sap6 baat3 | 88 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n88.mp3) |
+| 98 | 八十九 | baat3 sap6 gau2 | 89 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n89.mp3) |
+| 99 | 九十 | gau2 sap6 | 90 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n90.mp3) |
+| 100 | 九十一 | gau2 sap6 jat1 | 91 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n91.mp3) |
+| 101 | 九十二 | gau2 sap6 ji6 | 92 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n92.mp3) |
+| 102 | 九十三 | gau2 sap6 saam1 | 93 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n93.mp3) |
+| 103 | 九十四 | gau2 sap6 sei3 | 94 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n94.mp3) |
+| 104 | 九十五 | gau2 sap6 ng5 | 95 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n95.mp3) |
+| 105 | 九十六 | gau2 sap6 luk6 | 96 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n96.mp3) |
+| 106 | 九十七 | gau2 sap6 cat1 | 97 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n97.mp3) |
+| 107 | 九十八 | gau2 sap6 baat3 | 98 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n98.mp3) |
+| 108 | 九十九 | gau2 sap6 gau2 | 99 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n99.mp3) |
+| 109 | 一百 | jat1 baak3 | 100 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n100.mp3) |
+| 110 | 一百零一 | jat1 baak3 ling4 jat1 | 101 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n101.mp3) |
+| 111 | 一百一十 | jat1 baak3 jat1 sap6 | 110 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n110.mp3) |
+| 112 | 一百二十 | jat1 baak3 ji6 sap6 | 120 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n120.mp3) |
+| 113 | 一百五十 | jat1 baak3 ng5 sap6 | 150 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n150.mp3) |
+| 114 | 兩百 | loeng5 baak3 | 200 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n200.mp3) |
+| 115 | 兩百五十 | loeng5 baak3 ng5 sap6 | 250 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n250.mp3) |
+| 116 | 三百六十 | saam1 baak3 luk6 sap6 | 360 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n360.mp3) |
+| 117 | 五百 | ng5 baak3 | 500 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n500.mp3) |
+| 118 | 八百八十八 | baat3 baak3 baat3 sap6 baat3 | 888 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n888.mp3) |
+| 119 | 九百九十九 | gau2 baak3 gau2 sap6 gau2 | 999 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n999.mp3) |
+| 120 | 一千 | jat1 cin1 | 1,000 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n1000.mp3) |
+| 121 | 一千零一 | jat1 cin1 ling4 jat1 | 1,001 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n1001.mp3) |
+| 122 | 一千零一十 | jat1 cin1 ling4 jat1 sap6 | 1,010 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n1010.mp3) |
+| 123 | 一千二百 | jat1 cin1 ji6 baak3 | 1,200 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n1200.mp3) |
+| 124 | 兩千 | loeng5 cin1 | 2,000 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n2000.mp3) |
+| 125 | 兩千零四十六 | loeng5 cin1 ling4 sei3 sap6 luk6 | 2,046 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n2046.mp3) |
+| 126 | 三千零八 | saam1 cin1 ling4 baat3 | 3,008 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n3008.mp3) |
+| 127 | 三千五百 | saam1 cin1 ng5 baak3 | 3,500 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n3500.mp3) |
+| 128 | 五千 | ng5 cin1 | 5,000 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n5000.mp3) |
+| 129 | 九千九百九十九 | gau2 cin1 gau2 baak3 gau2 sap6 gau2 | 9,999 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n9999.mp3) |
+| 130 | 一萬 | jat1 maan6 | 10,000 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n10000.mp3) |
+| 131 | 一萬二千 | jat1 maan6 ji6 cin1 | 12,000 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n12000.mp3) |
+| 132 | 兩萬 | loeng5 maan6 | 20,000 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n20000.mp3) |
+| 133 | 兩萬五千 | loeng5 maan6 ng5 cin1 | 25,000 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n25000.mp3) |
+| 134 | 五萬 | ng5 maan6 | 50,000 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n50000.mp3) |
+| 135 | 十萬 | sap6 maan6 | 100,000 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n100000.mp3) |
+| 136 | 一百萬 | jat1 baak3 maan6 | 1,000,000 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n1000000.mp3) |
+| 137 | 第一 | dai6 jat1 | 1st | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/dai-1.mp3) |
+| 138 | 第二 | dai6 ji6 | 2nd | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/dai-2.mp3) |
+| 139 | 第三 | dai6 saam1 | 3rd | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/dai-3.mp3) |
+| 140 | 第四 | dai6 sei3 | 4th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/dai-4.mp3) |
+| 141 | 第五 | dai6 ng5 | 5th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/dai-5.mp3) |
+| 142 | 第六 | dai6 luk6 | 6th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/dai-6.mp3) |
+| 143 | 第七 | dai6 cat1 | 7th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/dai-7.mp3) |
+| 144 | 第八 | dai6 baat3 | 8th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/dai-8.mp3) |
+| 145 | 第九 | dai6 gau2 | 9th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/dai-9.mp3) |
+| 146 | 第十 | dai6 sap6 | 10th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/dai-10.mp3) |
+| 147 | 兩個 | loeng5 go3 | 2 (of something) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/loeng-go.mp3) |
+| 148 | 卅一 | saa1 aa6 jat1 | 31 (said fast) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/short-31.mp3) |
+| 149 | 四十五 | sei3 aa6 ng5 | 45 (said fast) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/short-45.mp3) |
+| 150 | 五十八 | ng5 aa6 baat3 | 58 (said fast) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/short-58.mp3) |
+| 151 | 九十九 | gau2 aa6 gau2 | 99 (said fast) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/short-99.mp3) |
+
+## Unit 5
+
+| # | Chinese | Jyutping | English | Audio |
+|---|---|---|---|---|
+| 1 | 隻 | zek3 | for animals | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/zek.mp3) |
+| 2 | 本 | bun2 | for books | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/bun.mp3) |
+| 3 | 張 | zoeng1 | for flat things | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/zoeng.mp3) |
+| 4 | 條 | tiu4 | for long, thin things | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/tiu.mp3) |
+| 5 | 枝 | zi1 | for sticks | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/zi.mp3) |
+| 6 | 架 | gaa3 | for vehicles and machines | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/gaa.mp3) |
+| 7 | 件 | gin6 | for tops and pieces | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/gin.mp3) |
+| 8 | 杯 | bui1 | a cup of | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/bui.mp3) |
+| 9 | 碗 | wun2 | a bowl of | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/wun.mp3) |
+| 10 | 對 | deoi3 | a pair of | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/deoi.mp3) |
+| 11 | 蘋果 | ping4 gwo2 | apple | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/apple.mp3) |
+| 12 | 波 | bo1 | ball | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/ball.mp3) |
+| 13 | 貓 | maau1 | cat | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/cat.mp3) |
+| 14 | 狗 | gau2 | dog | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/dog.mp3) |
+| 15 | 書 | syu1 | book | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/book.mp3) |
+| 16 | 紙 | zi2 | paper | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/paper.mp3) |
+| 17 | 枱 | toi2 | table | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/table.mp3) |
+| 18 | 褲 | fu3 | trousers | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/trousers.mp3) |
+| 19 | 筆 | bat1 | pen | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/pen.mp3) |
+| 20 | 花 | faa1 | flower | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/flower.mp3) |
+| 21 | 飛機 | fei1 gei1 | plane | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/plane.mp3) |
+| 22 | 衫 | saam1 | shirt | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/shirt.mp3) |
+| 23 | 蛋糕 | daan6 gou1 | cake | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/cake.mp3) |
+| 24 | 茶 | caa4 | tea | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/tea.mp3) |
+| 25 | 飯 | faan6 | rice | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/rice.mp3) |
+| 26 | 麵 | min6 | noodles | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/noodles.mp3) |
+| 27 | 鞋 | haai4 | shoes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/shoes.mp3) |
+| 28 | 筷子 | faai3 zi2 | chopsticks | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/chopsticks.mp3) |
+| 29 | 啲 | di1 | some; the (more than one) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/di.mp3) |
+| 30 | 呢 | ni1 | this | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/ni.mp3) |
+| 31 | 嗰 | go2 | that | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/go2.mp3) |
+| 32 | 有 | jau5 | to have; there is | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/jau.mp3) |
+| 33 | 一個蘋果 | jat1 go3 ping4 gwo2 | an apple | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-apple.mp3) |
+| 34 | 一個波 | jat1 go3 bo1 | a ball | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-ball.mp3) |
+| 35 | 一隻貓 | jat1 zek3 maau1 | a cat | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-cat.mp3) |
+| 36 | 一隻狗 | jat1 zek3 gau2 | a dog | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-dog.mp3) |
+| 37 | 一隻雞 | jat1 zek3 gai1 | a chicken | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-chicken.mp3) |
+| 38 | 一隻牛 | jat1 zek3 ngau4 | a cow | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-cow.mp3) |
+| 39 | 一本書 | jat1 bun2 syu1 | a book | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-book.mp3) |
+| 40 | 一張紙 | jat1 zoeng1 zi2 | a sheet of paper | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-paper.mp3) |
+| 41 | 一張枱 | jat1 zoeng1 toi2 | a table | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-table.mp3) |
+| 42 | 一條褲 | jat1 tiu4 fu3 | a pair of trousers | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-trousers.mp3) |
+| 43 | 一條魚 | jat1 tiu4 jyu4 | a fish | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-fish.mp3) |
+| 44 | 一枝筆 | jat1 zi1 bat1 | a pen | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-pen.mp3) |
+| 45 | 一枝花 | jat1 zi1 faa1 | a flower | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-flower.mp3) |
+| 46 | 一架飛機 | jat1 gaa3 fei1 gei1 | a plane | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-plane.mp3) |
+| 47 | 一架車 | jat1 gaa3 ce1 | a car | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-car.mp3) |
+| 48 | 一件衫 | jat1 gin6 saam1 | a shirt | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-shirt.mp3) |
+| 49 | 一件蛋糕 | jat1 gin6 daan6 gou1 | a piece of cake | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-cake.mp3) |
+| 50 | 一杯茶 | jat1 bui1 caa4 | a cup of tea | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-tea.mp3) |
+| 51 | 一杯水 | jat1 bui1 seoi2 | a glass of water | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-water.mp3) |
+| 52 | 一碗飯 | jat1 wun2 faan6 | a bowl of rice | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-rice.mp3) |
+| 53 | 一碗麵 | jat1 wun2 min6 | a bowl of noodles | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-noodles.mp3) |
+| 54 | 一對鞋 | jat1 deoi3 haai4 | a pair of shoes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-shoes.mp3) |
+| 55 | 一對筷子 | jat1 deoi3 faai3 zi2 | a pair of chopsticks | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-chopsticks.mp3) |
+| 56 | 個蘋果 | go3 ping4 gwo2 | the apple | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/the-apple.mp3) |
+| 57 | 個波 | go3 bo1 | the ball | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/the-ball.mp3) |
+| 58 | 隻貓 | zek3 maau1 | the cat | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/the-cat.mp3) |
+| 59 | 隻狗 | zek3 gau2 | the dog | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/the-dog.mp3) |
+| 60 | 隻雞 | zek3 gai1 | the chicken | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/the-chicken.mp3) |
+| 61 | 隻牛 | zek3 ngau4 | the cow | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/the-cow.mp3) |
+| 62 | 本書 | bun2 syu1 | the book | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/the-book.mp3) |
+| 63 | 張紙 | zoeng1 zi2 | the sheet of paper | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/the-paper.mp3) |
+| 64 | 張枱 | zoeng1 toi2 | the table | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/the-table.mp3) |
+| 65 | 條褲 | tiu4 fu3 | the pair of trousers | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/the-trousers.mp3) |
+| 66 | 條魚 | tiu4 jyu4 | the fish | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/the-fish.mp3) |
+| 67 | 枝筆 | zi1 bat1 | the pen | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/the-pen.mp3) |
+| 68 | 枝花 | zi1 faa1 | the flower | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/the-flower.mp3) |
+| 69 | 架飛機 | gaa3 fei1 gei1 | the plane | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/the-plane.mp3) |
+| 70 | 架車 | gaa3 ce1 | the car | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/the-car.mp3) |
+| 71 | 件衫 | gin6 saam1 | the shirt | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/the-shirt.mp3) |
+| 72 | 件蛋糕 | gin6 daan6 gou1 | the piece of cake | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/the-cake.mp3) |
+| 73 | 杯茶 | bui1 caa4 | the cup of tea | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/the-tea.mp3) |
+| 74 | 杯水 | bui1 seoi2 | the glass of water | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/the-water.mp3) |
+| 75 | 碗飯 | wun2 faan6 | the bowl of rice | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/the-rice.mp3) |
+| 76 | 碗麵 | wun2 min6 | the bowl of noodles | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/the-noodles.mp3) |
+| 77 | 對鞋 | deoi3 haai4 | the pair of shoes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/the-shoes.mp3) |
+| 78 | 對筷子 | deoi3 faai3 zi2 | the pair of chopsticks | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/the-chopsticks.mp3) |
+| 79 | 兩個蘋果 | loeng5 go3 ping4 gwo2 | 2 apples | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/two-apple.mp3) |
+| 80 | 三個蘋果 | saam1 go3 ping4 gwo2 | 3 apples | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/n3-apple.mp3) |
+| 81 | 兩個波 | loeng5 go3 bo1 | 2 balls | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/two-ball.mp3) |
+| 82 | 四個波 | sei3 go3 bo1 | 4 balls | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/n4-ball.mp3) |
+| 83 | 兩隻貓 | loeng5 zek3 maau1 | 2 cats | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/two-cat.mp3) |
+| 84 | 五隻貓 | ng5 zek3 maau1 | 5 cats | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/n5-cat.mp3) |
+| 85 | 兩隻狗 | loeng5 zek3 gau2 | 2 dogs | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/two-dog.mp3) |
+| 86 | 六隻狗 | luk6 zek3 gau2 | 6 dogs | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/n6-dog.mp3) |
+| 87 | 兩隻雞 | loeng5 zek3 gai1 | 2 chickens | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/two-chicken.mp3) |
+| 88 | 七隻雞 | cat1 zek3 gai1 | 7 chickens | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/n7-chicken.mp3) |
+| 89 | 兩隻牛 | loeng5 zek3 ngau4 | 2 cows | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/two-cow.mp3) |
+| 90 | 八隻牛 | baat3 zek3 ngau4 | 8 cows | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/n8-cow.mp3) |
+| 91 | 兩本書 | loeng5 bun2 syu1 | 2 books | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/two-book.mp3) |
+| 92 | 九本書 | gau2 bun2 syu1 | 9 books | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/n9-book.mp3) |
+| 93 | 兩張紙 | loeng5 zoeng1 zi2 | 2 sheets of paper | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/two-paper.mp3) |
+| 94 | 三張紙 | saam1 zoeng1 zi2 | 3 sheets of paper | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/n3-paper.mp3) |
+| 95 | 兩張枱 | loeng5 zoeng1 toi2 | 2 tables | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/two-table.mp3) |
+| 96 | 四張枱 | sei3 zoeng1 toi2 | 4 tables | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/n4-table.mp3) |
+| 97 | 兩條褲 | loeng5 tiu4 fu3 | 2 pairs of trousers | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/two-trousers.mp3) |
+| 98 | 五條褲 | ng5 tiu4 fu3 | 5 pairs of trousers | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/n5-trousers.mp3) |
+| 99 | 兩條魚 | loeng5 tiu4 jyu4 | 2 fishs | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/two-fish.mp3) |
+| 100 | 六條魚 | luk6 tiu4 jyu4 | 6 fishs | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/n6-fish.mp3) |
+| 101 | 兩枝筆 | loeng5 zi1 bat1 | 2 pens | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/two-pen.mp3) |
+| 102 | 七枝筆 | cat1 zi1 bat1 | 7 pens | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/n7-pen.mp3) |
+| 103 | 兩枝花 | loeng5 zi1 faa1 | 2 flowers | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/two-flower.mp3) |
+| 104 | 八枝花 | baat3 zi1 faa1 | 8 flowers | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/n8-flower.mp3) |
+| 105 | 兩架飛機 | loeng5 gaa3 fei1 gei1 | 2 planes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/two-plane.mp3) |
+| 106 | 九架飛機 | gau2 gaa3 fei1 gei1 | 9 planes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/n9-plane.mp3) |
+| 107 | 兩架車 | loeng5 gaa3 ce1 | 2 cars | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/two-car.mp3) |
+| 108 | 三架車 | saam1 gaa3 ce1 | 3 cars | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/n3-car.mp3) |
+| 109 | 兩件衫 | loeng5 gin6 saam1 | 2 shirts | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/two-shirt.mp3) |
+| 110 | 四件衫 | sei3 gin6 saam1 | 4 shirts | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/n4-shirt.mp3) |
+| 111 | 兩件蛋糕 | loeng5 gin6 daan6 gou1 | 2 pieces of cake | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/two-cake.mp3) |
+| 112 | 五件蛋糕 | ng5 gin6 daan6 gou1 | 5 pieces of cake | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/n5-cake.mp3) |
+| 113 | 兩杯茶 | loeng5 bui1 caa4 | 2 cups of tea | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/two-tea.mp3) |
+| 114 | 六杯茶 | luk6 bui1 caa4 | 6 cups of tea | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/n6-tea.mp3) |
+| 115 | 兩杯水 | loeng5 bui1 seoi2 | 2 glasses of water | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/two-water.mp3) |
+| 116 | 七杯水 | cat1 bui1 seoi2 | 7 glasses of water | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/n7-water.mp3) |
+| 117 | 兩碗飯 | loeng5 wun2 faan6 | 2 bowls of rice | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/two-rice.mp3) |
+| 118 | 八碗飯 | baat3 wun2 faan6 | 8 bowls of rice | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/n8-rice.mp3) |
+| 119 | 兩碗麵 | loeng5 wun2 min6 | 2 bowls of noodles | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/two-noodles.mp3) |
+| 120 | 九碗麵 | gau2 wun2 min6 | 9 bowls of noodles | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/n9-noodles.mp3) |
+| 121 | 兩對鞋 | loeng5 deoi3 haai4 | 2 pairs of shoes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/two-shoes.mp3) |
+| 122 | 三對鞋 | saam1 deoi3 haai4 | 3 pairs of shoes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/n3-shoes.mp3) |
+| 123 | 兩對筷子 | loeng5 deoi3 faai3 zi2 | 2 pairs of chopsticks | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/two-chopsticks.mp3) |
+| 124 | 四對筷子 | sei3 deoi3 faai3 zi2 | 4 pairs of chopsticks | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/n4-chopsticks.mp3) |
+| 125 | 呢個蘋果 | ni1 go3 ping4 gwo2 | this apple | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/this-apple.mp3) |
+| 126 | 嗰個蘋果 | go2 go3 ping4 gwo2 | that apple | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/that-apple.mp3) |
+| 127 | 呢個波 | ni1 go3 bo1 | this ball | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/this-ball.mp3) |
+| 128 | 嗰個波 | go2 go3 bo1 | that ball | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/that-ball.mp3) |
+| 129 | 呢隻貓 | ni1 zek3 maau1 | this cat | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/this-cat.mp3) |
+| 130 | 嗰隻貓 | go2 zek3 maau1 | that cat | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/that-cat.mp3) |
+| 131 | 呢隻狗 | ni1 zek3 gau2 | this dog | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/this-dog.mp3) |
+| 132 | 嗰隻狗 | go2 zek3 gau2 | that dog | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/that-dog.mp3) |
+| 133 | 呢隻雞 | ni1 zek3 gai1 | this chicken | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/this-chicken.mp3) |
+| 134 | 嗰隻雞 | go2 zek3 gai1 | that chicken | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/that-chicken.mp3) |
+| 135 | 呢隻牛 | ni1 zek3 ngau4 | this cow | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/this-cow.mp3) |
+| 136 | 嗰隻牛 | go2 zek3 ngau4 | that cow | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/that-cow.mp3) |
+| 137 | 呢本書 | ni1 bun2 syu1 | this book | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/this-book.mp3) |
+| 138 | 嗰本書 | go2 bun2 syu1 | that book | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/that-book.mp3) |
+| 139 | 呢張紙 | ni1 zoeng1 zi2 | this sheet of paper | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/this-paper.mp3) |
+| 140 | 嗰張紙 | go2 zoeng1 zi2 | that sheet of paper | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/that-paper.mp3) |
+| 141 | 呢張枱 | ni1 zoeng1 toi2 | this table | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/this-table.mp3) |
+| 142 | 嗰張枱 | go2 zoeng1 toi2 | that table | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/that-table.mp3) |
+| 143 | 呢條褲 | ni1 tiu4 fu3 | this pair of trousers | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/this-trousers.mp3) |
+| 144 | 嗰條褲 | go2 tiu4 fu3 | that pair of trousers | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/that-trousers.mp3) |
+| 145 | 呢條魚 | ni1 tiu4 jyu4 | this fish | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/this-fish.mp3) |
+| 146 | 嗰條魚 | go2 tiu4 jyu4 | that fish | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/that-fish.mp3) |
+| 147 | 呢枝筆 | ni1 zi1 bat1 | this pen | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/this-pen.mp3) |
+| 148 | 嗰枝筆 | go2 zi1 bat1 | that pen | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/that-pen.mp3) |
+| 149 | 呢枝花 | ni1 zi1 faa1 | this flower | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/this-flower.mp3) |
+| 150 | 嗰枝花 | go2 zi1 faa1 | that flower | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/that-flower.mp3) |
+| 151 | 呢架飛機 | ni1 gaa3 fei1 gei1 | this plane | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/this-plane.mp3) |
+| 152 | 嗰架飛機 | go2 gaa3 fei1 gei1 | that plane | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/that-plane.mp3) |
+| 153 | 呢架車 | ni1 gaa3 ce1 | this car | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/this-car.mp3) |
+| 154 | 嗰架車 | go2 gaa3 ce1 | that car | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/that-car.mp3) |
+| 155 | 呢件衫 | ni1 gin6 saam1 | this shirt | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/this-shirt.mp3) |
+| 156 | 嗰件衫 | go2 gin6 saam1 | that shirt | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/that-shirt.mp3) |
+| 157 | 呢件蛋糕 | ni1 gin6 daan6 gou1 | this piece of cake | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/this-cake.mp3) |
+| 158 | 嗰件蛋糕 | go2 gin6 daan6 gou1 | that piece of cake | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/that-cake.mp3) |
+| 159 | 呢杯茶 | ni1 bui1 caa4 | this cup of tea | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/this-tea.mp3) |
+| 160 | 嗰杯茶 | go2 bui1 caa4 | that cup of tea | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/that-tea.mp3) |
+| 161 | 呢杯水 | ni1 bui1 seoi2 | this glass of water | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/this-water.mp3) |
+| 162 | 嗰杯水 | go2 bui1 seoi2 | that glass of water | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/that-water.mp3) |
+| 163 | 呢碗飯 | ni1 wun2 faan6 | this bowl of rice | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/this-rice.mp3) |
+| 164 | 嗰碗飯 | go2 wun2 faan6 | that bowl of rice | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/that-rice.mp3) |
+| 165 | 呢碗麵 | ni1 wun2 min6 | this bowl of noodles | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/this-noodles.mp3) |
+| 166 | 嗰碗麵 | go2 wun2 min6 | that bowl of noodles | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/that-noodles.mp3) |
+| 167 | 呢對鞋 | ni1 deoi3 haai4 | this pair of shoes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/this-shoes.mp3) |
+| 168 | 嗰對鞋 | go2 deoi3 haai4 | that pair of shoes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/that-shoes.mp3) |
+| 169 | 呢對筷子 | ni1 deoi3 faai3 zi2 | this pair of chopsticks | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/this-chopsticks.mp3) |
+| 170 | 嗰對筷子 | go2 deoi3 faai3 zi2 | that pair of chopsticks | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/that-chopsticks.mp3) |
+| 171 | 我有兩隻貓 | ngo5 jau5 loeng5 zek3 maau1 | I have two cats. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/ngo-jau-loeng-zek-cat.mp3) |
+| 172 | 佢有一架車 | keoi5 jau5 jat1 gaa3 ce1 | He / she has a car. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/keoi-jau-n1-gaa-car.mp3) |
+| 173 | 我有三本書 | ngo5 jau5 saam1 bun2 syu1 | I have three books. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/ngo-jau-n3-bun-book.mp3) |
+| 174 | 佢有一對鞋 | keoi5 jau5 jat1 deoi3 haai4 | He / she has a pair of shoes. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/keoi-jau-n1-deoi-shoes.mp3) |
+| 175 | 我哋有兩杯茶 | ngo5 dei6 jau5 loeng5 bui1 caa4 | We have two cups of tea. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/ngo-dei-jau-loeng-bui-tea.mp3) |
+| 176 | 你有幾多隻狗呀？ | nei5 jau5 gei2 do1 zek3 gau2 aa3 | How many dogs do you have? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/nei-jau-gei-do-zek-dog-aa.mp3) |
+| 177 | 你有幾多本書呀？ | nei5 jau5 gei2 do1 bun2 syu1 aa3 | How many books do you have? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/nei-jau-gei-do-bun-book-aa.mp3) |
+| 178 | 呢個係乜嘢呀？ | ni1 go3 hai6 mat1 je5 aa3 | What is this? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/ni-go-hai-mat-je-aa.mp3) |
+| 179 | 嗰個係乜嘢呀？ | go2 go3 hai6 mat1 je5 aa3 | What is that? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/go2-go-hai-mat-je-aa.mp3) |
+| 180 | 呢啲係乜嘢呀？ | ni1 di1 hai6 mat1 je5 aa3 | What are these? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/ni-di-hai-mat-je-aa.mp3) |
+
+## Unit 6
+
+| # | Chinese | Jyutping | English | Audio |
+|---|---|---|---|---|
+| 1 | 錢 | cin2 | money | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/cin.mp3) |
+| 2 | 蚊 | man1 | dollar | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/man.mp3) |
+| 3 | 毫 | hou4 | ten cents | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/hou4.mp3) |
+| 4 | 半 | bun3 | half | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/bun3.mp3) |
+| 5 | 找 | zaau2 | to give change | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/zaau.mp3) |
+| 6 | 買 | maai5 | to buy | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/maai5.mp3) |
+| 7 | 賣 | maai6 | to sell | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/maai6.mp3) |
+| 8 | 要 | jiu3 | to want; I'll take | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/jiu.mp3) |
+| 9 | 平 | peng4 | cheap | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/peng.mp3) |
+| 10 | 貴 | gwai3 | expensive | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/gwai.mp3) |
+| 11 | 好 | hou2 | very; good | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/hou.mp3) |
+| 12 | 得 | dak1 | OK; can do | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/dak.mp3) |
+| 13 | 橙 | caang2 | orange | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/orange.mp3) |
+| 14 | 雞蛋 | gai1 daan2 | egg | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/egg.mp3) |
+| 15 | 西瓜 | sai1 gwaa1 | watermelon | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/watermelon.mp3) |
+| 16 | 麵包 | min6 baau1 | bread roll | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/bread.mp3) |
+| 17 | 一毫 | jat1 hou4 | $0.10 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p10.mp3) |
+| 18 | 兩毫 | loeng5 hou4 | $0.20 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p20.mp3) |
+| 19 | 五毫 | ng5 hou4 | $0.50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p50.mp3) |
+| 20 | 一蚊 | jat1 man1 | $1 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p100.mp3) |
+| 21 | 兩蚊 | loeng5 man1 | $2 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p200.mp3) |
+| 22 | 五蚊 | ng5 man1 | $5 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p500.mp3) |
+| 23 | 十蚊 | sap6 man1 | $10 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p1000.mp3) |
+| 24 | 二十蚊 | ji6 sap6 man1 | $20 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p2000.mp3) |
+| 25 | 五十蚊 | ng5 sap6 man1 | $50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p5000.mp3) |
+| 26 | 一百蚊 | jat1 baak3 man1 | $100 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p10000.mp3) |
+| 27 | 五百蚊 | ng5 baak3 man1 | $500 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p50000.mp3) |
+| 28 | 三毫 | saam1 hou4 | $0.30 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p30.mp3) |
+| 29 | 八毫 | baat3 hou4 | $0.80 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p80.mp3) |
+| 30 | 一蚊半 | jat1 man1 bun3 | $1.50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p150.mp3) |
+| 31 | 兩蚊二 | loeng5 man1 ji6 | $2.20 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p220.mp3) |
+| 32 | 兩蚊半 | loeng5 man1 bun3 | $2.50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p250.mp3) |
+| 33 | 三蚊 | saam1 man1 | $3 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p300.mp3) |
+| 34 | 三蚊二 | saam1 man1 ji6 | $3.20 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p320.mp3) |
+| 35 | 三蚊半 | saam1 man1 bun3 | $3.50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p350.mp3) |
+| 36 | 四蚊半 | sei3 man1 bun3 | $4.50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p450.mp3) |
+| 37 | 四蚊八 | sei3 man1 baat3 | $4.80 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p480.mp3) |
+| 38 | 五蚊三 | ng5 man1 saam1 | $5.30 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p530.mp3) |
+| 39 | 六蚊 | luk6 man1 | $6 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p600.mp3) |
+| 40 | 八蚊 | baat3 man1 | $8 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p800.mp3) |
+| 41 | 八蚊半 | baat3 man1 bun3 | $8.50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p850.mp3) |
+| 42 | 九蚊九 | gau2 man1 gau2 | $9.90 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p990.mp3) |
+| 43 | 十二蚊 | sap6 ji6 man1 | $12 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p1200.mp3) |
+| 44 | 十二蚊半 | sap6 ji6 man1 bun3 | $12.50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p1250.mp3) |
+| 45 | 十三蚊 | sap6 saam1 man1 | $13 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p1300.mp3) |
+| 46 | 十五蚊 | sap6 ng5 man1 | $15 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p1500.mp3) |
+| 47 | 十八蚊 | sap6 baat3 man1 | $18 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p1800.mp3) |
+| 48 | 廿一蚊 | jaa6 jat1 man1 | $21 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p2100.mp3) |
+| 49 | 廿五蚊 | jaa6 ng5 man1 | $25 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p2500.mp3) |
+| 50 | 廿八蚊 | jaa6 baat3 man1 | $28 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p2800.mp3) |
+| 51 | 三十蚊 | saam1 sap6 man1 | $30 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p3000.mp3) |
+| 52 | 三十一蚊 | saam1 sap6 jat1 man1 | $31 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p3100.mp3) |
+| 53 | 三十五蚊 | saam1 sap6 ng5 man1 | $35 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p3500.mp3) |
+| 54 | 三十八蚊 | saam1 sap6 baat3 man1 | $38 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p3800.mp3) |
+| 55 | 四十蚊 | sei3 sap6 man1 | $40 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p4000.mp3) |
+| 56 | 四十五蚊 | sei3 sap6 ng5 man1 | $45 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p4500.mp3) |
+| 57 | 五十三蚊 | ng5 sap6 saam1 man1 | $53 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p5300.mp3) |
+| 58 | 六十八蚊 | luk6 sap6 baat3 man1 | $68 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p6800.mp3) |
+| 59 | 八十蚊 | baat3 sap6 man1 | $80 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p8000.mp3) |
+| 60 | 八十八蚊 | baat3 sap6 baat3 man1 | $88 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p8800.mp3) |
+| 61 | 九十九蚊 | gau2 sap6 gau2 man1 | $99 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p9900.mp3) |
+| 62 | 百二蚊 | baak3 ji6 man1 | $120 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p12000.mp3) |
+| 63 | 一百廿八蚊 | jat1 baak3 jaa6 baat3 man1 | $128 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p12800.mp3) |
+| 64 | 百五蚊 | baak3 ng5 man1 | $150 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p15000.mp3) |
+| 65 | 兩百蚊 | loeng5 baak3 man1 | $200 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p20000.mp3) |
+| 66 | 兩百五蚊 | loeng5 baak3 ng5 man1 | $250 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p25000.mp3) |
+| 67 | 三百五蚊 | saam1 baak3 ng5 man1 | $350 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p35000.mp3) |
+| 68 | 三百八蚊 | saam1 baak3 baat3 man1 | $380 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p38000.mp3) |
+| 69 | 四百五蚊 | sei3 baak3 ng5 man1 | $450 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p45000.mp3) |
+| 70 | 八百八蚊 | baat3 baak3 baat3 man1 | $880 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p88000.mp3) |
+| 71 | 千二蚊 | cin1 ji6 man1 | $1,200 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p120000.mp3) |
+| 72 | 千五蚊 | cin1 ng5 man1 | $1,500 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p150000.mp3) |
+| 73 | 兩千五蚊 | loeng5 cin1 ng5 man1 | $2,500 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p250000.mp3) |
+| 74 | 萬二蚊 | maan6 ji6 man1 | $12,000 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p1200000.mp3) |
+| 75 | 一個橙 | jat1 go3 caang2 | an orange | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/one-orange.mp3) |
+| 76 | 一隻雞蛋 | jat1 zek3 gai1 daan2 | an egg | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/one-egg.mp3) |
+| 77 | 一個西瓜 | jat1 go3 sai1 gwaa1 | a watermelon | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/one-watermelon.mp3) |
+| 78 | 一個麵包 | jat1 go3 min6 baau1 | a bread roll | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/one-bread.mp3) |
+| 79 | 好平 | hou2 peng4 | very cheap | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/hou-peng.mp3) |
+| 80 | 好貴 | hou2 gwai3 | very expensive | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/hou-gwai.mp3) |
+| 81 | 唔平 | m4 peng4 | not cheap | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/m-peng.mp3) |
+| 82 | 唔貴 | m4 gwai3 | not expensive | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/m-gwai.mp3) |
+| 83 | 幾多錢呀？ | gei2 do1 cin2 aa3 | How much is it? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/gei-do-cin-aa.mp3) |
+| 84 | 呢個幾多錢呀？ | ni1 go3 gei2 do1 cin2 aa3 | How much is this? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/ni-go-gei-do-cin-aa.mp3) |
+| 85 | 嗰個幾多錢呀？ | go2 go3 gei2 do1 cin2 aa3 | How much is that one? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/go2-go-gei-do-cin-aa.mp3) |
+| 86 | 呢本書幾多錢呀？ | ni1 bun2 syu1 gei2 do1 cin2 aa3 | How much is this book? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/ni-bun-book-gei-do-cin-aa.mp3) |
+| 87 | 我要呢個 | ngo5 jiu3 ni1 go3 | I'll take this one. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/ngo-jiu-ni-go.mp3) |
+| 88 | 我唔要嗰個 | ngo5 m4 jiu3 go2 go3 | I don't want that one. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/ngo-m-jiu-go2-go.mp3) |
+| 89 | 我要兩個橙 | ngo5 jiu3 loeng5 go3 caang2 | I'd like two oranges. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/ngo-jiu-loeng-go-orange.mp3) |
+| 90 | 我買呢個 | ngo5 maai5 ni1 go3 | I'll buy this one. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/ngo-maai5-ni-go.mp3) |
+| 91 | 呢個好貴 | ni1 go3 hou2 gwai3 | This one is expensive. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/ni-go-hou-gwai.mp3) |
+| 92 | 嗰個好平 | go2 go3 hou2 peng4 | That one is cheap. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/go2-go-hou-peng.mp3) |
+| 93 | 呢件衫唔貴 | ni1 gin6 saam1 m4 gwai3 | This shirt isn't expensive. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/ni-gin-shirt-m-gwai.mp3) |
+| 94 | 平啲得唔得呀？ | peng4 di1 dak1 m4 dak1 aa3 | Can you make it cheaper? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/peng-di-dak-m-dak-aa.mp3) |
+| 95 | 唔使找 | m4 sai2 zaau2 | Keep the change. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/no-need-zaau.mp3) |
+
+## Unit 7
+
+| # | Chinese | Jyutping | English | Audio |
+|---|---|---|---|---|
+| 1 | 飲茶 | jam2 caa4 | yum cha (go for dim sum) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/yum-cha.mp3) |
+| 2 | 點心 | dim2 sam1 | dim sum | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/dim-sum.mp3) |
+| 3 | 蒸 | zing1 | steamed | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/steamed.mp3) |
+| 4 | 煎炸 | zin1 zaa3 | pan-fried & deep-fried | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/fried.mp3) |
+| 5 | 甜 | tim4 | sweet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/sweet.mp3) |
+| 6 | 籠 | lung4 | basket | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/lung.mp3) |
+| 7 | 碟 | dip6 | plate | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/dip.mp3) |
+| 8 | 蝦餃 | haa1 gaau2 | shrimp dumpling | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/har-gow.mp3) |
+| 9 | 燒賣 | siu1 maai2 | pork & shrimp dumpling | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/siu-mai.mp3) |
+| 10 | 叉燒包 | caa1 siu1 baau1 | BBQ pork bun | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/char-siu-bao.mp3) |
+| 11 | 腸粉 | coeng2 fan2 | rice noodle roll | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/cheung-fun.mp3) |
+| 12 | 鳳爪 | fung6 zaau2 | chicken feet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/chicken-feet.mp3) |
+| 13 | 排骨 | paai4 gwat1 | steamed spare ribs | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/spare-ribs.mp3) |
+| 14 | 糯米雞 | no6 mai5 gai1 | sticky rice in lotus leaf | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/lo-mai-gai.mp3) |
+| 15 | 春卷 | ceon1 gyun2 | spring roll | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/spring-roll.mp3) |
+| 16 | 蘿蔔糕 | lo4 baak6 gou1 | turnip cake | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/turnip-cake.mp3) |
+| 17 | 蛋撻 | daan6 taat1 | egg tart | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/egg-tart.mp3) |
+| 18 | 流沙包 | lau4 saa1 baau1 | custard lava bun | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/lai-wong-bao.mp3) |
+| 19 | 馬拉糕 | maa5 laai1 gou1 | Malay sponge cake | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ma-lai-go.mp3) |
+| 20 | 菠蘿包 | bo1 lo4 baau1 | pineapple bun | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/pineapple-bun.mp3) |
+| 21 | 我要一籠蝦餃 | ngo5 jiu3 jat1 lung4 haa1 gaau2 | I'd like a basket of har gow | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/order-har-gow.mp3) |
+| 22 | 唔該加水 | m4 goi1 gaa1 seoi2 | more hot water, please | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/more-water.mp3) |
+| 23 | 唔該埋單 | m4 goi1 maai4 daan1 | the bill, please | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/bill.mp3) |
+| 24 | 一籠蝦餃 | jat1 lung4 haa1 gaau2 | shrimp dumpling (1 basket) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-har-gow.mp3) |
+| 25 | 一籠燒賣 | jat1 lung4 siu1 maai2 | pork & shrimp dumpling (1 basket) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-siu-mai.mp3) |
+| 26 | 一籠叉燒包 | jat1 lung4 caa1 siu1 baau1 | BBQ pork bun (1 basket) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-char-siu-bao.mp3) |
+| 27 | 一碟腸粉 | jat1 dip6 coeng2 fan2 | rice noodle roll (1 plate) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-cheung-fun.mp3) |
+| 28 | 一碟鳳爪 | jat1 dip6 fung6 zaau2 | chicken feet (1 plate) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-chicken-feet.mp3) |
+| 29 | 一碟排骨 | jat1 dip6 paai4 gwat1 | steamed spare ribs (1 plate) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-spare-ribs.mp3) |
+| 30 | 一碟糯米雞 | jat1 dip6 no6 mai5 gai1 | sticky rice in lotus leaf (1 plate) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-lo-mai-gai.mp3) |
+| 31 | 一碟春卷 | jat1 dip6 ceon1 gyun2 | spring roll (1 plate) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-spring-roll.mp3) |
+| 32 | 一碟蘿蔔糕 | jat1 dip6 lo4 baak6 gou1 | turnip cake (1 plate) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-turnip-cake.mp3) |
+| 33 | 一碟蛋撻 | jat1 dip6 daan6 taat1 | egg tart (1 plate) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-egg-tart.mp3) |
+| 34 | 一籠流沙包 | jat1 lung4 lau4 saa1 baau1 | custard lava bun (1 basket) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-lai-wong-bao.mp3) |
+| 35 | 一籠馬拉糕 | jat1 lung4 maa5 laai1 gou1 | Malay sponge cake (1 basket) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-ma-lai-go.mp3) |
+| 36 | 一碟菠蘿包 | jat1 dip6 bo1 lo4 baau1 | pineapple bun (1 plate) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-pineapple-bun.mp3) |
+
+## Unit 9
+
+| # | Chinese | Jyutping | English | Audio |
+|---|---|---|---|---|
+| 1 | 點 | dim2 | o'clock (hour) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/dim.mp3) |
+| 2 | 鐘 | zung1 | clock; o'clock | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/zung.mp3) |
+| 3 | 字 | zi6 | five minutes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/zi.mp3) |
+| 4 | 分 | fan1 | minute | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/fan.mp3) |
+| 5 | 幾 | gei2 | which; how many | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/gei.mp3) |
+| 6 | 幾時 | gei2 si4 | when | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/gei-si.mp3) |
+| 7 | 而家 | ji4 gaa1 | now | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/ji-gaa.mp3) |
+| 8 | 朝早 | ziu1 zou2 | morning | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/ziu-zou.mp3) |
+| 9 | 上晝 | soeng6 zau3 | before noon; a.m. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/soeng-zau.mp3) |
+| 10 | 晏晝 | aan3 zau3 | midday; early afternoon | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/aan-zau.mp3) |
+| 11 | 下晝 | haa6 zau3 | afternoon; p.m. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/haa-zau.mp3) |
+| 12 | 夜晚 | je6 maan5 | evening; night | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/je-maan.mp3) |
+| 13 | 今朝 | gam1 ziu1 | this morning | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/gam-ziu.mp3) |
+| 14 | 今晚 | gam1 maan5 | tonight | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/gam-maan.mp3) |
+| 15 | 星期 | sing1 kei4 | week; day of the week | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/sing-kei.mp3) |
+| 16 | 月 | jyut6 | month | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/jyut.mp3) |
+| 17 | 號 | hou6 | day of the month | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/hou6.mp3) |
+| 18 | 上 | soeng6 | last (week, month) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/soeng.mp3) |
+| 19 | 下 | haa6 | next (week, month) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/haa.mp3) |
+| 20 | 前日 | cin4 jat6 | the day before yesterday | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/cin-jat.mp3) |
+| 21 | 琴日 | kam4 jat6 | yesterday | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/kam-jat.mp3) |
+| 22 | 今日 | gam1 jat6 | today | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/gam-jat.mp3) |
+| 23 | 聽日 | ting1 jat6 | tomorrow | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/ting-jat.mp3) |
+| 24 | 後日 | hau6 jat6 | the day after tomorrow | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/hau-jat.mp3) |
+| 25 | 今年 | gam1 nin2 | this year _(MiniMax voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/gam-nin.mp3) |
+| 26 | 舊年 | gau6 nin2 | last year _(MiniMax voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/gau-nin.mp3) |
+| 27 | 出年 | ceot1 nin2 | next year _(MiniMax voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/ceot-nin.mp3) |
+| 28 | 返工 | faan1 gung1 | to go to work | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/faan-gung.mp3) |
+| 29 | 放工 | fong3 gung1 | to finish work | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/fong-gung.mp3) |
+| 30 | 食飯 | sik6 faan6 | to eat; to have a meal | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/sik-faan.mp3) |
+| 31 | 見 | gin3 | to see; to meet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/gin.mp3) |
+| 32 | 一點鐘 | jat1 dim2 zung1 | 1:00 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0100.mp3) |
+| 33 | 一點一個字 | jat1 dim2 jat1 go3 zi6 | 1:05 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0105.mp3) |
+| 34 | 一點兩個字 | jat1 dim2 loeng5 go3 zi6 | 1:10 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0110.mp3) |
+| 35 | 一點三個字 | jat1 dim2 saam1 go3 zi6 | 1:15 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0115.mp3) |
+| 36 | 一點四個字 | jat1 dim2 sei3 go3 zi6 | 1:20 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0120.mp3) |
+| 37 | 一點五個字 | jat1 dim2 ng5 go3 zi6 | 1:25 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0125.mp3) |
+| 38 | 一點半 | jat1 dim2 bun3 | 1:30 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0130.mp3) |
+| 39 | 一點七個字 | jat1 dim2 cat1 go3 zi6 | 1:35 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0135.mp3) |
+| 40 | 一點八個字 | jat1 dim2 baat3 go3 zi6 | 1:40 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0140.mp3) |
+| 41 | 一點九個字 | jat1 dim2 gau2 go3 zi6 | 1:45 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0145.mp3) |
+| 42 | 一點十個字 | jat1 dim2 sap6 go3 zi6 | 1:50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0150.mp3) |
+| 43 | 一點十一個字 | jat1 dim2 sap6 jat1 go3 zi6 | 1:55 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0155.mp3) |
+| 44 | 兩點鐘 | loeng5 dim2 zung1 | 2:00 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0200.mp3) |
+| 45 | 兩點一個字 | loeng5 dim2 jat1 go3 zi6 | 2:05 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0205.mp3) |
+| 46 | 兩點兩個字 | loeng5 dim2 loeng5 go3 zi6 | 2:10 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0210.mp3) |
+| 47 | 兩點三個字 | loeng5 dim2 saam1 go3 zi6 | 2:15 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0215.mp3) |
+| 48 | 兩點四個字 | loeng5 dim2 sei3 go3 zi6 | 2:20 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0220.mp3) |
+| 49 | 兩點五個字 | loeng5 dim2 ng5 go3 zi6 | 2:25 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0225.mp3) |
+| 50 | 兩點半 | loeng5 dim2 bun3 | 2:30 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0230.mp3) |
+| 51 | 兩點七個字 | loeng5 dim2 cat1 go3 zi6 | 2:35 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0235.mp3) |
+| 52 | 兩點八個字 | loeng5 dim2 baat3 go3 zi6 | 2:40 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0240.mp3) |
+| 53 | 兩點九個字 | loeng5 dim2 gau2 go3 zi6 | 2:45 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0245.mp3) |
+| 54 | 兩點十個字 | loeng5 dim2 sap6 go3 zi6 | 2:50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0250.mp3) |
+| 55 | 兩點十一個字 | loeng5 dim2 sap6 jat1 go3 zi6 | 2:55 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0255.mp3) |
+| 56 | 三點鐘 | saam1 dim2 zung1 | 3:00 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0300.mp3) |
+| 57 | 三點一個字 | saam1 dim2 jat1 go3 zi6 | 3:05 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0305.mp3) |
+| 58 | 三點兩個字 | saam1 dim2 loeng5 go3 zi6 | 3:10 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0310.mp3) |
+| 59 | 三點三個字 | saam1 dim2 saam1 go3 zi6 | 3:15 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0315.mp3) |
+| 60 | 三點四個字 | saam1 dim2 sei3 go3 zi6 | 3:20 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0320.mp3) |
+| 61 | 三點五個字 | saam1 dim2 ng5 go3 zi6 | 3:25 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0325.mp3) |
+| 62 | 三點半 | saam1 dim2 bun3 | 3:30 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0330.mp3) |
+| 63 | 三點七個字 | saam1 dim2 cat1 go3 zi6 | 3:35 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0335.mp3) |
+| 64 | 三點八個字 | saam1 dim2 baat3 go3 zi6 | 3:40 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0340.mp3) |
+| 65 | 三點九個字 | saam1 dim2 gau2 go3 zi6 | 3:45 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0345.mp3) |
+| 66 | 三點十個字 | saam1 dim2 sap6 go3 zi6 | 3:50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0350.mp3) |
+| 67 | 三點十一個字 | saam1 dim2 sap6 jat1 go3 zi6 | 3:55 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0355.mp3) |
+| 68 | 四點鐘 | sei3 dim2 zung1 | 4:00 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0400.mp3) |
+| 69 | 四點一個字 | sei3 dim2 jat1 go3 zi6 | 4:05 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0405.mp3) |
+| 70 | 四點兩個字 | sei3 dim2 loeng5 go3 zi6 | 4:10 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0410.mp3) |
+| 71 | 四點三個字 | sei3 dim2 saam1 go3 zi6 | 4:15 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0415.mp3) |
+| 72 | 四點四個字 | sei3 dim2 sei3 go3 zi6 | 4:20 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0420.mp3) |
+| 73 | 四點五個字 | sei3 dim2 ng5 go3 zi6 | 4:25 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0425.mp3) |
+| 74 | 四點半 | sei3 dim2 bun3 | 4:30 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0430.mp3) |
+| 75 | 四點七個字 | sei3 dim2 cat1 go3 zi6 | 4:35 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0435.mp3) |
+| 76 | 四點八個字 | sei3 dim2 baat3 go3 zi6 | 4:40 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0440.mp3) |
+| 77 | 四點九個字 | sei3 dim2 gau2 go3 zi6 | 4:45 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0445.mp3) |
+| 78 | 四點十個字 | sei3 dim2 sap6 go3 zi6 | 4:50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0450.mp3) |
+| 79 | 四點十一個字 | sei3 dim2 sap6 jat1 go3 zi6 | 4:55 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0455.mp3) |
+| 80 | 五點鐘 | ng5 dim2 zung1 | 5:00 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0500.mp3) |
+| 81 | 五點一個字 | ng5 dim2 jat1 go3 zi6 | 5:05 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0505.mp3) |
+| 82 | 五點兩個字 | ng5 dim2 loeng5 go3 zi6 | 5:10 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0510.mp3) |
+| 83 | 五點三個字 | ng5 dim2 saam1 go3 zi6 | 5:15 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0515.mp3) |
+| 84 | 五點四個字 | ng5 dim2 sei3 go3 zi6 | 5:20 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0520.mp3) |
+| 85 | 五點五個字 | ng5 dim2 ng5 go3 zi6 | 5:25 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0525.mp3) |
+| 86 | 五點半 | ng5 dim2 bun3 | 5:30 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0530.mp3) |
+| 87 | 五點七個字 | ng5 dim2 cat1 go3 zi6 | 5:35 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0535.mp3) |
+| 88 | 五點八個字 | ng5 dim2 baat3 go3 zi6 | 5:40 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0540.mp3) |
+| 89 | 五點九個字 | ng5 dim2 gau2 go3 zi6 | 5:45 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0545.mp3) |
+| 90 | 五點十個字 | ng5 dim2 sap6 go3 zi6 | 5:50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0550.mp3) |
+| 91 | 五點十一個字 | ng5 dim2 sap6 jat1 go3 zi6 | 5:55 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0555.mp3) |
+| 92 | 六點鐘 | luk6 dim2 zung1 | 6:00 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0600.mp3) |
+| 93 | 六點一個字 | luk6 dim2 jat1 go3 zi6 | 6:05 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0605.mp3) |
+| 94 | 六點兩個字 | luk6 dim2 loeng5 go3 zi6 | 6:10 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0610.mp3) |
+| 95 | 六點三個字 | luk6 dim2 saam1 go3 zi6 | 6:15 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0615.mp3) |
+| 96 | 六點四個字 | luk6 dim2 sei3 go3 zi6 | 6:20 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0620.mp3) |
+| 97 | 六點五個字 | luk6 dim2 ng5 go3 zi6 | 6:25 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0625.mp3) |
+| 98 | 六點半 | luk6 dim2 bun3 | 6:30 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0630.mp3) |
+| 99 | 六點七個字 | luk6 dim2 cat1 go3 zi6 | 6:35 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0635.mp3) |
+| 100 | 六點八個字 | luk6 dim2 baat3 go3 zi6 | 6:40 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0640.mp3) |
+| 101 | 六點九個字 | luk6 dim2 gau2 go3 zi6 | 6:45 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0645.mp3) |
+| 102 | 六點十個字 | luk6 dim2 sap6 go3 zi6 | 6:50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0650.mp3) |
+| 103 | 六點十一個字 | luk6 dim2 sap6 jat1 go3 zi6 | 6:55 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0655.mp3) |
+| 104 | 七點鐘 | cat1 dim2 zung1 | 7:00 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0700.mp3) |
+| 105 | 七點一個字 | cat1 dim2 jat1 go3 zi6 | 7:05 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0705.mp3) |
+| 106 | 七點兩個字 | cat1 dim2 loeng5 go3 zi6 | 7:10 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0710.mp3) |
+| 107 | 七點三個字 | cat1 dim2 saam1 go3 zi6 | 7:15 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0715.mp3) |
+| 108 | 七點四個字 | cat1 dim2 sei3 go3 zi6 | 7:20 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0720.mp3) |
+| 109 | 七點五個字 | cat1 dim2 ng5 go3 zi6 | 7:25 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0725.mp3) |
+| 110 | 七點半 | cat1 dim2 bun3 | 7:30 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0730.mp3) |
+| 111 | 七點七個字 | cat1 dim2 cat1 go3 zi6 | 7:35 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0735.mp3) |
+| 112 | 七點八個字 | cat1 dim2 baat3 go3 zi6 | 7:40 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0740.mp3) |
+| 113 | 七點九個字 | cat1 dim2 gau2 go3 zi6 | 7:45 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0745.mp3) |
+| 114 | 七點十個字 | cat1 dim2 sap6 go3 zi6 | 7:50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0750.mp3) |
+| 115 | 七點十一個字 | cat1 dim2 sap6 jat1 go3 zi6 | 7:55 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0755.mp3) |
+| 116 | 八點鐘 | baat3 dim2 zung1 | 8:00 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0800.mp3) |
+| 117 | 八點一個字 | baat3 dim2 jat1 go3 zi6 | 8:05 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0805.mp3) |
+| 118 | 八點兩個字 | baat3 dim2 loeng5 go3 zi6 | 8:10 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0810.mp3) |
+| 119 | 八點三個字 | baat3 dim2 saam1 go3 zi6 | 8:15 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0815.mp3) |
+| 120 | 八點四個字 | baat3 dim2 sei3 go3 zi6 | 8:20 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0820.mp3) |
+| 121 | 八點五個字 | baat3 dim2 ng5 go3 zi6 | 8:25 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0825.mp3) |
+| 122 | 八點半 | baat3 dim2 bun3 | 8:30 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0830.mp3) |
+| 123 | 八點七個字 | baat3 dim2 cat1 go3 zi6 | 8:35 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0835.mp3) |
+| 124 | 八點八個字 | baat3 dim2 baat3 go3 zi6 | 8:40 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0840.mp3) |
+| 125 | 八點九個字 | baat3 dim2 gau2 go3 zi6 | 8:45 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0845.mp3) |
+| 126 | 八點十個字 | baat3 dim2 sap6 go3 zi6 | 8:50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0850.mp3) |
+| 127 | 八點十一個字 | baat3 dim2 sap6 jat1 go3 zi6 | 8:55 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0855.mp3) |
+| 128 | 九點鐘 | gau2 dim2 zung1 | 9:00 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0900.mp3) |
+| 129 | 九點一個字 | gau2 dim2 jat1 go3 zi6 | 9:05 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0905.mp3) |
+| 130 | 九點兩個字 | gau2 dim2 loeng5 go3 zi6 | 9:10 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0910.mp3) |
+| 131 | 九點三個字 | gau2 dim2 saam1 go3 zi6 | 9:15 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0915.mp3) |
+| 132 | 九點四個字 | gau2 dim2 sei3 go3 zi6 | 9:20 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0920.mp3) |
+| 133 | 九點五個字 | gau2 dim2 ng5 go3 zi6 | 9:25 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0925.mp3) |
+| 134 | 九點半 | gau2 dim2 bun3 | 9:30 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0930.mp3) |
+| 135 | 九點七個字 | gau2 dim2 cat1 go3 zi6 | 9:35 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0935.mp3) |
+| 136 | 九點八個字 | gau2 dim2 baat3 go3 zi6 | 9:40 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0940.mp3) |
+| 137 | 九點九個字 | gau2 dim2 gau2 go3 zi6 | 9:45 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0945.mp3) |
+| 138 | 九點十個字 | gau2 dim2 sap6 go3 zi6 | 9:50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0950.mp3) |
+| 139 | 九點十一個字 | gau2 dim2 sap6 jat1 go3 zi6 | 9:55 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0955.mp3) |
+| 140 | 十點鐘 | sap6 dim2 zung1 | 10:00 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1000.mp3) |
+| 141 | 十點一個字 | sap6 dim2 jat1 go3 zi6 | 10:05 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1005.mp3) |
+| 142 | 十點兩個字 | sap6 dim2 loeng5 go3 zi6 | 10:10 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1010.mp3) |
+| 143 | 十點三個字 | sap6 dim2 saam1 go3 zi6 | 10:15 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1015.mp3) |
+| 144 | 十點四個字 | sap6 dim2 sei3 go3 zi6 | 10:20 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1020.mp3) |
+| 145 | 十點五個字 | sap6 dim2 ng5 go3 zi6 | 10:25 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1025.mp3) |
+| 146 | 十點半 | sap6 dim2 bun3 | 10:30 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1030.mp3) |
+| 147 | 十點七個字 | sap6 dim2 cat1 go3 zi6 | 10:35 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1035.mp3) |
+| 148 | 十點八個字 | sap6 dim2 baat3 go3 zi6 | 10:40 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1040.mp3) |
+| 149 | 十點九個字 | sap6 dim2 gau2 go3 zi6 | 10:45 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1045.mp3) |
+| 150 | 十點十個字 | sap6 dim2 sap6 go3 zi6 | 10:50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1050.mp3) |
+| 151 | 十點十一個字 | sap6 dim2 sap6 jat1 go3 zi6 | 10:55 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1055.mp3) |
+| 152 | 十一點鐘 | sap6 jat1 dim2 zung1 | 11:00 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1100.mp3) |
+| 153 | 十一點一個字 | sap6 jat1 dim2 jat1 go3 zi6 | 11:05 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1105.mp3) |
+| 154 | 十一點兩個字 | sap6 jat1 dim2 loeng5 go3 zi6 | 11:10 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1110.mp3) |
+| 155 | 十一點三個字 | sap6 jat1 dim2 saam1 go3 zi6 | 11:15 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1115.mp3) |
+| 156 | 十一點四個字 | sap6 jat1 dim2 sei3 go3 zi6 | 11:20 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1120.mp3) |
+| 157 | 十一點五個字 | sap6 jat1 dim2 ng5 go3 zi6 | 11:25 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1125.mp3) |
+| 158 | 十一點半 | sap6 jat1 dim2 bun3 | 11:30 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1130.mp3) |
+| 159 | 十一點七個字 | sap6 jat1 dim2 cat1 go3 zi6 | 11:35 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1135.mp3) |
+| 160 | 十一點八個字 | sap6 jat1 dim2 baat3 go3 zi6 | 11:40 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1140.mp3) |
+| 161 | 十一點九個字 | sap6 jat1 dim2 gau2 go3 zi6 | 11:45 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1145.mp3) |
+| 162 | 十一點十個字 | sap6 jat1 dim2 sap6 go3 zi6 | 11:50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1150.mp3) |
+| 163 | 十一點十一個字 | sap6 jat1 dim2 sap6 jat1 go3 zi6 | 11:55 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1155.mp3) |
+| 164 | 十二點鐘 | sap6 ji6 dim2 zung1 | 12:00 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1200.mp3) |
+| 165 | 十二點一個字 | sap6 ji6 dim2 jat1 go3 zi6 | 12:05 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1205.mp3) |
+| 166 | 十二點兩個字 | sap6 ji6 dim2 loeng5 go3 zi6 | 12:10 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1210.mp3) |
+| 167 | 十二點三個字 | sap6 ji6 dim2 saam1 go3 zi6 | 12:15 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1215.mp3) |
+| 168 | 十二點四個字 | sap6 ji6 dim2 sei3 go3 zi6 | 12:20 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1220.mp3) |
+| 169 | 十二點五個字 | sap6 ji6 dim2 ng5 go3 zi6 | 12:25 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1225.mp3) |
+| 170 | 十二點半 | sap6 ji6 dim2 bun3 | 12:30 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1230.mp3) |
+| 171 | 十二點七個字 | sap6 ji6 dim2 cat1 go3 zi6 | 12:35 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1235.mp3) |
+| 172 | 十二點八個字 | sap6 ji6 dim2 baat3 go3 zi6 | 12:40 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1240.mp3) |
+| 173 | 十二點九個字 | sap6 ji6 dim2 gau2 go3 zi6 | 12:45 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1245.mp3) |
+| 174 | 十二點十個字 | sap6 ji6 dim2 sap6 go3 zi6 | 12:50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1250.mp3) |
+| 175 | 十二點十一個字 | sap6 ji6 dim2 sap6 jat1 go3 zi6 | 12:55 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1255.mp3) |
+| 176 | 三點零五分 | saam1 dim2 ling4 ng5 fan1 | 3:05 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0305-fan.mp3) |
+| 177 | 三點十五分 | saam1 dim2 sap6 ng5 fan1 | 3:15 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0315-fan.mp3) |
+| 178 | 三點三十分 | saam1 dim2 saam1 sap6 fan1 | 3:30 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0330-fan.mp3) |
+| 179 | 三點四十五分 | saam1 dim2 sei3 sap6 ng5 fan1 | 3:45 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0345-fan.mp3) |
+| 180 | 七點二十分 | cat1 dim2 ji6 sap6 fan1 | 7:20 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0720-fan.mp3) |
+| 181 | 十點五十分 | sap6 dim2 ng5 sap6 fan1 | 10:50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1050-fan.mp3) |
+| 182 | 七點零八分 | cat1 dim2 ling4 baat3 fan1 | 7:08 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0708-fan.mp3) |
+| 183 | 十一點四十二分 | sap6 jat1 dim2 sei3 sap6 ji6 fan1 | 11:42 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t1142-fan.mp3) |
+| 184 | 星期一 | sing1 kei4 jat1 | Monday | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/wk1.mp3) |
+| 185 | 星期二 | sing1 kei4 ji6 | Tuesday | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/wk2.mp3) |
+| 186 | 星期三 | sing1 kei4 saam1 | Wednesday | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/wk3.mp3) |
+| 187 | 星期四 | sing1 kei4 sei3 | Thursday | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/wk4.mp3) |
+| 188 | 星期五 | sing1 kei4 ng5 | Friday | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/wk5.mp3) |
+| 189 | 星期六 | sing1 kei4 luk6 | Saturday | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/wk6.mp3) |
+| 190 | 星期日 | sing1 kei4 jat6 | Sunday | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/wk7.mp3) |
+| 191 | 一月 | jat1 jyut6 | January | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/m1.mp3) |
+| 192 | 二月 | ji6 jyut6 | February | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/m2.mp3) |
+| 193 | 三月 | saam1 jyut6 | March | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/m3.mp3) |
+| 194 | 四月 | sei3 jyut6 | April | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/m4.mp3) |
+| 195 | 五月 | ng5 jyut6 | May | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/m5.mp3) |
+| 196 | 六月 | luk6 jyut6 | June | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/m6.mp3) |
+| 197 | 七月 | cat1 jyut6 | July | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/m7.mp3) |
+| 198 | 八月 | baat3 jyut6 | August | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/m8.mp3) |
+| 199 | 九月 | gau2 jyut6 | September | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/m9.mp3) |
+| 200 | 十月 | sap6 jyut6 | October | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/m10.mp3) |
+| 201 | 十一月 | sap6 jat1 jyut6 | November | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/m11.mp3) |
+| 202 | 十二月 | sap6 ji6 jyut6 | December | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/m12.mp3) |
+| 203 | 一號 | jat1 hou6 | the 1st | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d1.mp3) |
+| 204 | 二號 | ji6 hou6 | the 2nd | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d2.mp3) |
+| 205 | 三號 | saam1 hou6 | the 3rd | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d3.mp3) |
+| 206 | 四號 | sei3 hou6 | the 4th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d4.mp3) |
+| 207 | 五號 | ng5 hou6 | the 5th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d5.mp3) |
+| 208 | 六號 | luk6 hou6 | the 6th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d6.mp3) |
+| 209 | 七號 | cat1 hou6 | the 7th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d7.mp3) |
+| 210 | 八號 | baat3 hou6 | the 8th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d8.mp3) |
+| 211 | 九號 | gau2 hou6 | the 9th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d9.mp3) |
+| 212 | 十號 | sap6 hou6 | the 10th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d10.mp3) |
+| 213 | 十一號 | sap6 jat1 hou6 | the 11th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d11.mp3) |
+| 214 | 十二號 | sap6 ji6 hou6 | the 12th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d12.mp3) |
+| 215 | 十三號 | sap6 saam1 hou6 | the 13th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d13.mp3) |
+| 216 | 十四號 | sap6 sei3 hou6 | the 14th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d14.mp3) |
+| 217 | 十五號 | sap6 ng5 hou6 | the 15th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d15.mp3) |
+| 218 | 十六號 | sap6 luk6 hou6 | the 16th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d16.mp3) |
+| 219 | 十七號 | sap6 cat1 hou6 | the 17th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d17.mp3) |
+| 220 | 十八號 | sap6 baat3 hou6 | the 18th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d18.mp3) |
+| 221 | 十九號 | sap6 gau2 hou6 | the 19th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d19.mp3) |
+| 222 | 二十號 | ji6 sap6 hou6 | the 20th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d20.mp3) |
+| 223 | 廿一號 | jaa6 jat1 hou6 | the 21st | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d21.mp3) |
+| 224 | 廿二號 | jaa6 ji6 hou6 | the 22nd | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d22.mp3) |
+| 225 | 廿三號 | jaa6 saam1 hou6 | the 23rd | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d23.mp3) |
+| 226 | 廿四號 | jaa6 sei3 hou6 | the 24th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d24.mp3) |
+| 227 | 廿五號 | jaa6 ng5 hou6 | the 25th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d25.mp3) |
+| 228 | 廿六號 | jaa6 luk6 hou6 | the 26th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d26.mp3) |
+| 229 | 廿七號 | jaa6 cat1 hou6 | the 27th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d27.mp3) |
+| 230 | 廿八號 | jaa6 baat3 hou6 | the 28th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d28.mp3) |
+| 231 | 廿九號 | jaa6 gau2 hou6 | the 29th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d29.mp3) |
+| 232 | 三十號 | saam1 sap6 hou6 | the 30th | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d30.mp3) |
+| 233 | 三十一號 | saam1 sap6 jat1 hou6 | the 31st | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/d31.mp3) |
+| 234 | 幾點？ | gei2 dim2 | what time? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/gei-dim.mp3) |
+| 235 | 星期幾？ | sing1 kei4 gei2 | what day of the week? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/sing-kei-gei.mp3) |
+| 236 | 幾月幾號？ | gei2 jyut6 gei2 hou6 | what date? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/gei-jyut-gei-hou6.mp3) |
+| 237 | 上個星期 | soeng6 go3 sing1 kei4 | last week | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/soeng-go-sing-kei.mp3) |
+| 238 | 下個星期 | haa6 go3 sing1 kei4 | next week | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/haa-go-sing-kei.mp3) |
+| 239 | 上個月 | soeng6 go3 jyut6 | last month | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/soeng-go-jyut.mp3) |
+| 240 | 下個月 | haa6 go3 jyut6 | next month | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/haa-go-jyut.mp3) |
+| 241 | 而家幾點呀？ | ji4 gaa1 gei2 dim2 aa3 | What time is it now? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/ji-gaa-gei-dim-aa.mp3) |
+| 242 | 而家三點半 | ji4 gaa1 saam1 dim2 bun3 | It's half past three now. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/ji-gaa-t0330.mp3) |
+| 243 | 你幾點返工呀？ | nei5 gei2 dim2 faan1 gung1 aa3 | What time do you go to work? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/nei-gei-dim-faan-gung-aa.mp3) |
+| 244 | 我九點鐘返工 | ngo5 gau2 dim2 zung1 faan1 gung1 | I go to work at nine. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/ngo-t0900-faan-gung.mp3) |
+| 245 | 我六點鐘放工 | ngo5 luk6 dim2 zung1 fong3 gung1 | I finish work at six. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/ngo-t0600-fong-gung.mp3) |
+| 246 | 你幾點食飯呀？ | nei5 gei2 dim2 sik6 faan6 aa3 | What time do you eat? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/nei-gei-dim-sik-faan-aa.mp3) |
+| 247 | 我哋夜晚七點鐘食飯 | ngo5 dei6 je6 maan5 cat1 dim2 zung1 sik6 faan6 | We eat at seven in the evening. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/ngo-dei-je-maan-t0700-sik-faan.mp3) |
+| 248 | 我哋聽日飲茶 | ngo5 dei6 ting1 jat6 jam2 caa4 | We're having dim sum tomorrow. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/ngo-dei-ting-jat-yum-cha.mp3) |
+| 249 | 聽日我哋飲茶 | ting1 jat6 ngo5 dei6 jam2 caa4 | We're having dim sum tomorrow. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/ting-jat-ngo-dei-yum-cha.mp3) |
+| 250 | 我星期六飲茶 | ngo5 sing1 kei4 luk6 jam2 caa4 | I'm having dim sum on Saturday. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/ngo-wk6-yum-cha.mp3) |
+| 251 | 你幾時飲茶呀？ | nei5 gei2 si4 jam2 caa4 aa3 | When are you having dim sum? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/nei-gei-si-yum-cha-aa.mp3) |
+| 252 | 今日星期幾呀？ | gam1 jat6 sing1 kei4 gei2 aa3 | What day is it today? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/gam-jat-sing-kei-gei-aa.mp3) |
+| 253 | 今日星期五 | gam1 jat6 sing1 kei4 ng5 | Today is Friday. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/gam-jat-wk5.mp3) |
+| 254 | 聽日係星期六 | ting1 jat6 hai6 sing1 kei4 luk6 | Tomorrow is Saturday. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/ting-jat-hai-wk6.mp3) |
+| 255 | 今日幾月幾號呀？ | gam1 jat6 gei2 jyut6 gei2 hou6 aa3 | What's the date today? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/gam-jat-gei-jyut-gei-hou6-aa.mp3) |
+| 256 | 今日五月三號 | gam1 jat6 ng5 jyut6 saam1 hou6 | Today is the 3rd of May. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/gam-jat-m5-d3.mp3) |
+| 257 | 聽日見 | ting1 jat6 gin3 | See you tomorrow! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/ting-jat-gin.mp3) |
+| 258 | 星期一見 | sing1 kei4 jat1 gin3 | See you on Monday! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/wk1-gin.mp3) |
+
+## Unit 10
+
+| # | Chinese | Jyutping | English | Audio |
+|---|---|---|---|---|
+| 1 | 屋企 | uk1 kei2 | home; family | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/home.mp3) |
+| 2 | 屋企人 | uk1 kei2 jan4 | family (the people) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/family.mp3) |
+| 3 | 爸爸 | baa4 baa1 | dad; father | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/dad.mp3) |
+| 4 | 媽媽 | maa4 maa1 | mum; mother | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/mum.mp3) |
+| 5 | 哥哥 | go4 go1 | older brother | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/elder-brother.mp3) |
+| 6 | 家姐 | gaa1 ze1 | older sister | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/elder-sister.mp3) |
+| 7 | 細佬 | sai3 lou2 | younger brother | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/younger-brother.mp3) |
+| 8 | 細妹 | sai3 mui2 | younger sister | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/younger-sister.mp3) |
+| 9 | 兄弟姊妹 | hing1 dai6 zi2 mui6 | brothers and sisters | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/siblings.mp3) |
+| 10 | 爺爺 | je4 je2 | grandpa (dad's dad) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/dads-dad.mp3) |
+| 11 | 嫲嫲 | maa4 maa4 | grandma (dad's mum) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/dads-mum.mp3) |
+| 12 | 公公 | gung4 gung1 | grandpa (mum's dad) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/mums-dad.mp3) |
+| 13 | 婆婆 | po4 po2 | grandma (mum's mum) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/mums-mum.mp3) |
+| 14 | 老公 | lou5 gung1 | husband | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/husband.mp3) |
+| 15 | 老婆 | lou5 po4 | wife | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/wife.mp3) |
+| 16 | 仔 | zai2 | son | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/son.mp3) |
+| 17 | 女 | neoi2 | daughter _(MiniMax voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/daughter.mp3) |
+| 18 | 仔女 | zai2 neoi2 | children (sons and daughters) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/children.mp3) |
+| 19 | 嘅 | ge3 | 's; of (makes "my", "whose") | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/ge.mp3) |
+| 20 | 同 | tung4 | and; with | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/tung.mp3) |
+| 21 | 住 | zyu6 | to live (somewhere) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/zyu.mp3) |
+| 22 | 歲 | seoi3 | years old | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/seoi.mp3) |
+| 23 | 爸爸嘅爸爸 | baa4 baa1 ge3 baa4 baa1 | dad's dad | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/dad-ge-dad.mp3) |
+| 24 | 爸爸嘅媽媽 | baa4 baa1 ge3 maa4 maa1 | dad's mum | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/dad-ge-mum.mp3) |
+| 25 | 媽媽嘅爸爸 | maa4 maa1 ge3 baa4 baa1 | mum's dad | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/mum-ge-dad.mp3) |
+| 26 | 媽媽嘅媽媽 | maa4 maa1 ge3 maa4 maa1 | mum's mum | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/mum-ge-mum.mp3) |
+| 27 | 爸爸嘅老婆 | baa4 baa1 ge3 lou5 po4 | dad's wife | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/dad-ge-wife.mp3) |
+| 28 | 媽媽嘅老公 | maa4 maa1 ge3 lou5 gung1 | mum's husband | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/mum-ge-husband.mp3) |
+| 29 | 爺爺嘅老婆 | je4 je2 ge3 lou5 po4 | grandpa's wife (dad's side) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/dads-dad-ge-wife.mp3) |
+| 30 | 婆婆嘅老公 | po4 po2 ge3 lou5 gung1 | grandma's husband (mum's side) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/mums-mum-ge-husband.mp3) |
+| 31 | 嫲嫲嘅仔 | maa4 maa4 ge3 zai2 | grandma's son (dad's side) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/dads-mum-ge-son.mp3) |
+| 32 | 公公嘅女 | gung4 gung1 ge3 neoi2 | grandpa's daughter (mum's side) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/mums-dad-ge-daughter.mp3) |
+| 33 | 我嘅書 | ngo5 ge3 syu1 | my book | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/ngo-ge-book.mp3) |
+| 34 | 你嘅筆 | nei5 ge3 bat1 | your pen | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/nei-ge-pen.mp3) |
+| 35 | 我嘅 | ngo5 ge3 | mine | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/ngo-ge.mp3) |
+| 36 | 邊個嘅 | bin1 go3 ge3 | whose | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/bin-go-ge.mp3) |
+| 37 | 我爸爸 | ngo5 baa4 baa1 | my dad | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/ngo-dad.mp3) |
+| 38 | 你媽媽 | nei5 maa4 maa1 | your mum | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/nei-mum.mp3) |
+| 39 | 佢家姐 | keoi5 gaa1 ze1 | his / her older sister | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/keoi-elder-sister.mp3) |
+| 40 | 我爸爸同媽媽 | ngo5 baa4 baa1 tung4 maa4 maa1 | my dad and mum | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/ngo-dad-tung-mum.mp3) |
+| 41 | 我個仔 | ngo5 go3 zai2 | my son | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/ngo-go-son.mp3) |
+| 42 | 我個女 | ngo5 go3 neoi2 | my daughter | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/ngo-go-daughter.mp3) |
+| 43 | 我隻貓 | ngo5 zek3 maau1 | my cat | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/ngo-zek-cat.mp3) |
+| 44 | 我隻狗 | ngo5 zek3 gau2 | my dog | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/ngo-zek-dog.mp3) |
+| 45 | 我本書 | ngo5 bun2 syu1 | my book | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/ngo-bun-book.mp3) |
+| 46 | 我枝筆 | ngo5 zi1 bat1 | my pen | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/ngo-zi-pen.mp3) |
+| 47 | 我件衫 | ngo5 gin6 saam1 | my shirt | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/ngo-gin-shirt.mp3) |
+| 48 | 你個仔 | nei5 go3 zai2 | your son | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/nei-go-son.mp3) |
+| 49 | 你個女 | nei5 go3 neoi2 | your daughter | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/nei-go-daughter.mp3) |
+| 50 | 你隻貓 | nei5 zek3 maau1 | your cat | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/nei-zek-cat.mp3) |
+| 51 | 你隻狗 | nei5 zek3 gau2 | your dog | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/nei-zek-dog.mp3) |
+| 52 | 你本書 | nei5 bun2 syu1 | your book | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/nei-bun-book.mp3) |
+| 53 | 你枝筆 | nei5 zi1 bat1 | your pen | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/nei-zi-pen.mp3) |
+| 54 | 你件衫 | nei5 gin6 saam1 | your shirt | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/nei-gin-shirt.mp3) |
+| 55 | 佢個仔 | keoi5 go3 zai2 | his / her son | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/keoi-go-son.mp3) |
+| 56 | 佢個女 | keoi5 go3 neoi2 | his / her daughter | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/keoi-go-daughter.mp3) |
+| 57 | 佢隻貓 | keoi5 zek3 maau1 | his / her cat | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/keoi-zek-cat.mp3) |
+| 58 | 佢隻狗 | keoi5 zek3 gau2 | his / her dog | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/keoi-zek-dog.mp3) |
+| 59 | 佢本書 | keoi5 bun2 syu1 | his / her book | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/keoi-bun-book.mp3) |
+| 60 | 佢枝筆 | keoi5 zi1 bat1 | his / her pen | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/keoi-zi-pen.mp3) |
+| 61 | 佢件衫 | keoi5 gin6 saam1 | his / her shirt | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/keoi-gin-shirt.mp3) |
+| 62 | 佢係我媽媽 | keoi5 hai6 ngo5 maa4 maa1 | She is my mum. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/keoi-hai-ngo-mum.mp3) |
+| 63 | 佢係我老公 | keoi5 hai6 ngo5 lou5 gung1 | He is my husband. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/keoi-hai-ngo-husband.mp3) |
+| 64 | 呢個係我哥哥 | ni1 go3 hai6 ngo5 go4 go1 | This is my older brother. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/ni-go-hai-ngo-elder-brother.mp3) |
+| 65 | 佢係邊個呀？ | keoi5 hai6 bin1 go3 aa3 | Who is he / she? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/keoi-hai-bin-go-aa.mp3) |
+| 66 | 呢本書係我嘅 | ni1 bun2 syu1 hai6 ngo5 ge3 | This book is mine. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/ni-bun-book-hai-ngo-ge.mp3) |
+| 67 | 呢本書係邊個嘅呀？ | ni1 bun2 syu1 hai6 bin1 go3 ge3 aa3 | Whose book is this? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/ni-bun-book-hai-bin-go-ge-aa.mp3) |
+| 68 | 係我嘅 | hai6 ngo5 ge3 | It's mine. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/hai-ngo-ge.mp3) |
+| 69 | 我有兩個家姐 | ngo5 jau5 loeng5 go3 gaa1 ze1 | I have two older sisters. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/ngo-jau-loeng-go-elder-sister.mp3) |
+| 70 | 你有幾多個兄弟姊妹呀？ | nei5 jau5 gei2 do1 go3 hing1 dai6 zi2 mui6 aa3 | How many brothers and sisters do you have? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/nei-jau-gei-do-go-siblings-aa.mp3) |
+| 71 | 你個女幾多歲呀？ | nei5 go3 neoi2 gei2 do1 seoi3 aa3 | How old is your daughter? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/nei-go-daughter-gei-do-seoi-aa.mp3) |
+| 72 | 我個仔三歲 | ngo5 go3 zai2 saam1 seoi3 | My son is three. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/ngo-go-son-n3-seoi.mp3) |
+| 73 | 我同屋企人住 | ngo5 tung4 uk1 kei2 jan4 zyu6 | I live with my family. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/ngo-tung-family-zyu.mp3) |

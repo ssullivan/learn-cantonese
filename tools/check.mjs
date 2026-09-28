@@ -14,12 +14,16 @@
  *     entry without img:false, and no orphan .mp3 files or drawings
  *   - a word borrowed with Units.word(n, ...) has its audio and picture
  *     checked in unit n, and every page that loads a borrowing vocab.js
- *     loads shared/units.js and ../unit<n>/vocab.js before it
+ *     (its own, or another unit's, like the review page) loads
+ *     shared/units.js and unit n's vocab.js before it
  *   - pages load shared/numbers.js before any vocab.js using Canto.number
  *   - an entry's measure word matches its picture (in its own unit if
  *     borrowed): a measure with dish "steamer" needs a steamer() drawing,
  *     "plate" a plate(), and so on; one without a dish, none of them
  *   - img/*.svg match art.mjs exactly (else run node tools/draw.mjs)
+ *   - audio/check.json (audio-check's verdicts) names only vocab entries
+ *   - AUDIO-REVIEW.md matches the vocab (else run node tools/review.mjs),
+ *     and review/index.html loads every unit's vocab.js
  *   - every tools/*.test.mjs passes
  *   - no file holds the Azure Speech or MiniMax key (when set on this
  *     machine): keys must never be committed
@@ -119,26 +123,44 @@ for (const unit of unitDirs()) {
   const list = sub => existsSync(join(dir, sub)) ? readdirSync(join(dir, sub)) : [];
   for (const f of list('audio')) if (f.endsWith('.mp3') && !ids.has(f.slice(0, -4))) bad(join(dir, 'audio', f), 'orphan (no vocab entry)');
   for (const f of list('img')) if (f.endsWith('.svg') && !art[f.slice(0, -4)]) bad(join(dir, 'img', f), 'orphan (not in art.mjs)');
+  const verdicts = join(dir, 'audio', 'check.json');
+  if (existsSync(verdicts)) {
+    for (const id of Object.keys(JSON.parse(readFileSync(verdicts, 'utf8')))) if (!ids.has(id)) bad(verdicts, `${id} is not in vocab.js (rerun node tools/audio-check.mjs ${unit})`);
+  }
 }
 
-// Pages load shared/units.js and the vocab of every unit they borrow from
-// before the unit's own vocab.js, and shared/numbers.js before any vocab
-// that uses Canto.number
+// The review table, and the review page, which lists every unit's clips
+{
+  const page = join(ROOT, 'review/index.html');
+  const html = existsSync(page) ? readFileSync(page, 'utf8') : '';
+  for (const u of unitDirs().filter(u => existsSync(join(ROOT, u, 'vocab.js')))) {
+    if (!html.includes(`src="../${u}/vocab.js`)) bad(page, `load ../${u}/vocab.js (the review page lists every unit)`);
+  }
+  const { reviewMarkdown, REVIEW_FILE } = await import('./review.mjs');
+  if (!existsSync(REVIEW_FILE) || readFileSync(REVIEW_FILE, 'utf8') !== reviewMarkdown()) bad(REVIEW_FILE, 'out of date (run node tools/review.mjs)');
+}
+
+// Pages load shared/units.js before any vocab.js, the vocab of every unit a
+// vocab.js borrows from before it, and shared/numbers.js before any vocab
+// that uses Canto.number. This covers every vocab.js a page loads: its own,
+// and other units' (the review page loads them all).
 for (const html of files.filter(f => f.endsWith('.html'))) {
   const srcs = [...readFileSync(html, 'utf8').matchAll(/<script src="([^"?]+)/g)].map(m => m[1]);
   const at = src => srcs.indexOf(src);
-  if (at('vocab.js') < 0) continue;
-  if (at('../shared/units.js') < 0 || at('../shared/units.js') > at('vocab.js')) bad(html, 'load ../shared/units.js before vocab.js');
-  const vocabSrc = readFileSync(join(dirname(html), 'vocab.js'), 'utf8');
-  for (const n of new Set([...vocabSrc.matchAll(/Units\.word\((\d+)/g)].map(m => m[1]))) {
-    const need = `../unit${n}/vocab.js`;
-    const i = at(need);
-    if (i < 0 || i > at('vocab.js') || i < at('../shared/units.js')) bad(html, `vocab.js borrows from unit ${n}: load ${need} after units.js and before vocab.js`);
-  }
-  for (const v of srcs.filter(s => /^(\.\.\/unit\d+\/)?vocab\.js$/.test(s))) {
-    if (!readFileSync(join(dirname(html), v), 'utf8').includes('Canto.number')) continue;
-    const i = at('../shared/numbers.js');
-    if (i < 0 || i > at(v)) bad(html, `${v} uses Canto.number: load ../shared/numbers.js before it`);
+  const vocabs = srcs.filter(s => /^(\.\.\/unit\d+\/)?vocab\.js$/.test(s));
+  const unitsAt = srcs.findIndex(s => s.endsWith('shared/units.js'));
+  const numbersAt = srcs.findIndex(s => s.endsWith('shared/numbers.js'));
+  // The unit a vocab src belongs to, and the src another unit's vocab has here.
+  const unitOf = v => v === 'vocab.js' ? relative(ROOT, dirname(html)) : v.split('/')[1];
+  const srcFor = n => vocabs.find(v => unitOf(v) === `unit${n}`);
+  for (const v of vocabs) {
+    const src = readFileSync(join(dirname(html), v), 'utf8');
+    if (unitsAt < 0 || unitsAt > at(v)) bad(html, `load ../shared/units.js before ${v}`);
+    for (const n of new Set([...src.matchAll(/Units\.word\((\d+)/g)].map(m => m[1]))) {
+      const need = srcFor(n);
+      if (!need || at(need) > at(v)) bad(html, `${v} borrows from unit ${n}: load ../unit${n}/vocab.js before it`);
+    }
+    if (src.includes('Canto.number') && (numbersAt < 0 || numbersAt > at(v))) bad(html, `${v} uses Canto.number: load ../shared/numbers.js before it`);
   }
 }
 

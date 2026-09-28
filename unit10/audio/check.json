@@ -1,0 +1,144 @@
+{
+ "children": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 女 tone 2 sounds like 5 (p 0.37)"
+  ],
+  "audio": "949374d7378d"
+ },
+ "dad-ge-wife": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 老 tone 5 sounds like 2 (p 0.20)"
+  ],
+  "audio": "ff339ada1c3f"
+ },
+ "family": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 企 tone 2 sounds like 5 (p 0.08)"
+  ],
+  "audio": "05c7f173aa25"
+ },
+ "keoi-bun-book": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 佢 tone 5 sounds like 6 (p 0.34)"
+  ],
+  "audio": "08a26eb25186"
+ },
+ "keoi-elder-sister": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 佢 tone 5 sounds like 6 (p 0.18)"
+  ],
+  "audio": "45075a249240"
+ },
+ "keoi-go-daughter": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 佢 tone 5 sounds like 6 (p 0.31)"
+  ],
+  "audio": "8a38e4dc0818"
+ },
+ "keoi-go-son": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 佢 tone 5 sounds like 6 (p 0.11)"
+  ],
+  "audio": "72662abe04a4"
+ },
+ "keoi-hai-bin-go-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 個 tone 3 sounds like 1 (p 0.03); 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "60acb7ee8067"
+ },
+ "keoi-hai-ngo-husband": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 係 tone 6 sounds like 2 (p 0.04)"
+  ],
+  "audio": "2c0c7d54d48f"
+ },
+ "keoi-zek-dog": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 佢 tone 5 sounds like 6 (p 0.10)"
+  ],
+  "audio": "344e07eabca2"
+ },
+ "mums-dad-ge-daughter": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 女 tone 2 sounds like 5 (p 0.02)"
+  ],
+  "audio": "6fbc3767b771"
+ },
+ "nei-go-daughter": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 你剛女 nei gong neoi"
+  ],
+  "audio": "2c43f6b8dd50"
+ },
+ "nei-go-daughter-gei-do-seoi-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 幾 tone 2 sounds like 6 (p 0.14)"
+  ],
+  "audio": "4812df81773e"
+ },
+ "nei-jau-gei-do-go-siblings-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 妹 tone 6 sounds like 2 (p 0.03); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 有 tone 5 sounds like 6 (p 0.31); 幾 tone 2 sounds like 4 (p 0.07)"
+  ],
+  "audio": "50caa42d0e5a"
+ },
+ "ngo-jau-loeng-go-elder-sister": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 兩 tone 5 sounds like 2 (p 0.05)"
+  ],
+  "audio": "dbade683c2b7"
+ },
+ "ni-bun-book-hai-bin-go-ge-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.01)"
+  ],
+  "audio": "adc60a4860cc"
+ },
+ "ni-bun-book-hai-ngo-ge": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 係 tone 6 sounds like 3 (p 0.10)"
+  ],
+  "audio": "3ebca58cd8b6"
+ },
+ "seoi": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Sir s i r"
+  ],
+  "audio": "50ef89c52082"
+ },
+ "siblings": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 妹 tone 6 sounds like 2 (p 0.00)"
+  ],
+  "audio": "9f838e5c0c4e"
+ },
+ "zyu": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard J j"
+  ],
+  "audio": "cdead166bad9"
+ }
+}

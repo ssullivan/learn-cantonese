@@ -1,0 +1,72 @@
+{
+ "bill": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.12)"
+  ],
+  "audio": "3e0861b63207"
+ },
+ "dip": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 貼 tip"
+  ],
+  "audio": "2ab390ab45ad"
+ },
+ "ma-lai-go": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 馬 tone 5 sounds like 2 (p 0.46)"
+  ],
+  "audio": "043426875c4f"
+ },
+ "more-water": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 6 (p 0.21)"
+  ],
+  "audio": "be2314130f81"
+ },
+ "one-lai-wong-bao": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 一 tone 1 sounds like 3 (p 0.03)"
+  ],
+  "audio": "3331a2122c3c"
+ },
+ "one-ma-lai-go": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 馬 tone 5 sounds like 2 (p 0.14)"
+  ],
+  "audio": "649f5eb418d3"
+ },
+ "one-pineapple-bun": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 包 tone 1 sounds like 3 (p 0.01)"
+  ],
+  "audio": "031b5e321022"
+ },
+ "one-siu-mai": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 賣 tone 2 sounds like 6 (p 0.01)"
+  ],
+  "audio": "015758b1c0c8"
+ },
+ "order-har-gow": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 6 (p 0.38); 要 tone 3 sounds like 5 (p 0.05); 一 tone 1 sounds like 6 (p 0.29)"
+  ],
+  "audio": "68571523ef3d"
+ },
+ "sweet": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Tim t i m"
+  ],
+  "audio": "730df1992e9d"
+ }
+}

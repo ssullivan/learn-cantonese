@@ -7,6 +7,8 @@
  * adapter. Not part of check.mjs.
  *
  *   node tools/audio-check.mjs unit9 [--only id,id] [--all] [--json out.json]
+ *       also writes unit9/audio/check.json: the flagged clips' verdicts
+ *       (CHECK or LISTEN) and notes, for the review page's machine flags
  *   node tools/audio-check.mjs --words out.json
  *       every unit's own words as [{ id, text, jyutping, plain }], for
  *       `altools bench make --words` (plain: made from its characters,
@@ -26,7 +28,7 @@
  *      on pitch height, so its doubts are only LISTEN.
  * Its benchmark (`altools bench score`) measures how often it is right.
  */
-import { writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { ROOT, unitDirs, loadVocab, entries, own, langTools } from './site.mjs';
@@ -85,4 +87,20 @@ if (import.meta.url === pathToFileURL(process.argv[1]).href) {
   const unheard = report.filter(r => r.words === false).length;
   if (unheard) console.log(`${unheard} clips had no word check: speech-to-text was unavailable (Azure quota?). Rerun later.`);
   if (jsonOut) writeFileSync(jsonOut, JSON.stringify(report, null, 1));
+
+  // Save the verdicts for the review page's machine flags: flagged clips
+  // only, with the clip's audio hash so a regenerated clip shows as
+  // unchecked. A full run replaces the file; --only updates those entries.
+  const audioDir = join(ROOT, unit, 'audio');
+  const file = join(audioDir, 'check.json');
+  const manifest = JSON.parse(readFileSync(join(audioDir, 'manifest.json'), 'utf8'));
+  const saved = only && existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : {};
+  report.forEach((r, i) => {
+    const id = list[i].id;
+    delete saved[id];
+    if (r.problems.length || r.notes.length) {
+      saved[id] = { verdict: r.problems.length ? 'CHECK' : 'LISTEN', notes: [...r.problems, ...r.notes], audio: manifest[id] };
+    }
+  });
+  writeFileSync(file, JSON.stringify(Object.fromEntries(Object.entries(saved).sort()), null, 1) + '\n');
 }
