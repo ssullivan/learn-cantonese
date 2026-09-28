@@ -1,0 +1,239 @@
+{
+ "bing": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Bing b i n g"
+  ],
+  "audio": "d49507133566"
+ },
+ "do": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Do d o"
+  ],
+  "audio": "e0fb4511f081"
+ },
+ "dung-coffee-siu-bing": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 凍咖啡小冰 dung kaa fe siu bing",
+   "tone doubtful: 少 tone 2 sounds like 6 (p 0.17)"
+  ],
+  "audio": "32a9f0377dbc"
+ },
+ "dung-coffee-siu-sweet": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 少 tone 2 sounds like 2 (p 0.44)"
+  ],
+  "audio": "8a7f7a2f87ba"
+ },
+ "dung-ding-jit-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "speech-to-text heard 凍定熱哈 dung ding jit haa",
+   "tone doubtful: 熱 tone 6 sounds like 3 (p 0.30)"
+  ],
+  "audio": "0c513633157d"
+ },
+ "dung-jam-gaa1-p200": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 兩 tone 5 sounds like 2 (p 0.08)"
+  ],
+  "audio": "9892cdb21fcb"
+ },
+ "dung-lemon-tea": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 凍 tone 3 sounds like 1 (p 0.35)"
+  ],
+  "audio": "7c3037934e6e"
+ },
+ "dung-lemon-tea-do-bing": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 凍 tone 3 sounds like 1 (p 0.27)"
+  ],
+  "audio": "aed62081b8a1"
+ },
+ "dung-lemon-tea-siu-bing": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 凍 tone 3 sounds like 1 (p 0.08); 少 tone 2 sounds like 5 (p 0.40)"
+  ],
+  "audio": "e80bf4c5a973"
+ },
+ "dung-lemon-tea-siu-sweet": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 凍 tone 3 sounds like 1 (p 0.08)"
+  ],
+  "audio": "6e8c9309fe43"
+ },
+ "dung-lemon-tea-zau-bing": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 凍 tone 3 sounds like 1 (p 0.12); 走 tone 2 sounds like 5 (p 0.24)"
+  ],
+  "audio": "1ef8a825b287"
+ },
+ "dung-lemon-tea-zau-sweet": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 凍 tone 3 sounds like 1 (p 0.04)"
+  ],
+  "audio": "2dfbc434e1a8"
+ },
+ "dung-milk-tea-siu-bing": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 少 tone 2 sounds like 5 (p 0.25)"
+  ],
+  "audio": "77c101eea4fc"
+ },
+ "dung-milk-tea-zau-bing": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 走 tone 2 sounds like 5 (p 0.22)"
+  ],
+  "audio": "d72bb5f46689"
+ },
+ "dung-yuenyeung-siu-sweet": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 少 tone 2 sounds like 3 (p 0.25)"
+  ],
+  "audio": "a843c18026ad"
+ },
+ "jit": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 二 ji"
+  ],
+  "audio": "6e8e48619630"
+ },
+ "jit-coffee-siu-sweet": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 熱 tone 6 sounds like 3 (p 0.25); 少 tone 2 sounds like 5 (p 0.19)"
+  ],
+  "audio": "be29019513be"
+ },
+ "jit-lemon-tea": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 熱 tone 6 sounds like 3 (p 0.01)"
+  ],
+  "audio": "f8d6dfe8d734"
+ },
+ "jit-lemon-tea-siu-sweet": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 熱 tone 6 sounds like 3 (p 0.09)"
+  ],
+  "audio": "5c97becb93b2"
+ },
+ "jit-yuenyeung": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 易堅釀 ji gin joeng"
+  ],
+  "audio": "78638573a97a"
+ },
+ "jit-yuenyeung-siu-sweet": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 少 tone 2 sounds like 5 (p 0.18)"
+  ],
+  "audio": "e96aaea72aee"
+ },
+ "jit-yuenyeung-zau-sweet": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 熱 tone 6 sounds like 3 (p 0.28)"
+  ],
+  "audio": "5c939df1be87"
+ },
+ "m-goi-dung-lemon-tea-siu-sweet": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 唔 tone 4 sounds like 6 (p 0.03)"
+  ],
+  "audio": "3d8d0173a110"
+ },
+ "n1-fan6-toast-n1-bui-coffee": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 一份多士1杯咖啡 jat fan do si jat bui kaa fe",
+   "tone doubtful: 士 tone 2 sounds like 6 (p 0.07)"
+  ],
+  "audio": "d1997d6e49ba"
+ },
+ "nei-jam2-mat-je-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 嘢 tone 5 sounds like 2 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "300b452d061a"
+ },
+ "nei-sik6-mat-je-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 嘢 tone 5 sounds like 2 (p 0.00); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 食 tone 6 sounds like 1 (p 0.04)"
+  ],
+  "audio": "e3a20768e359"
+ },
+ "ngo-jiu-n1-bui-dung-milk-tea": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 我 tone 5 sounds like 4 (p 0.01)",
+   "tone doubtful: 要 tone 3 sounds like 2 (p 0.05); 一 tone 1 sounds like 6 (p 0.35)"
+  ],
+  "audio": "026c18ca1f9a"
+ },
+ "ngo-jiu-n1-go-pineapple-butter": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 4 (p 0.14); 要 tone 3 sounds like 5 (p 0.12)"
+  ],
+  "audio": "8f1ce4b82d3d"
+ },
+ "ngo-jiu-n1-wun-spam-egg-noodles": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 6 (p 0.15); 要 tone 3 sounds like 6 (p 0.09); 一 tone 1 sounds like 6 (p 0.18)"
+  ],
+  "audio": "db32a960f20b"
+ },
+ "one-coffee": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 1杯咖啡 jat bui kaa fe"
+  ],
+  "audio": "19770653b1d2"
+ },
+ "siu": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Suw s u w"
+  ],
+  "audio": "b76b9a799c01"
+ },
+ "siu-bing": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 少 tone 2 sounds like 5 (p 0.46)"
+  ],
+  "audio": "98b78b96ef4c"
+ },
+ "tong-sik-ding-ling-zau-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "6198fb1621d9"
+ }
+}

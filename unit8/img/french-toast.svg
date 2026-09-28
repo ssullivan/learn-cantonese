@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>French toast with butter and syrup</title>
+<ellipse cx="64" cy="106" rx="46" ry="5" fill="#9fb0bb" opacity=".35"/>
+<path d="M18 74 L64 58 L110 74 L64 90 Z" fill="#e0a13f" stroke="#8f5a1c" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M18 74 V88 L64 104 V90 Z" fill="#b8742c" stroke="#8f5a1c" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M64 90 V104 L110 88 V74 Z" fill="#c98a3a" stroke="#8f5a1c" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M40 72 Q58 80 78 70 Q92 66 96 76 L92 92 Q90 84 86 86 L84 96 Q80 88 74 84 Q56 88 44 78 Z" fill="#b8641a" opacity=".75"/>
+<path d="M54 66 L68 62 L78 68 L64 72 Z" fill="#fff0a0" stroke="#d9b64a" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M64 72 V76 L78 72 V68 Z M54 66 V70 L64 76 V72 Z" fill="#f0d676" stroke="#d9b64a" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>

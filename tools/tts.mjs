@@ -42,10 +42,15 @@ const xml = s => s.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '
 
 // phoneme: true reads the entry's jyutping exactly, as Azure sapi phones
 // ("sei3 aa6" → "sei 3 aa 6"), for words the voice reads in the wrong tone.
+// On an entry made of `words`, phoneme: [ids] reads only those words that
+// way and the rest as text, so the phrase keeps its natural reading.
 const phoneme = e => `<phoneme alphabet="sapi" ph="${e.jyutping.replace(/([a-z]+)([1-6])/g, '$1 $2')}">${xml(e.hanzi)}</phoneme>`;
+const someWords = (e, byId) => e.words.map(id => e.phoneme.includes(id) ? phoneme(byId[id]) : xml(byId[id].say ?? byId[id].hanzi)).join('')
+  + (e.hanzi.endsWith('？') ? '？' : '');
 
-function ssmlFor(entry, voice) {
-  const body = entry.ssml ?? (entry.phoneme ? phoneme(entry) : xml(entry.say ?? entry.hanzi));
+function ssmlFor(entry, voice, byId) {
+  const body = entry.ssml ?? (Array.isArray(entry.phoneme) ? someWords(entry, byId)
+    : entry.phoneme ? phoneme(entry) : xml(entry.say ?? entry.hanzi));
   return `<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="zh-HK"><voice name="${voice}">${body}</voice></speak>`;
 }
 
@@ -128,6 +133,7 @@ for (const unit of units) {
   const manifestPath = join(audioDir, 'manifest.json');
   const manifest = existsSync(manifestPath) ? JSON.parse(readFileSync(manifestPath, 'utf8')) : {};
 
+  const byId = Object.fromEntries(entries(vocab).map(e => [e.id, e]));
   const mine = entries(vocab).filter(e => own(e, unit)); // borrowed words have audio in their own unit
   if (!only) for (const id of Object.keys(manifest)) if (!mine.some(e => e.id === id)) delete manifest[id];
 
@@ -135,7 +141,7 @@ for (const unit of units) {
     if (only && !only.has(entry.id)) continue;
     const voice = entry.voice ?? vocab.voice;
     const viaMinimax = voice.startsWith(MINIMAX);
-    const request = viaMinimax ? JSON.stringify(minimaxRequest(entry, voice.slice(MINIMAX.length))) : ssmlFor(entry, voice);
+    const request = viaMinimax ? JSON.stringify(minimaxRequest(entry, voice.slice(MINIMAX.length))) : ssmlFor(entry, voice, byId);
     const hash = createHash('sha1').update(request).digest('hex').slice(0, 12);
     const file = join(audioDir, `${entry.id}.mp3`);
     if (!force && manifest[entry.id] === hash && existsSync(file)) { skipped++; continue; }

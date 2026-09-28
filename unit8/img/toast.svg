@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Two slices of toast with butter</title>
+<ellipse cx="64" cy="110" rx="44" ry="5" fill="#9fb0bb" opacity=".35"/>
+<g transform="translate(48 78) rotate(-8)">
+<path d="M-26 20 L-22 -18 Q0 -30 22 -18 L26 20 Z" fill="#b8742c" stroke="#7d4f1e" stroke-width="2" stroke-linejoin="round"/>
+<path d="M-20 16 L-17 -14 Q0 -23 17 -14 L20 16 Z" fill="#f2c774"/>
+</g>
+<g transform="translate(80 70) rotate(10)">
+<path d="M-26 20 L-22 -18 Q0 -30 22 -18 L26 20 Z" fill="#b8742c" stroke="#7d4f1e" stroke-width="2" stroke-linejoin="round"/>
+<path d="M-20 16 L-17 -14 Q0 -23 17 -14 L20 16 Z" fill="#f2c774"/>
+</g>
+<rect x="72" y="58" width="16" height="10" rx="2" fill="#fff0a0" stroke="#d9b64a" stroke-width="1.5" transform="rotate(10 80 63)"/>
+</svg>

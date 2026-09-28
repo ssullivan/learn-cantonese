@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Hot milk tea in a cup</title>
+<path d="M48 38 q-6 -7 0 -14 t0 -14 M64 36 q-6 -7 0 -14 t0 -14 M80 38 q-6 -7 0 -14 t0 -14" stroke="#9fb0bb" stroke-width="3" fill="none" stroke-linecap="round" opacity=".8"/>
+<g data-dish="cup">
+<ellipse cx="64" cy="112" rx="30" ry="5" fill="#9fb0bb" opacity=".35"/>
+<path d="M44 100 L46 112 H82 L84 100 Z" fill="#fbf8f1" stroke="#2e5a88" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M22 46 C24 80 40 104 64 106 C88 104 104 80 106 46 Z" fill="#fbf8f1" stroke="#2e5a88" stroke-width="3" stroke-linejoin="round"/>
+<path d="M30 70 q9 -7 17 0 t17 0 t17 0 t17 0" stroke="#2e5a88" stroke-width="2.5" fill="none"/>
+<path d="M40 88 q6 -5 12 0 t12 0 t12 0 t12 0" stroke="#6f9bc6" stroke-width="2" fill="none"/>
+<ellipse cx="64" cy="46" rx="42" ry="10" fill="#fbf8f1" stroke="#2e5a88" stroke-width="3"/>
+<ellipse cx="64" cy="48" rx="36" ry="7" fill="#c99a66"/>
+</g>
+</svg>

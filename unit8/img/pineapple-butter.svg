@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A pineapple bun cut open around a slab of butter</title>
+<ellipse cx="64" cy="104" rx="46" ry="5" fill="#9fb0bb" opacity=".35"/>
+<g transform="translate(64 72) scale(2.1)"><path d="M-24 6 C-26 -8 -14 -20 0 -20 C14 -20 26 -8 24 6 C12 11 -12 11 -24 6Z" fill="#f2cf86" stroke="#b9802c" stroke-width="1.5"/>
+<path d="M-23 0 C-24 -10 -13 -20 0 -20 C13 -20 24 -10 23 0 C12 4 -12 4 -23 0Z" fill="#e9ab45"/>
+<path d="M-20 -6 L-16 -12 L-8 -6 L-12 1 M-8 -6 L0 -12 L6 -4 L0 3 M6 -4 L14 -12 L19 -6 M6 -4 L15 1 M-8 -6 L-2 -1 M0 -12 L-2 -19 M14 -12 L11 -18 M-16 -12 L-12 -17" stroke="#c07a22" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M-12 -15 Q-4 -19 4 -18" stroke="#f7d27f" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+<path d="M26 74 L98 66 L102 78 L30 88 Z" fill="#fff0a0" stroke="#d9b64a" stroke-width="2" stroke-linejoin="round"/>
+<path d="M30 88 L102 78 L102 82 L31 92 Z" fill="#f0d676" stroke="#d9b64a" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>

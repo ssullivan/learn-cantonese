@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A bowl of noodles with luncheon meat and a fried egg</title>
+<g data-dish="bowl">
+<ellipse cx="64" cy="112" rx="24" ry="5" fill="#9fb0bb" opacity=".35"/>
+<path d="M14 60 C16 92 38 108 64 108 C90 108 112 92 114 60 Z" fill="#fbf8f1" stroke="#2e5a88" stroke-width="3" stroke-linejoin="round"/>
+<path d="M24 82 q10 -7 20 0 t20 0 t20 0 t20 0" stroke="#6f9bc6" stroke-width="2.5" fill="none"/>
+<path d="M50 107 L52 114 H76 L78 107" fill="#fbf8f1" stroke="#2e5a88" stroke-width="2.5" stroke-linejoin="round"/>
+<ellipse cx="64" cy="60" rx="50" ry="13" fill="#fbf8f1" stroke="#2e5a88" stroke-width="3"/>
+<ellipse cx="64" cy="60" rx="46" ry="10" fill="#e8c27a"/>
+<path d="M28 58 q5 -5 10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0" stroke="#f7d774" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+<path d="M34 64 q5 -5 10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0" stroke="#f7d774" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+<path d="M30 52 l22 -6 l4 10 l-22 6 z" fill="#e79a9a" stroke="#b45f5f" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M66 50 C62 40 80 36 90 42 C102 44 100 56 90 58 C80 62 68 58 66 50 Z" fill="#ffffff" stroke="#d8d2c0" stroke-width="1.5"/>
+<circle cx="82" cy="49" r="6" fill="#f2b21c"/>
+</g>
+</svg>

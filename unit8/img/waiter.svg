@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A waiter with an apron and an order pad</title>
+<g transform="translate(58 38) scale(1.7)">
+<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#3a9a6e" stroke="#4a3a33" stroke-width="2.5" stroke-linejoin="round"/>
+<circle r="12" fill="#f2c9a0" stroke="#b07a52" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-11 -2 C-12 -14 -4 -17 0 -17 C8 -17 12 -12 11 -2 C8 -9 -6 -10 -11 -2 Z" fill="#3b2f2a"/>
+</g>
+<path d="M38 80 H78 V112 H38 Z" fill="#ffffff" stroke="#9fb0bb" stroke-width="2" stroke-linejoin="round"/>
+<path d="M44 80 L50 70 M72 80 L66 70" stroke="#9fb0bb" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="88" y="64" width="26" height="34" rx="3" fill="#fff6d8" stroke="#7d4f1e" stroke-width="2.5" transform="rotate(8 101 81)"/>
+<path d="M94 74 H108 M93 81 H107 M92 88 H102" stroke="#9fb0bb" stroke-width="2" stroke-linecap="round" transform="rotate(8 101 81)"/>
+<path d="M112 58 L96 94" stroke="#e0a526" stroke-width="4" stroke-linecap="round"/>
+</svg>

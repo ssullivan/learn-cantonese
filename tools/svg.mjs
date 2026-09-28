@@ -29,6 +29,8 @@
  *   cup(drink, { glass })  a handleless blue-and-white teacup (rim at
  *                      y 46), or a tall glass (rim at y 18), filled with
  *                      the color `drink`
+ *   pineappleBun       a pineapple bun with its crackly top, about 48
+ *                      wide, centred on 0,0 (place it with a transform)
  *
  * steamer(), plate(), bowl() and cup() tag their output data-dish so
  * tools/check.mjs can match the picture to the dish's measure word.
@@ -124,3 +126,8 @@ export const teapot = () => `<path d="M22 66 C6 66 6 94 26 92" stroke="#2e5a88" 
 
 export const teacup = () => `<path d="M92 100 L96 116 Q104 120 112 116 L116 100 Z" fill="#fbf8f1" stroke="#2e5a88" stroke-width="2.5" stroke-linejoin="round"/>
 <ellipse cx="104" cy="100" rx="12" ry="3.5" fill="#c8913a" stroke="#2e5a88" stroke-width="2"/>`;
+
+export const pineappleBun = `<path d="M-24 6 C-26 -8 -14 -20 0 -20 C14 -20 26 -8 24 6 C12 11 -12 11 -24 6Z" fill="#f2cf86" stroke="#b9802c" stroke-width="1.5"/>
+<path d="M-23 0 C-24 -10 -13 -20 0 -20 C13 -20 24 -10 23 0 C12 4 -12 4 -23 0Z" fill="#e9ab45"/>
+<path d="M-20 -6 L-16 -12 L-8 -6 L-12 1 M-8 -6 L0 -12 L6 -4 L0 3 M6 -4 L14 -12 L19 -6 M6 -4 L15 1 M-8 -6 L-2 -1 M0 -12 L-2 -19 M14 -12 L11 -18 M-16 -12 L-12 -17" stroke="#c07a22" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M-12 -15 Q-4 -19 4 -18" stroke="#f7d27f" stroke-width="2.5" fill="none" stroke-linecap="round"/>`;

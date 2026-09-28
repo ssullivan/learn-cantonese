@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A bowl of macaroni in soup with ham</title>
+<g data-dish="bowl">
+<ellipse cx="64" cy="112" rx="24" ry="5" fill="#9fb0bb" opacity=".35"/>
+<path d="M14 60 C16 92 38 108 64 108 C90 108 112 92 114 60 Z" fill="#fbf8f1" stroke="#2e5a88" stroke-width="3" stroke-linejoin="round"/>
+<path d="M24 82 q10 -7 20 0 t20 0 t20 0 t20 0" stroke="#6f9bc6" stroke-width="2.5" fill="none"/>
+<path d="M50 107 L52 114 H76 L78 107" fill="#fbf8f1" stroke="#2e5a88" stroke-width="2.5" stroke-linejoin="round"/>
+<ellipse cx="64" cy="60" rx="50" ry="13" fill="#fbf8f1" stroke="#2e5a88" stroke-width="3"/>
+<ellipse cx="64" cy="60" rx="46" ry="10" fill="#f1e2c0"/>
+<g fill="#f3cf82" stroke="#c89a3c" stroke-width="1.5">
+<ellipse cx="38" cy="58" rx="5" ry="3.5"/><ellipse cx="52" cy="62" rx="5" ry="3.5"/><ellipse cx="70" cy="56" rx="5" ry="3.5"/>
+<ellipse cx="84" cy="62" rx="5" ry="3.5"/><ellipse cx="96" cy="58" rx="5" ry="3.5"/><ellipse cx="62" cy="66" rx="5" ry="3.5"/>
+</g>
+<g fill="#c0392b" opacity=".6"><circle cx="38" cy="58" r="1.8"/><circle cx="52" cy="62" r="1.8"/><circle cx="70" cy="56" r="1.8"/><circle cx="84" cy="62" r="1.8"/><circle cx="96" cy="58" r="1.8"/><circle cx="62" cy="66" r="1.8"/></g>
+<path d="M44 52 h10 v7 h-10z M76 64 h10 v7 h-10z" fill="#f0a3a3" stroke="#b45f5f" stroke-width="1.5"/>
+<path d="M60 54 h4 M88 54 h4 M46 67 h4" stroke="#5c9e46" stroke-width="3" stroke-linecap="round"/>
+</g>
+</svg>
