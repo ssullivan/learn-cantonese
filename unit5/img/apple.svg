@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Apple</title>
+<ellipse cx="64" cy="114" rx="34" ry="5" fill="#9fb0bb" opacity=".35"/>
+<path d="M64 42 C52 32 26 34 24 62 C22 90 42 114 56 112 C60 111 62 109 64 109 C66 109 68 111 72 112 C86 114 106 90 104 62 C102 34 76 32 64 42Z" fill="#e0342b" stroke="#a51f18" stroke-width="3" stroke-linejoin="round"/>
+<path d="M40 56 C37 64 37 72 41 80" stroke="#f47a6f" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path d="M64 42 C64 32 66 24 70 18" stroke="#6b4423" stroke-width="4" fill="none" stroke-linecap="round"/>
+<path d="M68 28 C76 16 92 16 96 22 C88 32 76 32 68 28Z" fill="#5fa33a" stroke="#3f7a22" stroke-width="2" stroke-linejoin="round"/>
+</svg>

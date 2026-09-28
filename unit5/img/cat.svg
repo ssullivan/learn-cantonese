@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Cat</title>
+<ellipse cx="64" cy="114" rx="36" ry="5" fill="#9fb0bb" opacity=".35"/>
+<path d="M88 106 C110 106 114 84 104 76" stroke="#a85f1c" stroke-width="11" fill="none" stroke-linecap="round"/>
+<path d="M88 106 C110 106 114 84 104 76" stroke="#f0a04b" stroke-width="6" fill="none" stroke-linecap="round"/>
+<path d="M36 112 C32 90 40 72 64 72 C88 72 96 90 92 112 Z" fill="#f0a04b" stroke="#a85f1c" stroke-width="3" stroke-linejoin="round"/>
+<ellipse cx="64" cy="98" rx="14" ry="12" fill="#f9d3a3"/>
+<path d="M54 112 v-10 M74 112 v-10" stroke="#a85f1c" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M40 44 L42 16 L62 32 Z M88 44 L86 16 L66 32 Z" fill="#f0a04b" stroke="#a85f1c" stroke-width="3" stroke-linejoin="round"/>
+<path d="M45 36 L46 24 L55 31Z M83 36 L82 24 L73 31Z" fill="#f6b7a6"/>
+<ellipse cx="64" cy="52" rx="28" ry="24" fill="#f0a04b" stroke="#a85f1c" stroke-width="3"/>
+<path d="M58 30 l2 8 M64 29 v9 M70 30 l-2 8" stroke="#c7701f" stroke-width="3" stroke-linecap="round"/>
+<ellipse cx="53" cy="51" rx="4" ry="5" fill="#2a2a2a"/><ellipse cx="75" cy="51" rx="4" ry="5" fill="#2a2a2a"/>
+<path d="M60 59 h8 l-4 4z" fill="#e0707a"/>
+<path d="M64 63 q-4 5 -8 2 M64 63 q4 5 8 2" stroke="#6b3a14" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M44 58 l-16 -3 M44 63 l-16 2 M84 58 l16 -3 M84 63 l16 2" stroke="#6b3a14" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Trousers</title>
+<path d="M36 16 H92 L102 112 H74 L64 48 L54 112 H26 Z" fill="#3d6aa8" stroke="#22406b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M36 16 H92 V27 H36 Z" fill="#335a91" stroke="#22406b" stroke-width="3" stroke-linejoin="round"/>
+<path d="M64 27 V46" stroke="#22406b" stroke-width="2.5"/>
+<circle cx="64" cy="21.5" r="2.5" fill="#e0b64a"/>
+<path d="M40 34 q8 5 15 -1 M88 34 q-8 5 -15 -1" stroke="#8fb0dc" stroke-width="2" fill="none"/>
+<path d="M29 104 H53 M75 104 H99" stroke="#8fb0dc" stroke-width="2" stroke-dasharray="4 3"/>
+</svg>

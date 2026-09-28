@@ -2,7 +2,7 @@
  * Unit 1 illustrations: one entry per vocab entry with a picture.
  * Run `node tools/draw.mjs` after editing to rewrite img/<id>.svg.
  */
-import { svg, bowl } from '../tools/svg.mjs';
+import { svg, bowl, cup } from '../tools/svg.mjs';
 
 export default {
   fish: svg('Fish', `<path d="M96 64 L122 40 L118 64 L122 88 Z" fill="#e8773a" stroke="#b5521f" stroke-width="2.5" stroke-linejoin="round"/>
@@ -40,12 +40,7 @@ export default {
 <circle cx="36" cy="92" r="13" fill="#2a211b"/><circle cx="36" cy="92" r="5" fill="#c8ced3"/>
 <circle cx="94" cy="92" r="13" fill="#2a211b"/><circle cx="94" cy="92" r="5" fill="#c8ced3"/>`),
 
-  water: svg('A glass of water', `<ellipse cx="64" cy="114" rx="28" ry="5" fill="#9fb0bb" opacity=".35"/>
-<path d="M36 44 L42 110 C42 114 86 114 86 110 L92 44 Z" fill="#8cc8ea" opacity=".85"/>
-<ellipse cx="64" cy="44" rx="28" ry="6" fill="#bfe3f6"/>
-<path d="M32 18 L40 110 C40 116 88 116 88 110 L96 18" fill="none" stroke="#6f8796" stroke-width="3" stroke-linejoin="round"/>
-<ellipse cx="64" cy="18" rx="32" ry="7" fill="none" stroke="#6f8796" stroke-width="3"/>
-<path d="M46 56 L50 100" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+  water: svg('A glass of water', `${cup('#8cc8ea', { glass: true })}
 <circle cx="72" cy="80" r="3" fill="#ffffff" opacity=".7"/><circle cx="78" cy="64" r="2" fill="#ffffff" opacity=".7"/>`),
 
   chicken: svg('Chicken', `<path d="M44 104 V116 M40 116 H50 M70 104 V116 M66 116 H76" stroke="#e8923a" stroke-width="3.5" stroke-linecap="round"/>

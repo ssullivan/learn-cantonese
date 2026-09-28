@@ -5,8 +5,10 @@
  * .stage (.locked after answering), .game-feedback, .game-end,
  * .stars, .btn.small, .speech (a speech bubble), .tray (labelled box
  * of answer buttons), .prompt-pic (big picture to answer about),
+ * .prompt-pic.far (the same, small and faded: "over there"),
  * .prompt-num (big numeral to answer about), .choice-grid.nums (numeral
- * answers: two columns even on phones), .tile-line / .tile-bank >
+ * answers: two columns even on phones), .pic-row (a group of small
+ * pictures to count, in rows of five; smaller inside .choice-grid.groups answers), .tile-line / .tile-bank >
  * button.tile (word tiles, tiles.js; .tile-line.right / .wrong).
  */
 
@@ -109,6 +111,13 @@
 }
 .tray-label { margin: 0 0 8px; color: var(--ink-soft); font-size: 14px; font-weight: 700; }
 .prompt-pic { display: block; width: 160px; height: 160px; margin: 0 0 16px; }
+.prompt-pic.far { width: 64px; height: 64px; margin: 48px 0 64px 96px; opacity: 0.75; }
+.pic-row { display: grid; grid-template-columns: repeat(5, auto); justify-content: start; gap: 4px; margin: 0 0 16px; }
+.pic-row img { width: 64px; height: 64px; }
+.choice-grid.groups .choice { padding: 10px; display: grid; place-items: center; min-height: 96px; }
+.choice-grid.groups .pic-row { margin: 0; justify-content: center; }
+@media (max-width: 420px) { .pic-row img { width: 52px; height: 52px; } }
+.choice-grid.groups .pic-row img { width: 40px; height: 40px; }
 .prompt-num { margin: 0 0 16px; font-size: 56px; font-weight: 800; line-height: 1.1; color: var(--accent); font-variant-numeric: tabular-nums; }
 .choice-grid.nums { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .choice-grid.nums .choice { font-size: 28px; font-weight: 800; font-variant-numeric: tabular-nums; }

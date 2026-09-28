@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A piece of cake</title>
+<ellipse cx="64" cy="106" rx="50" ry="5" fill="#9fb0bb" opacity=".35"/>
+<path d="M18 64 L112 58 V94 L18 100 Z" fill="#f2cf86" stroke="#b9802c" stroke-width="3" stroke-linejoin="round"/>
+<path d="M21 76 L109 70.5 M21 88 L109 82.5" stroke="#fff4e0" stroke-width="5"/>
+<path d="M21 81 L109 75.5" stroke="#e8667a" stroke-width="2.5"/>
+<path d="M18 64 L90 40 C100 44 108 50 112 58 Z" fill="#fff4e0" stroke="#b9802c" stroke-width="3" stroke-linejoin="round"/>
+<path d="M88 44 C82 34 90 26 96 30 C102 26 108 36 100 44 Z" fill="#e0342b" stroke="#a51f18" stroke-width="2" stroke-linejoin="round"/>
+<path d="M90 30 l6 -6 l6 6 M96 24 v5" stroke="#3f7a22" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<g fill="#f7d36b"><circle cx="92" cy="37" r="1"/><circle cx="98" cy="35" r="1"/><circle cx="96" cy="40" r="1"/></g>
+</svg>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tone Detective · Measure Words</title>
+<link rel="stylesheet" href="../shared/theme.css?v=65270e1d">
+<link rel="stylesheet" href="../shared/game.css?v=126b0983">
+</head>
+<body>
+<main class="page">
+  <header class="page-header">
+    <a class="back" href="../">← Unit 5</a>
+    <p class="eyebrow">Unit 5 · Game</p>
+    <h1><span class="hanzi" lang="zh-HK">聲調</span>Tone Detective</h1>
+    <p class="lede">Hear a measure word, a thing, or a whole count, and catch its tones.</p>
+  </header>
+  <div id="game"></div>
+</main>
+<script src="../shared/core.js?v=8bec73e4"></script>
+<script src="../shared/audio.js?v=f296d05e"></script>
+<script src="../shared/game.js?v=b82b218e"></script>
+<script src="../shared/tones.js?v=1e42a794"></script>
+<script src="../shared/numbers.js?v=2ba3665b"></script>
+<script src="../shared/units.js?v=d9fa5fbd"></script>
+<script src="../unit1/vocab.js?v=f4357216"></script>
+<script src="../unit3/vocab.js?v=29d74e66"></script>
+<script src="../unit4/vocab.js?v=54f5e120"></script>
+<script src="vocab.js?v=a26fabb9"></script>
+<script>
+  const V = window.VOCAB;
+  Tones.init({
+    root: document.getElementById('game'),
+    key: 'u5-tones',
+    levels: [
+      { id: 'measures', name: 'Measure words', blurb: 'One syllable each: 隻 本 張 條… Three choices.', pool: [...V.measures, ...V.words], choices: 3 },
+      { id: 'things', name: 'Things', blurb: 'The nouns: 貓, 蘋果, 筷子…', pool: V.things, choices: 4 },
+      { id: 'counts', name: 'Counting', blurb: '一隻貓, 兩本書, 呢架車: three syllables and more.', pool: [...V.ones, ...V.counts, ...V.thisThat], choices: 4 },
+    ],
+  });
+</script>
+</body>
+</html>

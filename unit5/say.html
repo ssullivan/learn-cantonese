@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Say It Back · Measure Words</title>
+<link rel="stylesheet" href="../shared/theme.css?v=65270e1d">
+<link rel="stylesheet" href="../shared/sayit.css?v=53e6d081">
+</head>
+<body>
+<main class="page">
+  <header class="page-header">
+    <a class="back" href="../">← Unit 5</a>
+    <p class="eyebrow">Unit 5 · Speaking</p>
+    <h1><span class="hanzi" lang="zh-HK">講</span>Say It Back</h1>
+    <p class="lede">Say measure words, things and counts yourself and see how your tones compare with a native speaker's.</p>
+  </header>
+  <div id="say"></div>
+</main>
+<script src="../shared/core.js?v=8bec73e4"></script>
+<script src="../shared/audio.js?v=f296d05e"></script>
+<script src="../shared/pitch.js?v=e95f83fc"></script>
+<script src="../shared/sayit.js?v=324ac8e7"></script>
+<script src="../shared/numbers.js?v=2ba3665b"></script>
+<script src="../shared/units.js?v=d9fa5fbd"></script>
+<script src="../unit1/vocab.js?v=f4357216"></script>
+<script src="../unit3/vocab.js?v=29d74e66"></script>
+<script src="../unit4/vocab.js?v=54f5e120"></script>
+<script src="vocab.js?v=a26fabb9"></script>
+<script>
+  const V = window.VOCAB;
+  const two = V.counts.filter(c => c.n === 2);
+  SayIt.init({
+    root: document.getElementById('say'),
+    key: 'u5-say',
+    pool: [...V.measures, ...V.words, ...V.things, ...V.ones.slice(0, 6), ...two.slice(0, 6), ...V.sentences],
+  });
+</script>
+</body>
+</html>

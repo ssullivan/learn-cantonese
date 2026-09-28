@@ -16,8 +16,9 @@
  *     checked in unit n, and every page that loads a borrowing vocab.js
  *     loads shared/units.js and ../unit<n>/vocab.js before it
  *   - pages load shared/numbers.js before any vocab.js using Canto.number
- *   - an entry's measure word matches its picture: a measure with
- *     dish "steamer" needs a steamer() drawing, "plate" a plate()
+ *   - an entry's measure word matches its picture (in its own unit if
+ *     borrowed): a measure with dish "steamer" needs a steamer() drawing,
+ *     "plate" a plate(), and so on; one without a dish, none of them
  *   - img/*.svg match art.mjs exactly (else run node tools/draw.mjs)
  *   - every tools/*.test.mjs passes
  */
@@ -93,7 +94,8 @@ for (const unit of unitDirs()) {
   for (const e of all.filter(e => e.measure)) {
     const m = measures[e.measure];
     if (!m) { bad(vocabFile, `${e.id}: unknown measure ${e.measure}`); continue; }
-    const dish = /data-dish="(\w+)"/.exec(art[e.id] ?? '')?.[1];
+    const pic = own(e, unit) ? art[e.id] : (await loadArt(`unit${e.unit}`))?.[e.id];
+    const dish = /data-dish="(\w+)"/.exec(pic ?? '')?.[1];
     if (dish !== m.dish) bad(vocabFile, `${e.id}: ordered by ${m.hanzi} (${m.dish}) but drawn on a ${dish ?? 'nothing'}`);
   }
   const withImg = new Set(all.filter(e => e.img !== false && own(e, unit)).map(e => e.id));

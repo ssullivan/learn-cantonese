@@ -10,8 +10,11 @@
  *                      around 110,46) and a small cup at 104,108
  *   bowl(food)         blue-and-white rice bowl filled with `food`
  *                      (drawn inside the rim, around y 56–64)
+ *   cup(drink, { glass })  a handleless blue-and-white teacup (rim at
+ *                      y 46), or a tall glass (rim at y 18), filled with
+ *                      the color `drink`
  *
- * steamer(), plate() and bowl() tag their output data-dish so
+ * steamer(), plate(), bowl() and cup() tag their output data-dish so
  * tools/check.mjs can match the picture to the dish's measure word.
  */
 
@@ -44,6 +47,23 @@ export const bowl = food => `<g data-dish="bowl">
 <path d="M50 107 L52 114 H76 L78 107" fill="#fbf8f1" stroke="#2e5a88" stroke-width="2.5" stroke-linejoin="round"/>
 <ellipse cx="64" cy="60" rx="50" ry="13" fill="#fbf8f1" stroke="#2e5a88" stroke-width="3"/>
 ${food}
+</g>`;
+
+export const cup = (drink, { glass = false } = {}) => glass ? `<g data-dish="cup">
+<ellipse cx="64" cy="114" rx="28" ry="5" fill="#9fb0bb" opacity=".35"/>
+<path d="M36 44 L42 110 C42 114 86 114 86 110 L92 44 Z" fill="${drink}" opacity=".85"/>
+<ellipse cx="64" cy="44" rx="28" ry="6" fill="#ffffff" opacity=".35"/>
+<path d="M32 18 L40 110 C40 116 88 116 88 110 L96 18" fill="none" stroke="#6f8796" stroke-width="3" stroke-linejoin="round"/>
+<ellipse cx="64" cy="18" rx="32" ry="7" fill="none" stroke="#6f8796" stroke-width="3"/>
+<path d="M46 56 L50 100" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+</g>` : `<g data-dish="cup">
+<ellipse cx="64" cy="112" rx="30" ry="5" fill="#9fb0bb" opacity=".35"/>
+<path d="M44 100 L46 112 H82 L84 100 Z" fill="#fbf8f1" stroke="#2e5a88" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M22 46 C24 80 40 104 64 106 C88 104 104 80 106 46 Z" fill="#fbf8f1" stroke="#2e5a88" stroke-width="3" stroke-linejoin="round"/>
+<path d="M30 70 q9 -7 17 0 t17 0 t17 0 t17 0" stroke="#2e5a88" stroke-width="2.5" fill="none"/>
+<path d="M40 88 q6 -5 12 0 t12 0 t12 0 t12 0" stroke="#6f9bc6" stroke-width="2" fill="none"/>
+<ellipse cx="64" cy="46" rx="42" ry="10" fill="#fbf8f1" stroke="#2e5a88" stroke-width="3"/>
+<ellipse cx="64" cy="48" rx="36" ry="7" fill="${drink}"/>
 </g>`;
 
 export const teapot = () => `<path d="M22 66 C6 66 6 94 26 92" stroke="#2e5a88" stroke-width="6" fill="none" stroke-linecap="round"/>

@@ -1,10 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
 <title>A glass of water</title>
+<g data-dish="cup">
 <ellipse cx="64" cy="114" rx="28" ry="5" fill="#9fb0bb" opacity=".35"/>
 <path d="M36 44 L42 110 C42 114 86 114 86 110 L92 44 Z" fill="#8cc8ea" opacity=".85"/>
-<ellipse cx="64" cy="44" rx="28" ry="6" fill="#bfe3f6"/>
+<ellipse cx="64" cy="44" rx="28" ry="6" fill="#ffffff" opacity=".35"/>
 <path d="M32 18 L40 110 C40 116 88 116 88 110 L96 18" fill="none" stroke="#6f8796" stroke-width="3" stroke-linejoin="round"/>
 <ellipse cx="64" cy="18" rx="32" ry="7" fill="none" stroke="#6f8796" stroke-width="3"/>
 <path d="M46 56 L50 100" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+</g>
 <circle cx="72" cy="80" r="3" fill="#ffffff" opacity=".7"/><circle cx="78" cy="64" r="2" fill="#ffffff" opacity=".7"/>
 </svg>

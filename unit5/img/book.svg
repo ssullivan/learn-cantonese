@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Book</title>
+<ellipse cx="64" cy="114" rx="38" ry="5" fill="#9fb0bb" opacity=".35"/>
+<rect x="32" y="18" width="70" height="92" rx="4" fill="#fbf8f1" stroke="#9fb0bb" stroke-width="2"/>
+<path d="M40 104 H98 M40 100 H98" stroke="#d8dee3" stroke-width="1.5"/>
+<rect x="24" y="12" width="70" height="92" rx="4" fill="#c0392b" stroke="#7d1f18" stroke-width="3"/>
+<path d="M36 13 V103" stroke="#7d1f18" stroke-width="3"/>
+<rect x="46" y="30" width="38" height="20" rx="2" fill="#f5d27a"/>
+<path d="M51 37 h28 M51 43 h20" stroke="#a5661f" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

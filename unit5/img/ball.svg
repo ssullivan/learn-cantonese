@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Ball (a basketball)</title>
+<ellipse cx="64" cy="116" rx="32" ry="5" fill="#9fb0bb" opacity=".35"/>
+<circle cx="64" cy="66" r="44" fill="#f08a24" stroke="#8a4a12" stroke-width="3"/>
+<path d="M20 66 H108 M64 22 V110" stroke="#5a2f0c" stroke-width="3"/>
+<path d="M33 35 C48 50 48 82 33 97 M95 35 C80 50 80 82 95 97" stroke="#5a2f0c" stroke-width="3" fill="none"/>
+<ellipse cx="46" cy="42" rx="9" ry="5" fill="#f7b267" opacity=".8" transform="rotate(-35 46 42)"/>
+</svg>

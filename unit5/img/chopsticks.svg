@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A pair of chopsticks</title>
+<ellipse cx="64" cy="112" rx="40" ry="5" fill="#9fb0bb" opacity=".35"/>
+<path d="M19 99 L101 13 L107 19 L21 101 Z" fill="#c98a5e" stroke="#6b4423" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M33 107 L109 27 L115 33 L35 109 Z" fill="#c98a5e" stroke="#6b4423" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M92 22 l6 6 M100 36 l6 6" stroke="#c0392b" stroke-width="5"/>
+</svg>

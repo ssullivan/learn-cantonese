@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A pair of shoes</title>
+<defs><g id="s">
+<path d="M-38 10 V-4 C-38 -12 -32 -16 -24 -16 C-18 -16 -14 -10 -6 -8 L16 -2 C28 0 36 4 36 10 Z" fill="#e0342b" stroke="#8f1d17" stroke-width="3" stroke-linejoin="round"/>
+<path d="M-40 10 H38 V16 C38 18 36 20 34 20 H-36 C-38 20 -40 18 -40 16 Z" fill="#ffffff" stroke="#8f1d17" stroke-width="3" stroke-linejoin="round"/>
+<path d="M-14 -8 l4 -6 M-6 -6 l4 -6 M2 -4 l4 -6" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+</g></defs>
+<ellipse cx="64" cy="112" rx="46" ry="5" fill="#9fb0bb" opacity=".35"/>
+<use href="#s" transform="translate(52 56)"/>
+<use href="#s" transform="translate(72 88)"/>
+</svg>

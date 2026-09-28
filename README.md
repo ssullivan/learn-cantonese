@@ -15,6 +15,10 @@ The course plans 18 units (see the roadmap in CLAUDE.md); built so far:
 - **Unit 4 · 數字 Numbers**: 零 to 萬 with the one-hand counting signs, 廿, 零 in the gaps, 第, 幾多, and 二 vs 兩.
   - *Number Dash*: hear a number and tap it (十四 or 四十?), say numbers, and pick 二 or 兩.
   - *Tone Detective* and *Say It Back* for numbers.
+- **Unit 5 · 量詞 Measure Words**: 個 隻 本 張 條 枝 架 件 杯 碗 對 and 啲, grouped by shape, with 呢 / 嗰, "the", 兩 and 幾多.
+  - *Measure Sort*: pick a thing's measure word, sort things by measure word, hear them, and point with 呢 or 嗰.
+  - *Count It*: count pictures and say how many (三隻貓), hear a count and find it, and build sentences with 有 and 幾多.
+  - *Tone Detective* and *Say It Back* for measure words and counts.
 - **Unit 7 · 點心 Dim Sum**: classic dishes with pictures and audio, a listening quiz, and phrases for ordering at yum cha.
   - *Trolley Rush*: hear customers' orders (唔該，一籠蝦餃！) and serve the right dishes; learn 一籠 vs 一碟.
   - *Tone Detective*: hear a word and pick its tones.
