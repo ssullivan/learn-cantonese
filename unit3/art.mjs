@@ -5,30 +5,7 @@
  * marked with an arrow; the rest are grey. Run `node tools/draw.mjs`
  * after editing to rewrite img/<id>.svg.
  */
-import { svg } from '../tools/svg.mjs';
-
-const SKIN = '#f2c9a0', SKIN_LINE = '#b07a52';
-const GREY = 'fill="#c9d3da" stroke="#8a9aa5"';
-const SHIRT = { red: '#d6453a', blue: '#3f7cc0', green: '#3a9a6e', gold: '#e0a526' };
-const LINE = 'stroke-width="2.5" stroke-linejoin="round"';
-
-// A person from the chest up, head centred on x, y. `shirt`: a SHIRT
-// colour, or null for a grey bystander.
-function person(x, y, shirt, s = 1) {
-  const body = shirt ? `fill="${SHIRT[shirt]}" stroke="#4a3a33"` : GREY;
-  const head = shirt ? `fill="${SKIN}" stroke="${SKIN_LINE}"` : GREY;
-  const hair = shirt ? `<path d="M-11 -2 C-12 -14 -4 -17 0 -17 C8 -17 12 -12 11 -2 C8 -9 -6 -10 -11 -2 Z" fill="#3b2f2a"/>` : '';
-  return `<g transform="translate(${x} ${y}) scale(${s})">
-<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" ${body} ${LINE}/>
-<circle r="12" ${head} ${LINE}/>
-${hair}
-</g>`;
-}
-
-const arrow = (x, y) => `<path d="M${x - 7} ${y - 10} H${x + 7} L${x} ${y} Z" fill="#e0a526" stroke="#9a6c0e" stroke-width="1.5" stroke-linejoin="round"/>`;
-const bubble = `<path d="M6 8 H44 Q50 8 50 14 V26 Q50 32 44 32 H26 L18 40 L20 32 H6 Q0 32 0 26 V14 Q0 8 6 8 Z" fill="#ffffff" stroke="#6f8796" stroke-width="2.5" stroke-linejoin="round"/>
-<path d="M10 17 H40 M10 24 H32" stroke="#9fb0bb" stroke-width="3" stroke-linecap="round"/>`;
-const floor = '<path d="M4 124 H124" stroke="#9fb0bb" stroke-width="3" stroke-linecap="round"/>';
+import { svg, person, arrow, bubble, floor, LINE } from '../tools/svg.mjs';
 
 // Where each person stands: [x, y, scale]. The pairs add a partner.
 const AT = {

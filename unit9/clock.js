@@ -25,7 +25,7 @@
     const say = () => ctx.play(e);
     ctx.answer = answerText(e);
     stage.replaceChildren(speech('聽', '幾點？ Which clock shows it?', say),
-      choose(ctx, e, shuffle([e, ...others(e, pool, 3)]), clockPic, 'pic-grid clocks'));
+      choose(ctx, e, shuffle([e, ...others(e, pool, 3)]), clockPic, 'pic-grid pics'));
     return say();
   };
 

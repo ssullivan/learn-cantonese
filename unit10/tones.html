@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tone Detective · Family</title>
+<link rel="stylesheet" href="../shared/theme.css?v=80cafc31">
+<link rel="stylesheet" href="../shared/game.css?v=5f2c3376">
+</head>
+<body>
+<main class="page">
+  <header class="page-header">
+    <a class="back" href="../">← Unit 10</a>
+    <p class="eyebrow">Unit 10 · Game</p>
+    <h1><span class="hanzi" lang="zh-HK">聲調</span>Tone Detective</h1>
+    <p class="lede">Hear a family word and catch its tones. Is it 媽媽 or 嫲嫲?</p>
+  </header>
+  <div id="game"></div>
+</main>
+<script src="../shared/core.js?v=ddc80c91"></script>
+<script src="../shared/audio.js?v=f296d05e"></script>
+<script src="../shared/game.js?v=8924273a"></script>
+<script src="../shared/tones.js?v=1e42a794"></script>
+<script src="../shared/numbers.js?v=5e41ae92"></script>
+<script src="../shared/units.js?v=3a4988f2"></script>
+<script src="../unit1/vocab.js?v=f4357216"></script>
+<script src="../unit3/vocab.js?v=2f03c48d"></script>
+<script src="../unit4/vocab.js?v=54f5e120"></script>
+<script src="../unit5/vocab.js?v=c7ef5f1f"></script>
+<script src="vocab.js?v=a67a7448"></script>
+<script>
+  const V = window.VOCAB;
+  const doubled = ['dad', 'mum', 'elder-brother', 'dads-dad', 'dads-mum', 'mums-dad', 'mums-mum'];
+  Tones.init({
+    root: document.getElementById('game'),
+    key: 'u10-tones',
+    levels: [
+      { id: 'doubled', name: '媽媽 or 嫲嫲?', blurb: 'Doubled names start low: 爸爸 baa4 baa1, 嫲嫲 maa4 maa4, 婆婆 po4 po2.',
+        pool: Canto.entries(V).filter(e => doubled.includes(e.id)), choices: 3, tones: [1, 2, 4] },
+      { id: 'words', name: 'Family words', blurb: '家姐 細佬 細妹 老公 老婆 仔 女… Three choices.',
+        pool: [...V.parents, ...V.siblings, ...V.grandparents, ...V.own, ...V.words], choices: 3 },
+      { id: 'whose', name: 'Whose?', blurb: '我嘅書, 爸爸嘅媽媽, 我隻貓.', pool: [...V.whose, ...V.relations, ...V.mine], choices: 4 },
+      { id: 'sentences', name: 'Sentences', blurb: '我有兩個家姐: five syllables and more.', pool: V.sentences, choices: 4 },
+    ],
+  });
+</script>
+</body>
+</html>

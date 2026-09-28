@@ -1,9 +1,25 @@
 /*
- * svg.mjs — shared pieces for the food illustrations in unit<N>/art.mjs.
+ * svg.mjs — shared pieces for the illustrations in unit<N>/art.mjs.
  * Every drawing is 128×128, transparent, fixed colors (works on light
  * and dark pages).
  *
  *   svg(title, body)   complete SVG file; `title` is read by screen readers
+ *
+ * People (unit 3's pronouns, unit 10's family trees):
+ *   person(x, y, shirt, s = 1, look?)
+ *                      a person from the chest up, head centred on x, y,
+ *                      scaled by s. `shirt`: a SHIRT colour name, or null
+ *                      for a grey bystander. Without `look`, short dark
+ *                      hair when coloured and none when grey. `look`:
+ *                      { hair: 'short' | 'long' | 'bun' | 'none', old } draws
+ *                      that hair (white when old) on grey people too
+ *   SHIRT              { red, blue, green, gold } shirt colours
+ *   LINE               stroke attributes for outlines
+ *   arrow(x, y)        gold arrow pointing down at x, y (marks who is meant)
+ *   bubble             speech bubble in the top-left corner
+ *   floor              a line along the bottom
+ *
+ * Food:
  *   steamer(food)      bamboo steamer with `food` sitting inside it
  *   plate(food, { cy, rx, ry })   white plate with `food` on top
  *   teapot(), teacup() blue-and-white Chinese teapot (spout at the right,
@@ -23,6 +39,38 @@ export const svg = (title, body) => `<svg xmlns="http://www.w3.org/2000/svg" vie
 ${body}
 </svg>
 `;
+
+const SKIN = '#f2c9a0', SKIN_LINE = '#b07a52';
+const GREY = 'fill="#c9d3da" stroke="#8a9aa5"';
+export const SHIRT = { red: '#d6453a', blue: '#3f7cc0', green: '#3a9a6e', gold: '#e0a526' };
+export const LINE = 'stroke-width="2.5" stroke-linejoin="round"';
+
+// Hair, drawn over the head (front) and, for long hair and buns, behind it.
+const HAIR = {
+  short: { front: 'M-11 -2 C-12 -14 -4 -17 0 -17 C8 -17 12 -12 11 -2 C8 -9 -6 -10 -11 -2 Z' },
+  long: { back: 'M-13 -2 C-14 -18 14 -18 13 -2 L15 20 C6 24 -6 24 -15 20 Z',
+    front: 'M-12 -1 C-12 -14 -4 -17 0 -17 C8 -17 12 -14 12 -1 C8 -10 -6 -11 -12 -1 Z' },
+  bun: { back: 'M-6 -19 A7 6 0 1 1 6 -19 A7 6 0 1 1 -6 -19 Z',
+    front: 'M-11 -1 C-12 -14 -4 -16 0 -16 C8 -16 12 -14 11 -1 C8 -9 -6 -10 -11 -1 Z' },
+};
+const hairColour = (shirt, old) => !shirt ? '#8a9aa5' : old ? '#e4e7ea" stroke="#9aa5ad" stroke-width="1.5' : '#3b2f2a';
+
+export function person(x, y, shirt, s = 1, look) {
+  const body = shirt ? `fill="${SHIRT[shirt]}" stroke="#4a3a33"` : GREY;
+  const head = shirt ? `fill="${SKIN}" stroke="${SKIN_LINE}"` : GREY;
+  const hair = (look ? HAIR[look.hair] : shirt && HAIR.short) ?? {};
+  const fill = look ? hairColour(shirt, look.old) : '#3b2f2a';
+  return `<g transform="translate(${x} ${y}) scale(${s})">
+<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" ${body} ${LINE}/>
+${hair.back ? `<path d="${hair.back}" fill="${fill}"/>\n` : ''}<circle r="12" ${head} ${LINE}/>
+${hair.front ? `<path d="${hair.front}" fill="${fill}"/>` : ''}
+</g>`;
+}
+
+export const arrow = (x, y) => `<path d="M${x - 7} ${y - 10} H${x + 7} L${x} ${y} Z" fill="#e0a526" stroke="#9a6c0e" stroke-width="1.5" stroke-linejoin="round"/>`;
+export const bubble = `<path d="M6 8 H44 Q50 8 50 14 V26 Q50 32 44 32 H26 L18 40 L20 32 H6 Q0 32 0 26 V14 Q0 8 6 8 Z" fill="#ffffff" stroke="#6f8796" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M10 17 H40 M10 24 H32" stroke="#9fb0bb" stroke-width="3" stroke-linecap="round"/>`;
+export const floor = '<path d="M4 124 H124" stroke="#9fb0bb" stroke-width="3" stroke-linecap="round"/>';
 
 export const steamer = food => `<g data-dish="steamer">
 <ellipse cx="64" cy="74" rx="52" ry="15" fill="#9c6528" stroke="#7d4f1e" stroke-width="2"/>

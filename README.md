@@ -29,6 +29,9 @@ The course plans 18 units (see the roadmap in CLAUDE.md); built so far:
 - **Unit 9 · 時間 Time & Dates**: 點 and 半, minutes in 個字 and 分, parts of the day, 星期, 月 and 號, 琴日 / 今日 / 聽日, and time words before the verb.
   - *Clock*: hear a time and find its clock, set the clock, say the time, work out days and dates, and build sentences with the time first.
   - *Tone Detective* (今日 or 琴日?) and *Say It Back* for times, days and dates.
+- **Unit 10 · 屋企人 Family**: 爸爸 媽媽, 哥哥 家姐 細佬 細妹, 爺爺 嫲嫲 公公 婆婆, 老公 老婆 仔 女, and saying whose: 我嘅書, 我媽媽 (no 嘅 for close family), 我個仔 and 我隻貓.
+  - *Family Tree*: find people on the family tree and name them, follow 嘅 chains (爸爸嘅媽媽 is 嫲嫲), say whose things are whose, and build sentences.
+  - *Tone Detective* (媽媽 or 嫲嫲?) and *Say It Back* for family words and sentences.
 
 ## Working on it
 

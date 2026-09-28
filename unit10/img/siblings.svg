@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Family tree: 我's brothers and sisters</title>
+<path stroke="#9fb0bb" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" d="M27 35 H37 M32 35 V48 H32 M32 48 V53"/>
+<path stroke="#9fb0bb" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" d="M91 35 H101 M96 35 V48 H96 M96 48 V53"/>
+<path stroke="#9fb0bb" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" d="M41 73 H87 M64 73 V86 M16 86 H112 M16 86 V91 M40 86 V91 M64 86 V91.56 M88 86 V94.12 M112 86 V94.12"/>
+<g transform="translate(18 22) scale(0.5)">
+<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<circle r="12" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-11 -2 C-12 -14 -4 -17 0 -17 C8 -17 12 -12 11 -2 C8 -9 -6 -10 -11 -2 Z" fill="#8a9aa5"/>
+</g>
+<g transform="translate(46 22) scale(0.5)">
+<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-6 -19 A7 6 0 1 1 6 -19 A7 6 0 1 1 -6 -19 Z" fill="#8a9aa5"/>
+<circle r="12" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-11 -1 C-12 -14 -4 -16 0 -16 C8 -16 12 -14 11 -1 C8 -9 -6 -10 -11 -1 Z" fill="#8a9aa5"/>
+</g>
+<g transform="translate(82 22) scale(0.5)">
+<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<circle r="12" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-11 -2 C-12 -14 -4 -17 0 -17 C8 -17 12 -12 11 -2 C8 -9 -6 -10 -11 -2 Z" fill="#8a9aa5"/>
+</g>
+<g transform="translate(110 22) scale(0.5)">
+<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-6 -19 A7 6 0 1 1 6 -19 A7 6 0 1 1 -6 -19 Z" fill="#8a9aa5"/>
+<circle r="12" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-11 -1 C-12 -14 -4 -16 0 -16 C8 -16 12 -14 11 -1 C8 -9 -6 -10 -11 -1 Z" fill="#8a9aa5"/>
+</g>
+<g transform="translate(32 60) scale(0.5)">
+<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<circle r="12" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-11 -2 C-12 -14 -4 -17 0 -17 C8 -17 12 -12 11 -2 C8 -9 -6 -10 -11 -2 Z" fill="#8a9aa5"/>
+</g>
+<g transform="translate(96 60) scale(0.5)">
+<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-13 -2 C-14 -18 14 -18 13 -2 L15 20 C6 24 -6 24 -15 20 Z" fill="#8a9aa5"/>
+<circle r="12" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-12 -1 C-12 -14 -4 -17 0 -17 C8 -17 12 -14 12 -1 C8 -10 -6 -11 -12 -1 Z" fill="#8a9aa5"/>
+</g>
+<g transform="translate(16 98) scale(0.5)">
+<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#d6453a" stroke="#4a3a33" stroke-width="2.5" stroke-linejoin="round"/>
+<circle r="12" fill="#f2c9a0" stroke="#b07a52" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-11 -2 C-12 -14 -4 -17 0 -17 C8 -17 12 -12 11 -2 C8 -9 -6 -10 -11 -2 Z" fill="#3b2f2a"/>
+</g>
+<g transform="translate(40 98) scale(0.5)">
+<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#d6453a" stroke="#4a3a33" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-13 -2 C-14 -18 14 -18 13 -2 L15 20 C6 24 -6 24 -15 20 Z" fill="#3b2f2a"/>
+<circle r="12" fill="#f2c9a0" stroke="#b07a52" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-12 -1 C-12 -14 -4 -17 0 -17 C8 -17 12 -14 12 -1 C8 -10 -6 -11 -12 -1 Z" fill="#3b2f2a"/>
+</g>
+<g transform="translate(64 98) scale(0.46)">
+<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#e0a526" stroke="#4a3a33" stroke-width="2.5" stroke-linejoin="round"/>
+<circle r="12" fill="#f2c9a0" stroke="#b07a52" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-11 -2 C-12 -14 -4 -17 0 -17 C8 -17 12 -12 11 -2 C8 -9 -6 -10 -11 -2 Z" fill="#3b2f2a"/>
+</g>
+<g transform="translate(88 100) scale(0.42)">
+<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#d6453a" stroke="#4a3a33" stroke-width="2.5" stroke-linejoin="round"/>
+<circle r="12" fill="#f2c9a0" stroke="#b07a52" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-11 -2 C-12 -14 -4 -17 0 -17 C8 -17 12 -12 11 -2 C8 -9 -6 -10 -11 -2 Z" fill="#3b2f2a"/>
+</g>
+<g transform="translate(112 100) scale(0.42)">
+<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#d6453a" stroke="#4a3a33" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-13 -2 C-14 -18 14 -18 13 -2 L15 20 C6 24 -6 24 -15 20 Z" fill="#3b2f2a"/>
+<circle r="12" fill="#f2c9a0" stroke="#b07a52" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-12 -1 C-12 -14 -4 -17 0 -17 C8 -17 12 -14 12 -1 C8 -10 -6 -11 -12 -1 Z" fill="#3b2f2a"/>
+</g>
+<path d="M9 81 H23 L16 91 Z" fill="#e0a526" stroke="#9a6c0e" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M33 81 H47 L40 91 Z" fill="#e0a526" stroke="#9a6c0e" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M81 84.12 H95 L88 94.12 Z" fill="#e0a526" stroke="#9a6c0e" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M105 84.12 H119 L112 94.12 Z" fill="#e0a526" stroke="#9a6c0e" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>

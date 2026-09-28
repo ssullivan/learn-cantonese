@@ -12,8 +12,8 @@
  * button.tile (word tiles, tiles.js; .tile-line.right / .wrong),
  * .stall (a .prompt-pic with an optional .price-tag), .till (a box that
  * collects tapped .pic-btn money; .right / .wrong) and .till-total,
- * .pic-grid.cols-4, .pic-grid.clocks (picture answers on .choice
- * buttons, from Game.choose), .stepper (◀ label ▶ row) and
+ * .pic-grid.cols-4, .pic-grid.pics (square picture answers on
+ * .choice buttons, from Game.choose: clocks, family trees), .stepper (◀ label ▶ row) and
  * .prompt-pic.right / .wrong.
  */
 
@@ -185,9 +185,9 @@
 .pic-grid.cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .purse { margin-top: 16px; max-width: 520px; }
 
-/* Clocks: picture answers, and setting a clock with steppers */
-.pic-grid.clocks .choice { aspect-ratio: 1; padding: 8px; }
-.pic-grid.clocks img { display: block; width: 100%; height: 100%; }
+/* Square picture answers (clocks, family trees), and setting a clock with steppers */
+.pic-grid.pics .choice { aspect-ratio: 1; padding: 8px; }
+.pic-grid.pics img { display: block; width: 100%; height: 100%; }
 .prompt-pic.right, .prompt-pic.wrong { border-radius: 50%; outline: 4px solid var(--good); outline-offset: 2px; }
 .prompt-pic.wrong { outline-color: var(--bad); }
 .stepper { display: flex; align-items: center; gap: 10px; margin: 0 0 10px; }
