@@ -20,10 +20,12 @@
  *   ctx.grid(entries)          grid of word cards (wider columns if none has a picture)
  *   ctx.play(entry)            play an entry's clip
  *   ctx.complete()             mark this step done (unlocks Next if gated)
- *   ctx.listenQuiz(el, { pool, rounds, choices })
- *                              hear a word, pick its picture from `choices`
- *                              (entries need a picture); completes the
- *                              step when the last round is answered
+ *   ctx.listenQuiz(el, { pool, rounds, choices, show })
+ *                              hear a word, pick it from `choices` answers;
+ *                              completes the step when the last round is
+ *                              answered. show: 'picture' (default; entries
+ *                              need one) or 'jyutping' (text buttons, e.g.
+ *                              syllables that differ only in tone)
  *
  * Helpers for step content (Canto.zh etc. are in core.js):
  *   Learn.p(html)              <p> element
@@ -159,7 +161,7 @@
     go(state.step);
   }
 
-  function listenQuiz(el, { pool, rounds = 8, choices = 4 }, ctx) {
+  function listenQuiz(el, { pool, rounds = 8, choices = 4, show: kind = 'picture' }, ctx) {
     let order, round, score, answered;
 
     function start() {
@@ -180,12 +182,12 @@
       listen.type = 'button';
       listen.addEventListener('click', () => play(answer));
 
-      const grid = $('div', 'pic-grid');
+      const grid = $('div', kind === 'jyutping' ? 'choice-grid' : 'pic-grid');
       const fb = $('div', 'quiz-feedback');
       fb.setAttribute('aria-live', 'polite');
 
       shuffle([answer, ...others]).forEach(o => {
-        const b = picButton(o);
+        const b = kind === 'jyutping' ? textButton(o) : picButton(o);
         b.addEventListener('click', () => pick(o, b, grid, fb, answer));
         grid.append(b);
       });
@@ -225,6 +227,13 @@
     }
 
     start();
+  }
+
+  function textButton(entry) {
+    const b = $('button', 'choice', `<span class="jp">${jyutping(entry.jyutping)}</span>`);
+    b.type = 'button';
+    b.dataset.id = entry.id;
+    return b;
   }
 
   window.Learn = { init, p, tip };

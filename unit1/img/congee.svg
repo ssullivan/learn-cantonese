@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Congee (rice porridge)</title>
+<g data-dish="bowl">
+<ellipse cx="64" cy="112" rx="24" ry="5" fill="#9fb0bb" opacity=".35"/>
+<path d="M14 60 C16 92 38 108 64 108 C90 108 112 92 114 60 Z" fill="#fbf8f1" stroke="#2e5a88" stroke-width="3" stroke-linejoin="round"/>
+<path d="M24 82 q10 -7 20 0 t20 0 t20 0 t20 0" stroke="#6f9bc6" stroke-width="2.5" fill="none"/>
+<path d="M50 107 L52 114 H76 L78 107" fill="#fbf8f1" stroke="#2e5a88" stroke-width="2.5" stroke-linejoin="round"/>
+<ellipse cx="64" cy="60" rx="50" ry="13" fill="#fbf8f1" stroke="#2e5a88" stroke-width="3"/>
+<ellipse cx="64" cy="61" rx="44" ry="9" fill="#f3ecdc"/>
+<ellipse cx="52" cy="59" rx="14" ry="3" fill="#ffffff" opacity=".8"/>
+<path d="M60 58 h6 M74 62 h6 M44 63 h6 M84 57 h5 M68 65 h5" stroke="#5c9e46" stroke-width="3" stroke-linecap="round"/>
+<ellipse cx="80" cy="60" rx="6" ry="3" fill="#e8b04c"/>
+<path d="M92 60 L118 22" stroke="#2e5a88" stroke-width="6" stroke-linecap="round"/>
+<path d="M92 60 L118 22" stroke="#fbf8f1" stroke-width="3" stroke-linecap="round"/>
+</g>
+</svg>

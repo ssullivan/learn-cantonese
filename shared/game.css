@@ -4,8 +4,7 @@
  * .level-list > button.level (level menu), .hud, .timer > .timer-fill,
  * .stage (.locked after answering), .game-feedback, .game-end,
  * .stars, .btn.small, .speech (a speech bubble), .tray (labelled box
- * of answer buttons), .prompt-pic (big picture to answer about),
- * .tone-chart (tone reference table).
+ * of answer buttons), .prompt-pic (big picture to answer about).
  */
 
 .btn.small { padding: 6px 12px; font-size: 14px; }
@@ -109,9 +108,6 @@
 .prompt-pic { display: block; width: 160px; height: 160px; margin: 0 0 16px; }
 
 /* Tone chart */
-.tone-chart { border-collapse: collapse; margin: 10px 0 4px; font-size: 15px; }
-.tone-chart td { padding: 3px 12px 3px 0; vertical-align: middle; }
-.tone-chart svg { display: block; }
 
 /* End screen */
 .game-end { text-align: center; padding: 16px 0; }

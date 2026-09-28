@@ -6,8 +6,10 @@
  *   svg(title, body)   complete SVG file; `title` is read by screen readers
  *   steamer(food)      bamboo steamer with `food` sitting inside it
  *   plate(food, { cy, rx, ry })   white plate with `food` on top
+ *   bowl(food)         blue-and-white rice bowl filled with `food`
+ *                      (drawn inside the rim, around y 56–64)
  *
- * steamer() and plate() tag their output data-dish="steamer|plate" so
+ * steamer(), plate() and bowl() tag their output data-dish so
  * tools/check.mjs can match the picture to the dish's measure word.
  */
 
@@ -30,5 +32,14 @@ export const plate = (food, { cy = 88, rx = 56, ry = 20 } = {}) => `<g data-dish
 <ellipse cx="64" cy="${cy + 3}" rx="${rx}" ry="${ry}" fill="#9fb0bb" opacity=".35"/>
 <ellipse cx="64" cy="${cy}" rx="${rx}" ry="${ry}" fill="#ffffff" stroke="#9fb0bb" stroke-width="2"/>
 <ellipse cx="64" cy="${cy}" rx="${rx - 11}" ry="${ry - 5}" fill="#eef3f6"/>
+${food}
+</g>`;
+
+export const bowl = food => `<g data-dish="bowl">
+<ellipse cx="64" cy="112" rx="24" ry="5" fill="#9fb0bb" opacity=".35"/>
+<path d="M14 60 C16 92 38 108 64 108 C90 108 112 92 114 60 Z" fill="#fbf8f1" stroke="#2e5a88" stroke-width="3" stroke-linejoin="round"/>
+<path d="M24 82 q10 -7 20 0 t20 0 t20 0 t20 0" stroke="#6f9bc6" stroke-width="2.5" fill="none"/>
+<path d="M50 107 L52 114 H76 L78 107" fill="#fbf8f1" stroke="#2e5a88" stroke-width="2.5" stroke-linejoin="round"/>
+<ellipse cx="64" cy="60" rx="50" ry="13" fill="#fbf8f1" stroke="#2e5a88" stroke-width="3"/>
 ${food}
 </g>`;

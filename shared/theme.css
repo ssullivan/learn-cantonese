@@ -13,6 +13,7 @@
  * Feedback: .feedback.good / .feedback.bad; .tip (callout box)
  * Answers:  .pic-grid > button.pic-btn (Canto.picButton): .picked .right .wrong
  *           .choice-grid > button.choice (text answers), same states
+ * Tones:    .tone-chart (Canto.toneChart)
  * Text:     [lang="zh-HK"] gets the Chinese font; .jp is jyutping,
  *           its tone digits are <sup> (see Canto.jyutping in core.js).
  */
@@ -216,6 +217,11 @@ a.card:hover { border-color: var(--accent); }
 :is(.pic-btn, .choice).picked { border-color: var(--gold); background: color-mix(in srgb, var(--gold) 16%, var(--surface)); }
 :is(.pic-btn, .choice).right { border-color: var(--good); background: color-mix(in srgb, var(--good) 14%, var(--surface)); }
 :is(.pic-btn, .choice).wrong { border-color: var(--bad); background: color-mix(in srgb, var(--bad) 14%, var(--surface)); }
+
+/* Tone chart */
+.tone-chart { border-collapse: collapse; margin: 10px 0 4px; font-size: 15px; }
+.tone-chart td { padding: 3px 12px 3px 0; vertical-align: middle; }
+.tone-chart svg { display: block; }
 
 /* Jyutping */
 .jp { color: var(--ink-soft); font-size: 0.95em; }

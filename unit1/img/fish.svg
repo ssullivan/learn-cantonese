@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Fish</title>
+<path d="M96 64 L122 40 L118 64 L122 88 Z" fill="#e8773a" stroke="#b5521f" stroke-width="2.5" stroke-linejoin="round"/>
+<ellipse cx="60" cy="64" rx="44" ry="26" fill="#f39a4a" stroke="#b5521f" stroke-width="2.5"/>
+<path d="M50 40 Q64 26 80 42" fill="#e8773a" stroke="#b5521f" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M58 72 Q66 84 76 76" fill="#e8773a" stroke="#b5521f" stroke-width="2"/>
+<path d="M38 44 Q30 64 38 84" fill="none" stroke="#b5521f" stroke-width="2.5"/>
+<path d="M54 56 q6 -4 12 0 M64 50 q6 -4 12 0 M64 62 q6 -4 12 0 M74 56 q6 -4 12 0" fill="none" stroke="#fbc98c" stroke-width="2" stroke-linecap="round"/>
+<circle cx="28" cy="58" r="5" fill="#ffffff"/><circle cx="27" cy="58" r="2.8" fill="#2a211b"/>
+<path d="M17 70 q4 3 8 0" fill="none" stroke="#b5521f" stroke-width="2" stroke-linecap="round"/>
+</svg>
