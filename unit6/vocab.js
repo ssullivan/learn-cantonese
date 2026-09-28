@@ -115,11 +115,14 @@ Units.add(6, {
   });
 
   const say = Units.sentences(V);
+  // The voice reads 平 as ping4 unless told (the vowel of 評), so anything
+  // with 平 is read from its jyutping.
+  const PENG = { phoneme: true };
   // 好 + adjective: an adjective is the whole predicate, with no 係.
   V.adjectives = [
-    say('hou peng', 'very cheap'),
+    say('hou peng', 'very cheap', PENG),
     say('hou gwai', 'very expensive'),
-    say('m peng', 'not cheap'),
+    say('m peng', 'not cheap', PENG),
     say('m gwai', 'not expensive'),
   ];
   V.sentences = [
@@ -132,9 +135,9 @@ Units.add(6, {
     say('ngo jiu loeng go orange', 'I\'d like two oranges.'),
     say('ngo maai5 ni go', 'I\'ll buy this one.'),
     say('ni go hou gwai', 'This one is expensive.', { note: 'No 係: 呢個係貴 is wrong.' }),
-    say('go2 go hou peng', 'That one is cheap.'),
+    say('go2 go hou peng', 'That one is cheap.', PENG),
     say('ni gin shirt m gwai', 'This shirt isn\'t expensive.'),
-    say('peng di dak m dak aa', 'Can you make it cheaper?', { note: '平啲, "a bit cheaper"; 得唔得, "OK or not?"' }),
+    say('peng di dak m dak aa', 'Can you make it cheaper?', { ...PENG, note: '平啲, "a bit cheaper"; 得唔得, "OK or not?"' }),
     say('no-need zaau', 'Keep the change.', { note: 'Literally "no need to give change".' }),
   ];
 })(window.VOCAB);
