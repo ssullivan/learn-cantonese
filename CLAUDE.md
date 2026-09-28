@@ -59,3 +59,36 @@ tools/
 1. `node tools/check.mjs --fix`: must print "All checks passed" (links, stamps, JS syntax, vocab ↔ audio ↔ art, SVGs up to date, tests).
    Tests must be able to fail: after writing one, break the code on purpose and confirm check.mjs reports it.
 2. Serve locally (`python3 -m http.server`) and try the page at phone (390px) and desktop widths, in light and dark mode: no horizontal scroll, all audio plays, quizzes and game levels complete, and timers, stars and unlocks work.
+
+## Roadmap
+Units build on each other: each one reuses earlier words and adds one grammar point, so a later unit can assume the earlier ones. Unit numbers below are final; build them roughly in order and leave gaps for units not built yet.
+
+| # | Unit | Words and topics | Grammar point | Games (new, besides Tone Detective / Say It Back) |
+|---|------|------------------|---------------|------|
+| **Foundations** |
+| 1 | Sounds & Tones 聲調 | Jyutping, the 6 tones, minimal pairs (詩 史 試 時 市 事) | Tone numbers, sandhi | Tone Detective as the main game |
+| 2 | Greetings 打招呼 | 你好, 早晨, 唔該 vs 多謝, 對唔住, 拜拜, 冇問題 | Politeness: 唔該 vs 多謝 | Reply Match (hear a situation, pick the reply) |
+| 3 | Me & You 我同你 | 我 你 佢 (+ 哋), 我叫…, 係 / 唔係, 邊個, 乜嘢 | 係, 唔 negation, A唔A questions, 呀 / 嗎 | Question Builder |
+| 4 | Numbers 數字 | 零–十, 百 千 萬, 廿 / 卅, 幾多, 第 | 二 vs 兩 | Number Dash (hear a number, tap it) |
+| 5 | Measure Words 量詞 | 個 隻 本 張 條 枝 架 件 杯 碗 對 啲, nouns sorted by shape | number + measure + noun; measure + noun = "the"; 呢 / 嗰 | Measure Sort, Count It |
+| 6 | Money & Shopping 買嘢 | 幾多錢, 蚊, 毫, 平 / 貴, 要 / 唔要, 呢個 / 嗰個 | Prices (三蚊半), adjectives with 好 | Market Stall (pay the right amount) |
+| **Daily life** |
+| 7 | Dim Sum 點心 | Dishes, 一籠 / 一碟, ordering, 埋單 | Ordering: 我要 + number + measure + dish | Trolley Rush (built) |
+| 8 | Cha Chaan Teng 茶餐廳 | 奶茶, 鴛鴦, 凍 / 熱, 走甜, 菠蘿油, 餐蛋麵 | Modifiers: 走, 少, 多 | Order Up (build the order a customer calls) |
+| 9 | Time & Dates 時間 | 點鐘, 個字, 半, 星期, 月, 今日 / 聽日 / 琴日 | Time words go before the verb | Clock (hear a time, set the clock) |
+| 10 | Family 屋企人 | 爸爸 媽媽 哥哥 家姐 細佬 細妹, 老公 / 老婆 | Possessive 嘅 and measure (我個仔) | Family Tree |
+| 11 | Getting Around 出街 | 港鐵, 巴士, 的士, 喺邊度, 左 / 右, 直行 | 喺 (be at), 去 + place | Route (follow directions on a map) |
+| 12 | Colours & Clothes 顏色同衫 | Colours, 衫 褲 鞋 帽, 著 / 戴 | 嘅 with adjectives | Dress Up |
+| 13 | Weather 天氣 | 熱, 凍, 落雨, 打風, 季節 | 好 / 幾 / 太 + adjective, 啦 | Forecast |
+| 14 | Body & Health 身體 | Body parts, 痛, 睇醫生, 食藥 | 咗 (done), 有冇 | Doctor's Visit |
+| **Conversation** |
+| 15 | Daily Routine 日常 | 起身, 返工, 食飯, 瞓覺 | 緊 (-ing), 過 (ever) | Day Planner |
+| 16 | Likes & Hobbies 興趣 | 鍾意, 睇戲, 打波, 唱K | 鍾意 + verb, 想, 會 | Survey |
+| 17 | Feelings 心情 | 開心, 攰, 嬲, 驚, 悶 | Sentence particles 啦 喎 囉 嘛 | Particle Match |
+| 18 | Comparing 比較 | 大 / 細, 快 / 慢, 平 / 貴 | A 比 B + adjective, 最 | Which Is Bigger |
+
+Planned changes and shared pieces this needs:
+- Move Dim Sum from `unit1/` to `unit7/` (its localStorage keys become `u7-*`, so saved progress resets; update CLAUDE.md's `unit1` template references). Until units 1–6 exist, Dim Sum is the only card on the root page.
+- `shared/numbers.js`: `Canto.number(n, { measure })` gives hanzi and jyutping for 0–9999 (兩 before measures and 百/千, 廿 / 卅 / 四十 aa6 forms, 零 for gaps). Units 4–9 derive numbers, prices, counts and times from it instead of listing them. `tools/site.mjs` `loadVocab` loads it before a unit's vocab.js. Test it in `tools/numbers.test.mjs`.
+- A word used again in a later unit is shared, not copied. Before unit 5, decide how a unit uses another unit's words and audio (for example, vocab.js lists `uses: ['unit4']` and the loaders resolve it).
+- The Dim Sum "一籠 or 一碟?" level and unit 5's Measure Sort are the same round. Move that round into `shared/` when unit 5 is built.
