@@ -11,6 +11,12 @@
  *                                contour, number, name, example word
  *   Canto.shuffle(list)          shuffled copy
  *   Canto.pick(list, n)          n random items
+ *   Canto.confusable(e, pool, count)
+ *                                `count` other entries from `pool` (entries
+ *                                with a value `n`) to offer as wrong answers:
+ *                                those easy to mix up with e.n first
+ *                                (Canto.near, so load numbers.js), then any
+ *                                others
  *   Canto.imgSrc(entry)          "img/<id>.svg"
  *   Canto.audioSrc(entry)        "audio/<id>.mp3"; both use ../unit<n>/ for
  *                                an entry borrowed from unit n (Units.word)
@@ -73,6 +79,13 @@
 
   const pick = (list, n) => shuffle(list).slice(0, n);
 
+  function confusable(e, pool, count) {
+    const byN = new Map(pool.map(x => [x.n, x]));
+    const close = shuffle(Canto.near(e.n).filter(m => byN.has(m))).map(m => byN.get(m));
+    const rest = shuffle(pool.filter(x => x !== e && !close.includes(x)));
+    return [...close, ...rest].slice(0, count);
+  }
+
   const home = entry => entry.unit ? `../unit${entry.unit}/` : '';
   const imgSrc = entry => `${home(entry)}img/${entry.id}.svg`;
   const audioSrc = entry => `${home(entry)}audio/${entry.id}.mp3`;
@@ -125,5 +138,5 @@
     };
   }
 
-  window.Canto = { el, esc, jyutping, zh, tones, toneChart, shuffle, pick, imgSrc, audioSrc, play, picButton, speech, entries, store };
+  window.Canto = { el, esc, jyutping, zh, tones, toneChart, shuffle, pick, confusable, imgSrc, audioSrc, play, picButton, speech, entries, store };
 })();

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Bread roll</title>
+<ellipse cx="64" cy="108" rx="46" ry="5" fill="#9fb0bb" opacity=".35"/>
+<path d="M14 98 C10 60 36 34 64 34 C92 34 118 60 114 98 C114 104 14 104 14 98Z" fill="#d98d3e" stroke="#8f5320" stroke-width="3" stroke-linejoin="round"/>
+<path d="M28 76 C30 58 46 44 64 42 C82 44 98 58 100 76 C84 70 44 70 28 76Z" fill="#eab06a"/>
+<path d="M42 56 l10 14 M60 48 l6 18 M80 52 l-2 16" stroke="#a8622a" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Ten-dollar coin</title>
+<ellipse cx="64" cy="114" rx="36.800000000000004" ry="5" fill="#9fb0bb" opacity=".35"/>
+<g fill="#d3d9de" stroke="#6f7b85" stroke-width="3"><circle cx="64" cy="64" r="46"/></g>
+<circle cx="64" cy="64" r="40" fill="none" stroke="#eef1f3" stroke-width="2.5"/>
+<circle cx="64" cy="64" r="34" fill="#e5b73f" stroke="#96700f" stroke-width="2"/>
+<text x="64" y="65" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="700" fill="#7a5808" text-anchor="middle" dominant-baseline="central">$10</text>
+</svg>

@@ -11,6 +11,13 @@
  *                         Canto.audioSrc). Unit n's vocab.js must be loaded
  *                         first: a page lists ../unit<n>/vocab.js before its
  *                         own, which tools/check.mjs verifies.
+ *   Units.sentences(vocab)
+ *                         say(ids, english, extra?): a sentence entry made
+ *                         of the entries with those space-separated ids
+ *                         (looked up in vocab as it is when say is made):
+ *                         id "a-b-c", words [ids] (for Tiles.round), hanzi
+ *                         and jyutping joined, a ？ if english ends in "?",
+ *                         img: false, plus extra
  *   window.UNITS          { n: vocab } for every loaded unit
  */
 (function (root) {
@@ -29,5 +36,21 @@
     return { ...entry, unit: n };
   }
 
-  root.Units = { add, word };
+  function sentences(vocab) {
+    const byId = Object.fromEntries(Object.values(vocab).filter(Array.isArray).flat().map(e => [e.id, e]));
+    return (ids, english, extra) => {
+      const ws = ids.split(' ').map(id => {
+        if (!byId[id]) throw new Error(`no word ${id} for "${english}"`);
+        return byId[id];
+      });
+      return {
+        id: ids.replace(/ /g, '-'), words: ws.map(w => w.id),
+        hanzi: ws.map(w => w.hanzi).join('') + (english.endsWith('?') ? '？' : ''),
+        jyutping: ws.map(w => w.jyutping).join(' '),
+        english, img: false, ...extra,
+      };
+    };
+  }
+
+  root.Units = { add, word, sentences };
 })(typeof window !== 'undefined' ? window : globalThis);

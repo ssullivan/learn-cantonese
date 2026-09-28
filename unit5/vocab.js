@@ -124,17 +124,9 @@ Units.add(5, {
     phrase('that', t, [`嗰${m(t).hanzi}`, `go2 ${m(t).jyutping}`], `that ${bare(t)}`, { near: false }),
   ]);
 
-  // Sentences: `words` lists their ids in order (Count It turns them into
-  // tiles); English ending in "?" gets a ？.
-  const say = (words, english, extra) => {
-    const ws = words.split(' ').map(id => byId[id]);
-    return {
-      id: words.replace(/ /g, '-'), words: ws.map(w => w.id),
-      hanzi: ws.map(w => w.hanzi).join('') + (english.endsWith('?') ? '？' : ''),
-      jyutping: ws.map(w => w.jyutping).join(' '),
-      english, img: false, ...extra,
-    };
-  };
+  // Sentences (Units.sentences): `words` lists their ids in order, which
+  // Count It turns into tiles.
+  const say = Units.sentences(V);
   V.sentences = [
     say('ngo jau loeng zek cat', 'I have two cats.', { note: '兩隻, never 二隻.' }),
     say('keoi jau n1 gaa car', 'He / she has a car.'),

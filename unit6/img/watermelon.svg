@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Watermelon</title>
+<ellipse cx="64" cy="112" rx="50" ry="5" fill="#9fb0bb" opacity=".35"/>
+<ellipse cx="64" cy="70" rx="54" ry="38" fill="#3f9a3a" stroke="#1f5e22" stroke-width="3"/>
+<path d="M22 58 q8 6 0 12 q-8 6 0 12 M40 38 q8 10 0 20 q-8 10 0 20 q8 10 0 20 M64 32 q8 12 0 24 q-8 12 0 24 q8 12 0 24 M88 38 q8 10 0 20 q-8 10 0 20 q8 10 0 20 M106 58 q8 6 0 12 q-8 6 0 12" stroke="#1f6b24" stroke-width="6" fill="none" stroke-linecap="round"/>
+<path d="M30 52 C36 44 46 40 54 38" stroke="#9fd48a" stroke-width="4" fill="none" stroke-linecap="round"/>
+<path d="M64 32 C64 26 68 22 72 20" stroke="#6b4423" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

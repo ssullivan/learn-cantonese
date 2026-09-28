@@ -40,4 +40,20 @@ const stray = v5.things.filter(t => !measureIds.has(t.measure)).map(t => t.id);
 ok('every unit 5 thing has a unit 5 measure word', !stray.length, stray.join(' '));
 const fish = v5.things.find(t => t.id === 'fish');
 ok('a borrowed thing keeps its unit and gains a measure', fish?.unit === 1 && fish.measure === 'tiu', JSON.stringify(fish));
+
+const say = Units.sentences({ words: [cat, { id: 'aa', hanzi: '呀', jyutping: 'aa3', english: '(particle)' }] });
+const q = say('cat aa', 'A cat?', { note: 'n' });
+ok('sentence joins its words', q.id === 'cat-aa' && q.hanzi === '貓呀？' && q.jyutping === 'maau1 aa3' && q.words.join() === 'cat,aa' && q.img === false && q.note === 'n', JSON.stringify(q));
+ok('sentence without ? has no ？', say('cat', 'A cat.').hanzi === '貓');
+ok('sentence with an unknown word throws', throws(() => say('cat dog', 'x')));
+
+const v6 = loadVocab('unit6');
+const apple = v6.things.find(t => t.id === 'apple');
+ok('unit 6 borrows unit 5 things with a price', apple?.unit === 5 && apple.price > 0 && apple.measure === 'go', JSON.stringify(apple));
+const oneFish = v6.ones.find(o => o.id === 'one-fish');
+ok('unit 6 borrows 一條魚 from unit 5, where it was made', oneFish?.unit === 5, JSON.stringify(oneFish?.unit));
+const allPrices = new Map([...v6.cash, ...v6.prices].map(p => [p.n, p]));
+const priceless = v6.things.filter(t => !allPrices.has(t.price)).map(t => t.id);
+ok('every unit 6 thing\'s price has an entry', !priceless.length, priceless.join(' '));
+ok('unit 6 coins have pictures', v6.cash.every(c => c.img !== false && c.cash));
 process.exit(fail ? 1 : 0);

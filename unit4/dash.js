@@ -1,23 +1,9 @@
 /* Unit 4 game: Number Dash. Hear a number and tap it, say numbers, and choose 二 or 兩. Runs on shared/game.js. */
 (function () {
   const V = window.VOCAB;
-  const { el: $, esc, zh, pick, shuffle, speech } = Canto;
+  const { el: $, esc, zh, pick, shuffle, confusable, speech } = Canto;
   const byId = Object.fromEntries(Canto.entries(V).map(e => [e.id, e]));
   const all = [...V.numbers, ...V.big];
-
-  // Up to `count` numbers from `pool` that are easy to mix up with e.n:
-  // reversed digits (13/31), 十四 / 四十, ±1, ±10, ×10 and ÷10.
-  function confusable(e, pool, count) {
-    const n = e.n;
-    const near = [+String(n).split('').reverse().join(''), n + 1, n - 1, n + 10, n - 10, n * 10, n / 10];
-    if (n > 10 && n < 20) near.push((n - 10) * 10);
-    if (n % 10 === 0 && n > 10 && n < 100) near.push(10 + n / 10);
-    if (n === 4 || n === 10) near.push(14 - n);
-    const byN = new Map(pool.map(x => [x.n, x]));
-    const close = shuffle([...new Set(near)].filter(m => m !== n && byN.has(m))).map(m => byN.get(m));
-    const rest = shuffle(pool.filter(x => x !== e && !close.includes(x)));
-    return [...close, ...rest].slice(0, count);
-  }
 
   function button(html, e, cls = 'choice') {
     const b = $('button', cls, html);

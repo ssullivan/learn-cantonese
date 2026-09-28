@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>20-cent coin</title>
+<ellipse cx="64" cy="102" rx="27.200000000000003" ry="5" fill="#9fb0bb" opacity=".35"/>
+<g fill="#e5b73f" stroke="#96700f" stroke-width="3"><path d="M64.0 30.0 L72.0 34.1 L81.0 34.6 L85.9 42.1 L93.4 47.0 L93.9 56.0 L98.0 64.0 L93.9 72.0 L93.4 81.0 L85.9 85.9 L81.0 93.4 L72.0 93.9 L64.0 98.0 L56.0 93.9 L47.0 93.4 L42.1 85.9 L34.6 81.0 L34.1 72.0 L30.0 64.0 L34.1 56.0 L34.6 47.0 L42.1 42.1 L47.0 34.6 L56.0 34.1 Z" stroke-linejoin="round"/></g>
+<circle cx="64" cy="64" r="28" fill="none" stroke="#f3d77a" stroke-width="2.5"/>
+
+<text x="64" y="65" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#7a5808" text-anchor="middle" dominant-baseline="central">20¢</text>
+</svg>

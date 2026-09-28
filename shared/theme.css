@@ -128,7 +128,8 @@ a { color: var(--accent); }
   font-weight: 600;
 }
 
-/* Buttons */
+/* Buttons. [hidden] must win over their display: inline-flex. */
+[hidden] { display: none !important; }
 .btn {
   appearance: none;
   display: inline-flex;

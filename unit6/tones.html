@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tone Detective · Money &amp; Shopping</title>
+<link rel="stylesheet" href="../shared/theme.css?v=80cafc31">
+<link rel="stylesheet" href="../shared/game.css?v=9cb55145">
+</head>
+<body>
+<main class="page">
+  <header class="page-header">
+    <a class="back" href="../">← Unit 6</a>
+    <p class="eyebrow">Unit 6 · Game</p>
+    <h1><span class="hanzi" lang="zh-HK">聲調</span>Tone Detective</h1>
+    <p class="lede">Hear a shopping word or a price, and catch its tones. Is it 買 or 賣?</p>
+  </header>
+  <div id="game"></div>
+</main>
+<script src="../shared/core.js?v=ddc80c91"></script>
+<script src="../shared/audio.js?v=f296d05e"></script>
+<script src="../shared/game.js?v=b82b218e"></script>
+<script src="../shared/tones.js?v=1e42a794"></script>
+<script src="../shared/numbers.js?v=5e4d47cc"></script>
+<script src="../shared/units.js?v=3a4988f2"></script>
+<script src="../unit1/vocab.js?v=f4357216"></script>
+<script src="../unit2/vocab.js?v=5242e509"></script>
+<script src="../unit3/vocab.js?v=2f03c48d"></script>
+<script src="../unit4/vocab.js?v=54f5e120"></script>
+<script src="../unit5/vocab.js?v=c7ef5f1f"></script>
+<script src="vocab.js?v=ba6429d9"></script>
+<script>
+  const V = window.VOCAB;
+  Tones.init({
+    root: document.getElementById('game'),
+    key: 'u6-tones',
+    levels: [
+      { id: 'buy-sell', name: '買 or 賣?', blurb: 'maai5 (buy) or maai6 (sell): only tones 5 and 6.', pool: V.words.filter(w => w.id.startsWith('maai')), choices: 2, tones: [5, 6] },
+      { id: 'words', name: 'Shopping words', blurb: '錢 蚊 毫 平 貴 要… Three choices.', pool: [...V.money, ...V.words], choices: 3 },
+      { id: 'things', name: 'Things', blurb: '橙, 雞蛋, 西瓜, 麵包 and 好平, 好貴.', pool: [...V.things.filter(t => !t.unit), ...V.adjectives], choices: 4 },
+      { id: 'prices', name: 'Prices', blurb: '三蚊半, 百五蚊, 兩百五: three syllables and more.', pool: [...V.cash, ...V.prices], choices: 4 },
+    ],
+  });
+</script>
+</body>
+</html>

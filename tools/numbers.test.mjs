@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /*
  * numbers.test.mjs — tests Canto.number in shared/numbers.js. Run by
- * tools/check.mjs; exits 1 on failure.
+ * tools/check.mjs; exits 1 on failure. Also Canto.price and Canto.near.
  */
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -10,7 +10,7 @@ import { ROOT } from './site.mjs';
 
 const sb = { window: {} };
 vm.runInNewContext(readFileSync(join(ROOT, 'shared/numbers.js'), 'utf8'), sb);
-const { number } = sb.window.Canto;
+const { number, price, near } = sb.window.Canto;
 let fail = 0;
 const quiet = process.argv.includes('--quiet');
 const ok = (name, cond, info = '') => { if (!cond || !quiet) console.log((cond ? 'PASS ' : 'FAIL ') + name + '  ' + info); if (!cond) fail++; };
@@ -58,11 +58,47 @@ const cases = [
   [31, '卅一', 'saa1 aa6 jat1', { short: true }],
   [40, '四十', 'sei3 sap6', { short: true }],
   [45, '四十五', 'sei3 aa6 ng5', { short: true }],
+  [110, '百一', 'baak3 jat1', { clip: true }],
+  [150, '百五', 'baak3 ng5', { clip: true }],
+  [250, '兩百五', 'loeng5 baak3 ng5', { clip: true }],
+  [1200, '千二', 'cin1 ji6', { clip: true }],
+  [2500, '兩千五', 'loeng5 cin1 ng5', { clip: true }],
+  [12000, '萬二', 'maan6 ji6', { clip: true }],
+  [22000, '兩萬二', 'loeng5 maan6 ji6', { clip: true }],
+  [100, '一百', 'jat1 baak3', { clip: true }],
+  [20, '二十', 'ji6 sap6', { clip: true }],
+  [155, '一百五十五', 'jat1 baak3 ng5 sap6 ng5', { clip: true }],
+  [1050, '一千零五十', 'jat1 cin1 ling4 ng5 sap6', { clip: true }],
+  [120000, '十二萬', 'sap6 ji6 maan6', { clip: true }],
 ];
 for (const [n, hanzi, jyutping, opts] of cases) {
   const r = number(n, opts);
   ok(`${n}${opts ? ' ' + JSON.stringify(opts) : ''}`, r.hanzi === hanzi && r.jyutping === jyutping, `${r.hanzi} ${r.jyutping}`);
 }
+const prices = [
+  [5, '五蚊', 'ng5 man1'],
+  [2, '兩蚊', 'loeng5 man1'],
+  [12, '十二蚊', 'sap6 ji6 man1'],
+  [22, '廿二蚊', 'jaa6 ji6 man1'],
+  [3.5, '三蚊半', 'saam1 man1 bun3'],
+  [3.2, '三蚊二', 'saam1 man1 ji6'],
+  [2.2, '兩蚊二', 'loeng5 man1 ji6'],
+  [0.5, '五毫', 'ng5 hou4'],
+  [0.2, '兩毫', 'loeng5 hou4'],
+  [150, '百五蚊', 'baak3 ng5 man1'],
+  [100, '一百蚊', 'jat1 baak3 man1'],
+  [1200, '千二蚊', 'cin1 ji6 man1'],
+];
+for (const [n, hanzi, jyutping] of prices) {
+  const r = price(n);
+  ok(`price ${n}`, r.hanzi === hanzi && r.jyutping === jyutping, `${r.hanzi} ${r.jyutping}`);
+}
+const has = (n, want) => want.every(m => near(n).includes(m));
+ok('near 14', has(14, [41, 40, 13, 15]) && !near(14).includes(14), near(14).join(' '));
+ok('near 40 has 14', has(40, [14]), near(40).join(' '));
+ok('near 3.5', has(3.5, [5.3, 35, 4.5, 13.5]), near(3.5).join(' '));
+
 const throws = f => { try { f(); return false; } catch { return true; } };
 ok('rejects out of range', throws(() => number(-1)) && throws(() => number(1e8)) && throws(() => number(1.5)));
+ok('price rejects cents and zero', throws(() => price(0.25)) && throws(() => price(0)));
 process.exit(fail ? 1 : 0);

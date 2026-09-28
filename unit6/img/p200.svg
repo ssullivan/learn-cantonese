@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Two-dollar coin</title>
+<ellipse cx="64" cy="110" rx="33.6" ry="5" fill="#9fb0bb" opacity=".35"/>
+<g fill="#d3d9de" stroke="#6f7b85" stroke-width="3"><path d="M64.0 22.0 L74.1 26.3 L85.0 27.6 L91.6 36.4 L100.4 43.0 L101.7 53.9 L106.0 64.0 L101.7 74.1 L100.4 85.0 L91.6 91.6 L85.0 100.4 L74.1 101.7 L64.0 106.0 L53.9 101.7 L43.0 100.4 L36.4 91.6 L27.6 85.0 L26.3 74.1 L22.0 64.0 L26.3 53.9 L27.6 43.0 L36.4 36.4 L43.0 27.6 L53.9 26.3 Z" stroke-linejoin="round"/></g>
+<circle cx="64" cy="64" r="36" fill="none" stroke="#eef1f3" stroke-width="2.5"/>
+
+<text x="64" y="65" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#4a545c" text-anchor="middle" dominant-baseline="central">$2</text>
+</svg>

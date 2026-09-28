@@ -9,7 +9,10 @@
  * .prompt-num (big numeral to answer about), .choice-grid.nums (numeral
  * answers: two columns even on phones), .pic-row (a group of small
  * pictures to count, in rows of five; smaller inside .choice-grid.groups answers), .tile-line / .tile-bank >
- * button.tile (word tiles, tiles.js; .tile-line.right / .wrong).
+ * button.tile (word tiles, tiles.js; .tile-line.right / .wrong),
+ * .stall (a .prompt-pic with an optional .price-tag), .till (a box that
+ * collects tapped .pic-btn money; .right / .wrong) and .till-total,
+ * .pic-grid.cols-4.
  */
 
 .btn.small { padding: 6px 12px; font-size: 14px; }
@@ -123,8 +126,8 @@
 .choice-grid.nums .choice { font-size: 28px; font-weight: 800; font-variant-numeric: tabular-nums; }
 
 /* Word tiles (tiles.js) */
-.tile-line, .tile-bank { display: flex; flex-wrap: wrap; gap: 8px; max-width: 664px; }
-.tile-line {
+.tile-line, .tile-bank, .till { display: flex; flex-wrap: wrap; gap: 8px; max-width: 664px; }
+.tile-line, .till {
   min-height: 76px;
   margin-bottom: 14px;
   padding: 10px;
@@ -132,9 +135,9 @@
   border-radius: 14px;
   align-content: flex-start;
 }
-.tile-line:empty::before { content: attr(data-empty); color: var(--ink-soft); align-self: center; padding: 0 6px; }
-.tile-line.right { border-style: solid; border-color: var(--good); background: color-mix(in srgb, var(--good) 10%, var(--surface)); }
-.tile-line.wrong { border-style: solid; border-color: var(--bad); background: color-mix(in srgb, var(--bad) 10%, var(--surface)); }
+:is(.tile-line, .till):empty::before { content: attr(data-empty); color: var(--ink-soft); align-self: center; padding: 0 6px; }
+:is(.tile-line, .till).right { border-style: solid; border-color: var(--good); background: color-mix(in srgb, var(--good) 10%, var(--surface)); }
+:is(.tile-line, .till).wrong { border-style: solid; border-color: var(--bad); background: color-mix(in srgb, var(--bad) 10%, var(--surface)); }
 .tile-bank { margin-bottom: 16px; }
 .tile {
   display: flex;
@@ -156,6 +159,29 @@
 .tile .jp { font-size: 13px; }
 .tile-line .tile { border-color: var(--accent); }
 
+/* Market stall: a thing with a price tag, and money on the counter */
+.stall { position: relative; display: inline-block; margin: 0 0 16px; }
+.stall .prompt-pic { margin: 0; }
+.price-tag {
+  position: absolute;
+  right: -12px;
+  bottom: 8px;
+  padding: 4px 12px;
+  border: 2px solid var(--gold);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  transform: rotate(-6deg);
+}
+.till { margin-bottom: 6px; }
+.till .pic-btn { width: 56px; height: 56px; padding: 2px; }
+.till-total { margin: 0 0 10px; min-height: 1.5em; font-weight: 700; color: var(--ink-soft); }
+.pic-grid.cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.purse { margin-top: 16px; max-width: 520px; }
 
 /* End screen */
 .game-end { text-align: center; padding: 16px 0; }

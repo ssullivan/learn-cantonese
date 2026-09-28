@@ -73,21 +73,11 @@ Units.add(3, {
   ],
 });
 
-// Derived: sentences made of the words above. `words` lists their ids in
-// order; hanzi and jyutping are joined from them, and English ending in
-// "?" gets a ？. Audio is generated like any entry. The sets are named by
+// Derived: sentences made of the words above (Units.sentences). `words`
+// lists their ids in order. Audio is generated like any entry. The sets are named by
 // what Question Builder practises with them.
 (V => {
-  const byId = Object.fromEntries(Object.values(V).filter(Array.isArray).flat().map(e => [e.id, e]));
-  const say = (words, english, extra) => {
-    const ws = words.split(' ').map(id => byId[id]);
-    return {
-      id: words.replace(/ /g, '-'), words: ws.map(w => w.id),
-      hanzi: ws.map(w => w.hanzi).join('') + (english.endsWith('?') ? '？' : ''),
-      jyutping: ws.map(w => w.jyutping).join(' '),
-      english, img: false, ...extra,
-    };
-  };
+  const say = Units.sentences(V);
 
   V.statements = [
     say('ngo hai hok-saang', 'I am a student.'),

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Egg</title>
+<ellipse cx="64" cy="114" rx="28" ry="5" fill="#9fb0bb" opacity=".35"/>
+<path d="M64 18 C88 18 100 58 100 78 C100 100 84 112 64 112 C44 112 28 100 28 78 C28 58 40 18 64 18Z" fill="#f2dcbc" stroke="#b08a5c" stroke-width="3"/>
+<path d="M46 50 C42 58 40 68 41 76" stroke="#fbf1e2" stroke-width="6" fill="none" stroke-linecap="round"/>
+</svg>

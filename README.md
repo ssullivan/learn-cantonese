@@ -19,6 +19,9 @@ The course plans 18 units (see the roadmap in CLAUDE.md); built so far:
   - *Measure Sort*: pick a thing's measure word, sort things by measure word, hear them, and point with 呢 or 嗰.
   - *Count It*: count pictures and say how many (三隻貓), hear a count and find it, and build sentences with 有 and 幾多.
   - *Tone Detective* and *Say It Back* for measure words and counts.
+- **Unit 6 · 買嘢 Money & Shopping**: 蚊 and 毫, prices like 三蚊半 and 百五蚊, 幾多錢, 平 and 貴 with 好, 要 and 買, and Hong Kong coins and notes.
+  - *Market Stall*: hear prices and say them, pay the right amount in coins and notes, say 好平 or 好貴, and build shopping sentences.
+  - *Tone Detective* (買 or 賣?) and *Say It Back* for prices and shopping phrases.
 - **Unit 7 · 點心 Dim Sum**: classic dishes with pictures and audio, a listening quiz, and phrases for ordering at yum cha.
   - *Trolley Rush*: hear customers' orders (唔該，一籠蝦餃！) and serve the right dishes; learn 一籠 vs 一碟.
   - *Tone Detective*: hear a word and pick its tones.
