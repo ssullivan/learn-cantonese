@@ -34,7 +34,8 @@ tools/
   svg.mjs                shared drawing parts (svg, steamer, plate, bowl, cup)
   draw.mjs               art.mjs → img/*.svg
   tts.mjs                vocab.js → audio/*.mp3 (Azure Speech)
-  check.mjs              site checks; --fix writes cache stamps; runs tools/*.test.mjs
+  audio-check.mjs        machine checks on clips: ffmpeg, Azure speech-to-text, per-syllable tones (see "Verifying audio")
+  check.mjs              site checks; --fix writes cache stamps; runs tools/*.test.mjs; fails if any file holds the Azure key
   pitch.test.mjs         pitch.js on synthetic voices with known pitch
   units.test.mjs         borrowing words between units (units.js, loadVocab, asset paths, unit 5's borrowed 個 and nouns)
   core.test.mjs          core.js's pure helpers (tones, toneChart)
@@ -48,7 +49,29 @@ tools/
 - Measure words: a thing's `measure` must match its picture (籠 ↔ `steamer()`, 碟 ↔ `plate()`, 碗 ↔ `bowl()`, 杯 ↔ `cup()`, and no dish for the rest); check.mjs enforces it, looking up a borrowed word's picture in its own unit. A borrowed noun can gain a `measure` (unit 5 borrows unit 1's 魚 車 水 雞 牛).
 - Jyutping uses tone numbers on every syllable (`haa1 gaau2`). Double-check sandhi/changed tones (腸粉 coeng2, 燒賣 maai2) and words with several readings.
 - Use colloquial Cantonese (佢, 係, 唔, 咗), not Mandarin or written-Chinese forms.
-- Audio: `node tools/tts.mjs [unitN] [--only id,id] [--force]`. It only regenerates entries whose text or voice changed. Credentials come from `~/.config/learning-cantonese/config.env` (`AZURE_SPEECH_KEY`, `AZURE_SPEECH_REGION`); never commit them. If a word is misread, set `phoneme: true` to read its jyutping exactly (particles like 呀 嗎 呢, changed tones like 名 meng2), or add an `ssml` override. A person has to listen to new clips; nobody else can check pronunciation.
+- Audio: `node tools/tts.mjs [unitN] [--only id,id] [--force]`. It only regenerates entries whose text or voice changed. Credentials come from `~/.config/learning-cantonese/config.env` (`AZURE_SPEECH_KEY`, `AZURE_SPEECH_REGION`), read at runtime by `azureConfig()` in `tools/site.mjs`. **Never put the key in any committed file** (code, docs, fixtures, cached responses, logs, commit messages), and never print it; `check.mjs` fails if any file contains it. If a word is misread, set `phoneme: true` to read its jyutping exactly (particles like 呀 嗎 呢, changed tones like 名 meng2), or add an `ssml` override. A person still has to listen to new clips, but run the machine checks first (below) so they know which ones to listen to.
+
+### Verifying audio
+Run after every `tts.mjs` run. It needs ffmpeg, the Azure key, and once: `npm install --prefix ~/.cache/learning-cantonese to-jyutping` (outside the repo, which has no dependencies).
+
+1. `node tools/audio-check.mjs unit<N>` (add `--only id,id`, `--all` to list every clip, `--json out.json` for the details). Azure results are cached by clip hash in `~/.cache/learning-cantonese/audio-check/`, so reruns are fast and cheap. For each of the unit's own clips it:
+   - decodes it with ffmpeg: broken, silent, clipped, or too short or long for its syllable count;
+   - transcribes it with Azure speech-to-text (zh-HK, with no hint of the expected text) and compares the sounds with the entry's jyutping, ignoring tone (via to-jyutping), so a homophone isn't a mismatch;
+   - times each syllable with Azure pronunciation assessment, tracks its pitch with `shared/pitch.js`, and compares it with the voice's own six tones measured on unit 1's si / fu / fan clips.
+2. Read the report. **CHECK**: a file problem, or a tone that clearly can't be right in a word of 1–3 syllables. **LISTEN**: speech-to-text heard other sounds, or a doubtful tone in a longer clip.
+3. For each CHECK, find out whether the voice or the measurement is wrong. Swap an SSML variant into the clip and rerun `audio-check --only <id>`: plain text, `phoneme: true`, or an explicit `<phoneme alphabet="sapi" ph="je 6 maan 1">`. When a variant matches a reading exactly, that's what the voice is saying. Restore with `git checkout unit<N>/audio/`.
+4. Fix it in `vocab.js` (`phoneme: true` or `ssml`), then run `tts.mjs --only <id>` and rerun the check.
+5. Tell the user which clips are still flagged, so a listener starts there.
+
+When changing `audio-check.mjs`, prove it still catches known-bad clips. Synthesize a wrong word, a wrong tone and a tripled clip into a few `unit9/audio/` files, run it, then `git checkout` them.
+
+Limits, learned the hard way:
+- Pronunciation assessment scores the reference text highly even for the wrong word (琴日 against 今日 scores 100). It's used only for timing, never as proof; speech-to-text without a reference is the word check.
+- Speech-to-text is weak on bare single syllables (詩 is heard as the letter "C") and biased towards common words (毫 → 號).
+- Assessment's syllable timings run late. Short syllables ending in p/t/k (十 一 七) are judged by height only: their glottal stop throws the pitch tracker.
+- Azure's sapi phonemes honor tones (`gei 6` falls), except where the voice lacks the syllable: `nin 2` comes out as nin4, so 今年 / 舊年 / 出年 are read nin4 whatever the SSML says.
+- A small rise on a short final syllable can't be told from a level tone.
+- Azure sometimes answers 401 to a burst of requests; the tools retry.
 - Pictures: add a drawing to `unit<N>/art.mjs`, run `node tools/draw.mjs`. Reuse or extend the parts in `tools/svg.mjs` instead of copying markup. Keep the 128×128 flat style, fixed colors, transparent background, and a `<title>`. Render and look at new drawings before committing.
 
 ## Pages

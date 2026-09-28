@@ -35,6 +35,7 @@ The course plans 18 units (see the roadmap in CLAUDE.md); built so far:
 ```sh
 node tools/draw.mjs          # unit<N>/art.mjs → img/*.svg
 node tools/tts.mjs           # unit<N>/vocab.js → audio/*.mp3 (needs Azure Speech key)
+node tools/audio-check.mjs unit9   # machine-check clips: which ones need a listen
 node tools/check.mjs --fix   # check links/assets, update cache stamps
 python3 -m http.server       # preview at http://localhost:8000
 ```

@@ -21,13 +21,15 @@
  *     "plate" a plate(), and so on; one without a dish, none of them
  *   - img/*.svg match art.mjs exactly (else run node tools/draw.mjs)
  *   - every tools/*.test.mjs passes
+ *   - no file holds the Azure Speech key (when it is set on this machine):
+ *     the key must never be committed
  */
 import { createHash } from 'node:crypto';
 import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
 import { dirname, join, relative, extname } from 'node:path';
 import vm from 'node:vm';
 import { spawnSync } from 'node:child_process';
-import { ROOT, unitDirs, loadVocab, entries, own, loadArt } from './site.mjs';
+import { ROOT, unitDirs, loadVocab, entries, own, loadArt, azureSecrets } from './site.mjs';
 const fix = process.argv.includes('--fix');
 const problems = [];
 const bad = (file, msg) => problems.push(`${relative(ROOT, file)}: ${msg}`);
@@ -63,6 +65,15 @@ for (const html of files.filter(f => f.endsWith('.html'))) {
     return whole;
   });
   if (out !== src) writeFileSync(html, out);
+}
+
+// The Azure key must never be in the repo. Checked against the key on
+// this machine, never printed.
+const { key: secret } = azureSecrets();
+if (secret) {
+  for (const file of files) {
+    if (readFileSync(file).includes(secret)) bad(file, 'contains the Azure Speech key: remove it, never commit it');
+  }
 }
 
 // JavaScript compiles

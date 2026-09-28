@@ -10,8 +10,14 @@
  *   entries(vocab)   every entry from every list, in file order
  *   own(entry, unit) true unless the entry is borrowed from another unit
  *   loadArt(unit)    unit<N>/art.mjs's { id: svg }, or null if none
+ *   azureConfig()    { key, region } for Azure Speech, from the environment
+ *                    or ~/.config/learning-cantonese/config.env; exits if
+ *                    missing (tts.mjs, audio-check.mjs)
+ *   azureSecrets()   the same, but { key: undefined, ... } instead of
+ *                    exiting (check.mjs, to make sure no file holds the key)
  */
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
+import { homedir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import vm from 'node:vm';
@@ -43,4 +49,27 @@ export const own = (entry, unit) => !entry.unit || `unit${entry.unit}` === unit;
 export async function loadArt(unit) {
   const path = join(ROOT, unit, 'art.mjs');
   return existsSync(path) ? (await import(pathToFileURL(path))).default : null;
+}
+
+const CONFIG = join(homedir(), '.config/learning-cantonese/config.env');
+
+// The Azure key and region from the environment or CONFIG, or undefined.
+export function azureSecrets() {
+  if (existsSync(CONFIG)) {
+    for (const line of readFileSync(CONFIG, 'utf8').split('\n')) {
+      const m = line.match(/^\s*(?:export\s+)?([A-Z_]+)\s*=\s*"?([^"\n]*)"?\s*$/);
+      if (m && !process.env[m[1]]) process.env[m[1]] = m[2];
+    }
+  }
+  const { AZURE_SPEECH_KEY: key, AZURE_SPEECH_REGION: region } = process.env;
+  return { key, region };
+}
+
+export function azureConfig() {
+  const { key, region } = azureSecrets();
+  if (!key || !region) {
+    console.error(`Set AZURE_SPEECH_KEY and AZURE_SPEECH_REGION (env or ${CONFIG}).`);
+    process.exit(1);
+  }
+  return { key, region };
 }

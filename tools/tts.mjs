@@ -10,16 +10,14 @@
  * audio/manifest.json), unless --force.
  *
  * Credentials: AZURE_SPEECH_KEY and AZURE_SPEECH_REGION from the
- * environment, or from ~/.config/learning-cantonese/config.env. Never
- * commit the key.
+ * environment, or from ~/.config/learning-cantonese/config.env (read by
+ * azureConfig in site.mjs). Never commit the key.
  */
 import { createHash } from 'node:crypto';
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
-import { homedir } from 'node:os';
 import { join } from 'node:path';
-import { ROOT, unitDirs, loadVocab, entries, own } from './site.mjs';
+import { ROOT, unitDirs, loadVocab, entries, own, azureConfig } from './site.mjs';
 
-const CONFIG = join(homedir(), '.config/learning-cantonese/config.env');
 const FORMAT = 'audio-24khz-48kbitrate-mono-mp3';
 
 const args = process.argv.slice(2);
@@ -28,21 +26,6 @@ const onlyIdx = args.indexOf('--only');
 const only = onlyIdx >= 0 ? new Set(args[onlyIdx + 1].split(',')) : null;
 let units = args.filter((a, i) => !a.startsWith('--') && (onlyIdx < 0 || i !== onlyIdx + 1));
 if (!units.length) units = unitDirs().filter(loadVocab);
-
-function loadConfig() {
-  if (existsSync(CONFIG)) {
-    for (const line of readFileSync(CONFIG, 'utf8').split('\n')) {
-      const m = line.match(/^\s*(?:export\s+)?([A-Z_]+)\s*=\s*"?([^"\n]*)"?\s*$/);
-      if (m && !process.env[m[1]]) process.env[m[1]] = m[2];
-    }
-  }
-  const { AZURE_SPEECH_KEY: key, AZURE_SPEECH_REGION: region } = process.env;
-  if (!key || !region) {
-    console.error(`Set AZURE_SPEECH_KEY and AZURE_SPEECH_REGION (env or ${CONFIG}).`);
-    process.exit(1);
-  }
-  return { key, region };
-}
 
 const xml = s => s.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[c]));
 
@@ -78,7 +61,7 @@ async function synth({ key, region }, ssml) {
   }
 }
 
-const cfg = loadConfig();
+const cfg = azureConfig();
 let made = 0, skipped = 0;
 
 for (const unit of units) {
