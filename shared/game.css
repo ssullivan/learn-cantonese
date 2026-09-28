@@ -6,7 +6,8 @@
  * .stars, .btn.small, .speech (a speech bubble), .tray (labelled box
  * of answer buttons), .prompt-pic (big picture to answer about),
  * .prompt-num (big numeral to answer about), .choice-grid.nums (numeral
- * answers: two columns even on phones).
+ * answers: two columns even on phones), .tile-line / .tile-bank >
+ * button.tile (word tiles, tiles.js; .tile-line.right / .wrong).
  */
 
 .btn.small { padding: 6px 12px; font-size: 14px; }
@@ -112,7 +113,40 @@
 .choice-grid.nums { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .choice-grid.nums .choice { font-size: 28px; font-weight: 800; font-variant-numeric: tabular-nums; }
 
-/* Tone chart */
+/* Word tiles (tiles.js) */
+.tile-line, .tile-bank { display: flex; flex-wrap: wrap; gap: 8px; max-width: 664px; }
+.tile-line {
+  min-height: 76px;
+  margin-bottom: 14px;
+  padding: 10px;
+  border: 2px dashed var(--line);
+  border-radius: 14px;
+  align-content: flex-start;
+}
+.tile-line:empty::before { content: attr(data-empty); color: var(--ink-soft); align-self: center; padding: 0 6px; }
+.tile-line.right { border-style: solid; border-color: var(--good); background: color-mix(in srgb, var(--good) 10%, var(--surface)); }
+.tile-line.wrong { border-style: solid; border-color: var(--bad); background: color-mix(in srgb, var(--bad) 10%, var(--surface)); }
+.tile-bank { margin-bottom: 16px; }
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 52px;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.tile:hover { border-color: var(--accent); }
+.tile:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.tile .hanzi { font-size: 24px; font-weight: 700; line-height: 1.2; }
+.tile .jp { font-size: 13px; }
+.tile-line .tile { border-color: var(--accent); }
+
 
 /* End screen */
 .game-end { text-align: center; padding: 16px 0; }

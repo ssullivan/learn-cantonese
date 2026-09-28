@@ -26,7 +26,7 @@ const args = process.argv.slice(2);
 const force = args.includes('--force');
 const onlyIdx = args.indexOf('--only');
 const only = onlyIdx >= 0 ? new Set(args[onlyIdx + 1].split(',')) : null;
-let units = args.filter((a, i) => !a.startsWith('--') && i !== onlyIdx + 1);
+let units = args.filter((a, i) => !a.startsWith('--') && (onlyIdx < 0 || i !== onlyIdx + 1));
 if (!units.length) units = unitDirs().filter(loadVocab);
 
 function loadConfig() {
@@ -46,8 +46,12 @@ function loadConfig() {
 
 const xml = s => s.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[c]));
 
+// phoneme: true reads the entry's jyutping exactly, as Azure sapi phones
+// ("sei3 aa6" → "sei 3 aa 6"), for words the voice reads in the wrong tone.
+const phoneme = e => `<phoneme alphabet="sapi" ph="${e.jyutping.replace(/([a-z]+)([1-6])/g, '$1 $2')}">${xml(e.hanzi)}</phoneme>`;
+
 function ssmlFor(entry, voice) {
-  const body = entry.ssml ?? xml(entry.say ?? entry.hanzi);
+  const body = entry.ssml ?? (entry.phoneme ? phoneme(entry) : xml(entry.say ?? entry.hanzi));
   return `<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="zh-HK"><voice name="${voice}">${body}</voice></speak>`;
 }
 

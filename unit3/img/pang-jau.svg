@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Two friends side by side</title>
+<g transform="translate(40 58) scale(1.2)">
+<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#d6453a" stroke="#4a3a33" stroke-width="2.5" stroke-linejoin="round"/>
+<circle r="12" fill="#f2c9a0" stroke="#b07a52" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-11 -2 C-12 -14 -4 -17 0 -17 C8 -17 12 -12 11 -2 C8 -9 -6 -10 -11 -2 Z" fill="#3b2f2a"/>
+</g>
+<g transform="translate(88 58) scale(1.2)">
+<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#3a9a6e" stroke="#4a3a33" stroke-width="2.5" stroke-linejoin="round"/>
+<circle r="12" fill="#f2c9a0" stroke="#b07a52" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-11 -2 C-12 -14 -4 -17 0 -17 C8 -17 12 -12 11 -2 C8 -9 -6 -10 -11 -2 Z" fill="#3b2f2a"/>
+</g>
+<path d="M50 104 C58 96 70 96 78 104" stroke="#f2c9a0" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M64 20 C58 12 48 18 56 26 L64 34 L72 26 C80 18 70 12 64 20 Z" fill="#e45a4d" stroke="#8f2a22" stroke-width="2" stroke-linejoin="round"/>
+</svg>

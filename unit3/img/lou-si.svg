@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A teacher at a blackboard</title>
+<rect x="44" y="14" width="78" height="56" rx="3" fill="#2f5d4a" stroke="#7d4f1e" stroke-width="4"/>
+<path d="M54 32 H78 M54 44 H96 M84 32 H108" stroke="#eef3f6" stroke-width="3" stroke-linecap="round"/>
+<path d="M48 70 H118" stroke="#7d4f1e" stroke-width="4" stroke-linecap="round"/>
+<g transform="translate(34 68) scale(1.15)">
+<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#3f7cc0" stroke="#4a3a33" stroke-width="2.5" stroke-linejoin="round"/>
+<circle r="12" fill="#f2c9a0" stroke="#b07a52" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-11 -2 C-12 -14 -4 -17 0 -17 C8 -17 12 -12 11 -2 C8 -9 -6 -10 -11 -2 Z" fill="#3b2f2a"/>
+</g>
+<path d="M44 96 L62 58" stroke="#7d4f1e" stroke-width="3" stroke-linecap="round"/>
+</svg>

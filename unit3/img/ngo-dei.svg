@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>我哋: the speaker and a friend</title>
+<path d="M4 124 H124" stroke="#9fb0bb" stroke-width="3" stroke-linecap="round"/>
+<g transform="translate(52 58) scale(0.75)">
+<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<circle r="12" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+
+</g>
+<g transform="translate(76 58) scale(0.75)">
+<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<circle r="12" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+
+</g>
+<g transform="translate(16 82) scale(1)">
+<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#d6453a" stroke="#4a3a33" stroke-width="2.5" stroke-linejoin="round"/>
+<circle r="12" fill="#f2c9a0" stroke="#b07a52" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-11 -2 C-12 -14 -4 -17 0 -17 C8 -17 12 -12 11 -2 C8 -9 -6 -10 -11 -2 Z" fill="#3b2f2a"/>
+</g>
+<g transform="translate(42 88) scale(1)">
+<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#d6453a" stroke="#4a3a33" stroke-width="2.5" stroke-linejoin="round"/>
+<circle r="12" fill="#f2c9a0" stroke="#b07a52" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-11 -2 C-12 -14 -4 -17 0 -17 C8 -17 12 -12 11 -2 C8 -9 -6 -10 -11 -2 Z" fill="#3b2f2a"/>
+</g>
+<g transform="translate(112 82) scale(1)">
+<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<circle r="12" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+
+</g>
+<g transform="translate(86 88) scale(1)">
+<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<circle r="12" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+
+</g>
+<path d="M6 8 H44 Q50 8 50 14 V26 Q50 32 44 32 H26 L18 40 L20 32 H6 Q0 32 0 26 V14 Q0 8 6 8 Z" fill="#ffffff" stroke="#6f8796" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M10 17 H40 M10 24 H32" stroke="#9fb0bb" stroke-width="3" stroke-linecap="round"/>
+<path d="M9 52 H23 L16 62 Z" fill="#e0a526" stroke="#9a6c0e" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M35 58 H49 L42 68 Z" fill="#e0a526" stroke="#9a6c0e" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>

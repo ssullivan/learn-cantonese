@@ -5,7 +5,8 @@
  * Entry fields: id (unique in the unit, used for file names), hanzi,
  * jyutping, english, note?, img (false = no picture), say? (text to
  * speak if not hanzi), ssml? (SSML inside <voice> to force a reading
- * the voice gets wrong), plus n (the value) on numbers.
+ * the voice gets wrong), phoneme? (true: tools/tts.mjs reads the
+ * jyutping exactly), plus n (the value) on numbers.
  *
  * Numbers are derived with Canto.number (shared/numbers.js), never
  * typed out: see the bottom of this file.
@@ -82,10 +83,9 @@ Units.add(4, {
     note: '兩個, not 二個. Twelve is still 十二個.' }];
 
   // Fast speech: 十 shrinks to aa6. Listening only. The voice reads 十 as
-  // sap6, so the ssml spells out the jyutping (Azure's sapi phones).
+  // sap6, so these are read from the jyutping (phoneme: true).
   V.short = [31, 45, 58, 99].map(n => {
     const { hanzi, jyutping } = Canto.number(n, { short: true });
-    return { id: `short-${n}`, n, hanzi, jyutping, english: `${n} (said fast)`, img: false,
-      ssml: `<phoneme alphabet="sapi" ph="${jyutping.replace(/([a-z]+)([1-6])/g, '$1 $2')}">${hanzi}</phoneme>` };
+    return { id: `short-${n}`, n, hanzi, jyutping, english: `${n} (said fast)`, img: false, phoneme: true };
   });
 })(window.VOCAB);

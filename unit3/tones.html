@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tone Detective · Me &amp; You</title>
+<link rel="stylesheet" href="../shared/theme.css?v=7968c009">
+<link rel="stylesheet" href="../shared/game.css?v=00538b1c">
+</head>
+<body>
+<main class="page">
+  <header class="page-header">
+    <a class="back" href="../">← Unit 3</a>
+    <p class="eyebrow">Unit 3 · Game</p>
+    <h1><span class="hanzi" lang="zh-HK">聲調</span>Tone Detective</h1>
+    <p class="lede">Hear a word or a question and catch its tones. 我, 你 and 佢 are all tone 5, low rising.</p>
+  </header>
+  <div id="game"></div>
+</main>
+<script src="../shared/core.js?v=8bec73e4"></script>
+<script src="../shared/audio.js?v=f296d05e"></script>
+<script src="../shared/game.js?v=b82b218e"></script>
+<script src="../shared/tones.js?v=1e42a794"></script>
+<script src="../shared/units.js?v=d9fa5fbd"></script>
+<script src="vocab.js?v=29d74e66"></script>
+<script>
+  const V = window.VOCAB;
+  Tones.init({
+    root: document.getElementById('game'),
+    key: 'u3-tones',
+    levels: [
+      { id: 'people', name: 'People', blurb: '我, 你, 佢 and 哋. Tone 5 or tone 6? Three choices.', pool: V.people, choices: 3, tones: [2, 5, 6] },
+      { id: 'words', name: 'Words', blurb: '係, 唔, 老師, 朋友, 廣東話...', pool: [...V.words, ...V.things, ...V.asking], choices: 4 },
+      { id: 'questions', name: 'Questions & answers', blurb: 'Whole sentences. Listen to every syllable.', pool: [...V.maa, ...V.aNotA, ...V.wh, ...V.answers], choices: 4 },
+    ],
+  });
+</script>
+</body>
+</html>

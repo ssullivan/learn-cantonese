@@ -9,6 +9,9 @@ The course plans 18 units (see the roadmap in CLAUDE.md); built so far:
 - **Unit 2 · 打招呼 Greetings**: hello and goodbye, how are you, and when to say 唔該, 多謝 or 對唔住.
   - *Reply Match*: hear a phrase, answer back, or pick what to say in a situation.
   - *Tone Detective* and *Say It Back* for greetings.
+- **Unit 3 · 我同你 Me & You**: 我 你 佢 and 哋, 係 and 唔, 我叫…, and questions with 嗎, A唔A (係唔係), 邊個 and 乜嘢.
+  - *Question Builder*: build sentences and questions from word tiles, and answer 係呀 or 唔係呀 about a picture.
+  - *Tone Detective* and *Say It Back* for people words and questions.
 - **Unit 4 · 數字 Numbers**: 零 to 萬 with the one-hand counting signs, 廿, 零 in the gaps, 第, 幾多, and 二 vs 兩.
   - *Number Dash*: hear a number and tap it (十四 or 四十?), say numbers, and pick 二 or 兩.
   - *Tone Detective* and *Say It Back* for numbers.

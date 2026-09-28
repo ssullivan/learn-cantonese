@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Say It Back · Me &amp; You</title>
+<link rel="stylesheet" href="../shared/theme.css?v=7968c009">
+<link rel="stylesheet" href="../shared/sayit.css?v=53e6d081">
+</head>
+<body>
+<main class="page">
+  <header class="page-header">
+    <a class="back" href="../">← Unit 3</a>
+    <p class="eyebrow">Unit 3 · Speaking</p>
+    <h1><span class="hanzi" lang="zh-HK">講</span>Say It Back</h1>
+    <p class="lede">Introduce yourself and ask questions, and see how your tones compare with a native speaker's.</p>
+  </header>
+  <div id="say"></div>
+</main>
+<script src="../shared/core.js?v=8bec73e4"></script>
+<script src="../shared/audio.js?v=f296d05e"></script>
+<script src="../shared/pitch.js?v=e95f83fc"></script>
+<script src="../shared/sayit.js?v=324ac8e7"></script>
+<script src="../shared/units.js?v=d9fa5fbd"></script>
+<script src="vocab.js?v=29d74e66"></script>
+<script>
+  const V = window.VOCAB;
+  const s = (...ids) => ids.map(id => Canto.entries(V).find(e => e.id === id));
+  SayIt.init({
+    root: document.getElementById('say'),
+    key: 'u3-say',
+    pool: [...V.people, ...V.things, ...V.answers,
+      ...s('ngo-giu-aa-ming', 'nei-giu-mat-je-meng-aa', 'nei-ne', 'keoi-hai-bin-go-aa', 'nei-hai-m-hai-hok-saang-aa', 'nei-sik-m-sik-gong-jing-man-aa', 'ngo-sik-gong-gwong-dung-waa')],
+  });
+</script>
+</body>
+</html>
