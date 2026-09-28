@@ -17,11 +17,17 @@
  *   secrets()        { azureKey, azureRegion, minimaxKey }, undefined when
  *                    not set, without exiting (check.mjs, to make sure no
  *                    file holds a key)
+ *   langTools(args, input)
+ *                    runs audio-lang-tools' `altools <args>` (the separate
+ *                    repo at $AUDIO_LANG_TOOLS or ~/audio-lang-tools, with
+ *                    uv) with `input` as JSON on stdin and the Azure key in
+ *                    its environment; returns its JSON output (audio-check.mjs)
  */
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { homedir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { spawnSync } from 'node:child_process';
 import vm from 'node:vm';
 
 export const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -84,4 +90,23 @@ export function minimaxConfig() {
     process.exit(1);
   }
   return { key };
+}
+
+export function langTools(args, input) {
+  const dir = process.env.AUDIO_LANG_TOOLS ?? join(homedir(), 'audio-lang-tools');
+  if (!existsSync(join(dir, 'pyproject.toml'))) {
+    console.error(`audio-lang-tools not found at ${dir}: clone it there or set AUDIO_LANG_TOOLS.`);
+    process.exit(1);
+  }
+  const { key, region } = azureConfig();
+  const r = spawnSync('uv', ['run', '--quiet', '--project', dir, 'altools', ...args], {
+    input: JSON.stringify(input), encoding: 'utf8', maxBuffer: 1e9,
+    stdio: ['pipe', 'pipe', 'inherit'],
+    env: { ...process.env, AZURE_SPEECH_KEY: key, AZURE_SPEECH_REGION: region },
+  });
+  if (r.status !== 0) {
+    console.error(`altools ${args.join(' ')} failed (${r.error?.message ?? `exit ${r.status}`})`);
+    process.exit(1);
+  }
+  return JSON.parse(r.stdout);
 }

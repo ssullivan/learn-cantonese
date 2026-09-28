@@ -66,6 +66,15 @@ Units.add(1, {
   ],
 });
 
+// The six-tone sets are read by WanLung (a man's voice). The site's voice,
+// HiuMaan, says tones 2 and 5 almost alike (婦 fu5 rises like 苦 fu2) and
+// 3 and 6 close together; a native speaker heard it, and audio-lang-tools
+// measured it. Telling HiuMaan the tones with phonemes doesn't help: it is
+// how the voice speaks. WanLung keeps all six apart best of the Azure voices.
+(V => {
+  for (const e of V.sets) e.voice = 'zh-HK-WanLungNeural';
+})(window.VOCAB);
+
 // Derived: set entries in the given tones, e.g. VOCAB.inTones(2, 5). Set
 // entries are one syllable, so the tone is the last character.
 (V => {
