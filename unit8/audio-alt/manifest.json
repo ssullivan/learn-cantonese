@@ -1,0 +1,77 @@
+{
+ "lemon-tea": {
+  "hanzi": "檸茶",
+  "jyutping": "ning2 caa4",
+  "voice": "minimax:Cantonese_ProfessionalHost（F)",
+  "check": "ok"
+ },
+ "jit-lemon-tea": {
+  "hanzi": "熱檸茶",
+  "jyutping": "jit6 ning2 caa4",
+  "voice": "minimax:Cantonese_ProfessionalHost（F)",
+  "check": "ok"
+ },
+ "dung-lemon-tea": {
+  "hanzi": "凍檸茶",
+  "jyutping": "dung3 ning2 caa4",
+  "voice": "minimax:Cantonese_ProfessionalHost（F)",
+  "check": "ok"
+ },
+ "jit-lemon-tea-siu-sweet": {
+  "hanzi": "熱檸茶少甜",
+  "jyutping": "jit6 ning2 caa4 siu2 tim4",
+  "voice": "minimax:Cantonese_ProfessionalHost（F)",
+  "check": "ok"
+ },
+ "jit-lemon-tea-zau-sweet": {
+  "hanzi": "熱檸茶走甜",
+  "jyutping": "jit6 ning2 caa4 zau2 tim4",
+  "voice": "minimax:Cantonese_ProfessionalHost（F)",
+  "check": "ok"
+ },
+ "dung-lemon-tea-siu-sweet": {
+  "hanzi": "凍檸茶少甜",
+  "jyutping": "dung3 ning2 caa4 siu2 tim4",
+  "voice": "minimax:Cantonese_ProfessionalHost（F)",
+  "check": "ok"
+ },
+ "dung-lemon-tea-zau-sweet": {
+  "hanzi": "凍檸茶走甜",
+  "jyutping": "dung3 ning2 caa4 zau2 tim4",
+  "voice": "minimax:Cantonese_ProfessionalHost（F)",
+  "check": "ok"
+ },
+ "dung-lemon-tea-siu-bing": {
+  "hanzi": "凍檸茶少冰",
+  "jyutping": "dung3 ning2 caa4 siu2 bing1",
+  "voice": "minimax:Cantonese_ProfessionalHost（F)",
+  "check": "ok"
+ },
+ "dung-lemon-tea-do-bing": {
+  "hanzi": "凍檸茶多冰",
+  "jyutping": "dung3 ning2 caa4 do1 bing1",
+  "voice": "minimax:Cantonese_ProfessionalHost（F)",
+  "check": "ok"
+ },
+ "dung-lemon-tea-zau-bing": {
+  "hanzi": "凍檸茶走冰",
+  "jyutping": "dung3 ning2 caa4 zau2 bing1",
+  "voice": "minimax:Cantonese_ProfessionalHost（F)",
+  "check": "ok"
+ },
+ "one-lemon-tea": {
+  "hanzi": "一杯檸茶",
+  "jyutping": "jat1 bui1 ning2 caa4",
+  "voice": "minimax:Cantonese_ProfessionalHost（F)",
+  "check": "ok"
+ },
+ "m-goi-dung-lemon-tea-siu-sweet": {
+  "hanzi": "唔該凍檸茶少甜",
+  "jyutping": "m4 goi1 dung3 ning2 caa4 siu2 tim4",
+  "voice": "minimax:Cantonese_ProfessionalHost（F)",
+  "check": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.02); 凍 tone 3 sounds like 6 (p 0.20); 甜 tone 4 sounds like 6 (p 0.09)"
+  ]
+ }
+}

@@ -76,7 +76,7 @@ Limits, learned the hard way:
 - About 8% of right clips read from characters get a CHECK and 20% some flag. Many are real: question-final 呀 said high, tone 5 said like 2, a colloquial reading (魚 jyu2).
 - Speech-to-text is weak on bare single syllables (詩 is heard as the letter "C") and biased towards common words (毫 → 號).
 - Azure's sapi phonemes honor tones (`gei 6` falls), except where the voice lacks the syllable: `nin 2` comes out as nin4 whatever the SSML says (hence MiniMax for 今年 / 舊年 / 出年), and 女 `neoi 2` alone like neoi5 (MiniMax for 女).
-- Azure has no ning2 in phrases either (檸茶 comes out ning4/5 even with sapi), so unit 8 teaches 檸檬茶 ning4 mung1 caa4 and notes the short form.
+- Azure has no ning2 in phrases either (檸茶 comes out ning4/5 even with sapi), so unit 8 teaches 檸檬茶 ning4 mung1 caa4 and notes the short form (zh-HK accepts only the `sapi` alphabet: `pinyin`, `jyutping` and `ipa` are refused). MiniMax takes of the 檸茶 ning2 clips, which pass audio-check's shape test, are kept unused in `unit8/audio-alt/` (`manifest.json` has each clip's text, voice and verdict) in case the unit switches to 檸茶.
 - Azure sometimes answers 401 to a burst of requests; the tools retry.
 - Pictures: add a drawing to `unit<N>/art.mjs`, run `node tools/draw.mjs`. Reuse or extend the parts in `tools/svg.mjs` instead of copying markup. Keep the 128×128 flat style, fixed colors, transparent background, and a `<title>`. Render and look at new drawings before committing.
 
