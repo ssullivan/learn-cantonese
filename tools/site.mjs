@@ -4,8 +4,9 @@
  *   ROOT             repo root
  *   unitDirs()       ["unit1", ...] in number order
  *   loadVocab(unit)  unit<N>/vocab.js's vocab, or null if none. Runs
- *                    shared/units.js and every earlier unit's vocab.js
- *                    first, as a page would, so Units.word() works
+ *                    shared/units.js, shared/numbers.js and every earlier
+ *                    unit's vocab.js first, as a page would, so
+ *                    Units.word() and Canto.number() work
  *   entries(vocab)   every entry from every list, in file order
  *   own(entry, unit) true unless the entry is borrowed from another unit
  *   loadArt(unit)    unit<N>/art.mjs's { id: svg }, or null if none
@@ -28,6 +29,7 @@ export function loadVocab(unit) {
   sandbox.window = sandbox;
   const run = path => vm.runInContext(readFileSync(path, 'utf8'), sandbox, { filename: path });
   run(join(ROOT, 'shared/units.js'));
+  run(join(ROOT, 'shared/numbers.js'));
   const n = +unit.slice(4);
   for (const u of unitDirs().filter(u => u.slice(4) < n && existsSync(vocabPath(u)))) run(vocabPath(u));
   run(vocabPath(unit));

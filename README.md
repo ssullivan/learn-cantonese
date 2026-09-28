@@ -9,6 +9,9 @@ The course plans 18 units (see the roadmap in CLAUDE.md); built so far:
 - **Unit 2 · 打招呼 Greetings**: hello and goodbye, how are you, and when to say 唔該, 多謝 or 對唔住.
   - *Reply Match*: hear a phrase, answer back, or pick what to say in a situation.
   - *Tone Detective* and *Say It Back* for greetings.
+- **Unit 4 · 數字 Numbers**: 零 to 萬 with the one-hand counting signs, 廿, 零 in the gaps, 第, 幾多, and 二 vs 兩.
+  - *Number Dash*: hear a number and tap it (十四 or 四十?), say numbers, and pick 二 or 兩.
+  - *Tone Detective* and *Say It Back* for numbers.
 - **Unit 7 · 點心 Dim Sum**: classic dishes with pictures and audio, a listening quiz, and phrases for ordering at yum cha.
   - *Trolley Rush*: hear customers' orders (唔該，一籠蝦餃！) and serve the right dishes; learn 一籠 vs 一碟.
   - *Tone Detective*: hear a word and pick its tones.

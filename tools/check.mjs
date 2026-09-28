@@ -15,6 +15,7 @@
  *   - a word borrowed with Units.word(n, ...) has its audio and picture
  *     checked in unit n, and every page that loads a borrowing vocab.js
  *     loads shared/units.js and ../unit<n>/vocab.js before it
+ *   - pages load shared/numbers.js before any vocab.js using Canto.number
  *   - an entry's measure word matches its picture: a measure with
  *     dish "steamer" needs a steamer() drawing, "plate" a plate()
  *   - img/*.svg match art.mjs exactly (else run node tools/draw.mjs)
@@ -107,7 +108,8 @@ for (const unit of unitDirs()) {
 }
 
 // Pages load shared/units.js and the vocab of every unit they borrow from
-// before the unit's own vocab.js
+// before the unit's own vocab.js, and shared/numbers.js before any vocab
+// that uses Canto.number
 for (const html of files.filter(f => f.endsWith('.html'))) {
   const srcs = [...readFileSync(html, 'utf8').matchAll(/<script src="([^"?]+)/g)].map(m => m[1]);
   const at = src => srcs.indexOf(src);
@@ -118,6 +120,11 @@ for (const html of files.filter(f => f.endsWith('.html'))) {
     const need = `../unit${n}/vocab.js`;
     const i = at(need);
     if (i < 0 || i > at('vocab.js') || i < at('../shared/units.js')) bad(html, `vocab.js borrows from unit ${n}: load ${need} after units.js and before vocab.js`);
+  }
+  for (const v of srcs.filter(s => /^(\.\.\/unit\d+\/)?vocab\.js$/.test(s))) {
+    if (!readFileSync(join(dirname(html), v), 'utf8').includes('Canto.number')) continue;
+    const i = at('../shared/numbers.js');
+    if (i < 0 || i > at(v)) bad(html, `${v} uses Canto.number: load ../shared/numbers.js before it`);
   }
 }
 

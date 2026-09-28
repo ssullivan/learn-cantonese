@@ -4,7 +4,9 @@
  * .level-list > button.level (level menu), .hud, .timer > .timer-fill,
  * .stage (.locked after answering), .game-feedback, .game-end,
  * .stars, .btn.small, .speech (a speech bubble), .tray (labelled box
- * of answer buttons), .prompt-pic (big picture to answer about).
+ * of answer buttons), .prompt-pic (big picture to answer about),
+ * .prompt-num (big numeral to answer about), .choice-grid.nums (numeral
+ * answers: two columns even on phones).
  */
 
 .btn.small { padding: 6px 12px; font-size: 14px; }
@@ -106,6 +108,9 @@
 }
 .tray-label { margin: 0 0 8px; color: var(--ink-soft); font-size: 14px; font-weight: 700; }
 .prompt-pic { display: block; width: 160px; height: 160px; margin: 0 0 16px; }
+.prompt-num { margin: 0 0 16px; font-size: 56px; font-weight: 800; line-height: 1.1; color: var(--accent); font-variant-numeric: tabular-nums; }
+.choice-grid.nums { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.choice-grid.nums .choice { font-size: 28px; font-weight: 800; font-variant-numeric: tabular-nums; }
 
 /* Tone chart */
 

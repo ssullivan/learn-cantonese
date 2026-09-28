@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tone Detective · Numbers</title>
+<link rel="stylesheet" href="../shared/theme.css?v=7968c009">
+<link rel="stylesheet" href="../shared/game.css?v=594d28fb">
+</head>
+<body>
+<main class="page">
+  <header class="page-header">
+    <a class="back" href="../">← Unit 4</a>
+    <p class="eyebrow">Unit 4 · Game</p>
+    <h1><span class="hanzi" lang="zh-HK">聲調</span>Tone Detective</h1>
+    <p class="lede">Hear a number and catch its tones. 一 to 十 use five of the six tones.</p>
+  </header>
+  <div id="game"></div>
+</main>
+<script src="../shared/core.js?v=8bec73e4"></script>
+<script src="../shared/audio.js?v=f296d05e"></script>
+<script src="../shared/game.js?v=b82b218e"></script>
+<script src="../shared/tones.js?v=1e42a794"></script>
+<script src="../shared/numbers.js?v=2ba3665b"></script>
+<script src="../shared/units.js?v=d9fa5fbd"></script>
+<script src="vocab.js?v=cee261a9"></script>
+<script>
+  const V = window.VOCAB;
+  Tones.init({
+    root: document.getElementById('game'),
+    key: 'u4-tones',
+    levels: [
+      { id: 'zero-ten', name: '零 to 十', blurb: 'One syllable each. Three choices.', pool: V.numbers.slice(0, 11), choices: 3 },
+      { id: 'to-99', name: 'Up to 99', blurb: 'Two and three syllables, including 廿.', pool: V.numbers.slice(11), choices: 4 },
+      { id: 'big', name: 'Big numbers & words', blurb: '百, 千, 萬, 第, 幾多 and longer numbers.', pool: [...V.words, ...V.ordinals, ...V.big], choices: 4 },
+    ],
+  });
+</script>
+</body>
+</html>
