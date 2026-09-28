@@ -1,4 +1,4 @@
-/* Unit 1 learn page: the steps shown by shared/learn.js. Words come from vocab.js. */
+/* Unit 7 learn page: the steps shown by shared/learn.js. Words come from vocab.js. */
 (function () {
   const V = window.VOCAB;
   const group = id => V.groups.find(g => g.id === id);
@@ -20,7 +20,7 @@
 
   Learn.init({
     root: document.getElementById('learn'),
-    key: 'u1-learn',
+    key: 'u7-learn',
     vocab: V,
     steps: [
       {
@@ -67,7 +67,7 @@
           el.append(
             p(`You've met ${V.items.length} dim sum dishes and the phrases to order them. Next time you ${zh('飲茶', 'jam2 caa4')}, try ordering in Cantonese:`),
             p(`<strong>${zh('唔該，我要一籠燒賣', 'm4 goi1, ngo5 jiu3 jat1 lung4 siu1 maai2')}</strong>`),
-            p('Use the numbered steps above to review any section, or <a href="../">go back to Unit 1</a>.'),
+            p('Use the numbered steps above to review any section, or <a href="../">go back to Unit 7</a>.'),
           );
         },
       },

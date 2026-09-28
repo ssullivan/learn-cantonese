@@ -1,5 +1,5 @@
 /*
- * Unit 1 illustrations: one entry per vocab entry with a picture.
+ * Unit 7 illustrations: one entry per vocab entry with a picture.
  * Run `node tools/draw.mjs` after editing to rewrite img/<id>.svg.
  */
 import { svg, steamer, plate } from '../tools/svg.mjs';

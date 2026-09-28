@@ -3,7 +3,7 @@
  *
  *   Learn.init({
  *     root,          element to render into
- *     key,           localStorage key, unique across the site (e.g. "u1-learn")
+ *     key,           localStorage key, unique across the site (e.g. "u7-learn")
  *     vocab,         { items: [...], phrases: [...], ... } entries with
  *                    { id, hanzi, jyutping, english, note?, img? }
  *     steps: [{

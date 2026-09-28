@@ -4,7 +4,7 @@
  *
  *   Game.init({
  *     root,        element to render into
- *     key,         localStorage key, unique across the site (e.g. "u1-trolley")
+ *     key,         localStorage key, unique across the site (e.g. "u7-trolley")
  *     intro,       HTML for the "How to play" box on the level menu
  *     levels: [{
  *       id, name, blurb,

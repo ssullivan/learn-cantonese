@@ -1,4 +1,4 @@
-/* Unit 1 game: Trolley rush. Customers order dim sum; serve the right dishes. Runs on shared/game.js. */
+/* Unit 7 game: Trolley rush. Customers order dim sum; serve the right dishes. Runs on shared/game.js. */
 (function () {
   const V = window.VOCAB;
   const { el: $, esc, zh, pick, shuffle, picButton, speech } = Canto;
@@ -68,7 +68,7 @@
 
   Game.init({
     root: document.getElementById('game'),
-    key: 'u1-trolley',
+    key: 'u7-trolley',
     intro: `<strong>How to play:</strong> customers call out orders like
       ${zh('唔該，一籠蝦餃！', 'm4 goi1, jat1 lung4 haa1 gaau2')} Tap the dish they asked for before the green bar runs out.
       Dishes in a steamer are ordered by the ${zh('籠', 'lung4')} (basket); dishes on a plate by the ${zh('碟', 'dip6')}.`,

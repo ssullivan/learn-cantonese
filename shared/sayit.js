@@ -4,7 +4,7 @@
  * Needs core.js, audio.js, pitch.js. Styles: sayit.css.
  *
  *   SayIt.init({
- *     root, key,       element; localStorage key (e.g. "u1-say")
+ *     root, key,       element; localStorage key (e.g. "u7-say")
  *     pool,            vocab entries to practise (with audio; picture optional)
  *   })
  *

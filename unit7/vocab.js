@@ -1,5 +1,5 @@
 /*
- * Unit 1 vocabulary: the single source for the learn page, tools/tts.mjs
+ * Unit 7 vocabulary: the single source for the learn page, tools/tts.mjs
  * (audio/<id>.mp3) and tools/check.mjs (img/<id>.svg, audio files).
  *
  * Entry fields: id (unique in the unit, used for file names), hanzi,
