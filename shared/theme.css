@@ -4,7 +4,8 @@
  * Tokens:   --bg --surface --surface-2 --ink --ink-soft --line
  *           --accent --accent-ink --gold --jade --good --bad
  *           Light by default; dark follows prefers-color-scheme.
- * Layout:   .page (centered column, 16px gutter)
+ * Layout:   .page (centered column, 16px gutter), ending in the
+ *           copyright line (.page::after; see LICENSE)
  * Header:   .page-header > a.back, .eyebrow, h1, p.lede
  * Pills:    .pill (small rounded label)
  * Buttons:  .btn, .btn.primary, .btn:disabled
@@ -78,6 +79,15 @@ a { color: var(--accent); }
   max-width: 880px;
   margin: 0 auto;
   padding: 20px 16px 64px;
+}
+.page::after {
+  content: "© 2026 Stephen Sullivan. All rights reserved.";
+  display: block;
+  margin-top: 48px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 13px;
 }
 
 /* Header */

@@ -30,3 +30,7 @@ python3 -m http.server       # preview at http://localhost:8000
 ```
 
 See [CLAUDE.md](CLAUDE.md) for conventions.
+
+## License
+
+Copyright © 2026 Stephen Sullivan. All rights reserved. You may use the site for your own learning; see [LICENSE](LICENSE).

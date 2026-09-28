@@ -61,6 +61,7 @@ tools/
 - The root `index.html` lists every unit in the Roadmap, grouped by stage (`h2.stage-head`); units not built yet are `div.card.soon` placeholders. When adding a unit, create `unit<N>/` like `unit7/` and turn its placeholder into a real `a.card` with a picture. When the roadmap changes, update the placeholders and the "N units" eyebrow to match.
 - `localStorage` is shared by the whole site, so keys must be unique: `u<N>-learn`, `u<N>-<game>`.
 - `.nojekyll` disables Jekyll processing so files are served as-is.
+- The site is all rights reserved (`LICENSE`). Every page's copyright line comes from `.page::after` in `theme.css`; don't add footers to pages.
 - Avoid gendered pronouns for named people in lessons; reword instead.
 
 ## Checking a change
