@@ -21,6 +21,14 @@
  *
  * ctx: { level, done(correct), answer, reveal, play(entries) }
  *
+ * Helpers for rounds:
+ *   Game.choose(ctx, answer, options, label, gridCls = 'choice-grid')
+ *                a grid of .choice buttons, one per option (entries with
+ *                an id), showing label(option) HTML. Tapping one ends the
+ *                round (right if it is `answer`); sets ctx.reveal
+ *   Game.answerText(entry)   HTML for ctx.answer: "三點半 saam1… is 3:30."
+ *                plus the entry's note
+ *
  * Scoring: a right answer is worth 100, plus up to 50 for speed on timed
  * levels, plus 10 per answer in the current streak (max +50).
  * Stars: 1 at 50% right, 2 at 80%, 3 for all right. A level unlocks when
@@ -193,5 +201,23 @@
     menu();
   }
 
-  window.Game = { init };
+  function choose(ctx, answer, options, label, gridCls = 'choice-grid') {
+    const grid = $('div', gridCls);
+    options.forEach(o => {
+      const b = $('button', 'choice', label(o));
+      b.type = 'button';
+      b.dataset.id = o.id;
+      b.addEventListener('click', () => {
+        if (o !== answer) b.classList.add('wrong');
+        ctx.done(o === answer);
+      });
+      grid.append(b);
+    });
+    ctx.reveal = () => grid.querySelector(`[data-id="${answer.id}"]`).classList.add('right');
+    return grid;
+  }
+
+  const answerText = e => `${Canto.zh(e.hanzi, e.jyutping)} is ${Canto.esc(e.english)}.${e.note ? ' ' + Canto.esc(e.note) : ''}`;
+
+  window.Game = { init, choose, answerText };
 })();

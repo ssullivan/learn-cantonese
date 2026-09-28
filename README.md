@@ -26,6 +26,9 @@ The course plans 18 units (see the roadmap in CLAUDE.md); built so far:
   - *Trolley Rush*: hear customers' orders (唔該，一籠蝦餃！) and serve the right dishes; learn 一籠 vs 一碟.
   - *Tone Detective*: hear a word and pick its tones.
   - *Say It Back*: record yourself and compare your pitch curve with a native speaker's (recordings stay on your device).
+- **Unit 9 · 時間 Time & Dates**: 點 and 半, minutes in 個字 and 分, parts of the day, 星期, 月 and 號, 琴日 / 今日 / 聽日, and time words before the verb.
+  - *Clock*: hear a time and find its clock, set the clock, say the time, work out days and dates, and build sentences with the time first.
+  - *Tone Detective* (今日 or 琴日?) and *Say It Back* for times, days and dates.
 
 ## Working on it
 

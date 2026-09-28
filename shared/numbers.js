@@ -17,6 +17,14 @@
  *               三蚊二 ($3.20), 五毫 ($0.50), 百五蚊 ($150, clipped)
  *   Canto.near(n)          numbers easy to mix up with n: reversed digits
  *               (13 / 31, 3.5 / 5.3), ±1, ±10, ×10, ÷10, 十四 / 四十
+ *   Canto.time(h, m, { fen? })   { hanzi, jyutping } for a clock time,
+ *               h 1–12, m 0–59: 三點鐘, 兩點 (兩 before 點), 三點半, and
+ *               in 字 (five minutes) 三點兩個字 for 3:10. fen (or a minute
+ *               that isn't a multiple of 5) counts 分 instead: 三點零五分,
+ *               三點十五分, 三點半 as 三點三十分
+ *   Canto.nearTime(h, m)   [[h, m], ...] times easy to mix up with h:m:
+ *               hour and 字 swapped (3:20 / 4:15), ±1 hour, ±5 minutes,
+ *               ±30 minutes (點 / 半)
  *
  * Forms: 十一 at the start of a number but 一百一十 inside one; 廿 jaa6 for
  * 21–29 (a round 20 is 二十); 兩 loeng5 for a leading 2 before 百, 千 or 萬
@@ -106,5 +114,31 @@
     return [...new Set(out.map(tidy))].filter(x => x !== n && x >= 0);
   }
 
-  Object.assign(root.Canto = root.Canto || {}, { number, price, near });
+  const DIM = { hanzi: '點', jyutping: 'dim2' }, GO = { hanzi: '個', jyutping: 'go3' };
+  const ZI = ['字', 'zi6'], FAN = ['分', 'fan1'], ZUNG = ['鐘', 'zung1'];
+
+  function time(h, m, { fen = false } = {}) {
+    if (!Number.isInteger(h) || h < 1 || h > 12 || !Number.isInteger(m) || m < 0 || m > 59) throw new RangeError(`Canto.time: ${h}:${m} is not a time from 1:00 to 12:59`);
+    const hour = number(h, { measure: DIM });
+    const join = (...rest) => ({ hanzi: hour.hanzi + rest.map(r => r[0]).join(''), jyutping: [hour.jyutping, ...rest.map(r => r[1])].join(' ') });
+    if (!m) return join(ZUNG);
+    if (m % 5 || fen) {
+      const min = number(m);
+      return m < 10 ? join(DIGIT[0], [min.hanzi, min.jyutping], FAN) : join([min.hanzi, min.jyutping], FAN);
+    }
+    if (m === 30) return join(BUN);
+    const zi = number(m / 5, { measure: GO });
+    return join([zi.hanzi, zi.jyutping], ZI);
+  }
+
+  function nearTime(h, m) {
+    const at = t => { const x = ((t % 720) + 720) % 720; return [Math.floor(x / 60) || 12, x % 60]; };
+    const t = (h % 12) * 60 + m, out = [];
+    if (m % 5 === 0 && m && h <= 11) out.push([m / 5 || 12, h * 5]);
+    out.push(...[60, -60, 5, -5, 30, -30].map(d => at(t + d)));
+    const seen = new Set([`${h}:${m}`]);
+    return out.filter(([a, b]) => { const k = `${a}:${b}`; if (seen.has(k)) return false; seen.add(k); return true; });
+  }
+
+  Object.assign(root.Canto = root.Canto || {}, { number, price, near, time, nearTime });
 })(typeof window !== 'undefined' ? window : globalThis);

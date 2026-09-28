@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /*
  * numbers.test.mjs — tests Canto.number in shared/numbers.js. Run by
- * tools/check.mjs; exits 1 on failure. Also Canto.price and Canto.near.
+ * tools/check.mjs; exits 1 on failure. Also Canto.price, Canto.near,
+ * Canto.time and Canto.nearTime.
  */
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -10,7 +11,7 @@ import { ROOT } from './site.mjs';
 
 const sb = { window: {} };
 vm.runInNewContext(readFileSync(join(ROOT, 'shared/numbers.js'), 'utf8'), sb);
-const { number, price, near } = sb.window.Canto;
+const { number, price, near, time, nearTime } = sb.window.Canto;
 let fail = 0;
 const quiet = process.argv.includes('--quiet');
 const ok = (name, cond, info = '') => { if (!cond || !quiet) console.log((cond ? 'PASS ' : 'FAIL ') + name + '  ' + info); if (!cond) fail++; };
@@ -98,7 +99,38 @@ ok('near 14', has(14, [41, 40, 13, 15]) && !near(14).includes(14), near(14).join
 ok('near 40 has 14', has(40, [14]), near(40).join(' '));
 ok('near 3.5', has(3.5, [5.3, 35, 4.5, 13.5]), near(3.5).join(' '));
 
+const times = [
+  [3, 0, '三點鐘', 'saam1 dim2 zung1'],
+  [2, 0, '兩點鐘', 'loeng5 dim2 zung1'],
+  [12, 0, '十二點鐘', 'sap6 ji6 dim2 zung1'],
+  [3, 30, '三點半', 'saam1 dim2 bun3'],
+  [3, 5, '三點一個字', 'saam1 dim2 jat1 go3 zi6'],
+  [3, 10, '三點兩個字', 'saam1 dim2 loeng5 go3 zi6'],
+  [2, 15, '兩點三個字', 'loeng5 dim2 saam1 go3 zi6'],
+  [11, 55, '十一點十一個字', 'sap6 jat1 dim2 sap6 jat1 go3 zi6'],
+  [3, 5, '三點零五分', 'saam1 dim2 ling4 ng5 fan1', { fen: true }],
+  [3, 15, '三點十五分', 'saam1 dim2 sap6 ng5 fan1', { fen: true }],
+  [3, 25, '三點廿五分', 'saam1 dim2 jaa6 ng5 fan1', { fen: true }],
+  [3, 30, '三點三十分', 'saam1 dim2 saam1 sap6 fan1', { fen: true }],
+  [7, 8, '七點零八分', 'cat1 dim2 ling4 baat3 fan1'],
+  [7, 42, '七點四十二分', 'cat1 dim2 sei3 sap6 ji6 fan1'],
+];
+for (const [h, m, hanzi, jyutping, opts] of times) {
+  const r = time(h, m, opts);
+  ok(`time ${h}:${m}${opts ? ' fen' : ''}`, r.hanzi === hanzi && r.jyutping === jyutping, `${r.hanzi} ${r.jyutping}`);
+}
+const hasTime = (h, m, want) => want.every(([a, b]) => nearTime(h, m).some(([x, y]) => x === a && y === b));
+const valid = list => list.every(([a, b]) => a >= 1 && a <= 12 && b >= 0 && b < 60);
+ok('nearTime 3:20', hasTime(3, 20, [[4, 15], [4, 20], [2, 20], [3, 25], [3, 15], [3, 50]]), JSON.stringify(nearTime(3, 20)));
+ok('nearTime 12:00 wraps', hasTime(12, 0, [[1, 0], [11, 0], [12, 30], [11, 55]]) && valid(nearTime(12, 0)), JSON.stringify(nearTime(12, 0)));
+ok('nearTime 1:00', hasTime(1, 0, [[12, 0], [12, 55], [1, 5]]) && valid(nearTime(1, 0)), JSON.stringify(nearTime(1, 0)));
+ok('nearTime has no repeats or itself', [[3, 20], [6, 30], [12, 55]].every(([h, m]) => {
+  const k = nearTime(h, m).map(([a, b]) => `${a}:${b}`);
+  return new Set(k).size === k.length && !k.includes(`${h}:${m}`) && valid(nearTime(h, m));
+}));
+
 const throws = f => { try { f(); return false; } catch { return true; } };
 ok('rejects out of range', throws(() => number(-1)) && throws(() => number(1e8)) && throws(() => number(1.5)));
+ok('time rejects out of range', throws(() => time(0, 0)) && throws(() => time(13, 0)) && throws(() => time(3, 60)) && throws(() => time(3, 1.5)));
 ok('price rejects cents and zero', throws(() => price(0.25)) && throws(() => price(0)));
 process.exit(fail ? 1 : 0);

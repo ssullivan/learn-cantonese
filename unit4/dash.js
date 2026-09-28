@@ -4,30 +4,7 @@
   const { el: $, esc, zh, pick, shuffle, confusable, speech } = Canto;
   const byId = Object.fromEntries(Canto.entries(V).map(e => [e.id, e]));
   const all = [...V.numbers, ...V.big];
-
-  function button(html, e, cls = 'choice') {
-    const b = $('button', cls, html);
-    b.type = 'button';
-    b.dataset.id = e.id;
-    return b;
-  }
-
-  // Pick `answer` from `options`; each is a button made by `label`.
-  function choose(ctx, answer, options, label, gridCls = 'choice-grid') {
-    const grid = $('div', gridCls);
-    options.forEach(o => {
-      const b = button(label(o), o);
-      b.addEventListener('click', () => {
-        if (o !== answer) b.classList.add('wrong');
-        ctx.done(o === answer);
-      });
-      grid.append(b);
-    });
-    ctx.reveal = () => grid.querySelector(`[data-id="${answer.id}"]`).classList.add('right');
-    return grid;
-  }
-
-  const answerText = e => `${zh(e.hanzi, e.jyutping)} is ${esc(e.english)}.${e.note ? ' ' + esc(e.note) : ''}`;
+  const { choose, answerText } = Game;
 
   // Hear a number, tap its numeral.
   const hear = ({ pool, choices = 4 }) => (stage, ctx) => {

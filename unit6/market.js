@@ -8,25 +8,7 @@
   const dimes = n => Math.round(n * 10);
   const dollars = d => byN.get(d / 10)?.english ?? `$${(d / 10).toFixed(d % 10 ? 2 : 0)}`;
   const one = t => byId[`one-${t.id}`];
-
-  const answerText = e => `${zh(e.hanzi, e.jyutping)} is ${esc(e.english)}.${e.note ? ' ' + esc(e.note) : ''}`;
-
-  // Pick `answer` from `options`; each is a button made by `label`.
-  function choose(ctx, answer, options, label, gridCls = 'choice-grid') {
-    const grid = $('div', gridCls);
-    options.forEach(o => {
-      const b = $('button', 'choice', label(o));
-      b.type = 'button';
-      b.dataset.id = o.id;
-      b.addEventListener('click', () => {
-        if (o !== answer) b.classList.add('wrong');
-        ctx.done(o === answer);
-      });
-      grid.append(b);
-    });
-    ctx.reveal = () => grid.querySelector(`[data-id="${answer.id}"]`).classList.add('right');
-    return grid;
-  }
+  const { choose, answerText } = Game;
 
   // A thing on the stall, with a price tag if `tag` is given.
   function stall(t, tag) {
