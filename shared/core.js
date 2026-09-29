@@ -4,6 +4,11 @@
  *
  *   Canto.el(tag, cls?, html?)   create an element
  *   Canto.esc(text)              HTML-escape
+ *   Canto.tagZh(text)            HTML-escaped text with each run of Chinese
+ *                                in <span lang="zh-HK">, so it gets the
+ *                                Chinese font first (a heading on a device
+ *                                with no Chinese font shows boxes
+ *                                otherwise) and Hong Kong glyphs
  *   Canto.jyutping("haa1 gaau2") HTML with tone digits in <sup>
  *   Canto.zh(hanzi, jyutping)    HTML: the characters and their jyutping
  *                                (span.zh > span.hanzi + span.jp). Each
@@ -49,6 +54,9 @@
   };
 
   const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+  // Characters and full-width punctuation (，？！ and the like).
+  const tagZh = s => esc(s).replace(/[\p{Script=Han}\u3000-\u303f\uff00-\uffef]+/gu, m => `<span lang="zh-HK">${m}</span>`);
 
   const jyutping = s => esc(s).replace(/([a-z]+)([1-6])/g, '$1<sup>$2</sup>');
 
@@ -169,5 +177,5 @@
     };
   }
 
-  window.Canto = { el, esc, jyutping, zh, pairs, tones, toneChart, shuffle, pick, confusable, imgSrc, audioSrc, play, picButton, speech, entries, store };
+  window.Canto = { el, esc, tagZh, jyutping, zh, pairs, tones, toneChart, shuffle, pick, confusable, imgSrc, audioSrc, play, picButton, speech, entries, store };
 })();

@@ -10,11 +10,19 @@ import { ROOT } from './site.mjs';
 
 const sb = { window: {} };
 vm.runInNewContext(readFileSync(join(ROOT, 'shared/core.js'), 'utf8'), sb);
-const { tones, toneChart, pairs, zh } = sb.window.Canto;
+const { tones, toneChart, pairs, zh, tagZh } = sb.window.Canto;
 let fail = 0;
 const quiet = process.argv.includes('--quiet');
 const ok = (name, cond, info = '') => { if (!cond || !quiet) console.log((cond ? 'PASS ' : 'FAIL ') + name + '  ' + info); if (!cond) fail++; };
 const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+
+// Chinese in running text, tagged so it gets the Chinese font.
+let z = tagZh('Big and small · 大 細');
+ok('tagZh: each run of Chinese in a zh-HK span', z === 'Big and small · <span lang="zh-HK">大</span> <span lang="zh-HK">細</span>', z);
+z = tagZh('Which one? · 邊個平啲呀？');
+ok('tagZh: full-width punctuation stays with its characters', z === 'Which one? · <span lang="zh-HK">邊個平啲呀？</span>', z);
+z = tagZh('Tom & <b>');
+ok('tagZh: escapes, and leaves text without Chinese alone', z === 'Tom &amp; &lt;b&gt;', z);
 
 let t = tones('si1');
 ok('one syllable', same(t, [1]), JSON.stringify(t));

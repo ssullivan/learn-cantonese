@@ -34,7 +34,7 @@
  * Progress ({ step, done: [ids] }) is saved under `key`.
  */
 (function () {
-  const { el: $, esc, jyutping, zh, shuffle, imgSrc, play, picButton } = Canto;
+  const { el: $, esc, tagZh, jyutping, zh, shuffle, imgSrc, play, picButton } = Canto;
 
   const p = html => $('p', null, html);
   const tip = html => $('div', 'tip', html);
@@ -129,7 +129,7 @@
       state.step = i;
       store.set(state);
       const step = steps[i];
-      title.textContent = step.title;
+      title.innerHTML = tagZh(step.title);
       content.replaceChildren();
       const ctx = {
         vocab,
