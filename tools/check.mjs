@@ -8,6 +8,7 @@
  * Checks:
  *   - every href/src in every .html is relative and points at a file
  *   - local .css/.js links carry ?v=<first 8 of sha1(file)>
+ *   - every page links the favicon (favicon.svg, the bauhinia)
  *   - every .js file compiles
  *   - each unit<N>/vocab.js: unique ids, tone numbers in jyutping,
  *     audio/<id>.mp3 for every entry, a drawing in art.mjs for every
@@ -54,6 +55,8 @@ const stamp = file => createHash('sha1').update(readFileSync(file)).digest('hex'
 let fixed = 0;
 for (const html of files.filter(f => f.endsWith('.html'))) {
   const src = readFileSync(html, 'utf8');
+  const icon = relative(dirname(html), join(ROOT, 'favicon.svg'));
+  if (!src.includes(`<link rel="icon" href="${icon}" type="image/svg+xml">`)) bad(html, `link the favicon: <link rel="icon" href="${icon}" type="image/svg+xml">`);
   const out = src.replace(/\b(href|src)="([^"]*)"/g, (whole, attr, url) => {
     if (/^(https?:|mailto:|data:|#)/.test(url)) return whole;
     if (url.startsWith('/')) { bad(html, `absolute link ${url} (use a relative link)`); return whole; }
