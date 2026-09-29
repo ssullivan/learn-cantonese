@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A minibus with a green roof</title>
+<ellipse cx="64" cy="108" rx="50" ry="5" fill="#9fb0bb" opacity=".35"/>
+<path d="M14 96 V52 C14 42 20 34 30 34 H98 C108 34 116 42 116 54 V96 Z" fill="#f7f3e8" stroke="#6f6a5c" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M14 52 C14 42 20 34 30 34 H98 C108 34 116 42 116 52 Z" fill="#3a9a6e" stroke="#26684a" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="22" y="58" width="18" height="16" rx="2" fill="#bfe0f2" stroke="#24507f" stroke-width="1.5"/>
+<rect x="45" y="58" width="18" height="16" rx="2" fill="#bfe0f2" stroke="#24507f" stroke-width="1.5"/>
+<rect x="68" y="58" width="18" height="16" rx="2" fill="#bfe0f2" stroke="#24507f" stroke-width="1.5"/>
+<rect x="91" y="58" width="18" height="16" rx="2" fill="#bfe0f2" stroke="#24507f" stroke-width="1.5"/>
+<path d="M14 82 H116" stroke="#3a9a6e" stroke-width="4"/>
+<circle cx="36" cy="98" r="11" fill="#2a211b"/><circle cx="36" cy="98" r="4.4" fill="#c8ced3"/>
+<circle cx="96" cy="98" r="11" fill="#2a211b"/><circle cx="96" cy="98" r="4.4" fill="#c8ced3"/>
+</svg>

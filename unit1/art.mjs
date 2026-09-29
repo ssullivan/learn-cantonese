@@ -2,7 +2,7 @@
  * Unit 1 illustrations: one entry per vocab entry with a picture.
  * Run `node tools/draw.mjs` after editing to rewrite img/<id>.svg.
  */
-import { svg, bowl, cup } from '../tools/svg.mjs';
+import { svg, bowl, cup, car } from '../tools/svg.mjs';
 
 export default {
   fish: svg('Fish', `<path d="M96 64 L122 40 L118 64 L122 88 Z" fill="#e8773a" stroke="#b5521f" stroke-width="2.5" stroke-linejoin="round"/>
@@ -32,13 +32,7 @@ export default {
 <path d="M92 60 L118 22" stroke="#2e5a88" stroke-width="6" stroke-linecap="round"/>
 <path d="M92 60 L118 22" stroke="#fbf8f1" stroke-width="3" stroke-linecap="round"/>`)),
 
-  car: svg('Car', `<ellipse cx="64" cy="104" rx="52" ry="5" fill="#9fb0bb" opacity=".35"/>
-<path d="M12 92 V72 C12 66 16 62 24 62 L36 60 L48 42 C50 40 52 38 56 38 H86 C90 38 92 40 94 42 L106 60 C114 62 118 66 118 72 V92 Z" fill="#d6453a" stroke="#8f2a22" stroke-width="2.5" stroke-linejoin="round"/>
-<path d="M44 60 L54 44 H68 V60 Z M74 44 H86 L98 60 H74 Z" fill="#bfe0f2" stroke="#8f2a22" stroke-width="2" stroke-linejoin="round"/>
-<path d="M14 74 H22 M108 72 H116" stroke="#f7d35c" stroke-width="5" stroke-linecap="round"/>
-<path d="M60 72 h8" stroke="#8f2a22" stroke-width="2.5" stroke-linecap="round"/>
-<circle cx="36" cy="92" r="13" fill="#2a211b"/><circle cx="36" cy="92" r="5" fill="#c8ced3"/>
-<circle cx="94" cy="92" r="13" fill="#2a211b"/><circle cx="94" cy="92" r="5" fill="#c8ced3"/>`),
+  car: svg('Car', car),
 
   water: svg('A glass of water', `${cup('#8cc8ea', { glass: true })}
 <circle cx="72" cy="80" r="3" fill="#ffffff" opacity=".7"/><circle cx="78" cy="64" r="2" fill="#ffffff" opacity=".7"/>`),

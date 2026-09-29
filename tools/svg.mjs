@@ -29,6 +29,10 @@
  *   cup(drink, { glass })  a handleless blue-and-white teacup (rim at
  *                      y 46), or a tall glass (rim at y 18), filled with
  *                      the color `drink`
+ * Transport (unit 1's car, unit 5's plane, unit 11's taxi and airport):
+ *   car                a red car side on, wheels on y 92, roof at y 38
+ *   plane              a plane climbing to the right, across the middle
+ *
  *   pineappleBun       a pineapple bun with its crackly top, about 48
  *                      wide, centred on 0,0 (place it with a transform)
  *
@@ -131,3 +135,22 @@ export const pineappleBun = `<path d="M-24 6 C-26 -8 -14 -20 0 -20 C14 -20 26 -8
 <path d="M-23 0 C-24 -10 -13 -20 0 -20 C13 -20 24 -10 23 0 C12 4 -12 4 -23 0Z" fill="#e9ab45"/>
 <path d="M-20 -6 L-16 -12 L-8 -6 L-12 1 M-8 -6 L0 -12 L6 -4 L0 3 M6 -4 L14 -12 L19 -6 M6 -4 L15 1 M-8 -6 L-2 -1 M0 -12 L-2 -19 M14 -12 L11 -18 M-16 -12 L-12 -17" stroke="#c07a22" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M-12 -15 Q-4 -19 4 -18" stroke="#f7d27f" stroke-width="2.5" fill="none" stroke-linecap="round"/>`;
+
+export const car = `<ellipse cx="64" cy="104" rx="52" ry="5" fill="#9fb0bb" opacity=".35"/>
+<path d="M12 92 V72 C12 66 16 62 24 62 L36 60 L48 42 C50 40 52 38 56 38 H86 C90 38 92 40 94 42 L106 60 C114 62 118 66 118 72 V92 Z" fill="#d6453a" stroke="#8f2a22" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M44 60 L54 44 H68 V60 Z M74 44 H86 L98 60 H74 Z" fill="#bfe0f2" stroke="#8f2a22" stroke-width="2" stroke-linejoin="round"/>
+<path d="M14 74 H22 M108 72 H116" stroke="#f7d35c" stroke-width="5" stroke-linecap="round"/>
+<path d="M60 72 h8" stroke="#8f2a22" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="36" cy="92" r="13" fill="#2a211b"/><circle cx="36" cy="92" r="5" fill="#c8ced3"/>
+<circle cx="94" cy="92" r="13" fill="#2a211b"/><circle cx="94" cy="92" r="5" fill="#c8ced3"/>`;
+
+export const plane = `<g transform="rotate(-14 64 66)">
+<path d="M82 58 L58 32 H46 L60 58 Z" fill="#9fb8d0" stroke="#4a6a8a" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M18 58 L10 32 H23 L40 57 Z" fill="#2e6fd1" stroke="#1b4586" stroke-width="3" stroke-linejoin="round"/>
+<path d="M14 66 C14 58 22 56 30 56 H100 C112 56 120 62 120 66 C120 70 112 74 100 74 H30 C22 74 14 72 14 66Z" fill="#f4f7fa" stroke="#4a6a8a" stroke-width="3"/>
+<path d="M18 69 H114" stroke="#2e6fd1" stroke-width="2.5"/>
+<g fill="#5a8fc4"><circle cx="40" cy="63" r="2.5"/><circle cx="49" cy="63" r="2.5"/><circle cx="58" cy="63" r="2.5"/><circle cx="67" cy="63" r="2.5"/><circle cx="76" cy="63" r="2.5"/><circle cx="85" cy="63" r="2.5"/><circle cx="94" cy="63" r="2.5"/></g>
+<path d="M104 59 C110 59 114 61 117 64 H104 Z" fill="#5a8fc4"/>
+<rect x="56" y="78" width="18" height="9" rx="4.5" fill="#c0c8d0" stroke="#4a6a8a" stroke-width="2"/>
+<path d="M86 70 L58 102 H44 L60 70 Z" fill="#2e6fd1" stroke="#1b4586" stroke-width="3" stroke-linejoin="round"/>
+</g>`;

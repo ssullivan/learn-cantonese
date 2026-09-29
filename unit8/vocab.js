@@ -131,7 +131,6 @@ Units.add(8, {
       english, img: false };
   });
 
-  const all = () => Object.values(V).filter(Array.isArray).flat();
   // 好 before a verb: good to drink, good to eat.
   V.tasty = [
     say('hou jam2', 'tasty (to drink)', { note: '好 + verb: "good to drink".' }),
@@ -161,11 +160,6 @@ Units.add(8, {
     say('pineapple-butter hou hou sik6', 'The pineapple bun is really tasty.', { note: '好 + 好食: "very good to eat".' }),
   ];
 
-  // The voice sometimes reads 少 as siu3 (young) and 士 as si6: read those
-  // words from their jyutping, alone and in every phrase they're in.
-  const MISREAD = ['siu', 'toast', 'french-toast'];
-  for (const e of all()) {
-    if (MISREAD.includes(e.id)) e.phoneme = true;
-    else if (e.words?.some(id => MISREAD.includes(id))) e.phoneme = e.words.filter(id => MISREAD.includes(id));
-  }
+  // The voice sometimes reads 少 as siu3 (young) and 士 as si6.
+  Units.phonemes(V, ['siu', 'toast', 'french-toast']);
 })(window.VOCAB);

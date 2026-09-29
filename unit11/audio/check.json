@@ -1,0 +1,292 @@
+{
+ "airport-hai2-bin-dou-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 喺 tone 2 sounds like 2 (p 0.43); 度 tone 6 sounds like 3 (p 0.06)"
+  ],
+  "audio": "61d5d62dc184"
+ },
+ "bank-hai2-bin-dou-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 銀 tone 4 sounds like 4 (p 0.43); 度 tone 6 sounds like 6 (p 0.40)"
+  ],
+  "audio": "b13fe284475c"
+ },
+ "bus-zaam": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 士 tone 2 sounds like 3 (p 0.05)"
+  ],
+  "audio": "67c99232ca1a"
+ },
+ "bus-zaam-hai2-bin-dou-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 士 tone 2 sounds like 3 (p 0.05); 站 tone 6 sounds like 6 (p 0.46); 喺 tone 2 sounds like 6 (p 0.06); 度 tone 6 sounds like 3 (p 0.07)"
+  ],
+  "audio": "d362a629a08e"
+ },
+ "ceot": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 七 cat"
+  ],
+  "audio": "e78b4628850f"
+ },
+ "cha-chaan-teng-hai2-bin-dou-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 喺 tone 2 sounds like 6 (p 0.21); 度 tone 6 sounds like 3 (p 0.04)"
+  ],
+  "audio": "8bca407442a7"
+ },
+ "cin-min": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 天天 tin tin"
+  ],
+  "audio": "3ce7469c67f9"
+ },
+ "cin-min-jau-lok": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 有 tone 5 sounds like 2 (p 0.02)"
+  ],
+  "audio": "d312841b7442"
+ },
+ "daap": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 八 baat"
+  ],
+  "audio": "f712abe0abb0"
+ },
+ "haang-lou": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 鵬路 paang lou"
+  ],
+  "audio": "fb1e1fa8b0ef"
+ },
+ "haang-lou-jiu-n10-fan-zung": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 行路要10分鐘 hong lou jiu sap fan zung",
+   "tone doubtful: 行 tone 4 sounds like 6 (p 0.06); 路 tone 6 sounds like 5 (p 0.09)"
+  ],
+  "audio": "ef494b949de5"
+ },
+ "home-hai2-bin-dou-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 喺 tone 2 sounds like 6 (p 0.03); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 度 tone 6 sounds like 3 (p 0.15)"
+  ],
+  "audio": "3bb37b90f63e"
+ },
+ "hospital-hai2-bin-dou-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 院 tone 2 sounds like 3 (p 0.17); 喺 tone 2 sounds like 6 (p 0.13); 度 tone 6 sounds like 3 (p 0.06)"
+  ],
+  "audio": "2cbebcc84ead"
+ },
+ "hotel-hai2-bin-dou-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 喺 tone 2 sounds like 2 (p 0.40); 度 tone 6 sounds like 1 (p 0.18)"
+  ],
+  "audio": "e7b8ecbb4c33"
+ },
+ "hou-kan": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 好 tone 2 sounds like 5 (p 0.41)"
+  ],
+  "audio": "d2204c2a0a88"
+ },
+ "jyun-m-jyun-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 遠 tone 5 sounds like 2 (p 0.15)"
+  ],
+  "audio": "1d8e79e84387"
+ },
+ "kan": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Can c a n",
+   "tone doubtful: 近 tone 5 sounds like 2 (p 0.29)"
+  ],
+  "audio": "847c6f74a264"
+ },
+ "keoi-hai2-home": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 喺 tone 2 sounds like 1 (p 0.00)",
+   "tone doubtful: 佢 tone 5 sounds like 6 (p 0.28)"
+  ],
+  "audio": "f06ada20d9d4"
+ },
+ "m-goi-toilet-hai2-bin-dou-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 喺 tone 2 sounds like 6 (p 0.04); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 手 tone 2 sounds like 5 (p 0.15); 度 tone 6 sounds like 3 (p 0.04)"
+  ],
+  "audio": "37bebcdd20da"
+ },
+ "metro-zaam": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 鐵 tone 3 sounds like 6 (p 0.02)"
+  ],
+  "audio": "223e927f378f"
+ },
+ "metro-zaam-hai2-bin-dou-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 鐵 tone 3 sounds like 6 (p 0.07); 喺 tone 2 sounds like 6 (p 0.16); 度 tone 6 sounds like 3 (p 0.24)"
+  ],
+  "audio": "8a3e7a545044"
+ },
+ "minibus": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 小 tone 2 sounds like 5 (p 0.16)"
+  ],
+  "audio": "c33c144dfaa2"
+ },
+ "nei-gei-si-lai-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "09c58134c250"
+ },
+ "nei-heoi-bin-dou-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 度 tone 6 sounds like 3 (p 0.04); 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "0ccdc859c90c"
+ },
+ "ngo-daap-metro-heoi-hotel": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 鐵 tone 3 sounds like 6 (p 0.11)"
+  ],
+  "audio": "123b7b14f3b7"
+ },
+ "ngo-haang-lou-heoi-park": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.20); 路 tone 6 sounds like 6 (p 0.37)"
+  ],
+  "audio": "a7627933a296"
+ },
+ "ngo-hai2-bank": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 我 tone 5 sounds like 2 (p 0.01); 喺 tone 2 sounds like 6 (p 0.01)"
+  ],
+  "audio": "da48fc1c3c28"
+ },
+ "ngo-hai2-home-sik-faan": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.04); 企 tone 2 sounds like 6 (p 0.09)"
+  ],
+  "audio": "ec7c67df9465"
+ },
+ "ngo-heoi-airport": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 我 tone 5 sounds like 2 (p 0.03)"
+  ],
+  "audio": "1202fd88ce8e"
+ },
+ "park-hai2-bin-dou-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 度 tone 6 sounds like 3 (p 0.03); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 園 tone 2 sounds like 3 (p 0.12); 喺 tone 2 sounds like 6 (p 0.09)"
+  ],
+  "audio": "6dfa497a749e"
+ },
+ "supermarket": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard TC t c",
+   "tone doubtful: 市 tone 5 sounds like 6 (p 0.45)"
+  ],
+  "audio": "09f3561dbfd5"
+ },
+ "supermarket-hai2-bin-dou-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 喺 tone 2 sounds like 6 (p 0.17); 度 tone 6 sounds like 1 (p 0.36)"
+  ],
+  "audio": "0fc8d796c34e"
+ },
+ "supermarket-hai2-cin-min": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 市 tone 5 sounds like 5 (p 0.38)"
+  ],
+  "audio": "4c436265deca"
+ },
+ "toilet": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 手 tone 2 sounds like 5 (p 0.29)"
+  ],
+  "audio": "c60cecd53906"
+ },
+ "toilet-hai2-bin-dou-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 喺 tone 2 sounds like 6 (p 0.03); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 手 tone 2 sounds like 5 (p 0.31); 度 tone 6 sounds like 3 (p 0.15)"
+  ],
+  "audio": "d33a6f1bbfcb"
+ },
+ "toilet-hai2-go2-dou6": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 手 tone 2 sounds like 5 (p 0.35); 喺 tone 2 sounds like 2 (p 0.45)"
+  ],
+  "audio": "ce4a471f8494"
+ },
+ "zaam": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Dam d a m"
+  ],
+  "audio": "926b39d692f6"
+ },
+ "zo": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Jo j o"
+  ],
+  "audio": "36c2019c0cf3"
+ },
+ "zyun-zo-hai2-zo-bin": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 喺 tone 2 sounds like 5 (p 0.10)"
+  ],
+  "audio": "dfbe10ef2d04"
+ }
+}

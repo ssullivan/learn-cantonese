@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A bank with columns and a coin sign</title>
+<ellipse cx="64" cy="118" rx="54" ry="5" fill="#9fb0bb" opacity=".35"/>
+<rect x="18" y="50" width="92" height="64" fill="#f4efe4" stroke="#8a7a5a" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M12 50 L64 18 L116 50 Z" fill="#e0d6be" stroke="#8a7a5a" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="64" cy="37" r="8" fill="#e0a526" stroke="#9a6c0e" stroke-width="2"/>
+<path d="M64 32 V42 M61 34.5 H66 Q68 34.5 68 36.5 Q68 38 66 38 H62 Q60 38 60 39.5 Q60 41.5 62 41.5 H67" stroke="#9a6c0e" stroke-width="1.5" fill="none"/>
+<g fill="#ffffff" stroke="#8a7a5a" stroke-width="2">
+<rect x="26" y="58" width="10" height="48"/><rect x="46" y="58" width="10" height="48"/><rect x="72" y="58" width="10" height="48"/><rect x="92" y="58" width="10" height="48"/>
+</g>
+<rect x="14" y="106" width="100" height="8" fill="#e0d6be" stroke="#8a7a5a" stroke-width="2"/>
+</svg>

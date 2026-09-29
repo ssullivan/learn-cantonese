@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A double-decker bus</title>
+<ellipse cx="64" cy="112" rx="54" ry="5" fill="#9fb0bb" opacity=".35"/>
+<rect x="10" y="18" width="108" height="86" rx="10" fill="#f2c94c" stroke="#9a6c0e" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M10 62 H118" stroke="#d6453a" stroke-width="5"/>
+<rect x="18" y="26" width="17" height="22" rx="2" fill="#bfe0f2" stroke="#24507f" stroke-width="1.5"/>
+<rect x="38" y="26" width="17" height="22" rx="2" fill="#bfe0f2" stroke="#24507f" stroke-width="1.5"/>
+<rect x="58" y="26" width="17" height="22" rx="2" fill="#bfe0f2" stroke="#24507f" stroke-width="1.5"/>
+<rect x="78" y="26" width="17" height="22" rx="2" fill="#bfe0f2" stroke="#24507f" stroke-width="1.5"/>
+<rect x="98" y="26" width="17" height="22" rx="2" fill="#bfe0f2" stroke="#24507f" stroke-width="1.5"/>
+<rect x="38" y="70" width="17" height="18" rx="2" fill="#bfe0f2" stroke="#24507f" stroke-width="1.5"/>
+<rect x="58" y="70" width="17" height="18" rx="2" fill="#bfe0f2" stroke="#24507f" stroke-width="1.5"/>
+<rect x="78" y="70" width="17" height="18" rx="2" fill="#bfe0f2" stroke="#24507f" stroke-width="1.5"/>
+<rect x="98" y="70" width="17" height="18" rx="2" fill="#bfe0f2" stroke="#24507f" stroke-width="1.5"/>
+<rect x="16" y="68" width="16" height="30" rx="2" fill="#bfe0f2" stroke="#24507f" stroke-width="1.5"/>
+<circle cx="34" cy="104" r="11" fill="#2a211b"/><circle cx="34" cy="104" r="4.4" fill="#c8ced3"/>
+<circle cx="96" cy="104" r="11" fill="#2a211b"/><circle cx="96" cy="104" r="4.4" fill="#c8ced3"/>
+</svg>

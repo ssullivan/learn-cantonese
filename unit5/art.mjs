@@ -3,7 +3,7 @@
  * 雞 牛 are unit 1's. Run `node tools/draw.mjs` after editing to rewrite
  * img/<id>.svg.
  */
-import { svg, bowl, cup } from '../tools/svg.mjs';
+import { svg, bowl, cup, plane } from '../tools/svg.mjs';
 
 const shadow = (rx = 40, cy = 114) => `<ellipse cx="64" cy="${cy}" rx="${rx}" ry="5" fill="#9fb0bb" opacity=".35"/>`;
 const steam = `<path d="M50 34 c-4 -6 4 -10 0 -16 M64 30 c-4 -6 4 -10 0 -16 M78 34 c-4 -6 4 -10 0 -16" stroke="#9fb0bb" stroke-width="2.5" fill="none" stroke-linecap="round"/>`;
@@ -108,16 +108,7 @@ export default {
 <circle cx="64" cy="42" r="9" fill="#f5c542" stroke="#c7951a" stroke-width="2"/>`),
 
   // 架
-  plane: svg('Plane', `<g transform="rotate(-14 64 66)">
-<path d="M82 58 L58 32 H46 L60 58 Z" fill="#9fb8d0" stroke="#4a6a8a" stroke-width="2.5" stroke-linejoin="round"/>
-<path d="M18 58 L10 32 H23 L40 57 Z" fill="#2e6fd1" stroke="#1b4586" stroke-width="3" stroke-linejoin="round"/>
-<path d="M14 66 C14 58 22 56 30 56 H100 C112 56 120 62 120 66 C120 70 112 74 100 74 H30 C22 74 14 72 14 66Z" fill="#f4f7fa" stroke="#4a6a8a" stroke-width="3"/>
-<path d="M18 69 H114" stroke="#2e6fd1" stroke-width="2.5"/>
-<g fill="#5a8fc4"><circle cx="40" cy="63" r="2.5"/><circle cx="49" cy="63" r="2.5"/><circle cx="58" cy="63" r="2.5"/><circle cx="67" cy="63" r="2.5"/><circle cx="76" cy="63" r="2.5"/><circle cx="85" cy="63" r="2.5"/><circle cx="94" cy="63" r="2.5"/></g>
-<path d="M104 59 C110 59 114 61 117 64 H104 Z" fill="#5a8fc4"/>
-<rect x="56" y="78" width="18" height="9" rx="4.5" fill="#c0c8d0" stroke="#4a6a8a" stroke-width="2"/>
-<path d="M86 70 L58 102 H44 L60 70 Z" fill="#2e6fd1" stroke="#1b4586" stroke-width="3" stroke-linejoin="round"/>
-</g>`),
+  plane: svg('Plane', plane),
 
   // 件
   shirt: svg('Shirt (a T-shirt)', `<path d="M44 16 C50 24 78 24 84 16 L112 30 L102 52 L90 46 V112 H38 V46 L26 52 L16 30 Z" fill="#2fa36b" stroke="#1d6b45" stroke-width="3" stroke-linejoin="round"/>

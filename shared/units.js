@@ -18,6 +18,15 @@
  *                         id "a-b-c", words [ids] (for Tiles.round), hanzi
  *                         and jyutping joined, a ？ if english ends in "?",
  *                         img: false, plus extra
+ *   Units.phonemes(vocab, ids)
+ *                         for words the voice misreads (tools/tts.mjs):
+ *                         the entries with those ids get phoneme: true
+ *                         (read from their jyutping), and every entry
+ *                         made of `words` that uses them gets phoneme:
+ *                         [the ids it uses], so only those words are read
+ *                         that way and the rest of the phrase naturally.
+ *                         A phrase inside a longer one (巴士站 in 巴士站喺
+ *                         邊度呀？) counts as misread too: list it first
  *   window.UNITS          { n: vocab } for every loaded unit
  */
 (function (root) {
@@ -52,5 +61,16 @@
     };
   }
 
-  root.Units = { add, word, sentences };
+  function phonemes(vocab, ids) {
+    const misread = new Set(ids);
+    for (const e of Object.values(vocab).filter(Array.isArray).flat()) {
+      if (misread.has(e.id)) e.phoneme = true;
+      else if (e.words?.some(id => misread.has(id))) {
+        e.phoneme = e.words.filter(id => misread.has(id));
+        misread.add(e.id);
+      }
+    }
+  }
+
+  root.Units = { add, word, sentences, phonemes };
 })(typeof window !== 'undefined' ? window : globalThis);

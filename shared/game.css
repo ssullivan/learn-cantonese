@@ -14,8 +14,10 @@
  * collects tapped .pic-btn money; .right / .wrong) and .till-total,
  * .pic-grid.cols-4, .pic-grid.pics (square picture answers on
  * .choice buttons, from Game.choose: clocks, family trees), .stepper (◀ label ▶ row),
- * .prompt-pic.right / .wrong, and .ticket (an order pad: .ticket-row >
- * .ticket-label + .ticket-opts of small .pic-btn / .choice buttons).
+ * .prompt-pic.right / .wrong, .ticket (an order pad: .ticket-row >
+ * .ticket-label + .ticket-opts of small .pic-btn / .choice buttons), and
+ * .map (a 5 × 5 street map: .road, .block, .road.you, and .pic-btn.spot
+ * places).
  */
 
 .btn.small { padding: 6px 12px; font-size: 14px; }
@@ -211,6 +213,24 @@
 .ticket-opts .pic-btn { width: 72px; padding: 4px; }
 .ticket-opts .choice { padding: 6px 14px; font-size: 17px; }
 .ticket-opts .choice .hanzi { font-size: 20px; }
+
+/* Street map: roads, blocks, places to tap, and where you are */
+.map {
+  display: grid;
+  grid-template: repeat(5, minmax(0, 1fr)) / repeat(5, minmax(0, 1fr));
+  max-width: 400px;
+  aspect-ratio: 1;
+  margin: 0 0 16px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--jade) 12%, var(--surface));
+}
+.map .road { background: #8a9aa5; }
+.map .block { margin: 5px; border-radius: 8px; background: color-mix(in srgb, var(--ink-soft) 16%, transparent); }
+.map .spot { margin: 3px; padding: 3px; aspect-ratio: auto; min-height: 0; }
+.map .spot img { object-fit: contain; }
+.map .you { display: grid; place-items: center; align-content: center; color: #ffffff; font-size: 22px; font-weight: 800; line-height: 1; }
+.map .you span { font-size: 14px; }
 
 /* End screen */
 .game-end { text-align: center; padding: 16px 0; }

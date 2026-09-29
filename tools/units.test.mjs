@@ -47,6 +47,14 @@ ok('sentence joins its words', q.id === 'cat-aa' && q.hanzi === '貓呀？' && q
 ok('sentence without ? has no ？', say('cat', 'A cat.').hanzi === '貓');
 ok('sentence with an unknown word throws', throws(() => say('cat dog', 'x')));
 
+const pv = { words: [{ id: 'cat' }, { id: 'aa' }], phrases: [{ id: 'cat-aa', words: ['cat', 'aa'] }, { id: 'aa-aa', words: ['aa', 'aa'] }],
+  longer: [{ id: 'cat-aa-aa', words: ['cat-aa', 'aa'] }] };
+Units.phonemes(pv, ['cat']);
+ok('phonemes marks the misread word', pv.words[0].phoneme === true && !('phoneme' in pv.words[1]));
+ok('phonemes marks only the misread words of a phrase', JSON.stringify(pv.phrases[0].phoneme) === '["cat"]', JSON.stringify(pv.phrases[0].phoneme));
+ok('phonemes leaves phrases without them alone', !('phoneme' in pv.phrases[1]));
+ok('phonemes reaches a phrase inside a longer one', JSON.stringify(pv.longer[0].phoneme) === '["cat-aa"]', JSON.stringify(pv.longer[0].phoneme));
+
 const v6 = loadVocab('unit6');
 const apple = v6.things.find(t => t.id === 'apple');
 ok('unit 6 borrows unit 5 things with a price', apple?.unit === 5 && apple.price > 0 && apple.measure === 'go', JSON.stringify(apple));
