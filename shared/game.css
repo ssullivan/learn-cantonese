@@ -20,8 +20,9 @@
  * places), .dress (a .figure with img.layer clothes placed on it by
  * the game, beside a .rack of clothes to pick), .choice-grid.forecast
  * (a row of days, each a .choice with the day, a weather picture and a
- * .temp), and .chart (a patient's chart: .chart-item pictures, each with
- * a .mark.yes ✓ or .mark.no ✗), .planner (a day planner: .plan-item
+ * .temp), and .chart (a patient's chart, a survey sheet: .chart-item
+ * pictures, each with a .mark.yes ✓ or .mark.no ✗, from Game.chart; a
+ * .mark can sit on a .pic-grid.pics answer too), .planner (a day planner: .plan-item
  * cards, each a clock over a picture) with .now (the time now), and
  * .pic-grid.order (pictures tapped in order, numbered by .order-num).
  */
@@ -253,13 +254,14 @@
 .forecast .temp { font-size: 24px; font-weight: 800; font-variant-numeric: tabular-nums; }
 @media (max-width: 560px) { .choice-grid.forecast { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
-/* A patient's chart: pictures ticked or crossed */
+/* A chart (a patient's, a survey sheet): pictures ticked or crossed */
 .chart { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 16px; padding: 12px; border: 2px dashed var(--line); border-radius: var(--radius); max-width: 400px; }
 .chart-item { position: relative; width: 104px; }
 .chart-item img { display: block; width: 100%; aspect-ratio: 1; }
-.chart .mark { position: absolute; top: 0; right: 0; display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; color: var(--surface); font-size: 20px; font-weight: 800; }
-.chart .mark.yes { background: var(--good); }
-.chart .mark.no { background: var(--bad); }
+.pic-grid.pics .choice { position: relative; }
+:is(.chart, .pic-grid.pics) .mark { position: absolute; top: 0; right: 0; display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; color: var(--surface); font-size: 20px; font-weight: 800; }
+.mark.yes { background: var(--good); }
+.mark.no { background: var(--bad); }
 @media (max-width: 560px) { .chart-item { width: calc((100% - 24px) / 3); } }
 
 /* End screen */

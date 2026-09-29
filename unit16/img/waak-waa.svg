@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A painting on an easel, a brush and a palette</title>
+<path d="M42 124 L56 70 M86 124 L72 70 M64 76 V114" stroke="#9c6528" stroke-width="5" stroke-linecap="round"/>
+<rect x="28" y="10" width="72" height="60" fill="#ffffff" stroke="#9c6528" stroke-width="3"/>
+<rect x="33" y="15" width="62" height="50" fill="#7fb2e0"/>
+<path d="M33 65 L50.36 36 L62.76 52.5 L73.92 40 L95 65 Z" fill="#3a9a6e"/>
+<circle cx="83.84" cy="29" r="6.5" fill="#f7d35c"/>
+<path d="M30 76 H98" stroke="#7d4f1e" stroke-width="5" stroke-linecap="round"/>
+<path d="M98 94 C92 86 106 80 116 84 C126 88 128 104 118 112 C110 118 94 114 96 106 C104 104 104 98 98 94 Z" fill="#f2cf86" stroke="#b9802c" stroke-width="2"/>
+<circle cx="108" cy="92" r="3.5" fill="#d6453a"/><circle cx="118" cy="96" r="3.5" fill="#3f7cc0"/><circle cx="116" cy="106" r="3.5" fill="#3a9a6e"/><circle cx="106" cy="108" r="3" fill="#f7d35c"/>
+<path d="M8 120 L24 92" stroke="#9c6528" stroke-width="4" stroke-linecap="round"/>
+<path d="M22 95 L26 88" stroke="#9aa3aa" stroke-width="5"/><path d="M25 89 L30 80 L28 88 Z" fill="#d6453a" stroke="#8f2a22" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>

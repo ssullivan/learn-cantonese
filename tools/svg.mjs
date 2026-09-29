@@ -45,6 +45,11 @@
  *   drop(x, y, s = 1)  a drop of water, its tip at x, y, 10·s tall
  *   puff(x, y, r)      a white puff: a cough, a bubble, foam
  *   house              a house with a red roof, the door at 54–76, 80–116
+ *   shadow(cx, cy, rx) a soft shadow on the ground
+ *   walker(x, y, { flip, bag })
+ *                      a small person walking right (left when flip), feet
+ *                      at x, y, head at y − 50; bag: 'work' (a briefcase),
+ *                      'school' (a backpack) or none
  * Transport (unit 1's car, unit 5's plane, unit 11's taxi and airport):
  *   car                a red car side on, wheels on y 92, roof at y 38
  *   plane              a plane climbing to the right, across the middle
@@ -239,3 +244,21 @@ export const house = `<ellipse cx="64" cy="118" rx="46" ry="5" fill="#9fb0bb" op
 <circle cx="71" cy="99" r="2" fill="#e0a526"/>
 <rect x="34" y="70" width="14" height="14" fill="#fff6d8" stroke="#7d4f1e" stroke-width="2"/>
 <rect x="84" y="70" width="12" height="14" fill="#fff6d8" stroke="#7d4f1e" stroke-width="2"/>`;
+
+// A soft shadow on the ground, centred on cx, cy.
+export const shadow = (cx, cy, rx) => `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="4" fill="#9fb0bb" opacity=".35"/>`;
+
+// A small person walking right (left when flip), feet at x, y, with a
+// briefcase (bag: 'work') or a backpack ('school').
+export function walker(x, y, { flip = false, bag } = {}) {
+  const pack = bag === 'school' ? '<rect x="-16" y="-39" width="10" height="18" rx="3" fill="#d6453a" stroke="#8f2a22" stroke-width="1.5"/>' : '';
+  const brief = bag === 'work' ? '<path d="M9 -23 V-26 H15 V-23" stroke="#5a3a1e" stroke-width="1.5" fill="none"/><rect x="6" y="-23" width="12" height="9" rx="1.5" fill="#7d4f1e" stroke="#5a3a1e" stroke-width="1.5"/>' : '';
+  return `${shadow(x, y, 13)}
+<g transform="translate(${x} ${y})${flip ? ' scale(-1 1)' : ''}">
+<path d="M-2 -20 L-9 -2 M2 -20 L8 -2" stroke="#4a5560" stroke-width="6" stroke-linecap="round"/>
+${pack}<path d="M-4 -38 L-10 -24 M4 -38 L11 -25" stroke="#f2c9a0" stroke-width="4" stroke-linecap="round"/>
+<path d="M-8 -40 Q0 -44 8 -40 L7 -18 H-7 Z" fill="#3f7cc0" stroke="#24507f" stroke-width="1.5" stroke-linejoin="round"/>
+${brief}<circle cx="0" cy="-50" r="8" fill="#f2c9a0" stroke="#b07a52" stroke-width="1.5"/>
+<path d="M-8 -51 C-8 -59 -3 -60 0 -60 C5 -60 9 -58 8 -51 C5 -55 -4 -56 -8 -51 Z" fill="${HAIR_COLOUR}"/>
+</g>`;
+}

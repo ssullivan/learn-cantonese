@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>At the cinema, facing the screen</title>
+<rect x="16" y="10" width="96" height="60" fill="#3a4148" stroke="#1d2226" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="20" y="14" width="88" height="52" fill="#7fb2e0"/>
+<path d="M20 66 L44.64 35.84 L62.239999999999995 53 L78.08000000000001 40 L108 66 Z" fill="#3a9a6e"/>
+<circle cx="92.16" cy="28.560000000000002" r="6.76" fill="#f7d35c"/>
+<path d="M4 6 V76 Q18 70 20 76 V6 Z" fill="#b8322a" stroke="#8f2a22" stroke-width="2" stroke-linejoin="round"/><path d="M124 6 V76 Q110 70 108 76 V6 Z" fill="#b8322a" stroke="#8f2a22" stroke-width="2" stroke-linejoin="round"/>
+<path d="M2 6 H126" stroke="#8f2a22" stroke-width="5" stroke-linecap="round"/>
+<path d="M4 128 V104 Q4 96 12 96 H36 Q44 96 44 104 V128 Z" fill="#d6453a" stroke="#8f2a22" stroke-width="2" stroke-linejoin="round"/><path d="M44 128 V104 Q44 96 52 96 H76 Q84 96 84 104 V128 Z" fill="#d6453a" stroke="#8f2a22" stroke-width="2" stroke-linejoin="round"/><path d="M84 128 V104 Q84 96 92 96 H116 Q124 96 124 104 V128 Z" fill="#d6453a" stroke="#8f2a22" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="24" cy="90" r="12" fill="#3b2f2a" stroke="#7a6558" stroke-width="1.5"/><circle cx="64" cy="88" r="12" fill="#3b2f2a" stroke="#7a6558" stroke-width="1.5"/>
+<path d="M94 84 L98 110 H114 L118 84 Z" fill="#ffffff" stroke="#8f2a22" stroke-width="2" stroke-linejoin="round"/>
+<path d="M99 84 L101 110 M106 84 V110 M113 84 L111 110" stroke="#d6453a" stroke-width="3"/>
+<circle cx="98" cy="82" r="4.5" fill="#fbe7b8" stroke="#c9a25a" stroke-width="1.2"/><circle cx="106" cy="79" r="5" fill="#fbe7b8" stroke="#c9a25a" stroke-width="1.2"/><circle cx="114" cy="82" r="4.5" fill="#fbe7b8" stroke="#c9a25a" stroke-width="1.2"/>
+</svg>

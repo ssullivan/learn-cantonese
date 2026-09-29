@@ -5,12 +5,11 @@
  * says when (morning, midday, evening, night). Run `node tools/draw.mjs`
  * after editing to rewrite img/<id>.svg.
  */
-import { svg, plate, bowl, cup, face, inBed, zzz, drop, puff, house } from '../tools/svg.mjs';
+import { svg, plate, bowl, cup, face, inBed, zzz, drop, puff, house, walker, shadow } from '../tools/svg.mjs';
 
 const SKIN = 'fill="#f2c9a0" stroke="#b07a52" stroke-width="1.5"';
 const HAIR = '#3b2f2a';
 const GOLD = 'fill="#e0a526" stroke="#9a6c0e" stroke-width="1.5" stroke-linejoin="round"';
-const shadow = (cx, cy, rx) => `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="4" fill="#9fb0bb" opacity=".35"/>`;
 
 // When: a sun or moon in the top-left corner.
 const rays = (cx, cy, r1, r2, degs) => `<path d="${degs.map(deg => {
@@ -27,21 +26,6 @@ ${rays(20, 20, 13, 17, [0, 45, 90, 135, 180, 225, 270, 315])}`,
   night: `<path d="M22 6 A14 14 0 1 0 34 26 A11 11 0 1 1 22 6 Z" fill="#f2e3a0" stroke="#b9a24a" stroke-width="1.5" stroke-linejoin="round"/>
 <path d="M36 8 l1.5 3.5 l3.5 1.5 l-3.5 1.5 l-1.5 3.5 l-1.5 -3.5 l-3.5 -1.5 l3.5 -1.5 Z" fill="#f2e3a0"/>`,
 };
-
-// A small person walking right (left when flip), feet at x, y, with a
-// briefcase (bag: 'work') or a backpack ('school').
-function walker(x, y, { flip = false, bag } = {}) {
-  const pack = bag === 'school' ? '<rect x="-16" y="-39" width="10" height="18" rx="3" fill="#d6453a" stroke="#8f2a22" stroke-width="1.5"/>' : '';
-  const brief = bag === 'work' ? '<path d="M9 -23 V-26 H15 V-23" stroke="#5a3a1e" stroke-width="1.5" fill="none"/><rect x="6" y="-23" width="12" height="9" rx="1.5" fill="#7d4f1e" stroke="#5a3a1e" stroke-width="1.5"/>' : '';
-  return `${shadow(x, y, 13)}
-<g transform="translate(${x} ${y})${flip ? ' scale(-1 1)' : ''}">
-<path d="M-2 -20 L-9 -2 M2 -20 L8 -2" stroke="#4a5560" stroke-width="6" stroke-linecap="round"/>
-${pack}<path d="M-4 -38 L-10 -24 M4 -38 L11 -25" stroke="#f2c9a0" stroke-width="4" stroke-linecap="round"/>
-<path d="M-8 -40 Q0 -44 8 -40 L7 -18 H-7 Z" fill="#3f7cc0" stroke="#24507f" stroke-width="1.5" stroke-linejoin="round"/>
-${brief}<circle cx="0" cy="-50" r="8" ${SKIN}/>
-<path d="M-8 -51 C-8 -59 -3 -60 0 -60 C5 -60 9 -58 8 -51 C5 -55 -4 -56 -8 -51 Z" fill="${HAIR}"/>
-</g>`;
-}
 
 // A gold arrow along y from x1 to x2.
 const go = (x1, x2, y) => {

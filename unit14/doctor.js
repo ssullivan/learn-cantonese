@@ -1,8 +1,8 @@
 /* Unit 14 game: Doctor's Visit. Hear body parts, aches and symptoms, say whose with a measure word (shared/measures.js), answer the doctor's 有冇 and 咗未 questions from a patient's chart, follow a prescription, and build sentences (shared/tiles.js). Runs on shared/game.js. */
 (function () {
   const V = window.VOCAB;
-  const { el: $, esc, zh, pick, shuffle, imgSrc, speech } = Canto;
-  const { choose, answerText } = Game;
+  const { esc, zh, pick, shuffle, imgSrc, speech } = Canto;
+  const { choose, answerText, chart } = Game;
   const byId = Object.fromEntries(Canto.entries(V).map(e => [e.id, e]));
   const said = e => zh(e.hanzi, e.jyutping);
   const pic = e => `<img src="${imgSrc(e)}" alt="${esc(e.english)}">`;
@@ -28,20 +28,14 @@
     const shown = pick(V.asks.filter(q => q.answers[1] === kind), 3);
     const yes = new Map(shown.map(q => [q, Math.random() < 0.5]));
     const [q] = pick(shown, 1);
-    const chart = $('div', 'chart');
-    chart.setAttribute('aria-label', 'The patient\'s chart');
-    for (const s of shown) {
-      const item = $('div', 'chart-item', `${pic(picOf(s))}<span class="mark ${yes.get(s) ? 'yes' : 'no'}">${yes.get(s) ? '✓' : '✗'}</span>`);
-      item.querySelector('img').alt += yes.get(s) ? ': yes' : ': no';
-      chart.append(item);
-    }
     const [y, n] = q.answers.map(id => byId[id]);
     const right = yes.get(q) ? y : n;
     const grid = choose(ctx, right, [y, n], said);
     grid.addEventListener('click', ev => { if (ev.target.closest('button')) ctx.play(right); });
     ctx.answer = `${said(q)} ${esc(q.english)} The chart says ${said(right)}.${q.note ? ' ' + esc(q.note) : ''}`;
     const say = () => ctx.play(q);
-    stage.replaceChildren(speech('醫', '醫生問… Answer for the patient, from the chart.', say), chart, grid);
+    stage.replaceChildren(speech('醫', '醫生問… Answer for the patient, from the chart.', say),
+      chart(shown.map(s => [picOf(s), yes.get(s)]), 'The patient\'s chart'), grid);
     return say();
   };
 

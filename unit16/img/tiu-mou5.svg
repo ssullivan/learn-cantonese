@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Dancing</title>
+<ellipse cx="56" cy="120" rx="18" ry="4" fill="#9fb0bb" opacity=".35"/>
+<path d="M54 40 L40 26 L32 8 M74 40 L90 30 L104 16" stroke="#f2c9a0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<circle cx="32" cy="8" r="4.5" fill="#f2c9a0" stroke="#b07a52" stroke-width="1.5"/><circle cx="104" cy="16" r="4.5" fill="#f2c9a0" stroke="#b07a52" stroke-width="1.5"/>
+<path d="M59 68 L54 92 L50 114 M69 68 L84 84 L104 88" stroke="#5f6a72" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<ellipse cx="46" cy="117" rx="8" ry="4" fill="#3b2f2a"/><ellipse cx="110" cy="88" rx="4" ry="7" fill="#3b2f2a"/>
+<path d="M52 34 H76 L78 70 H50 Z" fill="#d6453a" stroke="#8f2a22" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="60" y="30" width="8" height="5" fill="#f2c9a0" stroke="#b07a52" stroke-width="1.5"/>
+<circle cx="64" cy="20" r="11" fill="#f2c9a0" stroke="#b07a52" stroke-width="1.5"/>
+<path d="M53 18 C52 8 59 7 64 7 C70 7 76 9 75 18 C72 12 58 11 53 18 Z" fill="#3b2f2a"/>
+<path d="M59 19 q2 -2 4 0 M65 19 q2 -2 4 0" stroke="#3b2f2a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+<path d="M59 24 Q64 29 69 24" stroke="#8f2a22" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+<ellipse cx="18" cy="66" rx="5" ry="4" transform="rotate(-20 18 66)" fill="#e0a526"/>
+<path d="M22.5 65 V48 q6 3 8 9" stroke="#e0a526" stroke-width="2.5" fill="none" stroke-linecap="round"/><ellipse cx="106" cy="58" rx="5" ry="4" transform="rotate(-20 106 58)" fill="#3f7cc0"/>
+<path d="M110.5 57 V40 q6 3 8 9" stroke="#3f7cc0" stroke-width="2.5" fill="none" stroke-linecap="round"/><ellipse cx="96" cy="118" rx="5" ry="4" transform="rotate(-20 96 118)" fill="#3a9a6e"/>
+<path d="M100.5 117 V100 q6 3 8 9" stroke="#3a9a6e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>

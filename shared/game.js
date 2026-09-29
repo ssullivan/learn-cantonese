@@ -28,6 +28,12 @@
  *                round (right if it is `answer`); sets ctx.reveal
  *   Game.answerText(entry)   HTML for ctx.answer: "三點半 saam1… is 3:30."
  *                plus the entry's note
+ *   Game.chart([[entry, yes], ...], label)
+ *                a chart (.chart, game.css) of the entries' pictures, each
+ *                ticked (yes) or crossed: a patient's chart, a survey
+ *                sheet. label names it for screen readers
+ *   Game.mark(yes)           HTML for a ✓ or ✗ badge (.mark), to put on a
+ *                .chart-item or a .pic-grid.pics answer
  *
  * Scoring: a right answer is worth 100, plus up to 50 for speed on timed
  * levels, plus 10 per answer in the current streak (max +50).
@@ -219,5 +225,15 @@
 
   const answerText = e => `${Canto.zh(e.hanzi, e.jyutping)} is ${Canto.esc(e.english)}.${e.note ? ' ' + Canto.esc(e.note) : ''}`;
 
-  window.Game = { init, choose, answerText };
+  const mark = yes => `<span class="mark ${yes ? 'yes' : 'no'}">${yes ? '✓' : '✗'}</span>`;
+  function chart(items, label) {
+    const box = $('div', 'chart');
+    box.setAttribute('aria-label', label);
+    for (const [e, yes] of items) {
+      box.append($('div', 'chart-item', `<img src="${Canto.imgSrc(e)}" alt="${Canto.esc(e.english)}: ${yes ? 'yes' : 'no'}">${mark(yes)}`));
+    }
+    return box;
+  }
+
+  window.Game = { init, choose, answerText, chart, mark };
 })();

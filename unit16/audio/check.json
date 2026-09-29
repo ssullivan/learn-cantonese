@@ -1,0 +1,502 @@
+{
+ "caai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 差 caa"
+  ],
+  "audio": "5115229178fd"
+ },
+ "caai-daan-ce": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 踩 tone 2 sounds like 4 (p 0.01)"
+  ],
+  "audio": "4bd2500ce5e4"
+ },
+ "coeng-kei": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 唱K coeng k"
+  ],
+  "audio": "905356de92a0"
+ },
+ "hou-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.04)"
+  ],
+  "audio": "741b7c59f230"
+ },
+ "kei": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard K k"
+  ],
+  "audio": "f9d1d932877c"
+ },
+ "keoi-m-sik-tiu-mou5": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 佢 tone 5 sounds like 3 (p 0.24)"
+  ],
+  "audio": "c809eb6b9729"
+ },
+ "keoi-zung-ji-daa-gei1": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 佢 tone 5 sounds like 6 (p 0.30); 意 tone 3 sounds like 6 (p 0.11)"
+  ],
+  "audio": "489d9d0f7978"
+ },
+ "nei-dak-haan-zou6-mat-je-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 嘢 tone 5 sounds like 2 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 你 tone 5 sounds like 2 (p 0.21)"
+  ],
+  "audio": "7d5cc1c0d6be"
+ },
+ "nei-jau-mat-je-hing-ceoi-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 有 tone 5 sounds like 2 (p 0.42); 嘢 tone 5 sounds like 2 (p 0.13); 趣 tone 3 sounds like 3 (p 0.40)"
+  ],
+  "audio": "06f4f99b1bef"
+ },
+ "nei-jau-mou-coeng-gwo-kei-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: aa tone 3 sounds like 1 (p 0.00)",
+   "speech-to-text heard 你有冇唱過K吖 nei jau mou coeng gwo k aa"
+  ],
+  "audio": "3e29d12bbcd2"
+ },
+ "nei-sik-m-sik-caai-daan-ce-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 踩 tone 2 sounds like 4 (p 0.00); 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "ca5de4f612d2"
+ },
+ "nei-sik-m-sik-daa-ball-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "cd9e0ff442e5"
+ },
+ "nei-sik-m-sik-jau4-water-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 你 tone 5 sounds like 2 (p 0.21)"
+  ],
+  "audio": "9901d1d63cd6"
+ },
+ "nei-sik-m-sik-tek-ball-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 你 tone 5 sounds like 2 (p 0.44)"
+  ],
+  "audio": "a8c013379950"
+ },
+ "nei-sik-m-sik-tiu-mou5-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 舞 tone 5 sounds like 2 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "8d9111b91f28"
+ },
+ "nei-sik-m-sik-waak-waa-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "74cbab029183"
+ },
+ "nei-soeng-m-soeng-heoi-caai-daan-ce-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 踩 tone 2 sounds like 4 (p 0.02); 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "cf836926b591"
+ },
+ "nei-soeng-m-soeng-heoi-daa-ball-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "d49da63e21d5"
+ },
+ "nei-soeng-m-soeng-heoi-jau4-water-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "edebff44ce5d"
+ },
+ "nei-soeng-m-soeng-heoi-tek-ball-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "44cb87835021"
+ },
+ "nei-soeng-m-soeng-heoi-tiu-mou5-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 舞 tone 5 sounds like 3 (p 0.02); 呀 tone 3 sounds like 2 (p 0.00)"
+  ],
+  "audio": "059234f33df5"
+ },
+ "nei-soeng-m-soeng-waak-waa-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "6fc9cca42b8c"
+ },
+ "nei-soeng-zou6-mat-je-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 嘢 tone 5 sounds like 2 (p 0.00); 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "866c135e8994"
+ },
+ "nei-ting-jat-wui-m-wui-heoi-tek-ball-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 6 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 2 (p 0.19)"
+  ],
+  "audio": "3def86b9d1eb"
+ },
+ "nei-zung-m-zung-ji-caai-daan-ce-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 你 tone 5 sounds like 2 (p 0.26); 踩 tone 2 sounds like 6 (p 0.05)"
+  ],
+  "audio": "6084cf0b0b5c"
+ },
+ "nei-zung-m-zung-ji-coeng-kei-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: aa tone 3 sounds like 1 (p 0.00)",
+   "speech-to-text heard 你鍾唔鍾意唱K呀 nei zung m zung ji coeng k aa",
+   "tone doubtful: nei tone 5 sounds like 2 (p 0.46)"
+  ],
+  "audio": "b97e31da5f5d"
+ },
+ "nei-zung-m-zung-ji-daa-ball-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 你 tone 5 sounds like 2 (p 0.26); 意 tone 3 sounds like 6 (p 0.05)"
+  ],
+  "audio": "eb1ffb33978d"
+ },
+ "nei-zung-m-zung-ji-daa-gei1-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 你 tone 5 sounds like 2 (p 0.41); 意 tone 3 sounds like 6 (p 0.13)"
+  ],
+  "audio": "cffc9a4eb4e6"
+ },
+ "nei-zung-m-zung-ji-haang-gaai-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 你 tone 5 sounds like 2 (p 0.20); 意 tone 3 sounds like 2 (p 0.14)"
+  ],
+  "audio": "b75e0cd60f4d"
+ },
+ "nei-zung-m-zung-ji-haang-saan-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 意 tone 3 sounds like 5 (p 0.34)"
+  ],
+  "audio": "5d868ee9a1d6"
+ },
+ "nei-zung-m-zung-ji-jau4-water-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "34dbe0bd08d2"
+ },
+ "nei-zung-m-zung-ji-jing-soeng2-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 你 tone 5 sounds like 2 (p 0.16)"
+  ],
+  "audio": "ef950a51b4ae"
+ },
+ "nei-zung-m-zung-ji-tai-book-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 你 tone 5 sounds like 2 (p 0.36)"
+  ],
+  "audio": "4aa4e3fc8748"
+ },
+ "nei-zung-m-zung-ji-tai-din-si-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 2 (p 0.00)",
+   "tone doubtful: 你 tone 5 sounds like 2 (p 0.14); 電 tone 6 sounds like 3 (p 0.24); 視 tone 6 sounds like 3 (p 0.14)"
+  ],
+  "audio": "62deba0cf065"
+ },
+ "nei-zung-m-zung-ji-tai-hei3-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 你 tone 5 sounds like 2 (p 0.12); 戲 tone 3 sounds like 1 (p 0.18)"
+  ],
+  "audio": "9439da2e27eb"
+ },
+ "nei-zung-m-zung-ji-tek-ball-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 你 tone 5 sounds like 2 (p 0.39)"
+  ],
+  "audio": "34852eea5bf8"
+ },
+ "nei-zung-m-zung-ji-teng-go1-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 你 tone 5 sounds like 2 (p 0.41)"
+  ],
+  "audio": "82bbe2a23e63"
+ },
+ "nei-zung-m-zung-ji-tiu-mou5-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 意 tone 3 sounds like 6 (p 0.02); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 你 tone 5 sounds like 2 (p 0.19); 舞 tone 5 sounds like 6 (p 0.17)"
+  ],
+  "audio": "f0bcc264a426"
+ },
+ "nei-zung-m-zung-ji-waak-waa-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 你 tone 5 sounds like 2 (p 0.45)"
+  ],
+  "audio": "deb9178c1496"
+ },
+ "ngo-dak-haan-zung-ji-teng-go1": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 意 tone 3 sounds like 6 (p 0.20)"
+  ],
+  "audio": "b1a8e20c0d0e"
+ },
+ "ngo-hou-zung-ji-tai-hei3": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.09)"
+  ],
+  "audio": "553a5a778af4"
+ },
+ "ngo-m-sik-caai-daan-ce": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 踩 tone 2 sounds like 4 (p 0.02)"
+  ],
+  "audio": "aac9bfd424b8"
+ },
+ "ngo-m-zung-ji-caai-daan-ce": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 踩 tone 2 sounds like 4 (p 0.01)"
+  ],
+  "audio": "41bc02ef1d1a"
+ },
+ "ngo-m-zung-ji-coeng-kei": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 我唔鍾意唱K ngo m zung ji coeng k",
+   "tone doubtful: ji tone 3 sounds like 6 (p 0.25)"
+  ],
+  "audio": "315a5f0e88bb"
+ },
+ "ngo-m-zung-ji-daa-ball": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 意 tone 3 sounds like 6 (p 0.07)"
+  ],
+  "audio": "1bc84320c378"
+ },
+ "ngo-m-zung-ji-daa-gei1": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 意 tone 3 sounds like 6 (p 0.05)"
+  ],
+  "audio": "1d2ecd95e794"
+ },
+ "ngo-m-zung-ji-tai-din-si": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 睇 tone 2 sounds like 5 (p 0.35)"
+  ],
+  "audio": "04e669ef0be9"
+ },
+ "ngo-m-zung-ji-tai-hei3": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 意 tone 3 sounds like 6 (p 0.19)"
+  ],
+  "audio": "00f620212fcc"
+ },
+ "ngo-m-zung-ji-tek-ball": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 意 tone 3 sounds like 6 (p 0.33)"
+  ],
+  "audio": "111f4d890fcc"
+ },
+ "ngo-m-zung-ji-tiu-mou5": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 意 tone 3 sounds like 6 (p 0.31)"
+  ],
+  "audio": "04529b630f2f"
+ },
+ "ngo-mei-haang-gwo-saan": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 未 tone 6 sounds like 5 (p 0.23)"
+  ],
+  "audio": "618d507e8bff"
+ },
+ "ngo-sik-caai-daan-ce": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 踩 tone 2 sounds like 4 (p 0.07)"
+  ],
+  "audio": "76c9f1ec59c2"
+ },
+ "ngo-sik-daa-ball": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.47)"
+  ],
+  "audio": "cbd5a1f0e24c"
+ },
+ "ngo-sik-jau4-water": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.17)"
+  ],
+  "audio": "ea4da9328e97"
+ },
+ "ngo-sik-tek-ball": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.07)"
+  ],
+  "audio": "607566406ec3"
+ },
+ "ngo-sik-tiu-mou5": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 我 tone 5 sounds like 2 (p 0.03)"
+  ],
+  "audio": "08c0da4e7ec6"
+ },
+ "ngo-sik-waak-waa": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.22)"
+  ],
+  "audio": "c049f41aa540"
+ },
+ "ngo-wk6-wui-heoi-jau4-water": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.45)"
+  ],
+  "audio": "2d6f36019a7b"
+ },
+ "ngo-wui-jau4-water": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 會 tone 5 sounds like 3 (p 0.27)"
+  ],
+  "audio": "651ef892feeb"
+ },
+ "ngo-zung-ji-caai-daan-ce": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 踩 tone 2 sounds like 6 (p 0.04)"
+  ],
+  "audio": "9e4904372ba0"
+ },
+ "ngo-zung-ji-coeng-kei": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 我鍾意唱K ngo zung ji coeng k"
+  ],
+  "audio": "aa5813fdf3aa"
+ },
+ "ngo-zung-ji-tai-book": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 意 tone 3 sounds like 6 (p 0.33)"
+  ],
+  "audio": "726c5e5da2ef"
+ },
+ "ngo-zung-ji-tai-hei3": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.46)"
+  ],
+  "audio": "d9a073914737"
+ },
+ "ngo-zung-ji-teng-go1": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 意 tone 3 sounds like 6 (p 0.04)"
+  ],
+  "audio": "5383597fda09"
+ },
+ "ngo-zung-ji-tiu-mou5": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 意 tone 3 sounds like 6 (p 0.01)",
+   "tone doubtful: 舞 tone 5 sounds like 2 (p 0.39)"
+  ],
+  "audio": "5048c18eaeaf"
+ },
+ "tiu": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Duw d u w"
+  ],
+  "audio": "a5efa89d3661"
+ },
+ "waak": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 嘩 waa"
+  ],
+  "audio": "828eed464853"
+ },
+ "zau-mut-jat-cai-heoi-coeng-kei-aa": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 周末一齊去唱K啊 zau mut jat cai heoi coeng k aa",
+   "tone doubtful: heoi tone 3 sounds like 6 (p 0.32)"
+  ],
+  "audio": "9bc838ad73b4"
+ }
+}

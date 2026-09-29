@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Hiking up a hill</title>
+<path d="M0 110 L22 76 L40 88 L84 24 L128 84 V110 Z" fill="#8cc97a" stroke="#3a8a4e" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M40 104 Q76 96 62 76 T84 26" stroke="#f4e6c8" stroke-width="3" fill="none" stroke-dasharray="5 4" stroke-linecap="round"/>
+<path d="M84 26 V6" stroke="#6f8796" stroke-width="2"/><path d="M84 7 H98 L94 12 L98 17 H84 Z" fill="#d6453a"/>
+<path d="M106 56 L114 72 H98 Z" fill="#256b4a"/><path d="M106 72 V76" stroke="#7d4f1e" stroke-width="2.5"/><path d="M116 68 L124 84 H108 Z" fill="#256b4a"/><path d="M116 84 V88" stroke="#7d4f1e" stroke-width="2.5"/><path d="M22 76 L30 92 H14 Z" fill="#256b4a"/><path d="M22 92 V96" stroke="#7d4f1e" stroke-width="2.5"/>
+<ellipse cx="30" cy="118" rx="13" ry="4" fill="#9fb0bb" opacity=".35"/>
+<g transform="translate(30 118)">
+<path d="M-2 -20 L-9 -2 M2 -20 L8 -2" stroke="#4a5560" stroke-width="6" stroke-linecap="round"/>
+<rect x="-16" y="-39" width="10" height="18" rx="3" fill="#d6453a" stroke="#8f2a22" stroke-width="1.5"/><path d="M-4 -38 L-10 -24 M4 -38 L11 -25" stroke="#f2c9a0" stroke-width="4" stroke-linecap="round"/>
+<path d="M-8 -40 Q0 -44 8 -40 L7 -18 H-7 Z" fill="#3f7cc0" stroke="#24507f" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="0" cy="-50" r="8" fill="#f2c9a0" stroke="#b07a52" stroke-width="1.5"/>
+<path d="M-8 -51 C-8 -59 -3 -60 0 -60 C5 -60 9 -58 8 -51 C5 -55 -4 -56 -8 -51 Z" fill="#3b2f2a"/>
+</g>
+</svg>

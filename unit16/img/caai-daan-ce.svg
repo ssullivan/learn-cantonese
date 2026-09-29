@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A bicycle</title>
+<ellipse cx="64" cy="113" rx="50" ry="4" fill="#9fb0bb" opacity=".35"/>
+<circle cx="32" cy="88" r="22" fill="none" stroke="#3a4148" stroke-width="5"/><circle cx="32" cy="88" r="19" fill="none" stroke="#c0c8d0" stroke-width="1.5"/>
+<path d="M12 88 H52 M32 68 V108 M18 74 L46 102 M46 74 L18 102" stroke="#9aa3aa" stroke-width="1.2"/>
+<circle cx="32" cy="88" r="3" fill="#5f6a72"/><circle cx="96" cy="88" r="22" fill="none" stroke="#3a4148" stroke-width="5"/><circle cx="96" cy="88" r="19" fill="none" stroke="#c0c8d0" stroke-width="1.5"/>
+<path d="M76 88 H116 M96 68 V108 M82 74 L110 102 M110 74 L82 102" stroke="#9aa3aa" stroke-width="1.2"/>
+<circle cx="96" cy="88" r="3" fill="#5f6a72"/>
+<path d="M32 88 H58 L50 56 Z M50 56 H84 L58 88 M84 50 L96 88" stroke="#d6453a" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+<path d="M50 56 L48 48" stroke="#26323c" stroke-width="3.5"/><path d="M40 46 H56" stroke="#26323c" stroke-width="6" stroke-linecap="round"/>
+<path d="M84 50 L82 42 H94" stroke="#26323c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<circle cx="58" cy="88" r="6" fill="#9aa3aa" stroke="#5f6a72" stroke-width="1.5"/><path d="M58 88 L66 98" stroke="#5f6a72" stroke-width="3"/><path d="M62 99 H71" stroke="#26323c" stroke-width="4" stroke-linecap="round"/>
+<path d="M4 70 H14 M2 82 H10 M6 94 H14" stroke="#9fb0bb" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A camera taking a photo</title>
+<path d="M40 40 L46 28 H78 L84 40 Z" fill="#3a4148" stroke="#1d2226" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="92" y="32" width="16" height="8" rx="2" fill="#d6453a" stroke="#8f2a22" stroke-width="1.5"/>
+<rect x="10" y="40" width="108" height="70" rx="10" fill="#3a4148" stroke="#1d2226" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="20" y="48" width="16" height="10" rx="2" fill="#f7e27a" stroke="#9a6c0e" stroke-width="1.5"/>
+<circle cx="64" cy="76" r="26" fill="#c0c8d0" stroke="#1d2226" stroke-width="2.5"/>
+<circle cx="64" cy="76" r="18" fill="#26323c"/><circle cx="64" cy="76" r="10" fill="#3f7cc0"/>
+<circle cx="59" cy="71" r="4" fill="#ffffff" opacity=".8"/>
+<path d="M28 34 L22 22 M18 38 L6 32 M34 30 L34 16" stroke="#e0a526" stroke-width="3" stroke-linecap="round"/>
+</svg>

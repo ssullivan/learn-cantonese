@@ -1,6 +1,6 @@
 # Audio review
 
-Every clip on the site (1577), unit by unit. **Listen on the [review page](https://ssullivan.github.io/learn-cantonese/review/)**, where you can mark each clip and copy your notes; the links below play one clip each.
+Every clip on the site (1705), unit by unit. **Listen on the [review page](https://ssullivan.github.io/learn-cantonese/review/)**, where you can mark each clip and copy your notes; the links below play one clip each.
 
 Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this file by hand.
 
@@ -1655,3 +1655,136 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 | 203 | 我未去過香港 | ngo5 mei6 heoi3 gwo3 hoeng1 gong2 | I haven't been to Hong Kong yet. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-mei-heoi-gwo-hong-kong.mp3) |
 | 204 | 我食過菠蘿油 | ngo5 sik6 gwo3 bo1 lo4 jau4 | I've had a pineapple bun before. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-sik6-gwo-pineapple-butter.mp3) |
 | 205 | 我未搭過飛機 | ngo5 mei6 daap3 gwo3 fei1 gei1 | I haven't been on a plane yet. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-mei-daap-gwo-plane.mp3) |
+
+## Unit 16
+
+| # | Chinese | Jyutping | English | Audio |
+|---|---|---|---|---|
+| 1 | 唱 | coeng3 | to sing | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/coeng.mp3) |
+| 2 | 聽 | teng1 | to listen (to) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/teng.mp3) |
+| 3 | 游 | jau4 | to swim | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/jau4.mp3) |
+| 4 | 行 | haang4 | to walk | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/haang.mp3) |
+| 5 | 踢 | tek3 | to kick | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/tek.mp3) |
+| 6 | 跳 | tiu3 | to jump | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/tiu.mp3) |
+| 7 | 影 | jing2 | to take (a photo) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/jing.mp3) |
+| 8 | 畫 | waak6 | to draw; to paint | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/waak.mp3) |
+| 9 | 踩 | caai2 | to step on; to pedal | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/caai.mp3) |
+| 10 | 戲 | hei3 | a film; a show | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/hei3.mp3) |
+| 11 | 機 | gei1 | a machine; a games console | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/gei1.mp3) |
+| 12 | K | kei1 | karaoke (in 唱K) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/kei.mp3) |
+| 13 | 歌 | go1 | a song | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/go1.mp3) |
+| 14 | 山 | saan1 | a hill; a mountain | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/saan.mp3) |
+| 15 | 街 | gaai1 | a street | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/gaai.mp3) |
+| 16 | 舞 | mou5 | a dance | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/mou5.mp3) |
+| 17 | 相 | soeng2 | a photo | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/soeng2.mp3) |
+| 18 | 畫 | waa2 | a picture; a painting | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/waa.mp3) |
+| 19 | 單車 | daan1 ce1 | a bicycle | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/daan-ce.mp3) |
+| 20 | 鍾意 | zung1 ji3 | to like | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/zung-ji.mp3) |
+| 21 | 鍾 | zung1 | (the first half of 鍾意) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/zung.mp3) |
+| 22 | 想 | soeng2 | to want to; would like to | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/soeng.mp3) |
+| 23 | 興趣 | hing3 ceoi3 | an interest; a hobby | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/hing-ceoi.mp3) |
+| 24 | 得閒 | dak1 haan4 | free (not busy) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/dak-haan.mp3) |
+| 25 | 周末 | zau1 mut6 | the weekend | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/zau-mut.mp3) |
+| 26 | 一齊 | jat1 cai4 | together | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/jat-cai.mp3) |
+| 27 | 睇戲 | tai2 hei3 | to watch a film | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/tai-hei3.mp3) |
+| 28 | 打波 | daa2 bo1 | to play basketball; to play ball | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/daa-ball.mp3) |
+| 29 | 踢波 | tek3 bo1 | to play football | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/tek-ball.mp3) |
+| 30 | 打機 | daa2 gei1 | to play video games | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/daa-gei1.mp3) |
+| 31 | 唱K | coeng3 kei1 | to sing karaoke | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/coeng-kei.mp3) |
+| 32 | 聽歌 | teng1 go1 | to listen to music | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/teng-go1.mp3) |
+| 33 | 游水 | jau4 seoi2 | to swim | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/jau4-water.mp3) |
+| 34 | 行山 | haang4 saan1 | to go hiking | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/haang-saan.mp3) |
+| 35 | 行街 | haang4 gaai1 | to go shopping; to stroll round the shops | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/haang-gaai.mp3) |
+| 36 | 跳舞 | tiu3 mou5 | to dance | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/tiu-mou5.mp3) |
+| 37 | 影相 | jing2 soeng2 | to take photos | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/jing-soeng2.mp3) |
+| 38 | 畫畫 | waak6 waa2 | to draw; to paint | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/waak-waa.mp3) |
+| 39 | 踩單車 | caai2 daan1 ce1 | to ride a bike | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/caai-daan-ce.mp3) |
+| 40 | 我鍾意睇戲 | ngo5 zung1 ji3 tai2 hei3 | I like watching films. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-zung-ji-tai-hei3.mp3) |
+| 41 | 我唔鍾意睇戲 | ngo5 m4 zung1 ji3 tai2 hei3 | I don't like watching films. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-m-zung-ji-tai-hei3.mp3) |
+| 42 | 我鍾意打波 | ngo5 zung1 ji3 daa2 bo1 | I like playing basketball. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-zung-ji-daa-ball.mp3) |
+| 43 | 我唔鍾意打波 | ngo5 m4 zung1 ji3 daa2 bo1 | I don't like playing basketball. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-m-zung-ji-daa-ball.mp3) |
+| 44 | 我鍾意踢波 | ngo5 zung1 ji3 tek3 bo1 | I like playing football. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-zung-ji-tek-ball.mp3) |
+| 45 | 我唔鍾意踢波 | ngo5 m4 zung1 ji3 tek3 bo1 | I don't like playing football. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-m-zung-ji-tek-ball.mp3) |
+| 46 | 我鍾意打機 | ngo5 zung1 ji3 daa2 gei1 | I like playing video games. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-zung-ji-daa-gei1.mp3) |
+| 47 | 我唔鍾意打機 | ngo5 m4 zung1 ji3 daa2 gei1 | I don't like playing video games. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-m-zung-ji-daa-gei1.mp3) |
+| 48 | 我鍾意唱K | ngo5 zung1 ji3 coeng3 kei1 | I like singing karaoke. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-zung-ji-coeng-kei.mp3) |
+| 49 | 我唔鍾意唱K | ngo5 m4 zung1 ji3 coeng3 kei1 | I don't like singing karaoke. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-m-zung-ji-coeng-kei.mp3) |
+| 50 | 我鍾意聽歌 | ngo5 zung1 ji3 teng1 go1 | I like listening to music. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-zung-ji-teng-go1.mp3) |
+| 51 | 我唔鍾意聽歌 | ngo5 m4 zung1 ji3 teng1 go1 | I don't like listening to music. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-m-zung-ji-teng-go1.mp3) |
+| 52 | 我鍾意游水 | ngo5 zung1 ji3 jau4 seoi2 | I like swimming. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-zung-ji-jau4-water.mp3) |
+| 53 | 我唔鍾意游水 | ngo5 m4 zung1 ji3 jau4 seoi2 | I don't like swimming. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-m-zung-ji-jau4-water.mp3) |
+| 54 | 我鍾意行山 | ngo5 zung1 ji3 haang4 saan1 | I like hiking. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-zung-ji-haang-saan.mp3) |
+| 55 | 我唔鍾意行山 | ngo5 m4 zung1 ji3 haang4 saan1 | I don't like hiking. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-m-zung-ji-haang-saan.mp3) |
+| 56 | 我鍾意行街 | ngo5 zung1 ji3 haang4 gaai1 | I like going shopping. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-zung-ji-haang-gaai.mp3) |
+| 57 | 我唔鍾意行街 | ngo5 m4 zung1 ji3 haang4 gaai1 | I don't like going shopping. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-m-zung-ji-haang-gaai.mp3) |
+| 58 | 我鍾意跳舞 | ngo5 zung1 ji3 tiu3 mou5 | I like dancing. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-zung-ji-tiu-mou5.mp3) |
+| 59 | 我唔鍾意跳舞 | ngo5 m4 zung1 ji3 tiu3 mou5 | I don't like dancing. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-m-zung-ji-tiu-mou5.mp3) |
+| 60 | 我鍾意影相 | ngo5 zung1 ji3 jing2 soeng2 | I like taking photos. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-zung-ji-jing-soeng2.mp3) |
+| 61 | 我唔鍾意影相 | ngo5 m4 zung1 ji3 jing2 soeng2 | I don't like taking photos. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-m-zung-ji-jing-soeng2.mp3) |
+| 62 | 我鍾意畫畫 | ngo5 zung1 ji3 waak6 waa2 | I like drawing. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-zung-ji-waak-waa.mp3) |
+| 63 | 我唔鍾意畫畫 | ngo5 m4 zung1 ji3 waak6 waa2 | I don't like drawing. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-m-zung-ji-waak-waa.mp3) |
+| 64 | 我鍾意踩單車 | ngo5 zung1 ji3 caai2 daan1 ce1 | I like cycling. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-zung-ji-caai-daan-ce.mp3) |
+| 65 | 我唔鍾意踩單車 | ngo5 m4 zung1 ji3 caai2 daan1 ce1 | I don't like cycling. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-m-zung-ji-caai-daan-ce.mp3) |
+| 66 | 我鍾意睇書 | ngo5 zung1 ji3 tai2 syu1 | I like reading. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-zung-ji-tai-book.mp3) |
+| 67 | 我唔鍾意睇書 | ngo5 m4 zung1 ji3 tai2 syu1 | I don't like reading. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-m-zung-ji-tai-book.mp3) |
+| 68 | 我鍾意睇電視 | ngo5 zung1 ji3 tai2 din6 si6 | I like watching TV. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-zung-ji-tai-din-si.mp3) |
+| 69 | 我唔鍾意睇電視 | ngo5 m4 zung1 ji3 tai2 din6 si6 | I don't like watching TV. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-m-zung-ji-tai-din-si.mp3) |
+| 70 | 我識打波 | ngo5 sik1 daa2 bo1 | I can play basketball. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-sik-daa-ball.mp3) |
+| 71 | 我唔識打波 | ngo5 m4 sik1 daa2 bo1 | I can't play basketball. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-m-sik-daa-ball.mp3) |
+| 72 | 我識踢波 | ngo5 sik1 tek3 bo1 | I can play football. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-sik-tek-ball.mp3) |
+| 73 | 我唔識踢波 | ngo5 m4 sik1 tek3 bo1 | I can't play football. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-m-sik-tek-ball.mp3) |
+| 74 | 我識游水 | ngo5 sik1 jau4 seoi2 | I can swim. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-sik-jau4-water.mp3) |
+| 75 | 我唔識游水 | ngo5 m4 sik1 jau4 seoi2 | I can't swim. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-m-sik-jau4-water.mp3) |
+| 76 | 我識跳舞 | ngo5 sik1 tiu3 mou5 | I can dance. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-sik-tiu-mou5.mp3) |
+| 77 | 我唔識跳舞 | ngo5 m4 sik1 tiu3 mou5 | I can't dance. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-m-sik-tiu-mou5.mp3) |
+| 78 | 我識畫畫 | ngo5 sik1 waak6 waa2 | I can draw. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-sik-waak-waa.mp3) |
+| 79 | 我唔識畫畫 | ngo5 m4 sik1 waak6 waa2 | I can't draw. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-m-sik-waak-waa.mp3) |
+| 80 | 我識踩單車 | ngo5 sik1 caai2 daan1 ce1 | I can ride a bike. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-sik-caai-daan-ce.mp3) |
+| 81 | 我唔識踩單車 | ngo5 m4 sik1 caai2 daan1 ce1 | I can't ride a bike. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-m-sik-caai-daan-ce.mp3) |
+| 82 | 唔鍾意 | m4 zung1 ji3 | No, I don't (like it). | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/m-zung-ji.mp3) |
+| 83 | 唔識 | m4 sik1 | No, I can't. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/m-sik.mp3) |
+| 84 | 唔想 | m4 soeng2 | No, I don't want to. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/m-soeng.mp3) |
+| 85 | 好呀 | hou2 aa3 | OK! Sure! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/hou-aa.mp3) |
+| 86 | 你鍾唔鍾意睇戲呀？ | nei5 zung1 m4 zung1 ji3 tai2 hei3 aa3 | Do you like watching films? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-zung-m-zung-ji-tai-hei3-aa.mp3) |
+| 87 | 你鍾唔鍾意打波呀？ | nei5 zung1 m4 zung1 ji3 daa2 bo1 aa3 | Do you like playing basketball? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-zung-m-zung-ji-daa-ball-aa.mp3) |
+| 88 | 你鍾唔鍾意踢波呀？ | nei5 zung1 m4 zung1 ji3 tek3 bo1 aa3 | Do you like playing football? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-zung-m-zung-ji-tek-ball-aa.mp3) |
+| 89 | 你鍾唔鍾意打機呀？ | nei5 zung1 m4 zung1 ji3 daa2 gei1 aa3 | Do you like playing video games? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-zung-m-zung-ji-daa-gei1-aa.mp3) |
+| 90 | 你鍾唔鍾意唱K呀？ | nei5 zung1 m4 zung1 ji3 coeng3 kei1 aa3 | Do you like singing karaoke? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-zung-m-zung-ji-coeng-kei-aa.mp3) |
+| 91 | 你鍾唔鍾意聽歌呀？ | nei5 zung1 m4 zung1 ji3 teng1 go1 aa3 | Do you like listening to music? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-zung-m-zung-ji-teng-go1-aa.mp3) |
+| 92 | 你鍾唔鍾意游水呀？ | nei5 zung1 m4 zung1 ji3 jau4 seoi2 aa3 | Do you like swimming? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-zung-m-zung-ji-jau4-water-aa.mp3) |
+| 93 | 你鍾唔鍾意行山呀？ | nei5 zung1 m4 zung1 ji3 haang4 saan1 aa3 | Do you like hiking? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-zung-m-zung-ji-haang-saan-aa.mp3) |
+| 94 | 你鍾唔鍾意行街呀？ | nei5 zung1 m4 zung1 ji3 haang4 gaai1 aa3 | Do you like going shopping? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-zung-m-zung-ji-haang-gaai-aa.mp3) |
+| 95 | 你鍾唔鍾意跳舞呀？ | nei5 zung1 m4 zung1 ji3 tiu3 mou5 aa3 | Do you like dancing? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-zung-m-zung-ji-tiu-mou5-aa.mp3) |
+| 96 | 你鍾唔鍾意影相呀？ | nei5 zung1 m4 zung1 ji3 jing2 soeng2 aa3 | Do you like taking photos? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-zung-m-zung-ji-jing-soeng2-aa.mp3) |
+| 97 | 你鍾唔鍾意畫畫呀？ | nei5 zung1 m4 zung1 ji3 waak6 waa2 aa3 | Do you like drawing? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-zung-m-zung-ji-waak-waa-aa.mp3) |
+| 98 | 你鍾唔鍾意踩單車呀？ | nei5 zung1 m4 zung1 ji3 caai2 daan1 ce1 aa3 | Do you like cycling? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-zung-m-zung-ji-caai-daan-ce-aa.mp3) |
+| 99 | 你鍾唔鍾意睇書呀？ | nei5 zung1 m4 zung1 ji3 tai2 syu1 aa3 | Do you like reading? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-zung-m-zung-ji-tai-book-aa.mp3) |
+| 100 | 你鍾唔鍾意睇電視呀？ | nei5 zung1 m4 zung1 ji3 tai2 din6 si6 aa3 | Do you like watching TV? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-zung-m-zung-ji-tai-din-si-aa.mp3) |
+| 101 | 你識唔識打波呀？ | nei5 sik1 m4 sik1 daa2 bo1 aa3 | Can you play basketball? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-sik-m-sik-daa-ball-aa.mp3) |
+| 102 | 你想唔想去打波呀？ | nei5 soeng2 m4 soeng2 heoi3 daa2 bo1 aa3 | Do you want to play basketball? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-soeng-m-soeng-heoi-daa-ball-aa.mp3) |
+| 103 | 你識唔識踢波呀？ | nei5 sik1 m4 sik1 tek3 bo1 aa3 | Can you play football? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-sik-m-sik-tek-ball-aa.mp3) |
+| 104 | 你想唔想去踢波呀？ | nei5 soeng2 m4 soeng2 heoi3 tek3 bo1 aa3 | Do you want to play football? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-soeng-m-soeng-heoi-tek-ball-aa.mp3) |
+| 105 | 你識唔識游水呀？ | nei5 sik1 m4 sik1 jau4 seoi2 aa3 | Can you swim? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-sik-m-sik-jau4-water-aa.mp3) |
+| 106 | 你想唔想去游水呀？ | nei5 soeng2 m4 soeng2 heoi3 jau4 seoi2 aa3 | Do you want to swim? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-soeng-m-soeng-heoi-jau4-water-aa.mp3) |
+| 107 | 你識唔識跳舞呀？ | nei5 sik1 m4 sik1 tiu3 mou5 aa3 | Can you dance? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-sik-m-sik-tiu-mou5-aa.mp3) |
+| 108 | 你想唔想去跳舞呀？ | nei5 soeng2 m4 soeng2 heoi3 tiu3 mou5 aa3 | Do you want to dance? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-soeng-m-soeng-heoi-tiu-mou5-aa.mp3) |
+| 109 | 你識唔識畫畫呀？ | nei5 sik1 m4 sik1 waak6 waa2 aa3 | Can you draw? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-sik-m-sik-waak-waa-aa.mp3) |
+| 110 | 你想唔想畫畫呀？ | nei5 soeng2 m4 soeng2 waak6 waa2 aa3 | Do you want to draw? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-soeng-m-soeng-waak-waa-aa.mp3) |
+| 111 | 你識唔識踩單車呀？ | nei5 sik1 m4 sik1 caai2 daan1 ce1 aa3 | Can you ride a bike? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-sik-m-sik-caai-daan-ce-aa.mp3) |
+| 112 | 你想唔想去踩單車呀？ | nei5 soeng2 m4 soeng2 heoi3 caai2 daan1 ce1 aa3 | Do you want to ride a bike? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-soeng-m-soeng-heoi-caai-daan-ce-aa.mp3) |
+| 113 | 你有乜嘢興趣呀？ | nei5 jau5 mat1 je5 hing3 ceoi3 aa3 | What are your hobbies? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-jau-mat-je-hing-ceoi-aa.mp3) |
+| 114 | 你得閒做乜嘢呀？ | nei5 dak1 haan4 zou6 mat1 je5 aa3 | What do you do in your free time? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-dak-haan-zou6-mat-je-aa.mp3) |
+| 115 | 我得閒鍾意聽歌 | ngo5 dak1 haan4 zung1 ji3 teng1 go1 | In my free time I like listening to music. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-dak-haan-zung-ji-teng-go1.mp3) |
+| 116 | 我好鍾意睇戲 | ngo5 hou2 zung1 ji3 tai2 hei3 | I really like watching films. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-hou-zung-ji-tai-hei3.mp3) |
+| 117 | 我都鍾意睇戲 | ngo5 dou1 zung1 ji3 tai2 hei3 | I like watching films too. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-dou-zung-ji-tai-hei3.mp3) |
+| 118 | 我鍾意貓 | ngo5 zung1 ji3 maau1 | I like cats. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-zung-ji-cat.mp3) |
+| 119 | 佢鍾意打機 | keoi5 zung1 ji3 daa2 gei1 | They like playing video games. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/keoi-zung-ji-daa-gei1.mp3) |
+| 120 | 你想做乜嘢呀？ | nei5 soeng2 zou6 mat1 je5 aa3 | What do you want to do? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-soeng-zou6-mat-je-aa.mp3) |
+| 121 | 我想去行山 | ngo5 soeng2 heoi3 haang4 saan1 | I want to go hiking. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-soeng-heoi-haang-saan.mp3) |
+| 122 | 周末一齊去唱K呀 | zau1 mut6 jat1 cai4 heoi3 coeng3 kei1 aa3 | Let's go to karaoke together at the weekend! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/zau-mut-jat-cai-heoi-coeng-kei-aa.mp3) |
+| 123 | 我星期六會去游水 | ngo5 sing1 kei4 luk6 wui5 heoi3 jau4 seoi2 | I'm going swimming on Saturday. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-wk6-wui-heoi-jau4-water.mp3) |
+| 124 | 你聽日會唔會去踢波呀？ | nei5 ting1 jat6 wui5 m4 wui5 heoi3 tek3 bo1 aa3 | Are you going to play football tomorrow? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-ting-jat-wui-m-wui-heoi-tek-ball-aa.mp3) |
+| 125 | 我會游水 | ngo5 wui5 jau4 seoi2 | I can swim. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-wui-jau4-water.mp3) |
+| 126 | 佢唔識跳舞 | keoi5 m4 sik1 tiu3 mou5 | They can't dance. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/keoi-m-sik-tiu-mou5.mp3) |
+| 127 | 你有冇唱過K呀？ | nei5 jau5 mou5 coeng3 gwo3 kei1 aa3 | Have you ever been to karaoke? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-jau-mou-coeng-gwo-kei-aa.mp3) |
+| 128 | 我未行過山 | ngo5 mei6 haang4 gwo3 saan1 | I haven't been hiking yet. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-mei-haang-gwo-saan.mp3) |

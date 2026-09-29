@@ -2,7 +2,7 @@
 (function () {
   const V = window.VOCAB;
   const { el: $, esc, zh, pick, shuffle, imgSrc, picButton, speech } = Canto;
-  const { choose, answerText } = Game;
+  const { choose, answerText, chart } = Game;
   const byId = Object.fromEntries(Canto.entries(V).map(e => [e.id, e]));
   const said = e => zh(e.hanzi, e.jyutping);
   const pic = (e, cls = '') => `<img${cls && ` class="${cls}"`} src="${imgSrc(e)}" alt="${esc(e.english)}">`;
@@ -146,20 +146,14 @@
     const yes = new Map(items.map(i => [i, Math.random() < 0.5]));
     const [item] = pick(items, 1);
     const [q] = pick(V.everAsks.filter(e => e.item === item), 1);
-    const chart = $('div', 'chart');
-    chart.setAttribute('aria-label', 'What they have tried');
-    for (const i of items) {
-      const cell = $('div', 'chart-item', `${pic(byId[i])}<span class="mark ${yes.get(i) ? 'yes' : 'no'}">${yes.get(i) ? '✓' : '✗'}</span>`);
-      cell.querySelector('img').alt += yes.get(i) ? ': yes' : ': no';
-      chart.append(cell);
-    }
     const [y, n] = q.answers.map(id => byId[id]);
     const right = yes.get(item) ? y : n;
     const grid = choose(ctx, right, [y, n], said);
     grid.addEventListener('click', ev => { if (ev.target.closest('button')) ctx.play(right); });
     ctx.answer = `${said(q)} ${esc(q.english)} The chart says ${said(right)}.${q.note ? ' ' + esc(q.note) : ''}`;
     const say = () => ctx.play(q);
-    stage.replaceChildren(speech('問', `${said(q)} Answer from the chart.`, say), chart, grid);
+    stage.replaceChildren(speech('問', `${said(q)} Answer from the chart.`, say),
+      chart(items.map(i => [byId[i], yes.get(i)]), 'What they have tried'), grid);
     return say();
   };
 

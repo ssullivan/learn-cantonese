@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A basketball and a hoop</title>
+<rect x="30" y="6" width="68" height="46" rx="3" fill="#ffffff" stroke="#6f8796" stroke-width="2.5"/>
+<rect x="52" y="24" width="24" height="18" fill="none" stroke="#d6453a" stroke-width="2.5"/>
+<path d="M46 52 L52 76 H76 L82 52 M53 52 L57 76 M60 52 L62 76 M68 52 L66 76 M75 52 L71 76 M48 60 H80 M50 68 H78" stroke="#9fb0bb" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+<path d="M42 50 H86" stroke="#e0702c" stroke-width="5" stroke-linecap="round"/>
+<circle cx="38" cy="98" r="18" fill="#e0702c" stroke="#a84a18" stroke-width="2"/>
+<path d="M20 98 H56 M38 80 V116 M26.119999999999997 84.5 Q36.2 98 26.119999999999997 111.5 M49.88 84.5 Q39.8 98 49.88 111.5" stroke="#6e3210" stroke-width="2" fill="none"/>
+<path d="M52 84 Q60 72 62 60" stroke="#9fb0bb" stroke-width="2.5" fill="none" stroke-dasharray="4 4" stroke-linecap="round"/>
+</svg>

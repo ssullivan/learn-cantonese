@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A football going into a goal</title>
+<path d="M18 24 H110 M18 24 V92 M110 24 V92 M34 26 V92 M50 26 V92 M66 26 V92 M82 26 V92 M98 26 V92 M20 40 H108 M20 56 H108 M20 72 H108 M20 88 H108" stroke="#c9d3da" stroke-width="1.5"/>
+<path d="M14 94 V20 H114 V94" stroke="#6f8796" stroke-width="7" fill="none" stroke-linejoin="round"/>
+<path d="M14 94 V20 H114 V94" stroke="#ffffff" stroke-width="4" fill="none" stroke-linejoin="round"/>
+<rect x="4" y="96" width="120" height="10" rx="5" fill="#8cc97a"/>
+<circle cx="64" cy="100" r="17" fill="#ffffff" stroke="#26323c" stroke-width="2.5"/>
+<path d="M64.0 93.5 L64.0 83.0 M70.1 98.0 L80.2 94.7 M67.8 105.2 L74.0 113.8 M60.2 105.2 L54.0 113.8 M57.9 98.0 L47.8 94.7" stroke="#26323c" stroke-width="2"/>
+<path d="M64.0 93.5 L70.1 98.0 L67.8 105.2 L60.2 105.2 L57.9 98.0 Z" fill="#26323c"/>
+<path d="M36 112 L22 116 M38 102 H22 M36 92 L22 88" stroke="#9fb0bb" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
