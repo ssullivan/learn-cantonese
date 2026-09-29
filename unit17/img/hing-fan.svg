@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>An excited face, with sparkles</title>
+<path d="M20 128 C20 108 40 100 64 100 C88 100 108 108 108 128 Z" fill="#3f7cc0" stroke="#24507f" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="54" y="84" width="20" height="20" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+<ellipse cx="30" cy="60" rx="7" ry="10" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/><ellipse cx="98" cy="60" rx="7" ry="10" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+<ellipse cx="64" cy="58" rx="33" ry="36" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+<path d="M31 56 C27 22 50 16 64 16 C80 16 101 22 97 56 C92 36 78 30 64 31 C50 31 37 38 31 56 Z" fill="#3b2f2a"/>
+<path d="M44 43 Q51 37 58 43 M70 43 Q77 37 84 43" stroke="#3b2f2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<ellipse cx="51" cy="58" rx="6.5" ry="6.5" fill="#ffffff" stroke="#8a9aa5" stroke-width="1"/><circle cx="51" cy="58" r="1.8" fill="#3b2f2a"/><ellipse cx="77" cy="58" rx="6.5" ry="6.5" fill="#ffffff" stroke="#8a9aa5" stroke-width="1"/><circle cx="77" cy="58" r="1.8" fill="#3b2f2a"/>
+<path d="M64 60 Q59 70 63 72 Q66 73 68 71" stroke="#b07a52" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M50 78 Q64 81 78 78 Q74 94 64 94 Q54 94 50 78 Z" fill="#8f2a22" stroke="#6e1f19" stroke-width="1.5" stroke-linejoin="round"/><path d="M52 78.6 Q64 81.4 76 78.6 L75 83 Q64 85 53 83 Z" fill="#ffffff"/><path d="M57 88 Q64 85 71 88 Q68 93 64 93 Q60 93 57 88 Z" fill="#e0706a"/>
+<circle cx="42" cy="72" r="6" fill="#e0706a" opacity=".4"/><circle cx="86" cy="72" r="6" fill="#e0706a" opacity=".4"/><path d="M14 18 Q16 26 24 28 Q16 30 14 38 Q12 30 4 28 Q12 26 14 18 Z" fill="#f7d35c" stroke="#c9961a" stroke-width="1.2" stroke-linejoin="round"/><path d="M112 12 Q114.4 21.6 124 24 Q114.4 26.4 112 36 Q109.6 26.4 100 24 Q109.6 21.6 112 12 Z" fill="#f7d35c" stroke="#c9961a" stroke-width="1.2" stroke-linejoin="round"/><path d="M116 53 Q117.4 58.6 123 60 Q117.4 61.4 116 67 Q114.6 61.4 109 60 Q114.6 58.6 116 53 Z" fill="#f7d35c" stroke="#c9961a" stroke-width="1.2" stroke-linejoin="round"/><path d="M10 60 Q11.2 64.8 16 66 Q11.2 67.2 10 72 Q8.8 67.2 4 66 Q8.8 64.8 10 60 Z" fill="#f7d35c" stroke="#c9961a" stroke-width="1.2" stroke-linejoin="round"/>
+</svg>

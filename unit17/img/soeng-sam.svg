@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A sad face, crying</title>
+<path d="M20 128 C20 108 40 100 64 100 C88 100 108 108 108 128 Z" fill="#3f7cc0" stroke="#24507f" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="54" y="84" width="20" height="20" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+<ellipse cx="30" cy="60" rx="7" ry="10" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/><ellipse cx="98" cy="60" rx="7" ry="10" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+<ellipse cx="64" cy="58" rx="33" ry="36" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+<path d="M31 56 C27 22 50 16 64 16 C80 16 101 22 97 56 C92 36 78 30 64 31 C50 31 37 38 31 56 Z" fill="#3b2f2a"/>
+<path d="M44 49 L57 44 M84 49 L71 44" stroke="#3b2f2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M45 58 Q51 62 57 58" stroke="#3b2f2a" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M71 58 Q77 62 83 58" stroke="#3b2f2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M64 60 Q59 70 63 72 Q66 73 68 71" stroke="#b07a52" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M55 85 Q64 79 73 85" stroke="#8f2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M45 62 C49.4 68.6 49.4 73 45 73 C40.6 73 40.6 68.6 45 62 Z" fill="#7fb2e0" stroke="#3f7cc0" stroke-width="1.5"/><path d="M83 64 C88.2 71.8 88.2 77 83 77 C77.8 77 77.8 71.8 83 64 Z" fill="#7fb2e0" stroke="#3f7cc0" stroke-width="1.5"/><path d="M42 78 C45.2 82.8 45.2 86 42 86 C38.8 86 38.8 82.8 42 78 Z" fill="#7fb2e0" stroke="#3f7cc0" stroke-width="1.5"/>
+</svg>

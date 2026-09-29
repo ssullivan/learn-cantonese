@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A happy face, grinning</title>
+<path d="M20 128 C20 108 40 100 64 100 C88 100 108 108 108 128 Z" fill="#3f7cc0" stroke="#24507f" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="54" y="84" width="20" height="20" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+<ellipse cx="30" cy="60" rx="7" ry="10" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/><ellipse cx="98" cy="60" rx="7" ry="10" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+<ellipse cx="64" cy="58" rx="33" ry="36" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+<path d="M31 56 C27 22 50 16 64 16 C80 16 101 22 97 56 C92 36 78 30 64 31 C50 31 37 38 31 56 Z" fill="#3b2f2a"/>
+<path d="M44 48 Q51 45 58 48 M70 48 Q77 45 84 48" stroke="#3b2f2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M45 60 Q51 52 57 60" stroke="#3b2f2a" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M71 60 Q77 52 83 60" stroke="#3b2f2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M64 60 Q59 70 63 72 Q66 73 68 71" stroke="#b07a52" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M50 78 Q64 81 78 78 Q74 94 64 94 Q54 94 50 78 Z" fill="#8f2a22" stroke="#6e1f19" stroke-width="1.5" stroke-linejoin="round"/><path d="M52 78.6 Q64 81.4 76 78.6 L75 83 Q64 85 53 83 Z" fill="#ffffff"/><path d="M57 88 Q64 85 71 88 Q68 93 64 93 Q60 93 57 88 Z" fill="#e0706a"/>
+<circle cx="42" cy="72" r="6" fill="#e0706a" opacity=".4"/><circle cx="86" cy="72" r="6" fill="#e0706a" opacity=".4"/>
+</svg>

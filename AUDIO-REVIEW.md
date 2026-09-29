@@ -1,6 +1,6 @@
 # Audio review
 
-Every clip on the site (1705), unit by unit. **Listen on the [review page](https://ssullivan.github.io/learn-cantonese/review/)**, where you can mark each clip and copy your notes; the links below play one clip each.
+Every clip on the site (1816), unit by unit. **Listen on the [review page](https://ssullivan.github.io/learn-cantonese/review/)**, where you can mark each clip and copy your notes; the links below play one clip each.
 
 Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this file by hand.
 
@@ -1788,3 +1788,119 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 | 126 | 佢唔識跳舞 | keoi5 m4 sik1 tiu3 mou5 | They can't dance. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/keoi-m-sik-tiu-mou5.mp3) |
 | 127 | 你有冇唱過K呀？ | nei5 jau5 mou5 coeng3 gwo3 kei1 aa3 | Have you ever been to karaoke? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/nei-jau-mou-coeng-gwo-kei-aa.mp3) |
 | 128 | 我未行過山 | ngo5 mei6 haang4 gwo3 saan1 | I haven't been hiking yet. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/ngo-mei-haang-gwo-saan.mp3) |
+
+## Unit 17
+
+| # | Chinese | Jyutping | English | Audio |
+|---|---|---|---|---|
+| 1 | 開心 | hoi1 sam1 | happy | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/hoi-sam.mp3) |
+| 2 | 傷心 | soeng1 sam1 | sad | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/soeng-sam.mp3) |
+| 3 | 興奮 | hing1 fan5 | excited | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/hing-fan.mp3) |
+| 4 | 嬲 | nau1 | angry | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/nau.mp3) |
+| 5 | 驚 | geng1 | scared; afraid (of) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/geng.mp3) |
+| 6 | 緊張 | gan2 zoeng1 | nervous | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/gan-zoeng.mp3) |
+| 7 | 攰 | gui6 | tired | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/gui.mp3) |
+| 8 | 眼瞓 | ngaan5 fan3 | sleepy | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngaan-fan.mp3) |
+| 9 | 悶 | mun6 | bored; boring | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/mun.mp3) |
+| 10 | 肚餓 | tou5 ngo6 | hungry | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/tou-ngo.mp3) |
+| 11 | 頸渴 | geng2 hot3 | thirsty | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/geng-hot.mp3) |
+| 12 | 開 | hoi1 | to open | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/hoi.mp3) |
+| 13 | 傷 | soeng1 | to hurt; a wound | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/soeng1.mp3) |
+| 14 | 興 | hing1 | to rise; to flourish | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/hing1.mp3) |
+| 15 | 頸 | geng2 | neck | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/geng2.mp3) |
+| 16 | 心情 | sam1 cing4 | mood | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/sam-cing.mp3) |
+| 17 | 覺得 | gok3 dak1 | to feel; to think | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/gok-dak.mp3) |
+| 18 | 點解 | dim2 gaai2 | why | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/dim-gaai.mp3) |
+| 19 | 因為 | jan1 wai6 | because | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/jan-wai.mp3) |
+| 20 | 咁 | gam3 | so (this much) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/gam3.mp3) |
+| 21 | 考試 | haau2 si5 | to take an exam; an exam | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/haau-si.mp3) |
+| 22 | 辦法 | baan6 faat3 | a way (to do it) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/baan-faat.mp3) |
+| 23 | 喎 | wo3 | (hey! I notice; news) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/wo3.mp3) |
+| 24 | 囉 | lo1 | (obviously; oh well, that's that) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/lo1.mp3) |
+| 25 | 嘛 | maa3 | (you know; as you should know) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/maa3.mp3) |
+| 26 | 唔開心 | m4 hoi1 sam1 | unhappy; not happy | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/m-hoi-sam.mp3) |
+| 27 | 唔傷心 | m4 soeng1 sam1 | not sad | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/m-soeng-sam.mp3) |
+| 28 | 唔興奮 | m4 hing1 fan5 | not excited | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/m-hing-fan.mp3) |
+| 29 | 唔嬲 | m4 nau1 | not angry | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/m-nau.mp3) |
+| 30 | 唔驚 | m4 geng1 | not scared | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/m-geng.mp3) |
+| 31 | 唔緊張 | m4 gan2 zoeng1 | not nervous | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/m-gan-zoeng.mp3) |
+| 32 | 唔攰 | m4 gui6 | not tired | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/m-gui.mp3) |
+| 33 | 唔眼瞓 | m4 ngaan5 fan3 | not sleepy | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/m-ngaan-fan.mp3) |
+| 34 | 唔悶 | m4 mun6 | not bored | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/m-mun.mp3) |
+| 35 | 唔肚餓 | m4 tou5 ngo6 | not hungry | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/m-tou-ngo.mp3) |
+| 36 | 唔頸渴 | m4 geng2 hot3 | not thirsty | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/m-geng-hot.mp3) |
+| 37 | 我好開心 | ngo5 hou2 hoi1 sam1 | I'm really happy. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-hou-hoi-sam.mp3) |
+| 38 | 我唔係好開心 | ngo5 m4 hai6 hou2 hoi1 sam1 | I'm not very happy. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-m-hai-hou-hoi-sam.mp3) |
+| 39 | 我好傷心 | ngo5 hou2 soeng1 sam1 | I'm really sad. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-hou-soeng-sam.mp3) |
+| 40 | 我有啲傷心 | ngo5 jau5 di1 soeng1 sam1 | I'm a bit sad. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-jau-di-soeng-sam.mp3) |
+| 41 | 我唔係好傷心 | ngo5 m4 hai6 hou2 soeng1 sam1 | I'm not very sad. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-m-hai-hou-soeng-sam.mp3) |
+| 42 | 我好興奮 | ngo5 hou2 hing1 fan5 | I'm really excited. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-hou-hing-fan.mp3) |
+| 43 | 我唔係好興奮 | ngo5 m4 hai6 hou2 hing1 fan5 | I'm not very excited. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-m-hai-hou-hing-fan.mp3) |
+| 44 | 我好嬲 | ngo5 hou2 nau1 | I'm really angry. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-hou-nau.mp3) |
+| 45 | 我有啲嬲 | ngo5 jau5 di1 nau1 | I'm a bit angry. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-jau-di-nau.mp3) |
+| 46 | 我唔係好嬲 | ngo5 m4 hai6 hou2 nau1 | I'm not very angry. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-m-hai-hou-nau.mp3) |
+| 47 | 我好驚 | ngo5 hou2 geng1 | I'm really scared. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-hou-geng.mp3) |
+| 48 | 我有啲驚 | ngo5 jau5 di1 geng1 | I'm a bit scared. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-jau-di-geng.mp3) |
+| 49 | 我唔係好驚 | ngo5 m4 hai6 hou2 geng1 | I'm not very scared. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-m-hai-hou-geng.mp3) |
+| 50 | 我好緊張 | ngo5 hou2 gan2 zoeng1 | I'm really nervous. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-hou-gan-zoeng.mp3) |
+| 51 | 我有啲緊張 | ngo5 jau5 di1 gan2 zoeng1 | I'm a bit nervous. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-jau-di-gan-zoeng.mp3) |
+| 52 | 我唔係好緊張 | ngo5 m4 hai6 hou2 gan2 zoeng1 | I'm not very nervous. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-m-hai-hou-gan-zoeng.mp3) |
+| 53 | 我好攰 | ngo5 hou2 gui6 | I'm really tired. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-hou-gui.mp3) |
+| 54 | 我有啲攰 | ngo5 jau5 di1 gui6 | I'm a bit tired. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-jau-di-gui.mp3) |
+| 55 | 我唔係好攰 | ngo5 m4 hai6 hou2 gui6 | I'm not very tired. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-m-hai-hou-gui.mp3) |
+| 56 | 我好眼瞓 | ngo5 hou2 ngaan5 fan3 | I'm really sleepy. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-hou-ngaan-fan.mp3) |
+| 57 | 我有啲眼瞓 | ngo5 jau5 di1 ngaan5 fan3 | I'm a bit sleepy. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-jau-di-ngaan-fan.mp3) |
+| 58 | 我唔係好眼瞓 | ngo5 m4 hai6 hou2 ngaan5 fan3 | I'm not very sleepy. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-m-hai-hou-ngaan-fan.mp3) |
+| 59 | 我好悶 | ngo5 hou2 mun6 | I'm really bored. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-hou-mun.mp3) |
+| 60 | 我有啲悶 | ngo5 jau5 di1 mun6 | I'm a bit bored. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-jau-di-mun.mp3) |
+| 61 | 我唔係好悶 | ngo5 m4 hai6 hou2 mun6 | I'm not very bored. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-m-hai-hou-mun.mp3) |
+| 62 | 我好肚餓 | ngo5 hou2 tou5 ngo6 | I'm really hungry. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-hou-tou-ngo.mp3) |
+| 63 | 我有啲肚餓 | ngo5 jau5 di1 tou5 ngo6 | I'm a bit hungry. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-jau-di-tou-ngo.mp3) |
+| 64 | 我唔係好肚餓 | ngo5 m4 hai6 hou2 tou5 ngo6 | I'm not very hungry. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-m-hai-hou-tou-ngo.mp3) |
+| 65 | 我好頸渴 | ngo5 hou2 geng2 hot3 | I'm really thirsty. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-hou-geng-hot.mp3) |
+| 66 | 我有啲頸渴 | ngo5 jau5 di1 geng2 hot3 | I'm a bit thirsty. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-jau-di-geng-hot.mp3) |
+| 67 | 我唔係好頸渴 | ngo5 m4 hai6 hou2 geng2 hot3 | I'm not very thirsty. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-m-hai-hou-geng-hot.mp3) |
+| 68 | 你開唔開心呀？ | nei5 hoi1 m4 hoi1 sam1 aa3 | Are you happy? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/nei-hoi-m-hoi-sam-aa.mp3) |
+| 69 | 你傷唔傷心呀？ | nei5 soeng1 m4 soeng1 sam1 aa3 | Are you sad? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/nei-soeng1-m-soeng-sam-aa.mp3) |
+| 70 | 你興唔興奮呀？ | nei5 hing1 m4 hing1 fan5 aa3 | Are you excited? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/nei-hing1-m-hing-fan-aa.mp3) |
+| 71 | 你嬲唔嬲呀？ | nei5 nau1 m4 nau1 aa3 | Are you angry? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/nei-nau-m-nau-aa.mp3) |
+| 72 | 你驚唔驚呀？ | nei5 geng1 m4 geng1 aa3 | Are you scared? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/nei-geng-m-geng-aa.mp3) |
+| 73 | 你緊唔緊張呀？ | nei5 gan2 m4 gan2 zoeng1 aa3 | Are you nervous? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/nei-gan-m-gan-zoeng-aa.mp3) |
+| 74 | 你攰唔攰呀？ | nei5 gui6 m4 gui6 aa3 | Are you tired? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/nei-gui-m-gui-aa.mp3) |
+| 75 | 你眼唔眼瞓呀？ | nei5 ngaan5 m4 ngaan5 fan3 aa3 | Are you sleepy? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/nei-eye-m-ngaan-fan-aa.mp3) |
+| 76 | 你悶唔悶呀？ | nei5 mun6 m4 mun6 aa3 | Are you bored? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/nei-mun-m-mun-aa.mp3) |
+| 77 | 你肚唔肚餓呀？ | nei5 tou5 m4 tou5 ngo6 aa3 | Are you hungry? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/nei-stomach-m-tou-ngo-aa.mp3) |
+| 78 | 你頸唔頸渴呀？ | nei5 geng2 m4 geng2 hot3 aa3 | Are you thirsty? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/nei-geng2-m-geng-hot-aa.mp3) |
+| 79 | 你休息啦 | nei5 jau1 sik1 laa1 | Have a rest! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/nei-jau-sik-laa1.mp3) |
+| 80 | 早啲瞓覺啦 | zou2 di1 fan3 gaau3 laa1 | Go to bed early! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/zou-di-fan3-gaau-laa1.mp3) |
+| 81 | 瞓覺啦 | fan3 gaau3 laa1 | Go to sleep! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/fan3-gaau-laa1.mp3) |
+| 82 | 食飯啦 | sik6 faan6 laa1 | Go and eat! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/sik-faan-laa1.mp3) |
+| 83 | 飲杯水啦 | jam2 bui1 seoi2 laa1 | Have a glass of water! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/jam2-bui-water-laa1.mp3) |
+| 84 | 唔好嬲啦 | m4 hou2 nau1 laa1 | Don't be angry! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/m-hou-nau-laa1.mp3) |
+| 85 | 唔使驚啦 | m4 sai2 geng1 laa1 | Don't be scared! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/no-need-geng-laa1.mp3) |
+| 86 | 唔使緊張啦 | m4 sai2 gan2 zoeng1 laa1 | Don't be nervous! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/no-need-gan-zoeng-laa1.mp3) |
+| 87 | 唔好唔開心啦 | m4 hou2 m4 hoi1 sam1 laa1 | Don't be sad! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/m-hou-m-hoi-sam-laa1.mp3) |
+| 88 | 出街啦 | ceot1 gaai1 laa1 | Go out! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ceot-street-laa1.mp3) |
+| 89 | 我肚餓喇 | ngo5 tou5 ngo6 laa3 | I'm hungry now. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-tou-ngo-laa3.mp3) |
+| 90 | 我唔驚喇 | ngo5 m4 geng1 laa3 | I'm not scared any more. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-m-geng-laa3.mp3) |
+| 91 | 我好返喇 | ngo5 hou2 faan1 laa3 | I'm better now. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-hou-faan-laa3.mp3) |
+| 92 | 你今日好開心喎 | nei5 gam1 jat6 hou2 hoi1 sam1 wo3 | You're very happy today! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/nei-gam-jat-hou-hoi-sam-wo3.mp3) |
+| 93 | 佢好嬲喎 | keoi5 hou2 nau1 wo3 | Watch out, they're really angry! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/keoi-hou-nau-wo3.mp3) |
+| 94 | 好凍喎 | hou2 dung3 wo3 | Ooh, it's cold! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/hou-dung-wo3.mp3) |
+| 95 | 冇辦法囉 | mou5 baan6 faat3 lo1 | Oh well, nothing we can do. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/mou-baan-faat-lo1.mp3) |
+| 96 | 冇嘢囉 | mou5 je5 lo1 | Nothing, really. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/mou-je-lo1.mp3) |
+| 97 | 我聽日考試嘛 | ngo5 ting1 jat6 haau2 si5 maa3 | I've got an exam tomorrow, you know. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-ting-jat-haau-si-maa3.mp3) |
+| 98 | 我冇食早餐嘛 | ngo5 mou5 sik6 zou2 caan1 maa3 | I didn't have breakfast, you know. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-mou-sik6-zou-caan-maa3.mp3) |
+| 99 | 佢感冒咗嘛 | keoi5 gam2 mou6 zo2 maa3 | They've got a cold, you know. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/keoi-cold-zo-maa3.mp3) |
+| 100 | 你今日心情點呀？ | nei5 gam1 jat6 sam1 cing4 dim2 aa3 | How are you feeling today? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/nei-gam-jat-sam-cing-dim-aa.mp3) |
+| 101 | 我今日心情好好 | ngo5 gam1 jat6 sam1 cing4 hou2 hou2 | I'm in a great mood today. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-gam-jat-sam-cing-hou-hou.mp3) |
+| 102 | 我覺得好攰 | ngo5 gok3 dak1 hou2 gui6 | I feel very tired. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-gok-dak-hou-gui.mp3) |
+| 103 | 你覺得點呀？ | nei5 gok3 dak1 dim2 aa3 | What do you think? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/nei-gok-dak-dim-aa.mp3) |
+| 104 | 佢好傷心 | keoi5 hou2 soeng1 sam1 | They are very sad. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/keoi-hou-soeng-sam.mp3) |
+| 105 | 我驚狗 | ngo5 geng1 gau2 | I'm scared of dogs. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngo-geng-dog.mp3) |
+| 106 | 今日好悶 | gam1 jat6 hou2 mun6 | Today is so boring. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/gam-jat-hou-mun.mp3) |
+| 107 | 你點解咁嬲呀？ | nei5 dim2 gaai2 gam3 nau1 aa3 | Why are you so angry? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/nei-dim-gaai-gam3-nau-aa.mp3) |
+| 108 | 因為佢食咗我個菠蘿油 | jan1 wai6 keoi5 sik6 zo2 ngo5 go3 bo1 lo4 jau4 | Because they ate my pineapple bun! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/jan-wai-keoi-sik6-zo-ngo-go-pineapple-butter.mp3) |
+| 109 | 你點解唔開心呀？ | nei5 dim2 gaai2 m4 hoi1 sam1 aa3 | Why are you unhappy? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/nei-dim-gaai-m-hoi-sam-aa.mp3) |
+| 110 | 因為我聽日考試 | jan1 wai6 ngo5 ting1 jat6 haau2 si5 | Because I've got an exam tomorrow. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/jan-wai-ngo-ting-jat-haau-si.mp3) |
+| 111 | 係囉 | hai6 lo1 | Exactly! That's what I said. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/hai-lo1.mp3) |

@@ -29,11 +29,15 @@
  *   cup(drink, { glass })  a handleless blue-and-white teacup (rim at
  *                      y 46), or a tall glass (rim at y 18), filled with
  *                      the color `drink`
- * Faces, figures and places (unit 10's house, unit 14's body, unit 15's day):
- *   face({ mouth, pained, coat, extra })
+ * Faces, figures and places (unit 10's house, unit 14's body, unit 15's day,
+ * unit 17's feelings):
+ *   face({ mouth, eyes, brows, pained, coat, extra })
  *                      a face close up with shoulders, filling the picture
- *                      (eyes at y 58, mouth at 64,83, chin at 94). mouth:
- *                      smile, frown, open (teeth showing), ow; pained
+ *                      (eyes at 51,58 and 77,58, mouth at 64,83, chin at
+ *                      94). mouth: smile, frown, open (teeth showing), ow,
+ *                      grin, flat, wavy, teeth (clenched); eyes: open,
+ *                      wide, half (heavy lids), closed, happy (curved up);
+ *                      brows: calm, angry, worried, up; pained: angry
  *                      brows; coat: fill and stroke attributes for the
  *                      shoulders (a blue top unless given); extra: drawn on top
  *   figure({ behind, pained })
@@ -176,29 +180,48 @@ export const plane = `<g transform="rotate(-14 64 66)">
 <path d="M86 70 L58 102 H44 L60 70 Z" fill="#2e6fd1" stroke="#1b4586" stroke-width="3" stroke-linejoin="round"/>
 </g>`;
 
-// Faces and figures (unit 14's body, unit 15's day).
+// Faces and figures (unit 14's body, unit 15's day, unit 17's feelings).
 const SKIN_ATTR = 'fill="#f2c9a0" stroke="#b07a52" stroke-width="2"';
 const HAIR_COLOUR = '#3b2f2a';
 
-// A face, close up, with shoulders in `coat` (a shirt unless given).
-// mouth: smile, frown, open (teeth showing), ow (a small round O).
+// A face, close up, with shoulders in `coat` (a shirt unless given), and
+// an expression from MOUTH, EYES and BROWS (unit 17's feelings).
 const MOUTH = {
   smile: '<path d="M55 81 Q64 88 73 81" stroke="#8f2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>',
   frown: '<path d="M55 85 Q64 79 73 85" stroke="#8f2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>',
   open: '<path d="M53 79 Q64 76 75 79 Q72 92 64 92 Q56 92 53 79 Z" fill="#8f2a22" stroke="#6e1f19" stroke-width="1.5"/><path d="M55 79.5 Q64 77.5 73 79.5 V83 H55 Z" fill="#ffffff"/><path d="M61 78.5 V83 M67 78.5 V83" stroke="#c9d3da" stroke-width="1"/>',
   ow: '<ellipse cx="64" cy="84" rx="5" ry="6" fill="#8f2a22" stroke="#6e1f19" stroke-width="1.5"/>',
+  grin: '<path d="M50 78 Q64 81 78 78 Q74 94 64 94 Q54 94 50 78 Z" fill="#8f2a22" stroke="#6e1f19" stroke-width="1.5" stroke-linejoin="round"/><path d="M52 78.6 Q64 81.4 76 78.6 L75 83 Q64 85 53 83 Z" fill="#ffffff"/><path d="M57 88 Q64 85 71 88 Q68 93 64 93 Q60 93 57 88 Z" fill="#e0706a"/>',
+  flat: '<path d="M56 84 H72" stroke="#8f2a22" stroke-width="2.5" stroke-linecap="round"/>',
+  wavy: '<path d="M53 85 q2.75 -3 5.5 0 t5.5 0 t5.5 0 t5.5 0" stroke="#8f2a22" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>',
+  teeth: '<rect x="52" y="79" width="24" height="10" rx="3" fill="#ffffff" stroke="#8f2a22" stroke-width="2"/><path d="M52 84 H76 M58 79 V89 M64 79 V89 M70 79 V89" stroke="#c9d3da" stroke-width="1"/>',
+};
+const BROWS = {
+  calm: 'M44 48 Q51 45 58 48 M70 48 Q77 45 84 48',
+  angry: 'M44 46 L57 50 M84 46 L71 50',
+  worried: 'M44 49 L57 44 M84 49 L71 44',
+  up: 'M44 43 Q51 37 58 43 M70 43 Q77 37 84 43',
+};
+// Each pair of eyes: at 51,58 and 77,58.
+const pair = f => f(51) + f(77);
+const EYES = {
+  open: pair(x => `<ellipse cx="${x}" cy="58" rx="6" ry="4.5" fill="#ffffff" stroke="#8a9aa5" stroke-width="1"/>`)
+    + '\n' + pair(x => `<circle cx="${x}" cy="58" r="2.6" fill="${HAIR_COLOUR}"/>`),
+  wide: pair(x => `<ellipse cx="${x}" cy="58" rx="6.5" ry="6.5" fill="#ffffff" stroke="#8a9aa5" stroke-width="1"/><circle cx="${x}" cy="58" r="1.8" fill="${HAIR_COLOUR}"/>`),
+  half: pair(x => `<ellipse cx="${x}" cy="58" rx="6" ry="4.5" fill="#ffffff" stroke="#8a9aa5" stroke-width="1"/><circle cx="${x}" cy="59.5" r="2.6" fill="${HAIR_COLOUR}"/><path d="M${x - 6.5} 58.5 Q${x} 51 ${x + 6.5} 58.5 Z" fill="#e7b48a"/><path d="M${x - 6.5} 58.5 H${x + 6.5}" stroke="${HAIR_COLOUR}" stroke-width="2" stroke-linecap="round"/>`),
+  closed: pair(x => `<path d="M${x - 6} 58 Q${x} 62 ${x + 6} 58" stroke="${HAIR_COLOUR}" stroke-width="2.5" fill="none" stroke-linecap="round"/>`),
+  happy: pair(x => `<path d="M${x - 6} 60 Q${x} 52 ${x + 6} 60" stroke="${HAIR_COLOUR}" stroke-width="2.5" fill="none" stroke-linecap="round"/>`),
 };
 const BLUE_TOP = 'fill="#3f7cc0" stroke="#24507f" stroke-width="2.5"';
-export function face({ mouth = 'smile', pained = false, coat = null, extra = '' } = {}) {
-  const brows = pained ? 'M44 46 L57 50 M84 46 L71 50' : 'M44 48 Q51 45 58 48 M70 48 Q77 45 84 48';
+export function face({ mouth = 'smile', eyes = 'open', brows, pained = false, coat = null, extra = '' } = {}) {
+  brows = BROWS[brows ?? (pained ? 'angry' : 'calm')];
   return `<path d="M20 128 C20 108 40 100 64 100 C88 100 108 108 108 128 Z" ${coat ?? BLUE_TOP} stroke-linejoin="round"/>
 <rect x="54" y="84" width="20" height="20" ${SKIN_ATTR}/>
 <ellipse cx="30" cy="60" rx="7" ry="10" ${SKIN_ATTR}/><ellipse cx="98" cy="60" rx="7" ry="10" ${SKIN_ATTR}/>
 <ellipse cx="64" cy="58" rx="33" ry="36" ${SKIN_ATTR}/>
 <path d="M31 56 C27 22 50 16 64 16 C80 16 101 22 97 56 C92 36 78 30 64 31 C50 31 37 38 31 56 Z" fill="${HAIR_COLOUR}"/>
 <path d="${brows}" stroke="${HAIR_COLOUR}" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-<ellipse cx="51" cy="58" rx="6" ry="4.5" fill="#ffffff" stroke="#8a9aa5" stroke-width="1"/><ellipse cx="77" cy="58" rx="6" ry="4.5" fill="#ffffff" stroke="#8a9aa5" stroke-width="1"/>
-<circle cx="51" cy="58" r="2.6" fill="${HAIR_COLOUR}"/><circle cx="77" cy="58" r="2.6" fill="${HAIR_COLOUR}"/>
+${EYES[eyes]}
 <path d="M64 60 Q59 70 63 72 Q66 73 68 71" stroke="#b07a52" stroke-width="2" fill="none" stroke-linecap="round"/>
 ${MOUTH[mouth]}
 ${extra}`;

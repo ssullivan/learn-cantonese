@@ -1,0 +1,508 @@
+{
+ "fan3-gaau-laa1": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 訓覺啦 fan gok laa"
+  ],
+  "audio": "944c87330e60"
+ },
+ "gam-jat-hou-mun": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 悶 tone 6 sounds like 3 (p 0.40)"
+  ],
+  "audio": "a97705fee79f"
+ },
+ "geng-hot": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 渴 tone 3 sounds like 6 (p 0.09)"
+  ],
+  "audio": "7829941bed69"
+ },
+ "gui": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 對 deoi"
+  ],
+  "audio": "477006a5e285"
+ },
+ "haau-si": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 試 tone 5 sounds like 6 (p 0.04)"
+  ],
+  "audio": "53368fd6491f"
+ },
+ "jam2-bui-water-laa1": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 水 tone 2 sounds like 2 (p 0.42)"
+  ],
+  "audio": "5d55fa76c5c8"
+ },
+ "jan-wai-keoi-sik6-zo-ngo-go-pineapple-butter": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 我 tone 5 sounds like 3 (p 0.01)"
+  ],
+  "audio": "fa34a72d377a"
+ },
+ "jan-wai-ngo-ting-jat-haau-si": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.32)"
+  ],
+  "audio": "d13a4e06781f"
+ },
+ "keoi-cold-zo-maa3": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 佢 tone 5 sounds like 6 (p 0.07); 冒 tone 6 sounds like 3 (p 0.32)"
+  ],
+  "audio": "174156fb5667"
+ },
+ "keoi-hou-nau-wo3": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 佢 tone 5 sounds like 2 (p 0.25)"
+  ],
+  "audio": "c13f51a4ab60"
+ },
+ "m-gui": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 唔 tone 4 sounds like 5 (p 0.01)",
+   "speech-to-text heard 唔該 m goi",
+   "tone doubtful: 攰 tone 6 sounds like 3 (p 0.16)"
+  ],
+  "audio": "f65a5023630d"
+ },
+ "m-hing-fan": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 奮 tone 5 sounds like 2 (p 0.07)"
+  ],
+  "audio": "5dd26bd6cdc1"
+ },
+ "m-hoi-sam": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 2 (p 0.05)"
+  ],
+  "audio": "1baaabc554cf"
+ },
+ "m-hou-m-hoi-sam-laa1": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.40)"
+  ],
+  "audio": "e130a660e41a"
+ },
+ "m-hou-nau-laa1": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 唔 tone 4 sounds like 5 (p 0.01)"
+  ],
+  "audio": "a62c4de30672"
+ },
+ "m-mun": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.16)"
+  ],
+  "audio": "692b014cc03c"
+ },
+ "m-ngaan-fan": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 6 (p 0.07)"
+  ],
+  "audio": "44587af27e80"
+ },
+ "m-soeng-sam": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.38)"
+  ],
+  "audio": "e84078116b0b"
+ },
+ "m-tou-ngo": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 餓 tone 6 sounds like 3 (p 0.01)",
+   "tone doubtful: 肚 tone 5 sounds like 6 (p 0.04)"
+  ],
+  "audio": "0fa1e974b1ae"
+ },
+ "maa3": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard MA m a"
+  ],
+  "audio": "b06b1699d0c2"
+ },
+ "mou-je-lo1": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 嘢 tone 5 sounds like 2 (p 0.01)"
+  ],
+  "audio": "05bbbd2cbda7"
+ },
+ "mun": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Mwn m w n"
+  ],
+  "audio": "84f660fc44d7"
+ },
+ "nau": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Naw n a w"
+  ],
+  "audio": "4d3a20db61c4"
+ },
+ "nei-dim-gaai-gam3-nau-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "89a18ddfe52a"
+ },
+ "nei-dim-gaai-m-hoi-sam-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "4b194971a10d"
+ },
+ "nei-eye-m-ngaan-fan-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 眼 tone 5 sounds like 2 (p 0.45); 瞓 tone 3 sounds like 1 (p 0.30)"
+  ],
+  "audio": "0ed2307f770a"
+ },
+ "nei-gam-jat-hou-hoi-sam-wo3": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 你 tone 5 sounds like 6 (p 0.17)"
+  ],
+  "audio": "5b4d9f3f1973"
+ },
+ "nei-gam-jat-sam-cing-dim-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 你 tone 5 sounds like 6 (p 0.13)"
+  ],
+  "audio": "52d482c7c1b6"
+ },
+ "nei-gan-m-gan-zoeng-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 你 tone 5 sounds like 6 (p 0.12); 緊 tone 2 sounds like 1 (p 0.15)"
+  ],
+  "audio": "29481f4885c7"
+ },
+ "nei-geng-m-geng-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "af52173f4af1"
+ },
+ "nei-geng2-m-geng-hot-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "speech-to-text heard 你驚唔驚喝呀 nei ging m ging hot aa"
+  ],
+  "audio": "f1a6b32ba9f6"
+ },
+ "nei-gok-dak-dim-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "843ff23d3def"
+ },
+ "nei-gui-m-gui-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 攰 tone 6 sounds like 4 (p 0.03); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 攰 tone 6 sounds like 3 (p 0.04)"
+  ],
+  "audio": "ea4b0f46b927"
+ },
+ "nei-hing1-m-hing-fan-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 唔 tone 4 sounds like 2 (p 0.03); 奮 tone 5 sounds like 2 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)",
+   "speech-to-text heard 你興唔興奮啦 nei hing m hing fan laa",
+   "tone doubtful: 你 tone 5 sounds like 2 (p 0.12)"
+  ],
+  "audio": "67aa5f6631f3"
+ },
+ "nei-hoi-m-hoi-sam-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 你 tone 5 sounds like 2 (p 0.31)"
+  ],
+  "audio": "7fb3aad06b29"
+ },
+ "nei-mun-m-mun-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 悶 tone 6 sounds like 2 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "652e5f691225"
+ },
+ "nei-nau-m-nau-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "b83979c3c105"
+ },
+ "nei-soeng1-m-soeng-sam-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "64a19cdeefdb"
+ },
+ "nei-stomach-m-tou-ngo-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 肚 tone 5 sounds like 4 (p 0.00); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 肚 tone 5 sounds like 6 (p 0.04); 餓 tone 6 sounds like 1 (p 0.17)"
+  ],
+  "audio": "b5a892f8a9be"
+ },
+ "ngo-hou-gan-zoeng": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 好 tone 2 sounds like 5 (p 0.11)"
+  ],
+  "audio": "6dffaede5bec"
+ },
+ "ngo-hou-geng": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.42); 好 tone 2 sounds like 5 (p 0.17)"
+  ],
+  "audio": "cf8aefa561f3"
+ },
+ "ngo-hou-gui": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.24)"
+  ],
+  "audio": "5238464128b9"
+ },
+ "ngo-hou-hoi-sam": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.39)"
+  ],
+  "audio": "44220b195c6e"
+ },
+ "ngo-hou-mun": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.11)"
+  ],
+  "audio": "55bdc3c02668"
+ },
+ "ngo-hou-nau": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 我 tone 5 sounds like 2 (p 0.03)"
+  ],
+  "audio": "54f2cdb66957"
+ },
+ "ngo-hou-ngaan-fan": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 好 tone 2 sounds like 6 (p 0.03)",
+   "tone doubtful: 眼 tone 5 sounds like 6 (p 0.07)"
+  ],
+  "audio": "0ca0631783e6"
+ },
+ "ngo-hou-soeng-sam": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.39)"
+  ],
+  "audio": "e64930ac4ae7"
+ },
+ "ngo-hou-tou-ngo": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.05); 肚 tone 5 sounds like 6 (p 0.06)"
+  ],
+  "audio": "e86a3bea27f1"
+ },
+ "ngo-jau-di-geng": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 有 tone 5 sounds like 2 (p 0.37)"
+  ],
+  "audio": "3e2db6b4e1e6"
+ },
+ "ngo-jau-di-geng-hot": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 渴 tone 3 sounds like 6 (p 0.06)"
+  ],
+  "audio": "b324e0e977e0"
+ },
+ "ngo-jau-di-ngaan-fan": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 眼 tone 5 sounds like 2 (p 0.26)"
+  ],
+  "audio": "c0b591711d15"
+ },
+ "ngo-jau-di-tou-ngo": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 肚 tone 5 sounds like 4 (p 0.01)",
+   "tone doubtful: 餓 tone 6 sounds like 3 (p 0.40)"
+  ],
+  "audio": "f6822f3cb95e"
+ },
+ "ngo-m-geng-laa3": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 我唔驚呀 ngo m ging aa"
+  ],
+  "audio": "b5e3d8b07cf0"
+ },
+ "ngo-m-hai-hou-gan-zoeng": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 係 tone 6 sounds like 5 (p 0.19)"
+  ],
+  "audio": "e2ab0227e3b9"
+ },
+ "ngo-m-hai-hou-geng": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 係 tone 6 sounds like 5 (p 0.38)"
+  ],
+  "audio": "aa1829501a11"
+ },
+ "ngo-m-hai-hou-geng-hot": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 係 tone 6 sounds like 2 (p 0.06)"
+  ],
+  "audio": "5b2bdfbacff6"
+ },
+ "ngo-m-hai-hou-gui": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 係 tone 6 sounds like 5 (p 0.10)"
+  ],
+  "audio": "7ade4657a8fa"
+ },
+ "ngo-m-hai-hou-hing-fan": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 係 tone 6 sounds like 5 (p 0.27); 奮 tone 5 sounds like 2 (p 0.27)"
+  ],
+  "audio": "d78790ee79a4"
+ },
+ "ngo-m-hai-hou-hoi-sam": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 係 tone 6 sounds like 5 (p 0.10)"
+  ],
+  "audio": "e3a794ad44f4"
+ },
+ "ngo-m-hai-hou-nau": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 係 tone 6 sounds like 5 (p 0.14)"
+  ],
+  "audio": "07b7089c9f08"
+ },
+ "ngo-m-hai-hou-ngaan-fan": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 好 tone 2 sounds like 5 (p 0.01)",
+   "tone doubtful: 係 tone 6 sounds like 5 (p 0.42)"
+  ],
+  "audio": "e71302463d98"
+ },
+ "ngo-m-hai-hou-soeng-sam": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 係 tone 6 sounds like 5 (p 0.36)"
+  ],
+  "audio": "2db7f974f217"
+ },
+ "ngo-m-hai-hou-tou-ngo": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 肚 tone 5 sounds like 6 (p 0.01)",
+   "tone doubtful: 係 tone 6 sounds like 5 (p 0.12)"
+  ],
+  "audio": "ec5ad0864ef4"
+ },
+ "ngo-ting-jat-haau-si-maa3": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 試 tone 5 sounds like 6 (p 0.05)"
+  ],
+  "audio": "bbe43fef617c"
+ },
+ "ngo-tou-ngo-laa3": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 肚 tone 5 sounds like 6 (p 0.04)"
+  ],
+  "audio": "c853b0e942d0"
+ },
+ "no-need-gan-zoeng-laa1": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.05)"
+  ],
+  "audio": "29e54f5a30ed"
+ },
+ "no-need-geng-laa1": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 4 (p 0.40)"
+  ],
+  "audio": "8a21fb14d845"
+ },
+ "soeng1": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Sang s a n g"
+  ],
+  "audio": "85952613b343"
+ },
+ "tou-ngo": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 肚 tone 5 sounds like 6 (p 0.08)"
+  ],
+  "audio": "3840484c40c0"
+ },
+ "zou-di-fan3-gaau-laa1": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 早 tone 2 sounds like 5 (p 0.21)"
+  ],
+  "audio": "ecd2cc0a0199"
+ }
+}

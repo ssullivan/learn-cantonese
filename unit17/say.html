@@ -4,21 +4,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-<title>Audio review</title>
+<title>Say It Back · Feelings</title>
 <link rel="stylesheet" href="../shared/theme.css?v=1a4ed1c2">
-<link rel="stylesheet" href="review.css?v=507021f1">
+<link rel="stylesheet" href="../shared/sayit.css?v=53e6d081">
 </head>
 <body>
 <main class="page">
   <header class="page-header">
-    <a class="back" href="../">← All units</a>
-    <p class="eyebrow">For reviewers</p>
-    <h1><span class="hanzi" lang="zh-HK">聽錄音</span>Audio review</h1>
-    <p class="lede">Every recording on the site, unit by unit. Press ▶ to listen, then mark it <strong>OK</strong> or <strong>Sounds wrong</strong> and say what you hear: a wrong tone, a wrong word, or anything unnatural. Your marks stay in this browser; when you're done, press <strong>Copy my notes</strong> and paste them into a message.</p>
+    <a class="back" href="../">← Unit 17</a>
+    <p class="eyebrow">Unit 17 · Speaking</p>
+    <h1><span class="hanzi" lang="zh-HK">講</span>Say It Back</h1>
+    <p class="lede">Say how you feel yourself, particles and all, and see how your tones compare with a native speaker's.</p>
   </header>
-  <div id="review"></div>
+  <div id="say"></div>
 </main>
 <script src="../shared/core.js?v=fe121fe2"></script>
+<script src="../shared/audio.js?v=f296d05e"></script>
+<script src="../shared/pitch.js?v=e95f83fc"></script>
+<script src="../shared/sayit.js?v=9a595dd5"></script>
 <script src="../shared/numbers.js?v=5e41ae92"></script>
 <script src="../shared/units.js?v=e8593641"></script>
 <script src="../unit1/vocab.js?v=dd7808ee"></script>
@@ -37,7 +40,15 @@
 <script src="../unit14/vocab.js?v=f07cab10"></script>
 <script src="../unit15/vocab.js?v=5a5a032b"></script>
 <script src="../unit16/vocab.js?v=cf07e325"></script>
-<script src="../unit17/vocab.js?v=7a0493bf"></script>
-<script src="review.js?v=0821dea8"></script>
+<script src="vocab.js?v=7a0493bf"></script>
+<script>
+  const V = window.VOCAB;
+  SayIt.init({
+    root: document.getElementById('say'),
+    key: 'u17-say',
+    pool: [...V.feelings, ...V.halves.filter(h => !h.unit), ...V.talk, ...V.particles.filter(p => !p.unit), ...V.nots,
+      ...V.states, ...V.asks, ...V.comfort, ...V.particled, ...V.sentences],
+  });
+</script>
 </body>
 </html>

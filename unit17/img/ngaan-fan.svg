@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A sleepy face, yawning</title>
+<path d="M20 128 C20 108 40 100 64 100 C88 100 108 108 108 128 Z" fill="#3f7cc0" stroke="#24507f" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="54" y="84" width="20" height="20" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+<ellipse cx="30" cy="60" rx="7" ry="10" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/><ellipse cx="98" cy="60" rx="7" ry="10" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+<ellipse cx="64" cy="58" rx="33" ry="36" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+<path d="M31 56 C27 22 50 16 64 16 C80 16 101 22 97 56 C92 36 78 30 64 31 C50 31 37 38 31 56 Z" fill="#3b2f2a"/>
+<path d="M44 48 Q51 45 58 48 M70 48 Q77 45 84 48" stroke="#3b2f2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M45 58 Q51 62 57 58" stroke="#3b2f2a" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M71 58 Q77 62 83 58" stroke="#3b2f2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M64 60 Q59 70 63 72 Q66 73 68 71" stroke="#b07a52" stroke-width="2" fill="none" stroke-linecap="round"/>
+<ellipse cx="64" cy="84" rx="5" ry="6" fill="#8f2a22" stroke="#6e1f19" stroke-width="1.5"/>
+<g transform="translate(68 0) scale(.6)"><path d="M54 24 h10 l-10 12 h10 M74 12 h8 l-8 10 h8 M90 30 h6 l-6 8 h6" stroke="#6f8796" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>
