@@ -1,0 +1,244 @@
+{
+ "baak-ge-coat": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 嘅 tone 3 sounds like 6 (p 0.17)"
+  ],
+  "audio": "050e881fd57c"
+ },
+ "baak-ge-shirt": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 嘅 tone 3 sounds like 6 (p 0.20)"
+  ],
+  "audio": "528b6d9ab6b2"
+ },
+ "baak-ge-trousers": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 嘅 tone 3 sounds like 6 (p 0.16)"
+  ],
+  "audio": "22d8159e74d1"
+ },
+ "caang-ge-coat": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 嘅 tone 3 sounds like 3 (p 0.46)"
+  ],
+  "audio": "67ead771ce3c"
+ },
+ "caang-ge-shirt": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 嘅 tone 3 sounds like 5 (p 0.13)"
+  ],
+  "audio": "2ffe610143a4"
+ },
+ "caang-ge-trousers": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 嘅 tone 3 sounds like 6 (p 0.17)"
+  ],
+  "audio": "844a257636c6"
+ },
+ "fan-hung-ge-coat": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 嘅 tone 3 sounds like 6 (p 0.13)"
+  ],
+  "audio": "12c51901a8be"
+ },
+ "fan-hung-ge-shirt": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 嘅 tone 3 sounds like 3 (p 0.41)"
+  ],
+  "audio": "cf5165c7c637"
+ },
+ "fan-hung-ge-shoes": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 粉紅色既鞋 fan hung sik gei haai"
+  ],
+  "audio": "61a293cdef82"
+ },
+ "fu": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Fou f o u"
+  ],
+  "audio": "fdcf688421d9"
+ },
+ "hat": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 帽 tone 2 sounds like 5 (p 0.07)"
+  ],
+  "audio": "67c2e9e1abd5"
+ },
+ "hung-ge-coat": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 嘅 tone 3 sounds like 6 (p 0.07)"
+  ],
+  "audio": "8d988ee7884d"
+ },
+ "hung-ge-skirt": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 嘅 tone 3 sounds like 6 (p 0.19)"
+  ],
+  "audio": "e7711722c684"
+ },
+ "keoi-daai-glasses": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 佢 tone 5 sounds like 6 (p 0.17)"
+  ],
+  "audio": "35debfd68684"
+ },
+ "keoi-zoek-hung-ge-shirt": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 佢 tone 5 sounds like 6 (p 0.10)"
+  ],
+  "audio": "4c2ed51085c2"
+ },
+ "keoi-zoek-laam-ge-trousers-tung-baak-ge-shoes": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 佢 tone 5 sounds like 3 (p 0.03)",
+   "tone doubtful: 藍 tone 4 sounds like 4 (p 0.34); 嘅 tone 3 sounds like 6 (p 0.13); 嘅 tone 3 sounds like 5 (p 0.14)"
+  ],
+  "audio": "9ff6e0004b7b"
+ },
+ "laam-ge-coat": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 嘅 tone 3 sounds like 6 (p 0.13)"
+  ],
+  "audio": "851074357f2a"
+ },
+ "laam-ge-shoes": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 藍色既鞋 laam sik gei haai",
+   "tone doubtful: 嘅 tone 3 sounds like 3 (p 0.44)"
+  ],
+  "audio": "bfb262831030"
+ },
+ "laam-ge-skirt": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 嘅 tone 3 sounds like 6 (p 0.26)"
+  ],
+  "audio": "9140987a48b5"
+ },
+ "laam-ge-trousers": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 色 tone 1 sounds like 6 (p 0.27); 嘅 tone 3 sounds like 6 (p 0.27)"
+  ],
+  "audio": "e3c218162893"
+ },
+ "luk-ge-shirt": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 嘅 tone 3 sounds like 6 (p 0.24)"
+  ],
+  "audio": "ef68b84fcf28"
+ },
+ "nei-gin-shirt-hai-mat-je-ngaan-sik-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "049a38766cb3"
+ },
+ "ngo-daai-hak-ge-hat": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 我戴黑色既帽 ngo daai hak sik gei mou"
+  ],
+  "audio": "969c8960ad52"
+ },
+ "ngo-gin-shirt-hai-laam-ge": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 色 tone 1 sounds like 6 (p 0.00)",
+   "tone doubtful: 係 tone 6 sounds like 3 (p 0.10); 嘅 tone 3 sounds like 5 (p 0.25)"
+  ],
+  "audio": "23a667c87c3f"
+ },
+ "ngo-jiu-baak-ge-shoes": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 我要白色既鞋 ngo jiu baak sik gei haai"
+  ],
+  "audio": "280b728be7b1"
+ },
+ "ngo-m-zoek-coat": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 著 tone 3 sounds like 6 (p 0.24)"
+  ],
+  "audio": "1176ed5e662c"
+ },
+ "ni-gin-coat-gei-do-cin-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 件 tone 6 sounds like 3 (p 0.40); 幾 tone 2 sounds like 2 (p 0.37)"
+  ],
+  "audio": "0dca582d5550"
+ },
+ "one-coat": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 件 tone 6 sounds like 3 (p 0.45)"
+  ],
+  "audio": "38e0be5dd2c0"
+ },
+ "one-glasses": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 眼 tone 5 sounds like 2 (p 0.17)"
+  ],
+  "audio": "38ca9864ab53"
+ },
+ "skirt": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 關 gwaan"
+  ],
+  "audio": "df8570071c02"
+ },
+ "wong-ge-coat": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 嘅 tone 3 sounds like 6 (p 0.24)"
+  ],
+  "audio": "aa8b661da2af"
+ },
+ "wong-ge-shirt": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 嘅 tone 3 sounds like 6 (p 0.41)"
+  ],
+  "audio": "c24d1d76b9b0"
+ },
+ "wong-ge-skirt": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 嘅 tone 3 sounds like 6 (p 0.34)"
+  ],
+  "audio": "e47e8fbf3273"
+ },
+ "zoek": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Chat c h a t"
+  ],
+  "audio": "34028bd54616"
+ }
+}

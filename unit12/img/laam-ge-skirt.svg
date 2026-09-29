@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Blue skirt</title>
+<g transform="translate(64 64) scale(2.4) translate(-64 -84)">
+<path d="M51 70 H77 L85 98 H43 Z" fill="#3f7cc0" stroke="#24507f" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M58 72 L55 97 M70 72 L73 97" stroke="#24507f" stroke-width="1" fill="none" opacity=".6"/>
+</g>
+</svg>

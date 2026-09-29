@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>glasses</title>
+<g transform="translate(64 64) scale(4.5) translate(-64 -20)">
+<circle cx="59" cy="20" r="4.2" fill="#bfe0f2" fill-opacity=".5" stroke="#2e2e33" stroke-width="1.6"/>
+<circle cx="69" cy="20" r="4.2" fill="#bfe0f2" fill-opacity=".5" stroke="#2e2e33" stroke-width="1.6"/>
+<path d="M63.2 20 H64.8 M54.8 19 L52 18 M73.2 19 L76 18" stroke="#2e2e33" stroke-width="1.6" stroke-linecap="round"/>
+</g>
+</svg>

@@ -17,7 +17,8 @@
  * .prompt-pic.right / .wrong, .ticket (an order pad: .ticket-row >
  * .ticket-label + .ticket-opts of small .pic-btn / .choice buttons), and
  * .map (a 5 × 5 street map: .road, .block, .road.you, and .pic-btn.spot
- * places).
+ * places), and .dress (a .figure with img.layer clothes placed on it by
+ * the game, beside a .rack of clothes to pick).
  */
 
 .btn.small { padding: 6px 12px; font-size: 14px; }
@@ -231,6 +232,13 @@
 .map .spot img { object-fit: contain; }
 .map .you { display: grid; place-items: center; align-content: center; color: #ffffff; font-size: 22px; font-weight: 800; line-height: 1; }
 .map .you span { font-size: 14px; }
+
+/* Dressing a figure: layers are placed on it in % by the game */
+.dress { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px; margin: 0 0 16px; }
+.figure { position: relative; flex: none; width: 240px; aspect-ratio: 1; }
+.figure img { position: absolute; left: 0; top: 0; width: 100%; }
+.dress .rack { flex: 1 1 260px; max-width: 400px; }
+@media (max-width: 560px) { .figure { width: 160px; margin: 0 auto; } }
 
 /* End screen */
 .game-end { text-align: center; padding: 16px 0; }

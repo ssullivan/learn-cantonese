@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A person, ready to dress</title>
+<ellipse cx="64" cy="122" rx="26" ry="4" fill="#9fb0bb" opacity=".35"/>
+<path d="M48 36 L40 70 L45 71 L53 44 Z M80 36 L88 70 L83 71 L75 44 Z" fill="#f2c9a0" stroke="#b07a52" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="42" cy="72" r="4" fill="#f2c9a0" stroke="#b07a52" stroke-width="1.5"/><circle cx="86" cy="72" r="4" fill="#f2c9a0" stroke="#b07a52" stroke-width="1.5"/>
+<path d="M52 82 H62 V114 H52 Z M66 82 H76 V114 H66 Z" fill="#f2c9a0" stroke="#b07a52" stroke-width="1.5"/>
+<path d="M47 120 C47 114 52 113 55 113 H61 V120 Z M81 120 C81 114 76 113 73 113 H67 V120 Z" fill="#f2c9a0" stroke="#b07a52" stroke-width="1.5"/>
+<rect x="60" y="28" width="8" height="7" fill="#f2c9a0" stroke="#b07a52" stroke-width="1.5"/>
+<path d="M54 33 Q64 37 74 33 L80 36 L78 72 H50 L48 36 Z" fill="#dfe4e8" stroke="#8a9aa5" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M50 70 H78 V84 H66 L64 78 L62 84 H50 Z" fill="#dfe4e8" stroke="#8a9aa5" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="64" cy="20" r="10" fill="#f2c9a0" stroke="#b07a52" stroke-width="1.5"/>
+<path d="M54 19 C53 9 60 7 64 7 C70 7 75 10 74 19 C71 13 58 12 54 19 Z" fill="#3b2f2a"/>
+<circle cx="60" cy="21" r="1.2" fill="#3b2f2a"/><circle cx="68" cy="21" r="1.2" fill="#3b2f2a"/>
+<path d="M61 25 Q64 27 67 25" stroke="#b07a52" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+</svg>

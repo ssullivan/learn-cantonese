@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Green hat</title>
+<g transform="translate(64 64) scale(3) translate(-69 -10)">
+<path d="M53 14 C53 2 75 2 75 14 Z" fill="#3a9a6e" stroke="#26684a" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M52 14 H84 Q86 18 81 18 H52 Z" fill="#3a9a6e" stroke="#26684a" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="64" cy="4" r="1.8" fill="#26684a"/>
+</g>
+</svg>

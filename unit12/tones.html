@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tone Detective · Colours &amp; Clothes</title>
+<link rel="stylesheet" href="../shared/theme.css?v=1a4ed1c2">
+<link rel="stylesheet" href="../shared/game.css?v=74b79084">
+</head>
+<body>
+<main class="page">
+  <header class="page-header">
+    <a class="back" href="../">← Unit 12</a>
+    <p class="eyebrow">Unit 12 · Game</p>
+    <h1><span class="hanzi" lang="zh-HK">聲調</span>Tone Detective</h1>
+    <p class="lede">Hear a colour or a garment and catch its tones. Is it 紅 hung4 or 粉 fan2?</p>
+  </header>
+  <div id="game"></div>
+</main>
+<script src="../shared/core.js?v=fe121fe2"></script>
+<script src="../shared/audio.js?v=f296d05e"></script>
+<script src="../shared/game.js?v=8924273a"></script>
+<script src="../shared/tones.js?v=1e42a794"></script>
+<script src="../shared/numbers.js?v=5e41ae92"></script>
+<script src="../shared/units.js?v=e8593641"></script>
+<script src="../unit1/vocab.js?v=dd7808ee"></script>
+<script src="../unit2/vocab.js?v=5242e509"></script>
+<script src="../unit3/vocab.js?v=2f03c48d"></script>
+<script src="../unit4/vocab.js?v=54f5e120"></script>
+<script src="../unit5/vocab.js?v=c7ef5f1f"></script>
+<script src="../unit6/vocab.js?v=438f8da1"></script>
+<script src="../unit10/vocab.js?v=a67a7448"></script>
+<script src="vocab.js?v=08551c6e"></script>
+<script>
+  const V = window.VOCAB;
+  Tones.init({
+    root: document.getElementById('game'),
+    key: 'u12-tones',
+    levels: [
+      { id: 'colours', name: '紅色 黃色 藍色', blurb: 'Every colour ends in 色 sik1: listen to the first syllable.', pool: V.colours, choices: 3 },
+      { id: 'clothes', name: 'Clothes', blurb: '帽 外套 裙 眼鏡, 著 and 戴.', pool: [...V.basics, ...V.clothes.filter(e => !e.unit), ...V.measures.filter(e => !e.unit)], choices: 3 },
+      { id: 'coloured', name: '紅色嘅衫', blurb: 'A colour, 嘅 and a garment.', pool: [...V.coloured, ...V.wear, ...V.ones.filter(e => !e.unit)], choices: 4 },
+      { id: 'sentences', name: 'Sentences', blurb: '你件衫係乜嘢顏色呀？', pool: [...V.phrases, ...V.sentences], choices: 4 },
+    ],
+  });
+</script>
+</body>
+</html>
