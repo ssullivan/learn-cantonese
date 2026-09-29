@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Bird, on a branch</title>
+
+<path d="M8 104 H120" stroke="#8a5a2b" stroke-width="6" stroke-linecap="round"/>
+<path d="M100 104 C104 94 114 92 118 96 C114 102 106 104 100 104 Z" fill="#5fa33a" stroke="#3f7a22" stroke-width="2"/>
+<path d="M58 92 V104 M70 92 V104 M54 104 h8 M66 104 h8" stroke="#e8923a" stroke-width="3" stroke-linecap="round"/>
+<path d="M92 62 L118 50 L112 74 Z" fill="#3f7cc0" stroke="#24507f" stroke-width="2.5" stroke-linejoin="round"/>
+<ellipse cx="64" cy="68" rx="30" ry="26" fill="#5aa0d8" stroke="#24507f" stroke-width="3"/>
+<ellipse cx="56" cy="78" rx="17" ry="14" fill="#f7e3a8"/>
+<path d="M66 62 C82 58 94 66 92 78 C84 80 72 76 66 62 Z" fill="#3f7cc0" stroke="#24507f" stroke-width="2" stroke-linejoin="round"/>
+<path d="M36 60 L22 65 L36 70 Z" fill="#e8923a" stroke="#b5651f" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="46" cy="58" r="3.5" fill="#2a2a2a"/><circle cx="47" cy="57" r="1" fill="#ffffff"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Pig</title>
+<ellipse cx="64" cy="116" rx="36" ry="4" fill="#9fb0bb" opacity=".35"/>
+<path d="M92 104 c9 -1 11 -10 5 -12 c-6 -2 -7 7 1 6" stroke="#b8667a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M36 114 C32 90 42 74 64 74 C86 74 96 90 92 114 Z" fill="#f4b6c2" stroke="#b8667a" stroke-width="3" stroke-linejoin="round"/>
+<ellipse cx="50" cy="114" rx="8" ry="4" fill="#b8667a"/><ellipse cx="78" cy="114" rx="8" ry="4" fill="#b8667a"/>
+<path d="M40 38 L34 16 L56 28 Z M88 38 L94 16 L72 28 Z" fill="#f4b6c2" stroke="#b8667a" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="64" cy="54" r="28" fill="#f4b6c2" stroke="#b8667a" stroke-width="3"/>
+<circle cx="52" cy="48" r="3.5" fill="#2a2a2a"/><circle cx="76" cy="48" r="3.5" fill="#2a2a2a"/>
+<circle cx="44" cy="62" r="5" fill="#eb8fa2" opacity=".6"/><circle cx="84" cy="62" r="5" fill="#eb8fa2" opacity=".6"/>
+<ellipse cx="64" cy="64" rx="13" ry="9" fill="#eb8fa2" stroke="#b8667a" stroke-width="2.5"/>
+<ellipse cx="59.5" cy="64" rx="2.2" ry="3.2" fill="#b8667a"/><ellipse cx="68.5" cy="64" rx="2.2" ry="3.2" fill="#b8667a"/>
+</svg>

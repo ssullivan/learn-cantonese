@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A zoo gate, with a paw print on the sign</title>
+
+<path d="M4 118 H124" stroke="#9fb0bb" stroke-width="3" stroke-linecap="round"/>
+<rect x="60" y="84" width="8" height="30" fill="#8a5a2b"/>
+<circle cx="64" cy="76" r="18" fill="#5fa33a" stroke="#3f7a22" stroke-width="2.5"/>
+<path d="M32 118 V74 M44 118 V74 M84 118 V74 M96 118 V74 M28 80 H100" stroke="#6f8796" stroke-width="3" stroke-linecap="round"/>
+<rect x="14" y="48" width="16" height="70" rx="2" fill="#c98a4a" stroke="#7d4f1e" stroke-width="2.5"/>
+<rect x="98" y="48" width="16" height="70" rx="2" fill="#c98a4a" stroke="#7d4f1e" stroke-width="2.5"/>
+<path d="M10 50 Q64 10 118 50 L118 60 Q64 22 10 60 Z" fill="#3a9a6e" stroke="#1f5e40" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="40" y="16" width="48" height="26" rx="5" fill="#f7d35c" stroke="#9a6c0e" stroke-width="2.5"/>
+<ellipse cx="64" cy="33" rx="6.5" ry="5" fill="#7d4f1e"/>
+<circle cx="55" cy="26" r="2.8" fill="#7d4f1e"/><circle cx="61" cy="22.5" r="2.8" fill="#7d4f1e"/>
+<circle cx="67" cy="22.5" r="2.8" fill="#7d4f1e"/><circle cx="73" cy="26" r="2.8" fill="#7d4f1e"/>
+</svg>

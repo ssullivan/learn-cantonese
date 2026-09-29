@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A Chinese dragon</title>
+<ellipse cx="60" cy="116" rx="44" ry="4" fill="#9fb0bb" opacity=".35"/>
+<path d="M92 72 C86 94 66 80 56 96 C48 110 30 102 20 108" stroke="#1f5e40" stroke-width="21" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M92 72 C86 94 66 80 56 96 C48 110 30 102 20 108" stroke="#3a9a6e" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M92 72 C86 94 66 80 56 96 C48 110 30 102 20 108" stroke="#f7d35c" stroke-width="4" stroke-dasharray="2 7" fill="none" stroke-linecap="round"/>
+<path d="M22 100 L8 96 L14 106 L4 112 L18 114 Z" fill="#d6453a" stroke="#8f2a22" stroke-width="2" stroke-linejoin="round"/>
+<path d="M112 40 L124 44 L116 50 L126 56 L114 60 L120 68 L106 66 Z" fill="#d6453a" stroke="#8f2a22" stroke-width="2" stroke-linejoin="round"/>
+<path d="M98 38 L102 18 M101 26 L110 20 M88 40 L86 22 M87 30 L79 24" stroke="#e0a526" stroke-width="4" stroke-linecap="round"/>
+<path d="M84 42 C92 32 112 34 114 50 C116 62 108 72 96 72 C90 72 86 70 82 68 L66 66 C58 64 58 52 66 50 Z" fill="#3a9a6e" stroke="#1f5e40" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="96" cy="50" r="6" fill="#ffffff" stroke="#1f5e40" stroke-width="1.5"/><circle cx="94" cy="50" r="3" fill="#2a2a2a"/>
+<circle cx="68" cy="56" r="2" fill="#1f5e40"/>
+<path d="M66 60 C54 62 50 54 42 58 M68 64 C58 72 52 70 46 78" stroke="#e0a526" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>

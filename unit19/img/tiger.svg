@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Tiger</title>
+<ellipse cx="64" cy="114" rx="36" ry="4" fill="#9fb0bb" opacity=".35"/>
+<path d="M92 108 C112 108 116 88 106 80" stroke="#8a4a12" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M92 108 C112 108 116 88 106 80" stroke="#f08a24" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M36 114 C32 90 42 74 64 74 C86 74 96 90 92 114 Z" fill="#f08a24" stroke="#8a4a12" stroke-width="3" stroke-linejoin="round"/>
+<ellipse cx="64" cy="100" rx="14" ry="12" fill="#fbe8d0"/>
+<path d="M38 92 l10 3 M90 92 l-10 3 M37 104 l10 2 M91 104 l-10 2" stroke="#3b2a1e" stroke-width="3" stroke-linecap="round"/>
+<path d="M54 114 v-10 M74 114 v-10" stroke="#8a4a12" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="40" cy="30" r="10" fill="#f08a24" stroke="#8a4a12" stroke-width="3"/><circle cx="40" cy="30" r="5" fill="#fbe8d0"/>
+<circle cx="88" cy="30" r="10" fill="#f08a24" stroke="#8a4a12" stroke-width="3"/><circle cx="88" cy="30" r="5" fill="#fbe8d0"/>
+<ellipse cx="64" cy="50" rx="30" ry="26" fill="#f08a24" stroke="#8a4a12" stroke-width="3"/>
+<path d="M58 28 l2 8 M64 27 v9 M70 28 l-2 8 M35 46 l10 2 M35 55 l10 0 M93 46 l-10 2 M93 55 l-10 0" stroke="#3b2a1e" stroke-width="3" stroke-linecap="round"/>
+<ellipse cx="64" cy="61" rx="14" ry="10" fill="#fbe8d0"/>
+<ellipse cx="52" cy="46" rx="4" ry="5" fill="#2a2a2a"/><ellipse cx="76" cy="46" rx="4" ry="5" fill="#2a2a2a"/>
+<path d="M60 56 h8 l-4 4z" fill="#3b2a1e"/>
+<path d="M64 60 q-4 5 -8 2 M64 60 q4 5 8 2" stroke="#3b2a1e" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

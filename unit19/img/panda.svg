@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Panda, holding bamboo</title>
+<ellipse cx="64" cy="118" rx="38" ry="4" fill="#9fb0bb" opacity=".35"/>
+<path d="M100 118 L112 34" stroke="#3f7a22" stroke-width="9" stroke-linecap="round"/>
+<path d="M100 118 L112 34" stroke="#7cc24f" stroke-width="5" stroke-linecap="round"/>
+<path d="M102.5 100 l4 1 M105 82 l4 1 M107.5 64 l4 1 M110 46 l4 1" stroke="#3f7a22" stroke-width="2"/>
+<path d="M112 40 C120 30 126 32 124 38 C120 40 116 40 112 40 Z" fill="#7cc24f" stroke="#3f7a22" stroke-width="1.5"/>
+<path d="M36 114 C32 90 42 74 64 74 C86 74 96 90 92 114 Z" fill="#ffffff" stroke="#5f6a72" stroke-width="3" stroke-linejoin="round"/>
+<ellipse cx="46" cy="112" rx="14" ry="9" fill="#2a2a2a"/><ellipse cx="82" cy="112" rx="14" ry="9" fill="#2a2a2a"/>
+<path d="M38 82 C44 72 84 72 90 82 L94 96 C88 90 82 88 78 90 L50 90 C46 88 40 90 34 96 Z" fill="#2a2a2a"/>
+<circle cx="102" cy="90" r="8" fill="#2a2a2a"/>
+<circle cx="38" cy="26" r="11" fill="#2a2a2a"/><circle cx="90" cy="26" r="11" fill="#2a2a2a"/>
+<ellipse cx="64" cy="48" rx="31" ry="27" fill="#ffffff" stroke="#5f6a72" stroke-width="3"/>
+<ellipse cx="51" cy="48" rx="8" ry="10" fill="#2a2a2a" transform="rotate(30 51 48)"/><ellipse cx="77" cy="48" rx="8" ry="10" fill="#2a2a2a" transform="rotate(-30 77 48)"/>
+<circle cx="52" cy="47" r="3" fill="#ffffff"/><circle cx="76" cy="47" r="3" fill="#ffffff"/>
+<ellipse cx="64" cy="59" rx="4" ry="3" fill="#2a2a2a"/>
+<path d="M64 62 q-4 4 -7 2 M64 62 q4 4 7 2" stroke="#2a2a2a" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

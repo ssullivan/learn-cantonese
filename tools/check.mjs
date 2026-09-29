@@ -113,7 +113,7 @@ for (const unit of unitDirs()) {
   for (const e of all.filter(e => e.measure)) {
     const m = measures[e.measure];
     if (!m) { bad(vocabFile, `${e.id}: unknown measure ${e.measure}`); continue; }
-    const pic = own(e, unit) ? art[e.id] : (await loadArt(`unit${e.unit}`))?.[e.id];
+    const pic = own(e, unit) ? art[e.id] : (await loadArt(`unit${e.unit}`))?.[e.file ?? e.id];
     const dish = /data-dish="(\w+)"/.exec(pic ?? '')?.[1];
     if (dish !== m.dish) bad(vocabFile, `${e.id}: ordered by ${m.hanzi} (${m.dish}) but drawn on a ${dish ?? 'nothing'}`);
   }

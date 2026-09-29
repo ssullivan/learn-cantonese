@@ -14,6 +14,10 @@
  *                         vocab.js must be loaded first: a page lists
  *                         ../unit<n>/vocab.js before its own, which
  *                         tools/check.mjs verifies.
+ *   Units.word(n, id, as) the same, under the id `as`, for when `id` is
+ *                         taken in the borrowing unit (unit 19 has 條 and
+ *                         跳, both tiu): file: id keeps its audio and
+ *                         picture (Canto.audioSrc uses file ?? id)
  *   Units.sentences(vocab)
  *                         say(ids, english, extra?): a sentence entry made
  *                         of the entries with those space-separated ids
@@ -41,11 +45,11 @@
     return vocab;
   }
 
-  function word(n, id) {
+  function word(n, id, as) {
     if (!units[n]) throw new Error(`unit ${n}'s vocab.js is not loaded`);
     const entry = Object.values(units[n]).filter(Array.isArray).flat().find(e => e.id === id);
     if (!entry) throw new Error(`unit ${n} has no word ${id}`);
-    return { ...entry, unit: entry.unit ?? n };
+    return { ...entry, unit: entry.unit ?? n, ...(as && { id: as, file: entry.file ?? id }) };
   }
 
   function sentences(vocab) {

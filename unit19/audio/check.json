@@ -1,0 +1,635 @@
+{
+ "bin": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Bin b i n"
+  ],
+  "audio": "0c56c0144c54"
+ },
+ "bin-zek-wui-fei-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "3c6a0c017e32"
+ },
+ "bin-zek-wui-haang-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.01)",
+   "tone doubtful: 會 tone 5 sounds like 2 (p 0.08)"
+  ],
+  "audio": "53eea74b2cd6"
+ },
+ "bin-zek-wui-paa-syu-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 3 (p 0.03); 呀 tone 3 sounds like 2 (p 0.00)",
+   "tone doubtful: 樹 tone 6 sounds like 3 (p 0.16)"
+  ],
+  "audio": "df5ae5a85bfd"
+ },
+ "bin-zek-wui-tiu3-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 跳 tone 3 sounds like 1 (p 0.00); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 3 (p 0.13)"
+  ],
+  "audio": "603f1e5dd1e7"
+ },
+ "bin-zek-wui-zau-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 6 (p 0.27)"
+  ],
+  "audio": "d5ce75cc16d8"
+ },
+ "bird-wui-fei": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 會 tone 5 sounds like 3 (p 0.11)"
+  ],
+  "audio": "f524201b451b"
+ },
+ "bird-wui-m-wui-fei-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 6 (p 0.10); 會 tone 5 sounds like 2 (p 0.22)"
+  ],
+  "audio": "49c11f5f2823"
+ },
+ "cat-wui-m-wui-paa-syu-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 3 (p 0.03); 呀 tone 3 sounds like 2 (p 0.00)",
+   "tone doubtful: 樹 tone 6 sounds like 3 (p 0.16)"
+  ],
+  "audio": "bbd9953c11bf"
+ },
+ "cat-wui-m-wui-tiu3-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 跳 tone 3 sounds like 1 (p 0.00); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 3 (p 0.06)"
+  ],
+  "audio": "883f4ea5c5c3"
+ },
+ "chicken-wui-m-wui-haang-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 2 (p 0.03); 呀 tone 3 sounds like 1 (p 0.00)",
+   "speech-to-text heard 雞會唔會行吖 gai wui m wui hong aa",
+   "tone doubtful: 會 tone 5 sounds like 1 (p 0.18); 唔 tone 4 sounds like 6 (p 0.09)"
+  ],
+  "audio": "273bb12abeec"
+ },
+ "cow-wui-m-wui-paa-syu-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 3 (p 0.03); 呀 tone 3 sounds like 2 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 3 (p 0.38); 樹 tone 6 sounds like 3 (p 0.20)"
+  ],
+  "audio": "b2894472cf88"
+ },
+ "dog-wui-m-wui-fei-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 1 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 2 (p 0.23)"
+  ],
+  "audio": "0b1c8687de9f"
+ },
+ "dog-wui-m-wui-haang-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 6 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)",
+   "speech-to-text heard 狗會唔會行吖 gau wui m wui hong aa",
+   "tone doubtful: 會 tone 5 sounds like 2 (p 0.06)"
+  ],
+  "audio": "88332727c117"
+ },
+ "dog-wui-m-wui-jau4-water-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 6 (p 0.03); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 2 (p 0.40)"
+  ],
+  "audio": "9c91d97bfaa3"
+ },
+ "dog-wui-m-wui-zau-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 1 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "c84ab95d8564"
+ },
+ "dung-mat-jyun-jau-loeng-zek-panda": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 動 tone 6 sounds like 3 (p 0.45); 有 tone 5 sounds like 2 (p 0.11); 兩 tone 5 sounds like 2 (p 0.31)"
+  ],
+  "audio": "74f0ba05b61e"
+ },
+ "dung-mat-jyun-jau-panda": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 物 tone 6 sounds like 1 (p 0.41); 有 tone 5 sounds like 2 (p 0.11)"
+  ],
+  "audio": "67abf379d48d"
+ },
+ "fish-m-wui-haang": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 2 (p 0.02)",
+   "speech-to-text heard 如唔會行 jyu m wui hong"
+  ],
+  "audio": "e57538b33634"
+ },
+ "fish-wui-jau4-water": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 2 (p 0.01)"
+  ],
+  "audio": "f7f5c3a6c572"
+ },
+ "fish-wui-m-wui-fei-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 3 (p 0.17); 會 tone 5 sounds like 2 (p 0.08)"
+  ],
+  "audio": "83657323a63a"
+ },
+ "fish-wui-m-wui-haang-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "speech-to-text heard 如會唔會行呀 jyu wui m wui hong aa",
+   "tone doubtful: 會 tone 5 sounds like 3 (p 0.07); 會 tone 5 sounds like 2 (p 0.06)"
+  ],
+  "audio": "9082a691d65a"
+ },
+ "fish-wui-m-wui-jau4-water-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 魚 tone 4 sounds like 6 (p 0.43); 會 tone 5 sounds like 3 (p 0.04); 會 tone 5 sounds like 2 (p 0.25)"
+  ],
+  "audio": "7b12bb0dac8c"
+ },
+ "fish-wui-m-wui-paa-syu-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 2 (p 0.00)",
+   "tone doubtful: 魚 tone 4 sounds like 6 (p 0.34); 會 tone 5 sounds like 3 (p 0.16); 會 tone 5 sounds like 3 (p 0.17); 樹 tone 6 sounds like 3 (p 0.20)"
+  ],
+  "audio": "efa122ba1820"
+ },
+ "fish-wui-m-wui-zau-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 3 (p 0.08); 會 tone 5 sounds like 3 (p 0.15)"
+  ],
+  "audio": "d50f08a65881"
+ },
+ "horse-wui-m-wui-haang-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 唔 tone 4 sounds like 6 (p 0.02); 會 tone 5 sounds like 2 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 1 (p 0.15)"
+  ],
+  "audio": "543b7e01040b"
+ },
+ "horse-wui-m-wui-paa-syu-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 2 (p 0.00)",
+   "tone doubtful: 馬 tone 5 sounds like 2 (p 0.46); 會 tone 5 sounds like 1 (p 0.05); 樹 tone 6 sounds like 3 (p 0.17)"
+  ],
+  "audio": "058939e08892"
+ },
+ "horse-wui-m-wui-tiu3-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 跳 tone 3 sounds like 1 (p 0.03); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 2 (p 0.04); 會 tone 5 sounds like 2 (p 0.36)"
+  ],
+  "audio": "cbd420275df2"
+ },
+ "horse-wui-m-wui-zau-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 1 (p 0.04); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 馬 tone 5 sounds like 2 (p 0.47); 會 tone 5 sounds like 6 (p 0.29)"
+  ],
+  "audio": "e4b4b5e593c9"
+ },
+ "horse-wui-zau": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 2 (p 0.00)",
+   "tone doubtful: 馬 tone 5 sounds like 2 (p 0.45)"
+  ],
+  "audio": "ae93134d80f4"
+ },
+ "m-wui": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 2 (p 0.00)",
+   "tone doubtful: 唔 tone 4 sounds like 6 (p 0.17)"
+  ],
+  "audio": "758e5156a7b4"
+ },
+ "monkey": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 馬 tone 5 sounds like 2 (p 0.09)"
+  ],
+  "audio": "ade453411d21"
+ },
+ "monkey-wui-m-wui-paa-syu-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 3 (p 0.02); 呀 tone 3 sounds like 2 (p 0.00)",
+   "tone doubtful: 馬 tone 5 sounds like 2 (p 0.08); 會 tone 5 sounds like 3 (p 0.44); 樹 tone 6 sounds like 3 (p 0.13)"
+  ],
+  "audio": "551c4559c8dc"
+ },
+ "monkey-wui-m-wui-tiu3-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 6 (p 0.02); 跳 tone 3 sounds like 1 (p 0.00); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 2 (p 0.35)"
+  ],
+  "audio": "69e9898fc9f8"
+ },
+ "monkey-wui-paa-syu": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 馬 tone 5 sounds like 2 (p 0.10); 會 tone 5 sounds like 6 (p 0.12)"
+  ],
+  "audio": "31cbf35828f1"
+ },
+ "mouse-wui-m-wui-haang-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 2 (p 0.03); 呀 tone 3 sounds like 1 (p 0.00)",
+   "speech-to-text heard 老鼠會唔會行吖 lou syu wui m wui hong aa",
+   "tone doubtful: 會 tone 5 sounds like 3 (p 0.08)"
+  ],
+  "audio": "bd5f2f36bc9a"
+ },
+ "n2-mouse": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 隻 tone 3 sounds like 6 (p 0.01)",
+   "tone doubtful: 老 tone 5 sounds like 2 (p 0.46)"
+  ],
+  "audio": "d1798f7a5914"
+ },
+ "n2-n0-n2-n6-nin-hai-horse-nin": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 二 tone 6 sounds like 3 (p 0.02); 馬 tone 5 sounds like 2 (p 0.01)",
+   "speech-to-text heard 2026年係馬年 ji cin ling ji sap luk nin hai maa nin",
+   "tone doubtful: 零 tone 4 sounds like 6 (p 0.18)"
+  ],
+  "audio": "fc09d74a71cd"
+ },
+ "n3-monkey": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 馬 tone 5 sounds like 2 (p 0.47)"
+  ],
+  "audio": "84539baccfd2"
+ },
+ "n3-tiger": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 隻 tone 3 sounds like 6 (p 0.21); 老 tone 5 sounds like 2 (p 0.24)"
+  ],
+  "audio": "20a66737b435"
+ },
+ "n5-bird": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 唔隻雀仔 m zek zoek zai"
+  ],
+  "audio": "cbf28f11e917"
+ },
+ "n5-dragon": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 五 tone 5 sounds like 2 (p 0.08)"
+  ],
+  "audio": "92a9e57beff5"
+ },
+ "n7-horse": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 隻 tone 3 sounds like 6 (p 0.04)"
+  ],
+  "audio": "7a602b5ba8f6"
+ },
+ "nei-suk-mat-je-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 嘢 tone 5 sounds like 2 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 屬 tone 6 sounds like 2 (p 0.12)"
+  ],
+  "audio": "eca45ba4d282"
+ },
+ "nei-zeoi-zung-ji-mat-je-dung-mat-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 意 tone 3 sounds like 3 (p 0.38); 物 tone 6 sounds like 1 (p 0.06)"
+  ],
+  "audio": "722996c63261"
+ },
+ "ngo-suk-cow": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 我十牛 ngo sap ngau",
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.06); 屬 tone 6 sounds like 2 (p 0.19)"
+  ],
+  "audio": "4c9161491314"
+ },
+ "ngo-suk-dog": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 我19 ngo sap gau"
+  ],
+  "audio": "51ba40bb3722"
+ },
+ "ngo-suk-dragon": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.08); 屬 tone 6 sounds like 3 (p 0.42)"
+  ],
+  "audio": "ae1e4a6c5576"
+ },
+ "ngo-suk-horse": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.24)"
+  ],
+  "audio": "c2cc8863e574"
+ },
+ "ngo-suk-pig": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.31)"
+  ],
+  "audio": "28ac67b037a5"
+ },
+ "ngo-suk-sheep": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.04)"
+  ],
+  "audio": "aa15c2122916"
+ },
+ "ngo-suk-snake": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.28)"
+  ],
+  "audio": "ed99d84cca72"
+ },
+ "ngo-suk-z-fu": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.30)"
+  ],
+  "audio": "617438c1e784"
+ },
+ "ngo-suk-z-hau": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 我 tone 5 sounds like 2 (p 0.02)"
+  ],
+  "audio": "329876712fd4"
+ },
+ "nin": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard NI n i"
+  ],
+  "audio": "469ccba270e6"
+ },
+ "one-monkey": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 馬 tone 5 sounds like 2 (p 0.18)"
+  ],
+  "audio": "82cbd2c6475a"
+ },
+ "panda-wui-m-wui-haang-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 3 (p 0.03); 會 tone 5 sounds like 2 (p 0.03); 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "0dcdbc1d38f0"
+ },
+ "panda-wui-m-wui-paa-syu-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 3 (p 0.02); 呀 tone 3 sounds like 2 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 5 (p 0.41); 樹 tone 6 sounds like 3 (p 0.14)"
+  ],
+  "audio": "6bdea9c77f34"
+ },
+ "pig": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard D d"
+  ],
+  "audio": "54211e545cfe"
+ },
+ "pig-m-wui-fei": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 會 tone 5 sounds like 2 (p 0.37)"
+  ],
+  "audio": "6848d734926c"
+ },
+ "pig-wui-m-wui-fei-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 6 (p 0.13); 會 tone 5 sounds like 2 (p 0.12)"
+  ],
+  "audio": "3c71d228319f"
+ },
+ "pig-wui-m-wui-paa-syu-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 2 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 3 (p 0.05); 樹 tone 6 sounds like 3 (p 0.15)"
+  ],
+  "audio": "ddad7f2051db"
+ },
+ "rabbit-wui-m-wui-fei-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 6 (p 0.11); 會 tone 5 sounds like 2 (p 0.18)"
+  ],
+  "audio": "167db9b0885f"
+ },
+ "rabbit-wui-m-wui-tiu3-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 3 (p 0.03); 跳 tone 3 sounds like 1 (p 0.03); 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "b8f0faa61c52"
+ },
+ "rabbit-wui-m-wui-zau-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 6 (p 0.03); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 6 (p 0.23)"
+  ],
+  "audio": "5137594aa82b"
+ },
+ "rabbit-wui-tiu3": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 3 (p 0.02)"
+  ],
+  "audio": "f4c38f025cec"
+ },
+ "sheep": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 一 jat"
+  ],
+  "audio": "ede1cf3fd361"
+ },
+ "snake": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Se s e"
+  ],
+  "audio": "1d67e737ec2c"
+ },
+ "snake-m-wui-zau": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 成日唔會走 sing jat m wui zau",
+   "tone doubtful: 會 tone 5 sounds like 2 (p 0.31)"
+  ],
+  "audio": "2c35cc26d5cf"
+ },
+ "snake-wui-m-wui-fei-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 3 (p 0.00); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 2 (p 0.11)"
+  ],
+  "audio": "eaf169e9d859"
+ },
+ "snake-wui-m-wui-haang-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 3 (p 0.11); 會 tone 5 sounds like 2 (p 0.04)"
+  ],
+  "audio": "41f14cbf0772"
+ },
+ "snake-wui-m-wui-jau4-water-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 1 (p 0.17); 會 tone 5 sounds like 2 (p 0.13)"
+  ],
+  "audio": "24cfe93137d2"
+ },
+ "snake-wui-m-wui-tiu3-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 3 (p 0.01); 跳 tone 3 sounds like 1 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 2 (p 0.35)"
+  ],
+  "audio": "aee4f88daceb"
+ },
+ "snake-wui-m-wui-zau-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 3 (p 0.03); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 3 (p 0.05)"
+  ],
+  "audio": "4beee3a67851"
+ },
+ "suk": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard So s o"
+  ],
+  "audio": "386e57621ff6"
+ },
+ "tiger": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 老 tone 5 sounds like 2 (p 0.37)"
+  ],
+  "audio": "d974dba9fae7"
+ },
+ "tiger-bei-cat-daai": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 大 tone 6 sounds like 4 (p 0.02)"
+  ],
+  "audio": "7a32e9b8cc31"
+ },
+ "tiger-wui-jau4-water": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 3 (p 0.02)",
+   "tone doubtful: 老 tone 5 sounds like 2 (p 0.12)"
+  ],
+  "audio": "741ddfeff9d5"
+ },
+ "tiger-wui-m-wui-fei-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 3 (p 0.05); 會 tone 5 sounds like 2 (p 0.12)"
+  ],
+  "audio": "83c7771cc220"
+ },
+ "tiger-wui-m-wui-jau4-water-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 3 (p 0.02); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 老 tone 5 sounds like 2 (p 0.15); 會 tone 5 sounds like 2 (p 0.27)"
+  ],
+  "audio": "b76fdb55999f"
+ },
+ "tiger-wui-m-wui-zau-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 會 tone 5 sounds like 6 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 會 tone 5 sounds like 5 (p 0.35)"
+  ],
+  "audio": "125efd1817a2"
+ },
+ "z-fu": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Fo f o"
+  ],
+  "audio": "a2a91c9dd097"
+ },
+ "z-tou": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 鋪 pou"
+  ],
+  "audio": "9ea5847c322e"
+ }
+}

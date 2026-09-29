@@ -1,6 +1,6 @@
 # Audio review
 
-Every clip on the site (1943), unit by unit. **Listen on the [review page](https://ssullivan.github.io/learn-cantonese/review/)**, where you can mark each clip and copy your notes; the links below play one clip each.
+Every clip on the site (2063), unit by unit. **Listen on the [review page](https://ssullivan.github.io/learn-cantonese/review/)**, where you can mark each clip and copy your notes; the links below play one clip each.
 
 Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this file by hand.
 
@@ -2036,3 +2036,128 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 | 125 | 我比你高 | ngo5 bei2 nei5 gou1 | I'm taller than you. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/ngo-bei-nei-gou.mp3) |
 | 126 | 呢個平啲 | ni1 go3 peng4 di1 | This one is cheaper. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/ni-go-peng-di.mp3) |
 | 127 | 啱唔啱呀？ | ngaam1 m4 ngaam1 aa3 | Is that right? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/ngaam-m-ngaam-aa.mp3) |
+
+## Unit 19
+
+| # | Chinese | Jyutping | English | Audio |
+|---|---|---|---|---|
+| 1 | 老鼠 | lou5 syu2 | mouse; rat | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/mouse.mp3) |
+| 2 | 老虎 | lou5 fu2 | tiger | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/tiger.mp3) |
+| 3 | 兔仔 | tou3 zai2 | rabbit | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/rabbit.mp3) |
+| 4 | 龍 | lung4 | dragon | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/dragon.mp3) |
+| 5 | 蛇 | se4 | snake | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/snake.mp3) |
+| 6 | 馬 | maa5 | horse | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/horse.mp3) |
+| 7 | 羊 | joeng4 | sheep; goat | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/sheep.mp3) |
+| 8 | 馬騮 | maa5 lau1 | monkey | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/monkey.mp3) |
+| 9 | 豬 | zyu1 | pig | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/pig.mp3) |
+| 10 | 雀仔 | zoek3 zai2 | bird | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/bird.mp3) |
+| 11 | 熊貓 | hung4 maau1 | panda | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/panda.mp3) |
+| 12 | 動物 | dung6 mat6 | animal | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/dung-mat.mp3) |
+| 13 | 動物園 | dung6 mat6 jyun4 | zoo | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/dung-mat-jyun.mp3) |
+| 14 | 邊 | bin1 | which | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/bin.mp3) |
+| 15 | 屬 | suk6 | to be born in the year of | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/suk.mp3) |
+| 16 | 生肖 | saang1 ciu3 | Chinese zodiac sign | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/saang-ciu.mp3) |
+| 17 | 年 | nin4 | year | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/nin.mp3) |
+| 18 | 飛 | fei1 | to fly | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/fei.mp3) |
+| 19 | 爬樹 | paa4 syu6 | to climb trees | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/paa-syu.mp3) |
+| 20 | 走 | zau2 | to run | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/zau.mp3) |
+| 21 | 鼠 | syu2 | Rat (zodiac) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/z-syu.mp3) |
+| 22 | 虎 | fu2 | Tiger (zodiac) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/z-fu.mp3) |
+| 23 | 兔 | tou3 | Rabbit (zodiac) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/z-tou.mp3) |
+| 24 | 猴 | hau4 | Monkey (zodiac) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/z-hau.mp3) |
+| 25 | 一隻老鼠 | jat1 zek3 lou5 syu2 | a mouse | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/one-mouse.mp3) |
+| 26 | 一隻老虎 | jat1 zek3 lou5 fu2 | a tiger | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/one-tiger.mp3) |
+| 27 | 一隻兔仔 | jat1 zek3 tou3 zai2 | a rabbit | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/one-rabbit.mp3) |
+| 28 | 一條龍 | jat1 tiu4 lung4 | a dragon | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/one-dragon.mp3) |
+| 29 | 一條蛇 | jat1 tiu4 se4 | a snake | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/one-snake.mp3) |
+| 30 | 一隻馬 | jat1 zek3 maa5 | a horse | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/one-horse.mp3) |
+| 31 | 一隻羊 | jat1 zek3 joeng4 | a sheep | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/one-sheep.mp3) |
+| 32 | 一隻馬騮 | jat1 zek3 maa5 lau1 | a monkey | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/one-monkey.mp3) |
+| 33 | 一隻豬 | jat1 zek3 zyu1 | a pig | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/one-pig.mp3) |
+| 34 | 一隻雀仔 | jat1 zek3 zoek3 zai2 | a bird | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/one-bird.mp3) |
+| 35 | 一隻熊貓 | jat1 zek3 hung4 maau1 | a panda | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/one-panda.mp3) |
+| 36 | 兩隻老鼠 | loeng5 zek3 lou5 syu2 | 2 mice | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/n2-mouse.mp3) |
+| 37 | 三隻老虎 | saam1 zek3 lou5 fu2 | 3 tigers | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/n3-tiger.mp3) |
+| 38 | 四隻兔仔 | sei3 zek3 tou3 zai2 | 4 rabbits | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/n4-rabbit.mp3) |
+| 39 | 五條龍 | ng5 tiu4 lung4 | 5 dragons | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/n5-dragon.mp3) |
+| 40 | 六條蛇 | luk6 tiu4 se4 | 6 snakes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/n6-snake.mp3) |
+| 41 | 七隻馬 | cat1 zek3 maa5 | 7 horses | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/n7-horse.mp3) |
+| 42 | 兩隻羊 | loeng5 zek3 joeng4 | 2 sheep | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/n2-sheep.mp3) |
+| 43 | 三隻馬騮 | saam1 zek3 maa5 lau1 | 3 monkeys | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/n3-monkey.mp3) |
+| 44 | 四隻豬 | sei3 zek3 zyu1 | 4 pigs | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/n4-pig.mp3) |
+| 45 | 五隻雀仔 | ng5 zek3 zoek3 zai2 | 5 birds | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/n5-bird.mp3) |
+| 46 | 六隻熊貓 | luk6 zek3 hung4 maau1 | 6 pandas | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/n6-panda.mp3) |
+| 47 | 邊隻 | bin1 zek3 | which one (animal) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/bin-zek.mp3) |
+| 48 | 邊條 | bin1 tiu4 | which one (long animal) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/bin-tiu.mp3) |
+| 49 | 我屬鼠 | ngo5 suk6 syu2 | I'm a Rat. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/ngo-suk-z-syu.mp3) |
+| 50 | 我屬牛 | ngo5 suk6 ngau4 | I'm an Ox. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/ngo-suk-cow.mp3) |
+| 51 | 我屬虎 | ngo5 suk6 fu2 | I'm a Tiger. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/ngo-suk-z-fu.mp3) |
+| 52 | 我屬兔 | ngo5 suk6 tou3 | I'm a Rabbit. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/ngo-suk-z-tou.mp3) |
+| 53 | 我屬龍 | ngo5 suk6 lung4 | I'm a Dragon. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/ngo-suk-dragon.mp3) |
+| 54 | 我屬蛇 | ngo5 suk6 se4 | I'm a Snake. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/ngo-suk-snake.mp3) |
+| 55 | 我屬馬 | ngo5 suk6 maa5 | I'm a Horse. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/ngo-suk-horse.mp3) |
+| 56 | 我屬羊 | ngo5 suk6 joeng4 | I'm a Goat. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/ngo-suk-sheep.mp3) |
+| 57 | 我屬猴 | ngo5 suk6 hau4 | I'm a Monkey. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/ngo-suk-z-hau.mp3) |
+| 58 | 我屬雞 | ngo5 suk6 gai1 | I'm a Rooster. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/ngo-suk-chicken.mp3) |
+| 59 | 我屬狗 | ngo5 suk6 gau2 | I'm a Dog. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/ngo-suk-dog.mp3) |
+| 60 | 我屬豬 | ngo5 suk6 zyu1 | I'm a Pig. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/ngo-suk-pig.mp3) |
+| 61 | 雀仔會唔會飛呀？ | zoek3 zai2 wui5 m4 wui5 fei1 aa3 | Can birds fly? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/bird-wui-m-wui-fei-aa.mp3) |
+| 62 | 豬會唔會飛呀？ | zyu1 wui5 m4 wui5 fei1 aa3 | Can pigs fly? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/pig-wui-m-wui-fei-aa.mp3) |
+| 63 | 老虎會唔會飛呀？ | lou5 fu2 wui5 m4 wui5 fei1 aa3 | Can tigers fly? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/tiger-wui-m-wui-fei-aa.mp3) |
+| 64 | 兔仔會唔會飛呀？ | tou3 zai2 wui5 m4 wui5 fei1 aa3 | Can rabbits fly? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/rabbit-wui-m-wui-fei-aa.mp3) |
+| 65 | 蛇會唔會飛呀？ | se4 wui5 m4 wui5 fei1 aa3 | Can snakes fly? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/snake-wui-m-wui-fei-aa.mp3) |
+| 66 | 魚會唔會飛呀？ | jyu4 wui5 m4 wui5 fei1 aa3 | Can fish fly? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/fish-wui-m-wui-fei-aa.mp3) |
+| 67 | 狗會唔會飛呀？ | gau2 wui5 m4 wui5 fei1 aa3 | Can dogs fly? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/dog-wui-m-wui-fei-aa.mp3) |
+| 68 | 魚會唔會游水呀？ | jyu4 wui5 m4 wui5 jau4 seoi2 aa3 | Can fish swim? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/fish-wui-m-wui-jau4-water-aa.mp3) |
+| 69 | 狗會唔會游水呀？ | gau2 wui5 m4 wui5 jau4 seoi2 aa3 | Can dogs swim? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/dog-wui-m-wui-jau4-water-aa.mp3) |
+| 70 | 老虎會唔會游水呀？ | lou5 fu2 wui5 m4 wui5 jau4 seoi2 aa3 | Can tigers swim? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/tiger-wui-m-wui-jau4-water-aa.mp3) |
+| 71 | 蛇會唔會游水呀？ | se4 wui5 m4 wui5 jau4 seoi2 aa3 | Can snakes swim? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/snake-wui-m-wui-jau4-water-aa.mp3) |
+| 72 | 馬騮會唔會爬樹呀？ | maa5 lau1 wui5 m4 wui5 paa4 syu6 aa3 | Can monkeys climb trees? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/monkey-wui-m-wui-paa-syu-aa.mp3) |
+| 73 | 貓會唔會爬樹呀？ | maau1 wui5 m4 wui5 paa4 syu6 aa3 | Can cats climb trees? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/cat-wui-m-wui-paa-syu-aa.mp3) |
+| 74 | 熊貓會唔會爬樹呀？ | hung4 maau1 wui5 m4 wui5 paa4 syu6 aa3 | Can pandas climb trees? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/panda-wui-m-wui-paa-syu-aa.mp3) |
+| 75 | 魚會唔會爬樹呀？ | jyu4 wui5 m4 wui5 paa4 syu6 aa3 | Can fish climb trees? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/fish-wui-m-wui-paa-syu-aa.mp3) |
+| 76 | 豬會唔會爬樹呀？ | zyu1 wui5 m4 wui5 paa4 syu6 aa3 | Can pigs climb trees? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/pig-wui-m-wui-paa-syu-aa.mp3) |
+| 77 | 牛會唔會爬樹呀？ | ngau4 wui5 m4 wui5 paa4 syu6 aa3 | Can cows climb trees? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/cow-wui-m-wui-paa-syu-aa.mp3) |
+| 78 | 馬會唔會爬樹呀？ | maa5 wui5 m4 wui5 paa4 syu6 aa3 | Can horses climb trees? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/horse-wui-m-wui-paa-syu-aa.mp3) |
+| 79 | 狗會唔會行呀？ | gau2 wui5 m4 wui5 haang4 aa3 | Can dogs walk? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/dog-wui-m-wui-haang-aa.mp3) |
+| 80 | 雞會唔會行呀？ | gai1 wui5 m4 wui5 haang4 aa3 | Can chickens walk? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/chicken-wui-m-wui-haang-aa.mp3) |
+| 81 | 熊貓會唔會行呀？ | hung4 maau1 wui5 m4 wui5 haang4 aa3 | Can pandas walk? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/panda-wui-m-wui-haang-aa.mp3) |
+| 82 | 馬會唔會行呀？ | maa5 wui5 m4 wui5 haang4 aa3 | Can horses walk? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/horse-wui-m-wui-haang-aa.mp3) |
+| 83 | 老鼠會唔會行呀？ | lou5 syu2 wui5 m4 wui5 haang4 aa3 | Can mice walk? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/mouse-wui-m-wui-haang-aa.mp3) |
+| 84 | 魚會唔會行呀？ | jyu4 wui5 m4 wui5 haang4 aa3 | Can fish walk? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/fish-wui-m-wui-haang-aa.mp3) |
+| 85 | 蛇會唔會行呀？ | se4 wui5 m4 wui5 haang4 aa3 | Can snakes walk? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/snake-wui-m-wui-haang-aa.mp3) |
+| 86 | 兔仔會唔會跳呀？ | tou3 zai2 wui5 m4 wui5 tiu3 aa3 | Can rabbits jump? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/rabbit-wui-m-wui-tiu3-aa.mp3) |
+| 87 | 馬騮會唔會跳呀？ | maa5 lau1 wui5 m4 wui5 tiu3 aa3 | Can monkeys jump? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/monkey-wui-m-wui-tiu3-aa.mp3) |
+| 88 | 貓會唔會跳呀？ | maau1 wui5 m4 wui5 tiu3 aa3 | Can cats jump? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/cat-wui-m-wui-tiu3-aa.mp3) |
+| 89 | 馬會唔會跳呀？ | maa5 wui5 m4 wui5 tiu3 aa3 | Can horses jump? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/horse-wui-m-wui-tiu3-aa.mp3) |
+| 90 | 蛇會唔會跳呀？ | se4 wui5 m4 wui5 tiu3 aa3 | Can snakes jump? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/snake-wui-m-wui-tiu3-aa.mp3) |
+| 91 | 馬會唔會走呀？ | maa5 wui5 m4 wui5 zau2 aa3 | Can horses run? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/horse-wui-m-wui-zau-aa.mp3) |
+| 92 | 狗會唔會走呀？ | gau2 wui5 m4 wui5 zau2 aa3 | Can dogs run? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/dog-wui-m-wui-zau-aa.mp3) |
+| 93 | 老虎會唔會走呀？ | lou5 fu2 wui5 m4 wui5 zau2 aa3 | Can tigers run? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/tiger-wui-m-wui-zau-aa.mp3) |
+| 94 | 兔仔會唔會走呀？ | tou3 zai2 wui5 m4 wui5 zau2 aa3 | Can rabbits run? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/rabbit-wui-m-wui-zau-aa.mp3) |
+| 95 | 魚會唔會走呀？ | jyu4 wui5 m4 wui5 zau2 aa3 | Can fish run? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/fish-wui-m-wui-zau-aa.mp3) |
+| 96 | 蛇會唔會走呀？ | se4 wui5 m4 wui5 zau2 aa3 | Can snakes run? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/snake-wui-m-wui-zau-aa.mp3) |
+| 97 | 唔會 | m4 wui5 | can't; won't | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/m-wui.mp3) |
+| 98 | 邊隻會飛呀？ | bin1 zek3 wui5 fei1 aa3 | Which one can fly? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/bin-zek-wui-fei-aa.mp3) |
+| 99 | 邊隻會爬樹呀？ | bin1 zek3 wui5 paa4 syu6 aa3 | Which one can climb trees? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/bin-zek-wui-paa-syu-aa.mp3) |
+| 100 | 邊隻會行呀？ | bin1 zek3 wui5 haang4 aa3 | Which one can walk? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/bin-zek-wui-haang-aa.mp3) |
+| 101 | 邊隻會跳呀？ | bin1 zek3 wui5 tiu3 aa3 | Which one can jump? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/bin-zek-wui-tiu3-aa.mp3) |
+| 102 | 邊隻會走呀？ | bin1 zek3 wui5 zau2 aa3 | Which one can run? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/bin-zek-wui-zau-aa.mp3) |
+| 103 | 雀仔會飛 | zoek3 zai2 wui5 fei1 | Birds can fly. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/bird-wui-fei.mp3) |
+| 104 | 魚會游水 | jyu4 wui5 jau4 seoi2 | Fish can swim. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/fish-wui-jau4-water.mp3) |
+| 105 | 馬騮會爬樹 | maa5 lau1 wui5 paa4 syu6 | Monkeys can climb trees. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/monkey-wui-paa-syu.mp3) |
+| 106 | 兔仔會跳 | tou3 zai2 wui5 tiu3 | Rabbits can jump. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/rabbit-wui-tiu3.mp3) |
+| 107 | 老虎會游水 | lou5 fu2 wui5 jau4 seoi2 | Tigers can swim. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/tiger-wui-jau4-water.mp3) |
+| 108 | 馬會走 | maa5 wui5 zau2 | Horses can run. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/horse-wui-zau.mp3) |
+| 109 | 魚唔會行 | jyu4 m4 wui5 haang4 | Fish can't walk. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/fish-m-wui-haang.mp3) |
+| 110 | 豬唔會飛 | zyu1 m4 wui5 fei1 | Pigs can't fly. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/pig-m-wui-fei.mp3) |
+| 111 | 蛇唔會走 | se4 m4 wui5 zau2 | Snakes can't run. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/snake-m-wui-zau.mp3) |
+| 112 | 動物園有熊貓 | dung6 mat6 jyun4 jau5 hung4 maau1 | The zoo has pandas. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/dung-mat-jyun-jau-panda.mp3) |
+| 113 | 我想去動物園 | ngo5 soeng2 heoi3 dung6 mat6 jyun4 | I want to go to the zoo. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/ngo-soeng-heoi-dung-mat-jyun.mp3) |
+| 114 | 我最鍾意熊貓 | ngo5 zeoi3 zung1 ji3 hung4 maau1 | I like pandas best. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/ngo-zeoi-zung-ji-panda.mp3) |
+| 115 | 你最鍾意乜嘢動物呀？ | nei5 zeoi3 zung1 ji3 mat1 je5 dung6 mat6 aa3 | Which animal do you like best? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/nei-zeoi-zung-ji-mat-je-dung-mat-aa.mp3) |
+| 116 | 老虎比貓大 | lou5 fu2 bei2 maau1 daai6 | Tigers are bigger than cats. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/tiger-bei-cat-daai.mp3) |
+| 117 | 馬比豬快 | maa5 bei2 zyu1 faai3 | Horses are faster than pigs. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/horse-bei-pig-faai.mp3) |
+| 118 | 你屬乜嘢呀？ | nei5 suk6 mat1 je5 aa3 | What's your zodiac sign? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/nei-suk-mat-je-aa.mp3) |
+| 119 | 二零二六年係馬年 | ji6 ling4 ji6 luk6 nin4 hai6 maa5 nin4 | 2026 is the year of the Horse. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/n2-n0-n2-n6-nin-hai-horse-nin.mp3) |
+| 120 | 動物園有兩隻熊貓 | dung6 mat6 jyun4 jau5 loeng5 zek3 hung4 maau1 | The zoo has two pandas. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/dung-mat-jyun-jau-loeng-zek-panda.mp3) |

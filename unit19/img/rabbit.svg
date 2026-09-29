@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Rabbit</title>
+<ellipse cx="64" cy="116" rx="36" ry="4" fill="#9fb0bb" opacity=".35"/>
+<circle cx="94" cy="106" r="8" fill="#ffffff" stroke="#8a8f96" stroke-width="2.5"/>
+<path d="M36 114 C32 90 42 74 64 74 C86 74 96 90 92 114 Z" fill="#f4f1ec" stroke="#8a8f96" stroke-width="3" stroke-linejoin="round"/>
+<ellipse cx="50" cy="116" rx="11" ry="5" fill="#f4f1ec" stroke="#8a8f96" stroke-width="2.5"/><ellipse cx="78" cy="116" rx="11" ry="5" fill="#f4f1ec" stroke="#8a8f96" stroke-width="2.5"/>
+<g transform="rotate(-10 52 30)"><ellipse cx="52" cy="30" rx="9" ry="24" fill="#f4f1ec" stroke="#8a8f96" stroke-width="3"/><ellipse cx="52" cy="32" rx="4.5" ry="16" fill="#f2b8c0"/></g>
+<g transform="rotate(10 76 30)"><ellipse cx="76" cy="30" rx="9" ry="24" fill="#f4f1ec" stroke="#8a8f96" stroke-width="3"/><ellipse cx="76" cy="32" rx="4.5" ry="16" fill="#f2b8c0"/></g>
+<circle cx="64" cy="62" r="23" fill="#f4f1ec" stroke="#8a8f96" stroke-width="3"/>
+<circle cx="55" cy="58" r="3.5" fill="#2a2a2a"/><circle cx="73" cy="58" r="3.5" fill="#2a2a2a"/>
+<circle cx="48" cy="68" r="4.5" fill="#f2b8c0" opacity=".7"/><circle cx="80" cy="68" r="4.5" fill="#f2b8c0" opacity=".7"/>
+<path d="M61 65 h6 l-3 3z" fill="#e0707a"/>
+<path d="M64 68 v3 M64 71 q-3 3 -6 1 M64 71 q3 3 6 1" stroke="#8a6a6a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+</svg>

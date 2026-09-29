@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Monkey</title>
+<ellipse cx="64" cy="114" rx="36" ry="4" fill="#9fb0bb" opacity=".35"/>
+<path d="M90 106 C114 106 118 80 104 76 C94 74 94 90 104 88" stroke="#9c6528" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path d="M36 114 C32 90 42 74 64 74 C86 74 96 90 92 114 Z" fill="#9c6528" stroke="#5a3a1e" stroke-width="3" stroke-linejoin="round"/>
+<ellipse cx="64" cy="100" rx="15" ry="13" fill="#e9c9a0"/>
+<path d="M54 114 v-10 M74 114 v-10" stroke="#5a3a1e" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="36" cy="52" r="11" fill="#9c6528" stroke="#5a3a1e" stroke-width="3"/><circle cx="36" cy="52" r="5.5" fill="#e9c9a0"/>
+<circle cx="92" cy="52" r="11" fill="#9c6528" stroke="#5a3a1e" stroke-width="3"/><circle cx="92" cy="52" r="5.5" fill="#e9c9a0"/>
+<circle cx="64" cy="50" r="27" fill="#9c6528" stroke="#5a3a1e" stroke-width="3"/>
+<path d="M64 40 C56 30 42 34 44 48 C44 62 54 72 64 72 C74 72 84 62 84 48 C86 34 72 30 64 40 Z" fill="#e9c9a0"/>
+<circle cx="56" cy="48" r="3.5" fill="#2a2a2a"/><circle cx="72" cy="48" r="3.5" fill="#2a2a2a"/>
+<circle cx="61" cy="57" r="1.6" fill="#5a3a1e"/><circle cx="67" cy="57" r="1.6" fill="#5a3a1e"/>
+<path d="M56 63 q8 6 16 0" stroke="#5a3a1e" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>
