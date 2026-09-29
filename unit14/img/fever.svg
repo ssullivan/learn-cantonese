@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A fever: a thermometer in the mouth</title>
+<path d="M20 128 C20 108 40 100 64 100 C88 100 108 108 108 128 Z" fill="#3f7cc0" stroke="#24507f" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="54" y="84" width="20" height="20" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+<ellipse cx="30" cy="60" rx="7" ry="10" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/><ellipse cx="98" cy="60" rx="7" ry="10" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+<ellipse cx="64" cy="58" rx="33" ry="36" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+<path d="M31 56 C27 22 50 16 64 16 C80 16 101 22 97 56 C92 36 78 30 64 31 C50 31 37 38 31 56 Z" fill="#3b2f2a"/>
+<path d="M44 46 L57 50 M84 46 L71 50" stroke="#3b2f2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<ellipse cx="51" cy="58" rx="6" ry="4.5" fill="#ffffff" stroke="#8a9aa5" stroke-width="1"/><ellipse cx="77" cy="58" rx="6" ry="4.5" fill="#ffffff" stroke="#8a9aa5" stroke-width="1"/>
+<circle cx="51" cy="58" r="2.6" fill="#3b2f2a"/><circle cx="77" cy="58" r="2.6" fill="#3b2f2a"/>
+<path d="M64 60 Q59 70 63 72 Q66 73 68 71" stroke="#b07a52" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M55 85 Q64 79 73 85" stroke="#8f2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<circle cx="44" cy="72" r="6" fill="#d6453a" opacity=".35"/><circle cx="84" cy="72" r="6" fill="#d6453a" opacity=".35"/>
+<path d="M66 84 L100 100" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/><path d="M66 84 L100 100" stroke="#8a9aa5" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+<circle cx="102" cy="101" r="4" fill="#d6453a"/><path d="M100 28 C104.8 35.2 104.8 40 100 40 C95.2 40 95.2 35.2 100 28 Z" fill="#7fb2e0" stroke="#3f7cc0" stroke-width="1.5"/>
+</svg>

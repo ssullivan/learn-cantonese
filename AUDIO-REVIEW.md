@@ -1,6 +1,6 @@
 # Audio review
 
-Every clip on the site (1278), unit by unit. **Listen on the [review page](https://ssullivan.github.io/learn-cantonese/review/)**, where you can mark each clip and copy your notes; the links below play one clip each.
+Every clip on the site (1372), unit by unit. **Listen on the [review page](https://ssullivan.github.io/learn-cantonese/review/)**, where you can mark each clip and copy your notes; the links below play one clip each.
 
 Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this file by hand.
 
@@ -1346,3 +1346,102 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 | 105 | 香港夏天好熱 | hoeng1 gong2 haa6 tin1 hou2 jit6 | Summer in Hong Kong is very hot. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/hong-kong-haa-tin-hou-jit.mp3) |
 | 106 | 香港冬天唔係好凍 | hoeng1 gong2 dung1 tin1 m4 hai6 hou2 dung3 | Winter in Hong Kong isn't very cold. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/hong-kong-dung-tin-m-hai-hou-dung.mp3) |
 | 107 | 春天好濕 | ceon1 tin1 hou2 sap1 | Spring is very damp. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/ceon-tin-hou-sap.mp3) |
+
+## Unit 14
+
+| # | Chinese | Jyutping | English | Audio |
+|---|---|---|---|---|
+| 1 | 身體 | san1 tai2 | body; health | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/body.mp3) |
+| 2 | 頭 | tau4 | head | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/head.mp3) |
+| 3 | 眼 | ngaan5 | eye | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/eye.mp3) |
+| 4 | 耳仔 | ji5 zai2 | ear | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ear.mp3) |
+| 5 | 鼻 | bei6 | nose | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/nose.mp3) |
+| 6 | 口 | hau2 | mouth | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/mouth.mp3) |
+| 7 | 牙 | ngaa4 | tooth; teeth | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/tooth.mp3) |
+| 8 | 喉嚨 | hau4 lung4 | throat | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/throat.mp3) |
+| 9 | 手 | sau2 | hand; arm | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/hand.mp3) |
+| 10 | 腳 | goek3 | foot; leg | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/foot.mp3) |
+| 11 | 肚 | tou5 | stomach; belly | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/stomach.mp3) |
+| 12 | 背脊 | bui3 zek3 | back | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/back.mp3) |
+| 13 | 痛 | tung3 | to hurt; pain | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/tung.mp3) |
+| 14 | 醫生 | ji1 sang1 | doctor | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ji-sang.mp3) |
+| 15 | 睇 | tai2 | to look at; to see | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/tai.mp3) |
+| 16 | 藥 | joek6 | medicine | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/joek.mp3) |
+| 17 | 感冒 | gam2 mou6 | a cold; the flu | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/cold.mp3) |
+| 18 | 流 | lau4 | to flow; to run | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/lau.mp3) |
+| 19 | 舒服 | syu1 fuk6 | comfortable; well | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/syu-fuk.mp3) |
+| 20 | 休息 | jau1 sik1 | to rest | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/jau-sik.mp3) |
+| 21 | 好返 | hou2 faan1 | to get better | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/hou-faan.mp3) |
+| 22 | 保重 | bou2 zung6 | take care! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/bou-zung.mp3) |
+| 23 | 早 | zou2 | early; soon | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/zou.mp3) |
+| 24 | 發燒 | faat3 siu1 | to have a fever | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/fever.mp3) |
+| 25 | 咳 | kat1 | to cough | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/cough.mp3) |
+| 26 | 流鼻水 | lau4 bei6 seoi2 | a runny nose | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/lau-nose-water.mp3) |
+| 27 | 咗 | zo2 | (done; has happened) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/zo.mp3) |
+| 28 | 冇 | mou5 | not have; there isn't | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/mou.mp3) |
+| 29 | 未 | mei6 | not yet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/mei.mp3) |
+| 30 | 日 | jat6 | day (counted) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/jat6.mp3) |
+| 31 | 次 | ci3 | time(s); occasion | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ci.mp3) |
+| 32 | 粒 | nap1 | for pills, sweets, grains | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/nap.mp3) |
+| 33 | 每 | mui5 | every; each | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/mui.mp3) |
+| 34 | 頭痛 | tau4 tung3 | a headache | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/head-tung.mp3) |
+| 35 | 眼痛 | ngaan5 tung3 | sore eyes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/eye-tung.mp3) |
+| 36 | 耳仔痛 | ji5 zai2 tung3 | an earache | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ear-tung.mp3) |
+| 37 | 牙痛 | ngaa4 tung3 | a toothache | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/tooth-tung.mp3) |
+| 38 | 喉嚨痛 | hau4 lung4 tung3 | a sore throat | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/throat-tung.mp3) |
+| 39 | 手痛 | sau2 tung3 | a sore hand | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/hand-tung.mp3) |
+| 40 | 腳痛 | goek3 tung3 | a sore foot | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/foot-tung.mp3) |
+| 41 | 肚痛 | tou5 tung3 | a stomach ache | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/stomach-tung.mp3) |
+| 42 | 背脊痛 | bui3 zek3 tung3 | a backache | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/back-tung.mp3) |
+| 43 | 我個頭 | ngo5 go3 tau4 | my head | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ngo-go-head.mp3) |
+| 44 | 我隻眼 | ngo5 zek3 ngaan5 | my eye | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ngo-zek-eye.mp3) |
+| 45 | 我隻耳仔 | ngo5 zek3 ji5 zai2 | my ear | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ngo-zek-ear.mp3) |
+| 46 | 我個鼻 | ngo5 go3 bei6 | my nose | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ngo-go-nose.mp3) |
+| 47 | 我隻牙 | ngo5 zek3 ngaa4 | my tooth | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ngo-zek-tooth.mp3) |
+| 48 | 我條喉嚨 | ngo5 tiu4 hau4 lung4 | my throat | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ngo-tiu-throat.mp3) |
+| 49 | 我隻手 | ngo5 zek3 sau2 | my hand | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ngo-zek-hand.mp3) |
+| 50 | 我隻腳 | ngo5 zek3 goek3 | my foot | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ngo-zek-foot.mp3) |
+| 51 | 我個肚 | ngo5 go3 tou5 | my stomach | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ngo-go-stomach.mp3) |
+| 52 | 食藥 | sik6 joek6 | to take medicine | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/sik6-joek.mp3) |
+| 53 | 睇醫生 | tai2 ji1 sang1 | to see a doctor | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/tai-ji-sang.mp3) |
+| 54 | 飲水 | jam2 seoi2 | to drink water | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/jam2-water.mp3) |
+| 55 | 食飯 | sik6 faan6 | to eat; to have a meal | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/sik6-rice.mp3) |
+| 56 | 唔舒服 | m4 syu1 fuk6 | unwell | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/m-syu-fuk.mp3) |
+| 57 | 有冇？ | jau5 mou5 | have or not? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/jau-mou.mp3) |
+| 58 | 你有冇發燒呀？ | nei5 jau5 mou5 faat3 siu1 aa3 | Do you have a fever? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/nei-jau-mou-fever-aa.mp3) |
+| 59 | 你有冇咳呀？ | nei5 jau5 mou5 kat1 aa3 | Do you have a cough? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/nei-jau-mou-cough-aa.mp3) |
+| 60 | 你有冇流鼻水呀？ | nei5 jau5 mou5 lau4 bei6 seoi2 aa3 | Do you have a runny nose? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/nei-jau-mou-lau-nose-water-aa.mp3) |
+| 61 | 你有冇頭痛呀？ | nei5 jau5 mou5 tau4 tung3 aa3 | Do you have a headache? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/nei-jau-mou-head-tung-aa.mp3) |
+| 62 | 你有冇喉嚨痛呀？ | nei5 jau5 mou5 hau4 lung4 tung3 aa3 | Do you have a sore throat? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/nei-jau-mou-throat-tung-aa.mp3) |
+| 63 | 你有冇肚痛呀？ | nei5 jau5 mou5 tou5 tung3 aa3 | Do you have a stomach ache? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/nei-jau-mou-stomach-tung-aa.mp3) |
+| 64 | 你食咗藥未呀？ | nei5 sik6 zo2 joek6 mei6 aa3 | Have you taken your medicine yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/nei-sik6-zo-joek-mei-aa.mp3) |
+| 65 | 你睇咗醫生未呀？ | nei5 tai2 zo2 ji1 sang1 mei6 aa3 | Have you seen a doctor yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/nei-tai-zo-ji-sang-mei-aa.mp3) |
+| 66 | 你飲咗水未呀？ | nei5 jam2 zo2 seoi2 mei6 aa3 | Have you drunk some water yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/nei-jam2-zo-water-mei-aa.mp3) |
+| 67 | 你食咗飯未呀？ | nei5 sik6 zo2 faan6 mei6 aa3 | Have you eaten yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/nei-sik6-zo-rice-mei-aa.mp3) |
+| 68 | 你休息咗未呀？ | nei5 jau1 sik1 zo2 mei6 aa3 | Have you rested yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/nei-jau-sik-zo-mei-aa.mp3) |
+| 69 | 食咗 | sik6 zo2 | Yes, I have (eaten it). | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/sik6-zo.mp3) |
+| 70 | 睇咗 | tai2 zo2 | Yes, I have (seen them). | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/tai-zo.mp3) |
+| 71 | 飲咗 | jam2 zo2 | Yes, I have (drunk it). | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/jam2-zo.mp3) |
+| 72 | 休息咗 | jau1 sik1 zo2 | Yes, I have (rested). | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/jau-sik-zo.mp3) |
+| 73 | 一日兩次，每次一粒 | jat1 jat6 loeng5 ci3 mui5 ci3 jat1 nap1 | 2 times a day, 1 pill each time | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/rx-2-1.mp3) |
+| 74 | 一日兩次，每次兩粒 | jat1 jat6 loeng5 ci3 mui5 ci3 loeng5 nap1 | 2 times a day, 2 pills each time | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/rx-2-2.mp3) |
+| 75 | 一日三次，每次一粒 | jat1 jat6 saam1 ci3 mui5 ci3 jat1 nap1 | 3 times a day, 1 pill each time | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/rx-3-1.mp3) |
+| 76 | 一日三次，每次兩粒 | jat1 jat6 saam1 ci3 mui5 ci3 loeng5 nap1 | 3 times a day, 2 pills each time | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/rx-3-2.mp3) |
+| 77 | 一日四次，每次一粒 | jat1 jat6 sei3 ci3 mui5 ci3 jat1 nap1 | 4 times a day, 1 pill each time | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/rx-4-1.mp3) |
+| 78 | 一日四次，每次兩粒 | jat1 jat6 sei3 ci3 mui5 ci3 loeng5 nap1 | 4 times a day, 2 pills each time | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/rx-4-2.mp3) |
+| 79 | 你邊度唔舒服呀？ | nei5 bin1 dou6 m4 syu1 fuk6 aa3 | What's wrong? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/nei-bin-dou-m-syu-fuk-aa.mp3) |
+| 80 | 你邊度痛呀？ | nei5 bin1 dou6 tung3 aa3 | Where does it hurt? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/nei-bin-dou-tung-aa.mp3) |
+| 81 | 我頭痛 | ngo5 tau4 tung3 | I have a headache. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ngo-head-tung.mp3) |
+| 82 | 我個頭好痛 | ngo5 go3 tau4 hou2 tung3 | My head really hurts. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ngo-go-head-hou-tung.mp3) |
+| 83 | 我隻腳好痛 | ngo5 zek3 goek3 hou2 tung3 | My foot really hurts. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ngo-zek-foot-hou-tung.mp3) |
+| 84 | 我條喉嚨好痛 | ngo5 tiu4 hau4 lung4 hou2 tung3 | My throat is really sore. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ngo-tiu-throat-hou-tung.mp3) |
+| 85 | 我有啲發燒 | ngo5 jau5 di1 faat3 siu1 | I have a bit of a fever. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ngo-jau-di-fever.mp3) |
+| 86 | 我感冒咗 | ngo5 gam2 mou6 zo2 | I've caught a cold. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ngo-cold-zo.mp3) |
+| 87 | 我冇發燒 | ngo5 mou5 faat3 siu1 | I don't have a fever. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ngo-mou-fever.mp3) |
+| 88 | 我食咗藥 | ngo5 sik6 zo2 joek6 | I've taken my medicine. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ngo-sik6-zo-joek.mp3) |
+| 89 | 我未食藥 | ngo5 mei6 sik6 joek6 | I haven't taken my medicine yet. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ngo-mei-sik6-joek.mp3) |
+| 90 | 我今日睇咗醫生 | ngo5 gam1 jat6 tai2 zo2 ji1 sang1 | I saw a doctor today. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ngo-gam-jat-tai-zo-ji-sang.mp3) |
+| 91 | 你要食藥 | nei5 jiu3 sik6 joek6 | You need to take medicine. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/nei-jiu-sik6-joek.mp3) |
+| 92 | 你要多啲休息 | nei5 jiu3 do1 di1 jau1 sik1 | You need to rest more. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/nei-jiu-do-di-jau-sik.mp3) |
+| 93 | 我要去醫院 | ngo5 jiu3 heoi3 ji1 jyun2 | I need to go to hospital. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ngo-jiu-heoi-hospital.mp3) |
+| 94 | 早啲好返啦 | zou2 di1 hou2 faan1 laa1 | Get well soon! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/zou-di-hou-faan-laa1.mp3) |

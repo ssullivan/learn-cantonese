@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A stomach ache</title>
+<ellipse cx="64" cy="120" rx="30" ry="4" fill="#9fb0bb" opacity=".35"/>
+<path d="M50 38 L38 70 M78 38 L90 70" stroke="#f2c9a0" stroke-width="8" stroke-linecap="round"/>
+<circle cx="37" cy="73" r="5" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/><circle cx="91" cy="73" r="5" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+<path d="M48 76 H80 L79 112 H67 L64 88 L61 112 H49 Z" fill="#5f6a72" stroke="#3a4148" stroke-width="2" stroke-linejoin="round"/>
+<path d="M44 117 C44 111 49 110 52 110 H61 V117 Z M84 117 C84 111 79 110 76 110 H67 V117 Z" fill="#3b2f2a" stroke="#1d1714" stroke-width="1.5"/>
+<path d="M50 33 H78 L84 42 L78 46 L81 78 H47 L50 46 L44 42 Z" fill="#3f7cc0" stroke="#24507f" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="60" y="29" width="8" height="5" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+<circle cx="64" cy="20" r="12" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/><path d="M53 18 C52 8 59 7 64 7 C70 7 76 9 75 18 C72 12 58 11 53 18 Z" fill="#3b2f2a"/>
+<circle cx="60" cy="20" r="1.4" fill="#3b2f2a"/><circle cx="68" cy="20" r="1.4" fill="#3b2f2a"/>
+<path d="M56 15 L61 17 M72 15 L67 17" stroke="#3b2f2a" stroke-width="1.5" stroke-linecap="round"/><path d="M60 27 Q64 24 68 27" stroke="#8f2a22" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+<circle cx="64" cy="62" r="13" fill="#d6453a" fill-opacity=".22" stroke="#d6453a" stroke-width="3"/><path d="M49.3 53.5 L43.2 50.0 M58.2 46.0 L55.8 39.4 M69.8 46.0 L72.2 39.4 M78.7 53.5 L84.8 50.0" stroke="#d6453a" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,300 @@
+{
+ "ci": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Ti t i"
+  ],
+  "audio": "52f96ba459a0"
+ },
+ "cough": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 派 paai"
+  ],
+  "audio": "501e0f8b804e"
+ },
+ "ear": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 耳 tone 5 sounds like 6 (p 0.04)"
+  ],
+  "audio": "c920c3f60902"
+ },
+ "ear-tung": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 耳 tone 5 sounds like 6 (p 0.10)"
+  ],
+  "audio": "b6eb8f64bc7d"
+ },
+ "eye": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 明 ming"
+  ],
+  "audio": "57a0f1017dcb"
+ },
+ "foot": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Da d a"
+  ],
+  "audio": "41f47b4da2e7"
+ },
+ "head": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 後 hau"
+  ],
+  "audio": "062ddebfa0ba"
+ },
+ "jau-mou": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 冇 tone 5 sounds like 2 (p 0.36)"
+  ],
+  "audio": "c69f4e7c8c8f"
+ },
+ "joek": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Ya y a"
+  ],
+  "audio": "64cf345183d4"
+ },
+ "mouth": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 跑 paau"
+  ],
+  "audio": "323ef7dc138a"
+ },
+ "nei-bin-dou-m-syu-fuk-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.01)",
+   "tone doubtful: 服 tone 6 sounds like 3 (p 0.15)"
+  ],
+  "audio": "a25c26eed564"
+ },
+ "nei-bin-dou-tung-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 你 tone 5 sounds like 4 (p 0.06)"
+  ],
+  "audio": "d64b1a5ff650"
+ },
+ "nei-jam2-zo-water-mei-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 未 tone 6 sounds like 3 (p 0.06)"
+  ],
+  "audio": "bd614629abfc"
+ },
+ "nei-jau-mou-cough-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 冇 tone 5 sounds like 2 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)",
+   "speech-to-text heard 你有冇嗨吖 nei jau mou hoi aa",
+   "tone doubtful: 有 tone 5 sounds like 2 (p 0.19)"
+  ],
+  "audio": "82848b477ac0"
+ },
+ "nei-jau-mou-fever-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "b105aa2daf11"
+ },
+ "nei-jau-mou-head-tung-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 冇 tone 5 sounds like 5 (p 0.44)"
+  ],
+  "audio": "000bcab61976"
+ },
+ "nei-jau-mou-lau-nose-water-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 冇 tone 5 sounds like 2 (p 0.22)"
+  ],
+  "audio": "184bdb0b0cff"
+ },
+ "nei-jau-mou-stomach-tung-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 肚 tone 5 sounds like 6 (p 0.30); 痛 tone 3 sounds like 1 (p 0.14)"
+  ],
+  "audio": "115aa7ab0a7a"
+ },
+ "nei-jau-mou-throat-tung-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 冇 tone 5 sounds like 2 (p 0.00); 痛 tone 3 sounds like 1 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "6839d1022c21"
+ },
+ "nei-jau-sik-zo-mei-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 你 tone 5 sounds like 2 (p 0.38); 未 tone 6 sounds like 3 (p 0.07)"
+  ],
+  "audio": "3966db30ffff"
+ },
+ "nei-sik6-zo-joek-mei-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 未 tone 6 sounds like 2 (p 0.07)"
+  ],
+  "audio": "798327754bd7"
+ },
+ "nei-sik6-zo-rice-mei-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 未 tone 6 sounds like 2 (p 0.00); 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "3b2cedc21da2"
+ },
+ "nei-tai-zo-ji-sang-mei-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 未 tone 6 sounds like 3 (p 0.29)"
+  ],
+  "audio": "623be3e0109c"
+ },
+ "ngo-gam-jat-tai-zo-ji-sang": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 睇 tone 2 sounds like 5 (p 0.17)"
+  ],
+  "audio": "a85f5d5c5529"
+ },
+ "ngo-jau-di-fever": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 有 tone 5 sounds like 2 (p 0.35)"
+  ],
+  "audio": "06f95ec6c0c1"
+ },
+ "ngo-tiu-throat": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 我 tone 5 sounds like 2 (p 0.03)"
+  ],
+  "audio": "643966efc3d8"
+ },
+ "ngo-tiu-throat-hou-tung": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.23)"
+  ],
+  "audio": "11bd3e4bad8c"
+ },
+ "ngo-zek-eye": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 隻 tone 3 sounds like 6 (p 0.05)"
+  ],
+  "audio": "eef96fbb6510"
+ },
+ "ngo-zek-tooth": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.35)"
+  ],
+  "audio": "d7c8c022ba73"
+ },
+ "nose": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 八 baat"
+  ],
+  "audio": "5585a5aa50cf"
+ },
+ "rx-2-1": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 1日兩次每次一粒 jat jat loeng ci mui ci jat lap",
+   "tone doubtful: 每 tone 5 sounds like 2 (p 0.37)"
+  ],
+  "audio": "294270f8847b"
+ },
+ "rx-2-2": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 1日兩次每次兩粒 jat jat loeng ci mui ci loeng lap",
+   "tone doubtful: 每 tone 5 sounds like 2 (p 0.45); 兩 tone 5 sounds like 4 (p 0.19)"
+  ],
+  "audio": "0449ac0159ea"
+ },
+ "rx-3-1": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 1日3次每次一粒 jat jat saam ci mui ci jat lap",
+   "tone doubtful: 每 tone 5 sounds like 2 (p 0.47)"
+  ],
+  "audio": "01ac2c98eca5"
+ },
+ "rx-3-2": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 1日3次每次兩粒 jat jat saam ci mui ci loeng lap",
+   "tone doubtful: 次 tone 3 sounds like 3 (p 0.41); 兩 tone 5 sounds like 2 (p 0.06)"
+  ],
+  "audio": "0cc42a20ef86"
+ },
+ "rx-4-1": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 1日4次每次一粒 jat jat sei ci mui ci jat lap",
+   "tone doubtful: 一 tone 1 sounds like 6 (p 0.15)"
+  ],
+  "audio": "1c4840d10bfa"
+ },
+ "rx-4-2": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 兩 tone 5 sounds like 2 (p 0.03)",
+   "speech-to-text heard 1日4次每次兩粒 jat jat sei ci mui ci loeng lap",
+   "tone doubtful: 一 tone 1 sounds like 6 (p 0.20); 日 tone 6 sounds like 4 (p 0.33); 每 tone 5 sounds like 2 (p 0.26)"
+  ],
+  "audio": "1ad73ff6edf5"
+ },
+ "tooth": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 噶 got"
+  ],
+  "audio": "b4632fce655d"
+ },
+ "tooth-tung": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 亞通 aa tung"
+  ],
+  "audio": "26ab0857a261"
+ },
+ "zo": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Jo j o"
+  ],
+  "audio": "9dcb6f5af6e3"
+ },
+ "zou-di-hou-faan-laa1": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 早 tone 2 sounds like 5 (p 0.45)"
+  ],
+  "audio": "d85bb6f0aeb6"
+ }
+}

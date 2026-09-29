@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Resting in bed</title>
+<path d="M10 70 V112 M118 86 V112" stroke="#9c6528" stroke-width="6" stroke-linecap="round"/>
+<rect x="10" y="88" width="108" height="14" rx="3" fill="#c98a4a" stroke="#9c6528" stroke-width="2"/>
+<rect x="16" y="68" width="30" height="16" rx="7" fill="#ffffff" stroke="#8a9aa5" stroke-width="2"/>
+<circle cx="34" cy="66" r="11" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/><path d="M24 64 C24 54 34 52 40 56 C36 58 30 58 24 64 Z" fill="#3b2f2a"/>
+<path d="M30 68 q3 2 6 0" stroke="#3b2f2a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+<path d="M42 70 C60 62 100 64 114 76 V90 H42 Z" fill="#3f7cc0" stroke="#24507f" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M54 24 h10 l-10 12 h10 M74 12 h8 l-8 10 h8 M90 30 h6 l-6 8 h6" stroke="#6f8796" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
