@@ -1,6 +1,6 @@
 # Audio review
 
-Every clip on the site (2238), unit by unit. **Listen on the [review page](https://ssullivan.github.io/learn-cantonese/review/)**, where you can mark each clip and copy your notes; the links below play one clip each.
+Every clip on the site (2239), unit by unit. **Listen on the [review page](https://ssullivan.github.io/learn-cantonese/review/)**, where you can mark each clip and copy your notes; the links below play one clip each.
 
 Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this file by hand.
 
@@ -38,6 +38,7 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 | 28 | 香港 | hoeng1 gong2 | Hong Kong | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/hong-kong.mp3) |
 | 29 | 雞 | gai1 | chicken | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/chicken.mp3) |
 | 30 | 街 | gaai1 | street | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/street.mp3) |
+| 31 | 好叻呀！ | hou2 lek1 aa3 | Well done! (literally "so clever!") | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/hou-lek.mp3) |
 
 ## Unit 2
 

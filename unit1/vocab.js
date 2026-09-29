@@ -64,6 +64,13 @@ Units.add(1, {
     { id: 'street', hanzi: '街', jyutping: 'gaai1', english: 'street', img: false,
       note: 'aa is long, like "ah". 雞 gai1 and 街 gaai1 differ only in vowel length.' },
   ],
+
+  // What every game says when a whole level is right (shared/game.js plays
+  // it from here, as CHEER).
+  praise: [
+    { id: 'hou-lek', hanzi: '好叻呀！', jyutping: 'hou2 lek1 aa3', english: 'Well done! (literally "so clever!")', img: false,
+      note: '叻 lek1 means clever or good at something. You\'ll hear this in the games when you get a whole level right.' },
+  ],
 });
 
 // The six-tone sets are read by WanLung (a man's voice). The site's voice,

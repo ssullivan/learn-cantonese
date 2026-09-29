@@ -90,4 +90,9 @@ const wrongOrders = orders.filter(o => {
 }).map(o => o.id);
 ok('unit 7 orders say their number the way Canto.number does', orders.length === 3 * v7.items.length && !wrongOrders.length,
   `${orders.length} orders; wrong: ${wrongOrders.join(' ')}`);
+
+// Every game says unit 1's 好叻呀！ after a perfect level (CHEER in game.js).
+const cheer = /const CHEER = \{ id: '([^']+)', unit: (\d+), hanzi: '([^']+)' \}/.exec(readFileSync(join(ROOT, 'shared/game.js'), 'utf8'));
+const cheered = cheer && entries(loadVocab(`unit${cheer[2]}`)).find(e => e.id === cheer[1] && !e.unit);
+ok('game.js\'s CHEER is a word in its unit, with the same hanzi', cheered?.hanzi === cheer?.[3], JSON.stringify(cheer?.slice(1)));
 process.exit(fail ? 1 : 0);

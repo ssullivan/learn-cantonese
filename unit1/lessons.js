@@ -92,9 +92,11 @@
       {
         id: 'done',
         title: '好叻！ Well done',
-        render(el) {
+        render(el, ctx) {
           el.append(
-            p(`You've heard all six tones of ${zh('廣東話', 'gwong2 dung1 waa2')}. Now train your ear with <a href="tones.html">Tone Detective</a>.`),
+            p(`You've heard all six tones of ${zh('廣東話', 'gwong2 dung1 waa2')}. Now train your ear with <a href="tones.html">Tone Detective</a>.
+              Get a whole level right and you'll hear this:`),
+            ctx.grid(V.praise),
             p('Use the numbered steps above to review any section, or <a href="../">go back to Unit 1</a>.'),
           );
         },
