@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A typhoon</title>
+<path d="M50 60 C48 32 76 16 108 20 M78 68 C80 96 52 112 20 108" fill="none" stroke="#d6453a" stroke-width="10" stroke-linecap="round"/>
+<circle cx="64" cy="64" r="16" fill="#ffffff" stroke="#d6453a" stroke-width="8"/>
+<path d="M24 22 l-5 12 M44 22 l-5 12" stroke="#3f7cc0" stroke-width="4" stroke-linecap="round"/><path d="M92 94 l-5 12 M112 94 l-5 12" stroke="#3f7cc0" stroke-width="4" stroke-linecap="round"/>
+</svg>

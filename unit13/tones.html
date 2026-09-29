@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tone Detective · Weather</title>
+<link rel="stylesheet" href="../shared/theme.css?v=1a4ed1c2">
+<link rel="stylesheet" href="../shared/game.css?v=7ae50350">
+</head>
+<body>
+<main class="page">
+  <header class="page-header">
+    <a class="back" href="../">← Unit 13</a>
+    <p class="eyebrow">Unit 13 · Game</p>
+    <h1><span class="hanzi" lang="zh-HK">聲調</span>Tone Detective</h1>
+    <p class="lede">Hear a weather word and catch its tones. Is it 冬 dung1 or 凍 dung3?</p>
+  </header>
+  <div id="game"></div>
+</main>
+<script src="../shared/core.js?v=fe121fe2"></script>
+<script src="../shared/audio.js?v=f296d05e"></script>
+<script src="../shared/game.js?v=8924273a"></script>
+<script src="../shared/tones.js?v=1e42a794"></script>
+<script src="../shared/numbers.js?v=5e41ae92"></script>
+<script src="../shared/units.js?v=e8593641"></script>
+<script src="../unit1/vocab.js?v=dd7808ee"></script>
+<script src="../unit2/vocab.js?v=5242e509"></script>
+<script src="../unit3/vocab.js?v=2f03c48d"></script>
+<script src="../unit4/vocab.js?v=54f5e120"></script>
+<script src="../unit5/vocab.js?v=c7ef5f1f"></script>
+<script src="../unit6/vocab.js?v=438f8da1"></script>
+<script src="../unit7/vocab.js?v=94b0471c"></script>
+<script src="../unit8/vocab.js?v=800546e1"></script>
+<script src="../unit9/vocab.js?v=d914609a"></script>
+<script src="../unit10/vocab.js?v=a67a7448"></script>
+<script src="../unit11/vocab.js?v=7abed824"></script>
+<script src="../unit12/vocab.js?v=08551c6e"></script>
+<script src="vocab.js?v=3309caeb"></script>
+<script>
+  const V = window.VOCAB;
+  Tones.init({
+    root: document.getElementById('game'),
+    key: 'u13-tones',
+    levels: [
+      { id: 'weather', name: '落雨 打風', blurb: 'Sun, cloud, rain, wind and typhoons.', pool: [...V.basics, ...V.weather], choices: 3 },
+      { id: 'feel', name: '熱定凍？', blurb: 'Hot, cold, warm, cool, muggy, damp, dry, and 好 幾 太.', pool: [...V.feel, ...V.grammar, ...V.degrees], choices: 3 },
+      { id: 'seasons', name: '春夏秋冬', blurb: 'The seasons, and temperatures: 冬 dung1 is high, 凍 dung3 mid.', pool: [...V.seasons, ...V.temps], choices: 4 },
+      { id: 'sentences', name: 'Sentences', blurb: '聽日會落雨. 帶遮啦！', pool: [...V.phrases, ...V.advice, ...V.sentences], choices: 4 },
+    ],
+  });
+</script>
+</body>
+</html>

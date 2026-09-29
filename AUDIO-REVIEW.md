@@ -1,6 +1,6 @@
 # Audio review
 
-Every clip on the site (1171), unit by unit. **Listen on the [review page](https://ssullivan.github.io/learn-cantonese/review/)**, where you can mark each clip and copy your notes; the links below play one clip each.
+Every clip on the site (1278), unit by unit. **Listen on the [review page](https://ssullivan.github.io/learn-cantonese/review/)**, where you can mark each clip and copy your notes; the links below play one clip each.
 
 Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this file by hand.
 
@@ -1234,3 +1234,115 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 | 91 | 呢條裙好靚 | ni1 tiu4 kwan4 hou2 leng3 | This skirt is very pretty. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/ni-tiu-skirt-hou-leng.mp3) |
 | 92 | 呢件外套幾多錢呀？ | ni1 gin6 ngoi6 tou3 gei2 do1 cin2 aa3 | How much is this coat? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/ni-gin-coat-gei-do-cin-aa.mp3) |
 | 93 | 我唔著外套 | ngo5 m4 zoek3 ngoi6 tou3 | I'm not wearing a coat. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/ngo-m-zoek-coat.mp3) |
+
+## Unit 13
+
+| # | Chinese | Jyutping | English | Audio |
+|---|---|---|---|---|
+| 1 | 天氣 | tin1 hei3 | weather | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/tin-hei.mp3) |
+| 2 | 天文台 | tin1 man4 toi4 | the Hong Kong Observatory | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/tin-man-toi.mp3) |
+| 3 | 太陽 | taai3 joeng4 | the sun | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/taai-joeng.mp3) |
+| 4 | 雲 | wan4 | cloud | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/wan.mp3) |
+| 5 | 雨 | jyu5 | rain | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/jyu.mp3) |
+| 6 | 雪 | syut3 | snow | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/syut.mp3) |
+| 7 | 風 | fung1 | wind | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/fung.mp3) |
+| 8 | 打 | daa2 | to hit; to strike | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/daa.mp3) |
+| 9 | 落雨 | lok6 jyu5 | to rain | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/lok-jyu.mp3) |
+| 10 | 落雪 | lok6 syut3 | to snow | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/lok-syut.mp3) |
+| 11 | 打風 | daa2 fung1 | a typhoon hits | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/daa-fung.mp3) |
+| 12 | 天晴 | tin1 cing4 | sunny; fine | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/tin-cing.mp3) |
+| 13 | 陰天 | jam1 tin1 | cloudy; overcast | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/jam-tin.mp3) |
+| 14 | 大風 | daai6 fung1 | windy; a strong wind | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/daai-fung.mp3) |
+| 15 | 行雷 | haang4 leoi4 | to thunder; a thunderstorm | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/haang-leoi.mp3) |
+| 16 | 暖 | nyun5 | warm | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/nyun.mp3) |
+| 17 | 涼 | loeng4 | cool (pleasantly) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/loeng.mp3) |
+| 18 | 焗 | guk6 | hot and stuffy; muggy | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/guk.mp3) |
+| 19 | 濕 | sap1 | damp; humid | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/sap.mp3) |
+| 20 | 乾 | gon1 | dry | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/gon.mp3) |
+| 21 | 季節 | gwai3 zit3 | season | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/gwai-zit.mp3) |
+| 22 | 春天 | ceon1 tin1 | spring | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/ceon-tin.mp3) |
+| 23 | 夏天 | haa6 tin1 | summer | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/haa-tin.mp3) |
+| 24 | 秋天 | cau1 tin1 | autumn | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/cau-tin.mp3) |
+| 25 | 冬天 | dung1 tin1 | winter | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/dung-tin.mp3) |
+| 26 | 太 | taai3 | too (much) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/taai.mp3) |
+| 27 | 會 | wui5 | will; is going to | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/wui.mp3) |
+| 28 | 啦 | laa1 | (softens advice: go on, do) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/laa1.mp3) |
+| 29 | 喇 | laa3 | (now; it has changed) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/laa3.mp3) |
+| 30 | 遮 | ze1 | umbrella | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/umbrella.mp3) |
+| 31 | 帶 | daai3 | to bring; to take along | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/daai-bring.mp3) |
+| 32 | 五度 | ng5 dou6 | 5°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c5.mp3) |
+| 33 | 六度 | luk6 dou6 | 6°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c6.mp3) |
+| 34 | 七度 | cat1 dou6 | 7°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c7.mp3) |
+| 35 | 八度 | baat3 dou6 | 8°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c8.mp3) |
+| 36 | 九度 | gau2 dou6 | 9°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c9.mp3) |
+| 37 | 十度 | sap6 dou6 | 10°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c10.mp3) |
+| 38 | 十一度 | sap6 jat1 dou6 | 11°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c11.mp3) |
+| 39 | 十二度 | sap6 ji6 dou6 | 12°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c12.mp3) |
+| 40 | 十三度 | sap6 saam1 dou6 | 13°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c13.mp3) |
+| 41 | 十四度 | sap6 sei3 dou6 | 14°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c14.mp3) |
+| 42 | 十五度 | sap6 ng5 dou6 | 15°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c15.mp3) |
+| 43 | 十六度 | sap6 luk6 dou6 | 16°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c16.mp3) |
+| 44 | 十七度 | sap6 cat1 dou6 | 17°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c17.mp3) |
+| 45 | 十八度 | sap6 baat3 dou6 | 18°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c18.mp3) |
+| 46 | 十九度 | sap6 gau2 dou6 | 19°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c19.mp3) |
+| 47 | 二十度 | ji6 sap6 dou6 | 20°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c20.mp3) |
+| 48 | 廿一度 | jaa6 jat1 dou6 | 21°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c21.mp3) |
+| 49 | 廿二度 | jaa6 ji6 dou6 | 22°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c22.mp3) |
+| 50 | 廿三度 | jaa6 saam1 dou6 | 23°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c23.mp3) |
+| 51 | 廿四度 | jaa6 sei3 dou6 | 24°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c24.mp3) |
+| 52 | 廿五度 | jaa6 ng5 dou6 | 25°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c25.mp3) |
+| 53 | 廿六度 | jaa6 luk6 dou6 | 26°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c26.mp3) |
+| 54 | 廿七度 | jaa6 cat1 dou6 | 27°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c27.mp3) |
+| 55 | 廿八度 | jaa6 baat3 dou6 | 28°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c28.mp3) |
+| 56 | 廿九度 | jaa6 gau2 dou6 | 29°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c29.mp3) |
+| 57 | 三十度 | saam1 sap6 dou6 | 30°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c30.mp3) |
+| 58 | 三十一度 | saam1 sap6 jat1 dou6 | 31°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c31.mp3) |
+| 59 | 三十二度 | saam1 sap6 ji6 dou6 | 32°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c32.mp3) |
+| 60 | 三十三度 | saam1 sap6 saam1 dou6 | 33°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c33.mp3) |
+| 61 | 三十四度 | saam1 sap6 sei3 dou6 | 34°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c34.mp3) |
+| 62 | 三十五度 | saam1 sap6 ng5 dou6 | 35°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c35.mp3) |
+| 63 | 天氣點呀？ | tin1 hei3 dim2 aa3 | how's the weather? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/tin-hei-dim-aa.mp3) |
+| 64 | 幾多度？ | gei2 do1 dou6 | how many degrees? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/gei-do-dou6.mp3) |
+| 65 | 有啲 | jau5 di1 | a bit | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/jau-di.mp3) |
+| 66 | 唔係好 | m4 hai6 hou2 | not very | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/m-hai-hou.mp3) |
+| 67 | 唔好 | m4 hou2 | don't | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/m-hou.mp3) |
+| 68 | 出太陽 | ceot1 taai3 joeng4 | the sun comes out | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/ceot-taai-joeng.mp3) |
+| 69 | 好熱 | hou2 jit6 | very hot | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/hou-jit.mp3) |
+| 70 | 幾熱 | gei2 jit6 | quite hot | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/gei-jit.mp3) |
+| 71 | 太熱 | taai3 jit6 | too hot | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/taai-jit.mp3) |
+| 72 | 有啲熱 | jau5 di1 jit6 | a bit hot | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/jau-di-jit.mp3) |
+| 73 | 唔係好熱 | m4 hai6 hou2 jit6 | not very hot | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/m-hai-hou-jit.mp3) |
+| 74 | 好凍 | hou2 dung3 | very cold | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/hou-dung.mp3) |
+| 75 | 幾凍 | gei2 dung3 | quite cold | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/gei-dung.mp3) |
+| 76 | 太凍 | taai3 dung3 | too cold | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/taai-dung.mp3) |
+| 77 | 有啲凍 | jau5 di1 dung3 | a bit cold | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/jau-di-dung.mp3) |
+| 78 | 唔係好凍 | m4 hai6 hou2 dung3 | not very cold | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/m-hai-hou-dung.mp3) |
+| 79 | 好焗 | hou2 guk6 | very muggy | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/hou-guk.mp3) |
+| 80 | 幾焗 | gei2 guk6 | quite muggy | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/gei-guk.mp3) |
+| 81 | 太焗 | taai3 guk6 | too muggy | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/taai-guk.mp3) |
+| 82 | 有啲焗 | jau5 di1 guk6 | a bit muggy | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/jau-di-guk.mp3) |
+| 83 | 唔係好焗 | m4 hai6 hou2 guk6 | not very muggy | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/m-hai-hou-guk.mp3) |
+| 84 | 帶遮啦 | daai3 ze1 laa1 | Take an umbrella! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/daai-bring-umbrella-laa1.mp3) |
+| 85 | 著多件衫啦 | zoek3 do1 gin6 saam1 laa1 | Put on another layer! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/zoek-do-gin-shirt-laa1.mp3) |
+| 86 | 飲多啲水啦 | jam2 do1 di1 seoi2 laa1 | Drink more water! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/jam2-do-di-water-laa1.mp3) |
+| 87 | 唔好出街啦 | m4 hou2 ceot1 gaai1 laa1 | Don't go out! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/m-hou-ceot-street-laa1.mp3) |
+| 88 | 戴帽啦 | daai3 mou2 laa1 | Wear a hat! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/daai-hat-laa1.mp3) |
+| 89 | 著外套啦 | zoek3 ngoi6 tou3 laa1 | Wear a coat! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/zoek-coat-laa1.mp3) |
+| 90 | 今日天氣點呀？ | gam1 jat6 tin1 hei3 dim2 aa3 | How's the weather today? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/gam-jat-tin-hei-dim-aa.mp3) |
+| 91 | 今日好熱 | gam1 jat6 hou2 jit6 | It's very hot today. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/gam-jat-hou-jit.mp3) |
+| 92 | 今日幾凍 | gam1 jat6 gei2 dung3 | It's quite cold today. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/gam-jat-gei-dung.mp3) |
+| 93 | 今日有啲焗 | gam1 jat6 jau5 di1 guk6 | It's a bit muggy today. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/gam-jat-jau-di-guk.mp3) |
+| 94 | 今日唔係好凍 | gam1 jat6 m4 hai6 hou2 dung3 | It isn't very cold today. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/gam-jat-m-hai-hou-dung.mp3) |
+| 95 | 太熱喇 | taai3 jit6 laa3 | It's too hot! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/taai-jit-laa3.mp3) |
+| 96 | 今日天氣好好 | gam1 jat6 tin1 hei3 hou2 hou2 | The weather is lovely today. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/gam-jat-tin-hei-hou-hou.mp3) |
+| 97 | 聽日會落雨 | ting1 jat6 wui5 lok6 jyu5 | It will rain tomorrow. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/ting-jat-wui-lok-jyu.mp3) |
+| 98 | 聽日會打風 | ting1 jat6 wui5 daa2 fung1 | A typhoon will hit tomorrow. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/ting-jat-wui-daa-fung.mp3) |
+| 99 | 聽日會唔會落雨呀？ | ting1 jat6 wui5 m4 wui5 lok6 jyu5 aa3 | Will it rain tomorrow? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/ting-jat-wui-m-wui-lok-jyu-aa.mp3) |
+| 100 | 琴日好大風 | kam4 jat6 hou2 daai6 fung1 | It was very windy yesterday. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/kam-jat-hou-daai-fung.mp3) |
+| 101 | 落雨喇 | lok6 jyu5 laa3 | It's started raining! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/lok-jyu-laa3.mp3) |
+| 102 | 出太陽喇 | ceot1 taai3 joeng4 laa3 | The sun's come out! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/ceot-taai-joeng-laa3.mp3) |
+| 103 | 今日幾多度呀？ | gam1 jat6 gei2 do1 dou6 aa3 | How many degrees is it today? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/gam-jat-gei-do-dou6-aa.mp3) |
+| 104 | 今日三十二度 | gam1 jat6 saam1 sap6 ji6 dou6 | It's 32 degrees today. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/gam-jat-c32.mp3) |
+| 105 | 香港夏天好熱 | hoeng1 gong2 haa6 tin1 hou2 jit6 | Summer in Hong Kong is very hot. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/hong-kong-haa-tin-hou-jit.mp3) |
+| 106 | 香港冬天唔係好凍 | hoeng1 gong2 dung1 tin1 m4 hai6 hou2 dung3 | Winter in Hong Kong isn't very cold. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/hong-kong-dung-tin-m-hai-hou-dung.mp3) |
+| 107 | 春天好濕 | ceon1 tin1 hou2 sap1 | Spring is very damp. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/ceon-tin-hou-sap.mp3) |

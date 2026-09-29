@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Spring blossom</title>
+<path d="M8 112 C40 96 60 70 70 40 M50 80 C70 78 90 66 104 52 M62 56 C54 40 40 30 28 26" stroke="#6b4a2e" stroke-width="5" fill="none" stroke-linecap="round"/>
+<g transform="translate(82 64) rotate(110) scale(0.45)">
+<path d="M0 0 C-14 -8 -12 -30 0 -40 C12 -30 14 -8 0 0 Z" fill="#7cc47f" stroke="#3a8a4e" stroke-width="2" stroke-linejoin="round"/>
+<path d="M0 4 V-32" stroke="#3a8a4e" stroke-width="1.5" stroke-linecap="round"/>
+</g><g transform="translate(40 88) rotate(-40) scale(0.45)">
+<path d="M0 0 C-14 -8 -12 -30 0 -40 C12 -30 14 -8 0 0 Z" fill="#7cc47f" stroke="#3a8a4e" stroke-width="2" stroke-linejoin="round"/>
+<path d="M0 4 V-32" stroke="#3a8a4e" stroke-width="1.5" stroke-linecap="round"/>
+</g>
+<g transform="translate(70 34)">
+<ellipse cy="-11" rx="6.82" ry="8.8" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(0)"/>
+<ellipse cy="-11" rx="6.82" ry="8.8" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(72)"/>
+<ellipse cy="-11" rx="6.82" ry="8.8" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(144)"/>
+<ellipse cy="-11" rx="6.82" ry="8.8" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(216)"/>
+<ellipse cy="-11" rx="6.82" ry="8.8" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(288)"/>
+<circle r="4.4" fill="#f2c94c"/>
+</g>
+<g transform="translate(104 48)">
+<ellipse cy="-10" rx="6.2" ry="8" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(0)"/>
+<ellipse cy="-10" rx="6.2" ry="8" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(72)"/>
+<ellipse cy="-10" rx="6.2" ry="8" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(144)"/>
+<ellipse cy="-10" rx="6.2" ry="8" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(216)"/>
+<ellipse cy="-10" rx="6.2" ry="8" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(288)"/>
+<circle r="4" fill="#f2c94c"/>
+</g>
+<g transform="translate(28 22)">
+<ellipse cy="-10" rx="6.2" ry="8" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(0)"/>
+<ellipse cy="-10" rx="6.2" ry="8" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(72)"/>
+<ellipse cy="-10" rx="6.2" ry="8" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(144)"/>
+<ellipse cy="-10" rx="6.2" ry="8" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(216)"/>
+<ellipse cy="-10" rx="6.2" ry="8" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(288)"/>
+<circle r="4" fill="#f2c94c"/>
+</g>
+<g transform="translate(46 72)">
+<ellipse cy="-9" rx="5.58" ry="7.2" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(0)"/>
+<ellipse cy="-9" rx="5.58" ry="7.2" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(72)"/>
+<ellipse cy="-9" rx="5.58" ry="7.2" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(144)"/>
+<ellipse cy="-9" rx="5.58" ry="7.2" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(216)"/>
+<ellipse cy="-9" rx="5.58" ry="7.2" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(288)"/>
+<circle r="3.6" fill="#f2c94c"/>
+</g>
+<g transform="translate(90 80)">
+<ellipse cy="-8" rx="4.96" ry="6.4" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(0)"/>
+<ellipse cy="-8" rx="4.96" ry="6.4" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(72)"/>
+<ellipse cy="-8" rx="4.96" ry="6.4" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(144)"/>
+<ellipse cy="-8" rx="4.96" ry="6.4" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(216)"/>
+<ellipse cy="-8" rx="4.96" ry="6.4" fill="#f6b6c9" stroke="#c0607f" stroke-width="1.5" transform="rotate(288)"/>
+<circle r="3.2" fill="#f2c94c"/>
+</g>
+</svg>

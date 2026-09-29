@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>The sun</title>
+<g stroke="#c9912a" stroke-width="3.75" stroke-linecap="round">
+<path d="M103.0 64.0 L113.5 64.0"/>
+<path d="M91.6 91.6 L99.0 99.0"/>
+<path d="M64.0 103.0 L64.0 113.5"/>
+<path d="M36.4 91.6 L29.0 99.0"/>
+<path d="M25.0 64.0 L14.5 64.0"/>
+<path d="M36.4 36.4 L29.0 29.0"/>
+<path d="M64.0 25.0 L64.0 14.5"/>
+<path d="M91.6 36.4 L99.0 29.0"/>
+</g>
+<circle cx="64" cy="64" r="30" fill="#f2c94c" stroke="#c9912a" stroke-width="2.5"/>
+</svg>

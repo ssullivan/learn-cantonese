@@ -17,8 +17,10 @@
  * .prompt-pic.right / .wrong, .ticket (an order pad: .ticket-row >
  * .ticket-label + .ticket-opts of small .pic-btn / .choice buttons), and
  * .map (a 5 × 5 street map: .road, .block, .road.you, and .pic-btn.spot
- * places), and .dress (a .figure with img.layer clothes placed on it by
- * the game, beside a .rack of clothes to pick).
+ * places), .dress (a .figure with img.layer clothes placed on it by
+ * the game, beside a .rack of clothes to pick), and .choice-grid.forecast
+ * (a row of days, each a .choice with the day, a weather picture and a
+ * .temp).
  */
 
 .btn.small { padding: 6px 12px; font-size: 14px; }
@@ -239,6 +241,14 @@
 .figure img { position: absolute; left: 0; top: 0; width: 100%; }
 .dress .rack { flex: 1 1 260px; max-width: 400px; }
 @media (max-width: 560px) { .figure { width: 160px; margin: 0 auto; } }
+
+/* A weather forecast: a day per column (two rows of two on phones) */
+.choice-grid.forecast { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.forecast .choice { display: grid; justify-items: center; gap: 4px; padding: 10px 6px; }
+.forecast .choice .hanzi { font-size: 18px; }
+.forecast img { width: 100%; max-width: 88px; aspect-ratio: 1; }
+.forecast .temp { font-size: 24px; font-weight: 800; font-variant-numeric: tabular-nums; }
+@media (max-width: 560px) { .choice-grid.forecast { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
 /* End screen */
 .game-end { text-align: center; padding: 16px 0; }

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Summer sun over the sea</title>
+<g stroke="#c9912a" stroke-width="2.75" stroke-linecap="round">
+<path d="M92.6 44.0 L100.3 44.0"/>
+<path d="M84.2 64.2 L89.7 69.7"/>
+<path d="M64.0 72.6 L64.0 80.3"/>
+<path d="M43.8 64.2 L38.3 69.7"/>
+<path d="M35.4 44.0 L27.7 44.0"/>
+<path d="M43.8 23.8 L38.3 18.3"/>
+<path d="M64.0 15.4 L64.0 7.7"/>
+<path d="M84.2 23.8 L89.7 18.3"/>
+</g>
+<circle cx="64" cy="44" r="22" fill="#f2c94c" stroke="#c9912a" stroke-width="2.5"/>
+<path d="M4 92 Q20 82 36 92 T68 92 T100 92 T132 92 V124 H4 Z" fill="#3f7cc0" stroke="#24507f" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M12 108 Q24 102 36 108 M60 112 Q72 106 84 112" stroke="#bfe0f2" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>
