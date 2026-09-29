@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Watching television</title>
+<rect x="16" y="14" width="96" height="66" rx="5" fill="#3a4148" stroke="#1d2226" stroke-width="2.5"/>
+<rect x="22" y="20" width="84" height="54" fill="#7fb2e0"/>
+<path d="M22 74 L48 46 L64 62 L78 50 L106 74 Z" fill="#3a9a6e"/><circle cx="88" cy="32" r="6" fill="#f7d35c"/>
+<path d="M56 80 L50 90 H78 L72 80" fill="#5f6a72" stroke="#1d2226" stroke-width="2" stroke-linejoin="round"/>
+<path d="M10 128 V112 Q10 102 22 102 H106 Q118 102 118 112 V128 Z" fill="#9c6528" stroke="#7d4f1e" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M44 128 C44 112 52 108 64 108 C76 108 84 112 84 128 Z" fill="#3f7cc0" stroke="#24507f" stroke-width="2"/>
+<circle cx="64" cy="96" r="12" fill="#3b2f2a"/>
+</svg>

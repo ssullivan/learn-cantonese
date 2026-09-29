@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Washing a face</title>
+<path d="M20 128 C20 108 40 100 64 100 C88 100 108 108 108 128 Z" fill="#3f7cc0" stroke="#24507f" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="54" y="84" width="20" height="20" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+<ellipse cx="30" cy="60" rx="7" ry="10" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/><ellipse cx="98" cy="60" rx="7" ry="10" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+<ellipse cx="64" cy="58" rx="33" ry="36" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+<path d="M31 56 C27 22 50 16 64 16 C80 16 101 22 97 56 C92 36 78 30 64 31 C50 31 37 38 31 56 Z" fill="#3b2f2a"/>
+<path d="M44 48 Q51 45 58 48 M70 48 Q77 45 84 48" stroke="#3b2f2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<ellipse cx="51" cy="58" rx="6" ry="4.5" fill="#ffffff" stroke="#8a9aa5" stroke-width="1"/><ellipse cx="77" cy="58" rx="6" ry="4.5" fill="#ffffff" stroke="#8a9aa5" stroke-width="1"/>
+<circle cx="51" cy="58" r="2.6" fill="#3b2f2a"/><circle cx="77" cy="58" r="2.6" fill="#3b2f2a"/>
+<path d="M64 60 Q59 70 63 72 Q66 73 68 71" stroke="#b07a52" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M55 81 Q64 88 73 81" stroke="#8f2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<ellipse cx="34" cy="82" rx="9" ry="13" fill="#f2c9a0" stroke="#b07a52" stroke-width="1.5"/><ellipse cx="94" cy="82" rx="9" ry="13" fill="#f2c9a0" stroke="#b07a52" stroke-width="1.5"/>
+<path d="M20 44 C24 50 24 54 20 54 C16 54 16 50 20 44 Z" fill="#7fb2e0" stroke="#3f7cc0" stroke-width="1.5"/><path d="M108 40 C112 46 112 50 108 50 C104 50 104 46 108 40 Z" fill="#7fb2e0" stroke="#3f7cc0" stroke-width="1.5"/><path d="M14 64 C17.2 68.8 17.2 72 14 72 C10.8 72 10.8 68.8 14 64 Z" fill="#7fb2e0" stroke="#3f7cc0" stroke-width="1.5"/><path d="M114 60 C117.2 64.8 117.2 68 114 68 C110.8 68 110.8 64.8 114 60 Z" fill="#7fb2e0" stroke="#3f7cc0" stroke-width="1.5"/><path d="M64 8 C67.6 13.4 67.6 17 64 17 C60.4 17 60.4 13.4 64 8 Z" fill="#7fb2e0" stroke="#3f7cc0" stroke-width="1.5"/>
+</svg>

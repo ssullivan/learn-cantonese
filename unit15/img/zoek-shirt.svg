@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A shirt on a hanger</title>
+<path d="M64 26 V20 C64 14 72 14 72 19" stroke="#6f8796" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M64 26 L28 44 H100 Z" fill="none" stroke="#6f8796" stroke-width="3" stroke-linejoin="round"/>
+<path d="M50 38 Q64 48 78 38 L106 50 L98 70 L88 65 V112 H40 V65 L30 70 L22 50 Z" fill="#d6453a" stroke="#8f2a22" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M54 40 Q64 48 74 40" stroke="#8f2a22" stroke-width="2" fill="none"/>
+<path d="M64 48 V112" stroke="#8f2a22" stroke-width="1.5"/>
+<circle cx="60" cy="60" r="2" fill="#8f2a22"/><circle cx="60" cy="76" r="2" fill="#8f2a22"/><circle cx="60" cy="92" r="2" fill="#8f2a22"/>
+</svg>

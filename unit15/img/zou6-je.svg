@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A laptop on a desk</title>
+<path d="M6 104 H122" stroke="#9c6528" stroke-width="4" stroke-linecap="round"/>
+<path d="M30 30 H98 V86 H30 Z" fill="#3a4148" stroke="#1d2226" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="36" y="36" width="56" height="44" fill="#bfe0f2"/>
+<path d="M42 46 H74 M42 54 H86 M42 62 H66 M42 70 H80" stroke="#3f7cc0" stroke-width="3" stroke-linecap="round"/>
+<path d="M22 102 L30 86 H98 L106 102 Z" fill="#c9d3da" stroke="#5f6a72" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M52 97 H76" stroke="#5f6a72" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M104 74 H118 V98 Q118 102 114 102 H108 Q104 102 104 98 Z" fill="#ffffff" stroke="#6f8796" stroke-width="2"/><path d="M118 80 q6 0 6 6 q0 6 -6 6" stroke="#6f8796" stroke-width="2" fill="none"/>
+</svg>

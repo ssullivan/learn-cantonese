@@ -1,6 +1,6 @@
 # Audio review
 
-Every clip on the site (1372), unit by unit. **Listen on the [review page](https://ssullivan.github.io/learn-cantonese/review/)**, where you can mark each clip and copy your notes; the links below play one clip each.
+Every clip on the site (1577), unit by unit. **Listen on the [review page](https://ssullivan.github.io/learn-cantonese/review/)**, where you can mark each clip and copy your notes; the links below play one clip each.
 
 Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this file by hand.
 
@@ -1445,3 +1445,213 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 | 92 | 你要多啲休息 | nei5 jiu3 do1 di1 jau1 sik1 | You need to rest more. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/nei-jiu-do-di-jau-sik.mp3) |
 | 93 | 我要去醫院 | ngo5 jiu3 heoi3 ji1 jyun2 | I need to go to hospital. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ngo-jiu-heoi-hospital.mp3) |
 | 94 | 早啲好返啦 | zou2 di1 hou2 faan1 laa1 | Get well soon! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/zou-di-hou-faan-laa1.mp3) |
+
+## Unit 15
+
+| # | Chinese | Jyutping | English | Audio |
+|---|---|---|---|---|
+| 1 | 起 | hei2 | to rise; to get up | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/hei.mp3) |
+| 2 | 刷 | caat3 | to brush | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/caat.mp3) |
+| 3 | 洗 | sai2 | to wash | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/sai.mp3) |
+| 4 | 沖 | cung1 | to rinse; to pour water over | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/cung.mp3) |
+| 5 | 返 | faan1 | to go back; to go (to work, school) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/faan.mp3) |
+| 6 | 放 | fong3 | to let go; to finish (work, school) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/fong.mp3) |
+| 7 | 煮 | zyu2 | to cook; to boil | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/zyu.mp3) |
+| 8 | 做 | zou6 | to do; to make | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/zou6.mp3) |
+| 9 | 身 | san1 | body | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/san.mp3) |
+| 10 | 面 | min6 | face | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/min.mp3) |
+| 11 | 工 | gung1 | work; a job | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/gung.mp3) |
+| 12 | 學 | hok6 | school; to learn | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/hok.mp3) |
+| 13 | 早餐 | zou2 caan1 | breakfast | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/zou-caan.mp3) |
+| 14 | 晏 | aan3 | lunch (in 食晏) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/aan.mp3) |
+| 15 | 晚飯 | maan5 faan6 | dinner | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/maan-faan.mp3) |
+| 16 | 電視 | din6 si6 | television | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/din-si.mp3) |
+| 17 | 覺 | gaau3 | a sleep | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/gaau.mp3) |
+| 18 | 嘢 | je5 | things; stuff | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/je.mp3) |
+| 19 | 緊 | gan2 | (-ing; happening now) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/gan.mp3) |
+| 20 | 過 | gwo3 | (ever; have done before) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/gwo.mp3) |
+| 21 | 通常 | tung1 soeng4 | usually | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/tung-soeng.mp3) |
+| 22 | 先 | sin1 | first | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/sin.mp3) |
+| 23 | 然後 | jin4 hau6 | then; after that | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/jin-hau.mp3) |
+| 24 | 之前 | zi1 cin4 | before | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/zi-cin.mp3) |
+| 25 | 之後 | zi1 hau6 | after | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/zi-hau.mp3) |
+| 26 | 每日 | mui5 jat6 | every day | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mui-jat6.mp3) |
+| 27 | 起身 | hei2 san1 | to get up | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/hei-san.mp3) |
+| 28 | 刷牙 | caat3 ngaa4 | to brush your teeth | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/caat-tooth.mp3) |
+| 29 | 洗面 | sai2 min6 | to wash your face | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/sai-min.mp3) |
+| 30 | 著衫 | zoek3 saam1 | to get dressed | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/zoek-shirt.mp3) |
+| 31 | 食早餐 | sik6 zou2 caan1 | to have breakfast | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/sik6-zou-caan.mp3) |
+| 32 | 返學 | faan1 hok6 | to go to school | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/faan-hok.mp3) |
+| 33 | 返工 | faan1 gung1 | to go to work | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/faan-gung.mp3) |
+| 34 | 做嘢 | zou6 je5 | to work; to do things | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/zou6-je.mp3) |
+| 35 | 洗手 | sai2 sau2 | to wash your hands | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/sai-hand.mp3) |
+| 36 | 食晏 | sik6 aan3 | to have lunch | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/sik6-aan.mp3) |
+| 37 | 放學 | fong3 hok6 | to finish school | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/fong-hok.mp3) |
+| 38 | 放工 | fong3 gung1 | to finish work | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/fong-gung.mp3) |
+| 39 | 返屋企 | faan1 uk1 kei2 | to go home | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/faan-home.mp3) |
+| 40 | 煮飯 | zyu2 faan6 | to cook | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/zyu-rice.mp3) |
+| 41 | 食晚飯 | sik6 maan5 faan6 | to have dinner | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/sik6-maan-faan.mp3) |
+| 42 | 睇電視 | tai2 din6 si6 | to watch TV | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/tai-din-si.mp3) |
+| 43 | 睇書 | tai2 syu1 | to read | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/tai-book.mp3) |
+| 44 | 沖涼 | cung1 loeng4 | to have a shower | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/cung-loeng.mp3) |
+| 45 | 瞓覺 | fan3 gaau3 | to go to bed; to sleep | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/fan3-gaau.mp3) |
+| 46 | 起咗身 | hei2 zo2 san1 | got up (done) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/hei-zo-san.mp3) |
+| 47 | 起緊身 | hei2 gan2 san1 | getting up (now) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/hei-gan-san.mp3) |
+| 48 | 未起身 | mei6 hei2 san1 | not got up yet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mei-hei-san.mp3) |
+| 49 | 刷咗牙 | caat3 zo2 ngaa4 | brushed their teeth (done) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/caat-zo-tooth.mp3) |
+| 50 | 刷緊牙 | caat3 gan2 ngaa4 | brushing their teeth (now) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/caat-gan-tooth.mp3) |
+| 51 | 未刷牙 | mei6 caat3 ngaa4 | not brushed their teeth yet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mei-caat-tooth.mp3) |
+| 52 | 洗咗面 | sai2 zo2 min6 | washed their face (done) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/sai-zo-min.mp3) |
+| 53 | 洗緊面 | sai2 gan2 min6 | washing their face (now) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/sai-gan-min.mp3) |
+| 54 | 未洗面 | mei6 sai2 min6 | not washed their face yet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mei-sai-min.mp3) |
+| 55 | 著咗衫 | zoek3 zo2 saam1 | got dressed (done) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/zoek-zo-shirt.mp3) |
+| 56 | 著緊衫 | zoek3 gan2 saam1 | getting dressed (now) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/zoek-gan-shirt.mp3) |
+| 57 | 未著衫 | mei6 zoek3 saam1 | not got dressed yet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mei-zoek-shirt.mp3) |
+| 58 | 食咗早餐 | sik6 zo2 zou2 caan1 | had breakfast (done) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/sik6-zo-zou-caan.mp3) |
+| 59 | 食緊早餐 | sik6 gan2 zou2 caan1 | having breakfast (now) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/sik6-gan-zou-caan.mp3) |
+| 60 | 未食早餐 | mei6 sik6 zou2 caan1 | not had breakfast yet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mei-sik6-zou-caan.mp3) |
+| 61 | 返咗學 | faan1 zo2 hok6 | gone to school (done) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/faan-zo-hok.mp3) |
+| 62 | 返緊學 | faan1 gan2 hok6 | going to school (now) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/faan-gan-hok.mp3) |
+| 63 | 未返學 | mei6 faan1 hok6 | not gone to school yet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mei-faan-hok.mp3) |
+| 64 | 返咗工 | faan1 zo2 gung1 | gone to work (done) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/faan-zo-gung.mp3) |
+| 65 | 返緊工 | faan1 gan2 gung1 | going to work (now) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/faan-gan-gung.mp3) |
+| 66 | 未返工 | mei6 faan1 gung1 | not gone to work yet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mei-faan-gung.mp3) |
+| 67 | 做咗嘢 | zou6 zo2 je5 | done some work (done) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/zou6-zo-je.mp3) |
+| 68 | 做緊嘢 | zou6 gan2 je5 | working (now) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/zou6-gan-je.mp3) |
+| 69 | 未做嘢 | mei6 zou6 je5 | not done some work yet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mei-zou6-je.mp3) |
+| 70 | 洗咗手 | sai2 zo2 sau2 | washed their hands (done) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/sai-zo-hand.mp3) |
+| 71 | 洗緊手 | sai2 gan2 sau2 | washing their hands (now) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/sai-gan-hand.mp3) |
+| 72 | 未洗手 | mei6 sai2 sau2 | not washed their hands yet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mei-sai-hand.mp3) |
+| 73 | 食咗晏 | sik6 zo2 aan3 | had lunch (done) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/sik6-zo-aan.mp3) |
+| 74 | 食緊晏 | sik6 gan2 aan3 | having lunch (now) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/sik6-gan-aan.mp3) |
+| 75 | 未食晏 | mei6 sik6 aan3 | not had lunch yet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mei-sik6-aan.mp3) |
+| 76 | 放咗學 | fong3 zo2 hok6 | finished school (done) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/fong-zo-hok.mp3) |
+| 77 | 未放學 | mei6 fong3 hok6 | not finished school yet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mei-fong-hok.mp3) |
+| 78 | 放咗工 | fong3 zo2 gung1 | finished work (done) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/fong-zo-gung.mp3) |
+| 79 | 未放工 | mei6 fong3 gung1 | not finished work yet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mei-fong-gung.mp3) |
+| 80 | 返咗屋企 | faan1 zo2 uk1 kei2 | gone home (done) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/faan-zo-home.mp3) |
+| 81 | 返緊屋企 | faan1 gan2 uk1 kei2 | going home (now) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/faan-gan-home.mp3) |
+| 82 | 未返屋企 | mei6 faan1 uk1 kei2 | not gone home yet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mei-faan-home.mp3) |
+| 83 | 煮咗飯 | zyu2 zo2 faan6 | cooked (done) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/zyu-zo-rice.mp3) |
+| 84 | 煮緊飯 | zyu2 gan2 faan6 | cooking (now) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/zyu-gan-rice.mp3) |
+| 85 | 未煮飯 | mei6 zyu2 faan6 | not cooked yet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mei-zyu-rice.mp3) |
+| 86 | 食咗晚飯 | sik6 zo2 maan5 faan6 | had dinner (done) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/sik6-zo-maan-faan.mp3) |
+| 87 | 食緊晚飯 | sik6 gan2 maan5 faan6 | having dinner (now) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/sik6-gan-maan-faan.mp3) |
+| 88 | 未食晚飯 | mei6 sik6 maan5 faan6 | not had dinner yet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mei-sik6-maan-faan.mp3) |
+| 89 | 睇咗電視 | tai2 zo2 din6 si6 | watched TV (done) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/tai-zo-din-si.mp3) |
+| 90 | 睇緊電視 | tai2 gan2 din6 si6 | watching TV (now) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/tai-gan-din-si.mp3) |
+| 91 | 未睇電視 | mei6 tai2 din6 si6 | not watched TV yet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mei-tai-din-si.mp3) |
+| 92 | 睇咗書 | tai2 zo2 syu1 | read (done) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/tai-zo-book.mp3) |
+| 93 | 睇緊書 | tai2 gan2 syu1 | reading (now) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/tai-gan-book.mp3) |
+| 94 | 未睇書 | mei6 tai2 syu1 | not read yet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mei-tai-book.mp3) |
+| 95 | 沖咗涼 | cung1 zo2 loeng4 | had a shower (done) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/cung-zo-loeng.mp3) |
+| 96 | 沖緊涼 | cung1 gan2 loeng4 | having a shower (now) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/cung-gan-loeng.mp3) |
+| 97 | 未沖涼 | mei6 cung1 loeng4 | not had a shower yet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mei-cung-loeng.mp3) |
+| 98 | 瞓咗覺 | fan3 zo2 gaau3 | gone to sleep (done) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/fan3-zo-gaau.mp3) |
+| 99 | 瞓緊覺 | fan3 gan2 gaau3 | sleeping (now) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/fan3-gan-gaau.mp3) |
+| 100 | 未瞓覺 | mei6 fan3 gaau3 | not gone to sleep yet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mei-fan3-gaau.mp3) |
+| 101 | 佢起咗身未呀？ | keoi5 hei2 zo2 san1 mei6 aa3 | Have they got up yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/keoi-hei-zo-san-mei-aa.mp3) |
+| 102 | 佢刷咗牙未呀？ | keoi5 caat3 zo2 ngaa4 mei6 aa3 | Have they brushed their teeth yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/keoi-caat-zo-tooth-mei-aa.mp3) |
+| 103 | 佢洗咗面未呀？ | keoi5 sai2 zo2 min6 mei6 aa3 | Have they washed their face yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/keoi-sai-zo-min-mei-aa.mp3) |
+| 104 | 佢著咗衫未呀？ | keoi5 zoek3 zo2 saam1 mei6 aa3 | Have they got dressed yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/keoi-zoek-zo-shirt-mei-aa.mp3) |
+| 105 | 佢食咗早餐未呀？ | keoi5 sik6 zo2 zou2 caan1 mei6 aa3 | Have they had breakfast yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/keoi-sik6-zo-zou-caan-mei-aa.mp3) |
+| 106 | 佢返咗學未呀？ | keoi5 faan1 zo2 hok6 mei6 aa3 | Have they gone to school yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/keoi-faan-zo-hok-mei-aa.mp3) |
+| 107 | 佢返咗工未呀？ | keoi5 faan1 zo2 gung1 mei6 aa3 | Have they gone to work yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/keoi-faan-zo-gung-mei-aa.mp3) |
+| 108 | 佢做咗嘢未呀？ | keoi5 zou6 zo2 je5 mei6 aa3 | Have they done some work yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/keoi-zou6-zo-je-mei-aa.mp3) |
+| 109 | 佢洗咗手未呀？ | keoi5 sai2 zo2 sau2 mei6 aa3 | Have they washed their hands yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/keoi-sai-zo-hand-mei-aa.mp3) |
+| 110 | 佢食咗晏未呀？ | keoi5 sik6 zo2 aan3 mei6 aa3 | Have they had lunch yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/keoi-sik6-zo-aan-mei-aa.mp3) |
+| 111 | 佢放咗學未呀？ | keoi5 fong3 zo2 hok6 mei6 aa3 | Have they finished school yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/keoi-fong-zo-hok-mei-aa.mp3) |
+| 112 | 佢放咗工未呀？ | keoi5 fong3 zo2 gung1 mei6 aa3 | Have they finished work yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/keoi-fong-zo-gung-mei-aa.mp3) |
+| 113 | 佢返咗屋企未呀？ | keoi5 faan1 zo2 uk1 kei2 mei6 aa3 | Have they gone home yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/keoi-faan-zo-home-mei-aa.mp3) |
+| 114 | 佢煮咗飯未呀？ | keoi5 zyu2 zo2 faan6 mei6 aa3 | Have they cooked yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/keoi-zyu-zo-rice-mei-aa.mp3) |
+| 115 | 佢食咗晚飯未呀？ | keoi5 sik6 zo2 maan5 faan6 mei6 aa3 | Have they had dinner yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/keoi-sik6-zo-maan-faan-mei-aa.mp3) |
+| 116 | 佢睇咗電視未呀？ | keoi5 tai2 zo2 din6 si6 mei6 aa3 | Have they watched TV yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/keoi-tai-zo-din-si-mei-aa.mp3) |
+| 117 | 佢睇咗書未呀？ | keoi5 tai2 zo2 syu1 mei6 aa3 | Have they read yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/keoi-tai-zo-book-mei-aa.mp3) |
+| 118 | 佢沖咗涼未呀？ | keoi5 cung1 zo2 loeng4 mei6 aa3 | Have they had a shower yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/keoi-cung-zo-loeng-mei-aa.mp3) |
+| 119 | 佢瞓咗覺未呀？ | keoi5 fan3 zo2 gaau3 mei6 aa3 | Have they gone to sleep yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/keoi-fan3-zo-gaau-mei-aa.mp3) |
+| 120 | 我七點鐘起身 | ngo5 cat1 dim2 zung1 hei2 san1 | I get up at 7:00. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-t0700-hei-san.mp3) |
+| 121 | 我七點兩個字刷牙 | ngo5 cat1 dim2 loeng5 go3 zi6 caat3 ngaa4 | I brush my teeth at 7:10. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-t0710-caat-tooth.mp3) |
+| 122 | 我七點三個字洗面 | ngo5 cat1 dim2 saam1 go3 zi6 sai2 min6 | I wash my face at 7:15. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-t0715-sai-min.mp3) |
+| 123 | 我七點四個字著衫 | ngo5 cat1 dim2 sei3 go3 zi6 zoek3 saam1 | I get dressed at 7:20. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-t0720-zoek-shirt.mp3) |
+| 124 | 我七點半食早餐 | ngo5 cat1 dim2 bun3 sik6 zou2 caan1 | I have breakfast at 7:30. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-t0730-sik6-zou-caan.mp3) |
+| 125 | 我八點鐘返學 | ngo5 baat3 dim2 zung1 faan1 hok6 | I go to school at 8:00. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-t0800-faan-hok.mp3) |
+| 126 | 我八點半返工 | ngo5 baat3 dim2 bun3 faan1 gung1 | I go to work at 8:30. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-t0830-faan-gung.mp3) |
+| 127 | 我九點鐘做嘢 | ngo5 gau2 dim2 zung1 zou6 je5 | I work at 9:00. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-t0900-zou6-je.mp3) |
+| 128 | 我一點鐘食晏 | ngo5 jat1 dim2 zung1 sik6 aan3 | I have lunch at 1:00. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-t0100-sik6-aan.mp3) |
+| 129 | 我三點半放學 | ngo5 saam1 dim2 bun3 fong3 hok6 | I finish school at 3:30. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-t0330-fong-hok.mp3) |
+| 130 | 我六點鐘放工 | ngo5 luk6 dim2 zung1 fong3 gung1 | I finish work at 6:00. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-t0600-fong-gung.mp3) |
+| 131 | 我六點半返屋企 | ngo5 luk6 dim2 bun3 faan1 uk1 kei2 | I go home at 6:30. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-t0630-faan-home.mp3) |
+| 132 | 我六點九個字煮飯 | ngo5 luk6 dim2 gau2 go3 zi6 zyu2 faan6 | I cook at 6:45. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-t0645-zyu-rice.mp3) |
+| 133 | 我七點半食晚飯 | ngo5 cat1 dim2 bun3 sik6 maan5 faan6 | I have dinner at 7:30. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-t0730-sik6-maan-faan.mp3) |
+| 134 | 我八點鐘睇電視 | ngo5 baat3 dim2 zung1 tai2 din6 si6 | I watch TV at 8:00. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-t0800-tai-din-si.mp3) |
+| 135 | 我八點半睇書 | ngo5 baat3 dim2 bun3 tai2 syu1 | I read at 8:30. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-t0830-tai-book.mp3) |
+| 136 | 我九點鐘沖涼 | ngo5 gau2 dim2 zung1 cung1 loeng4 | I have a shower at 9:00. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-t0900-cung-loeng.mp3) |
+| 137 | 我十一點鐘瞓覺 | ngo5 sap6 jat1 dim2 zung1 fan3 gaau3 | I go to bed at 11:00. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-t1100-fan3-gaau.mp3) |
+| 138 | 我先起身然後刷牙 | ngo5 sin1 hei2 san1 jin4 hau6 caat3 ngaa4 | First I get up, then I brush my teeth. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-sin-hei-san-jin-hau-caat-tooth.mp3) |
+| 139 | 我先刷牙然後洗面 | ngo5 sin1 caat3 ngaa4 jin4 hau6 sai2 min6 | First I brush my teeth, then I wash my face. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-sin-caat-tooth-jin-hau-sai-min.mp3) |
+| 140 | 我先洗面然後著衫 | ngo5 sin1 sai2 min6 jin4 hau6 zoek3 saam1 | First I wash my face, then I get dressed. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-sin-sai-min-jin-hau-zoek-shirt.mp3) |
+| 141 | 我先著衫然後食早餐 | ngo5 sin1 zoek3 saam1 jin4 hau6 sik6 zou2 caan1 | First I get dressed, then I have breakfast. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-sin-zoek-shirt-jin-hau-sik6-zou-caan.mp3) |
+| 142 | 我先放工然後返屋企 | ngo5 sin1 fong3 gung1 jin4 hau6 faan1 uk1 kei2 | First I finish work, then I go home. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-sin-fong-gung-jin-hau-faan-home.mp3) |
+| 143 | 我先煮飯然後食晚飯 | ngo5 sin1 zyu2 faan6 jin4 hau6 sik6 maan5 faan6 | First I cook, then I have dinner. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-sin-zyu-rice-jin-hau-sik6-maan-faan.mp3) |
+| 144 | 我先睇電視然後沖涼 | ngo5 sin1 tai2 din6 si6 jin4 hau6 cung1 loeng4 | First I watch TV, then I have a shower. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-sin-tai-din-si-jin-hau-cung-loeng.mp3) |
+| 145 | 我先沖涼然後瞓覺 | ngo5 sin1 cung1 loeng4 jin4 hau6 fan3 gaau3 | First I have a shower, then I go to bed. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-sin-cung-loeng-jin-hau-fan3-gaau.mp3) |
+| 146 | 我食早餐之後返工 | ngo5 sik6 zou2 caan1 zi1 hau6 faan1 gung1 | After I have breakfast, I go to work. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-sik6-zou-caan-zi-hau-faan-gung.mp3) |
+| 147 | 我放學之後返屋企 | ngo5 fong3 hok6 zi1 hau6 faan1 uk1 kei2 | After I finish school, I go home. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-fong-hok-zi-hau-faan-home.mp3) |
+| 148 | 我食晚飯之後睇書 | ngo5 sik6 maan5 faan6 zi1 hau6 tai2 syu1 | After I have dinner, I read. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-sik6-maan-faan-zi-hau-tai-book.mp3) |
+| 149 | 我返屋企之後煮飯 | ngo5 faan1 uk1 kei2 zi1 hau6 zyu2 faan6 | After I go home, I cook. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-faan-home-zi-hau-zyu-rice.mp3) |
+| 150 | 我食晏之前洗手 | ngo5 sik6 aan3 zi1 cin4 sai2 sau2 | Before I have lunch, I wash my hands. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-sik6-aan-zi-cin-sai-hand.mp3) |
+| 151 | 我瞓覺之前刷牙 | ngo5 fan3 gaau3 zi1 cin4 caat3 ngaa4 | Before I go to bed, I brush my teeth. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-fan3-gaau-zi-cin-caat-tooth.mp3) |
+| 152 | 我返學之前著衫 | ngo5 faan1 hok6 zi1 cin4 zoek3 saam1 | Before I go to school, I get dressed. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-faan-hok-zi-cin-zoek-shirt.mp3) |
+| 153 | 我瞓覺之前沖涼 | ngo5 fan3 gaau3 zi1 cin4 cung1 loeng4 | Before I go to bed, I have a shower. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-fan3-gaau-zi-cin-cung-loeng.mp3) |
+| 154 | 去過 | heoi3 gwo3 | Yes, I have. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/heoi-gwo.mp3) |
+| 155 | 冇去過 | mou5 heoi3 gwo3 | No, never. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mou-heoi-gwo.mp3) |
+| 156 | 未去過 | mei6 heoi3 gwo3 | Not yet. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mei-heoi-gwo.mp3) |
+| 157 | 食過 | sik6 gwo3 | Yes, I have. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/sik6-gwo.mp3) |
+| 158 | 冇食過 | mou5 sik6 gwo3 | No, never. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mou-sik6-gwo.mp3) |
+| 159 | 未食過 | mei6 sik6 gwo3 | Not yet. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mei-sik6-gwo.mp3) |
+| 160 | 飲過 | jam2 gwo3 | Yes, I have. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/jam2-gwo.mp3) |
+| 161 | 冇飲過 | mou5 jam2 gwo3 | No, never. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mou-jam2-gwo.mp3) |
+| 162 | 未飲過 | mei6 jam2 gwo3 | Not yet. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mei-jam2-gwo.mp3) |
+| 163 | 搭過 | daap3 gwo3 | Yes, I have. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/daap-gwo.mp3) |
+| 164 | 冇搭過 | mou5 daap3 gwo3 | No, never. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mou-daap-gwo.mp3) |
+| 165 | 未搭過 | mei6 daap3 gwo3 | Not yet. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mei-daap-gwo.mp3) |
+| 166 | 你有冇去過機場呀？ | nei5 jau5 mou5 heoi3 gwo3 gei1 coeng4 aa3 | Have you ever been to the airport? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-jau-mou-heoi-gwo-airport-aa.mp3) |
+| 167 | 你去過機場未呀？ | nei5 heoi3 gwo3 gei1 coeng4 mei6 aa3 | Have you been to the airport yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-heoi-gwo-airport-mei-aa.mp3) |
+| 168 | 你有冇去過醫院呀？ | nei5 jau5 mou5 heoi3 gwo3 ji1 jyun2 aa3 | Have you ever been to hospital? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-jau-mou-heoi-gwo-hospital-aa.mp3) |
+| 169 | 你去過醫院未呀？ | nei5 heoi3 gwo3 ji1 jyun2 mei6 aa3 | Have you been to hospital yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-heoi-gwo-hospital-mei-aa.mp3) |
+| 170 | 你有冇去過公園呀？ | nei5 jau5 mou5 heoi3 gwo3 gung1 jyun2 aa3 | Have you ever been to the park? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-jau-mou-heoi-gwo-park-aa.mp3) |
+| 171 | 你去過公園未呀？ | nei5 heoi3 gwo3 gung1 jyun2 mei6 aa3 | Have you been to the park yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-heoi-gwo-park-mei-aa.mp3) |
+| 172 | 你有冇食過菠蘿油呀？ | nei5 jau5 mou5 sik6 gwo3 bo1 lo4 jau4 aa3 | Have you ever had a pineapple bun? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-jau-mou-sik6-gwo-pineapple-butter-aa.mp3) |
+| 173 | 你食過菠蘿油未呀？ | nei5 sik6 gwo3 bo1 lo4 jau4 mei6 aa3 | Have you had a pineapple bun yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-sik6-gwo-pineapple-butter-mei-aa.mp3) |
+| 174 | 你有冇食過蝦餃呀？ | nei5 jau5 mou5 sik6 gwo3 haa1 gaau2 aa3 | Have you ever had har gow? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-jau-mou-sik6-gwo-har-gow-aa.mp3) |
+| 175 | 你食過蝦餃未呀？ | nei5 sik6 gwo3 haa1 gaau2 mei6 aa3 | Have you had har gow yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-sik6-gwo-har-gow-mei-aa.mp3) |
+| 176 | 你有冇食過餐蛋麵呀？ | nei5 jau5 mou5 sik6 gwo3 caan1 daan2 min6 aa3 | Have you ever had luncheon meat and egg noodles? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-jau-mou-sik6-gwo-spam-egg-noodles-aa.mp3) |
+| 177 | 你食過餐蛋麵未呀？ | nei5 sik6 gwo3 caan1 daan2 min6 mei6 aa3 | Have you had luncheon meat and egg noodles yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-sik6-gwo-spam-egg-noodles-mei-aa.mp3) |
+| 178 | 你有冇飲過鴛鴦呀？ | nei5 jau5 mou5 jam2 gwo3 jyun1 joeng1 aa3 | Have you ever had yuenyeung? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-jau-mou-jam2-gwo-yuenyeung-aa.mp3) |
+| 179 | 你飲過鴛鴦未呀？ | nei5 jam2 gwo3 jyun1 joeng1 mei6 aa3 | Have you had yuenyeung yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-jam2-gwo-yuenyeung-mei-aa.mp3) |
+| 180 | 你有冇飲過奶茶呀？ | nei5 jau5 mou5 jam2 gwo3 naai5 caa4 aa3 | Have you ever had milk tea? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-jau-mou-jam2-gwo-milk-tea-aa.mp3) |
+| 181 | 你飲過奶茶未呀？ | nei5 jam2 gwo3 naai5 caa4 mei6 aa3 | Have you had milk tea yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-jam2-gwo-milk-tea-mei-aa.mp3) |
+| 182 | 你有冇搭過電車呀？ | nei5 jau5 mou5 daap3 gwo3 din6 ce1 aa3 | Have you ever been on a tram? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-jau-mou-daap-gwo-tram-aa.mp3) |
+| 183 | 你搭過電車未呀？ | nei5 daap3 gwo3 din6 ce1 mei6 aa3 | Have you been on a tram yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-daap-gwo-tram-mei-aa.mp3) |
+| 184 | 你有冇搭過小巴呀？ | nei5 jau5 mou5 daap3 gwo3 siu2 baa1 aa3 | Have you ever been on a minibus? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-jau-mou-daap-gwo-minibus-aa.mp3) |
+| 185 | 你搭過小巴未呀？ | nei5 daap3 gwo3 siu2 baa1 mei6 aa3 | Have you been on a minibus yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-daap-gwo-minibus-mei-aa.mp3) |
+| 186 | 你有冇搭過飛機呀？ | nei5 jau5 mou5 daap3 gwo3 fei1 gei1 aa3 | Have you ever been on a plane? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-jau-mou-daap-gwo-plane-aa.mp3) |
+| 187 | 你搭過飛機未呀？ | nei5 daap3 gwo3 fei1 gei1 mei6 aa3 | Have you been on a plane yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-daap-gwo-plane-mei-aa.mp3) |
+| 188 | 你通常幾點起身呀？ | nei5 tung1 soeng4 gei2 dim2 hei2 san1 aa3 | What time do you usually get up? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-tung-soeng-gei-dim-hei-san-aa.mp3) |
+| 189 | 我通常七點鐘起身 | ngo5 tung1 soeng4 cat1 dim2 zung1 hei2 san1 | I usually get up at seven. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-tung-soeng-t0700-hei-san.mp3) |
+| 190 | 我每日八點半返工 | ngo5 mui5 jat6 baat3 dim2 bun3 faan1 gung1 | I go to work at half past eight every day. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-mui-jat6-t0830-faan-gung.mp3) |
+| 191 | 食飯之前要洗手 | sik6 faan6 zi1 cin4 jiu3 sai2 sau2 | Wash your hands before you eat. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/sik-faan-zi-cin-jiu-sai-hand.mp3) |
+| 192 | 你而家做緊乜嘢呀？ | nei5 ji4 gaa1 zou6 gan2 mat1 je5 aa3 | What are you doing now? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-ji-gaa-zou6-gan-mat-je-aa.mp3) |
+| 193 | 佢而家做緊乜嘢呀？ | keoi5 ji4 gaa1 zou6 gan2 mat1 je5 aa3 | What are they doing now? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/keoi-ji-gaa-zou6-gan-mat-je-aa.mp3) |
+| 194 | 我食緊早餐 | ngo5 sik6 gan2 zou2 caan1 | I'm having breakfast. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-sik6-gan-zou-caan.mp3) |
+| 195 | 我而家睇緊電視 | ngo5 ji4 gaa1 tai2 gan2 din6 si6 | I'm watching TV now. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-ji-gaa-tai-gan-din-si.mp3) |
+| 196 | 佢瞓緊覺 | keoi5 fan3 gan2 gaau3 | They're asleep. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/keoi-fan3-gan-gaau.mp3) |
+| 197 | 我返緊工 | ngo5 faan1 gan2 gung1 | I'm on my way to work. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-faan-gan-gung.mp3) |
+| 198 | 我食咗早餐喇 | ngo5 sik6 zo2 zou2 caan1 laa3 | I've had breakfast. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-sik6-zo-zou-caan-laa3.mp3) |
+| 199 | 我未食早餐 | ngo5 mei6 sik6 zou2 caan1 | I haven't had breakfast yet. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-mei-sik6-zou-caan.mp3) |
+| 200 | 你有冇去過香港呀？ | nei5 jau5 mou5 heoi3 gwo3 hoeng1 gong2 aa3 | Have you ever been to Hong Kong? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/nei-jau-mou-heoi-gwo-hong-kong-aa.mp3) |
+| 201 | 我去過香港 | ngo5 heoi3 gwo3 hoeng1 gong2 | I've been to Hong Kong. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-heoi-gwo-hong-kong.mp3) |
+| 202 | 我冇去過香港 | ngo5 mou5 heoi3 gwo3 hoeng1 gong2 | I've never been to Hong Kong. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-mou-heoi-gwo-hong-kong.mp3) |
+| 203 | 我未去過香港 | ngo5 mei6 heoi3 gwo3 hoeng1 gong2 | I haven't been to Hong Kong yet. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-mei-heoi-gwo-hong-kong.mp3) |
+| 204 | 我食過菠蘿油 | ngo5 sik6 gwo3 bo1 lo4 jau4 | I've had a pineapple bun before. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-sik6-gwo-pineapple-butter.mp3) |
+| 205 | 我未搭過飛機 | ngo5 mei6 daap3 gwo3 fei1 gei1 | I haven't been on a plane yet. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/ngo-mei-daap-gwo-plane.mp3) |

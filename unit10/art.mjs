@@ -5,7 +5,7 @@
  * brothers and sisters); tree B is your own (partner and children). Run
  * `node tools/draw.mjs` after editing to rewrite img/<id>.svg.
  */
-import { svg, person, arrow } from '../tools/svg.mjs';
+import { svg, person, arrow, house } from '../tools/svg.mjs';
 
 const MAN = { hair: 'short' }, WOMAN = { hair: 'long' };
 const OLD_MAN = { hair: 'short', old: true }, OLD_WOMAN = { hair: 'bun', old: true };
@@ -59,17 +59,10 @@ function tree(at, families, meant, { colour = 'red', mark = true } = {}) {
 const a = (title, ...meant) => svg(title, tree(A, A_FAMILIES, meant));
 const b = (title, partner, ...meant) => svg(title, tree(B(partner), B_FAMILIES, meant));
 
-const house = svg('A house', `<ellipse cx="64" cy="118" rx="46" ry="5" fill="#9fb0bb" opacity=".35"/>
-<rect x="26" y="56" width="76" height="60" fill="#fbf1dc" stroke="#7d4f1e" stroke-width="3" stroke-linejoin="round"/>
-<path d="M14 60 L64 16 L114 60 Z" fill="#d6453a" stroke="#8f2a22" stroke-width="3" stroke-linejoin="round"/>
-<rect x="82" y="24" width="12" height="20" fill="#9c6528" stroke="#7d4f1e" stroke-width="2"/>
-<rect x="54" y="80" width="22" height="36" rx="2" fill="#3f7cc0" stroke="#24507f" stroke-width="2.5"/>
-<circle cx="71" cy="99" r="2" fill="#e0a526"/>
-<rect x="34" y="70" width="14" height="14" fill="#fff6d8" stroke="#7d4f1e" stroke-width="2"/>
-<rect x="84" y="70" width="12" height="14" fill="#fff6d8" stroke="#7d4f1e" stroke-width="2"/>`);
+
 
 export default {
-  home: house,
+  home: svg('A house', house),
   family: svg('The whole family tree', tree(A, A_FAMILIES, Object.keys(A), { colour: 'blue', mark: false })),
   dad: a('Family tree: 我\'s dad', 'dad'),
   mum: a('Family tree: 我\'s mum', 'mum'),

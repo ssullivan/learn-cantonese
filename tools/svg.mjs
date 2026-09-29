@@ -29,6 +29,22 @@
  *   cup(drink, { glass })  a handleless blue-and-white teacup (rim at
  *                      y 46), or a tall glass (rim at y 18), filled with
  *                      the color `drink`
+ * Faces, figures and places (unit 10's house, unit 14's body, unit 15's day):
+ *   face({ mouth, pained, coat, extra })
+ *                      a face close up with shoulders, filling the picture
+ *                      (eyes at y 58, mouth at 64,83, chin at 94). mouth:
+ *                      smile, frown, open (teeth showing), ow; pained
+ *                      brows; coat: fill and stroke attributes for the
+ *                      shoulders (a blue top unless given); extra: drawn on top
+ *   figure({ behind, pained })
+ *                      a whole person facing us (or from behind), head at
+ *                      64,20, hands at 37,73 and 91,73, feet at y 117
+ *   inBed              a bed across the lower half, someone lying in it
+ *                      with their head on the pillow at the left (34,66)
+ *   zzz                zzz rising above the middle
+ *   drop(x, y, s = 1)  a drop of water, its tip at x, y, 10·s tall
+ *   puff(x, y, r)      a white puff: a cough, a bubble, foam
+ *   house              a house with a red roof, the door at 54–76, 80–116
  * Transport (unit 1's car, unit 5's plane, unit 11's taxi and airport):
  *   car                a red car side on, wheels on y 92, roof at y 38
  *   plane              a plane climbing to the right, across the middle
@@ -154,3 +170,72 @@ export const plane = `<g transform="rotate(-14 64 66)">
 <rect x="56" y="78" width="18" height="9" rx="4.5" fill="#c0c8d0" stroke="#4a6a8a" stroke-width="2"/>
 <path d="M86 70 L58 102 H44 L60 70 Z" fill="#2e6fd1" stroke="#1b4586" stroke-width="3" stroke-linejoin="round"/>
 </g>`;
+
+// Faces and figures (unit 14's body, unit 15's day).
+const SKIN_ATTR = 'fill="#f2c9a0" stroke="#b07a52" stroke-width="2"';
+const HAIR_COLOUR = '#3b2f2a';
+
+// A face, close up, with shoulders in `coat` (a shirt unless given).
+// mouth: smile, frown, open (teeth showing), ow (a small round O).
+const MOUTH = {
+  smile: '<path d="M55 81 Q64 88 73 81" stroke="#8f2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>',
+  frown: '<path d="M55 85 Q64 79 73 85" stroke="#8f2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>',
+  open: '<path d="M53 79 Q64 76 75 79 Q72 92 64 92 Q56 92 53 79 Z" fill="#8f2a22" stroke="#6e1f19" stroke-width="1.5"/><path d="M55 79.5 Q64 77.5 73 79.5 V83 H55 Z" fill="#ffffff"/><path d="M61 78.5 V83 M67 78.5 V83" stroke="#c9d3da" stroke-width="1"/>',
+  ow: '<ellipse cx="64" cy="84" rx="5" ry="6" fill="#8f2a22" stroke="#6e1f19" stroke-width="1.5"/>',
+};
+const BLUE_TOP = 'fill="#3f7cc0" stroke="#24507f" stroke-width="2.5"';
+export function face({ mouth = 'smile', pained = false, coat = null, extra = '' } = {}) {
+  const brows = pained ? 'M44 46 L57 50 M84 46 L71 50' : 'M44 48 Q51 45 58 48 M70 48 Q77 45 84 48';
+  return `<path d="M20 128 C20 108 40 100 64 100 C88 100 108 108 108 128 Z" ${coat ?? BLUE_TOP} stroke-linejoin="round"/>
+<rect x="54" y="84" width="20" height="20" ${SKIN_ATTR}/>
+<ellipse cx="30" cy="60" rx="7" ry="10" ${SKIN_ATTR}/><ellipse cx="98" cy="60" rx="7" ry="10" ${SKIN_ATTR}/>
+<ellipse cx="64" cy="58" rx="33" ry="36" ${SKIN_ATTR}/>
+<path d="M31 56 C27 22 50 16 64 16 C80 16 101 22 97 56 C92 36 78 30 64 31 C50 31 37 38 31 56 Z" fill="${HAIR_COLOUR}"/>
+<path d="${brows}" stroke="${HAIR_COLOUR}" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<ellipse cx="51" cy="58" rx="6" ry="4.5" fill="#ffffff" stroke="#8a9aa5" stroke-width="1"/><ellipse cx="77" cy="58" rx="6" ry="4.5" fill="#ffffff" stroke="#8a9aa5" stroke-width="1"/>
+<circle cx="51" cy="58" r="2.6" fill="${HAIR_COLOUR}"/><circle cx="77" cy="58" r="2.6" fill="${HAIR_COLOUR}"/>
+<path d="M64 60 Q59 70 63 72 Q66 73 68 71" stroke="#b07a52" stroke-width="2" fill="none" stroke-linecap="round"/>
+${MOUTH[mouth]}
+${extra}`;
+}
+
+// A whole figure, facing us (or from behind), in a blue top and trousers.
+export function figure({ behind = false, pained = false } = {}) {
+  const head = behind
+    ? `<circle cx="64" cy="20" r="12" ${SKIN_ATTR}/><path d="M52 21 C51 8 58 7 64 7 C71 7 77 9 76 21 C76 27 72 30 64 30 C56 30 52 27 52 21 Z" fill="${HAIR_COLOUR}"/>`
+    : `<circle cx="64" cy="20" r="12" ${SKIN_ATTR}/><path d="M53 18 C52 8 59 7 64 7 C70 7 76 9 75 18 C72 12 58 11 53 18 Z" fill="${HAIR_COLOUR}"/>
+<circle cx="60" cy="20" r="1.4" fill="${HAIR_COLOUR}"/><circle cx="68" cy="20" r="1.4" fill="${HAIR_COLOUR}"/>
+${pained ? '<path d="M56 15 L61 17 M72 15 L67 17" stroke="#3b2f2a" stroke-width="1.5" stroke-linecap="round"/><path d="M60 27 Q64 24 68 27"' : '<path d="M60 25 Q64 28 68 25"'} stroke="#8f2a22" stroke-width="1.5" fill="none" stroke-linecap="round"/>`;
+  return `<ellipse cx="64" cy="120" rx="30" ry="4" fill="#9fb0bb" opacity=".35"/>
+<path d="M50 38 L38 70 M78 38 L90 70" stroke="#f2c9a0" stroke-width="8" stroke-linecap="round"/>
+<circle cx="37" cy="73" r="5" ${SKIN_ATTR}/><circle cx="91" cy="73" r="5" ${SKIN_ATTR}/>
+<path d="M48 76 H80 L79 112 H67 L64 88 L61 112 H49 Z" fill="#5f6a72" stroke="#3a4148" stroke-width="2" stroke-linejoin="round"/>
+<path d="M44 117 C44 111 49 110 52 110 H61 V117 Z M84 117 C84 111 79 110 76 110 H67 V117 Z" fill="#3b2f2a" stroke="#1d1714" stroke-width="1.5"/>
+<path d="M50 33 H78 L84 42 L78 46 L81 78 H47 L50 46 L44 42 Z" ${BLUE_TOP} stroke-linejoin="round"/>
+<rect x="60" y="29" width="8" height="5" ${SKIN_ATTR}/>
+${head}`;
+}
+
+// In bed, head on the pillow under a blue quilt; zzz above for sleep.
+export const inBed = `<path d="M10 70 V112 M118 86 V112" stroke="#9c6528" stroke-width="6" stroke-linecap="round"/>
+<rect x="10" y="88" width="108" height="14" rx="3" fill="#c98a4a" stroke="#9c6528" stroke-width="2"/>
+<rect x="16" y="68" width="30" height="16" rx="7" fill="#ffffff" stroke="#8a9aa5" stroke-width="2"/>
+<circle cx="34" cy="66" r="11" ${SKIN_ATTR}/><path d="M24 64 C24 54 34 52 40 56 C36 58 30 58 24 64 Z" fill="${HAIR_COLOUR}"/>
+<path d="M30 68 q3 2 6 0" stroke="${HAIR_COLOUR}" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+<path d="M42 70 C60 62 100 64 114 76 V90 H42 Z" fill="#3f7cc0" stroke="#24507f" stroke-width="2.5" stroke-linejoin="round"/>`;
+export const zzz = '<path d="M54 24 h10 l-10 12 h10 M74 12 h8 l-8 10 h8 M90 30 h6 l-6 8 h6" stroke="#6f8796" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>';
+
+// A drop of water, its tip at x, y (s: size), and a white puff (a
+// cough, a bubble, foam).
+export const drop = (x, y, s = 1) => `<path d="M${x} ${y} C${x + 4 * s} ${y + 6 * s} ${x + 4 * s} ${y + 10 * s} ${x} ${y + 10 * s} C${x - 4 * s} ${y + 10 * s} ${x - 4 * s} ${y + 6 * s} ${x} ${y} Z" fill="#7fb2e0" stroke="#3f7cc0" stroke-width="1.5"/>`;
+export const puff = (x, y, r) => `<circle cx="${x}" cy="${y}" r="${r}" fill="#ffffff" stroke="#8a9aa5" stroke-width="2"/>`;
+
+// A house with a red roof and a blue door (unit 10's 屋企).
+export const house = `<ellipse cx="64" cy="118" rx="46" ry="5" fill="#9fb0bb" opacity=".35"/>
+<rect x="26" y="56" width="76" height="60" fill="#fbf1dc" stroke="#7d4f1e" stroke-width="3" stroke-linejoin="round"/>
+<path d="M14 60 L64 16 L114 60 Z" fill="#d6453a" stroke="#8f2a22" stroke-width="3" stroke-linejoin="round"/>
+<rect x="82" y="24" width="12" height="20" fill="#9c6528" stroke="#7d4f1e" stroke-width="2"/>
+<rect x="54" y="80" width="22" height="36" rx="2" fill="#3f7cc0" stroke="#24507f" stroke-width="2.5"/>
+<circle cx="71" cy="99" r="2" fill="#e0a526"/>
+<rect x="34" y="70" width="14" height="14" fill="#fff6d8" stroke="#7d4f1e" stroke-width="2"/>
+<rect x="84" y="70" width="12" height="14" fill="#fff6d8" stroke="#7d4f1e" stroke-width="2"/>`;

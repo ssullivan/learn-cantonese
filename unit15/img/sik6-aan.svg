@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Lunch: a plate of rice with meat and greens, at midday</title>
+<circle cx="20" cy="20" r="9" fill="#f7d35c" stroke="#d99a1a" stroke-width="2"/>
+<path d="M33.0 20.0 L37.0 20.0 M29.2 10.8 L32.0 8.0 M20.0 7.0 L20.0 3.0 M10.8 10.8 L8.0 8.0 M7.0 20.0 L3.0 20.0 M10.8 29.2 L8.0 32.0 M20.0 33.0 L20.0 37.0 M29.2 29.2 L32.0 32.0" stroke="#d99a1a" stroke-width="2.5" stroke-linecap="round"/>
+<g transform="translate(8 8) scale(.9)"><g data-dish="plate">
+<ellipse cx="64" cy="91" rx="56" ry="20" fill="#9fb0bb" opacity=".35"/>
+<ellipse cx="64" cy="88" rx="56" ry="20" fill="#ffffff" stroke="#9fb0bb" stroke-width="2"/>
+<ellipse cx="64" cy="88" rx="45" ry="15" fill="#eef3f6"/>
+<path d="M24 88 C24 70 60 68 66 86 Z" fill="#fffdf5" stroke="#b9b09a" stroke-width="1.5"/>
+<path d="M34 80 h3 M44 76 h3 M54 80 h3 M40 84 h3 M50 85 h3" stroke="#b9b09a" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M62 78 l18 -4 l2 7 l-18 4 Z M66 86 l18 -4 l2 7 l-18 4 Z" fill="#c4452f" stroke="#8f2a22" stroke-width="1.2" stroke-linejoin="round"/>
+<path d="M86 82 q8 -10 16 -2 q-6 8 -16 2 Z M88 92 q8 -8 14 0 q-6 6 -14 0 Z" fill="#3a9a6e" stroke="#256b4a" stroke-width="1.2"/>
+</g></g>
+</svg>

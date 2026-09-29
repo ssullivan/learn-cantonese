@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Breakfast: toast and a cup of milk tea, in the morning</title>
+<path d="M8 30 A12 12 0 0 1 32 30 Z" fill="#f7c948" stroke="#d99a1a" stroke-width="2" stroke-linejoin="round"/>
+<path d="M35.0 24.5 L39.7 22.8 M29.2 16.9 L32.0 12.8 M20.0 14.0 L20.0 9.0 M10.8 16.9 L8.0 12.8 M5.0 24.5 L0.3 22.8" stroke="#d99a1a" stroke-width="2.5" stroke-linecap="round"/><path d="M2 30 H38" stroke="#9fb0bb" stroke-width="2.5" stroke-linecap="round"/>
+<g transform="translate(30 20) scale(.75)"><g data-dish="plate">
+<ellipse cx="64" cy="91" rx="56" ry="20" fill="#9fb0bb" opacity=".35"/>
+<ellipse cx="64" cy="88" rx="56" ry="20" fill="#ffffff" stroke="#9fb0bb" stroke-width="2"/>
+<ellipse cx="64" cy="88" rx="45" ry="15" fill="#eef3f6"/>
+<path d="M34 86 C28 70 40 62 52 68 C62 62 72 72 66 86 Z" fill="#f2cf86" stroke="#b9802c" stroke-width="2"/>
+<path d="M38 83 C35 73 42 68 50 72 C58 68 64 74 62 83 Z" fill="#fbe7b8"/>
+<path d="M60 90 C54 74 66 66 78 72 C88 66 98 76 92 90 Z" fill="#f2cf86" stroke="#b9802c" stroke-width="2"/>
+<path d="M64 87 C61 77 68 72 76 76 C84 72 90 78 88 87 Z" fill="#fbe7b8"/>
+<rect x="70" y="78" width="10" height="6" rx="1" fill="#f7e27a"/>
+</g></g>
+<g transform="translate(-4 52) scale(.55)"><g data-dish="cup">
+<ellipse cx="64" cy="112" rx="30" ry="5" fill="#9fb0bb" opacity=".35"/>
+<path d="M44 100 L46 112 H82 L84 100 Z" fill="#fbf8f1" stroke="#2e5a88" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M22 46 C24 80 40 104 64 106 C88 104 104 80 106 46 Z" fill="#fbf8f1" stroke="#2e5a88" stroke-width="3" stroke-linejoin="round"/>
+<path d="M30 70 q9 -7 17 0 t17 0 t17 0 t17 0" stroke="#2e5a88" stroke-width="2.5" fill="none"/>
+<path d="M40 88 q6 -5 12 0 t12 0 t12 0 t12 0" stroke="#6f9bc6" stroke-width="2" fill="none"/>
+<ellipse cx="64" cy="46" rx="42" ry="10" fill="#fbf8f1" stroke="#2e5a88" stroke-width="3"/>
+<ellipse cx="64" cy="48" rx="36" ry="7" fill="#c8913a"/>
+</g></g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Reading a book</title>
+<path d="M20 128 C20 108 40 100 64 100 C88 100 108 108 108 128 Z" fill="#3f7cc0" stroke="#24507f" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="54" y="84" width="20" height="20" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+<ellipse cx="30" cy="60" rx="7" ry="10" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/><ellipse cx="98" cy="60" rx="7" ry="10" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+<ellipse cx="64" cy="58" rx="33" ry="36" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+<path d="M31 56 C27 22 50 16 64 16 C80 16 101 22 97 56 C92 36 78 30 64 31 C50 31 37 38 31 56 Z" fill="#3b2f2a"/>
+<path d="M44 48 Q51 45 58 48 M70 48 Q77 45 84 48" stroke="#3b2f2a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<ellipse cx="51" cy="58" rx="6" ry="4.5" fill="#ffffff" stroke="#8a9aa5" stroke-width="1"/><ellipse cx="77" cy="58" rx="6" ry="4.5" fill="#ffffff" stroke="#8a9aa5" stroke-width="1"/>
+<circle cx="51" cy="58" r="2.6" fill="#3b2f2a"/><circle cx="77" cy="58" r="2.6" fill="#3b2f2a"/>
+<path d="M64 60 Q59 70 63 72 Q66 73 68 71" stroke="#b07a52" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M55 81 Q64 88 73 81" stroke="#8f2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M64 88 C52 82 32 82 18 88 V122 C32 116 52 116 64 122 Z" fill="#ffffff" stroke="#8a9aa5" stroke-width="2" stroke-linejoin="round"/>
+<path d="M64 88 C76 82 96 82 110 88 V122 C96 116 76 116 64 122 Z" fill="#ffffff" stroke="#8a9aa5" stroke-width="2" stroke-linejoin="round"/>
+<path d="M26 94 C36 91 46 91 56 94 M26 102 C36 99 46 99 56 102 M26 110 C36 107 46 107 56 110 M72 94 C82 91 92 91 102 94 M72 102 C82 99 92 99 102 102 M72 110 C82 107 92 107 102 110" stroke="#9fb0bb" stroke-width="1.5" fill="none"/>
+<path d="M16 88 V124 C32 118 52 118 64 124 C76 118 96 118 112 124 V88" stroke="#d6453a" stroke-width="3" fill="none" stroke-linejoin="round"/>
+<circle cx="16" cy="108" r="7" fill="#f2c9a0" stroke="#b07a52" stroke-width="1.5"/><circle cx="112" cy="108" r="7" fill="#f2c9a0" stroke="#b07a52" stroke-width="1.5"/>
+</svg>

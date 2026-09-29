@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Dinner: a bowl of rice and chopsticks, at night</title>
+<path d="M22 6 A14 14 0 1 0 34 26 A11 11 0 1 1 22 6 Z" fill="#f2e3a0" stroke="#b9a24a" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M36 8 l1.5 3.5 l3.5 1.5 l-3.5 1.5 l-1.5 3.5 l-1.5 -3.5 l-3.5 -1.5 l3.5 -1.5 Z" fill="#f2e3a0"/>
+<g transform="translate(8 24) scale(.85)"><g data-dish="bowl">
+<ellipse cx="64" cy="112" rx="24" ry="5" fill="#9fb0bb" opacity=".35"/>
+<path d="M14 60 C16 92 38 108 64 108 C90 108 112 92 114 60 Z" fill="#fbf8f1" stroke="#2e5a88" stroke-width="3" stroke-linejoin="round"/>
+<path d="M24 82 q10 -7 20 0 t20 0 t20 0 t20 0" stroke="#6f9bc6" stroke-width="2.5" fill="none"/>
+<path d="M50 107 L52 114 H76 L78 107" fill="#fbf8f1" stroke="#2e5a88" stroke-width="2.5" stroke-linejoin="round"/>
+<ellipse cx="64" cy="60" rx="50" ry="13" fill="#fbf8f1" stroke="#2e5a88" stroke-width="3"/>
+<path d="M22 58 C28 36 100 36 106 58 Z" fill="#fffdf5" stroke="#b9b09a" stroke-width="2"/>
+<path d="M40 50 h3 M52 45 h3 M66 43 h3 M80 46 h3 M58 52 h3 M72 51 h3 M90 52 h3 M34 55 h3" stroke="#b9b09a" stroke-width="1.5" stroke-linecap="round"/>
+</g></g>
+<path d="M72 8 L118 58 M84 4 L122 50" stroke="#9c6528" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -21,7 +21,9 @@
  * the game, beside a .rack of clothes to pick), .choice-grid.forecast
  * (a row of days, each a .choice with the day, a weather picture and a
  * .temp), and .chart (a patient's chart: .chart-item pictures, each with
- * a .mark.yes ✓ or .mark.no ✗).
+ * a .mark.yes ✓ or .mark.no ✗), .planner (a day planner: .plan-item
+ * cards, each a clock over a picture) with .now (the time now), and
+ * .pic-grid.order (pictures tapped in order, numbered by .order-num).
  */
 
 .btn.small { padding: 6px 12px; font-size: 14px; }
@@ -264,3 +266,20 @@
 .game-end { text-align: center; padding: 16px 0; }
 .end-score { margin: 0; font-size: 56px; font-weight: 800; color: var(--accent); }
 .end-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 16px; }
+
+/* A day planner: a clock over each thing to do, and the time now */
+.planner { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 0 0 16px; max-width: 440px; }
+.plan-item { display: grid; justify-items: center; gap: 4px; padding: 6px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.plan-item img { display: block; width: 100%; aspect-ratio: 1; }
+.plan-item img.clock { width: 70%; }
+.now { display: flex; align-items: center; gap: 12px; margin: 0 0 12px; font-weight: 700; }
+.now img { width: 88px; height: 88px; }
+@media (max-width: 560px) {
+  .planner { grid-template-columns: repeat(2, 1fr); }
+  .plan-item { grid-template-columns: 1fr 1fr; align-items: center; }
+  .plan-item img.clock { width: 100%; }
+}
+
+/* Pictures tapped in order: 1, 2 */
+.pic-grid.order .pic-btn { position: relative; }
+.order-num { position: absolute; top: 6px; left: 6px; display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--gold); color: #26323c; font-weight: 800; }

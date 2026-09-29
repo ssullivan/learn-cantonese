@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Cooking in a wok</title>
+<path d="M40 112 Q46 98 50 108 Q56 94 62 108 Q68 94 74 108 Q80 98 86 112 Z" fill="#f08a2c" stroke="#c9541a" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M52 112 Q58 102 64 110 Q70 102 76 112 Z" fill="#f7d35c"/>
+<path d="M22 118 H106" stroke="#5f6a72" stroke-width="4" stroke-linecap="round"/>
+<path d="M16 62 Q64 116 112 62 Z" fill="#3a4148" stroke="#1d2226" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M112 64 L124 58" stroke="#1d2226" stroke-width="5" stroke-linecap="round"/>
+<path d="M36 66 q8 -8 14 0 q-6 6 -14 0 Z M58 64 q8 -9 16 0 q-8 6 -16 0 Z" fill="#3a9a6e" stroke="#256b4a" stroke-width="1.2"/>
+<path d="M78 62 l12 -3 l2 6 l-12 3 Z" fill="#c4452f" stroke="#8f2a22" stroke-width="1.2"/>
+<path d="M94 12 L72 58" stroke="#9c6528" stroke-width="4" stroke-linecap="round"/><path d="M66 52 L78 58 L74 66 L62 60 Z" fill="#9aa3aa" stroke="#5f6a72" stroke-width="1.5"/>
+<path d="M40 50 q-4 -8 0 -14 t0 -14 M56 48 q-4 -8 0 -14 t0 -14" stroke="#9fb0bb" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>
