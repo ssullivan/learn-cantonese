@@ -101,7 +101,7 @@ Limits, learned the hard way:
 2. Serve locally (`python3 -m http.server`) and try the page at phone (390px) and desktop widths, in light and dark mode: no horizontal scroll, all audio plays, quizzes and game levels complete, and timers, stars and unlocks work.
 
 ## Roadmap
-Units build on each other: each one reuses earlier words and adds one grammar point, so a later unit can assume the earlier ones. Unit numbers below are final (Dim Sum was unit 1 and moved to 7); build units roughly in order. Each has a placeholder card on the root page until it exists.
+Units build on each other: each one reuses earlier words and adds one grammar point, so a later unit can assume the earlier ones. Unit numbers below are final (Dim Sum was unit 1 and moved to 7; Animals and Fruits & Vegetables were added later as 19 and 20); build units roughly in order. Each has a placeholder card on the root page until it exists.
 
 | # | Unit | Words and topics | Grammar point | Games (new, besides Tone Detective / Say It Back) |
 |---|------|------------------|---------------|------|
@@ -126,6 +126,9 @@ Units build on each other: each one reuses earlier words and adds one grammar po
 | 16 | Likes & Hobbies 興趣 | 鍾意, 睇戲, 打波, 唱K | 鍾意 + verb, 想, 會 | Survey |
 | 17 | Feelings 心情 | 開心, 攰, 嬲, 驚, 悶 | Sentence particles 啦 喎 囉 嘛 | Particle Match |
 | 18 | Comparing 比較 | 大 / 細, 快 / 慢, 平 / 貴 | A 比 B + adjective, 最 | Which Is Bigger |
+| **More topics** |
+| 19 | Animals 動物 | 豬 馬 羊 雀仔 老虎 熊貓 猴子 兔仔 蛇 老鼠, with unit 1's 牛 魚 雞 and unit 5's 貓 狗; 動物園 | 隻 vs 條 for animals; 會 + verb (雀仔會飛, 魚會游水) | Zoo (hear an animal and find it; what can it do?) |
+| 20 | Fruits & Vegetables 生果同菜 | 香蕉 提子 士多啤梨 芒果 菠蘿 梨, with units 5 and 6's 蘋果 橙 西瓜; 菜心 白菜 番茄 薯仔 紅蘿蔔 | 斤 (catty) and 幾多錢一斤, 啲 for "some" | Wet Market 街市 (buy by the catty, sort fruit from vegetables) |
 
 Planned changes and shared pieces this needs:
 - Units derive their numbers, prices, counts and times from `Canto.number`, `Canto.price` and `Canto.time` (`shared/numbers.js`), extending them (and `tools/numbers.test.mjs`) when they need a new form. Unit 8 borrows unit 6's $2 (`p200`); later units can borrow unit 8's 凍 / 熱 (`dung`, `jit`: unit 13's weather), 飲, 食 and drinks with their cup and glass pictures, unit 9's times (`t0330`) and their clock pictures, and its 返工 / 食飯, unit 10's family words (`dad`, `elder-sister`...) with their family-tree pictures, 嘅, 同 and 住, and unit 11's places and transport with their pictures, 去, 喺, 搭 and 邊度.
