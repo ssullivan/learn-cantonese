@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Zaa loeng (fried dough in rice noodle roll)</title>
+<defs><g id="p">
+<path d="M-11 -4 V6 A11 6 0 0 0 11 6 V-4 Z" fill="#efe9df" stroke="#cfc3b2" stroke-width="1.5"/>
+<ellipse cx="0" cy="-4" rx="11" ry="6" fill="#f8f5ef" stroke="#cfc3b2" stroke-width="1.5"/>
+<ellipse cx="0" cy="-4" rx="7" ry="3.6" fill="#e3a94a" stroke="#b9772a" stroke-width="1"/>
+<g fill="#c07f25"><circle cx="-3" cy="-4.5" r="1"/><circle cx="2" cy="-3" r="1"/><circle cx="3" cy="-5.5" r=".8"/></g>
+</g></defs>
+<g data-dish="plate">
+<ellipse cx="64" cy="91" rx="58" ry="22" fill="#9fb0bb" opacity=".35"/>
+<ellipse cx="64" cy="88" rx="58" ry="22" fill="#ffffff" stroke="#9fb0bb" stroke-width="2"/>
+<ellipse cx="64" cy="88" rx="47" ry="17" fill="#eef3f6"/>
+<ellipse cx="64" cy="92" rx="42" ry="12" fill="#7a4420"/>
+<ellipse cx="54" cy="89" rx="14" ry="3" fill="#a5642f" opacity=".7"/>
+<use href="#p" transform="translate(40 80)"/>
+<use href="#p" transform="translate(64 76)"/>
+<use href="#p" transform="translate(88 80)"/>
+<use href="#p" transform="translate(52 94)"/>
+<use href="#p" transform="translate(76 94)"/>
+</g>
+</svg>

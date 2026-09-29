@@ -44,10 +44,11 @@
     key: 'u7-trolley',
     intro: `<strong>How to play:</strong> customers call out orders like
       ${zh('唔該，一籠蝦餃！', 'm4 goi1, jat1 lung4 haa1 gaau2')} Tap the dish they asked for before the green bar runs out.
-      Dishes in a steamer are ordered by the ${zh('籠', 'lung4')} (basket); dishes on a plate by the ${zh('碟', 'dip6')}.`,
+      Dishes in a steamer are ordered by the ${zh('籠', 'lung4')} (basket), dishes on a plate by the ${zh('碟', 'dip6')},
+      and congee by the ${zh('碗', 'wun2')} (bowl).`,
     levels: [
       { id: 'first-orders', name: 'First orders', blurb: 'One dish at a time from a small trolley.', rounds: 8, time: 15, round: order({ dishes: 1, trolley: 4 }) },
-      { id: 'measure', name: '一籠 or 一碟?', blurb: 'Your turn to order: pick the right measure word.', rounds: 8, time: 0, round: Measures.round({ pool: V.items, vocab: V, prompt: i => `You'd like the ${esc(i.english)}. How do you order it?` }) },
+      { id: 'measure', name: '一籠, 一碟 or 一碗?', blurb: 'Your turn to order: pick the right measure word.', rounds: 8, time: 0, round: Measures.round({ pool: V.items, vocab: V, choices: 3, prompt: i => `You'd like the ${esc(i.english)}. How do you order it?` }) },
       { id: 'lunch-rush', name: 'Lunch rush', blurb: 'A bigger trolley and hungrier customers.', rounds: 10, time: 10, round: order({ dishes: 1, trolley: 6 }) },
       { id: 'big-table', name: 'Big table', blurb: 'Two dishes per order. Tap both.', rounds: 8, time: 16, round: order({ dishes: 2, trolley: 6 }) },
     ],

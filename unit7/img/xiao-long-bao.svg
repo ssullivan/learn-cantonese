@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Siu lung baau (soup dumplings)</title>
+<defs><g id="d">
+<path d="M-17 6 C-20 -4 -12 -15 0 -16 C12 -15 20 -4 17 6 C8 10 -8 10 -17 6Z" fill="#fbf6ec" fill-opacity=".95" stroke="#d3c4a8" stroke-width="1.5"/>
+<ellipse cx="0" cy="3" rx="11" ry="3.5" fill="#f2c27a" opacity=".4"/>
+<path d="M0 -15 C-5 -12 -10 -7 -13 0 M0 -15 C-2 -10 -4 -4 -5 4 M0 -15 C3 -10 5 -4 6 4 M0 -15 C5 -12 10 -7 13 0" fill="none" stroke="#e0d1b6" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M-6 -9 Q-3 -12 0 -12" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round"/>
+<circle cx="0" cy="-15" r="2.5" fill="#efe4cf" stroke="#d3c4a8" stroke-width="1.2"/>
+</g></defs>
+<g data-dish="steamer">
+<ellipse cx="64" cy="74" rx="52" ry="15" fill="#9c6528" stroke="#7d4f1e" stroke-width="2"/>
+<ellipse cx="64" cy="75" rx="45" ry="11" fill="#f1e3bd"/>
+<use href="#d" transform="translate(48 66)"/>
+<use href="#d" transform="translate(80 66)"/>
+<use href="#d" transform="translate(36 80)"/>
+<use href="#d" transform="translate(64 80)"/>
+<use href="#d" transform="translate(92 80)"/>
+<path d="M12 74 A52 15 0 0 0 116 74 L112 104 A48 13 0 0 1 16 104 Z" fill="#dcaa5e" stroke="#7d4f1e" stroke-width="2" stroke-linejoin="round"/>
+<path d="M14 90 A50 14 0 0 0 114 90" fill="none" stroke="#b07a35" stroke-width="2"/>
+<path d="M13 76 A51 15 0 0 0 115 76" fill="none" stroke="#f2cf8a" stroke-width="2.5"/>
+</g>
+</svg>

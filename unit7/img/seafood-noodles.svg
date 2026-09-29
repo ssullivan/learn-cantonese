@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Hoi sin caau min (seafood fried noodles)</title>
+<g data-dish="plate">
+<ellipse cx="64" cy="93" rx="56" ry="21" fill="#9fb0bb" opacity=".35"/>
+<ellipse cx="64" cy="90" rx="56" ry="21" fill="#ffffff" stroke="#9fb0bb" stroke-width="2"/>
+<ellipse cx="64" cy="90" rx="45" ry="16" fill="#eef3f6"/>
+<ellipse cx="64" cy="88" rx="44" ry="15" fill="#e8b04a" stroke="#b77b24" stroke-width="1.5"/>
+<g fill="none" stroke="#c98a2a" stroke-width="1.8" stroke-linecap="round"><path d="M26 86 q6 -6 12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t10 0"/><path d="M32 94 q6 -6 12 0 t12 0 t12 0 t12 0 t12 0 t12 0"/><path d="M36 80 q6 -6 12 0 t12 0 t12 0 t12 0 t12 0"/></g>
+<path d="M34 84 C38 70 90 68 96 82 C98 92 80 96 64 95 C46 95 32 92 34 84Z" fill="#b8742e" opacity=".55"/>
+<path d="M44 78 Q56 73 68 75" stroke="#f3d7a4" stroke-width="2.5" fill="none" stroke-linecap="round" opacity=".9"/>
+<g fill="#3f8f3a" stroke="#2c6a28" stroke-width="1"><path d="M38 86 q8 -10 18 -4 q-8 8 -18 4Z"/><path d="M84 90 q8 -10 16 -2 q-8 7 -16 2Z"/></g>
+<g fill="none" stroke="#f7f3ea" stroke-width="3.5"><ellipse cx="74" cy="80" rx="6" ry="4"/><ellipse cx="52" cy="92" rx="5.5" ry="3.5"/></g>
+<g fill="none" stroke="#f08e70" stroke-width="5" stroke-linecap="round"><path d="M58 82 a6 6 0 1 1 9 4"/><path d="M80 92 a6 6 0 1 1 9 4"/></g>
+<g stroke="#fbd0bf" stroke-width="1.2"><path d="M60 77 l1 3 M64 76 l0 3 M82 87 l1 3 M86 86 l0 3"/></g>
+</g>
+</svg>

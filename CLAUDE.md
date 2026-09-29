@@ -116,7 +116,7 @@ Units build on each other: each one reuses earlier words and adds one grammar po
 | 5 | Measure Words 量詞 (built) | 個 隻 本 張 條 枝 架 件 杯 碗 對 啲, nouns sorted by shape | number + measure + noun; measure + noun = "the"; 呢 / 嗰 | Measure Sort (built), Count It (built) |
 | 6 | Money & Shopping 買嘢 (built) | 幾多錢, 蚊, 毫, 平 / 貴, 要 / 唔要, 呢個 / 嗰個 | Prices (三蚊半), adjectives with 好 | Market Stall (built) |
 | **Daily life** |
-| 7 | Dim Sum 點心 (built) | Dishes, 一籠 / 一碟, ordering, 埋單 | Ordering: 我要 + number + measure + dish | Trolley Rush (built) |
+| 7 | Dim Sum 點心 (built) | Dishes (steamed, fried and baked, sweet, 粥粉麵飯), 一籠 / 一碟 / 一碗 (unit 5's 碗), ordering, 埋單 | Ordering: 我要 + number + measure + dish | Trolley Rush (built) |
 | 8 | Cha Chaan Teng 茶餐廳 (built) | 奶茶, 鴛鴦, 凍 / 熱, 走甜, 菠蘿油, 餐蛋麵 | Modifiers: 走, 少, 多 | Order Up (built) |
 | 9 | Time & Dates 時間 (built) | 點鐘, 個字, 半, 星期, 月, 今日 / 聽日 / 琴日 | Time words go before the verb | Clock (built) |
 | 10 | Family 屋企人 (built) | 爸爸 媽媽 哥哥 家姐 細佬 細妹, 爺爺 嫲嫲 公公 婆婆, 老公 / 老婆, 仔 / 女 | Possessive 嘅 and measure (我個仔) | Family Tree (built) |

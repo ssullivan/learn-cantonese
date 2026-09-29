@@ -2,7 +2,7 @@
  * Unit 7 illustrations: one entry per vocab entry with a picture.
  * Run `node tools/draw.mjs` after editing to rewrite img/<id>.svg.
  */
-import { svg, steamer, plate, teapot, teacup, pineappleBun } from '../tools/svg.mjs';
+import { svg, steamer, plate, bowl, teapot, teacup, pineappleBun } from '../tools/svg.mjs';
 
 export default {
   'yum-cha': svg("Yum cha (teapot and teacup)", `<path d="M84 22 c-4 -6 4 -10 0 -16 M94 26 c-4 -6 4 -10 0 -16" stroke="#9fb0bb" stroke-width="2.5" fill="none" stroke-linecap="round"/>
@@ -154,4 +154,97 @@ export default {
 ${pineappleBun}
 </g></defs>` + plate(`<use href="#b" transform="translate(84 78)"/>
 <use href="#b" transform="translate(48 88)"/>`, { cy: 90 })),
+  'xiao-long-bao': svg("Siu lung baau (soup dumplings)", `<defs><g id="d">
+<path d="M-17 6 C-20 -4 -12 -15 0 -16 C12 -15 20 -4 17 6 C8 10 -8 10 -17 6Z" fill="#fbf6ec" fill-opacity=".95" stroke="#d3c4a8" stroke-width="1.5"/>
+<ellipse cx="0" cy="3" rx="11" ry="3.5" fill="#f2c27a" opacity=".4"/>
+<path d="M0 -15 C-5 -12 -10 -7 -13 0 M0 -15 C-2 -10 -4 -4 -5 4 M0 -15 C3 -10 5 -4 6 4 M0 -15 C5 -12 10 -7 13 0" fill="none" stroke="#e0d1b6" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M-6 -9 Q-3 -12 0 -12" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round"/>
+<circle cx="0" cy="-15" r="2.5" fill="#efe4cf" stroke="#d3c4a8" stroke-width="1.2"/>
+</g></defs>
+` + steamer(`<use href="#d" transform="translate(48 66)"/>
+<use href="#d" transform="translate(80 66)"/>
+<use href="#d" transform="translate(36 80)"/>
+<use href="#d" transform="translate(64 80)"/>
+<use href="#d" transform="translate(92 80)"/>`)),
+
+  'beef-tripe': svg("Ngau paak jip (beef tripe)", `<defs><g id="t">
+<rect x="-14" y="-8" width="28" height="16" rx="4" fill="#958b78" stroke="#665e4f" stroke-width="1.5"/>
+<path d="M-9 -7 q2 7 0 14 M-4 -7 q2 7 0 14 M1 -7 q2 7 0 14 M6 -7 q2 7 0 14 M11 -7 q1.5 7 0 14" fill="none" stroke="#c4bba6" stroke-width="2" stroke-linecap="round"/>
+</g></defs>
+` + plate(`<ellipse cx="64" cy="89" rx="40" ry="13" fill="#b08a55" opacity=".5"/>
+<use href="#t" transform="translate(48 80) rotate(-12)"/>
+<use href="#t" transform="translate(78 78) rotate(10)"/>
+<use href="#t" transform="translate(38 94) rotate(8)"/>
+<use href="#t" transform="translate(66 92) rotate(-6)"/>
+<use href="#t" transform="translate(92 94) rotate(-16)"/>
+<g stroke="#f2c94c" stroke-width="2.5" stroke-linecap="round"><path d="M56 78 l8 3 M70 86 l7 -3 M44 90 l6 4 M84 90 l8 -1 M60 98 l6 2"/></g>
+<g stroke="#5fa33a" stroke-width="2.5" stroke-linecap="round"><path d="M50 86 l9 -2 M76 80 l6 5 M86 98 l7 -3 M32 88 l6 -3"/></g>`, { cy: 90, ry: 21 })),
+
+  'zaa-loeng': svg("Zaa loeng (fried dough in rice noodle roll)", `<defs><g id="p">
+<path d="M-11 -4 V6 A11 6 0 0 0 11 6 V-4 Z" fill="#efe9df" stroke="#cfc3b2" stroke-width="1.5"/>
+<ellipse cx="0" cy="-4" rx="11" ry="6" fill="#f8f5ef" stroke="#cfc3b2" stroke-width="1.5"/>
+<ellipse cx="0" cy="-4" rx="7" ry="3.6" fill="#e3a94a" stroke="#b9772a" stroke-width="1"/>
+<g fill="#c07f25"><circle cx="-3" cy="-4.5" r="1"/><circle cx="2" cy="-3" r="1"/><circle cx="3" cy="-5.5" r=".8"/></g>
+</g></defs>
+` + plate(`<ellipse cx="64" cy="92" rx="42" ry="12" fill="#7a4420"/>
+<ellipse cx="54" cy="89" rx="14" ry="3" fill="#a5642f" opacity=".7"/>
+<use href="#p" transform="translate(40 80)"/>
+<use href="#p" transform="translate(64 76)"/>
+<use href="#p" transform="translate(88 80)"/>
+<use href="#p" transform="translate(52 94)"/>
+<use href="#p" transform="translate(76 94)"/>`, { rx: 58, ry: 22 })),
+
+  'ham-sui-gok': svg("Haam seoi gok (fried sticky rice dumplings)", `<defs><g id="g">
+<path d="M-24 2 C-16 -15 16 -15 24 2 C16 12 -16 12 -24 2Z" fill="#e6a64a" stroke="#a8691f" stroke-width="1.5"/>
+<path d="M-21 -1 Q0 -14 21 -1" fill="none" stroke="#c9832e" stroke-width="2.5" stroke-dasharray="2.5 2"/>
+<g fill="#f3c877"><circle cx="-12" cy="2" r="1.6"/><circle cx="-4" cy="5" r="1.3"/><circle cx="5" cy="1" r="1.6"/><circle cx="13" cy="4" r="1.3"/><circle cx="-7" cy="-4" r="1.2"/><circle cx="9" cy="-5" r="1.1"/></g>
+<path d="M-14 -7 Q-6 -11 2 -10" stroke="#f7d995" stroke-width="2" fill="none" stroke-linecap="round"/>
+</g></defs>
+` + plate(`<use href="#g" transform="translate(46 80) rotate(-8)"/>
+<use href="#g" transform="translate(82 80) rotate(8)"/>
+<use href="#g" transform="translate(64 96)"/>`, { cy: 90, ry: 21 })),
+
+  'char-siu-sou': svg("Caa siu sou (BBQ pork puffs)", `<defs><g id="s">
+<path d="M-19 -8 C-19 -13 19 -13 19 -8 L20 6 C20 11 -20 11 -20 6 Z" fill="#e2a547" stroke="#a9691f" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M-18 -8 C-18 -12 18 -12 18 -8 C18 -3 -18 -3 -18 -8Z" fill="#f0c26a"/>
+<path d="M-18 0 q4.5 -2 9 0 t9 0 t9 0 t9 0 M-19 4 q4.75 -2 9.5 0 t9.5 0 t9.5 0 t9.5 0" stroke="#f6d894" stroke-width="1.3" fill="none"/>
+<path d="M20 -3 L20 5" stroke="#b3362b" stroke-width="3" stroke-linecap="round"/>
+<g fill="#fdf6e3"><ellipse cx="-10" cy="-8" rx="1.4" ry=".8"/><ellipse cx="-3" cy="-10" rx="1.4" ry=".8"/><ellipse cx="4" cy="-7" rx="1.4" ry=".8"/><ellipse cx="11" cy="-9" rx="1.4" ry=".8"/><ellipse cx="0" cy="-6" rx="1.4" ry=".8"/></g>
+</g></defs>
+` + plate(`<use href="#s" transform="translate(46 80) rotate(-6)"/>
+<use href="#s" transform="translate(84 80) rotate(6)"/>
+<use href="#s" transform="translate(64 96)"/>`, { cy: 90, ry: 21 })),
+
+  'fried-rice': svg("Caau faan (fried rice)", plate(`<path d="M20 90 C24 58 104 58 108 90 C92 102 36 102 20 90Z" fill="#f4e2a8" stroke="#d7bb6e" stroke-width="2"/>
+<g fill="#fbf1cf"><ellipse cx="40" cy="80" rx="2.6" ry="1.3"/><ellipse cx="54" cy="70" rx="2.6" ry="1.3"/><ellipse cx="70" cy="68" rx="2.6" ry="1.3"/><ellipse cx="86" cy="74" rx="2.6" ry="1.3"/><ellipse cx="96" cy="86" rx="2.6" ry="1.3"/><ellipse cx="62" cy="80" rx="2.6" ry="1.3"/><ellipse cx="46" cy="92" rx="2.6" ry="1.3"/><ellipse cx="78" cy="92" rx="2.6" ry="1.3"/><ellipse cx="32" cy="88" rx="2.6" ry="1.3"/></g>
+<g fill="#f7d33c"><path d="M46 76 q4 -4 8 0 q-4 3 -8 0Z"/><path d="M74 78 q5 -4 9 1 q-5 3 -9 -1Z"/><path d="M58 90 q4 -3 8 0 q-4 3 -8 0Z"/><path d="M88 82 q3 -3 7 0 q-3 3 -7 0Z"/></g>
+<g fill="#c0392b"><rect x="62" y="72" width="5" height="4" rx="1"/><rect x="38" y="86" width="5" height="4" rx="1"/><rect x="84" y="90" width="5" height="4" rx="1"/></g>
+<g fill="none" stroke="#f08e70" stroke-width="3.5" stroke-linecap="round"><path d="M50 84 a4 4 0 1 1 6 3"/><path d="M76 70 a4 4 0 1 1 6 3"/></g>
+<g fill="#5fa33a"><rect x="56" y="76" width="3.5" height="3" rx="1"/><rect x="70" y="86" width="3.5" height="3" rx="1"/><rect x="92" y="78" width="3.5" height="3" rx="1"/><rect x="42" y="72" width="3.5" height="3" rx="1"/><rect x="66" y="96" width="3.5" height="3" rx="1"/></g>`, { cy: 90, ry: 21 })),
+
+  'seafood-noodles': svg("Hoi sin caau min (seafood fried noodles)", plate(`<ellipse cx="64" cy="88" rx="44" ry="15" fill="#e8b04a" stroke="#b77b24" stroke-width="1.5"/>
+<g fill="none" stroke="#c98a2a" stroke-width="1.8" stroke-linecap="round"><path d="M26 86 q6 -6 12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t10 0"/><path d="M32 94 q6 -6 12 0 t12 0 t12 0 t12 0 t12 0 t12 0"/><path d="M36 80 q6 -6 12 0 t12 0 t12 0 t12 0 t12 0"/></g>
+<path d="M34 84 C38 70 90 68 96 82 C98 92 80 96 64 95 C46 95 32 92 34 84Z" fill="#b8742e" opacity=".55"/>
+<path d="M44 78 Q56 73 68 75" stroke="#f3d7a4" stroke-width="2.5" fill="none" stroke-linecap="round" opacity=".9"/>
+<g fill="#3f8f3a" stroke="#2c6a28" stroke-width="1"><path d="M38 86 q8 -10 18 -4 q-8 8 -18 4Z"/><path d="M84 90 q8 -10 16 -2 q-8 7 -16 2Z"/></g>
+<g fill="none" stroke="#f7f3ea" stroke-width="3.5"><ellipse cx="74" cy="80" rx="6" ry="4"/><ellipse cx="52" cy="92" rx="5.5" ry="3.5"/></g>
+<g fill="none" stroke="#f08e70" stroke-width="5" stroke-linecap="round"><path d="M58 82 a6 6 0 1 1 9 4"/><path d="M80 92 a6 6 0 1 1 9 4"/></g>
+<g stroke="#fbd0bf" stroke-width="1.2"><path d="M60 77 l1 3 M64 76 l0 3 M82 87 l1 3 M86 86 l0 3"/></g>`, { cy: 90, ry: 21 })),
+
+  'beef-ho-fun': svg("Gon caau ngau ho (dry-fried beef ho fun)", plate(`<g fill="none" stroke-linecap="round">
+<g stroke="#c9914f" stroke-width="8"><path d="M26 88 C38 74 50 98 62 84 S86 74 100 90"/><path d="M30 96 C44 84 56 104 70 92 S92 86 104 96"/><path d="M34 80 C46 68 58 88 72 76 S92 70 98 80"/></g>
+<g stroke="#e0b37a" stroke-width="2.5"><path d="M28 86 C40 72 50 96 62 82 S86 72 98 88"/><path d="M36 78 C48 66 58 86 72 74 S92 68 96 78"/></g>
+<g stroke="#f7f1de" stroke-width="2.5"><path d="M44 86 l10 -4 M76 84 l9 4 M58 98 l10 -3 M88 76 l8 3 M38 94 l6 -4"/></g>
+<g stroke="#e8d27a" stroke-width="3.5"><path d="M54 82 l.1 0 M85 88 l.1 0 M68 95 l.1 0 M44 90 l.1 0"/></g>
+<g stroke="#5fa33a" stroke-width="3"><path d="M48 78 l7 2 M80 94 l7 -2 M66 80 l5 4 M92 86 l6 -1"/></g>
+</g>
+<g fill="#6b3a22" stroke="#4a2716" stroke-width="1.2"><ellipse cx="58" cy="78" rx="8" ry="4" transform="rotate(-15 58 78)"/><ellipse cx="82" cy="80" rx="8" ry="4" transform="rotate(12 82 80)"/><ellipse cx="46" cy="96" rx="7.5" ry="3.8" transform="rotate(10 46 96)"/><ellipse cx="76" cy="98" rx="7.5" ry="3.8" transform="rotate(-8 76 98)"/></g>
+<g stroke="#8c5236" stroke-width="1.2" stroke-linecap="round"><path d="M54 77 l7 -2 M79 78 l7 2"/></g>`, { cy: 90, ry: 21 })),
+
+  congee: svg("Zuk (congee)", bowl(`<ellipse cx="64" cy="61" rx="46" ry="10" fill="#f5f0e2"/>
+<path d="M30 60 q8 -3 16 0 M70 57 q8 -3 16 0 M52 65 q6 -2 12 0" stroke="#e4dcc6" stroke-width="2" fill="none" stroke-linecap="round"/>
+<g stroke="#2e2418" stroke-width="1.2"><path d="M40 56 L54 52 L52 62 Z" fill="#5a4630"/><path d="M76 62 L90 60 L84 68 Z" fill="#5a4630"/></g>
+<g fill="#6f7d52"><circle cx="50" cy="56" r="2.5"/><circle cx="84" cy="62" r="2.3"/></g>
+<g fill="#c99a7a"><path d="M62 54 q5 -2 9 1 l-1 2 q-4 -2 -8 -1Z"/><path d="M36 64 q5 -2 9 1 l-1 2 q-4 -2 -8 -1Z"/><path d="M68 66 q4 -2 8 1 l-1 2 q-4 -2 -7 -1Z"/></g>
+<g fill="none" stroke="#5fa33a" stroke-width="1.8"><circle cx="60" cy="61" r="2.2"/><circle cx="74" cy="55" r="2.2"/><circle cx="46" cy="61" r="2"/><circle cx="92" cy="57" r="2"/></g>`)),
 };

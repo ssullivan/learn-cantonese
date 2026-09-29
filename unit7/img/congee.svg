@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Zuk (congee)</title>
+<g data-dish="bowl">
+<ellipse cx="64" cy="112" rx="24" ry="5" fill="#9fb0bb" opacity=".35"/>
+<path d="M14 60 C16 92 38 108 64 108 C90 108 112 92 114 60 Z" fill="#fbf8f1" stroke="#2e5a88" stroke-width="3" stroke-linejoin="round"/>
+<path d="M24 82 q10 -7 20 0 t20 0 t20 0 t20 0" stroke="#6f9bc6" stroke-width="2.5" fill="none"/>
+<path d="M50 107 L52 114 H76 L78 107" fill="#fbf8f1" stroke="#2e5a88" stroke-width="2.5" stroke-linejoin="round"/>
+<ellipse cx="64" cy="60" rx="50" ry="13" fill="#fbf8f1" stroke="#2e5a88" stroke-width="3"/>
+<ellipse cx="64" cy="61" rx="46" ry="10" fill="#f5f0e2"/>
+<path d="M30 60 q8 -3 16 0 M70 57 q8 -3 16 0 M52 65 q6 -2 12 0" stroke="#e4dcc6" stroke-width="2" fill="none" stroke-linecap="round"/>
+<g stroke="#2e2418" stroke-width="1.2"><path d="M40 56 L54 52 L52 62 Z" fill="#5a4630"/><path d="M76 62 L90 60 L84 68 Z" fill="#5a4630"/></g>
+<g fill="#6f7d52"><circle cx="50" cy="56" r="2.5"/><circle cx="84" cy="62" r="2.3"/></g>
+<g fill="#c99a7a"><path d="M62 54 q5 -2 9 1 l-1 2 q-4 -2 -8 -1Z"/><path d="M36 64 q5 -2 9 1 l-1 2 q-4 -2 -8 -1Z"/><path d="M68 66 q4 -2 8 1 l-1 2 q-4 -2 -7 -1Z"/></g>
+<g fill="none" stroke="#5fa33a" stroke-width="1.8"><circle cx="60" cy="61" r="2.2"/><circle cx="74" cy="55" r="2.2"/><circle cx="46" cy="61" r="2"/><circle cx="92" cy="57" r="2"/></g>
+</g>
+</svg>

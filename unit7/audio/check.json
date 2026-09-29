@@ -1,4 +1,11 @@
 {
+ "beef-ho-fun": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 炒 tone 2 sounds like 5 (p 0.20)"
+  ],
+  "audio": "a8bfd111c041"
+ },
  "bill": {
   "verdict": "LISTEN",
   "notes": [
@@ -27,6 +34,13 @@
   ],
   "audio": "be2314130f81"
  },
+ "one-beef-ho-fun": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 炒 tone 2 sounds like 5 (p 0.41)"
+  ],
+  "audio": "1a2d8cd2356b"
+ },
  "one-lai-wong-bao": {
   "verdict": "CHECK",
   "notes": [
@@ -54,6 +68,13 @@
    "tone: 賣 tone 2 sounds like 6 (p 0.01)"
   ],
   "audio": "015758b1c0c8"
+ },
+ "one-xiao-long-bao": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 包 tone 1 sounds like 3 (p 0.35)"
+  ],
+  "audio": "cf4d17be1401"
  },
  "order-har-gow": {
   "verdict": "LISTEN",

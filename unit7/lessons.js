@@ -7,13 +7,16 @@
   const { p, tip } = Learn;
   const { zh } = Canto;
 
-  function groupStep(id, intro) {
-    const g = group(id);
+  // A step for one or more groups: their cards, then their dishes.
+  // `english` names the step (default: the first group's name).
+  function groupStep(ids, intro, english) {
+    const gs = [].concat(ids).map(group);
+    english ??= gs[0].english;
     return {
-      id,
-      title: `${g.english[0].toUpperCase()}${g.english.slice(1)} · ${g.hanzi}`,
+      id: gs[0].id,
+      title: `${english[0].toUpperCase()}${english.slice(1)} · ${gs.map(g => g.hanzi).join(' · ')}`,
       render(el, ctx) {
-        el.append(p(intro), ctx.grid([g]), ctx.grid(inGroup(id)));
+        el.append(p(intro), ctx.grid(gs), ctx.grid(gs.flatMap(g => inGroup(g.id))));
       },
     };
   }
@@ -35,8 +38,9 @@
         },
       },
       groupStep('steamed', 'Most dim sum is steamed, and arrives in a bamboo basket. These are the classics.'),
-      groupStep('fried', 'Crispy dishes, from the deep fryer or the pan.'),
+      groupStep(['fried', 'baked'], 'Crispy dishes, from the deep fryer, the pan or the oven.', 'fried & baked'),
       groupStep('sweet', 'Save room for dessert! Sweet dim sum is eaten alongside savory dishes, not only at the end.'),
+      groupStep('rice-noodles', 'Something more filling: rice, noodles and congee to share between the small dishes.'),
       {
         id: 'listen',
         title: 'Listen and pick',
@@ -52,7 +56,7 @@
         title: 'At the table',
         render(el, ctx) {
           el.append(
-            p(`To order, say how it comes: ${zh('籠', 'lung4')} for a steamer basket, ${zh('碟', 'dip6')} for a plate.`),
+            p(`To order, say how it comes: ${zh('籠', 'lung4')} for a steamer basket, ${zh('碟', 'dip6')} for a plate, ${zh('碗', 'wun2')} for a bowl.`),
             ctx.grid(V.measures),
             p('A few phrases for ordering, asking, and paying.'),
             ctx.grid(V.phrases),
