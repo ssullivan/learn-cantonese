@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Mango</title>
+<ellipse cx="64" cy="114" rx="40" ry="4" fill="#9fb0bb" opacity=".35"/>
+<path d="M30 74 C26 46 54 28 82 34 C104 40 110 66 100 86 C90 106 62 112 46 104 C36 98 32 88 30 74 Z" fill="#f7b733" stroke="#b5781a" stroke-width="3" stroke-linejoin="round"/>
+<ellipse cx="80" cy="54" rx="20" ry="14" fill="#f06a3a" opacity=".55" transform="rotate(20 80 54)"/>
+<path d="M40 66 C40 58 44 52 50 48" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round" opacity=".45"/>
+<path d="M80 36 C80 30 82 24 85 20" stroke="#6b4423" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M84 22 C92 9 108 9 112 15 C104 25 92 25 84 22 Z" fill="#5fa33a" stroke="#3f7a22" stroke-width="2" stroke-linejoin="round"/>
+</svg>

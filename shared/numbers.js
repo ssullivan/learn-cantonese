@@ -6,12 +6,14 @@
  *
  *   Canto.number(n, { measure?, short?, clip? })  { hanzi, jyutping }
  *     measure   an entry { hanzi, jyutping } to count with: it follows the
- *               number, and a bare 2 becomes 兩 (兩個; but 十二個)
+ *               number, and a bare 2 becomes 兩 (兩個; but 十二個). With a
+ *               measure, n can end in a half: 半斤, 兩斤半, 十二斤半
  *     short     fast-speech forms: 卅一 saa1 aa6 jat1, and 四十五 read
  *               sei3 aa6 ng5 (41–99 keep 十 in writing)
  *     clip      everyday round numbers drop their last unit, and a leading
  *               一 with it: 百五 for 150, 兩百五 for 250, 千二 for 1200,
- *               萬二 for 12,000 (but 一千零五十 and 十二萬 stay whole)
+ *               萬二 for 12,000 (but 一千零五十 and 十二萬 stay whole),
+ *               and 斤半 for one and a half
  *   Canto.price(dollars)   { hanzi, jyutping } for an amount of Hong Kong
  *               money in steps of 10 cents: 五蚊, 兩蚊, 三蚊半 ($3.50),
  *               三蚊二 ($3.20), 五毫 ($0.50), 百五蚊 ($150, clipped)
@@ -67,6 +69,12 @@
   }
 
   function number(n, { measure, short = false, clip = false } = {}) {
+    // A half, after the measure word: 半斤, 三斤半, and clipped 斤半 for 1.5.
+    if (measure && n > 0 && n % 1 === 0.5) {
+      const whole = Math.floor(n);
+      const w = !whole ? { hanzi: '', jyutping: '' } : clip && whole === 1 ? { ...measure } : number(whole, { measure, short });
+      return whole ? { hanzi: `${w.hanzi}半`, jyutping: `${w.jyutping} bun3` } : { hanzi: `半${measure.hanzi}`, jyutping: `bun3 ${measure.jyutping}` };
+    }
     if (!Number.isInteger(n) || n < 0 || n > 99999999) throw new RangeError(`Canto.number: ${n} is not a whole number from 0 to 99,999,999`);
     let parts;
     if (n === 0) parts = [DIGIT[0]];

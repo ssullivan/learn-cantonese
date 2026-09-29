@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Choy sum, a bundle of greens with yellow flowers</title>
+<ellipse cx="64" cy="118" rx="30" ry="4" fill="#9fb0bb" opacity=".35"/>
+<path d="M64 116 L40 40 M64 116 L56 30 M64 116 L74 28 M64 116 L90 40" stroke="#8cc45a" stroke-width="6" stroke-linecap="round"/>
+<path d="M64 116 L40 40 M64 116 L56 30 M64 116 L74 28 M64 116 L90 40" stroke="#b9e08a" stroke-width="2.5" stroke-linecap="round"/>
+<g fill="#3f9a45" stroke="#2a6b2e" stroke-width="2">
+<ellipse cx="42" cy="68" rx="12" ry="22" transform="rotate(-20 42 68)"/><ellipse cx="86" cy="68" rx="12" ry="22" transform="rotate(20 86 68)"/>
+<ellipse cx="60" cy="56" rx="11" ry="22" transform="rotate(-6 60 56)"/><ellipse cx="72" cy="58" rx="11" ry="22" transform="rotate(8 72 58)"/>
+</g>
+<g fill="#f7d35c" stroke="#c9961a" stroke-width="1.2"><circle cx="40" cy="36" r="3.5"/><circle cx="46" cy="32" r="3.5"/><circle cx="56" cy="26" r="3.5"/><circle cx="62" cy="30" r="3.5"/><circle cx="74" cy="24" r="3.5"/><circle cx="80" cy="30" r="3.5"/><circle cx="90" cy="36" r="3.5"/><circle cx="86" cy="42" r="3.5"/></g>
+<rect x="54" y="98" width="20" height="7" rx="2" fill="#d6453a" stroke="#8f2a22" stroke-width="1.5"/>
+</svg>

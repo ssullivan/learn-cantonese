@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<title>Say It Back · Fruit &amp; Vegetables</title>
+<link rel="stylesheet" href="../shared/theme.css?v=1a4ed1c2">
+<link rel="stylesheet" href="../shared/sayit.css?v=53e6d081">
+</head>
+<body>
+<main class="page">
+  <header class="page-header">
+    <a class="back" href="../">← Unit 20</a>
+    <p class="eyebrow">Unit 20 · Speaking</p>
+    <h1><span class="hanzi" lang="zh-HK">講</span>Say It Back</h1>
+    <p class="lede">Ask the price, buy by the catty, and see how your tones compare with a native speaker's.</p>
+  </header>
+  <div id="say"></div>
+</main>
+<script src="../shared/core.js?v=087a6643"></script>
+<script src="../shared/audio.js?v=f296d05e"></script>
+<script src="../shared/pitch.js?v=e95f83fc"></script>
+<script src="../shared/sayit.js?v=9a595dd5"></script>
+<script src="../shared/numbers.js?v=1903e834"></script>
+<script src="../shared/units.js?v=f456af20"></script>
+<script src="../unit1/vocab.js?v=dd7808ee"></script>
+<script src="../unit2/vocab.js?v=5242e509"></script>
+<script src="../unit3/vocab.js?v=2f03c48d"></script>
+<script src="../unit4/vocab.js?v=54f5e120"></script>
+<script src="../unit5/vocab.js?v=c7ef5f1f"></script>
+<script src="../unit6/vocab.js?v=438f8da1"></script>
+<script src="../unit7/vocab.js?v=94b0471c"></script>
+<script src="../unit8/vocab.js?v=800546e1"></script>
+<script src="../unit9/vocab.js?v=d914609a"></script>
+<script src="../unit10/vocab.js?v=a67a7448"></script>
+<script src="../unit11/vocab.js?v=7abed824"></script>
+<script src="../unit12/vocab.js?v=08551c6e"></script>
+<script src="../unit13/vocab.js?v=3309caeb"></script>
+<script src="../unit14/vocab.js?v=f07cab10"></script>
+<script src="../unit15/vocab.js?v=5a5a032b"></script>
+<script src="../unit16/vocab.js?v=cf07e325"></script>
+<script src="../unit17/vocab.js?v=7a0493bf"></script>
+<script src="../unit18/vocab.js?v=070b28df"></script>
+<script src="../unit19/vocab.js?v=a3726879"></script>
+<script src="vocab.js?v=213952b8"></script>
+<script>
+  const V = window.VOCAB;
+  const own = list => list.filter(e => !e.unit);
+  SayIt.init({
+    root: document.getElementById('say'),
+    key: 'u20-say',
+    pool: [...own(V.fruit), ...V.veg, ...V.words, ...own(V.measures), ...own(V.ones), ...V.weights, ...V.perCatty,
+      ...V.asks, ...V.orders, ...V.some, ...V.sentences],
+  });
+</script>
+</body>
+</html>

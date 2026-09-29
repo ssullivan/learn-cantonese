@@ -1,6 +1,6 @@
 # How we check the audio
 
-Every word and sentence on this site has a recording: 2,063 clips across 19 units. They are made by text-to-speech (mostly Azure's Hong Kong voices), not recorded by a person. This page explains how we decide whether a clip is right, what tends to go wrong, and what we do about it.
+Every word and sentence on this site has a recording: 2,153 clips across 20 units. They are made by text-to-speech (mostly Azure's Hong Kong voices), not recorded by a person. This page explains how we decide whether a clip is right, what tends to go wrong, and what we do about it.
 
 If you speak Cantonese and want to help, skip to [How you can help](#how-you-can-help).
 
@@ -44,7 +44,7 @@ We measure it rather than trust it. audio-lang-tools has a benchmark: clips of w
 So a clip with no flag is very likely fine, and a CHECK is worth hearing. But a CHECK isn't proof of a mistake, and no flag isn't proof of perfection.
 
 ### Where things stand
-Across the site: 1,279 clips pass (62%), 424 are LISTEN (21%) and 360 are CHECK (17%). Of the CHECKs, 151 are only a question-final 呀 or 嗎 said high (see below). Most clips haven't been heard by a native speaker yet.
+Across the site: 1,331 clips pass (62%), 444 are LISTEN (21%) and 378 are CHECK (18%). Of the CHECKs, 167 are only a question-final 呀 or 嗎 said high (see below). Most clips haven't been heard by a native speaker yet.
 
 ## Common problems we see
 
@@ -52,6 +52,7 @@ Across the site: 1,279 clips pass (62%), 424 are LISTEN (21%) and 360 are CHECK 
 - 平 (cheap) should be peng4, but comes out ping4.
 - 錢 (money) should be cin2, but comes out cin4.
 - 返 (go back) comes out faan2.
+- 棵 (the measure word for greens) should be po1, but comes out fo2.
 
 **Words with several readings.** 行 is haang4 (walk) or hong4 (row, trade). 雀仔 (bird) is zoek3 zai2, but the voice says zoek2. 魚 (fish) is jyu4, but comes out jyu2 in sentences.
 

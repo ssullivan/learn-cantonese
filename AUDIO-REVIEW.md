@@ -1,6 +1,6 @@
 # Audio review
 
-Every clip on the site (2063), unit by unit. **Listen on the [review page](https://ssullivan.github.io/learn-cantonese/review/)**, where you can mark each clip and copy your notes; the links below play one clip each.
+Every clip on the site (2153), unit by unit. **Listen on the [review page](https://ssullivan.github.io/learn-cantonese/review/)**, where you can mark each clip and copy your notes; the links below play one clip each.
 
 Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this file by hand.
 
@@ -2161,3 +2161,98 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 | 118 | 你屬乜嘢呀？ | nei5 suk6 mat1 je5 aa3 | What's your zodiac sign? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/nei-suk-mat-je-aa.mp3) |
 | 119 | 二零二六年係馬年 | ji6 ling4 ji6 luk6 nin4 hai6 maa5 nin4 | 2026 is the year of the Horse. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/n2-n0-n2-n6-nin-hai-horse-nin.mp3) |
 | 120 | 動物園有兩隻熊貓 | dung6 mat6 jyun4 jau5 loeng5 zek3 hung4 maau1 | The zoo has two pandas. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/dung-mat-jyun-jau-loeng-zek-panda.mp3) |
+
+## Unit 20
+
+| # | Chinese | Jyutping | English | Audio |
+|---|---|---|---|---|
+| 1 | 香蕉 | hoeng1 ziu1 | banana | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/banana.mp3) |
+| 2 | 提子 | tai4 zi2 | grapes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/grapes.mp3) |
+| 3 | 士多啤梨 | si6 do1 be1 lei2 | strawberry | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/strawberry.mp3) |
+| 4 | 芒果 | mong1 gwo2 | mango | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/mango.mp3) |
+| 5 | 菠蘿 | bo1 lo4 | pineapple | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/pineapple.mp3) |
+| 6 | 啤梨 | be1 lei2 | pear | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/pear.mp3) |
+| 7 | 菜心 | coi3 sam1 | choy sum | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/choy-sum.mp3) |
+| 8 | 白菜 | baak6 coi3 | bok choy | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/bok-choy.mp3) |
+| 9 | 番茄 | faan1 ke2 | tomato | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/tomato.mp3) |
+| 10 | 薯仔 | syu4 zai2 | potato | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/potato.mp3) |
+| 11 | 紅蘿蔔 | hung4 lo4 baak6 | carrot | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/carrot.mp3) |
+| 12 | 生果 | saang1 gwo2 | fruit | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/saang-gwo.mp3) |
+| 13 | 菜 | coi3 | vegetables; greens | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/coi.mp3) |
+| 14 | 街市 | gaai1 si5 | wet market | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/gaai-si.mp3) |
+| 15 | 斤 | gan1 | catty (about 600 g) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/gan.mp3) |
+| 16 | 一共 | jat1 gung6 | altogether; in total | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/jat-gung.mp3) |
+| 17 | 新鮮 | san1 sin1 | fresh | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/san-sin.mp3) |
+| 18 | 酸 | syun1 | sour | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/syun.mp3) |
+| 19 | 粒 | nap1 | for small round things | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/nap.mp3) |
+| 20 | 棵 | po1 | for plants | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/po.mp3) |
+| 21 | 一條香蕉 | jat1 tiu4 hoeng1 ziu1 | a banana | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/one-banana.mp3) |
+| 22 | 一粒提子 | jat1 nap1 tai4 zi2 | a grape | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/one-grapes.mp3) |
+| 23 | 一粒士多啤梨 | jat1 nap1 si6 do1 be1 lei2 | a strawberry | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/one-strawberry.mp3) |
+| 24 | 一個芒果 | jat1 go3 mong1 gwo2 | a mango | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/one-mango.mp3) |
+| 25 | 一個菠蘿 | jat1 go3 bo1 lo4 | a pineapple | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/one-pineapple.mp3) |
+| 26 | 一個啤梨 | jat1 go3 be1 lei2 | a pear | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/one-pear.mp3) |
+| 27 | 一棵菜心 | jat1 po1 coi3 sam1 | a head of choy sum | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/one-choy-sum.mp3) |
+| 28 | 一棵白菜 | jat1 po1 baak6 coi3 | a head of bok choy | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/one-bok-choy.mp3) |
+| 29 | 一個番茄 | jat1 go3 faan1 ke2 | a tomato | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/one-tomato.mp3) |
+| 30 | 一個薯仔 | jat1 go3 syu4 zai2 | a potato | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/one-potato.mp3) |
+| 31 | 一條紅蘿蔔 | jat1 tiu4 hung4 lo4 baak6 | a carrot | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/one-carrot.mp3) |
+| 32 | 半斤 | bun3 gan1 | half a catty | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/w05.mp3) |
+| 33 | 一斤 | jat1 gan1 | 1 catty | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/w1.mp3) |
+| 34 | 斤半 | gan1 bun3 | 1½ catties | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/w15.mp3) |
+| 35 | 兩斤 | loeng5 gan1 | 2 catties | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/w2.mp3) |
+| 36 | 三斤 | saam1 gan1 | 3 catties | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/w3.mp3) |
+| 37 | 四蚊 | sei3 man1 | $4 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/p400.mp3) |
+| 38 | 廿二蚊半 | jaa6 ji6 man1 bun3 | $22.50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/p2250.mp3) |
+| 39 | 廿四蚊 | jaa6 sei3 man1 | $24 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/p2400.mp3) |
+| 40 | 三十六蚊 | saam1 sap6 luk6 man1 | $36 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/p3600.mp3) |
+| 41 | 一百零五蚊 | jat1 baak3 ling4 ng5 man1 | $105 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/p10500.mp3) |
+| 42 | 六蚊一斤 | luk6 man1 jat1 gan1 | $6 a catty | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/p600-w1.mp3) |
+| 43 | 八蚊一斤 | baat3 man1 jat1 gan1 | $8 a catty | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/p800-w1.mp3) |
+| 44 | 十蚊一斤 | sap6 man1 jat1 gan1 | $10 a catty | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/p1000-w1.mp3) |
+| 45 | 十二蚊一斤 | sap6 ji6 man1 jat1 gan1 | $12 a catty | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/p1200-w1.mp3) |
+| 46 | 十三蚊一斤 | sap6 saam1 man1 jat1 gan1 | $13 a catty | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/p1300-w1.mp3) |
+| 47 | 十五蚊一斤 | sap6 ng5 man1 jat1 gan1 | $15 a catty | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/p1500-w1.mp3) |
+| 48 | 十八蚊一斤 | sap6 baat3 man1 jat1 gan1 | $18 a catty | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/p1800-w1.mp3) |
+| 49 | 二十蚊一斤 | ji6 sap6 man1 jat1 gan1 | $20 a catty | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/p2000-w1.mp3) |
+| 50 | 三十蚊一斤 | saam1 sap6 man1 jat1 gan1 | $30 a catty | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/p3000-w1.mp3) |
+| 51 | 三十五蚊一斤 | saam1 sap6 ng5 man1 jat1 gan1 | $35 a catty | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/p3500-w1.mp3) |
+| 52 | 香蕉幾多錢一斤呀？ | hoeng1 ziu1 gei2 do1 cin2 jat1 gan1 aa3 | How much is a catty of bananas? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/banana-gei-do-cin-w1-aa.mp3) |
+| 53 | 提子幾多錢一斤呀？ | tai4 zi2 gei2 do1 cin2 jat1 gan1 aa3 | How much is a catty of grapes? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/grapes-gei-do-cin-w1-aa.mp3) |
+| 54 | 士多啤梨幾多錢一斤呀？ | si6 do1 be1 lei2 gei2 do1 cin2 jat1 gan1 aa3 | How much is a catty of strawberries? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/strawberry-gei-do-cin-w1-aa.mp3) |
+| 55 | 芒果幾多錢一斤呀？ | mong1 gwo2 gei2 do1 cin2 jat1 gan1 aa3 | How much is a catty of mangoes? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/mango-gei-do-cin-w1-aa.mp3) |
+| 56 | 菠蘿幾多錢一斤呀？ | bo1 lo4 gei2 do1 cin2 jat1 gan1 aa3 | How much is a catty of pineapples? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/pineapple-gei-do-cin-w1-aa.mp3) |
+| 57 | 啤梨幾多錢一斤呀？ | be1 lei2 gei2 do1 cin2 jat1 gan1 aa3 | How much is a catty of pears? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/pear-gei-do-cin-w1-aa.mp3) |
+| 58 | 蘋果幾多錢一斤呀？ | ping4 gwo2 gei2 do1 cin2 jat1 gan1 aa3 | How much is a catty of apples? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/apple-gei-do-cin-w1-aa.mp3) |
+| 59 | 橙幾多錢一斤呀？ | caang2 gei2 do1 cin2 jat1 gan1 aa3 | How much is a catty of oranges? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/orange-gei-do-cin-w1-aa.mp3) |
+| 60 | 西瓜幾多錢一斤呀？ | sai1 gwaa1 gei2 do1 cin2 jat1 gan1 aa3 | How much is a catty of watermelons? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/watermelon-gei-do-cin-w1-aa.mp3) |
+| 61 | 菜心幾多錢一斤呀？ | coi3 sam1 gei2 do1 cin2 jat1 gan1 aa3 | How much is a catty of choy sum? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/choy-sum-gei-do-cin-w1-aa.mp3) |
+| 62 | 白菜幾多錢一斤呀？ | baak6 coi3 gei2 do1 cin2 jat1 gan1 aa3 | How much is a catty of bok choy? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/bok-choy-gei-do-cin-w1-aa.mp3) |
+| 63 | 番茄幾多錢一斤呀？ | faan1 ke2 gei2 do1 cin2 jat1 gan1 aa3 | How much is a catty of tomatoes? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/tomato-gei-do-cin-w1-aa.mp3) |
+| 64 | 薯仔幾多錢一斤呀？ | syu4 zai2 gei2 do1 cin2 jat1 gan1 aa3 | How much is a catty of potatoes? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/potato-gei-do-cin-w1-aa.mp3) |
+| 65 | 紅蘿蔔幾多錢一斤呀？ | hung4 lo4 baak6 gei2 do1 cin2 jat1 gan1 aa3 | How much is a catty of carrots? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/carrot-gei-do-cin-w1-aa.mp3) |
+| 66 | 我要兩斤香蕉 | ngo5 jiu3 loeng5 gan1 hoeng1 ziu1 | I'd like 2 catties of bananas. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/ngo-jiu-w2-banana.mp3) |
+| 67 | 我要一斤提子 | ngo5 jiu3 jat1 gan1 tai4 zi2 | I'd like 1 catty of grapes. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/ngo-jiu-w1-grapes.mp3) |
+| 68 | 我要三斤士多啤梨 | ngo5 jiu3 saam1 gan1 si6 do1 be1 lei2 | I'd like 3 catties of strawberries. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/ngo-jiu-w3-strawberry.mp3) |
+| 69 | 我要半斤芒果 | ngo5 jiu3 bun3 gan1 mong1 gwo2 | I'd like half a catty of mangoes. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/ngo-jiu-w05-mango.mp3) |
+| 70 | 我要斤半菠蘿 | ngo5 jiu3 gan1 bun3 bo1 lo4 | I'd like 1½ catties of pineapples. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/ngo-jiu-w15-pineapple.mp3) |
+| 71 | 我要兩斤啤梨 | ngo5 jiu3 loeng5 gan1 be1 lei2 | I'd like 2 catties of pears. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/ngo-jiu-w2-pear.mp3) |
+| 72 | 我要一斤蘋果 | ngo5 jiu3 jat1 gan1 ping4 gwo2 | I'd like 1 catty of apples. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/ngo-jiu-w1-apple.mp3) |
+| 73 | 我要三斤橙 | ngo5 jiu3 saam1 gan1 caang2 | I'd like 3 catties of oranges. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/ngo-jiu-w3-orange.mp3) |
+| 74 | 我要半斤西瓜 | ngo5 jiu3 bun3 gan1 sai1 gwaa1 | I'd like half a catty of watermelons. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/ngo-jiu-w05-watermelon.mp3) |
+| 75 | 我要斤半菜心 | ngo5 jiu3 gan1 bun3 coi3 sam1 | I'd like 1½ catties of choy sum. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/ngo-jiu-w15-choy-sum.mp3) |
+| 76 | 我要兩斤白菜 | ngo5 jiu3 loeng5 gan1 baak6 coi3 | I'd like 2 catties of bok choy. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/ngo-jiu-w2-bok-choy.mp3) |
+| 77 | 我要一斤番茄 | ngo5 jiu3 jat1 gan1 faan1 ke2 | I'd like 1 catty of tomatoes. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/ngo-jiu-w1-tomato.mp3) |
+| 78 | 我要三斤薯仔 | ngo5 jiu3 saam1 gan1 syu4 zai2 | I'd like 3 catties of potatoes. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/ngo-jiu-w3-potato.mp3) |
+| 79 | 我要半斤紅蘿蔔 | ngo5 jiu3 bun3 gan1 hung4 lo4 baak6 | I'd like half a catty of carrots. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/ngo-jiu-w05-carrot.mp3) |
+| 80 | 我想買啲生果 | ngo5 soeng2 maai5 di1 saang1 gwo2 | I want to buy some fruit. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/ngo-soeng-maai5-di-saang-gwo.mp3) |
+| 81 | 要唔要啲提子呀？ | jiu3 m4 jiu3 di1 tai4 zi2 aa3 | Would you like some grapes? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/jiu-m-jiu-di-grapes-aa.mp3) |
+| 82 | 我要啲菜心 | ngo5 jiu3 di1 coi3 sam1 | I'll have some choy sum. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/ngo-jiu-di-choy-sum.mp3) |
+| 83 | 啲士多啤梨好甜 | di1 si6 do1 be1 lei2 hou2 tim4 | The strawberries are very sweet. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/di-strawberry-hou-sweet.mp3) |
+| 84 | 啲香蕉好新鮮 | di1 hoeng1 ziu1 hou2 san1 sin1 | The bananas are very fresh. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/di-banana-hou-san-sin.mp3) |
+| 85 | 我去街市買菜 | ngo5 heoi3 gaai1 si5 maai5 coi3 | I'm going to the market to buy vegetables. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/ngo-heoi-gaai-si-maai5-coi.mp3) |
+| 86 | 一共幾多錢呀？ | jat1 gung6 gei2 do1 cin2 aa3 | How much is it altogether? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/jat-gung-gei-do-cin-aa.mp3) |
+| 87 | 呢啲芒果好甜 | ni1 di1 mong1 gwo2 hou2 tim4 | These mangoes are very sweet. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/ni-di-mango-hou-sweet.mp3) |
+| 88 | 呢啲橙好酸 | ni1 di1 caang2 hou2 syun1 | These oranges are very sour. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/ni-di-orange-hou-syun.mp3) |
+| 89 | 番茄係生果定係菜呀？ | faan1 ke2 hai6 saang1 gwo2 ding6 hai6 coi3 aa3 | Is a tomato a fruit or a vegetable? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/tomato-hai-saang-gwo-ding-hai-coi-aa.mp3) |
+| 90 | 我最鍾意食芒果 | ngo5 zeoi3 zung1 ji3 sik6 mong1 gwo2 | Mangoes are my favourite. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/ngo-zeoi-zung-ji-sik6-mango.mp3) |

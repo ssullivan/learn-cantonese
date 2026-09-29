@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Bok choy</title>
+<ellipse cx="64" cy="118" rx="30" ry="4" fill="#9fb0bb" opacity=".35"/>
+<g fill="#3f9a45" stroke="#2a6b2e" stroke-width="2.5">
+<circle cx="44" cy="46" r="20"/><circle cx="84" cy="46" r="20"/><circle cx="64" cy="32" r="22"/>
+</g>
+<path d="M40 116 C36 90 42 66 52 54 L76 54 C86 66 92 90 88 116 Z" fill="#f1f5e6" stroke="#8fa06a" stroke-width="3" stroke-linejoin="round"/>
+<path d="M54 60 C50 80 52 100 54 114 M64 58 V114 M74 60 C78 80 76 100 74 114" stroke="#b9c99a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M50 50 C56 40 72 40 78 50" stroke="#2a6b2e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>

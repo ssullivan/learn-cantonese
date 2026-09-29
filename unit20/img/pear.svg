@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Pear</title>
+<ellipse cx="64" cy="116" rx="32" ry="4" fill="#9fb0bb" opacity=".35"/>
+<path d="M64 30 C54 30 52 42 52 52 C52 62 32 72 32 92 C32 108 46 114 64 114 C82 114 96 108 96 92 C96 72 76 62 76 52 C76 42 74 30 64 30 Z" fill="#c9d86a" stroke="#7f8f2a" stroke-width="3" stroke-linejoin="round"/>
+<path d="M42 86 C42 78 46 72 52 68" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round" opacity=".45"/>
+<path d="M64 32 C64 26 66 20 69 16" stroke="#6b4423" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M68 22 C76 9 92 9 96 15 C88 25 76 25 68 22 Z" fill="#5fa33a" stroke="#3f7a22" stroke-width="2" stroke-linejoin="round"/>
+</svg>

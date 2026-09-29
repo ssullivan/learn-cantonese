@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A market scale, weighing oranges</title>
+<ellipse cx="64" cy="118" rx="40" ry="4" fill="#9fb0bb" opacity=".35"/>
+<path d="M34 50 H94 L88 60 H40 Z" fill="#c8ced3" stroke="#6f8796" stroke-width="2.5" stroke-linejoin="round"/>
+<g fill="#f39422" stroke="#b5650c" stroke-width="2"><circle cx="52" cy="40" r="9"/><circle cx="76" cy="40" r="9"/><circle cx="64" cy="30" r="9"/></g>
+<rect x="60" y="60" width="8" height="10" fill="#6f8796"/>
+<path d="M28 116 L36 70 H92 L100 116 Z" fill="#d6453a" stroke="#8f2a22" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="64" cy="92" r="17" fill="#ffffff" stroke="#8f2a22" stroke-width="2.5"/>
+<path d="M52 84 l2 2 M64 77 v3 M76 84 l-2 2 M49 94 h3 M79 94 h-3" stroke="#6f8796" stroke-width="2" stroke-linecap="round"/>
+<path d="M64 93 L73 82" stroke="#2a2a2a" stroke-width="2.5" stroke-linecap="round"/><circle cx="64" cy="93" r="2.5" fill="#2a2a2a"/>
+</svg>

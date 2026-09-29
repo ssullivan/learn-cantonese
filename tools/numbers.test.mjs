@@ -17,6 +17,22 @@ const quiet = process.argv.includes('--quiet');
 const ok = (name, cond, info = '') => { if (!cond || !quiet) console.log((cond ? 'PASS ' : 'FAIL ') + name + '  ' + info); if (!cond) fail++; };
 
 const go = { hanzi: '個', jyutping: 'go3' };
+// Halves with a measure word: 半斤, 兩斤半, and 斤半 (clipped).
+const gan = { hanzi: '斤', jyutping: 'gan1' };
+for (const [n, opts, hanzi, jp] of [
+  [0.5, {}, '半斤', 'bun3 gan1'],
+  [1.5, {}, '一斤半', 'jat1 gan1 bun3'],
+  [1.5, { clip: true }, '斤半', 'gan1 bun3'],
+  [2.5, {}, '兩斤半', 'loeng5 gan1 bun3'],
+  [12.5, {}, '十二斤半', 'sap6 ji6 gan1 bun3'],
+]) {
+  const r = number(n, { measure: gan, ...opts });
+  ok(`half: ${n}${opts.clip ? ' clipped' : ''} → ${hanzi}`, r.hanzi === hanzi && r.jyutping === jp, JSON.stringify(r));
+}
+for (const [n, m] of [[0.5, undefined], [1.25, gan]]) {
+  let threw = false; try { number(n, { measure: m }); } catch { threw = true; }
+  ok(`half: ${n}${m ? '' : ' with no measure'} is refused`, threw);
+}
 const cases = [
   [0, '零', 'ling4'],
   [2, '二', 'ji6'],

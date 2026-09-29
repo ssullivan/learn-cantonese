@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Pineapple</title>
+<ellipse cx="64" cy="118" rx="32" ry="4" fill="#9fb0bb" opacity=".35"/>
+<path d="M64 46 L52 10 L62 30 L64 4 L68 30 L78 12 L70 46 Z M60 46 L36 22 L56 40 Z M68 46 L94 24 L74 42 Z" fill="#5fa33a" stroke="#3f7a22" stroke-width="2" stroke-linejoin="round"/>
+<defs><clipPath id="pine"><ellipse cx="64" cy="82" rx="30" ry="34"/></clipPath></defs>
+<ellipse cx="64" cy="82" rx="30" ry="34" fill="#f2b233"/>
+<g clip-path="url(#pine)" stroke="#c07a1a" stroke-width="2.5">
+<path d="M24 60 L84 120 M24 80 L64 120 M34 50 L104 120 M54 48 L104 98 M74 48 L104 78"/>
+<path d="M104 60 L44 120 M104 80 L64 120 M94 50 L24 120 M74 48 L24 98 M54 48 L24 78"/>
+</g>
+<ellipse cx="64" cy="82" rx="30" ry="34" fill="none" stroke="#a8741c" stroke-width="3"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Bananas</title>
+<ellipse cx="64" cy="112" rx="44" ry="4" fill="#9fb0bb" opacity=".35"/>
+<path d="M20 50 C24 92 76 110 110 84 C114 80 110 74 104 76 C80 92 42 84 32 50 Z" fill="#f5d33f" stroke="#b8921a" stroke-width="3" stroke-linejoin="round"/>
+<path d="M28 44 C36 80 84 94 112 66 C116 62 112 56 106 58 C84 76 48 72 40 44 Z" fill="#f9df5c" stroke="#b8921a" stroke-width="3" stroke-linejoin="round"/>
+<path d="M36 70 C50 84 72 88 92 80" stroke="#d9b12a" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M22 50 L20 38 L34 36 L40 44" fill="#7a5a1e" stroke="#5a3f12" stroke-width="2" stroke-linejoin="round"/>
+</svg>

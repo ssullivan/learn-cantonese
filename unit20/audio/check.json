@@ -1,0 +1,289 @@
+{
+ "apple-gei-do-cin-w1-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 幾 tone 2 sounds like 6 (p 0.06)"
+  ],
+  "audio": "93c03d01c613"
+ },
+ "banana-gei-do-cin-w1-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 幾 tone 2 sounds like 5 (p 0.13)"
+  ],
+  "audio": "11202000d69d"
+ },
+ "bok-choy-gei-do-cin-w1-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 白 tone 6 sounds like 3 (p 0.17); 幾 tone 2 sounds like 2 (p 0.44)"
+  ],
+  "audio": "b4b07468fcae"
+ },
+ "carrot-gei-do-cin-w1-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 紅 tone 4 sounds like 6 (p 0.16); 蔔 tone 6 sounds like 3 (p 0.20); 幾 tone 2 sounds like 2 (p 0.47)"
+  ],
+  "audio": "ba8c798a2b29"
+ },
+ "choy-sum-gei-do-cin-w1-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 幾 tone 2 sounds like 5 (p 0.09)"
+  ],
+  "audio": "e4115ad8b3a9"
+ },
+ "di-banana-hou-san-sin": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 好 tone 2 sounds like 5 (p 0.14)"
+  ],
+  "audio": "dc150bfddf55"
+ },
+ "grapes-gei-do-cin-w1-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 幾 tone 2 sounds like 6 (p 0.04)"
+  ],
+  "audio": "fd0474073955"
+ },
+ "jat-gung-gei-do-cin-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 共 tone 6 sounds like 3 (p 0.24)"
+  ],
+  "audio": "c99efa1678aa"
+ },
+ "jiu-m-jiu-di-grapes-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 子 tone 2 sounds like 5 (p 0.27)"
+  ],
+  "audio": "56ae075ee66e"
+ },
+ "mango-gei-do-cin-w1-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 幾 tone 2 sounds like 6 (p 0.29)"
+  ],
+  "audio": "fc5377932a0c"
+ },
+ "ngo-heoi-gaai-si-maai5-coi": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 我 tone 5 sounds like 2 (p 0.01)",
+   "tone doubtful: 市 tone 5 sounds like 3 (p 0.09)"
+  ],
+  "audio": "0364b14bd8c1"
+ },
+ "ngo-jiu-w1-apple": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 6 (p 0.34); 要 tone 3 sounds like 2 (p 0.07)"
+  ],
+  "audio": "c3d6dc9b3d1e"
+ },
+ "ngo-jiu-w1-grapes": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 4 (p 0.40); 要 tone 3 sounds like 5 (p 0.04); 一 tone 1 sounds like 6 (p 0.27)"
+  ],
+  "audio": "dfcdf2aed0bb"
+ },
+ "ngo-jiu-w1-tomato": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 要 tone 3 sounds like 5 (p 0.12); 一 tone 1 sounds like 6 (p 0.32)"
+  ],
+  "audio": "aed8c55af359"
+ },
+ "ngo-jiu-w2-banana": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 兩 tone 5 sounds like 2 (p 0.12)"
+  ],
+  "audio": "a7a1e253456a"
+ },
+ "ngo-jiu-w2-bok-choy": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 兩 tone 5 sounds like 2 (p 0.14)"
+  ],
+  "audio": "bfb982a7fbe5"
+ },
+ "ngo-jiu-w2-pear": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 我要2斤啤梨 ngo jiu ji gan pei lei",
+   "tone doubtful: 兩 tone 5 sounds like 2 (p 0.12)"
+  ],
+  "audio": "6f36d44f3fe1"
+ },
+ "ngo-jiu-w3-orange": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 要 tone 3 sounds like 2 (p 0.10)"
+  ],
+  "audio": "2e763fac8a3c"
+ },
+ "ngo-jiu-w3-strawberry": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 我要3斤士多啤梨 ngo jiu saam gan si do pei lei"
+  ],
+  "audio": "2327b20ec2f2"
+ },
+ "ni-di-mango-hou-sweet": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 好 tone 2 sounds like 5 (p 0.37)"
+  ],
+  "audio": "444b22b2739a"
+ },
+ "ni-di-orange-hou-syun": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 好 tone 2 sounds like 5 (p 0.41)"
+  ],
+  "audio": "e5836b6729c6"
+ },
+ "one-tomato": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 一 tone 1 sounds like 3 (p 0.30); 個 tone 3 sounds like 3 (p 0.38)"
+  ],
+  "audio": "7ea563bedea3"
+ },
+ "orange-gei-do-cin-w1-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 幾 tone 2 sounds like 5 (p 0.09)"
+  ],
+  "audio": "ef6924e1a6c2"
+ },
+ "p10500": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 五 tone 5 sounds like 2 (p 0.12)"
+  ],
+  "audio": "20573690ce89"
+ },
+ "p1200-w1": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 二 tone 6 sounds like 3 (p 0.08)"
+  ],
+  "audio": "b52a14c55815"
+ },
+ "p1500-w1": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 五 tone 5 sounds like 2 (p 0.43)"
+  ],
+  "audio": "5dc0110ae19e"
+ },
+ "p2000-w1": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 二 tone 6 sounds like 3 (p 0.38)"
+  ],
+  "audio": "02ed01f299d4"
+ },
+ "p2250": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 二 tone 6 sounds like 3 (p 0.27)"
+  ],
+  "audio": "bddf710b979f"
+ },
+ "p2400": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 廿 tone 6 sounds like 5 (p 0.10)"
+  ],
+  "audio": "0e750bd1d8d5"
+ },
+ "pear-gei-do-cin-w1-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "speech-to-text heard 啤梨幾多錢1斤呀 pei lei gei do cin jat gan aa",
+   "tone doubtful: 梨 tone 2 sounds like 5 (p 0.18); 幾 tone 2 sounds like 5 (p 0.09)"
+  ],
+  "audio": "13f5560d3bff"
+ },
+ "pineapple-gei-do-cin-w1-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 幾 tone 2 sounds like 5 (p 0.25)"
+  ],
+  "audio": "9f872290bf7a"
+ },
+ "po": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 撲 pok"
+  ],
+  "audio": "e0eb73c50904"
+ },
+ "potato-gei-do-cin-w1-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 幾 tone 2 sounds like 6 (p 0.02); 呀 tone 3 sounds like 1 (p 0.01)"
+  ],
+  "audio": "a7435966f9da"
+ },
+ "strawberry": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 士 tone 6 sounds like 3 (p 0.43)"
+  ],
+  "audio": "28e5fb4e70ac"
+ },
+ "strawberry-gei-do-cin-w1-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "speech-to-text heard 士多啤梨幾多錢1斤呀 si do pei lei gei do cin jat gan aa",
+   "tone doubtful: 幾 tone 2 sounds like 5 (p 0.08)"
+  ],
+  "audio": "4aebb0e5aa9d"
+ },
+ "tomato-gei-do-cin-w1-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 茄 tone 2 sounds like 5 (p 0.12); 幾 tone 2 sounds like 5 (p 0.06)"
+  ],
+  "audio": "2b88e33d6af0"
+ },
+ "tomato-hai-saang-gwo-ding-hai-coi-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "speech-to-text heard 蕃茄係生果定係菜呀 faan ke hai sang gwo ding hai coi aa",
+   "tone doubtful: 定 tone 6 sounds like 3 (p 0.27)"
+  ],
+  "audio": "6450cff9b165"
+ },
+ "watermelon-gei-do-cin-w1-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 幾 tone 2 sounds like 5 (p 0.13)"
+  ],
+  "audio": "55e06898485f"
+ }
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Potato</title>
+<ellipse cx="64" cy="112" rx="44" ry="4" fill="#9fb0bb" opacity=".35"/>
+<path d="M22 70 C20 50 42 40 64 42 C86 40 108 50 106 72 C104 94 84 104 62 102 C40 102 24 90 22 70 Z" fill="#c9954f" stroke="#8a5f2a" stroke-width="3" stroke-linejoin="round"/>
+<g fill="#8a5f2a"><circle cx="44" cy="60" r="2.2"/><circle cx="76" cy="56" r="2"/><circle cx="90" cy="76" r="2.2"/><circle cx="56" cy="86" r="2"/><circle cx="70" cy="74" r="1.6"/></g>
+<path d="M34 64 C36 56 42 52 50 50" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round" opacity=".45"/>
+</svg>

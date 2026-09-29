@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Carrot</title>
+<ellipse cx="64" cy="116" rx="40" ry="4" fill="#9fb0bb" opacity=".35"/>
+<path d="M98 36 C94 20 100 10 108 6 M100 40 C110 26 120 24 126 28 M96 38 C84 26 78 16 80 8" stroke="#5fa33a" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path d="M20 112 C36 98 72 60 88 44 C96 36 108 46 102 54 C88 70 52 102 20 112 Z" fill="#f08a24" stroke="#b5651c" stroke-width="3" stroke-linejoin="round"/>
+<path d="M44 92 l8 4 M60 78 l8 4 M76 62 l8 4 M52 86 l-4 -6 M70 70 l-4 -6" stroke="#b5651c" stroke-width="2" stroke-linecap="round"/>
+</svg>
