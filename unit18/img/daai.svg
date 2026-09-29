@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A big ball and a small one, the big one marked</title>
+<ellipse cx="24" cy="118" rx="16" ry="4" fill="#9fb0bb" opacity=".35"/><ellipse cx="84" cy="118" rx="34" ry="4" fill="#9fb0bb" opacity=".35"/><g transform="translate(24 102) scale(0.36363636363636365)">
+<circle r="44" fill="#f08a24" stroke="#8a4a12" stroke-width="8.25"/>
+<path d="M-44 0 H44 M0 -44 V44" stroke="#5a2f0c" stroke-width="8.25"/>
+<path d="M-31 -31 C-16 -16 -16 16 -31 31 M31 -31 C16 -16 16 16 31 31" stroke="#5a2f0c" stroke-width="8.25" fill="none"/>
+<ellipse cx="-18" cy="-24" rx="9" ry="5" fill="#f7b267" opacity=".8" transform="rotate(-35 -18 -24)"/>
+</g><g transform="translate(84 84) scale(0.7727272727272727)">
+<circle r="44" fill="#f08a24" stroke="#8a4a12" stroke-width="3.8823529411764706"/>
+<path d="M-44 0 H44 M0 -44 V44" stroke="#5a2f0c" stroke-width="3.8823529411764706"/>
+<path d="M-31 -31 C-16 -16 -16 16 -31 31 M31 -31 C16 -16 16 16 31 31" stroke="#5a2f0c" stroke-width="3.8823529411764706" fill="none"/>
+<ellipse cx="-18" cy="-24" rx="9" ry="5" fill="#f7b267" opacity=".8" transform="rotate(-35 -18 -24)"/>
+</g><path d="M77 32 H91 L84 42 Z" fill="#e0a526" stroke="#9a6c0e" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>

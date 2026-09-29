@@ -24,7 +24,11 @@
  * pictures, each with a .mark.yes ✓ or .mark.no ✗, from Game.chart; a
  * .mark can sit on a .pic-grid.pics answer too), .planner (a day planner: .plan-item
  * cards, each a clock over a picture) with .now (the time now), and
- * .pic-grid.order (pictures tapped in order, numbered by .order-num).
+ * .pic-grid.order (pictures tapped in order, numbered by .order-num),
+ * .pic-grid.pair / .three (two or three big picture answers), and
+ * .versus (things side by side to compare: .versus-item pictures, or a
+ * .pic-word for a word without one, each with an optional .tag, a price,
+ * an age or a height; a .tag can sit on a .pic-grid.pics answer too).
  */
 
 .btn.small { padding: 6px 12px; font-size: 14px; }
@@ -285,3 +289,12 @@
 /* Pictures tapped in order: 1, 2 */
 .pic-grid.order .pic-btn { position: relative; }
 .order-num { position: absolute; top: 6px; left: 6px; display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--gold); color: #26323c; font-weight: 800; }
+
+/* Two or three picture answers, and things side by side to compare, with tags */
+.pic-grid.pair { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 400px; }
+.pic-grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 540px; }
+.versus { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 16px; }
+.versus-item { position: relative; width: 136px; aspect-ratio: 1; padding: 4px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.versus-item img { display: block; width: 100%; height: 100%; }
+.pic-word { display: grid; place-items: center; width: 100%; height: 100%; font-size: 56px; font-weight: 700; color: var(--ink); }
+:is(.versus-item, .pic-grid.pics .choice) .tag { position: absolute; top: 4px; right: 4px; padding: 1px 6px; border: 2px solid var(--gold); border-radius: 8px; background: var(--surface); box-shadow: var(--shadow); font-size: 16px; font-weight: 800; color: var(--accent); font-variant-numeric: tabular-nums; }

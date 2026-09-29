@@ -8,9 +8,12 @@
  *                         loaded last, is VOCAB. Returns vocab.
  *   Units.word(n, id)     a copy of unit n's entry `id` with unit: n, so its
  *                         audio and picture load from ../unit<n>/ (see
- *                         Canto.audioSrc). Unit n's vocab.js must be loaded
- *                         first: a page lists ../unit<n>/vocab.js before its
- *                         own, which tools/check.mjs verifies.
+ *                         Canto.audioSrc). A word that unit n borrowed
+ *                         keeps its own unit, with what unit n added
+ *                         (unit 6's price on unit 5's 蘋果). Unit n's
+ *                         vocab.js must be loaded first: a page lists
+ *                         ../unit<n>/vocab.js before its own, which
+ *                         tools/check.mjs verifies.
  *   Units.sentences(vocab)
  *                         say(ids, english, extra?): a sentence entry made
  *                         of the entries with those space-separated ids
@@ -42,7 +45,7 @@
     if (!units[n]) throw new Error(`unit ${n}'s vocab.js is not loaded`);
     const entry = Object.values(units[n]).filter(Array.isArray).flat().find(e => e.id === id);
     if (!entry) throw new Error(`unit ${n} has no word ${id}`);
-    return { ...entry, unit: n };
+    return { ...entry, unit: entry.unit ?? n };
   }
 
   function sentences(vocab) {

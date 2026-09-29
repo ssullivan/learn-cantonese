@@ -1,0 +1,587 @@
+{
+ "ai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 誒 e",
+   "tone doubtful: 矮 tone 2 sounds like 5 (p 0.20)"
+  ],
+  "audio": "f8bbf97458bc"
+ },
+ "apple-mou-watermelon-gam3-gwai": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 冇 tone 5 sounds like 6 (p 0.03)",
+   "tone doubtful: 貴 tone 3 sounds like 6 (p 0.07)"
+  ],
+  "audio": "95863a72f596"
+ },
+ "bin-go-ai-di-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "speech-to-text heard 邊個呀依啲吖 bin go aa ji di aa",
+   "tone doubtful: 個 tone 3 sounds like 6 (p 0.09)"
+  ],
+  "audio": "d5c043533117"
+ },
+ "bin-go-daai-di-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "7700100a464d"
+ },
+ "bin-go-faai-di-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "5893bb55b613"
+ },
+ "bin-go-gou-di-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "8b76ec0cc0b5"
+ },
+ "bin-go-gwai-di-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "ae855d1426f9"
+ },
+ "bin-go-maan-di-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 慢 tone 6 sounds like 5 (p 0.25)"
+  ],
+  "audio": "624b73ebf48e"
+ },
+ "bin-go-peng-di-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "3074dff38a96"
+ },
+ "bin-go-sai-di-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "9786becfb038"
+ },
+ "bin-go-zeoi-ai-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 矮 tone 2 sounds like 5 (p 0.09)"
+  ],
+  "audio": "2d5dac443d25"
+ },
+ "bin-go-zeoi-daai-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 大 tone 6 sounds like 3 (p 0.45)"
+  ],
+  "audio": "f1d26d49490a"
+ },
+ "bin-go-zeoi-faai-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "85c442ef8447"
+ },
+ "bin-go-zeoi-gou-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "46aaea5e5e25"
+ },
+ "bin-go-zeoi-gwai-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "71f2bab38d18"
+ },
+ "bin-go-zeoi-maan-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 慢 tone 6 sounds like 5 (p 0.08)"
+  ],
+  "audio": "aaed7468d7e9"
+ },
+ "bin-go-zeoi-peng-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "aeb9a2c55e79"
+ },
+ "bin-go-zeoi-sai-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.01)",
+   "tone doubtful: 細 tone 3 sounds like 1 (p 0.12)"
+  ],
+  "audio": "72d4c8e25a57"
+ },
+ "book-bei-pen-peng": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 輸比不平 syu bei bat ping"
+  ],
+  "audio": "5adb51d8ccee"
+ },
+ "bread-mou-fish-gam3-gwai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 冇 tone 5 sounds like 6 (p 0.06); 咁 tone 3 sounds like 6 (p 0.29)"
+  ],
+  "audio": "65d819fefaef"
+ },
+ "bus-bei-car-daai": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 士 tone 2 sounds like 3 (p 0.00)",
+   "tone doubtful: 大 tone 6 sounds like 4 (p 0.04)"
+  ],
+  "audio": "eb506237e21c"
+ },
+ "bus-bei-car-sai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 士 tone 2 sounds like 3 (p 0.08)"
+  ],
+  "audio": "a7cb1fe04a9e"
+ },
+ "bus-bei-metro-faai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 士 tone 2 sounds like 3 (p 0.35)"
+  ],
+  "audio": "c8c5129775a0"
+ },
+ "bus-bei-metro-maan": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 士 tone 2 sounds like 2 (p 0.44); 鐵 tone 3 sounds like 1 (p 0.32)"
+  ],
+  "audio": "55d3ab974e37"
+ },
+ "bus-mou-metro-gam3-faai": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 冇 tone 5 sounds like 6 (p 0.02)",
+   "tone doubtful: 鐵 tone 3 sounds like 6 (p 0.06)"
+  ],
+  "audio": "87b12beb3356"
+ },
+ "bus-mou-plane-gam3-faai": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 冇 tone 5 sounds like 6 (p 0.01)"
+  ],
+  "audio": "7b28d66b3739"
+ },
+ "car-mou-bus-gam3-daai": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 士 tone 2 sounds like 4 (p 0.00)",
+   "tone doubtful: 冇 tone 5 sounds like 6 (p 0.05); 咁 tone 3 sounds like 5 (p 0.12)"
+  ],
+  "audio": "6c82fb0622bb"
+ },
+ "car-mou-plane-gam3-daai": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 冇 tone 5 sounds like 6 (p 0.03)"
+  ],
+  "audio": "ad584c4a6aac"
+ },
+ "dad-bei-mum-daai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 大 tone 6 sounds like 4 (p 0.37)"
+  ],
+  "audio": "d9e0b19ac838"
+ },
+ "egg-bei-ball-daai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 比 tone 2 sounds like 5 (p 0.17); 大 tone 6 sounds like 4 (p 0.33)"
+  ],
+  "audio": "4b95b49a560f"
+ },
+ "egg-bei-ball-sai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 比 tone 2 sounds like 5 (p 0.19)"
+  ],
+  "audio": "7cd35dbb242c"
+ },
+ "egg-mou-ball-gam3-daai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 冇 tone 5 sounds like 6 (p 0.07)"
+  ],
+  "audio": "3cad02713fc9"
+ },
+ "elder-brother-bei-ngo-ai": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 我 tone 5 sounds like 1 (p 0.00)",
+   "speech-to-text heard 哥哥畀我你 go go bei ngo nei",
+   "tone doubtful: 比 tone 2 sounds like 4 (p 0.06)"
+  ],
+  "audio": "443c4309947f"
+ },
+ "elder-brother-bei-ngo-daai-gei-do-seoi-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 比 tone 2 sounds like 4 (p 0.04); 我 tone 5 sounds like 3 (p 0.00); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 幾 tone 2 sounds like 5 (p 0.43)"
+  ],
+  "audio": "1bb909b55ada"
+ },
+ "elder-brother-bei-ngo-gou": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 比 tone 2 sounds like 5 (p 0.02); 我 tone 5 sounds like 3 (p 0.04)"
+  ],
+  "audio": "b08a8ab2fd73"
+ },
+ "elder-brother-gou-gwo-ngo": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.34)"
+  ],
+  "audio": "adafb5f5c78c"
+ },
+ "elder-sister-bei-ngo-daai": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 比 tone 2 sounds like 6 (p 0.02); 我 tone 5 sounds like 6 (p 0.01)",
+   "tone doubtful: 大 tone 6 sounds like 4 (p 0.23)"
+  ],
+  "audio": "794615c26540"
+ },
+ "elder-sister-bei-ngo-daai-gei-do-seoi-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 比 tone 2 sounds like 5 (p 0.02); 我 tone 5 sounds like 3 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 幾 tone 2 sounds like 5 (p 0.33)"
+  ],
+  "audio": "0823420d112a"
+ },
+ "elder-sister-bei-ngo-daai-y3": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 比 tone 2 sounds like 4 (p 0.01); 我 tone 5 sounds like 3 (p 0.01)"
+  ],
+  "audio": "154bff5f07f8"
+ },
+ "elder-sister-bei-ngo-sai": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 比 tone 2 sounds like 6 (p 0.02); 我 tone 5 sounds like 6 (p 0.02)"
+  ],
+  "audio": "46aebd37f155"
+ },
+ "elder-sister-daai-gwo-ngo": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 大 tone 6 sounds like 4 (p 0.11); 我 tone 5 sounds like 2 (p 0.11)"
+  ],
+  "audio": "50e5dbef5b79"
+ },
+ "fish-bei-bread-peng": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 魚 tone 4 sounds like 6 (p 0.14)"
+  ],
+  "audio": "a258411b7583"
+ },
+ "flower-mou-cake-gam3-gwai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 冇 tone 5 sounds like 6 (p 0.06); 蛋 tone 6 sounds like 5 (p 0.39)"
+  ],
+  "audio": "796a585ca885"
+ },
+ "metro-bei-plane-faai": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 鐵 tone 3 sounds like 6 (p 0.03)"
+  ],
+  "audio": "1378246540a3"
+ },
+ "metro-bei-plane-maan": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 鐵 tone 3 sounds like 6 (p 0.13); 慢 tone 6 sounds like 4 (p 0.06)"
+  ],
+  "audio": "b12d63107fdb"
+ },
+ "metro-ding-bus-faai-di-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 鐵 tone 3 sounds like 6 (p 0.08); 士 tone 2 sounds like 5 (p 0.28)"
+  ],
+  "audio": "4cb1587d8e23"
+ },
+ "metro-faai-di": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 鐵 tone 3 sounds like 6 (p 0.08)"
+  ],
+  "audio": "919d1563e30c"
+ },
+ "metro-faai-gwo-bus": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 鐵 tone 3 sounds like 6 (p 0.14)"
+  ],
+  "audio": "9a5b0828367a"
+ },
+ "metro-faai-gwo-bus-hou-do": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 鐵 tone 3 sounds like 6 (p 0.12); 士 tone 2 sounds like 5 (p 0.27); 好 tone 2 sounds like 5 (p 0.42)"
+  ],
+  "audio": "d636009bc811"
+ },
+ "metro-mou-plane-gam3-faai": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 鐵 tone 3 sounds like 6 (p 0.01)",
+   "tone doubtful: 冇 tone 5 sounds like 2 (p 0.20); 快 tone 3 sounds like 6 (p 0.36)"
+  ],
+  "audio": "1ad9c098c2cc"
+ },
+ "minibus-bei-tram-faai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 小 tone 2 sounds like 5 (p 0.18)"
+  ],
+  "audio": "1558dc3230dd"
+ },
+ "minibus-bei-tram-maan": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 小 tone 2 sounds like 6 (p 0.03)"
+  ],
+  "audio": "901da475bd16"
+ },
+ "mum-bei-dad-ai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 媽媽比爸爸喺 maa maa bei baa baa hai"
+  ],
+  "audio": "aa4ce947231f"
+ },
+ "nei-zeoi-zung-ji-sik6-mat-je-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 乜 tone 1 sounds like 3 (p 0.16); 嘢 tone 5 sounds like 2 (p 0.05)"
+  ],
+  "audio": "8de3ce53e7ee"
+ },
+ "ngaam-m-ngaam-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "9e2a1aa56cc5"
+ },
+ "ngo-bei-nei-gou": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 你 tone 5 sounds like 5 (p 0.46)"
+  ],
+  "audio": "c187bba56eef"
+ },
+ "ngo-bei-younger-sister-ai": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 妹 tone 2 sounds like 5 (p 0.03)",
+   "speech-to-text heard 我畀細妹你 ngo bei sai mui nei"
+  ],
+  "audio": "170c742e0c6c"
+ },
+ "ngo-tung-keoi-jat-joeng-gou": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 佢 tone 5 sounds like 6 (p 0.02)"
+  ],
+  "audio": "1b4aae6ed4a7"
+ },
+ "ni-loeng-go-jat-joeng-gwai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 呢2個一樣貴 ne ji go jat joeng gwai",
+   "tone doubtful: 兩 tone 5 sounds like 2 (p 0.08); 個 tone 3 sounds like 5 (p 0.15)"
+  ],
+  "audio": "2219a847dbb2"
+ },
+ "orange-mou-watermelon-gam3-daai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 冇 tone 5 sounds like 6 (p 0.08); 大 tone 6 sounds like 4 (p 0.28)"
+  ],
+  "audio": "d89e59880211"
+ },
+ "orange-tung-apple-caa-m-do-daai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 大 tone 6 sounds like 4 (p 0.17)"
+  ],
+  "audio": "6e60ee7cfd73"
+ },
+ "pen-mou-book-gam3-gwai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 冇 tone 5 sounds like 2 (p 0.06)"
+  ],
+  "audio": "a21f15f53aa8"
+ },
+ "plane-bei-bus-faai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 士 tone 2 sounds like 5 (p 0.24)"
+  ],
+  "audio": "42cc26cfc565"
+ },
+ "plane-bei-car-daai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 大 tone 6 sounds like 4 (p 0.05)"
+  ],
+  "audio": "e78cab8cea3b"
+ },
+ "plane-daai-gwo-car": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 大 tone 6 sounds like 4 (p 0.18)"
+  ],
+  "audio": "7914b295000f"
+ },
+ "sai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 四 sei"
+  ],
+  "audio": "dc3b18824438"
+ },
+ "shirt-bei-shoes-peng": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 三比鞋平 saam bei haai ping"
+  ],
+  "audio": "30bc06484229"
+ },
+ "shirt-mou-shoes-gam3-gwai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 冇 tone 5 sounds like 2 (p 0.06)"
+  ],
+  "audio": "c9494addc12a"
+ },
+ "taxi-bei-tram-faai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 士 tone 2 sounds like 3 (p 0.15)"
+  ],
+  "audio": "8f807137ec8a"
+ },
+ "taxi-bei-tram-maan": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 士 tone 2 sounds like 3 (p 0.09)"
+  ],
+  "audio": "cd2829311f31"
+ },
+ "tram-mou-minibus-gam3-faai": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 冇 tone 5 sounds like 6 (p 0.03)"
+  ],
+  "audio": "1264ce081b49"
+ },
+ "tram-mou-taxi-gam3-faai": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 冇 tone 5 sounds like 4 (p 0.01); 士 tone 2 sounds like 6 (p 0.00)"
+  ],
+  "audio": "70d419e33334"
+ },
+ "watermelon-bei-apple-gwai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 貴 tone 3 sounds like 6 (p 0.40)"
+  ],
+  "audio": "a0fe0bbff164"
+ },
+ "watermelon-bei-apple-gwai-hou-do": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 好 tone 2 sounds like 5 (p 0.21)"
+  ],
+  "audio": "9b852db3a204"
+ },
+ "watermelon-ding-apple-gwai-di-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "cba7994e5eb8"
+ },
+ "younger-brother-bei-ngo-daai": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 比 tone 2 sounds like 6 (p 0.03); 我 tone 5 sounds like 6 (p 0.01)",
+   "tone doubtful: 大 tone 6 sounds like 4 (p 0.06)"
+  ],
+  "audio": "727d0e6c5c67"
+ },
+ "younger-brother-bei-ngo-sai": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 比 tone 2 sounds like 6 (p 0.02); 我 tone 5 sounds like 6 (p 0.02)"
+  ],
+  "audio": "f75b08f26163"
+ },
+ "younger-brother-bei-ngo-sai-gei-do-seoi-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 比 tone 2 sounds like 4 (p 0.01); 我 tone 5 sounds like 3 (p 0.00); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 幾 tone 2 sounds like 5 (p 0.09)"
+  ],
+  "audio": "ee2c83e3ed7e"
+ },
+ "younger-brother-bei-ngo-sai-y3": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 比 tone 2 sounds like 6 (p 0.01); 我 tone 5 sounds like 3 (p 0.01)"
+  ],
+  "audio": "7f7aaee588a5"
+ },
+ "younger-sister-bei-ngo-sai-gei-do-seoi-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 比 tone 2 sounds like 4 (p 0.00); 我 tone 5 sounds like 3 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 幾 tone 2 sounds like 5 (p 0.17)"
+  ],
+  "audio": "e6bcc9ba07d4"
+ }
+}

@@ -54,6 +54,9 @@
  *                      a small person walking right (left when flip), feet
  *                      at x, y, head at y − 50; bag: 'work' (a briefcase),
  *                      'school' (a backpack) or none
+ * Things (unit 5's 波, unit 18's sizes):
+ *   ball(cx, cy, r)    a basketball centred on cx, cy with radius r; its
+ *                      lines stay the same width at any size
  * Transport (unit 1's car, unit 5's plane, unit 11's taxi and airport):
  *   car                a red car side on, wheels on y 92, roof at y 38
  *   plane              a plane climbing to the right, across the middle
@@ -160,6 +163,16 @@ export const pineappleBun = `<path d="M-24 6 C-26 -8 -14 -20 0 -20 C14 -20 26 -8
 <path d="M-23 0 C-24 -10 -13 -20 0 -20 C13 -20 24 -10 23 0 C12 4 -12 4 -23 0Z" fill="#e9ab45"/>
 <path d="M-20 -6 L-16 -12 L-8 -6 L-12 1 M-8 -6 L0 -12 L6 -4 L0 3 M6 -4 L14 -12 L19 -6 M6 -4 L15 1 M-8 -6 L-2 -1 M0 -12 L-2 -19 M14 -12 L11 -18 M-16 -12 L-12 -17" stroke="#c07a22" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M-12 -15 Q-4 -19 4 -18" stroke="#f7d27f" stroke-width="2.5" fill="none" stroke-linecap="round"/>`;
+
+export function ball(cx, cy, r) {
+  const w = 3 * 44 / r;
+  return `<g transform="translate(${cx} ${cy}) scale(${r / 44})">
+<circle r="44" fill="#f08a24" stroke="#8a4a12" stroke-width="${w}"/>
+<path d="M-44 0 H44 M0 -44 V44" stroke="#5a2f0c" stroke-width="${w}"/>
+<path d="M-31 -31 C-16 -16 -16 16 -31 31 M31 -31 C16 -16 16 16 31 31" stroke="#5a2f0c" stroke-width="${w}" fill="none"/>
+<ellipse cx="-18" cy="-24" rx="9" ry="5" fill="#f7b267" opacity=".8" transform="rotate(-35 -18 -24)"/>
+</g>`;
+}
 
 export const car = `<ellipse cx="64" cy="104" rx="52" ry="5" fill="#9fb0bb" opacity=".35"/>
 <path d="M12 92 V72 C12 66 16 62 24 62 L36 60 L48 42 C50 40 52 38 56 38 H86 C90 38 92 40 94 42 L106 60 C114 62 118 66 118 72 V92 Z" fill="#d6453a" stroke="#8f2a22" stroke-width="2.5" stroke-linejoin="round"/>

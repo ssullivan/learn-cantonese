@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>Two balls the same size</title>
+<ellipse cx="30" cy="104" rx="22" ry="4" fill="#9fb0bb" opacity=".35"/><ellipse cx="98" cy="104" rx="22" ry="4" fill="#9fb0bb" opacity=".35"/><g transform="translate(30 80) scale(0.5)">
+<circle r="44" fill="#f08a24" stroke="#8a4a12" stroke-width="6"/>
+<path d="M-44 0 H44 M0 -44 V44" stroke="#5a2f0c" stroke-width="6"/>
+<path d="M-31 -31 C-16 -16 -16 16 -31 31 M31 -31 C16 -16 16 16 31 31" stroke="#5a2f0c" stroke-width="6" fill="none"/>
+<ellipse cx="-18" cy="-24" rx="9" ry="5" fill="#f7b267" opacity=".8" transform="rotate(-35 -18 -24)"/>
+</g><g transform="translate(98 80) scale(0.5)">
+<circle r="44" fill="#f08a24" stroke="#8a4a12" stroke-width="6"/>
+<path d="M-44 0 H44 M0 -44 V44" stroke="#5a2f0c" stroke-width="6"/>
+<path d="M-31 -31 C-16 -16 -16 16 -31 31 M31 -31 C16 -16 16 16 31 31" stroke="#5a2f0c" stroke-width="6" fill="none"/>
+<ellipse cx="-18" cy="-24" rx="9" ry="5" fill="#f7b267" opacity=".8" transform="rotate(-35 -18 -24)"/>
+</g>
+<path d="M56 74 H72 M56 86 H72" stroke="#e0a526" stroke-width="5" stroke-linecap="round"/>
+</svg>

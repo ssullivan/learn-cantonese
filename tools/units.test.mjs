@@ -57,6 +57,9 @@ ok('phonemes reaches a phrase inside a longer one', JSON.stringify(pv.longer[0].
 
 const v6 = loadVocab('unit6');
 const apple = v6.things.find(t => t.id === 'apple');
+Units.add(4, { words: [{ ...cat, legs: 4 }] });
+const again = Units.word(4, 'cat');
+ok('borrowing a borrowed word keeps its home unit', again.unit === 3 && again.legs === 4 && Canto.imgSrc(again) === '../unit3/img/cat.svg', JSON.stringify(again));
 ok('unit 6 borrows unit 5 things with a price', apple?.unit === 5 && apple.price > 0 && apple.measure === 'go', JSON.stringify(apple));
 const oneFish = v6.ones.find(o => o.id === 'one-fish');
 ok('unit 6 borrows 一條魚 from unit 5, where it was made', oneFish?.unit === 5, JSON.stringify(oneFish?.unit));

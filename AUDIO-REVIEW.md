@@ -1,6 +1,6 @@
 # Audio review
 
-Every clip on the site (1816), unit by unit. **Listen on the [review page](https://ssullivan.github.io/learn-cantonese/review/)**, where you can mark each clip and copy your notes; the links below play one clip each.
+Every clip on the site (1943), unit by unit. **Listen on the [review page](https://ssullivan.github.io/learn-cantonese/review/)**, where you can mark each clip and copy your notes; the links below play one clip each.
 
 Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this file by hand.
 
@@ -1904,3 +1904,135 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 | 109 | 你點解唔開心呀？ | nei5 dim2 gaai2 m4 hoi1 sam1 aa3 | Why are you unhappy? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/nei-dim-gaai-m-hoi-sam-aa.mp3) |
 | 110 | 因為我聽日考試 | jan1 wai6 ngo5 ting1 jat6 haau2 si5 | Because I've got an exam tomorrow. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/jan-wai-ngo-ting-jat-haau-si.mp3) |
 | 111 | 係囉 | hai6 lo1 | Exactly! That's what I said. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/hai-lo1.mp3) |
+
+## Unit 18
+
+| # | Chinese | Jyutping | English | Audio |
+|---|---|---|---|---|
+| 1 | 大 | daai6 | big; older | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/daai.mp3) |
+| 2 | 細 | sai3 | small; younger | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/sai.mp3) |
+| 3 | 高 | gou1 | tall; high | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/gou.mp3) |
+| 4 | 矮 | ai2 | short (not tall) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/ai.mp3) |
+| 5 | 快 | faai3 | fast; quick | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/faai.mp3) |
+| 6 | 慢 | maan6 | slow | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/maan.mp3) |
+| 7 | 比 | bei2 | than (A 比 B) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bei.mp3) |
+| 8 | 最 | zeoi3 | the most; -est | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/zeoi.mp3) |
+| 9 | 一樣 | jat1 joeng6 | the same | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/jat-joeng.mp3) |
+| 10 | 差唔多 | caa1 m4 do1 | about the same; almost | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/caa-m-do.mp3) |
+| 11 | 啱 | ngaam1 | right; correct | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/ngaam.mp3) |
+| 12 | 好多 | hou2 do1 | much; a lot (more) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/hou-do.mp3) |
+| 13 | 唔啱 | m4 ngaam1 | wrong; not right | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/m-ngaam.mp3) |
+| 14 | 一歲 | jat1 seoi3 | 1 year | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/y1.mp3) |
+| 15 | 兩歲 | loeng5 seoi3 | 2 years | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/y2.mp3) |
+| 16 | 三歲 | saam1 seoi3 | 3 years | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/y3.mp3) |
+| 17 | 四歲 | sei3 seoi3 | 4 years | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/y4.mp3) |
+| 18 | 五歲 | ng5 seoi3 | 5 years | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/y5.mp3) |
+| 19 | 六歲 | luk6 seoi3 | 6 years | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/y6.mp3) |
+| 20 | 七歲 | cat1 seoi3 | 7 years | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/y7.mp3) |
+| 21 | 八歲 | baat3 seoi3 | 8 years | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/y8.mp3) |
+| 22 | 九歲 | gau2 seoi3 | 9 years | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/y9.mp3) |
+| 23 | 西瓜比蘋果貴 | sai1 gwaa1 bei2 ping4 gwo2 gwai3 | The watermelon is more expensive than the apple. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/watermelon-bei-apple-gwai.mp3) |
+| 24 | 西瓜比蘋果平 | sai1 gwaa1 bei2 ping4 gwo2 peng4 | The watermelon is cheaper than the apple. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/watermelon-bei-apple-peng.mp3) |
+| 25 | 衫比鞋貴 | saam1 bei2 haai4 gwai3 | The shirt is more expensive than the shoes. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/shirt-bei-shoes-gwai.mp3) |
+| 26 | 衫比鞋平 | saam1 bei2 haai4 peng4 | The shirt is cheaper than the shoes. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/shirt-bei-shoes-peng.mp3) |
+| 27 | 書比筆貴 | syu1 bei2 bat1 gwai3 | The book is more expensive than the pen. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/book-bei-pen-gwai.mp3) |
+| 28 | 書比筆平 | syu1 bei2 bat1 peng4 | The book is cheaper than the pen. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/book-bei-pen-peng.mp3) |
+| 29 | 花比蛋糕貴 | faa1 bei2 daan6 gou1 gwai3 | The flower is more expensive than the cake. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/flower-bei-cake-gwai.mp3) |
+| 30 | 花比蛋糕平 | faa1 bei2 daan6 gou1 peng4 | The flower is cheaper than the cake. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/flower-bei-cake-peng.mp3) |
+| 31 | 魚比麵包貴 | jyu4 bei2 min6 baau1 gwai3 | The fish is more expensive than the bread roll. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/fish-bei-bread-gwai.mp3) |
+| 32 | 魚比麵包平 | jyu4 bei2 min6 baau1 peng4 | The fish is cheaper than the bread roll. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/fish-bei-bread-peng.mp3) |
+| 33 | 西瓜比橙大 | sai1 gwaa1 bei2 caang2 daai6 | The watermelon is bigger than the orange. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/watermelon-bei-orange-daai.mp3) |
+| 34 | 西瓜比橙細 | sai1 gwaa1 bei2 caang2 sai3 | The watermelon is smaller than the orange. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/watermelon-bei-orange-sai.mp3) |
+| 35 | 書比枱大 | syu1 bei2 toi2 daai6 | The book is bigger than the table. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/book-bei-table-daai.mp3) |
+| 36 | 書比枱細 | syu1 bei2 toi2 sai3 | The book is smaller than the table. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/book-bei-table-sai.mp3) |
+| 37 | 飛機比車大 | fei1 gei1 bei2 ce1 daai6 | The plane is bigger than the car. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/plane-bei-car-daai.mp3) |
+| 38 | 飛機比車細 | fei1 gei1 bei2 ce1 sai3 | The plane is smaller than the car. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/plane-bei-car-sai.mp3) |
+| 39 | 雞蛋比波大 | gai1 daan2 bei2 bo1 daai6 | The egg is bigger than the ball. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/egg-bei-ball-daai.mp3) |
+| 40 | 雞蛋比波細 | gai1 daan2 bei2 bo1 sai3 | The egg is smaller than the ball. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/egg-bei-ball-sai.mp3) |
+| 41 | 巴士比車大 | baa1 si2 bei2 ce1 daai6 | The bus is bigger than the car. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bus-bei-car-daai.mp3) |
+| 42 | 巴士比車細 | baa1 si2 bei2 ce1 sai3 | The bus is smaller than the car. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bus-bei-car-sai.mp3) |
+| 43 | 飛機比巴士快 | fei1 gei1 bei2 baa1 si2 faai3 | The plane is faster than the bus. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/plane-bei-bus-faai.mp3) |
+| 44 | 飛機比巴士慢 | fei1 gei1 bei2 baa1 si2 maan6 | The plane is slower than the bus. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/plane-bei-bus-maan.mp3) |
+| 45 | 巴士比港鐵快 | baa1 si2 bei2 gong2 tit3 faai3 | The bus is faster than the MTR. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bus-bei-metro-faai.mp3) |
+| 46 | 巴士比港鐵慢 | baa1 si2 bei2 gong2 tit3 maan6 | The bus is slower than the MTR. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bus-bei-metro-maan.mp3) |
+| 47 | 的士比電車快 | dik1 si2 bei2 din6 ce1 faai3 | The taxi is faster than the tram. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/taxi-bei-tram-faai.mp3) |
+| 48 | 的士比電車慢 | dik1 si2 bei2 din6 ce1 maan6 | The taxi is slower than the tram. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/taxi-bei-tram-maan.mp3) |
+| 49 | 港鐵比飛機快 | gong2 tit3 bei2 fei1 gei1 faai3 | The MTR is faster than the plane. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/metro-bei-plane-faai.mp3) |
+| 50 | 港鐵比飛機慢 | gong2 tit3 bei2 fei1 gei1 maan6 | The MTR is slower than the plane. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/metro-bei-plane-maan.mp3) |
+| 51 | 小巴比電車快 | siu2 baa1 bei2 din6 ce1 faai3 | The minibus is faster than the tram. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/minibus-bei-tram-faai.mp3) |
+| 52 | 小巴比電車慢 | siu2 baa1 bei2 din6 ce1 maan6 | The minibus is slower than the tram. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/minibus-bei-tram-maan.mp3) |
+| 53 | 哥哥比我高 | go4 go1 bei2 ngo5 gou1 | My older brother is taller than me. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/elder-brother-bei-ngo-gou.mp3) |
+| 54 | 哥哥比我矮 | go4 go1 bei2 ngo5 ai2 | My older brother is shorter than me. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/elder-brother-bei-ngo-ai.mp3) |
+| 55 | 媽媽比爸爸高 | maa4 maa1 bei2 baa4 baa1 gou1 | My mum is taller than my dad. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/mum-bei-dad-gou.mp3) |
+| 56 | 媽媽比爸爸矮 | maa4 maa1 bei2 baa4 baa1 ai2 | My mum is shorter than my dad. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/mum-bei-dad-ai.mp3) |
+| 57 | 我比細妹高 | ngo5 bei2 sai3 mui2 gou1 | I am taller than my younger sister. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/ngo-bei-younger-sister-gou.mp3) |
+| 58 | 我比細妹矮 | ngo5 bei2 sai3 mui2 ai2 | I am shorter than my younger sister. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/ngo-bei-younger-sister-ai.mp3) |
+| 59 | 家姐比我大 | gaa1 ze1 bei2 ngo5 daai6 | My older sister is older than me. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/elder-sister-bei-ngo-daai.mp3) |
+| 60 | 家姐比我細 | gaa1 ze1 bei2 ngo5 sai3 | My older sister is younger than me. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/elder-sister-bei-ngo-sai.mp3) |
+| 61 | 細佬比我大 | sai3 lou2 bei2 ngo5 daai6 | My younger brother is older than me. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/younger-brother-bei-ngo-daai.mp3) |
+| 62 | 細佬比我細 | sai3 lou2 bei2 ngo5 sai3 | My younger brother is younger than me. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/younger-brother-bei-ngo-sai.mp3) |
+| 63 | 爸爸比媽媽大 | baa4 baa1 bei2 maa4 maa1 daai6 | My dad is older than my mum. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/dad-bei-mum-daai.mp3) |
+| 64 | 爸爸比媽媽細 | baa4 baa1 bei2 maa4 maa1 sai3 | My dad is younger than my mum. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/dad-bei-mum-sai.mp3) |
+| 65 | 西瓜貴過蘋果 | sai1 gwaa1 gwai3 gwo3 ping4 gwo2 | The watermelon is more expensive than the apple. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/watermelon-gwai-gwo-apple.mp3) |
+| 66 | 港鐵快過巴士 | gong2 tit3 faai3 gwo3 baa1 si2 | The MTR is faster than the bus. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/metro-faai-gwo-bus.mp3) |
+| 67 | 哥哥高過我 | go4 go1 gou1 gwo3 ngo5 | My older brother is taller than me. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/elder-brother-gou-gwo-ngo.mp3) |
+| 68 | 家姐大過我 | gaa1 ze1 daai6 gwo3 ngo5 | My older sister is older than me. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/elder-sister-daai-gwo-ngo.mp3) |
+| 69 | 飛機大過車 | fei1 gei1 daai6 gwo3 ce1 | The plane is bigger than the car. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/plane-daai-gwo-car.mp3) |
+| 70 | 西瓜比蘋果貴好多 | sai1 gwaa1 bei2 ping4 gwo2 gwai3 hou2 do1 | The watermelon is much more expensive than the apple. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/watermelon-bei-apple-gwai-hou-do.mp3) |
+| 71 | 蛋糕比花貴少少 | daan6 gou1 bei2 faa1 gwai3 siu2 siu2 | The cake is a little more expensive than the flower. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/cake-bei-flower-gwai-siu-siu.mp3) |
+| 72 | 港鐵快過巴士好多 | gong2 tit3 faai3 gwo3 baa1 si2 hou2 do1 | The MTR is much faster than the bus. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/metro-faai-gwo-bus-hou-do.mp3) |
+| 73 | 家姐比我大三歲 | gaa1 ze1 bei2 ngo5 daai6 saam1 seoi3 | My older sister is three years older than me. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/elder-sister-bei-ngo-daai-y3.mp3) |
+| 74 | 細佬比我細三歲 | sai3 lou2 bei2 ngo5 sai3 saam1 seoi3 | My younger brother is three years younger than me. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/younger-brother-bei-ngo-sai-y3.mp3) |
+| 75 | 哥哥比我大幾多歲呀？ | go4 go1 bei2 ngo5 daai6 gei2 do1 seoi3 aa3 | How much older than you is your older brother? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/elder-brother-bei-ngo-daai-gei-do-seoi-aa.mp3) |
+| 76 | 家姐比我大幾多歲呀？ | gaa1 ze1 bei2 ngo5 daai6 gei2 do1 seoi3 aa3 | How much older than you is your older sister? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/elder-sister-bei-ngo-daai-gei-do-seoi-aa.mp3) |
+| 77 | 細佬比我細幾多歲呀？ | sai3 lou2 bei2 ngo5 sai3 gei2 do1 seoi3 aa3 | How much younger than you is your younger brother? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/younger-brother-bei-ngo-sai-gei-do-seoi-aa.mp3) |
+| 78 | 細妹比我細幾多歲呀？ | sai3 mui2 bei2 ngo5 sai3 gei2 do1 seoi3 aa3 | How much younger than you is your younger sister? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/younger-sister-bei-ngo-sai-gei-do-seoi-aa.mp3) |
+| 79 | 蘋果冇西瓜咁貴 | ping4 gwo2 mou5 sai1 gwaa1 gam3 gwai3 | The apple isn't as expensive as the watermelon. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/apple-mou-watermelon-gam3-gwai.mp3) |
+| 80 | 衫冇鞋咁貴 | saam1 mou5 haai4 gam3 gwai3 | The shirt isn't as expensive as the shoes. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/shirt-mou-shoes-gam3-gwai.mp3) |
+| 81 | 筆冇書咁貴 | bat1 mou5 syu1 gam3 gwai3 | The pen isn't as expensive as the book. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/pen-mou-book-gam3-gwai.mp3) |
+| 82 | 花冇蛋糕咁貴 | faa1 mou5 daan6 gou1 gam3 gwai3 | The flower isn't as expensive as the cake. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/flower-mou-cake-gam3-gwai.mp3) |
+| 83 | 麵包冇魚咁貴 | min6 baau1 mou5 jyu4 gam3 gwai3 | The bread roll isn't as expensive as the fish. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bread-mou-fish-gam3-gwai.mp3) |
+| 84 | 橙冇西瓜咁大 | caang2 mou5 sai1 gwaa1 gam3 daai6 | The orange isn't as big as the watermelon. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/orange-mou-watermelon-gam3-daai.mp3) |
+| 85 | 書冇枱咁大 | syu1 mou5 toi2 gam3 daai6 | The book isn't as big as the table. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/book-mou-table-gam3-daai.mp3) |
+| 86 | 車冇飛機咁大 | ce1 mou5 fei1 gei1 gam3 daai6 | The car isn't as big as the plane. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/car-mou-plane-gam3-daai.mp3) |
+| 87 | 雞蛋冇波咁大 | gai1 daan2 mou5 bo1 gam3 daai6 | The egg isn't as big as the ball. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/egg-mou-ball-gam3-daai.mp3) |
+| 88 | 車冇巴士咁大 | ce1 mou5 baa1 si2 gam3 daai6 | The car isn't as big as the bus. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/car-mou-bus-gam3-daai.mp3) |
+| 89 | 巴士冇飛機咁快 | baa1 si2 mou5 fei1 gei1 gam3 faai3 | The bus isn't as fast as the plane. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bus-mou-plane-gam3-faai.mp3) |
+| 90 | 巴士冇港鐵咁快 | baa1 si2 mou5 gong2 tit3 gam3 faai3 | The bus isn't as fast as the MTR. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bus-mou-metro-gam3-faai.mp3) |
+| 91 | 電車冇的士咁快 | din6 ce1 mou5 dik1 si2 gam3 faai3 | The tram isn't as fast as the taxi. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/tram-mou-taxi-gam3-faai.mp3) |
+| 92 | 港鐵冇飛機咁快 | gong2 tit3 mou5 fei1 gei1 gam3 faai3 | The MTR isn't as fast as the plane. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/metro-mou-plane-gam3-faai.mp3) |
+| 93 | 電車冇小巴咁快 | din6 ce1 mou5 siu2 baa1 gam3 faai3 | The tram isn't as fast as the minibus. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/tram-mou-minibus-gam3-faai.mp3) |
+| 94 | 我冇哥哥咁高 | ngo5 mou5 go4 go1 gam3 gou1 | I'm not as tall as my older brother. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/ngo-mou-elder-brother-gam3-gou.mp3) |
+| 95 | 我同佢一樣高 | ngo5 tung4 keoi5 jat1 joeng6 gou1 | I'm as tall as them. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/ngo-tung-keoi-jat-joeng-gou.mp3) |
+| 96 | 我哋一樣大 | ngo5 dei6 jat1 joeng6 daai6 | We're the same age. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/ngo-dei-jat-joeng-daai.mp3) |
+| 97 | 橙同蘋果差唔多大 | caang2 tung4 ping4 gwo2 caa1 m4 do1 daai6 | Oranges and apples are about the same size. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/orange-tung-apple-caa-m-do-daai.mp3) |
+| 98 | 呢兩個一樣貴 | ni1 loeng5 go3 jat1 joeng6 gwai3 | These two cost the same. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/ni-loeng-go-jat-joeng-gwai.mp3) |
+| 99 | 邊個大啲呀？ | bin1 go3 daai6 di1 aa3 | Which one is bigger? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bin-go-daai-di-aa.mp3) |
+| 100 | 邊個細啲呀？ | bin1 go3 sai3 di1 aa3 | Which one is smaller? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bin-go-sai-di-aa.mp3) |
+| 101 | 邊個高啲呀？ | bin1 go3 gou1 di1 aa3 | Which one is taller? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bin-go-gou-di-aa.mp3) |
+| 102 | 邊個矮啲呀？ | bin1 go3 ai2 di1 aa3 | Which one is shorter? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bin-go-ai-di-aa.mp3) |
+| 103 | 邊個快啲呀？ | bin1 go3 faai3 di1 aa3 | Which one is faster? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bin-go-faai-di-aa.mp3) |
+| 104 | 邊個慢啲呀？ | bin1 go3 maan6 di1 aa3 | Which one is slower? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bin-go-maan-di-aa.mp3) |
+| 105 | 邊個貴啲呀？ | bin1 go3 gwai3 di1 aa3 | Which one is more expensive? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bin-go-gwai-di-aa.mp3) |
+| 106 | 邊個平啲呀？ | bin1 go3 peng4 di1 aa3 | Which one is cheaper? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bin-go-peng-di-aa.mp3) |
+| 107 | 邊個最大呀？ | bin1 go3 zeoi3 daai6 aa3 | Which one is the biggest? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bin-go-zeoi-daai-aa.mp3) |
+| 108 | 邊個最細呀？ | bin1 go3 zeoi3 sai3 aa3 | Which one is the smallest? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bin-go-zeoi-sai-aa.mp3) |
+| 109 | 邊個最高呀？ | bin1 go3 zeoi3 gou1 aa3 | Which one is the tallest? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bin-go-zeoi-gou-aa.mp3) |
+| 110 | 邊個最矮呀？ | bin1 go3 zeoi3 ai2 aa3 | Which one is the shortest? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bin-go-zeoi-ai-aa.mp3) |
+| 111 | 邊個最快呀？ | bin1 go3 zeoi3 faai3 aa3 | Which one is the fastest? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bin-go-zeoi-faai-aa.mp3) |
+| 112 | 邊個最慢呀？ | bin1 go3 zeoi3 maan6 aa3 | Which one is the slowest? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bin-go-zeoi-maan-aa.mp3) |
+| 113 | 邊個最貴呀？ | bin1 go3 zeoi3 gwai3 aa3 | Which one is the most expensive? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bin-go-zeoi-gwai-aa.mp3) |
+| 114 | 邊個最平呀？ | bin1 go3 zeoi3 peng4 aa3 | Which one is the cheapest? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bin-go-zeoi-peng-aa.mp3) |
+| 115 | 西瓜定蘋果貴啲呀？ | sai1 gwaa1 ding6 ping4 gwo2 gwai3 di1 aa3 | Which is more expensive, the watermelon or the apple? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/watermelon-ding-apple-gwai-di-aa.mp3) |
+| 116 | 西瓜貴啲 | sai1 gwaa1 gwai3 di1 | The watermelon is more expensive. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/watermelon-gwai-di.mp3) |
+| 117 | 港鐵定巴士快啲呀？ | gong2 tit3 ding6 baa1 si2 faai3 di1 aa3 | Which is faster, the MTR or the bus? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/metro-ding-bus-faai-di-aa.mp3) |
+| 118 | 港鐵快啲 | gong2 tit3 faai3 di1 | The MTR is faster. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/metro-faai-di.mp3) |
+| 119 | 飛機最快 | fei1 gei1 zeoi3 faai3 | The plane is the fastest. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/plane-zeoi-faai.mp3) |
+| 120 | 哥哥最高 | go4 go1 zeoi3 gou1 | My older brother is the tallest. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/elder-brother-zeoi-gou.mp3) |
+| 121 | 我最鍾意游水 | ngo5 zeoi3 zung1 ji3 jau4 seoi2 | I like swimming best. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/ngo-zeoi-zung-ji-jau4-water.mp3) |
+| 122 | 你最鍾意食乜嘢呀？ | nei5 zeoi3 zung1 ji3 sik6 mat1 je5 aa3 | What do you like to eat best? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/nei-zeoi-zung-ji-sik6-mat-je-aa.mp3) |
+| 123 | 今日比琴日熱 | gam1 jat6 bei2 kam4 jat6 jit6 | Today is hotter than yesterday. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/gam-jat-bei-kam-jat-jit.mp3) |
+| 124 | 今日比琴日凍 | gam1 jat6 bei2 kam4 jat6 dung3 | Today is colder than yesterday. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/gam-jat-bei-kam-jat-dung.mp3) |
+| 125 | 我比你高 | ngo5 bei2 nei5 gou1 | I'm taller than you. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/ngo-bei-nei-gou.mp3) |
+| 126 | 呢個平啲 | ni1 go3 peng4 di1 | This one is cheaper. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/ni-go-peng-di.mp3) |
+| 127 | 啱唔啱呀？ | ngaam1 m4 ngaam1 aa3 | Is that right? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/ngaam-m-ngaam-aa.mp3) |

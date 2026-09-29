@@ -3,7 +3,7 @@
  * 雞 牛 are unit 1's. Run `node tools/draw.mjs` after editing to rewrite
  * img/<id>.svg.
  */
-import { svg, bowl, cup, plane } from '../tools/svg.mjs';
+import { svg, bowl, cup, plane, ball } from '../tools/svg.mjs';
 
 const shadow = (rx = 40, cy = 114) => `<ellipse cx="64" cy="${cy}" rx="${rx}" ry="5" fill="#9fb0bb" opacity=".35"/>`;
 const steam = `<path d="M50 34 c-4 -6 4 -10 0 -16 M64 30 c-4 -6 4 -10 0 -16 M78 34 c-4 -6 4 -10 0 -16" stroke="#9fb0bb" stroke-width="2.5" fill="none" stroke-linecap="round"/>`;
@@ -17,10 +17,7 @@ export default {
 <path d="M68 28 C76 16 92 16 96 22 C88 32 76 32 68 28Z" fill="#5fa33a" stroke="#3f7a22" stroke-width="2" stroke-linejoin="round"/>`),
 
   ball: svg('Ball (a basketball)', `${shadow(32, 116)}
-<circle cx="64" cy="66" r="44" fill="#f08a24" stroke="#8a4a12" stroke-width="3"/>
-<path d="M20 66 H108 M64 22 V110" stroke="#5a2f0c" stroke-width="3"/>
-<path d="M33 35 C48 50 48 82 33 97 M95 35 C80 50 80 82 95 97" stroke="#5a2f0c" stroke-width="3" fill="none"/>
-<ellipse cx="46" cy="42" rx="9" ry="5" fill="#f7b267" opacity=".8" transform="rotate(-35 46 42)"/>`),
+${ball(64, 66, 44)}`),
 
   // 隻
   cat: svg('Cat', `${shadow(36)}

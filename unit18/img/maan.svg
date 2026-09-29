@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A snail, crawling slowly</title>
+<ellipse cx="64" cy="106" rx="44" ry="4" fill="#9fb0bb" opacity=".35"/>
+<path d="M8 104 H40" stroke="#c9d3da" stroke-width="4" stroke-linecap="round"/>
+<path d="M34 104 C34 94 44 92 56 92 H96 C104 92 108 86 106 76 C106 70 110 66 114 70 C118 76 116 90 110 98 C106 104 100 106 92 106 H40 C36 106 34 106 34 104 Z" fill="#e9c28a" stroke="#a8773c" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M108 70 L104 52 M114 70 L118 54" stroke="#a8773c" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="104" cy="51" r="3.5" fill="#3b2f2a"/><circle cx="118" cy="53" r="3.5" fill="#3b2f2a"/>
+<circle cx="66" cy="68" r="28" fill="#c9804a" stroke="#7d4f1e" stroke-width="3"/>
+<path d="M66 68 m0 -6 a6 6 0 1 1 -6 6 a12 12 0 1 1 12 12 a18 18 0 1 1 -18 -18" stroke="#7d4f1e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>

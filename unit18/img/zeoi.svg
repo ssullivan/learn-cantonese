@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A podium, with a gold star over the winner</title>
+<path d="M4 124 H124" stroke="#9fb0bb" stroke-width="3" stroke-linecap="round"/>
+<rect x="8" y="84" width="38" height="38" fill="#c9d3da" stroke="#6f8796" stroke-width="2.5"/>
+<rect x="45" y="60" width="38" height="62" fill="#e0a526" stroke="#9a6c0e" stroke-width="2.5"/>
+<rect x="82" y="96" width="38" height="26" fill="#d89a6a" stroke="#9c6528" stroke-width="2.5"/>
+<path d="M64.0 14.0 L69.3 26.7 L83.0 27.8 L72.6 36.8 L75.8 50.2 L64.0 43.0 L52.2 50.2 L55.4 36.8 L45.0 27.8 L58.7 26.7 Z" fill="#f7d35c" stroke="#c9961a" stroke-width="2" stroke-linejoin="round"/>
+</svg>
