@@ -17,7 +17,7 @@ shared/                  used by every page; each file's header comment document
   core.js                Canto.*: helpers every script uses (zh, tagZh, jyutping, tones, toneChart, pick, confusable, play, store, picButton, speech)
   audio.js               Speak.play(src|[src], text): MP3s with zh-HK speechSynthesis fallback
   learn.css, learn.js    learn-page engine (Learn.init, word cards, listen quiz)
-  game.css, game.js      game engine (Game.init: levels, rounds, timer, score, stars, unlocks, ctx.after for practice after answering; Game.choose, Game.answerText for answer buttons; Game.chart, Game.mark for ✓ / ✗ charts)
+  game.css, game.js      game engine (Game.init: levels, rounds, timer, score, stars, unlocks, ctx.after for practice after answering; Game.celebrate: fireworks for a first perfect level, bauhinia petals after; Game.choose, Game.answerText for answer buttons; Game.chart, Game.mark for ✓ / ✗ charts)
   tones.js               Tone Detective, usable by any unit (Tones.init)
   tiles.js               word-tile sentence building round for Game.init, usable by any unit (Tiles.round; `say: true` then practises saying it, as unit 7's Build & Say does)
   measures.js            "which measure word?" round for Game.init (一籠蝦餃, 一隻貓, or with an owner 我隻貓), usable by any unit (Measures.round)

@@ -38,15 +38,21 @@
  *                sheet. label names it for screen readers
  *   Game.mark(yes)           HTML for a ✓ or ✗ badge (.mark), to put on a
  *                .chart-item or a .pic-grid.pics answer
+ *   Game.celebrate(kind)     'fireworks' or 'petals' (bauhinia, the site's
+ *                flower) over the page for a few seconds, on a canvas
+ *                (.celebrate) that ignores taps; nothing if the reader
+ *                prefers reduced motion. Returns a stop function
  *
  * Scoring: a right answer is worth 100, plus up to 50 for speed on timed
  * levels, plus 10 per answer in the current streak (max +50).
  * Stars: 1 at 50% right, 2 at 80%, 3 for all right. A level unlocks when
  * the one before it has a star. Best score and stars per level are saved.
+ * A perfect level celebrates: fireworks the first time, petals after.
  */
 (function () {
   const { el: $ } = Canto;
   const AUTO_NEXT_MS = 1200;
+  let party = null;  // stops the celebration on screen
 
   const starsFor = (right, total) => right === total ? 3 : right >= total * 0.8 ? 2 : right >= total * 0.5 ? 1 : 0;
   const starText = n => '★'.repeat(n) + '☆'.repeat(3 - n);
@@ -67,6 +73,7 @@
 
     function menu() {
       Speak.stop();
+      party?.();
       const list = $('div', 'level-list');
       levels.forEach((lv, i) => {
         const best = saved.best[lv.id];
@@ -87,6 +94,7 @@
     }
 
     function play(li) {
+      party?.();
       const level = levels[li];
       let n = 0, score = 0, right = 0, streak = 0;
       let timer = null;
@@ -197,8 +205,8 @@
           saved.best[level.id] = { score: Math.max(score, prev?.score ?? 0), stars: Math.max(stars, prev?.stars ?? 0) };
           store.set(saved);
         }
-        const box = $('div', 'game-end');
-        box.innerHTML = `<p class="stars big">${starText(stars)}</p>
+        const box = $('div', 'game-end' + (stars === 3 ? ' perfect' : ''));
+        box.innerHTML = `<p class="stars big">${[...starText(stars)].map((s, i) => `<span style="--i: ${i}">${s}</span>`).join('')}</p>
           <p class="end-score">${score}</p>
           <p>${right} of ${level.rounds} right${isBest && score > 0 ? ' · <strong>New best!</strong>' : ''}</p>
           <p>${stars === 3 ? '好叻！ Perfect!' : stars ? '做得好！ Well done!' : 'Get half right to earn a star and unlock the next level.'}</p>`;
@@ -208,12 +216,128 @@
         actions.append(button('All levels', '', menu));
         box.append(actions);
         root.replaceChildren(box);
+        if (stars === 3) party = celebrate(prev?.stars === 3 ? 'petals' : 'fireworks');
       }
 
       next();
     }
 
     menu();
+  }
+
+  // Celebrations are drawn frame by frame: each kind is (g, W, H, colours)
+  // → draw(t), t in seconds, which returns false when it has finished.
+  const rand = (a, b) => a + Math.random() * (b - a);
+
+  // Shells rise from the bottom and burst into streaks that slow, fall and
+  // fade, in the theme's colours and the bauhinia's.
+  function fireworks(g, W, H, colours) {
+    const RISE = 0.6, LIFE = 1.4, DRAG = 2.2;
+    const shells = Array.from({ length: 7 }, (_, i) => ({
+      at: i * 0.32, x: rand(0.15, 0.85) * W, top: rand(0.12, 0.42) * H, colour: colours[i % colours.length],
+      sparks: Array.from({ length: 72 }, (_, k) => {
+        const a = (k / 36) * Math.PI + rand(-0.08, 0.08);
+        const v = (k % 2 ? rand(0.35, 0.5) : rand(0.75, 1)) * Math.min(W, H) * 0.5;
+        return { vx: Math.cos(a) * v, vy: Math.sin(a) * v };
+      }),
+    }));
+    const at = (s, p, e) => {
+      const d = (1 - Math.exp(-DRAG * e)) / DRAG;
+      return [s.x + p.vx * d, s.top + p.vy * d + 70 * e * e];
+    };
+    g.lineCap = 'round';
+    return t => {
+      let busy = false;
+      for (const s of shells) {
+        const u = t - s.at;
+        if (u > RISE + LIFE) continue;
+        busy = true;
+        if (u < 0) continue;
+        g.strokeStyle = s.colour;
+        if (u < RISE) {
+          const y = H - (H - s.top) * (1 - (1 - u / RISE) ** 2);
+          g.globalAlpha = 1;
+          g.lineWidth = 3;
+          g.beginPath(); g.moveTo(s.x, y); g.lineTo(s.x, y + 16); g.stroke();
+          continue;
+        }
+        const e = u - RISE;
+        if (e < 0.15) {
+          g.globalAlpha = 1 - e / 0.15;
+          g.fillStyle = '#fff6d8';
+          g.beginPath(); g.arc(s.x, s.top, 6 + 60 * e, 0, 2 * Math.PI); g.fill();
+        }
+        g.globalAlpha = 1 - (e / LIFE) ** 2;
+        g.lineWidth = 3.5 - 2 * e / LIFE;
+        g.beginPath();
+        for (const p of s.sparks) {
+          g.moveTo(...at(s, p, Math.max(0, e - 0.09)));
+          g.lineTo(...at(s, p, e));
+        }
+        g.stroke();
+      }
+      return busy;
+    };
+  }
+
+  // Bauhinia petals (and a few whole flowers) drift down, fluttering, as
+  // on favicon.svg.
+  function petals(g, W, H) {
+    const petal = new Path2D('M1 -3 C-6 -8 -10 -20 -7 -27 C-3 -33 8 -32 10 -24 C11 -15 6 -7 1 -3 Z');
+    const vein = new Path2D('M1 -6 C1 -13 1 -20 3 -26');
+    const END = 5, FADE = 0.8;
+    const fall = Array.from({ length: Math.round(Math.min(44, 12 + W / 30)) }, () => {
+      const flower = Math.random() < 0.15;
+      return { x: rand(0, W), y: rand(-0.6 * H, -40), v: rand(0.22, 0.36) * H, sway: rand(15, 45), f: rand(1.2, 2.4), ph: rand(0, 7),
+        turn: rand(0, 7), spin: rand(-2, 2), size: flower ? rand(0.5, 0.7) : rand(0.6, 1.1), flower };
+    });
+    g.lineJoin = g.lineCap = 'round';
+    return t => {
+      if (t > END) return false;
+      g.globalAlpha = Math.min(1, (END - t) / FADE);
+      for (const p of fall) {
+        const y = p.y + p.v * t;
+        if (y > H + 40) continue;
+        g.save();
+        g.translate(p.x + p.sway * Math.sin(p.f * t + p.ph), y);
+        g.rotate(p.turn + p.spin * t);
+        g.scale(p.size, p.size * (0.55 + 0.45 * Math.abs(Math.cos(p.f * t + p.ph))));
+        for (let i = 0; i < (p.flower ? 5 : 1); i++) {
+          g.rotate((2 * Math.PI) / 5);
+          g.fillStyle = '#c2185b'; g.fill(petal);
+          g.lineWidth = 1.6; g.strokeStyle = '#6e0d35'; g.stroke(petal);
+          g.strokeStyle = '#f8bbd0'; g.stroke(vein);
+        }
+        if (p.flower) { g.fillStyle = '#f2c94c'; g.beginPath(); g.arc(0, 0, 3.5, 0, 2 * Math.PI); g.fill(); }
+        g.restore();
+      }
+      return true;
+    };
+  }
+
+  function celebrate(kind) {
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return () => {};
+    const canvas = $('canvas', 'celebrate');
+    canvas.setAttribute('aria-hidden', 'true');
+    document.body.append(canvas);
+    const W = innerWidth, H = innerHeight, dpr = devicePixelRatio || 1;
+    canvas.width = W * dpr;
+    canvas.height = H * dpr;
+    const g = canvas.getContext('2d');
+    g.scale(dpr, dpr);
+    const css = getComputedStyle(document.documentElement);
+    const colours = ['--accent', '--gold', '--jade'].map(v => css.getPropertyValue(v).trim()).concat('#c2185b');
+    const draw = (kind === 'petals' ? petals : fireworks)(g, W, H, colours);
+    const t0 = performance.now();
+    let raf = 0;
+    const stop = () => { cancelAnimationFrame(raf); canvas.remove(); };
+    const frame = now => {
+      g.clearRect(0, 0, W, H);
+      if (draw((now - t0) / 1000)) raf = requestAnimationFrame(frame);
+      else stop();
+    };
+    raf = requestAnimationFrame(frame);
+    return stop;
   }
 
   function choose(ctx, answer, options, label, gridCls = 'choice-grid') {
@@ -244,5 +368,5 @@
     return box;
   }
 
-  window.Game = { init, choose, answerText, chart, mark };
+  window.Game = { init, choose, answerText, chart, mark, celebrate };
 })();
