@@ -21,7 +21,8 @@ The course has 20 units, each building on the ones before (the roadmap is in CLA
 
 ### Daily life
 - **Unit 7 · 點心 Dim Sum**: classic dishes with pictures and audio, and phrases for ordering at yum cha.
-  - *Trolley Rush*: hear customers' orders (唔該，一籠蝦餃！) and serve the right dishes; learn 一籠 vs 一碟.
+  - *Trolley Rush*: hear customers' orders (唔該，一籠蝦餃！) and serve the right dishes; learn 一籠, 一碟 and 一碗.
+  - *Build & Say*: build an order (我要三籠蝦餃) from word tiles, then say it and compare your pitch curve with the model's.
 - **Unit 8 · 茶餐廳 Cha Chaan Teng**: 奶茶, 鴛鴦, 菠蘿油 and 餐蛋麵 at a Hong Kong café, ordered your way: 凍 or 熱, 走甜, 少冰.
   - *Order Up*: hear what the customer calls and fill in the order ticket.
 - **Unit 9 · 時間 Time & Dates**: 點 and 半, minutes in 個字 and 分, parts of the day, 星期, 月 and 號, 琴日 / 今日 / 聽日, and time words before the verb.

@@ -73,4 +73,21 @@ const allPrices = new Map([...v6.cash, ...v6.prices].map(p => [p.n, p]));
 const priceless = v6.things.filter(t => !allPrices.has(t.price)).map(t => t.id);
 ok('every unit 6 thing\'s price has an entry', !priceless.length, priceless.join(' '));
 ok('unit 6 coins have pictures', v6.cash.every(c => c.img !== false && c.cash));
+
+// Unit 7's orders (Build & Say) are built from borrowed words: [唔該] 我要 +
+// number + measure + dish, the number said as Canto.number says it before
+// a measure (兩籠, never 二籠), with 二 as a wrong tile where 兩 is right.
+vm.runInContext(readFileSync(join(ROOT, 'shared/numbers.js'), 'utf8'), sb);
+const byId7 = Object.fromEntries(entries(v7).map(e => [e.id, e]));
+const orders = entries(v7).filter(e => e.step);
+const COUNT = { one: 1, two: 2, three: 3, four: 4, five: 5 };
+const wrongOrders = orders.filter(o => {
+  const n = COUNT[/like (\w+) order/.exec(o.english)?.[1]];
+  const [measure, dish] = o.words.slice(-2).map(id => byId7[id]);
+  const please = o.step === 'please';
+  return o.words.map(id => byId7[id].hanzi).join('') !== `${please ? '唔該' : ''}我要${Canto.number(n, { measure }).hanzi}${dish.hanzi}`
+    || (n === 2) !== o.decoys.includes('n2') || please !== o.english.startsWith('Excuse me!');
+}).map(o => o.id);
+ok('unit 7 orders say their number the way Canto.number does', orders.length === 3 * v7.items.length && !wrongOrders.length,
+  `${orders.length} orders; wrong: ${wrongOrders.join(' ')}`);
 process.exit(fail ? 1 : 0);

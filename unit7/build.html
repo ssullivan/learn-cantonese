@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<title>Build &amp; Say · Dim Sum</title>
+<link rel="stylesheet" href="../shared/theme.css?v=1a4ed1c2">
+<link rel="stylesheet" href="../shared/game.css?v=aa660769">
+<link rel="stylesheet" href="../shared/sayit.css?v=6a2b5e5a">
+</head>
+<body>
+<main class="page">
+  <header class="page-header">
+    <a class="back" href="../">← Unit 7</a>
+    <p class="eyebrow">Unit 7 · Game</p>
+    <h1><span class="hanzi" lang="zh-HK">落單</span>Build &amp; Say</h1>
+    <p class="lede">Put an order together from word tiles, then say it yourself and compare your tones with a native speaker's.</p>
+  </header>
+  <div id="game"></div>
+</main>
+<script src="../shared/core.js?v=087a6643"></script>
+<script src="../shared/audio.js?v=f296d05e"></script>
+<script src="../shared/game.js?v=9abf31e5"></script>
+<script src="../shared/tiles.js?v=79570959"></script>
+<script src="../shared/pitch.js?v=e95f83fc"></script>
+<script src="../shared/sayit.js?v=a71e7484"></script>
+<script src="../shared/numbers.js?v=1903e834"></script>
+<script src="../shared/units.js?v=f456af20"></script>
+<script src="../unit1/vocab.js?v=dd7808ee"></script>
+<script src="../unit2/vocab.js?v=5242e509"></script>
+<script src="../unit3/vocab.js?v=2f03c48d"></script>
+<script src="../unit4/vocab.js?v=54f5e120"></script>
+<script src="../unit5/vocab.js?v=c7ef5f1f"></script>
+<script src="../unit6/vocab.js?v=438f8da1"></script>
+<script src="vocab.js?v=6938209d"></script>
+<script>
+  const V = window.VOCAB;
+  const { zh } = Canto;
+  const step = s => Canto.entries(V).filter(e => e.step === s);
+  const build = (s, extra) => Tiles.round({ pool: step(s), vocab: V, decoys: V.measures.map(m => m.id), extra, say: true });
+  Game.init({
+    root: document.getElementById('game'),
+    key: 'u7-build',
+    intro: `<strong>How to play:</strong> read the order, tap the tiles to build it in Cantonese, then Check.
+      Then hear it, press <strong>● Record</strong>, say it yourself, and compare the pitch of your voice with the model's:
+      tones are pitch shapes, so match the <em>shape</em> of the line. Only building the order is scored. Recordings stay on your device.
+      Word order: ${zh('我要', 'ngo5 jiu3')} + number + measure + dish.`,
+    levels: [
+      { id: 'one', name: 'One of each', blurb: '我要一 + measure + dish. Is it 籠, 碟 or 碗?', rounds: 6, time: 0, round: build('one', 2) },
+      { id: 'count', name: 'How many?', blurb: 'Two to five. Watch out: two is 兩 before a measure word.', rounds: 6, time: 0, round: build('count', 2) },
+      { id: 'please', name: '唔該！', blurb: 'Get the staff\'s attention first. 唔該 or 多謝?', rounds: 6, time: 0, round: build('please', 3) },
+    ],
+  });
+</script>
+</body>
+</html>

@@ -3,7 +3,9 @@
  *
  * .say-chips > .say-chip (word picker; .got, [aria-current]), .say-card,
  * .say-word, .say-actions, .btn.rec(.recording), .pitch-box > .pitch-chart
- * (polylines .model and .mine), .pitch-legend, .say-rate, .say-nav.
+ * (polylines .model and .mine), .pitch-legend, .say-rate, .say-nav;
+ * .say-practice (SayIt.practice: .say-actions and .pitch-box), which a
+ * game shows under the answer.
  */
 
 .say-progress { margin: 12px 0 8px; color: var(--ink-soft); font-weight: 600; }
@@ -43,6 +45,7 @@
 .btn.good { border-color: var(--good); color: var(--good); }
 
 .pitch-box { margin-top: 14px; }
+.game-feedback .say-practice { margin-bottom: 14px; }
 .pitch-chart {
   display: block;
   width: 100%;

@@ -16,10 +16,14 @@
  *                  ctx.reveal() to highlight the right answer; it runs
  *                  however the round ends (incl. time-outs). May return a Promise
  *                  (e.g. from ctx.play); the timer starts when it resolves.
+ *                  To keep something to do after answering, set ctx.after
+ *                  (e.g. SayIt.practice's { el, stop }): el shows under
+ *                  the answer, the round waits for Next instead of moving
+ *                  on by itself, and stop() runs when it is left.
  *     }],
  *   })
  *
- * ctx: { level, done(correct), answer, reveal, play(entries) }
+ * ctx: { level, done(correct), answer, reveal, after, play(entries) }
  *
  * Helpers for rounds:
  *   Game.choose(ctx, answer, options, label, gridCls = 'choice-grid')
@@ -87,10 +91,12 @@
       let n = 0, score = 0, right = 0, streak = 0;
       let timer = null;
       let alive = true;
+      let current = null;  // the round's ctx
+      const leave = () => current?.after?.stop?.();
 
       const hud = $('div', 'hud');
       const pills = $('div', 'hud-pills');
-      const quit = button('✕ Levels', 'small', () => { alive = false; stopTimer(); menu(); });
+      const quit = button('✕ Levels', 'small', () => { alive = false; stopTimer(); leave(); menu(); });
       hud.append(pills, quit);
       const bar = $('div', 'timer');
       const fill = $('div', 'timer-fill');
@@ -131,6 +137,7 @@
       }
 
       function next() {
+        leave();
         if (n >= level.rounds) return end();
         paintHud();
         fb.replaceChildren();
@@ -139,10 +146,11 @@
         fill.style.transform = 'scaleX(1)';
         fill.classList.remove('low');
 
-        const ctx = {
+        const ctx = current = {
           level,
           answer: '',
           reveal: null,
+          after: null,
           finished: false,
           play: Canto.play,
           done(correct, timedOut = false) {
@@ -166,8 +174,9 @@
             fb.className = 'game-feedback feedback ' + (correct ? 'good' : 'bad');
             fb.innerHTML = `<strong>${correct ? `好！ +${gained}` : timedOut ? 'Too slow!' : 'Not quite.'}</strong> ${ctx.answer}`;
             const go = button(n < level.rounds ? 'Next →' : 'See score', 'primary', next);
+            if (ctx.after) fb.append(ctx.after.el);
             fb.append(go);
-            if (correct) {
+            if (correct && !ctx.after) {
               const auto = setTimeout(next, AUTO_NEXT_MS);
               go.addEventListener('click', () => clearTimeout(auto), { once: true });
               quit.addEventListener('click', () => clearTimeout(auto), { once: true });

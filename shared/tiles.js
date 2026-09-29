@@ -1,14 +1,20 @@
 /*
  * tiles.js — a game.js round where you build a sentence from word tiles.
- * Any unit can use it. Needs core.js, audio.js, game.js. Styles: game.css
- * (.tile-line, .tile-bank, .tile).
+ * Any unit can use it. Needs core.js, audio.js, game.js; with `say`, also
+ * pitch.js and sayit.js. Styles: game.css (.tile-line, .tile-bank, .tile),
+ * and sayit.css with `say`.
  *
- *   Tiles.round({ pool, vocab, decoys?, extra? })   a round for Game.init
+ *   Tiles.round({ pool, vocab, decoys?, extra?, say? })   a round for Game.init
  *     pool     sentences to build: entries with `words`, the ids of the
- *              vocab entries they are made of, in order
+ *              vocab entries they are made of, in order, and optionally
+ *              `decoys`, wrong tiles always shown with that sentence (二
+ *              where it needs 兩)
  *     vocab    the unit's vocab, to look the word ids up in
  *     decoys   ids of words to add as wrong tiles (those already in the
  *              sentence are skipped); extra: how many, default 2
+ *     say      true: after answering, practise saying the sentence
+ *              (SayIt.practice: record yourself, compare pitch) before
+ *              moving on. It doesn't change the score
  *
  * The round shows the English; tap tiles to put them in order (tap a
  * placed tile to take it back), then Check. The same word twice (係唔係)
@@ -19,12 +25,15 @@
 (function () {
   const { el: $, esc, zh, shuffle, pick } = Canto;
 
-  function round({ pool, vocab, decoys = [], extra = 2 }) {
+  function round({ pool, vocab, decoys = [], extra = 2, say = false }) {
     const byId = Object.fromEntries(Canto.entries(vocab).map(e => [e.id, e]));
     return (stage, ctx) => {
       const [e] = pick(pool, 1);
+      if (say) ctx.after = SayIt.practice(e);
       const words = e.words.map(id => byId[id]);
-      const wrong = pick(decoys.filter(id => !e.words.includes(id)), extra).map(id => byId[id]);
+      const own = (e.decoys ?? []).filter(id => !e.words.includes(id));
+      const wrong = [...own, ...pick(decoys.filter(id => !e.words.includes(id) && !own.includes(id)), Math.max(0, extra - own.length))]
+        .map(id => byId[id]);
 
       const line = $('div', 'tile-line');
       const bank = $('div', 'tile-bank');

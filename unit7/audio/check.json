@@ -20,6 +20,171 @@
   ],
   "audio": "2ab390ab45ad"
  },
+ "m-goi-ngo-jiu-loeng-dip-egg-tart": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.07)"
+  ],
+  "audio": "8d629009e4bf"
+ },
+ "m-goi-ngo-jiu-loeng-dip-fried-rice": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.05); 我 tone 5 sounds like 6 (p 0.36)"
+  ],
+  "audio": "623d3f4811b1"
+ },
+ "m-goi-ngo-jiu-loeng-dip-lo-mai-gai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.12)"
+  ],
+  "audio": "77a1200e7fcb"
+ },
+ "m-goi-ngo-jiu-loeng-dip-spring-roll": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.05)"
+  ],
+  "audio": "c3d28c2fc9f4"
+ },
+ "m-goi-ngo-jiu-loeng-lung-char-siu-bao": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.33)"
+  ],
+  "audio": "d07f8b4446f2"
+ },
+ "m-goi-ngo-jiu-n3-dip-cheung-fun": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 我 tone 5 sounds like 6 (p 0.01)",
+   "tone doubtful: 要 tone 3 sounds like 5 (p 0.08)"
+  ],
+  "audio": "c5f9c7ab0d14"
+ },
+ "m-goi-ngo-jiu-n3-dip-seafood-noodles": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 我 tone 5 sounds like 6 (p 0.02)",
+   "tone doubtful: 要 tone 3 sounds like 5 (p 0.23)"
+  ],
+  "audio": "7c54cd2e9af7"
+ },
+ "m-goi-ngo-jiu-n3-dip-turnip-cake": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 4 (p 0.42)"
+  ],
+  "audio": "bee30a464c3b"
+ },
+ "m-goi-ngo-jiu-n3-lung-lai-wong-bao": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 我 tone 5 sounds like 6 (p 0.01)",
+   "tone doubtful: 唔 tone 4 sounds like 4 (p 0.45); 要 tone 3 sounds like 5 (p 0.19)"
+  ],
+  "audio": "592b74346481"
+ },
+ "m-goi-ngo-jiu-n3-lung-xiao-long-bao": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 包 tone 1 sounds like 3 (p 0.00)"
+  ],
+  "audio": "ccbec63de51a"
+ },
+ "m-goi-ngo-jiu-n4-dip-beef-ho-fun": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 炒 tone 2 sounds like 6 (p 0.03)",
+   "tone doubtful: 唔 tone 4 sounds like 6 (p 0.14); 我 tone 5 sounds like 6 (p 0.35)"
+  ],
+  "audio": "3336fe16c1ef"
+ },
+ "m-goi-ngo-jiu-n4-dip-beef-tripe": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.09); 我 tone 5 sounds like 5 (p 0.42); 碟 tone 6 sounds like 4 (p 0.41)"
+  ],
+  "audio": "454c1823fbf4"
+ },
+ "m-goi-ngo-jiu-n4-dip-chicken-feet": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.29)"
+  ],
+  "audio": "2ed997af392d"
+ },
+ "m-goi-ngo-jiu-n4-dip-ham-sui-gok": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.12)"
+  ],
+  "audio": "03b466b307af"
+ },
+ "m-goi-ngo-jiu-n4-lung-har-gow": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 4 (p 0.47)"
+  ],
+  "audio": "d80f6d444f9a"
+ },
+ "m-goi-ngo-jiu-n4-lung-ma-lai-go": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 4 (p 0.44); 馬 tone 5 sounds like 2 (p 0.13)"
+  ],
+  "audio": "4faeb88bbda4"
+ },
+ "m-goi-ngo-jiu-n5-dip-char-siu-sou": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 唔該我要用碟叉燒酥 m goi ngo jiu jung dip caa siu sou",
+   "tone doubtful: 五 tone 5 sounds like 3 (p 0.04)"
+  ],
+  "audio": "f53e591e603e"
+ },
+ "m-goi-ngo-jiu-n5-dip-pineapple-bun": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 唔 tone 4 sounds like 6 (p 0.01); 包 tone 1 sounds like 3 (p 0.03)",
+   "speech-to-text heard 唔該我要碟菠蘿包 m goi ngo jiu dip bo lo baau",
+   "tone doubtful: 五 tone 5 sounds like 3 (p 0.22)"
+  ],
+  "audio": "d111dc44a4f3"
+ },
+ "m-goi-ngo-jiu-n5-dip-spare-ribs": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 唔該我要碟排骨 m goi ngo jiu dip paai gwat",
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.04); 五 tone 5 sounds like 3 (p 0.19)"
+  ],
+  "audio": "bb9e0033a904"
+ },
+ "m-goi-ngo-jiu-n5-dip-zaa-loeng": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 唔該我要用碟炸糧 m goi ngo jiu jung dip zaa loeng",
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.10); 要 tone 3 sounds like 6 (p 0.39)"
+  ],
+  "audio": "62f773cf1e62"
+ },
+ "m-goi-ngo-jiu-n5-lung-siu-mai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 唔該我要龍燒賣 m goi ngo jiu lung siu maai",
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.28); 五 tone 5 sounds like 3 (p 0.31)"
+  ],
+  "audio": "c460f48e6640"
+ },
+ "m-goi-ngo-jiu-n5-wun-congee": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 唔該我要碗粥 m goi ngo jiu wun zuk",
+   "tone doubtful: 五 tone 5 sounds like 3 (p 0.09)"
+  ],
+  "audio": "5eddd65b1fa0"
+ },
  "ma-lai-go": {
   "verdict": "LISTEN",
   "notes": [
@@ -33,6 +198,239 @@
    "tone doubtful: 唔 tone 4 sounds like 6 (p 0.21)"
   ],
   "audio": "be2314130f81"
+ },
+ "ngo-jiu-loeng-dip-ham-sui-gok": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 角 tone 3 sounds like 6 (p 0.46)"
+  ],
+  "audio": "a2a4c5c4e259"
+ },
+ "ngo-jiu-loeng-lung-ma-lai-go": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 馬 tone 5 sounds like 2 (p 0.10)"
+  ],
+  "audio": "cb78c7c6d4d3"
+ },
+ "ngo-jiu-n1-dip-beef-ho-fun": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 要 tone 3 sounds like 5 (p 0.03)",
+   "tone doubtful: 一 tone 1 sounds like 6 (p 0.21)"
+  ],
+  "audio": "31184e1df80a"
+ },
+ "ngo-jiu-n1-dip-beef-tripe": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 要 tone 3 sounds like 2 (p 0.03)",
+   "tone doubtful: 我 tone 5 sounds like 6 (p 0.36); 一 tone 1 sounds like 6 (p 0.27)"
+  ],
+  "audio": "1262a1380d5e"
+ },
+ "ngo-jiu-n1-dip-char-siu-sou": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 要 tone 3 sounds like 5 (p 0.08)"
+  ],
+  "audio": "0d4a8c742986"
+ },
+ "ngo-jiu-n1-dip-cheung-fun": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 要 tone 3 sounds like 5 (p 0.02)",
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.40); 一 tone 1 sounds like 6 (p 0.30)"
+  ],
+  "audio": "950d55512f36"
+ },
+ "ngo-jiu-n1-dip-chicken-feet": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 要 tone 3 sounds like 2 (p 0.02)",
+   "tone doubtful: 一 tone 1 sounds like 6 (p 0.25)"
+  ],
+  "audio": "60d937decd3b"
+ },
+ "ngo-jiu-n1-dip-egg-tart": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 要 tone 3 sounds like 5 (p 0.15); 一 tone 1 sounds like 6 (p 0.20)"
+  ],
+  "audio": "c4cf89470702"
+ },
+ "ngo-jiu-n1-dip-fried-rice": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 要 tone 3 sounds like 5 (p 0.03)",
+   "tone doubtful: 一 tone 1 sounds like 6 (p 0.32)"
+  ],
+  "audio": "a4a99819d582"
+ },
+ "ngo-jiu-n1-dip-ham-sui-gok": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 要 tone 3 sounds like 5 (p 0.02)",
+   "tone doubtful: 一 tone 1 sounds like 6 (p 0.25)"
+  ],
+  "audio": "fce0e32be418"
+ },
+ "ngo-jiu-n1-dip-lo-mai-gai": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 要 tone 3 sounds like 5 (p 0.03)",
+   "tone doubtful: 一 tone 1 sounds like 6 (p 0.29)"
+  ],
+  "audio": "b1aa174c22a9"
+ },
+ "ngo-jiu-n1-dip-pineapple-bun": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 6 (p 0.35); 要 tone 3 sounds like 5 (p 0.18); 一 tone 1 sounds like 6 (p 0.14); 包 tone 1 sounds like 3 (p 0.11)"
+  ],
+  "audio": "127710733314"
+ },
+ "ngo-jiu-n1-dip-seafood-noodles": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 4 (p 0.05); 要 tone 3 sounds like 5 (p 0.05); 一 tone 1 sounds like 6 (p 0.24)"
+  ],
+  "audio": "99fd3712d73e"
+ },
+ "ngo-jiu-n1-dip-spare-ribs": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 6 (p 0.45); 要 tone 3 sounds like 5 (p 0.13); 一 tone 1 sounds like 6 (p 0.37)"
+  ],
+  "audio": "b193bd4642c9"
+ },
+ "ngo-jiu-n1-dip-spring-roll": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 要 tone 3 sounds like 5 (p 0.17); 一 tone 1 sounds like 6 (p 0.22)"
+  ],
+  "audio": "80021951e6b0"
+ },
+ "ngo-jiu-n1-dip-turnip-cake": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 要 tone 3 sounds like 5 (p 0.12); 一 tone 1 sounds like 6 (p 0.24)"
+  ],
+  "audio": "c83a30c670ef"
+ },
+ "ngo-jiu-n1-dip-zaa-loeng": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 要 tone 3 sounds like 5 (p 0.03)",
+   "speech-to-text heard 我要一碟炸釀 ngo jiu jat dip zaa joeng",
+   "tone doubtful: 我 tone 5 sounds like 6 (p 0.39); 一 tone 1 sounds like 2 (p 0.13)"
+  ],
+  "audio": "6f6f9751b3cd"
+ },
+ "ngo-jiu-n1-lung-char-siu-bao": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 要 tone 3 sounds like 2 (p 0.10); 一 tone 1 sounds like 6 (p 0.30)"
+  ],
+  "audio": "11cf52a27125"
+ },
+ "ngo-jiu-n1-lung-har-gow": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 要 tone 3 sounds like 5 (p 0.03)",
+   "tone doubtful: 一 tone 1 sounds like 6 (p 0.39)"
+  ],
+  "audio": "8b3a8793327d"
+ },
+ "ngo-jiu-n1-lung-lai-wong-bao": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 要 tone 3 sounds like 2 (p 0.14); 一 tone 1 sounds like 6 (p 0.31)"
+  ],
+  "audio": "e7acff4183c8"
+ },
+ "ngo-jiu-n1-lung-ma-lai-go": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 要 tone 3 sounds like 2 (p 0.22); 一 tone 1 sounds like 6 (p 0.35); 馬 tone 5 sounds like 2 (p 0.40)"
+  ],
+  "audio": "15f8f12554c8"
+ },
+ "ngo-jiu-n1-lung-siu-mai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 要 tone 3 sounds like 5 (p 0.12); 一 tone 1 sounds like 6 (p 0.37)"
+  ],
+  "audio": "cf57515edbad"
+ },
+ "ngo-jiu-n1-lung-xiao-long-bao": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 要 tone 3 sounds like 5 (p 0.08); 一 tone 1 sounds like 6 (p 0.34); 包 tone 1 sounds like 3 (p 0.34)"
+  ],
+  "audio": "678aab4d9746"
+ },
+ "ngo-jiu-n1-wun-congee": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 要 tone 3 sounds like 5 (p 0.07)"
+  ],
+  "audio": "0405aceb5767"
+ },
+ "ngo-jiu-n3-dip-pineapple-bun": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 包 tone 1 sounds like 3 (p 0.02)"
+  ],
+  "audio": "ae9d82b1368f"
+ },
+ "ngo-jiu-n3-dip-zaa-loeng": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 要 tone 3 sounds like 5 (p 0.03)",
+   "speech-to-text heard 我要三碟炸釀 ngo jiu saam dip zaa joeng"
+  ],
+  "audio": "b9cfa23815bb"
+ },
+ "ngo-jiu-n5-dip-cheung-fun": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 我用碟腸粉 ngo jung dip coeng fan",
+   "tone doubtful: 要 tone 3 sounds like 3 (p 0.42); 五 tone 5 sounds like 6 (p 0.31)"
+  ],
+  "audio": "4e90b486dda2"
+ },
+ "ngo-jiu-n5-dip-seafood-noodles": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 我要碟海鮮炒麵 ngo jiu dip hoi sin caau min",
+   "tone doubtful: 五 tone 5 sounds like 5 (p 0.47)"
+  ],
+  "audio": "19a13fbfb6e4"
+ },
+ "ngo-jiu-n5-dip-turnip-cake": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 我要碟蘿蔔糕 ngo jiu dip lo baak gou",
+   "tone doubtful: 五 tone 5 sounds like 6 (p 0.14)"
+  ],
+  "audio": "e5fe7fcd4a3a"
+ },
+ "ngo-jiu-n5-lung-lai-wong-bao": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 五 tone 5 sounds like 3 (p 0.04)",
+   "speech-to-text heard 我要龍流沙包 ngo jiu lung lau saa baau"
+  ],
+  "audio": "bcc8e6905e86"
+ },
+ "ngo-jiu-n5-lung-xiao-long-bao": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 我要龍小龍包 ngo jiu lung siu lung baau",
+   "tone doubtful: 五 tone 5 sounds like 3 (p 0.08)"
+  ],
+  "audio": "d462fce855d0"
  },
  "one-beef-ho-fun": {
   "verdict": "LISTEN",
@@ -75,13 +473,6 @@
    "tone doubtful: 包 tone 1 sounds like 3 (p 0.35)"
   ],
   "audio": "cf4d17be1401"
- },
- "order-har-gow": {
-  "verdict": "LISTEN",
-  "notes": [
-   "tone doubtful: 我 tone 5 sounds like 6 (p 0.38); 要 tone 3 sounds like 5 (p 0.05); 一 tone 1 sounds like 6 (p 0.29)"
-  ],
-  "audio": "68571523ef3d"
  },
  "sweet": {
   "verdict": "LISTEN",

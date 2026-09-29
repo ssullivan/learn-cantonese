@@ -86,8 +86,6 @@ Units.add(7, {
   ],
 
   phrases: [
-    { id: 'order-har-gow', hanzi: '我要一籠蝦餃', jyutping: 'ngo5 jiu3 jat1 lung4 haa1 gaau2', english: 'I\'d like a basket of har gow', img: false,
-      note: '籠 (lung4) is a steamer basket. Swap in any dish.' },
     { id: 'more-water', hanzi: '唔該加水', jyutping: 'm4 goi1 gaa1 seoi2', english: 'more hot water, please', img: false,
       note: 'Or just leave the teapot lid tilted open, and staff will refill it.' },
     { id: 'bill', hanzi: '唔該埋單', jyutping: 'm4 goi1 maai4 daan1', english: 'the bill, please', img: false,
@@ -118,3 +116,33 @@ window.VOCAB.measures.push({ ...Units.word(5, 'wun'), english: 'bowl',
 
 // Borrowed: 唔該 is taught in unit 2; the trolley game says it before every order.
 window.VOCAB.phrases.unshift(Units.word(2, 'm-goi'));
+
+// Derived: orders built from words, for Build & Say (Tiles.round):
+// 我要 + number + measure + dish, for every dish. `step` is the level:
+// "one" (一), "count" (two to five; two is 兩 before a measure, with 二 as
+// a wrong tile), "please" (唔該 first, with 多謝 as a wrong tile). The
+// first, a basket of har gow, is kept with the phrases for the learn page.
+// They are read from their jyutping: audio-check flagged a third fewer
+// clips than reading the characters (tone 5 said like 2 in 我 兩 五).
+(V => {
+  V.orderWords = [Units.word(3, 'ngo'), Units.word(6, 'jiu'), Units.word(2, 'thanks'),
+    Units.word(4, 'loeng'), ...[1, 2, 3, 4, 5].map(n => Units.word(4, `n${n}`))];
+  const say = Units.sentences(V);
+  const NUM = ['', 'one', 'two', 'three', 'four', 'five'];
+  const count = n => n === 2 ? 'loeng' : `n${n}`;
+  const order = (i, n, step) => {
+    const please = step === 'please';
+    const e = say(`${please ? 'm-goi ' : ''}ngo jiu ${count(n)} ${i.measure} ${i.id}`,
+      `${please ? 'Excuse me! ' : ''}I'd like ${NUM[n]} order${n > 1 ? 's' : ''} of ${i.english}`,
+      { step, phoneme: true, decoys: [...(n === 2 ? ['n2'] : []), ...(please ? ['thanks'] : [])] });
+    if (please) e.hanzi = e.hanzi.replace('唔該', '唔該，');
+    return e;
+  };
+  const [first, ...orders] = V.items.flatMap((i, k) => [
+    order(i, 1, 'one'),
+    order(i, 2 + k % 4, 'count'),
+    order(i, 2 + (k + 2) % 4, 'please'),
+  ]);
+  V.phrases.splice(1, 0, { ...first, note: '籠 (lung4) is a steamer basket. Swap in any dish.' });
+  V.orders = orders;
+})(window.VOCAB);
