@@ -10,12 +10,12 @@
  * when? (situations where you'd say it; its picture shows the first).
  *
  * write: the characters this unit teaches to write, stroke by stroke
- * (strokes/, from tools/strokes.mjs). These three are Cantonese-only, so
+ * (strokes/, from tools/strokes.mjs). 冇 咗 哋 are Cantonese-only, so
  * they are composed from parts (tools/strokes-composed.mjs).
  */
 Units.add(2, {
   voice: 'zh-HK-HiuMaanNeural',
-  write: '冇咗哋',
+  write: '你早多冇咗哋',
 
   greetings: [
     { id: 'hello', hanzi: '你好', jyutping: 'nei5 hou2', english: 'hello', img: false, reply: ['hello'],
