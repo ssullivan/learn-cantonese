@@ -1,0 +1,18 @@
+/*
+ * strokes.css — characters drawn by strokes.js (svg.strokes). Load after
+ * theme.css. The size comes from the container: the SVG fills its width.
+ */
+
+.strokes { display: block; width: 100%; height: auto; }
+.strokes .box { fill: none; stroke: var(--line); stroke-width: 12; }
+.strokes .mid { fill: none; stroke: var(--line); stroke-width: 6; stroke-dasharray: 30 24; }
+.strokes .ghost { fill: var(--line); }
+.strokes .ink { fill: var(--ink); }
+.strokes .new { fill: var(--accent); }
+.strokes .num circle { fill: var(--surface); stroke: var(--accent); stroke-width: 8; }
+.strokes .num text {
+  fill: var(--accent);
+  font: 700 60px var(--font);
+  text-anchor: middle;
+  dominant-baseline: central;
+}

@@ -25,6 +25,12 @@
  *   - audio/check.json (audio-check's verdicts) names only vocab entries
  *   - AUDIO-REVIEW.md matches the vocab (else run node tools/review.mjs),
  *     and review/index.html loads every unit's vocab.js
+ *   - characters to write (a unit's `write`; see tools/stroke-data.mjs):
+ *     each is in one of the unit's words and taught by one unit only, has
+ *     a stroke-order record in tools/strokes-hk.json that checked out
+ *     against Hong Kong's standard (or a person confirmed), and an up to
+ *     date strokes/<hex>.json (else run node tools/strokes.mjs); no orphan
+ *     stroke files; review/strokes.html loads every such unit's vocab.js
  *   - every tools/*.test.mjs passes
  *   - no file holds the Azure Speech or MiniMax key (when set on this
  *     machine): keys must never be committed
@@ -35,6 +41,7 @@ import { dirname, join, relative, extname } from 'node:path';
 import vm from 'node:vm';
 import { spawnSync } from 'node:child_process';
 import { ROOT, unitDirs, loadVocab, entries, own, loadArt, secrets } from './site.mjs';
+import { RECORDS, readRecords, recordProblem, drawable, strokeFile, meta } from './stroke-data.mjs';
 const fix = process.argv.includes('--fix');
 const problems = [];
 const bad = (file, msg) => problems.push(`${relative(ROOT, file)}: ${msg}`);
@@ -91,6 +98,12 @@ for (const js of files.filter(f => f.endsWith('.js'))) {
 }
 
 // Unit vocab and assets
+const records = readRecords();
+for (const [char, r] of Object.entries(records)) {
+  const p = recordProblem(char, r);
+  if (p) bad(RECORDS, `${char}: ${p}`);
+}
+const taughtIn = {};
 for (const unit of unitDirs()) {
   const dir = join(ROOT, unit);
   const vocabFile = join(dir, 'vocab.js');
@@ -108,6 +121,25 @@ for (const unit of unitDirs()) {
     if (!own(e, unit)) continue;
     if (!existsSync(join(dir, 'audio', `${e.id}.mp3`))) bad(vocabFile, `${e.id} has no audio (run node tools/tts.mjs ${unit})`);
     if (e.img !== false && !art[e.id]) bad(vocabFile, `${e.id} has no drawing in art.mjs`);
+  }
+  if (vocab.write !== undefined && typeof vocab.write !== 'string') bad(vocabFile, "write must be a string of characters: write: '一二三'");
+  for (const char of typeof vocab.write === 'string' ? vocab.write : '') {
+    if (!/\p{Script=Han}/u.test(char)) { bad(vocabFile, `write: ${char} is not a Chinese character`); continue; }
+    if (!all.some(e => e.hanzi.includes(char))) bad(vocabFile, `write: ${char} is in none of the unit's words`);
+    if (taughtIn[char]) bad(vocabFile, `write: ${char} is already taught in ${taughtIn[char]}`);
+    taughtIn[char] ??= unit;
+    const r = records[char];
+    if (!r) { bad(vocabFile, `write: ${char} has no stroke-order record (run node tools/stroke-check.mjs)`); continue; }
+    if (r.verdict === 'differs') bad(vocabFile, `write: ${char}'s Hong Kong form has ${r.strokes} strokes, the stroke data ${r.mmah}: it can't be taught from this data`);
+    if (r.verdict === 'missing') bad(vocabFile, `write: ${char} can't be checked against Hong Kong's standard (${r.note})`);
+    if (r.verdict === 'look' && !r.confirmed) bad(vocabFile, `write: ${char}'s stroke order needs a person: compare it with EDB's animation (review/strokes.html), then run node tools/stroke-check.mjs --confirm ${char}`);
+    if (!drawable(r)) continue;
+    const file = strokeFile(char);
+    const data = existsSync(file) && JSON.parse(readFileSync(file, 'utf8'));
+    const { strokes, medians, ...rest } = data || {};
+    if (!data || strokes?.length !== r.strokes || medians?.length !== r.strokes || JSON.stringify(rest) !== JSON.stringify(meta(char, r))) {
+      bad(file, `${char}: missing or out of date (run node tools/strokes.mjs)`);
+    }
   }
   const measures = Object.fromEntries((vocab.measures ?? []).map(m => [m.id, m]));
   for (const e of all.filter(e => e.measure)) {
@@ -129,6 +161,20 @@ for (const unit of unitDirs()) {
   const verdicts = join(dir, 'audio', 'check.json');
   if (existsSync(verdicts)) {
     for (const id of Object.keys(JSON.parse(readFileSync(verdicts, 'utf8')))) if (!ids.has(id)) bad(verdicts, `${id} is not in vocab.js (rerun node tools/audio-check.mjs ${unit})`);
+  }
+}
+
+// Stroke files for characters no unit teaches
+for (const f of existsSync(join(ROOT, 'strokes')) ? readdirSync(join(ROOT, 'strokes')) : []) {
+  if (f.endsWith('.json') && !taughtIn[String.fromCodePoint(parseInt(f, 16))]) bad(join(ROOT, 'strokes', f), 'orphan (no unit teaches it: not in any write)');
+}
+
+// The stroke order review page lists every unit that teaches writing
+{
+  const page = join(ROOT, 'review/strokes.html');
+  const html = existsSync(page) ? readFileSync(page, 'utf8') : '';
+  for (const u of new Set(Object.values(taughtIn))) {
+    if (!html.includes(`src="../${u}/vocab.js`)) bad(page, `load ../${u}/vocab.js (it teaches characters to write)`);
   }
 }
 

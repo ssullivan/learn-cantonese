@@ -22,11 +22,18 @@
  *                    repo at $AUDIO_LANG_TOOLS or ~/audio-lang-tools, with
  *                    uv) with `input` as JSON on stdin and the Azure key in
  *                    its environment; returns its JSON output (audio-check.mjs)
+ *   browser()        a headless Chrome from Playwright, installed outside
+ *                    the repo (which has no dependencies) under
+ *                    $PLAYWRIGHT_DIR or ~/.local/share/learning-cantonese:
+ *                    npm install --prefix ~/.local/share/learning-cantonese playwright
+ *                    Uses the system Chrome, else Playwright's own
+ *                    (stroke-check.mjs)
  */
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { homedir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { createRequire } from 'node:module';
 import { spawnSync } from 'node:child_process';
 import vm from 'node:vm';
 
@@ -109,4 +116,17 @@ export function langTools(args, input) {
     process.exit(1);
   }
   return JSON.parse(r.stdout);
+}
+
+export async function browser() {
+  const dir = process.env.PLAYWRIGHT_DIR ?? join(homedir(), '.local/share/learning-cantonese');
+  let path;
+  try { path = createRequire(join(dir, 'package.json')).resolve('playwright'); }
+  catch {
+    console.error(`Playwright not found in ${dir}: npm install --prefix ${dir} playwright (or set PLAYWRIGHT_DIR).`);
+    process.exit(1);
+  }
+  const { chromium } = (await import(pathToFileURL(path))).default;
+  try { return await chromium.launch({ channel: 'chrome' }); }
+  catch { return chromium.launch(); }
 }

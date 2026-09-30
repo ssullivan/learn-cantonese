@@ -10,4 +10,9 @@ You may not copy, modify, redistribute, republish, sell or create derivative wor
 from any part of this repository or website, in whole or in part, without prior
 written permission from the copyright holder.
 
+Exception: the stroke data in strokes/ (the *.json files) is derived from Make Me a
+Hanzi (https://github.com/skishore/makemeahanzi), whose stroke shapes come from
+Arphic Technology's fonts. It is distributed under the Arphic Public License
+(strokes/ARPHICPL.TXT), not the terms above, and each file says how it was changed.
+
 THE WEBSITE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.

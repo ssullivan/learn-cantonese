@@ -56,12 +56,16 @@ The course has 20 units, each building on the ones before (the roadmap is in CLA
 
 **Reviewing the audio:** native speakers can listen to every recording and mark any that sound wrong on the [audio review page](https://ssullivan.github.io/learn-cantonese/review/) (also listed in [AUDIO-REVIEW.md](AUDIO-REVIEW.md)). [AUDIO-CHECKING.md](AUDIO-CHECKING.md) explains how the clips are checked by machine first, the problems we see, and how we fix them.
 
+**Reviewing stroke order:** the characters the site teaches to write follow Hong Kong's standard stroke order (the Education Bureau's 《香港小學學習字詞表》); the [stroke order review page](https://ssullivan.github.io/learn-cantonese/review/strokes.html) shows each one stroke by stroke next to a link to the Bureau's animation.
+
 ## Working on it
 
 ```sh
 node tools/draw.mjs          # unit<N>/art.mjs → img/*.svg
 node tools/tts.mjs           # unit<N>/vocab.js → audio/*.mp3 (needs Azure Speech key)
 node tools/audio-check.mjs unit9   # machine-check clips: which ones need a listen
+node tools/stroke-check.mjs  # check characters' stroke order against Hong Kong's standard (needs Playwright)
+node tools/strokes.mjs       # tools/strokes-hk.json → strokes/*.json
 node tools/check.mjs --fix   # check links/assets, update cache stamps
 python3 -m http.server       # preview at http://localhost:8000
 ```
@@ -70,4 +74,4 @@ See [CLAUDE.md](CLAUDE.md) for conventions.
 
 ## License
 
-Copyright © 2026 Stephen Sullivan. All rights reserved. You may use the site for your own learning; see [LICENSE](LICENSE).
+Copyright © 2026 Stephen Sullivan. All rights reserved. You may use the site for your own learning; see [LICENSE](LICENSE). The stroke data in `strokes/` is derived from [Make Me a Hanzi](https://github.com/skishore/makemeahanzi) and is under the Arphic Public License.

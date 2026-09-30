@@ -10,9 +10,13 @@
  *
  * Numbers are derived with Canto.number (shared/numbers.js), never
  * typed out: see the bottom of this file.
+ *
+ * write: the characters this unit teaches to write, stroke by stroke
+ * (strokes/, from tools/strokes.mjs; see tools/stroke-data.mjs).
  */
 Units.add(4, {
   voice: 'zh-HK-HiuMaanNeural',
+  write: '一二三十',
 
   words: [
     { id: 'baak', hanzi: '百', jyutping: 'baak3', english: 'hundred', img: false },

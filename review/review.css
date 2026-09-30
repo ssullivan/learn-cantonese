@@ -1,6 +1,8 @@
 /*
- * review.css — the audio review page (review/). Load after theme.css.
- * A table per unit; on phones each row stacks into a small card.
+ * review.css — the review pages (review/). Load after theme.css.
+ * Audio review (index.html): a table per unit; on phones each row stacks
+ * into a small card. Stroke order review (strokes.html): a card per
+ * character, at the end of this file.
  */
 
 .btn.small { padding: 6px 12px; font-size: 14px; }
@@ -98,3 +100,16 @@ tr.is-wrong td { background: color-mix(in srgb, var(--bad) 9%, transparent); }
   .review-mark { grid-area: mark; margin-top: 6px; }
   .review-note-cell { grid-area: note; }
 }
+
+/* --- stroke order review (strokes.html; needs shared/strokes.css) */
+.stroke-grid { display: grid; gap: 16px; }
+.stroke-card { padding: 16px; }
+.stroke-head { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start; }
+.stroke-head p { margin: 0 0 6px; }
+.stroke-big { width: 200px; flex: none; }
+.stroke-word { font-size: 20px; }
+.stroke-steps { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.stroke-step { width: 56px; }
+.stroke-flag { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 14px; font-weight: 600; }
+.stroke-flag.ok { background: var(--good); color: var(--bg); }
+.stroke-flag.look { background: var(--gold); color: var(--bg); }
