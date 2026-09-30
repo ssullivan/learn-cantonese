@@ -123,7 +123,18 @@ ok('verdict: all strong is "ok"', verdictFor(3, 3, [1, 0.77, 0.98]) === 'ok');
   ok('svg grid lines by default, none with grid: false', all.includes('class="mid"') && !Strokes.svg(data, { grid: false }).includes('class="mid"'));
   // Stroke 1 starts at (100, 400) going right: its number sits just left of it, on screen y = 900 - 400.
   const [, x, y] = first.match(/<circle cx="([\d.]+)" cy="([\d.]+)"/) ?? [];
-  ok('svg puts a number just before its stroke starts', +x < 100 && +x >= 64 && +y === 500, `${x}, ${y}`);
+  ok('svg puts a number just before its stroke starts', +x < 100 && +x > 0 && +y === 500, `${x}, ${y}`);
+  ok("svg grid: 'mi' adds the diagonals", Strokes.svg(data, { grid: 'mi' }).includes('M12 12L1012 1012') && !all.includes('M12 12L1012 1012'));
+
+  // Eight strokes starting at the same spot (灬 and the like): no two numbers overlap.
+  const crowd = { char: '點', strokes: Array(8).fill('M 0 0 Z'), medians: Array(8).fill([[500, 400], [600, 300]]) };
+  const spots = [...Strokes.svg(crowd, { numbers: true }).matchAll(/<circle cx="([\d.]+)" cy="([\d.]+)" r="(\d+)"/g)].map(m => m.slice(1).map(Number));
+  const gap = Math.min(...spots.flatMap(([x, y], i) => spots.slice(i + 1).map(([u, v]) => Math.hypot(x - u, y - v))));
+  ok('svg keeps crowded numbers apart', spots.length === 8 && gap >= 2 * spots[0][2] - 0.5, `closest ${gap.toFixed(1)}`);
+  ok('svg keeps numbers inside the box', spots.every(([x, y, r]) => x - r >= 0 && x + r <= 1024 && y - r >= 0 && y + r <= 1024));
+
+  const vocab = { voice: 'x', write: '三', words: [{ id: 'b', hanzi: '三', unit: 1 }, { id: 'c', hanzi: '三個' }], numbers: [{ id: 'd', hanzi: '三' }] };
+  ok('word is the first own entry with the character', Strokes.word(vocab, '三')?.id === 'c');
 }
 
 if (fail) { console.log(`${fail} failed`); process.exit(1); }

@@ -6,7 +6,7 @@
  * from the loaded vocabs and the data from strokes/<hex>.json.
  */
 (function () {
-  const { el: $, esc, zh, entries } = Canto;
+  const { el: $, esc, zh } = Canto;
   const root = document.getElementById('strokes');
   const units = Object.keys(window.UNITS).map(Number).sort((a, b) => a - b)
     .filter(n => window.UNITS[n].write);
@@ -39,7 +39,7 @@
     for (const char of vocab.write) {
       const card = $('article', 'card stroke-card');
       grid.append(card);
-      const word = entries(vocab).find(e => !e.unit && e.hanzi.includes(char));
+      const word = Strokes.word(vocab, char);
       Strokes.load(char).then(data => {
         const steps = data.strokes.map((_, i) => `<div class="stroke-step">${Strokes.svg(data, { upto: i + 1, mark: true, title: `${char}, stroke ${i + 1}` })}</div>`).join('');
         card.innerHTML = `<div class="stroke-head">

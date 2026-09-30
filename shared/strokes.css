@@ -1,18 +1,21 @@
 /*
  * strokes.css — characters drawn by strokes.js (svg.strokes). Load after
  * theme.css. The size comes from the container: the SVG fills its width.
+ * --stroke-grid and --stroke-ghost (default --line) colour the guide
+ * lines and the faint strokes to trace.
  */
 
 .strokes { display: block; width: 100%; height: auto; }
-.strokes .box { fill: none; stroke: var(--line); stroke-width: 12; }
-.strokes .mid { fill: none; stroke: var(--line); stroke-width: 6; stroke-dasharray: 30 24; }
-.strokes .ghost { fill: var(--line); }
+.strokes .box { fill: none; stroke: var(--stroke-grid, var(--line)); stroke-width: 12; }
+.strokes .mid { fill: none; stroke: var(--stroke-grid, var(--line)); stroke-width: 6; stroke-dasharray: 30 24; }
+.strokes .ghost { fill: var(--stroke-ghost, var(--line)); }
 .strokes .ink { fill: var(--ink); }
 .strokes .new { fill: var(--accent); }
 .strokes .num circle { fill: var(--surface); stroke: var(--accent); stroke-width: 8; }
 .strokes .num text {
   fill: var(--accent);
-  font: 700 60px var(--font);
+  font-family: var(--font);
+  font-weight: 700;
   text-anchor: middle;
   dominant-baseline: central;
 }

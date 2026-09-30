@@ -1,0 +1,69 @@
+/*
+ * sheet.css — printable writing sheets (sheet.js). Load after theme.css
+ * and strokes.css. The sheet (.sheet) always looks like paper: dark ink on
+ * white with grey guide lines, in dark mode too. On screen its rows of 10
+ * boxes fit the column; printed, each box is 18 mm (10 fit A4 and US
+ * Letter), a character's block stays on one page, and the page header
+ * keeps only its title.
+ */
+
+.sheet-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
+  margin-bottom: 16px;
+}
+.sheet-bar select {
+  font: inherit;
+  padding: 6px 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+}
+
+.sheet {
+  --ink: #1a1a1a;
+  --ink-soft: #5a5a5a;
+  --line: #d4d4d4;
+  --surface: #ffffff;
+  --accent: #c62828;
+  --stroke-grid: #cfcfcf;
+  --stroke-ghost: #b4b4b4;
+  background: #ffffff;
+  color: var(--ink);
+  padding: 16px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.sheet-name { display: flex; gap: 24px; margin: 0 0 16px; }
+.sheet-name span { flex: 1; padding-bottom: 2px; border-bottom: 1px solid var(--ink-soft); color: var(--ink-soft); font-size: 14px; }
+.sheet-name span:first-child { flex: 2; }
+
+.sheet-char { margin-bottom: 20px; }
+.sheet-head { display: flex; align-items: center; gap: 14px; margin-bottom: 6px; }
+.sheet-head p { margin: 0; }
+.sheet-model { width: 30%; flex: none; }
+.sheet-word { font-size: 20px; }
+.sheet-en, .sheet-count { color: var(--ink-soft); }
+.sheet-count { font-size: 15px; }
+.sheet-row { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); }
+.sheet-practice { margin-top: 6px; }
+.sheet-box .strokes .box { stroke-width: 8; }
+.sheet-box.fade-1 .ghost { opacity: 0.8; }
+.sheet-box.fade-2 .ghost { opacity: 0.6; }
+.sheet-box.fade-3 .ghost { opacity: 0.45; }
+
+@media print {
+  :root { --bg: #ffffff; --ink: #1a1a1a; --accent: #c62828; color-scheme: light; }
+  body { background: #ffffff; }
+  .page { max-width: none; padding: 0; }
+  .page::after { margin-top: 4mm; }
+  .page-header { margin-bottom: 4mm; }
+  .page-header .back, .page-header .lede, .sheet-bar { display: none; }
+  .sheet { padding: 0; border-radius: 0; box-shadow: none; }
+  .sheet-char { break-inside: avoid; margin-bottom: 6mm; }
+  .sheet-model { width: 54mm; }
+  .sheet-row { grid-template-columns: repeat(10, 18mm); }
+}
