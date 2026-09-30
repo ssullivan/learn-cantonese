@@ -60,7 +60,7 @@ The course has 20 units, each building on the ones before (the roadmap is in CLA
 
 **Reviewing the audio:** native speakers can listen to every recording and mark any that sound wrong on the [audio review page](https://ssullivan.github.io/learn-cantonese/review/) (also listed in [AUDIO-REVIEW.md](AUDIO-REVIEW.md)). [AUDIO-CHECKING.md](AUDIO-CHECKING.md) explains how the clips are checked by machine first, the problems we see, and how we fix them.
 
-**Reviewing stroke order:** the characters the site teaches to write follow Hong Kong's standard stroke order (the Education Bureau's 《香港小學學習字詞表》); the [stroke order review page](https://ssullivan.github.io/learn-cantonese/review/strokes.html) shows each one stroke by stroke next to a link to the Bureau's animation.
+**Reviewing stroke order:** the characters the site teaches to write follow Hong Kong's standard stroke order (the Education Bureau's 《香港小學學習字詞表》); the [stroke order review page](https://ssullivan.github.io/learn-cantonese/review/strokes.html) shows each one stroke by stroke next to a link to the Bureau's animation. [STROKE-ORDER.md](STROKE-ORDER.md) explains where the stroke order comes from, how it's checked, how Cantonese-only characters are handled, and how Write It checks what you draw.
 
 ## Working on it
 
