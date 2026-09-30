@@ -14,12 +14,20 @@
  *                              upto: n        only the first n strokes (default all)
  *                              mark: true     the last one drawn in the accent colour
  *                              ghost: true    the strokes not drawn, faint, to trace over
+ *                              next: true     the next stroke (number upto + 1) faintly in
+ *                                             the accent colour, ghost or not: a hint
  *                              numbers: true  each drawn stroke's number at its start,
  *                                             moved aside where numbers would overlap
  *                              grid: 'mi'     米字格 (diagonals too); false: no guide lines
  *                              title          accessible name (default: the character)
  *   Strokes.word(vocab, char) the first of the unit's own entries with that
  *                            character: the word it is taught from
+ *   Strokes.animate(el, data, { from, to, grid, ghost })
+ *                            draws the character into `el` with strokes from..to-1
+ *                            (default all) appearing one by one, as a brush
+ *                            would write them; the rest faint when `ghost`.
+ *                            Resolves when done (at once if the reader prefers
+ *                            reduced motion)
  */
 (function () {
   const hex = char => char.codePointAt(0).toString(16);
@@ -57,9 +65,10 @@
     });
   }
 
-  function svg(data, { upto = data.strokes.length, mark = false, ghost = false, numbers = false, grid = true, title = data.char } = {}) {
-    const cls = i => i >= upto ? 'ghost' : mark && i === upto - 1 ? 'new' : 'ink';
-    const paths = data.strokes.map((d, i) => i < upto || ghost ? `<path class="${cls(i)}" d="${d}"/>` : '').join('');
+  function svg(data, { upto = data.strokes.length, mark = false, ghost = false, next = false, numbers = false, grid = true, title = data.char } = {}) {
+    const cls = i => next && i === upto ? 'next' : i >= upto ? 'ghost' : mark && i === upto - 1 ? 'new' : 'ink';
+    const shown = i => i < upto || ghost || (next && i === upto);
+    const paths = data.strokes.map((d, i) => shown(i) ? `<path class="${cls(i)}" d="${d}"/>` : '').join('');
     const r = data.strokes.length > 10 ? 40 : 50;
     const nums = numbers ? numberSpots(data.medians.slice(0, upto), r).map(([x, y], i) =>
       `<g class="num"><circle cx="${+x.toFixed(1)}" cy="${+y.toFixed(1)}" r="${r}"/><text x="${+x.toFixed(1)}" y="${+y.toFixed(1)}" font-size="${r * 1.2}">${i + 1}</text></g>`).join('') : '';
@@ -69,7 +78,41 @@
       + `<g transform="translate(0 900) scale(1 -1)">${paths}</g>${nums}</svg>`;
   }
 
+  // Each stroke is revealed along its centre line: a wide line following
+  // the median, drawn with a growing dash and clipped to the stroke's shape.
+  let clips = 0;
+  function animate(el, data, { from = 0, to = data.strokes.length, grid = true, ghost = true } = {}) {
+    el.innerHTML = svg(data, { upto: from, ghost, grid });
+    const g = el.querySelector('g[transform]');
+    const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const NS = 'http://www.w3.org/2000/svg';
+    const make = (tag, attrs) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); return e; };
+    let chain = Promise.resolve();
+    for (let i = from; i < to; i++) {
+      chain = chain.then(() => new Promise(done => {
+        if (!el.isConnected) return done();
+        const id = `stroke-clip-${++clips}`;
+        const clip = make('clipPath', { id });
+        clip.append(make('path', { d: data.strokes[i] }));
+        const line = make('path', { class: 'brush', d: 'M' + data.medians[i].map(p => p.join(' ')).join('L'), 'clip-path': `url(#${id})` });
+        const ghostPath = g.querySelectorAll('path')[i];
+        g.append(clip, line);
+        const len = line.getTotalLength() + 120;
+        line.style.strokeDasharray = `${len} ${len}`;
+        const finish = () => {
+          clip.remove(); line.remove();
+          const ink = make('path', { class: 'ink', d: data.strokes[i] });
+          if (ghostPath?.classList.contains('ghost')) ghostPath.replaceWith(ink); else g.append(ink);
+          done();
+        };
+        if (still) return finish();
+        line.animate([{ strokeDashoffset: len }, { strokeDashoffset: 0 }], { duration: 250 + len * 0.9, easing: 'ease-in-out' }).onfinish = () => setTimeout(finish, 120);
+      }));
+    }
+    return chain;
+  }
+
   const word = (vocab, char) => Object.values(vocab).filter(Array.isArray).flat().find(e => !e.unit && e.hanzi.includes(char));
 
-  window.Strokes = { src, load, svg, word };
+  window.Strokes = { src, load, svg, word, animate };
 })();

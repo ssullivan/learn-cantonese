@@ -13,6 +13,7 @@ The course has 20 units, each building on the ones before (the roadmap is in CLA
   - *Question Builder*: build sentences and questions from word tiles, and answer 係呀 or 唔係呀 about a picture.
 - **Unit 4 · 數字 Numbers**: 零 to 萬 with the one-hand counting signs, 廿, 零 in the gaps, 第, 幾多, and 二 vs 兩.
   - *Number Dash*: hear a number and tap it (十四 or 四十?), say numbers, and pick 二 or 兩.
+  - *Write It*: write 一 二 三 十 stroke by stroke with your finger, in Hong Kong stroke order: watch and trace, then from memory, then 默書 from what you hear.
   - *Writing Sheet*: print a practice sheet for 一 二 三 十 in Hong Kong stroke order: numbered strokes, then trace and write.
 - **Unit 5 · 量詞 Measure Words**: 個 隻 本 張 條 枝 架 件 杯 碗 對 and 啲, grouped by shape, with 呢 / 嗰, "the", 兩 and 幾多.
   - *Measure Sort*: pick a thing's measure word, sort things by measure word, hear them, and point with 呢 or 嗰.

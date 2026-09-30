@@ -2,8 +2,10 @@
 /*
  * strokes.test.mjs — tests the stroke-order data: stroke-check.mjs's
  * matching on synthetic masks (tools/stroke-data.mjs: segment, fit,
- * assign, verdictFor), records and strokes/<hex>.json building, and
- * shared/strokes.js's drawing. Run by tools/check.mjs; exits 1 on failure.
+ * assign, verdictFor), records and strokes/<hex>.json building,
+ * shared/strokes.js's drawing, and shared/write.js's checking of drawn
+ * strokes (on the real data for 三 and 十). Run by tools/check.mjs; exits 1
+ * on failure.
  */
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -135,6 +137,47 @@ ok('verdict: all strong is "ok"', verdictFor(3, 3, [1, 0.77, 0.98]) === 'ok');
 
   const vocab = { voice: 'x', write: '三', words: [{ id: 'b', hanzi: '三', unit: 1 }, { id: 'c', hanzi: '三個' }], numbers: [{ id: 'd', hanzi: '三' }] };
   ok('word is the first own entry with the character', Strokes.word(vocab, '三')?.id === 'c');
+}
+
+// --- shared/write.js: is a drawn stroke the right one?
+{
+  const sb = vm.createContext({});
+  vm.runInContext(readFileSync(join(ROOT, 'shared/write.js'), 'utf8'), sb);
+  const { Write } = sb;
+  const load = hex => JSON.parse(readFileSync(join(ROOT, 'strokes', `${hex}.json`), 'utf8'));
+  const three = load('4e09'), ten = load('5341');
+  // A stroke drawn along a median (on screen: y down), smoothly, as a finger would.
+  const along = (median, { dx = 0, dy = 0, wobble = 0 } = {}) => Write.resample(median.map(([x, y]) => [x + dx, 900 - y + dy]), 30)
+    .map(([x, y], i) => [x + wobble * Math.sin(i * 0.6), y + wobble * Math.cos(i * 0.45)]);
+
+  const r = Write.resample([[0, 0], [100, 0]], 5);
+  ok('resample spaces points evenly', same(r.map(p => p[0]), [0, 25, 50, 75, 100]), JSON.stringify(r));
+  ok('resample of one point repeats it', Write.resample([[5, 5]], 3).every(p => p[0] === 5));
+
+  ok('judge: 三 stroke 1 drawn right', Write.judge(along(three.medians[0]), three, 0).ok);
+  ok('judge: a wobbly hand still counts', Write.judge(along(three.medians[0], { wobble: 35 }), three, 0).ok);
+  ok('judge: a little off to the side still counts', Write.judge(along(three.medians[0], { dx: 60, dy: 40 }), three, 0).ok);
+  const rev = along(three.medians[0]).reverse();
+  ok('judge: the right stroke written backwards is wrong', !Write.judge(rev, three, 0).ok);
+  ok('judge: far from the stroke is wrong', !Write.judge(along(three.medians[0], { dy: 320 }), three, 0).ok);
+  ok('judge: a tap is not a long stroke', !Write.judge([[500, 300], [505, 302]], three, 0).ok);
+  const middle = Write.judge(along(three.medians[1]), three, 0, 1.3);
+  ok("judge: 三's middle stroke first is out of order, even when lenient", !middle.ok && middle.other === 1, JSON.stringify(middle));
+  const bottom = Write.judge(along(three.medians[2]), three, 0, 1.3);
+  ok("judge: 三's bottom stroke first names stroke 3", !bottom.ok && bottom.other === 2, JSON.stringify(bottom));
+  ok('judge: after stroke 1, the middle stroke is right', Write.judge(along(three.medians[1]), three, 1, 1.3).ok);
+  const between = Write.judge(along(three.medians[1], { dy: -100 }), three, 0, 1.3);
+  ok("judge: between 三's top and middle strokes, nearer the middle, is the middle", !between.ok && between.other === 1, JSON.stringify(between));
+  // Past the end of the top stroke by 235: on average close, but ending too far off.
+  const top = three.medians[0].map(([x, y]) => [x, 900 - y]);
+  const over = [...top, [top.at(-1)[0] + 235, top.at(-1)[1]]];
+  ok('judge: overshooting far past the end is wrong', !Write.judge(Write.resample(over, 30), three, 0).ok);
+  const early = [[top[0][0] - 235, top[0][1]], ...top];
+  ok('judge: starting far before the start is wrong', !Write.judge(Write.resample(early, 30), three, 0).ok);
+  ok('judge: a scribble along the stroke is wrong', !Write.judge(along(three.medians[0]).map(([x, y], i) => [x, y + (i % 2 ? 45 : -45)]), three, 0).ok);
+  const down = Write.judge(along(ten.medians[1]), ten, 0);
+  ok('judge: 十 written down-stroke first is out of Hong Kong order', !down.ok && down.other === 1, JSON.stringify(down));
+  ok('judge: a finished stroke is not offered again', Write.judge(along(ten.medians[0]), ten, 1).other === null);
 }
 
 if (fail) { console.log(`${fail} failed`); process.exit(1); }

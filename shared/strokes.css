@@ -11,6 +11,8 @@
 .strokes .ghost { fill: var(--stroke-ghost, var(--line)); }
 .strokes .ink { fill: var(--ink); }
 .strokes .new { fill: var(--accent); }
+.strokes .next { fill: var(--accent); opacity: 0.3; }
+.strokes .brush { fill: none; stroke: var(--ink); stroke-width: 160; stroke-linecap: round; stroke-linejoin: round; }
 .strokes .num circle { fill: var(--surface); stroke: var(--accent); stroke-width: 8; }
 .strokes .num text {
   fill: var(--accent);

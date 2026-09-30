@@ -4,29 +4,32 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-<title>Writing Sheet · Numbers</title>
+<title>Write It · Numbers</title>
 <link rel="stylesheet" href="../shared/theme.css?v=1a4ed1c2">
+<link rel="stylesheet" href="../shared/game.css?v=f684e1f7">
 <link rel="stylesheet" href="../shared/strokes.css?v=cf228f98">
-<link rel="stylesheet" href="../shared/sheet.css?v=9b874cbb">
+<link rel="stylesheet" href="../shared/write.css?v=b7e6248b">
 </head>
 <body>
 <main class="page">
   <header class="page-header">
     <a class="back" href="../">← Unit 4</a>
-    <p class="eyebrow">Unit 4 · Writing</p>
-    <h1><span class="hanzi" lang="zh-HK">寫字</span>Writing Sheet</h1>
-    <p class="lede">Print this sheet and write each character in Hong Kong stroke order: follow the numbered strokes, trace the grey copies, then fill the empty boxes.</p>
+    <p class="eyebrow">Unit 4 · Game</p>
+    <h1><span class="hanzi" lang="zh-HK">寫字</span>Write It</h1>
+    <p class="lede">Write the numbers stroke by stroke, in Hong Kong stroke order: trace them first, then from memory, then from what you hear.</p>
   </header>
-  <div id="sheet"></div>
+  <div id="game"></div>
 </main>
 <script src="../shared/core.js?v=087a6643"></script>
+<script src="../shared/audio.js?v=f296d05e"></script>
+<script src="../shared/game.js?v=642dda01"></script>
 <script src="../shared/strokes.js?v=295bfea7"></script>
-<script src="../shared/sheet.js?v=f7091f33"></script>
+<script src="../shared/write.js?v=aa92b0e1"></script>
 <script src="../shared/numbers.js?v=1903e834"></script>
 <script src="../shared/units.js?v=f456af20"></script>
 <script src="vocab.js?v=7a177466"></script>
 <script>
-  Sheet.init({ root: document.getElementById('sheet'), vocab: window.VOCAB });
+  Write.init({ root: document.getElementById('game'), key: 'u4-write', vocab: window.VOCAB });
 </script>
 </body>
 </html>

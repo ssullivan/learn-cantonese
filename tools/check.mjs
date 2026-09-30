@@ -31,8 +31,8 @@
  *     against Hong Kong's standard (or a person confirmed), and an up to
  *     date strokes/<hex>.json (else run node tools/strokes.mjs); no orphan
  *     stroke files; review/strokes.html loads every such unit's vocab.js;
- *     a unit that teaches writing has sheet.html (shared/sheet.js) and a
- *     card for it on its page
+ *     a unit that teaches writing has sheet.html (shared/sheet.js) and
+ *     write.html (shared/write.js), with cards for them on its page
  *   - every tools/*.test.mjs passes
  *   - no file holds the Azure Speech or MiniMax key (when set on this
  *     machine): keys must never be committed
@@ -126,8 +126,10 @@ for (const unit of unitDirs()) {
   }
   if (vocab.write !== undefined && typeof vocab.write !== 'string') bad(vocabFile, "write must be a string of characters: write: '一二三'");
   if (vocab.write) {
-    if (!existsSync(join(dir, 'sheet.html'))) bad(vocabFile, 'write: the unit needs sheet.html, its writing sheet (see unit4/sheet.html)');
-    if (!readFileSync(join(dir, 'index.html'), 'utf8').includes('href="sheet.html"')) bad(join(dir, 'index.html'), 'add a card for sheet.html (the unit teaches writing)');
+    for (const [page, what] of [['sheet.html', 'writing sheet'], ['write.html', 'Write It game']]) {
+      if (!existsSync(join(dir, page))) bad(vocabFile, `write: the unit needs ${page}, its ${what} (see unit4/${page})`);
+      else if (!readFileSync(join(dir, 'index.html'), 'utf8').includes(`href="${page}"`)) bad(join(dir, 'index.html'), `add a card for ${page} (the unit teaches writing)`);
+    }
   }
   for (const char of typeof vocab.write === 'string' ? vocab.write : '') {
     if (!/\p{Script=Han}/u.test(char)) { bad(vocabFile, `write: ${char} is not a Chinese character`); continue; }
