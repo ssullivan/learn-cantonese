@@ -15,6 +15,7 @@
  */
 Units.add(10, {
   voice: 'zh-HK-HiuMaanNeural',
+  write: '女仔公',
 
   parents: [
     { id: 'home', hanzi: '屋企', jyutping: 'uk1 kei2', english: 'home; family',

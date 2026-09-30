@@ -19,6 +19,7 @@
  */
 Units.add(18, {
   voice: 'zh-HK-HiuMaanNeural',
+  write: '比高快',
 
   // Adjectives in pairs. Each has a picture of the contrast.
   adjectives: [

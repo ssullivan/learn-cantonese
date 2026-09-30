@@ -46,6 +46,10 @@ const or = (...ms) => ms.reduce((u, m) => u.map((v, i) => v | m[i]));
   const downOnly = down.map((v, i) => v && !across[i] ? 1 : 0);
   ok('segment: the second stroke is only its new ink', same(strokes[1], downOnly));
   ok('segment stops where the ink is cleared', strokes.length === 2);
+  // A flicker after the last stroke (a little ink that comes and goes, as in 名's animation) is not a stroke.
+  const blip = rect(50, 50, 53, 53);
+  const flicker = [...frames.slice(0, 22), ...Array(3).fill(or(frameLine, across, down, blip)), ...Array(6).fill(or(frameLine, across, down)), frameLine];
+  ok('segment ignores ink that comes and goes after the last stroke', segment(flicker).length === 2, `${segment(flicker).length} strokes`);
   // A stroke at the very end, with no pause after it, still counts.
   ok('segment keeps a last stroke with no pause', segment(frames.slice(0, 16)).length === 2);
 }

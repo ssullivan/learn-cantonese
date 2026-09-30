@@ -16,6 +16,7 @@
  */
 Units.add(20, {
   voice: 'zh-HK-HiuMaanNeural',
+  write: '斤新共',
 
   // Fruit and vegetables new in this unit. Each has a picture.
   fruit: [

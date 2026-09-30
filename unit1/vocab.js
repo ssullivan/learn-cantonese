@@ -9,6 +9,7 @@
  */
 Units.add(1, {
   voice: 'zh-HK-HiuMaanNeural',
+  write: '水牛好',
 
   basics: [
     { id: 'cantonese', hanzi: '廣東話', jyutping: 'gwong2 dung1 waa2', english: 'Cantonese', img: false,

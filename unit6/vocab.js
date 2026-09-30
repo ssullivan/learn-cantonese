@@ -14,6 +14,7 @@
  */
 Units.add(6, {
   voice: 'zh-HK-HiuMaanNeural',
+  write: '平半西',
 
   money: [
     { id: 'cin', hanzi: '錢', jyutping: 'cin2', english: 'money', img: false, phoneme: true,

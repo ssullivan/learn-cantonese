@@ -208,7 +208,9 @@ const count = m => m.reduce((a, v) => a + v, 0);
 // Frames of the animation (frames[0] before any stroke) → one mask per
 // stroke: its new ink. A stroke is a burst of new ink followed by a pause
 // of `pause` frames; the files' stroke numbers can't be trusted (先 never
-// shows a 6). Stops where the ink is cleared for the next loop.
+// shows a 6). Stops where the ink is cleared for the next loop. A burst
+// that leaves no ink of its own isn't a stroke: 名's animation flickers
+// after its last stroke.
 export function segment(frames, pause = 4) {
   const base = frames[0], ends = [];
   const own = m => m.map((v, i) => v && !base[i] ? 1 : 0);
@@ -222,7 +224,8 @@ export function segment(frames, pause = 4) {
     prev = now;
   }
   if (drawing) ends.push(prev);
-  return ends.map((m, k) => m.map((v, i) => v && !base[i] && !(k && ends[k - 1][i]) ? 1 : 0));
+  return ends.map((m, k) => m.map((v, i) => v && !base[i] && !(k && ends[k - 1][i]) ? 1 : 0))
+    .filter(m => count(m) >= 2);
 }
 
 // [x0, y0, x1, y1) of the ink, in cells.

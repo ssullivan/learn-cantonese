@@ -11,6 +11,7 @@
  */
 Units.add(7, {
   voice: 'zh-HK-HiuMaanNeural',
+  write: '小心米',
 
   basics: [
     { id: 'yum-cha', hanzi: '飲茶', jyutping: 'jam2 caa4', english: 'yum cha (go for dim sum)',

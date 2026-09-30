@@ -19,6 +19,7 @@
  */
 Units.add(15, {
   voice: 'zh-HK-HiuMaanNeural',
+  write: '先做起',
 
   // The verbs of the day. 食 飲 睇 著 瞓 去 搭 are borrowed below.
   verbs: [

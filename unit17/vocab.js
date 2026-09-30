@@ -16,6 +16,7 @@
  */
 Units.add(17, {
   voice: 'zh-HK-HiuMaanNeural',
+  write: '因考法',
 
   // How you feel. Each has a picture of a face.
   feelings: [

@@ -14,6 +14,7 @@
  */
 Units.add(3, {
   voice: 'zh-HK-HiuMaanNeural',
+  write: '人我名',
 
   // Pictures: the speaker has the speech bubble, the listener faces them,
   // and a third person stands behind. The one(s) meant are highlighted.

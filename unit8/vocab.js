@@ -15,6 +15,7 @@
  */
 Units.add(8, {
   voice: 'zh-HK-HiuMaanNeural',
+  write: '冰油走',
 
   basics: [
     { id: 'cha-chaan-teng', hanzi: '茶餐廳', jyutping: 'caa4 caan1 teng1', english: 'cha chaan teng (Hong Kong café)',

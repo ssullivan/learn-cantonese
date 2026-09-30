@@ -18,6 +18,7 @@
  */
 Units.add(19, {
   voice: 'zh-HK-HiuMaanNeural',
+  write: '羊兔虎',
 
   // Animals new in this unit. Each has a picture. 隻 for most; 條 for long ones.
   animals: [

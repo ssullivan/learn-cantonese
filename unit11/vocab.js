@@ -14,6 +14,7 @@
  */
 Units.add(11, {
   voice: 'zh-HK-HiuMaanNeural',
+  write: '左右去',
 
   // Going, coming, being somewhere.
   verbs: [

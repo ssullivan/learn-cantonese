@@ -14,6 +14,7 @@
  */
 Units.add(5, {
   voice: 'zh-HK-HiuMaanNeural',
+  write: '本杯有',
 
   // 個 is taught in unit 4 and borrowed below (it is added to this list).
   measures: [

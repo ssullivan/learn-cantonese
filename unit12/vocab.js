@@ -19,6 +19,7 @@
  */
 Units.add(12, {
   voice: 'zh-HK-HiuMaanNeural',
+  write: '白色紅',
 
   basics: [
     { id: 'ngaan-sik', hanzi: '顏色', jyutping: 'ngaan4 sik1', english: 'colour',

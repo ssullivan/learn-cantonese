@@ -15,6 +15,7 @@
  */
 Units.add(14, {
   voice: 'zh-HK-HiuMaanNeural',
+  write: '口耳身',
 
   // Body parts. 隻 for one of a pair (and teeth), 個 for the rest, 條 for
   // the long throat.

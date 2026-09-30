@@ -9,13 +9,10 @@ The course has 20 units, each building on the ones before (the roadmap is in CLA
   - *Tone Detective*: from high-or-low up to all six tones.
 - **Unit 2 · 打招呼 Greetings**: hello and goodbye, how are you, and when to say 唔該, 多謝 or 對唔住.
   - *Reply Match*: hear a phrase, answer back, or pick what to say in a situation.
-  - *Write It* and a *Writing Sheet*: write 你, 早 and 多, and 冇, 咗 and 哋, characters only Cantonese has, stroke by stroke.
 - **Unit 3 · 我同你 Me & You**: 我 你 佢 and 哋, 係 and 唔, 我叫…, and questions with 嗎, A唔A (係唔係), 邊個 and 乜嘢.
   - *Question Builder*: build sentences and questions from word tiles, and answer 係呀 or 唔係呀 about a picture.
 - **Unit 4 · 數字 Numbers**: 零 to 萬 with the one-hand counting signs, 廿, 零 in the gaps, 第, 幾多, and 二 vs 兩.
   - *Number Dash*: hear a number and tap it (十四 or 四十?), say numbers, and pick 二 or 兩.
-  - *Write It*: write 一 二 三 十 stroke by stroke with your finger, in Hong Kong stroke order: watch and trace, then from memory, then 默書 from what you hear.
-  - *Writing Sheet*: print a practice sheet for 一 二 三 十 in Hong Kong stroke order: numbered strokes, then trace and write.
 - **Unit 5 · 量詞 Measure Words**: 個 隻 本 張 條 枝 架 件 杯 碗 對 and 啲, grouped by shape, with 呢 / 嗰, "the", 兩 and 幾多.
   - *Measure Sort*: pick a thing's measure word, sort things by measure word, hear them, and point with 呢 or 嗰.
   - *Count It*: count pictures and say how many (三隻貓), hear a count and find it, and build sentences with 有 and 幾多.
@@ -56,6 +53,10 @@ The course has 20 units, each building on the ones before (the roadmap is in CLA
   - *Zoo*: find the animal, count it with 隻 or 條, say whether it can fly or climb, and find someone's zodiac animal.
 - **Unit 20 · 生果同菜 Fruit & Vegetables**: fruit and vegetables at the 街市, their measure words (一條香蕉, 一粒提子, 一棵菜心), buying by the catty (幾多錢一斤呀？ 我要斤半), and 啲 for "some".
   - *Wet Market*: sort fruit from vegetables, read the price signs, weigh out catties, and work out what it comes to.
+
+**Writing characters:** every unit teaches a few of its characters to write, in Hong Kong stroke order (the Education Bureau's 《香港小學學習字詞表》): three each, four numbers in unit 4, and in unit 2 你 早 多 plus 冇 咗 哋, characters only Cantonese has.
+  - *Write It*: write them stroke by stroke with your finger: watch and trace, trace, from memory, then 默書 from what you hear. A stroke out of order says so.
+  - *Writing Sheet*: print a practice sheet: numbered strokes, the character built up stroke by stroke, copies to trace, then empty 田字格 or 米字格 boxes.
 
 **Reviewing the audio:** native speakers can listen to every recording and mark any that sound wrong on the [audio review page](https://ssullivan.github.io/learn-cantonese/review/) (also listed in [AUDIO-REVIEW.md](AUDIO-REVIEW.md)). [AUDIO-CHECKING.md](AUDIO-CHECKING.md) explains how the clips are checked by machine first, the problems we see, and how we fix them.
 

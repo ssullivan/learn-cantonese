@@ -14,6 +14,7 @@
  */
 Units.add(9, {
   voice: 'zh-HK-HiuMaanNeural',
+  write: '日月年',
 
   clock: [
     { id: 'dim', hanzi: '點', jyutping: 'dim2', english: 'o\'clock (hour)', img: false,

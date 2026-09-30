@@ -15,6 +15,7 @@
  */
 Units.add(13, {
   voice: 'zh-HK-HiuMaanNeural',
+  write: '大天雨',
 
   basics: [
     { id: 'tin-hei', hanzi: '天氣', jyutping: 'tin1 hei3', english: 'weather',
