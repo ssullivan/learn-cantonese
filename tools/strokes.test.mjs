@@ -3,6 +3,7 @@
  * strokes.test.mjs — tests the stroke-order data: stroke-check.mjs's
  * matching on synthetic masks (tools/stroke-data.mjs: segment, fit,
  * assign, verdictFor), records and strokes/<hex>.json building,
+ * composing characters from parts (tools/strokes-composed.mjs),
  * shared/strokes.js's drawing, and shared/write.js's checking of drawn
  * strokes (on the real data for 三 and 十). Run by tools/check.mjs; exits 1
  * on failure.
@@ -11,7 +12,10 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import vm from 'node:vm';
 import { ROOT } from './site.mjs';
-import { G, segment, fit, assign, verdictFor, recordProblem, usable, drawable, build } from './stroke-data.mjs';
+import {
+  G, segment, fit, assign, verdictFor, recordProblem, usable, drawable, build,
+  COMPOSED, readRecords, composedProblem, composedMeta, compose, movePath, pathBox, sources,
+} from './stroke-data.mjs';
 
 let fail = 0;
 const quiet = process.argv.includes('--quiet');
@@ -104,6 +108,39 @@ ok('verdict: all strong is "ok"', verdictFor(3, 3, [1, 0.77, 0.98]) === 'ok');
   let threw = false;
   try { build('必', { strokes: raw.strokes.slice(1), medians: raw.medians.slice(1) }, good); } catch { threw = true; }
   ok('build refuses data with another stroke count', threw);
+}
+
+// --- composed characters
+{
+  ok('movePath moves every point', movePath('M 1 2 Q 3 4 5 6 L 7 8 Z', ([x, y]) => [x * 2, y + 1]) === 'M 2 3 Q 6 5 10 7 L 14 9 Z');
+  ok('pathBox spans every point', same(pathBox(['M 10 20 L 30 5 Z', 'M 0 50 Q 5 5 12 12 Z']), [0, 5, 30, 50]));
+
+  // 口 in the left of a layout character, and a square part to fit into its right.
+  const sq = (x0, y0, x1, y1) => `M ${x0} ${y0} L ${x1} ${y0} L ${x1} ${y1} L ${x0} ${y1} Z`;
+  const hk = {
+    L: { strokes: [sq(0, 0, 10, 10), sq(10, 0, 20, 10), sq(50, 0, 100, 100)], medians: [[[0, 0]], [[10, 0]], [[50, 0], [100, 100]]] },
+    R: { strokes: [sq(0, 0, 200, 100), sq(0, 100, 200, 200)], medians: [[[0, 0], [200, 0]], [[0, 100], [200, 200]]] },
+  };
+  const made = compose({ strokes: 4, parts: [{ from: 'L', take: [0, 2] }, { from: 'R', into: ['L', 2, 3] }] }, hk);
+  ok('compose keeps a taken part where it is', made.strokes[0] === hk.L.strokes[0] && made.strokes[1] === hk.L.strokes[1]);
+  ok('compose stretches a part onto its box', same(pathBox(made.strokes.slice(2)), [50, 0, 100, 100]), JSON.stringify(pathBox(made.strokes.slice(2))));
+  ok('compose moves the centre lines with it', JSON.stringify(made.medians[3]) === '[[50,50],[100,100]]', JSON.stringify(made.medians[3]));
+  ok('compose puts the parts in order', made.strokes.length === 4 && made.medians.length === 4);
+
+  const rec = (n, extra) => ({ edb: 'x/1', strokes: n, order: [...Array(n).keys()], scores: Array(n).fill(1), verdict: 'ok', checked: '2026-09-30', ...extra });
+  const recipe = { strokes: 4, parts: [{ from: 'L', take: [0, 2] }, { from: 'R', into: ['L', 2, 3] }] };
+  ok('a recipe from usable parts that add up is fine', composedProblem('X', recipe, { L: rec(3), R: rec(2) }) === null);
+  ok('a part without a usable record is a problem', /R/.test(composedProblem('X', recipe, { L: rec(3), R: rec(2, { verdict: 'differs' }) }) ?? ''));
+  ok('the box character needs a usable record too', sources(recipe).includes('L') && composedProblem('X', { strokes: 2, parts: [{ from: 'R', into: ['Q', 0, 1] }] }, { R: rec(2) }) !== null);
+  ok('parts not adding up is a problem', /3 strokes, not 4/.test(composedProblem('X', { ...recipe, parts: [{ from: 'L', take: [0, 1] }, recipe.parts[1]] }, { L: rec(3), R: rec(2) }) ?? ''));
+  ok('a range past the end is a problem', composedProblem('X', { strokes: 4, parts: [{ from: 'L', take: [0, 4] }] }, { L: rec(3) }) !== null);
+  const m = composedMeta('X', recipe, { L: rec(3), R: rec(2) });
+  ok('a composed file says it was composed, and from what', m.hk.verdict === 'composed' && Object.keys(m.hk.from).join('') === 'LR' && /composed/.test(m.notice));
+
+  // The real recipes can all be built from today's records.
+  const records = readRecords();
+  const broken = Object.entries(COMPOSED).map(([c, r]) => [c, composedProblem(c, r, records)]).filter(([, p]) => p);
+  ok('every recipe in tools/strokes-composed.mjs can be built', !broken.length, JSON.stringify(broken));
 }
 
 // --- shared/strokes.js

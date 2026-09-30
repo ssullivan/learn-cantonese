@@ -8,9 +8,14 @@
  * the voice gets wrong), plus for Reply Match (shared/reply.js):
  * reply? (ids of good answers when someone says this to you) and
  * when? (situations where you'd say it; its picture shows the first).
+ *
+ * write: the characters this unit teaches to write, stroke by stroke
+ * (strokes/, from tools/strokes.mjs). These three are Cantonese-only, so
+ * they are composed from parts (tools/strokes-composed.mjs).
  */
 Units.add(2, {
   voice: 'zh-HK-HiuMaanNeural',
+  write: '冇咗哋',
 
   greetings: [
     { id: 'hello', hanzi: '你好', jyutping: 'nei5 hou2', english: 'hello', img: false, reply: ['hello'],

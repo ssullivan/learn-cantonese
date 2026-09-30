@@ -45,6 +45,18 @@
  *   meta(char, record)      everything strokes/<hex>.json holds but the shapes
  *   build(char, raw, record) the strokes/<hex>.json object
  *
+ * Composed characters (tools/strokes-composed.mjs: 咗 is 口 + 左):
+ *   COMPOSED                { char: recipe }
+ *   sources(recipe)         the characters its parts come from or fit into
+ *   composedProblem(char, recipe, records)
+ *                           why it can't be built (a source not usable, a
+ *                           range out of bounds, parts not adding up), or null
+ *   composedMeta(char, recipe, records)
+ *   compose(recipe, hk)     { strokes, medians } from its sources' data in
+ *                           Hong Kong order ({ char: { strokes, medians } })
+ *   movePath(d, f), pathBox(paths)
+ *                           move every point of a path; the box around paths
+ *
  * Matching (G×G masks: Uint8Array of 0/1, row by row):
  *   G, segment(frames), bbox(mask), fit(edbBox, mmBox), dilate(mask, r),
  *   iou(a, b), assign(edb, mm), verdictFor(edbCount, mmCount, scores)
@@ -52,6 +64,9 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { ROOT, unitDirs, loadVocab } from './site.mjs';
+import COMPOSED from './strokes-composed.mjs';
+
+export { COMPOSED };
 
 export const DATA = 'hanzi-writer-data@2.0.1';
 export const dataUrl = char => `https://cdn.jsdelivr.net/npm/${DATA}/${encodeURIComponent(char)}.json`;
@@ -109,16 +124,80 @@ export const strokeFile = char => join(ROOT, 'strokes', `${char.codePointAt(0).t
 export function meta(char, r) {
   return {
     char,
-    notice: `Stroke shapes from Make Me a Hanzi (${DATA}), under the Arphic Public License (ARPHICPL.TXT in this folder). `
-      + `Changed by tools/strokes.mjs: strokes put in the Hong Kong order (Education Bureau) checked on ${r.checked}.`,
+    notice: `${NOTICE}strokes put in the Hong Kong order (Education Bureau) checked on ${r.checked}.`,
     order: r.order,
     hk: { edb: r.edb, verdict: r.verdict, checked: r.checked, ...(r.confirmed && { confirmed: r.confirmed }) },
   };
 }
 
+const NOTICE = `Stroke shapes from Make Me a Hanzi (${DATA}), under the Arphic Public License (ARPHICPL.TXT in this folder). Changed by tools/strokes.mjs: `;
+
 export function build(char, raw, r) {
   if (raw.strokes.length !== r.order.length) throw new Error(`${char}: ${raw.strokes.length} strokes in ${DATA}, ${r.order.length} in its record`);
   return { ...meta(char, r), strokes: r.order.map(j => raw.strokes[j]), medians: r.order.map(j => raw.medians[j]) };
+}
+
+// --- composed characters
+
+export const sources = recipe => [...new Set(recipe.parts.flatMap(p => [p.from, ...(p.into ? [p.into[0]] : [])]))];
+
+export function composedProblem(char, recipe, records) {
+  const bad = sources(recipe).filter(c => !usable(records[c]));
+  if (bad.length) return `its parts come from ${bad.join(' ')}, which need a usable stroke-order record (run node tools/stroke-check.mjs ${bad.join('')})`;
+  const inRange = (c, [a, b]) => Number.isInteger(a) && Number.isInteger(b) && 0 <= a && a < b && b <= records[c].strokes;
+  let n = 0;
+  for (const { from, take = [0, records[from].strokes], into } of recipe.parts) {
+    if (!inRange(from, take)) return `take ${JSON.stringify(take)} is outside ${from}'s ${records[from].strokes} strokes`;
+    if (into && !inRange(into[0], into.slice(1))) return `into ${JSON.stringify(into)} is outside ${into[0]}'s strokes`;
+    n += take[1] - take[0];
+  }
+  return n === recipe.strokes ? null : `its parts have ${n} strokes, not ${recipe.strokes}`;
+}
+
+export function composedMeta(char, recipe, records) {
+  const from = Object.fromEntries(sources(recipe).map(c => [c, { edb: records[c].edb, checked: records[c].checked }]));
+  return {
+    char,
+    notice: `${NOTICE}composed from parts of ${Object.keys(from).join(' ')}, each in the Hong Kong order (Education Bureau) checked on the date given.`,
+    order: null,
+    hk: { verdict: 'composed', parts: recipe.parts, from },
+  };
+}
+
+// Every x y pair in a path through f. Make Me a Hanzi's paths use only
+// absolute commands (M L Q C Z), so every number is half of a point.
+export function movePath(d, f) {
+  const out = [];
+  let pair = [];
+  for (const t of d.trim().split(/\s+/)) {
+    if (/^[A-Za-z]$/.test(t)) { out.push(t); continue; }
+    pair.push(+t);
+    if (pair.length === 2) { out.push(...f(pair).map(v => Math.round(v * 10) / 10)); pair = []; }
+  }
+  return out.join(' ');
+}
+
+export function pathBox(paths) {
+  let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+  for (const d of paths) movePath(d, ([x, y]) => { x0 = Math.min(x0, x); y0 = Math.min(y0, y); x1 = Math.max(x1, x); y1 = Math.max(y1, y); return [x, y]; });
+  return [x0, y0, x1, y1];
+}
+
+export function compose(recipe, hk) {
+  const strokes = [], medians = [];
+  for (const { from, take = [0, hk[from].strokes.length], into } of recipe.parts) {
+    let s = hk[from].strokes.slice(...take), m = hk[from].medians.slice(...take);
+    if (into) {
+      const [c, a, b] = into;
+      const [t0, u0, t1, u1] = pathBox(hk[c].strokes.slice(a, b)), [x0, y0, x1, y1] = pathBox(s);
+      const f = ([x, y]) => [t0 + (x - x0) * (t1 - t0) / (x1 - x0), u0 + (y - y0) * (u1 - u0) / (y1 - y0)];
+      s = s.map(d => movePath(d, f));
+      m = m.map(line => line.map(p => f(p).map(Math.round)));
+    }
+    strokes.push(...s);
+    medians.push(...m);
+  }
+  return { strokes, medians };
 }
 
 // --- matching EDB's animation with Make Me a Hanzi's strokes

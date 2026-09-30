@@ -4,37 +4,31 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-<title>Tone Detective · Greetings</title>
+<title>Write It · Greetings</title>
 <link rel="stylesheet" href="../shared/theme.css?v=1a4ed1c2">
 <link rel="stylesheet" href="../shared/game.css?v=f684e1f7">
+<link rel="stylesheet" href="../shared/strokes.css?v=cf228f98">
+<link rel="stylesheet" href="../shared/write.css?v=b7e6248b">
 </head>
 <body>
 <main class="page">
   <header class="page-header">
     <a class="back" href="../">← Unit 2</a>
     <p class="eyebrow">Unit 2 · Game</p>
-    <h1><span class="hanzi" lang="zh-HK">聲調</span>Tone Detective</h1>
-    <p class="lede">Hear a greeting and catch its tones. 唔該 is m4 goi1: low, then high.</p>
+    <h1><span class="hanzi" lang="zh-HK">寫字</span>Write It</h1>
+    <p class="lede">Write three characters only Cantonese has, stroke by stroke: 冇 (not have), 咗 (done) and 哋 (makes a plural: 你哋). Two are a familiar character with 口 beside it.</p>
   </header>
   <div id="game"></div>
 </main>
 <script src="../shared/core.js?v=087a6643"></script>
 <script src="../shared/audio.js?v=f296d05e"></script>
 <script src="../shared/game.js?v=642dda01"></script>
-<script src="../shared/tones.js?v=1e42a794"></script>
+<script src="../shared/strokes.js?v=295bfea7"></script>
+<script src="../shared/write.js?v=aa92b0e1"></script>
 <script src="../shared/units.js?v=f456af20"></script>
 <script src="vocab.js?v=ff43478a"></script>
 <script>
-  const V = window.VOCAB;
-  Tones.init({
-    root: document.getElementById('game'),
-    key: 'u2-tones',
-    levels: [
-      { id: 'greetings', name: 'Greetings', blurb: 'Hello, good morning, goodbye. Three choices.', pool: V.greetings, choices: 3 },
-      { id: 'polite', name: 'Please & sorry', blurb: '唔該, 多謝, 對唔住 and their replies.', pool: V.polite, choices: 4 },
-      { id: 'chat', name: 'Small talk', blurb: 'Longer questions and answers.', pool: V.howAreYou, choices: 4 },
-    ],
-  });
+  Write.init({ root: document.getElementById('game'), key: 'u2-write', vocab: window.VOCAB });
 </script>
 </body>
 </html>

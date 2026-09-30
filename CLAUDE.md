@@ -57,8 +57,9 @@ tools/
   stroke-data.mjs        stroke-order data shared by the tools below: records, building strokes/ files, matching strokes
   stroke-check.mjs       checks characters' stroke order against the Education Bureau's animations (Playwright) → tools/strokes-hk.json
   strokes-hk.json        stroke-check's verdict per character (the Hong Kong order, scores, dates); `--confirm` adds a person's check
-  strokes.mjs            strokes-hk.json + Make Me a Hanzi's shapes → strokes/<hex>.json
-  strokes.test.mjs       stroke matching on synthetic masks, records, building stroke files, Strokes.svg, Write.judge on real strokes
+  strokes-composed.mjs   Cantonese characters with no Hong Kong standard (咗 哋 冇...), composed from parts that have one
+  strokes.mjs            strokes-hk.json + Make Me a Hanzi's shapes (or strokes-composed.mjs's recipes) → strokes/<hex>.json
+  strokes.test.mjs       stroke matching on synthetic masks, records, building and composing stroke files, Strokes.svg, Write.judge
   pitch.test.mjs         pitch.js on synthetic voices with known pitch
   units.test.mjs         borrowing words between units (units.js, loadVocab, asset paths, unit 5's borrowed 個 and nouns)
   core.test.mjs          core.js's pure helpers (tones, toneChart)
@@ -103,6 +104,7 @@ Limits, learned the hard way:
 Hong Kong's standard is the guiding principle: stroke order (and form) as in the Education Bureau's 《香港小學學習字詞表》 (EDB). The free stroke data, Make Me a Hanzi (via `hanzi-writer-data`), follows mainland order: about one character in seven is ordered differently in Hong Kong, and some forms differ (之 and 艹 have 4 strokes in Hong Kong).
 - A unit lists the characters it teaches to write as a string in its vocab: `write: '一二三十'`. A few per unit, each in one of the unit's words, and each taught by one unit only (check.mjs enforces all three).
 - `node tools/stroke-check.mjs` (every taught character without a record; or `unit<N>`, or characters like `之菜` to try candidates) plays each EDB animation in headless Chrome, takes each stroke's ink, and pairs it with Make Me a Hanzi's strokes. It writes the Hong Kong order to `tools/strokes-hk.json` with a verdict: **ok**; **look** (a stroke matched weakly: compare with the animation on `review/strokes.html`, then `--confirm <chars>`); **differs** (another stroke count: can't be taught from this data); **missing** (not in EDB's list, like the Cantonese characters 咗 嘅, or no data). Keep only these facts from EDB, never its drawings. It needs Playwright outside the repo: `npm install --prefix ~/.local/share/learning-cantonese playwright` (or `$PLAYWRIGHT_DIR`).
+- Cantonese characters (咗 哋 冇 喺 啲 嗰...) are in neither EDB's list nor Make Me a Hanzi, so there is no standard to check them against. `tools/strokes-composed.mjs` builds them from parts that passed the check (咗: the 口 of 呢, then 左 stretched onto 呢's right side), each part in its Hong Kong order, left part first, as Hong Kong writes a left-right character; its stroke count must match a dictionary's. The review page marks them "Composed" and links each part's animation. Look at a new one rendered before teaching it. Not composable yet: 佢 (Hong Kong's 巨 has 5 strokes, the data 4).
 - Then `node tools/strokes.mjs` writes `strokes/<hex>.json`. check.mjs fails until every taught character has an ok or confirmed record and an up to date file.
 - A unit that teaches writing has `sheet.html` and `write.html` (copy unit 4's) and cards for them on its page; check.mjs enforces them. Write It's key is `u<N>-write`. Print-test a sheet in A4 and Letter (Playwright's `page.pdf({ preferCSSPageSize: true })`): each character's block stays on one page.
 - The stroke files are under the Arphic Public License: each says how it was changed, and `strokes/ARPHICPL.TXT` must stay unaltered.

@@ -28,8 +28,9 @@
  *   - characters to write (a unit's `write`; see tools/stroke-data.mjs):
  *     each is in one of the unit's words and taught by one unit only, has
  *     a stroke-order record in tools/strokes-hk.json that checked out
- *     against Hong Kong's standard (or a person confirmed), and an up to
- *     date strokes/<hex>.json (else run node tools/strokes.mjs); no orphan
+ *     against Hong Kong's standard (or a person confirmed), or is composed
+ *     (tools/strokes-composed.mjs) from parts that did, adding up to its
+ *     stroke count, and has an up to date strokes/<hex>.json (else run node tools/strokes.mjs); no orphan
  *     stroke files; review/strokes.html loads every such unit's vocab.js;
  *     a unit that teaches writing has sheet.html (shared/sheet.js) and
  *     write.html (shared/write.js), with cards for them on its page
@@ -43,7 +44,7 @@ import { dirname, join, relative, extname } from 'node:path';
 import vm from 'node:vm';
 import { spawnSync } from 'node:child_process';
 import { ROOT, unitDirs, loadVocab, entries, own, loadArt, secrets } from './site.mjs';
-import { RECORDS, readRecords, recordProblem, drawable, strokeFile, meta } from './stroke-data.mjs';
+import { RECORDS, readRecords, recordProblem, strokeFile, meta, COMPOSED, composedProblem, composedMeta } from './stroke-data.mjs';
 const fix = process.argv.includes('--fix');
 const problems = [];
 const bad = (file, msg) => problems.push(`${relative(ROOT, file)}: ${msg}`);
@@ -136,16 +137,21 @@ for (const unit of unitDirs()) {
     if (!all.some(e => e.hanzi.includes(char))) bad(vocabFile, `write: ${char} is in none of the unit's words`);
     if (taughtIn[char]) bad(vocabFile, `write: ${char} is already taught in ${taughtIn[char]}`);
     taughtIn[char] ??= unit;
-    const r = records[char];
-    if (!r) { bad(vocabFile, `write: ${char} has no stroke-order record (run node tools/stroke-check.mjs)`); continue; }
-    if (r.verdict === 'differs') bad(vocabFile, `write: ${char}'s Hong Kong form has ${r.strokes} strokes, the stroke data ${r.mmah}: it can't be taught from this data`);
-    if (r.verdict === 'missing') bad(vocabFile, `write: ${char} can't be checked against Hong Kong's standard (${r.note})`);
-    if (r.verdict === 'look' && !r.confirmed) bad(vocabFile, `write: ${char}'s stroke order needs a person: compare it with EDB's animation (review/strokes.html), then run node tools/stroke-check.mjs --confirm ${char}`);
-    if (!drawable(r)) continue;
+    const recipe = COMPOSED[char], r = records[char];
+    const say = msg => bad(vocabFile, `write: ${char} ${msg}`);
+    if (recipe) {
+      const p = composedProblem(char, recipe, records);
+      if (p) { say(`can't be composed: ${p}`); continue; }
+    } else if (!r) { say('has no stroke-order record (run node tools/stroke-check.mjs)'); continue; }
+    else if (r.verdict === 'differs') { say(`has ${r.strokes} strokes in Hong Kong, ${r.mmah} in the stroke data: it can't be taught from this data`); continue; }
+    else if (r.verdict === 'missing') { say(`can't be checked against Hong Kong's standard (${r.note}); compose it from parts in tools/strokes-composed.mjs?`); continue; }
+    else if (r.verdict === 'look' && !r.confirmed) say(`needs a person: compare its stroke order with EDB's animation (review/strokes.html), then run node tools/stroke-check.mjs --confirm ${char}`);
+    const n = recipe ? recipe.strokes : r.strokes;
     const file = strokeFile(char);
     const data = existsSync(file) && JSON.parse(readFileSync(file, 'utf8'));
     const { strokes, medians, ...rest } = data || {};
-    if (!data || strokes?.length !== r.strokes || medians?.length !== r.strokes || JSON.stringify(rest) !== JSON.stringify(meta(char, r))) {
+    const want = recipe ? composedMeta(char, recipe, records) : meta(char, r);
+    if (!data || strokes?.length !== n || medians?.length !== n || JSON.stringify(rest) !== JSON.stringify(want)) {
       bad(file, `${char}: missing or out of date (run node tools/strokes.mjs)`);
     }
   }

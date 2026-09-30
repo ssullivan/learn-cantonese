@@ -8,6 +8,8 @@
  *
  *   node tools/stroke-check.mjs              every character a unit teaches
  *                                            to write that has no record yet
+ *                                            (and isn't composed from parts:
+ *                                            tools/strokes-composed.mjs)
  *   node tools/stroke-check.mjs unit4        that unit's characters, again
  *   node tools/stroke-check.mjs 之菜         these characters (candidates too)
  *   node tools/stroke-check.mjs --confirm 點 a person watched EDB's animation
@@ -29,7 +31,7 @@
 import { pathToFileURL } from 'node:url';
 import { browser, unitDirs, loadVocab } from './site.mjs';
 import {
-  G, BASE, fetchRaw, edbUrl, readRecords, writeRecords, taught,
+  G, BASE, fetchRaw, edbUrl, readRecords, writeRecords, taught, COMPOSED,
   segment, bbox, fit, iou, assign, verdictFor,
 } from './stroke-data.mjs';
 
@@ -159,7 +161,7 @@ if (import.meta.url === pathToFileURL(process.argv[1]).href) {
   const named = args.filter(a => !/^unit\d+$/.test(a)).flatMap(a => [...a]).filter(c => /\p{Script=Han}/u.test(c));
   const chars = [...new Set(args.length
     ? [...units.flatMap(u => [...(loadVocab(u)?.write ?? '')]), ...named]
-    : taught().map(t => t.char).filter(c => !records[c]))];
+    : taught().map(t => t.char).filter(c => !records[c] && !COMPOSED[c]))];
   if (!chars.length) { console.log('Every character taught has a record. Name a unit or characters to check again.'); process.exit(0); }
 
   const b = await browser();

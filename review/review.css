@@ -113,3 +113,4 @@ tr.is-wrong td { background: color-mix(in srgb, var(--bad) 9%, transparent); }
 .stroke-flag { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 14px; font-weight: 600; }
 .stroke-flag.ok { background: var(--good); color: var(--bg); }
 .stroke-flag.look { background: var(--gold); color: var(--bg); }
+.stroke-flag.composed { background: var(--jade); color: var(--bg); }
