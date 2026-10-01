@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>An electric kettle, steaming</title>
+<ellipse cx="64" cy="116" rx="42" ry="4" fill="#9fb0bb" opacity=".35"/><path d="M42 40 L22 26 Q16 24 17 31 L40 64 Z" fill="#f4f6f8" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M40 30 H88 L94 104 H34 Z" fill="#f4f6f8" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M88 40 Q112 40 110 68 Q108 92 92 94" stroke="#6f8796" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M44 28 H84 Q84 20 64 18 Q44 20 44 28 Z" fill="#6f8796"/>
+<rect x="44" y="48" width="8" height="40" rx="3" fill="#bfe0f5" stroke="#3f7cc0" stroke-width="1.5"/><rect x="46" y="64" width="4" height="22" rx="1.5" fill="#3f7cc0"/>
+<path d="M26 104 H102 L98 114 H30 Z" fill="#5f6a72" stroke="#3a4148" stroke-width="2" stroke-linejoin="round"/><circle cx="64" cy="109" r="2.5" fill="#5fd17a"/>
+<path d="M19 30 q-5 -7 0 -13 t0 -13" stroke="#9fb0bb" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

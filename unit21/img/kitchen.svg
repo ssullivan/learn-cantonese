@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A kitchen: a fridge beside a counter with a gas stove and a kettle</title>
+
+<rect x="40" y="8" width="84" height="18" rx="2" fill="#c98a4a" stroke="#7d4f1e" stroke-width="2"/>
+<path d="M82 8 V26" stroke="#7d4f1e" stroke-width="2"/><path d="M66 18 h8 M90 18 h8" stroke="#7d4f1e" stroke-width="2.5" stroke-linecap="round"/>
+<g transform="translate(-14 4) scale(.9)"><rect x="34" y="8" width="60" height="108" rx="7" fill="#f4f6f8" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M34 44 H94" stroke="#8a9aa5" stroke-width="2.5"/>
+<path d="M84 20 V34 M84 54 V80" stroke="#3a4148" stroke-width="4.5" stroke-linecap="round"/>
+<circle cx="48" cy="62" r="5" fill="#d6453a"/><rect x="45" y="70" width="12" height="9" rx="1.5" fill="#f7d35c" transform="rotate(-6 51 74)"/>
+<path d="M40 116 v4 M88 116 v4" stroke="#6f8796" stroke-width="4" stroke-linecap="round"/></g>
+<rect x="44" y="84" width="80" height="34" fill="#c98a4a" stroke="#7d4f1e" stroke-width="2.5"/>
+<path d="M84 84 V118 M60 98 h8 M100 98 h8" stroke="#7d4f1e" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="42" y="78" width="84" height="7" rx="1.5" fill="#e7ebef" stroke="#8a9aa5" stroke-width="2"/>
+<g transform="translate(46 34) scale(.42)"><path d="M8 66 H120 L116 102 H12 Z" fill="#c8ced3" stroke="#6f8796" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="8" y="58" width="112" height="10" rx="2" fill="#5f6a72" stroke="#3a4148" stroke-width="2"/>
+<path d="M14 84 H114" stroke="#6f8796" stroke-width="2"/>
+<circle cx="38" cy="93" r="5" fill="#3a4148"/><path d="M38 93 v-5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/><circle cx="90" cy="93" r="5" fill="#3a4148"/><path d="M90 93 v-5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+<ellipse cx="38" cy="58" rx="20" ry="5" fill="#3a4148"/><path d="M22 56 Q24 46 29 52 Q32 40 38 50 Q44 40 47 52 Q52 46 54 56 Z" fill="#3f7cc0" stroke="#24507f" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M29 56 Q34 48 38 53 Q42 48 47 56 Z" fill="#8ec5f0"/><ellipse cx="90" cy="58" rx="20" ry="5" fill="#3a4148"/><path d="M74 56 Q76 46 81 52 Q84 40 90 50 Q96 40 99 52 Q104 46 106 56 Z" fill="#3f7cc0" stroke="#24507f" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M81 56 Q86 48 90 53 Q94 48 99 56 Z" fill="#8ec5f0"/>
+<path d="M18 102 v6 M110 102 v6" stroke="#5f6a72" stroke-width="4" stroke-linecap="round"/></g>
+<g transform="translate(92 38) scale(.32)"><path d="M42 40 L22 26 Q16 24 17 31 L40 64 Z" fill="#f4f6f8" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M40 30 H88 L94 104 H34 Z" fill="#f4f6f8" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M88 40 Q112 40 110 68 Q108 92 92 94" stroke="#6f8796" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M44 28 H84 Q84 20 64 18 Q44 20 44 28 Z" fill="#6f8796"/>
+<rect x="44" y="48" width="8" height="40" rx="3" fill="#bfe0f5" stroke="#3f7cc0" stroke-width="1.5"/><rect x="46" y="64" width="4" height="22" rx="1.5" fill="#3f7cc0"/>
+<path d="M26 104 H102 L98 114 H30 Z" fill="#5f6a72" stroke="#3a4148" stroke-width="2" stroke-linejoin="round"/><circle cx="64" cy="109" r="2.5" fill="#5fd17a"/>
+<path d="M19 30 q-5 -7 0 -13 t0 -13" stroke="#9fb0bb" stroke-width="3" fill="none" stroke-linecap="round"/></g>
+<path d="M4 120 H124" stroke="#9fb0bb" stroke-width="3" stroke-linecap="round"/>
+</svg>

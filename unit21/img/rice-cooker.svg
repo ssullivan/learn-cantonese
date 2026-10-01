@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A rice cooker, steaming</title>
+<ellipse cx="64" cy="110" rx="40" ry="4" fill="#9fb0bb" opacity=".35"/><path d="M30 60 C28 82 30 100 36 108 H92 C98 100 100 82 98 60 Z" fill="#f4f6f8" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M26 60 C30 40 98 40 102 60 Z" fill="#e7ebef" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M52 42 Q64 32 76 42" stroke="#6f8796" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path d="M36 72 Q64 66 92 72" stroke="#d6453a" stroke-width="3" fill="none"/>
+<rect x="52" y="78" width="24" height="16" rx="3" fill="#e7ebef" stroke="#8a9aa5" stroke-width="2"/><circle cx="64" cy="86" r="3.5" fill="#f08a2c"/>
+<path d="M58 30 q-5 -7 0 -13 t0 -13" stroke="#9fb0bb" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M70 30 q-5 -7 0 -13 t0 -13" stroke="#9fb0bb" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

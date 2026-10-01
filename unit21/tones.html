@@ -4,22 +4,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-<title>Stroke order review</title>
+<title>Tone Detective · Kitchen Appliances</title>
 <link rel="stylesheet" href="../shared/theme.css?v=1a4ed1c2">
-<link rel="stylesheet" href="../shared/strokes.css?v=cf228f98">
-<link rel="stylesheet" href="review.css?v=081a3bc3">
+<link rel="stylesheet" href="../shared/game.css?v=f684e1f7">
 </head>
 <body>
 <main class="page">
   <header class="page-header">
-    <a class="back" href="../">← All units</a>
-    <p class="eyebrow">For reviewers</p>
-    <h1><span class="hanzi" lang="zh-HK">筆順</span>Stroke order review</h1>
-    <p class="lede">Every character the site teaches to write, in Hong Kong stroke order: the Education Bureau's <span lang="zh-HK">《香港小學學習字詞表》</span>. A machine compared each one with the Bureau's animation; open the animation to compare it yourself, especially any marked <strong>Needs a person</strong>.</p>
+    <a class="back" href="../">← Unit 21</a>
+    <p class="eyebrow">Unit 21 · Game</p>
+    <h1><span class="hanzi" lang="zh-HK">聲調</span>Tone Detective</h1>
+    <p class="lede">Hear appliances and kitchen words and catch their tones. 叮 ding1, 煲 bou1, 炒 caau2, 用 jung6.</p>
   </header>
-  <div id="strokes"></div>
+  <div id="game"></div>
 </main>
 <script src="../shared/core.js?v=087a6643"></script>
+<script src="../shared/audio.js?v=f296d05e"></script>
+<script src="../shared/game.js?v=642dda01"></script>
+<script src="../shared/tones.js?v=1e42a794"></script>
 <script src="../shared/numbers.js?v=1903e834"></script>
 <script src="../shared/units.js?v=f456af20"></script>
 <script src="../unit1/vocab.js?v=11925fb9"></script>
@@ -42,8 +44,20 @@
 <script src="../unit18/vocab.js?v=f862faaa"></script>
 <script src="../unit19/vocab.js?v=94cd2c20"></script>
 <script src="../unit20/vocab.js?v=2aa832e0"></script>
-<script src="../unit21/vocab.js?v=8e80671b"></script>
-<script src="../shared/strokes.js?v=295bfea7"></script>
-<script src="strokes.js?v=680a4f08"></script>
+<script src="vocab.js?v=8e80671b"></script>
+<script>
+  const V = window.VOCAB;
+  const own = list => list.filter(e => !e.unit);
+  Tones.init({
+    root: document.getElementById('game'),
+    key: 'u21-tones',
+    levels: [
+      { id: 'appliances', name: '雪櫃 焗爐', blurb: 'Kitchen appliances.', pool: [...V.appliances, ...V.ones], choices: 3 },
+      { id: 'verbs', name: '叮 煲 炒', blurb: 'Kitchen words and verbs.', pool: [...V.words, ...V.verbs, ...own(V.measures)], choices: 3 },
+      { id: 'tasks', name: '煲水 洗碗', blurb: 'What they\'re for, and how long: 煲水, 兩分鐘.', pool: [...V.tasks, ...V.minutes], choices: 4 },
+      { id: 'sentences', name: '用乜嘢？', blurb: '用 + appliance + verb, how long, in and out.', pool: [...V.uses, ...V.asks, ...V.howLong, ...V.inOut, ...V.sentences], choices: 4 },
+    ],
+  });
+</script>
 </body>
 </html>

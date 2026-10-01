@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A toaster with toast popping up</title>
+<ellipse cx="64" cy="118" rx="50" ry="4" fill="#9fb0bb" opacity=".35"/><path d="M35 64 V44 Q35 35 48 35 Q61 35 61 44 V64 Z" fill="#b8742c" stroke="#7d4f1e" stroke-width="2" stroke-linejoin="round"/>
+<path d="M39 64 V46 Q39 39 48 39 Q57 39 57 46 V64 Z" fill="#f2c774"/><path d="M67 60 V40 Q67 31 80 31 Q93 31 93 40 V60 Z" fill="#b8742c" stroke="#7d4f1e" stroke-width="2" stroke-linejoin="round"/>
+<path d="M71 60 V42 Q71 35 80 35 Q89 35 89 42 V60 Z" fill="#f2c774"/>
+<rect x="16" y="54" width="96" height="58" rx="14" fill="#c8ced3" stroke="#6f8796" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M34 58 H62 M66 58 H94" stroke="#3a4148" stroke-width="5" stroke-linecap="round"/>
+<path d="M28 72 Q64 66 100 72" stroke="#ffffff" stroke-width="4" fill="none" opacity=".6" stroke-linecap="round"/>
+<rect x="104" y="72" width="12" height="7" rx="2" fill="#3a4148"/><circle cx="64" cy="94" r="5" fill="#3a4148"/><path d="M64 94 v-5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M28 112 v4 M100 112 v4" stroke="#5f6a72" stroke-width="4" stroke-linecap="round"/>
+</svg>

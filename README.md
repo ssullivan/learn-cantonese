@@ -2,7 +2,7 @@
 
 Cantonese lessons and games with native-sounding audio, served at https://ssullivan.github.io/learn-cantonese/.
 
-The course has 20 units, each building on the ones before (the roadmap is in CLAUDE.md). Every unit has a learn page with a listening quiz and at least one game. From Unit 2 on, each also has *Tone Detective* (hear a word and pick its tones) and *Say It Back* (record yourself and compare your pitch curve with a native speaker's; recordings stay on your device).
+The course has 21 units, each building on the ones before (the roadmap is in CLAUDE.md). Every unit has a learn page with a listening quiz and at least one game. From Unit 2 on, each also has *Tone Detective* (hear a word and pick its tones) and *Say It Back* (record yourself and compare your pitch curve with a native speaker's; recordings stay on your device).
 
 ### Foundations
 - **Unit 1 · 聲調 Sounds & Tones**: the six tones on one syllable at a time, and how to read Jyutping.
@@ -53,6 +53,8 @@ The course has 20 units, each building on the ones before (the roadmap is in CLA
   - *Zoo*: find the animal, count it with 隻 or 條, say whether it can fly or climb, and find someone's zodiac animal.
 - **Unit 20 · 生果同菜 Fruit & Vegetables**: fruit and vegetables at the 街市, their measure words (一條香蕉, 一粒提子, 一棵菜心), buying by the catty (幾多錢一斤呀？ 我要斤半), and 啲 for "some".
   - *Wet Market*: sort fruit from vegetables, read the price signs, weigh out catties, and work out what it comes to.
+- **Unit 21 · 廚房電器 Kitchen Appliances**: 雪櫃 微波爐 焗爐 電飯煲 and the rest, counted with 部 or 個; what each is for (煲水, 叮熱啲飯); 用 + appliance + verb (我用水煲煲水); how long after the verb (叮兩分鐘); and 放入 / 攞出, 開 / 閂.
+  - *Kitchen Helper*: find the appliance for the job (用乜嘢煲飯呀？), say what each one is for, catch how long to cook things, and build sentences.
 
 **Writing characters:** every unit teaches a few of its characters to write, in Hong Kong stroke order (the Education Bureau's 《香港小學學習字詞表》): three each, four numbers in unit 4, and in unit 2 你 早 多 plus 冇 咗 哋, characters only Cantonese has.
   - *Write It*: write them stroke by stroke with your finger: watch and trace, trace, from memory, then 默書 from what you hear. A stroke out of order says so.

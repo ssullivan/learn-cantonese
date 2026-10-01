@@ -1,0 +1,320 @@
+{
+ "caau2-mins2": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 兩 tone 5 sounds like 2 (p 0.16)"
+  ],
+  "audio": "049c299b1422"
+ },
+ "caau2-mins3": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 炒 tone 2 sounds like 4 (p 0.35)"
+  ],
+  "audio": "67c0a398db70"
+ },
+ "caau2-mins5": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 五 tone 5 sounds like 6 (p 0.43)"
+  ],
+  "audio": "762454c75046"
+ },
+ "dishwasher": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 碗 tone 2 sounds like 5 (p 0.29)"
+  ],
+  "audio": "ba76e5bf19c9"
+ },
+ "fridge-waai6-zo": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 雪 tone 3 sounds like 6 (p 0.18)"
+  ],
+  "audio": "aee5bdfb1acd"
+ },
+ "jap6": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Yup y u p"
+  ],
+  "audio": "fd20eed11bca"
+ },
+ "jiu-ding1-gei-noi-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 耐 tone 6 sounds like 3 (p 0.06)"
+  ],
+  "audio": "fe40d17a9863"
+ },
+ "jung-mat-je-baked-cake-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 用 tone 6 sounds like 5 (p 0.25)"
+  ],
+  "audio": "e563dcbc9b88"
+ },
+ "jung-mat-je-bou1-rice-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 用 tone 6 sounds like 5 (p 0.34); 嘢 tone 5 sounds like 6 (p 0.25); 飯 tone 6 sounds like 3 (p 0.14)"
+  ],
+  "audio": "642cfc4aba85"
+ },
+ "jung-mat-je-bou1-water-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 嘢 tone 5 sounds like 6 (p 0.19)"
+  ],
+  "audio": "3c359e6b7349"
+ },
+ "jung-mat-je-caau2-coi-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 用 tone 6 sounds like 5 (p 0.18)"
+  ],
+  "audio": "e8b36a75cd5c"
+ },
+ "jung-mat-je-ding1-jit-di-rice-aa": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 嘢 tone 5 sounds like 2 (p 0.20)"
+  ],
+  "audio": "129dbd6bd5e3"
+ },
+ "jung-mat-je-sai-wun-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "6d5a1b0d9d30"
+ },
+ "jung-mat-je-syut-dung-di-orange-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "speech-to-text heard 用乜嘢說凍啲茶吖 jung mat je syut dung di caa aa",
+   "tone doubtful: 用 tone 6 sounds like 5 (p 0.06)"
+  ],
+  "audio": "41b5960981ab"
+ },
+ "jung-mat-je-zing2-toast-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "79d0b003e2e6"
+ },
+ "jung-microwave-ding1-mins1": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 用 tone 6 sounds like 3 (p 0.08)"
+  ],
+  "audio": "552031ee5509"
+ },
+ "jung-microwave-ding1-mins2": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 用 tone 6 sounds like 3 (p 0.04); 兩 tone 5 sounds like 2 (p 0.42)"
+  ],
+  "audio": "d43e5484d77f"
+ },
+ "jung-microwave-ding1-mins3": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 用 tone 6 sounds like 3 (p 0.07)"
+  ],
+  "audio": "750ffa22d089"
+ },
+ "jung-microwave-ding1-mins5": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 用 tone 6 sounds like 3 (p 0.09)"
+  ],
+  "audio": "21d580657620"
+ },
+ "jung-oven-baked-mins10": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 焗 tone 6 sounds like 3 (p 0.40)"
+  ],
+  "audio": "b46aa8fd5cd0"
+ },
+ "jung-oven-baked-mins15": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 用 tone 6 sounds like 3 (p 0.09)"
+  ],
+  "audio": "73bab27ec4b5"
+ },
+ "jung-oven-baked-mins20": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 用 tone 6 sounds like 3 (p 0.29); 焗 tone 6 sounds like 3 (p 0.30)"
+  ],
+  "audio": "fb7bf6006e27"
+ },
+ "jung-oven-baked-mins30": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 用 tone 6 sounds like 3 (p 0.31); 焗 tone 6 sounds like 3 (p 0.45)"
+  ],
+  "audio": "8db249aa731a"
+ },
+ "kitchen-jau-mou-dishwasher-aa": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 廚 tone 4 sounds like 6 (p 0.16); 有 tone 5 sounds like 3 (p 0.29)"
+  ],
+  "audio": "27424d4293b0"
+ },
+ "mins15": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 五 tone 5 sounds like 2 (p 0.42)"
+  ],
+  "audio": "0abe2bd1cc1c"
+ },
+ "mins20": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 二 tone 6 sounds like 3 (p 0.15)"
+  ],
+  "audio": "ae0ce1b2da8a"
+ },
+ "nei-jung-m-jung-microwave-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 2 (p 0.00)",
+   "tone doubtful: 用 tone 6 sounds like 3 (p 0.26); 用 tone 6 sounds like 5 (p 0.23)"
+  ],
+  "audio": "68cc827b07b3"
+ },
+ "ngo-home-mou-oven": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.46); 冇 tone 5 sounds like 6 (p 0.04)"
+  ],
+  "audio": "239f89ac79a4"
+ },
+ "ngo-jung-dishwasher-sai-wun": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 碗 tone 2 sounds like 3 (p 0.18); 碗 tone 2 sounds like 5 (p 0.16)"
+  ],
+  "audio": "e27d8babb3dc"
+ },
+ "ngo-jung-microwave-ding1-jit-di-rice": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 飯 tone 6 sounds like 4 (p 0.20)"
+  ],
+  "audio": "f6910b6fad40"
+ },
+ "ngo-jung-oven-baked-cake": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 2 (p 0.30)"
+  ],
+  "audio": "58faf3b346aa"
+ },
+ "ngo-jung-rice-cooker-bou1-rice": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 飯 tone 6 sounds like 5 (p 0.31)"
+  ],
+  "audio": "9db5eb3b4cb2"
+ },
+ "ngo-jung-stove-caau2-coi": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 煤 tone 4 sounds like 5 (p 0.23)"
+  ],
+  "audio": "4d9e2dee433a"
+ },
+ "ngo-jung-toaster-zing2-toast": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 士 tone 2 sounds like 2 (p 0.46)"
+  ],
+  "audio": "00bedf4ac88a"
+ },
+ "ngo-t0600-bou1-rice": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 飯 tone 6 sounds like 6 (p 0.33)"
+  ],
+  "audio": "6dff352c5e48"
+ },
+ "one-dishwasher": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 部 tone 6 sounds like 3 (p 0.15); 碗 tone 2 sounds like 5 (p 0.09)"
+  ],
+  "audio": "a1e06fe5c65d"
+ },
+ "one-kettle": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 水 tone 2 sounds like 5 (p 0.46)"
+  ],
+  "audio": "101e1dd6d145"
+ },
+ "one-microwave": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 部 tone 6 sounds like 3 (p 0.24)"
+  ],
+  "audio": "638d27fe2c64"
+ },
+ "one-rice-cooker": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 一 tone 1 sounds like 1 (p 0.39)"
+  ],
+  "audio": "e5040188aeb1"
+ },
+ "saan1": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 三 saam"
+  ],
+  "audio": "3525b5f3d005"
+ },
+ "saan1-stove": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 三梅氣路 saam mui hei lou"
+  ],
+  "audio": "155c1495be30"
+ },
+ "saan1-zo-stove-mei-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "speech-to-text heard 生咗煤氣爐未吖 sang zo mui hei lou mei aa",
+   "tone doubtful: 爐 tone 4 sounds like 5 (p 0.26); 未 tone 6 sounds like 6 (p 0.47)"
+  ],
+  "audio": "fedd70cebfd3"
+ },
+ "stove": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 煤 tone 4 sounds like 6 (p 0.19)"
+  ],
+  "audio": "44b6ff163925"
+ },
+ "waai6": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 喂 wai"
+  ],
+  "audio": "eb1005e57c37"
+ }
+}

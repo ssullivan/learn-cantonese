@@ -44,7 +44,7 @@ We measure it rather than trust it. audio-lang-tools has a benchmark: clips of w
 So a clip with no flag is very likely fine, and a CHECK is worth hearing. But a CHECK isn't proof of a mistake, and no flag isn't proof of perfection.
 
 ### Where things stand
-Across the site: 1,331 clips pass (62%), 444 are LISTEN (21%) and 378 are CHECK (18%). Of the CHECKs, 167 are only a question-final 呀 or 嗎 said high (see below). Most clips haven't been heard by a native speaker yet.
+Across the site: 1,401 clips pass (60%), 515 are LISTEN (22%) and 406 are CHECK (17%). Of the CHECKs, 177 are only a question-final 呀 or 嗎 said high (see below). Most clips haven't been heard by a native speaker yet.
 
 ## Common problems we see
 

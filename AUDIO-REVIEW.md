@@ -1,6 +1,6 @@
 # Audio review
 
-Every clip on the site (2239), unit by unit. **Listen on the [review page](https://ssullivan.github.io/learn-cantonese/review/)**, where you can mark each clip and copy your notes; the links below play one clip each.
+Every clip on the site (2322), unit by unit. **Listen on the [review page](https://ssullivan.github.io/learn-cantonese/review/)**, where you can mark each clip and copy your notes; the links below play one clip each.
 
 Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this file by hand.
 
@@ -2342,3 +2342,91 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 | 88 | 呢啲橙好酸 | ni1 di1 caang2 hou2 syun1 | These oranges are very sour. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/ni-di-orange-hou-syun.mp3) |
 | 89 | 番茄係生果定係菜呀？ | faan1 ke2 hai6 saang1 gwo2 ding6 hai6 coi3 aa3 | Is a tomato a fruit or a vegetable? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/tomato-hai-saang-gwo-ding-hai-coi-aa.mp3) |
 | 90 | 我最鍾意食芒果 | ngo5 zeoi3 zung1 ji3 sik6 mong1 gwo2 | Mangoes are my favourite. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/ngo-zeoi-zung-ji-sik6-mango.mp3) |
+
+## Unit 21
+
+| # | Chinese | Jyutping | English | Audio |
+|---|---|---|---|---|
+| 1 | 雪櫃 | syut3 gwai6 | fridge | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/fridge.mp3) |
+| 2 | 微波爐 | mei4 bo1 lou4 | microwave | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/microwave.mp3) |
+| 3 | 焗爐 | guk6 lou4 | oven | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/oven.mp3) |
+| 4 | 煤氣爐 | mui4 hei3 lou4 | gas stove | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/stove.mp3) |
+| 5 | 電飯煲 | din6 faan6 bou1 | rice cooker | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/rice-cooker.mp3) |
+| 6 | 水煲 | seoi2 bou1 | kettle | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/kettle.mp3) |
+| 7 | 多士爐 | do1 si2 lou4 | toaster | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/toaster.mp3) |
+| 8 | 洗碗機 | sai2 wun2 gei1 | dishwasher | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/dishwasher.mp3) |
+| 9 | 廚房 | cyu4 fong2 | kitchen | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/kitchen.mp3) |
+| 10 | 電器 | din6 hei3 | electrical appliance | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/din-hei.mp3) |
+| 11 | 幾耐 | gei2 noi6 | how long | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/gei-noi.mp3) |
+| 12 | 分鐘 | fan1 zung1 | minute (how long) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/fan-zung.mp3) |
+| 13 | 用 | jung6 | to use | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/jung.mp3) |
+| 14 | 叮 | ding1 | to microwave | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/ding1.mp3) |
+| 15 | 煲 | bou1 | to boil; a pot | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/bou1.mp3) |
+| 16 | 炒 | caau2 | to stir-fry | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/caau2.mp3) |
+| 17 | 整 | zing2 | to make; to fix | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/zing2.mp3) |
+| 18 | 入 | jap6 | in; into | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/jap6.mp3) |
+| 19 | 攞 | lo2 | to take; to get | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/lo2.mp3) |
+| 20 | 閂 | saan1 | to close; to turn off | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/saan1.mp3) |
+| 21 | 壞 | waai6 | broken | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/waai6.mp3) |
+| 22 | 部 | bou6 | for machines | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/bou6.mp3) |
+| 23 | 叮熱啲飯 | ding1 jit6 di1 faan6 | to heat up the rice | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/ding1-jit-di-rice.mp3) |
+| 24 | 雪凍啲橙 | syut3 dung3 di1 caang2 | to chill the oranges | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/syut-dung-di-orange.mp3) |
+| 25 | 煲水 | bou1 seoi2 | to boil water | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/bou1-water.mp3) |
+| 26 | 煲飯 | bou1 faan6 | to cook rice | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/bou1-rice.mp3) |
+| 27 | 焗蛋糕 | guk6 daan6 gou1 | to bake a cake | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/baked-cake.mp3) |
+| 28 | 整多士 | zing2 do1 si2 | to make toast | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/zing2-toast.mp3) |
+| 29 | 洗碗 | sai2 wun2 | to wash the dishes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/sai-wun.mp3) |
+| 30 | 炒菜 | caau2 coi3 | to stir-fry vegetables | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/caau2-coi.mp3) |
+| 31 | 我用微波爐叮熱啲飯 | ngo5 jung6 mei4 bo1 lou4 ding1 jit6 di1 faan6 | I use the microwave to heat up the rice. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/ngo-jung-microwave-ding1-jit-di-rice.mp3) |
+| 32 | 我用水煲煲水 | ngo5 jung6 seoi2 bou1 bou1 seoi2 | I use the kettle to boil water. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/ngo-jung-kettle-bou1-water.mp3) |
+| 33 | 我用電飯煲煲飯 | ngo5 jung6 din6 faan6 bou1 bou1 faan6 | I use the rice cooker to cook rice. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/ngo-jung-rice-cooker-bou1-rice.mp3) |
+| 34 | 我用焗爐焗蛋糕 | ngo5 jung6 guk6 lou4 guk6 daan6 gou1 | I use the oven to bake a cake. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/ngo-jung-oven-baked-cake.mp3) |
+| 35 | 我用多士爐整多士 | ngo5 jung6 do1 si2 lou4 zing2 do1 si2 | I use the toaster to make toast. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/ngo-jung-toaster-zing2-toast.mp3) |
+| 36 | 我用洗碗機洗碗 | ngo5 jung6 sai2 wun2 gei1 sai2 wun2 | I use the dishwasher to wash the dishes. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/ngo-jung-dishwasher-sai-wun.mp3) |
+| 37 | 我用煤氣爐炒菜 | ngo5 jung6 mui4 hei3 lou4 caau2 coi3 | I use the gas stove to stir-fry vegetables. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/ngo-jung-stove-caau2-coi.mp3) |
+| 38 | 用乜嘢叮熱啲飯呀？ | jung6 mat1 je5 ding1 jit6 di1 faan6 aa3 | What do you use to heat up the rice? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/jung-mat-je-ding1-jit-di-rice-aa.mp3) |
+| 39 | 用乜嘢雪凍啲橙呀？ | jung6 mat1 je5 syut3 dung3 di1 caang2 aa3 | What do you use to chill the oranges? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/jung-mat-je-syut-dung-di-orange-aa.mp3) |
+| 40 | 用乜嘢煲水呀？ | jung6 mat1 je5 bou1 seoi2 aa3 | What do you use to boil water? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/jung-mat-je-bou1-water-aa.mp3) |
+| 41 | 用乜嘢煲飯呀？ | jung6 mat1 je5 bou1 faan6 aa3 | What do you use to cook rice? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/jung-mat-je-bou1-rice-aa.mp3) |
+| 42 | 用乜嘢焗蛋糕呀？ | jung6 mat1 je5 guk6 daan6 gou1 aa3 | What do you use to bake a cake? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/jung-mat-je-baked-cake-aa.mp3) |
+| 43 | 用乜嘢整多士呀？ | jung6 mat1 je5 zing2 do1 si2 aa3 | What do you use to make toast? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/jung-mat-je-zing2-toast-aa.mp3) |
+| 44 | 用乜嘢洗碗呀？ | jung6 mat1 je5 sai2 wun2 aa3 | What do you use to wash the dishes? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/jung-mat-je-sai-wun-aa.mp3) |
+| 45 | 用乜嘢炒菜呀？ | jung6 mat1 je5 caau2 coi3 aa3 | What do you use to stir-fry vegetables? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/jung-mat-je-caau2-coi-aa.mp3) |
+| 46 | 一分鐘 | jat1 fan1 zung1 | 1 minute | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/mins1.mp3) |
+| 47 | 兩分鐘 | loeng5 fan1 zung1 | 2 minutes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/mins2.mp3) |
+| 48 | 三分鐘 | saam1 fan1 zung1 | 3 minutes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/mins3.mp3) |
+| 49 | 五分鐘 | ng5 fan1 zung1 | 5 minutes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/mins5.mp3) |
+| 50 | 十分鐘 | sap6 fan1 zung1 | 10 minutes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/mins10.mp3) |
+| 51 | 十五分鐘 | sap6 ng5 fan1 zung1 | 15 minutes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/mins15.mp3) |
+| 52 | 二十分鐘 | ji6 sap6 fan1 zung1 | 20 minutes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/mins20.mp3) |
+| 53 | 三十分鐘 | saam1 sap6 fan1 zung1 | 30 minutes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/mins30.mp3) |
+| 54 | 用微波爐叮一分鐘 | jung6 mei4 bo1 lou4 ding1 jat1 fan1 zung1 | Microwave it for 1 minute. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/jung-microwave-ding1-mins1.mp3) |
+| 55 | 用微波爐叮兩分鐘 | jung6 mei4 bo1 lou4 ding1 loeng5 fan1 zung1 | Microwave it for 2 minutes. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/jung-microwave-ding1-mins2.mp3) |
+| 56 | 用微波爐叮三分鐘 | jung6 mei4 bo1 lou4 ding1 saam1 fan1 zung1 | Microwave it for 3 minutes. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/jung-microwave-ding1-mins3.mp3) |
+| 57 | 用微波爐叮五分鐘 | jung6 mei4 bo1 lou4 ding1 ng5 fan1 zung1 | Microwave it for 5 minutes. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/jung-microwave-ding1-mins5.mp3) |
+| 58 | 用焗爐焗十分鐘 | jung6 guk6 lou4 guk6 sap6 fan1 zung1 | Bake it in the oven for 10 minutes. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/jung-oven-baked-mins10.mp3) |
+| 59 | 用焗爐焗十五分鐘 | jung6 guk6 lou4 guk6 sap6 ng5 fan1 zung1 | Bake it in the oven for 15 minutes. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/jung-oven-baked-mins15.mp3) |
+| 60 | 用焗爐焗二十分鐘 | jung6 guk6 lou4 guk6 ji6 sap6 fan1 zung1 | Bake it in the oven for 20 minutes. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/jung-oven-baked-mins20.mp3) |
+| 61 | 用焗爐焗三十分鐘 | jung6 guk6 lou4 guk6 saam1 sap6 fan1 zung1 | Bake it in the oven for 30 minutes. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/jung-oven-baked-mins30.mp3) |
+| 62 | 炒兩分鐘 | caau2 loeng5 fan1 zung1 | Stir-fry it for 2 minutes. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/caau2-mins2.mp3) |
+| 63 | 炒三分鐘 | caau2 saam1 fan1 zung1 | Stir-fry it for 3 minutes. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/caau2-mins3.mp3) |
+| 64 | 炒五分鐘 | caau2 ng5 fan1 zung1 | Stir-fry it for 5 minutes. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/caau2-mins5.mp3) |
+| 65 | 要叮幾耐呀？ | jiu3 ding1 gei2 noi6 aa3 | How long does it need in the microwave? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/jiu-ding1-gei-noi-aa.mp3) |
+| 66 | 我六點鐘煲飯 | ngo5 luk6 dim2 zung1 bou1 faan6 | I cook the rice at six. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/ngo-t0600-bou1-rice.mp3) |
+| 67 | 放啲橙入雪櫃 | fong3 di1 caang2 jap6 syut3 gwai6 | Put the oranges in the fridge. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/fong-di-orange-jap6-fridge.mp3) |
+| 68 | 攞啲橙出嚟 | lo2 di1 caang2 ceot1 lai4 | Take the oranges out. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/lo2-di-orange-ceot-lai.mp3) |
+| 69 | 放個蛋糕入焗爐 | fong3 go3 daan6 gou1 jap6 guk6 lou4 | Put the cake in the oven. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/fong-go-cake-jap6-oven.mp3) |
+| 70 | 開雪櫃 | hoi1 syut3 gwai6 | Open the fridge. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/hoi-fridge.mp3) |
+| 71 | 開焗爐 | hoi1 guk6 lou4 | Turn the oven on. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/hoi-oven.mp3) |
+| 72 | 閂煤氣爐 | saan1 mui4 hei3 lou4 | Turn off the gas stove. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/saan1-stove.mp3) |
+| 73 | 閂咗煤氣爐未呀？ | saan1 zo2 mui4 hei3 lou4 mei6 aa3 | Have you turned off the gas stove? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/saan1-zo-stove-mei-aa.mp3) |
+| 74 | 雪櫃壞咗 | syut3 gwai6 waai6 zo2 | The fridge is broken. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/fridge-waai6-zo.mp3) |
+| 75 | 我屋企冇焗爐 | ngo5 uk1 kei2 mou5 guk6 lou4 | There's no oven at my home. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/ngo-home-mou-oven.mp3) |
+| 76 | 廚房有冇洗碗機呀？ | cyu4 fong2 jau5 mou5 sai2 wun2 gei1 aa3 | Is there a dishwasher in the kitchen? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/kitchen-jau-mou-dishwasher-aa.mp3) |
+| 77 | 你用唔用微波爐呀？ | nei5 jung6 m4 jung6 mei4 bo1 lou4 aa3 | Do you use the microwave? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/nei-jung-m-jung-microwave-aa.mp3) |
+| 78 | 一部雪櫃 | jat1 bou6 syut3 gwai6 | a fridge | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/one-fridge.mp3) |
+| 79 | 一部微波爐 | jat1 bou6 mei4 bo1 lou4 | a microwave | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/one-microwave.mp3) |
+| 80 | 一個電飯煲 | jat1 go3 din6 faan6 bou1 | a rice cooker | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/one-rice-cooker.mp3) |
+| 81 | 一個水煲 | jat1 go3 seoi2 bou1 | a kettle | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/one-kettle.mp3) |
+| 82 | 一個多士爐 | jat1 go3 do1 si2 lou4 | a toaster | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/one-toaster.mp3) |
+| 83 | 一部洗碗機 | jat1 bou6 sai2 wun2 gei1 | a dishwasher | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/one-dishwasher.mp3) |

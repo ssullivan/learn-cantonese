@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
+<title>A fridge</title>
+<ellipse cx="64" cy="120" rx="36" ry="4" fill="#9fb0bb" opacity=".35"/><rect x="34" y="8" width="60" height="108" rx="7" fill="#f4f6f8" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M34 44 H94" stroke="#8a9aa5" stroke-width="2.5"/>
+<path d="M84 20 V34 M84 54 V80" stroke="#3a4148" stroke-width="4.5" stroke-linecap="round"/>
+<circle cx="48" cy="62" r="5" fill="#d6453a"/><rect x="45" y="70" width="12" height="9" rx="1.5" fill="#f7d35c" transform="rotate(-6 51 74)"/>
+<path d="M40 116 v4 M88 116 v4" stroke="#6f8796" stroke-width="4" stroke-linecap="round"/>
+</svg>
