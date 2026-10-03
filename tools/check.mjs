@@ -9,6 +9,8 @@
  *   - every href/src in every .html is relative and points at a file
  *   - local .css/.js links carry ?v=<first 8 of sha1(file)>
  *   - every page links the favicon (favicon.svg, the bauhinia)
+ *   - every page links back: a unit's learn pages and games to its unit
+ *     page (./), unit pages and review pages to all units (../)
  *   - every .js file compiles
  *   - each unit<N>/vocab.js: unique ids, tone numbers in jyutping,
  *     audio/<id>.mp3 for every entry, a drawing in art.mjs for every
@@ -67,6 +69,9 @@ for (const html of files.filter(f => f.endsWith('.html'))) {
   const src = readFileSync(html, 'utf8');
   const icon = relative(dirname(html), join(ROOT, 'favicon.svg'));
   if (!src.includes(`<link rel="icon" href="${icon}" type="image/svg+xml">`)) bad(html, `link the favicon: <link rel="icon" href="${icon}" type="image/svg+xml">`);
+  const page = relative(ROOT, html), unit = page.match(/^unit(\d+)\/(?!index\.html$)/);
+  const back = unit ? `<a class="back" href="./">← Unit ${unit[1]}</a>` : `<a class="back" href="../">← All units</a>`;
+  if (page !== 'index.html' && !src.includes(back)) bad(html, `link back with ${back}`);
   const out = src.replace(/\b(href|src)="([^"]*)"/g, (whole, attr, url) => {
     if (/^(https?:|mailto:|data:|#)/.test(url)) return whole;
     if (url.startsWith('/')) { bad(html, `absolute link ${url} (use a relative link)`); return whole; }
