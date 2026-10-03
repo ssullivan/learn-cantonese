@@ -13,6 +13,8 @@
  *           h2.stage-head heads a group of card grids
  * Feedback: .feedback.good / .feedback.bad; .tip (callout box)
  * Answers:  .pic-grid > button.pic-btn (Canto.picButton): .picked .right .wrong
+ *           (red is only for .wrong: hover is a neutral border, mouse only,
+ *           so a button under a finger after a tap never looks marked)
  *           .choice-grid > button.choice (text answers), same states
  * Tones:    .tone-chart (Canto.toneChart)
  * Text:     [lang="zh-HK"] gets the Chinese font; .jp is jyutping,
@@ -224,7 +226,7 @@ a.card:hover { border-color: var(--accent); }
 .pic-btn img { width: 100%; height: 100%; }
 .choice { padding: 14px 16px; font-size: 20px; text-align: center; }
 .choice .hanzi { font-size: 24px; font-weight: 700; }
-:is(.pic-btn, .choice):hover:not(:disabled) { border-color: var(--accent); }
+@media (hover: hover) and (pointer: fine) { :is(.pic-btn, .choice):hover:not(:disabled, .picked, .right, .wrong) { border-color: var(--ink-soft); } }
 :is(.pic-btn, .choice):disabled { cursor: default; }
 :is(.pic-btn, .choice):focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 :is(.pic-btn, .choice).picked { border-color: var(--gold); background: color-mix(in srgb, var(--gold) 16%, var(--surface)); }

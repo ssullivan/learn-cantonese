@@ -76,7 +76,7 @@
   text-align: center;
   cursor: pointer;
 }
-.word:hover { border-color: var(--accent); }
+@media (hover: hover) and (pointer: fine) { .word:hover { border-color: var(--ink-soft); } }
 .word:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 .word img { width: 112px; height: 112px; margin-bottom: 6px; }
 .word .hanzi { font-size: 30px; font-weight: 700; line-height: 1.2; }

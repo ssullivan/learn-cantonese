@@ -50,7 +50,7 @@
   text-align: left;
   cursor: pointer;
 }
-.level:hover:not(:disabled) { border-color: var(--accent); }
+@media (hover: hover) and (pointer: fine) { .level:hover:not(:disabled) { border-color: var(--ink-soft); } }
 .level:disabled { opacity: 0.55; cursor: not-allowed; box-shadow: none; }
 .level:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 .level-num {
@@ -170,7 +170,7 @@
   font: inherit;
   cursor: pointer;
 }
-.tile:hover { border-color: var(--accent); }
+@media (hover: hover) and (pointer: fine) { .tile:hover { border-color: var(--ink-soft); } }
 .tile:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 .tile .hanzi { font-size: 24px; font-weight: 700; line-height: 1.2; }
 .tile .jp { font-size: 13px; }
