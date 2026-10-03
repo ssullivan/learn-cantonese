@@ -1,17 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
 <title>Lo mai gai (sticky rice in lotus leaf)</title>
-<g data-dish="plate">
-<ellipse cx="64" cy="93" rx="56" ry="21" fill="#9fb0bb" opacity=".35"/>
-<ellipse cx="64" cy="90" rx="56" ry="21" fill="#ffffff" stroke="#9fb0bb" stroke-width="2"/>
-<ellipse cx="64" cy="90" rx="45" ry="16" fill="#eef3f6"/>
-<path d="M12 86 C16 62 112 62 116 86 C104 104 24 104 12 86Z" fill="#6f8d3b" stroke="#4a6325" stroke-width="2"/>
-<path d="M64 98 L22 80 M64 98 L40 70 M64 98 L64 66 M64 98 L88 70 M64 98 L106 80" stroke="#58752d" stroke-width="1.5"/>
-<path d="M12 86 L4 74 L24 72 Z M116 86 L124 74 L104 72 Z" fill="#7f9c46" stroke="#4a6325" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M32 86 C32 62 96 62 96 86 C84 94 44 94 32 86Z" fill="#d7b170" stroke="#b08845" stroke-width="1.5"/>
-<g fill="#efd9a8"><ellipse cx="44" cy="80" rx="2.2" ry="1.2"/><ellipse cx="54" cy="72" rx="2.2" ry="1.2"/><ellipse cx="76" cy="70" rx="2.2" ry="1.2"/><ellipse cx="86" cy="80" rx="2.2" ry="1.2"/><ellipse cx="66" cy="86" rx="2.2" ry="1.2"/><ellipse cx="48" cy="86" rx="2.2" ry="1.2"/><ellipse cx="82" cy="87" rx="2.2" ry="1.2"/></g>
-<rect x="56" y="72" width="14" height="10" rx="3" fill="#c47a45" stroke="#94552a" stroke-width="1.2"/>
-<ellipse cx="78" cy="79" rx="6" ry="4.5" fill="#4b2e1c"/>
-<ellipse cx="77" cy="78" rx="3" ry="1.5" fill="#6d4a33"/>
-<circle cx="46" cy="78" r="4.5" fill="#f0a020" stroke="#c77d10" stroke-width="1"/>
+<g data-dish="steamer">
+<ellipse cx="64" cy="74" rx="52" ry="15" fill="#9c6528" stroke="#7d4f1e" stroke-width="2"/>
+<ellipse cx="64" cy="75" rx="45" ry="11" fill="#f1e3bd"/>
+<path d="M22 78 C24 50 104 50 106 78 C94 90 34 90 22 78Z" fill="#6f8d3b" stroke="#4a6325" stroke-width="2"/>
+<path d="M64 86 L30 68 M64 86 L44 56 M64 86 L64 52 M64 86 L84 56 M64 86 L98 68" stroke="#58752d" stroke-width="1.5"/>
+<path d="M22 78 L14 64 L34 62 Z M106 78 L114 64 L94 62 Z" fill="#7f9c46" stroke="#4a6325" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M38 74 C38 50 90 50 90 74 C80 82 48 82 38 74Z" fill="#d7b170" stroke="#b08845" stroke-width="1.5"/>
+<g fill="#efd9a8"><ellipse cx="46" cy="68" rx="2.2" ry="1.2"/><ellipse cx="54" cy="60" rx="2.2" ry="1.2"/><ellipse cx="74" cy="58" rx="2.2" ry="1.2"/><ellipse cx="83" cy="68" rx="2.2" ry="1.2"/><ellipse cx="64" cy="74" rx="2.2" ry="1.2"/><ellipse cx="50" cy="74" rx="2.2" ry="1.2"/><ellipse cx="78" cy="75" rx="2.2" ry="1.2"/></g>
+<rect x="56" y="60" width="13" height="9" rx="3" fill="#c47a45" stroke="#94552a" stroke-width="1.2"/>
+<ellipse cx="76" cy="67" rx="5.5" ry="4" fill="#4b2e1c"/>
+<ellipse cx="75" cy="66" rx="2.8" ry="1.4" fill="#6d4a33"/>
+<circle cx="48" cy="66" r="4.2" fill="#f0a020" stroke="#c77d10" stroke-width="1"/>
+<path d="M12 74 A52 15 0 0 0 116 74 L112 104 A48 13 0 0 1 16 104 Z" fill="#dcaa5e" stroke="#7d4f1e" stroke-width="2" stroke-linejoin="round"/>
+<path d="M14 90 A50 14 0 0 0 114 90" fill="none" stroke="#b07a35" stroke-width="2"/>
+<path d="M13 76 A51 15 0 0 0 115 76" fill="none" stroke="#f2cf8a" stroke-width="2.5"/>
 </g>
 </svg>

@@ -34,13 +34,6 @@
   ],
   "audio": "623d3f4811b1"
  },
- "m-goi-ngo-jiu-loeng-dip-lo-mai-gai": {
-  "verdict": "LISTEN",
-  "notes": [
-   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.12)"
-  ],
-  "audio": "77a1200e7fcb"
- },
  "m-goi-ngo-jiu-loeng-dip-spring-roll": {
   "verdict": "LISTEN",
   "notes": [
@@ -54,6 +47,13 @@
    "tone doubtful: 唔 tone 4 sounds like 5 (p 0.33)"
   ],
   "audio": "d07f8b4446f2"
+ },
+ "m-goi-ngo-jiu-loeng-lung-lo-mai-gai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.18); 要 tone 3 sounds like 6 (p 0.39); 糯 tone 6 sounds like 5 (p 0.05)"
+  ],
+  "audio": "ec83fcd35556"
  },
  "m-goi-ngo-jiu-n3-dip-cheung-fun": {
   "verdict": "CHECK",
@@ -101,26 +101,26 @@
   ],
   "audio": "3336fe16c1ef"
  },
- "m-goi-ngo-jiu-n4-dip-beef-tripe": {
-  "verdict": "LISTEN",
-  "notes": [
-   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.09); 我 tone 5 sounds like 5 (p 0.42); 碟 tone 6 sounds like 4 (p 0.41)"
-  ],
-  "audio": "454c1823fbf4"
- },
- "m-goi-ngo-jiu-n4-dip-chicken-feet": {
-  "verdict": "LISTEN",
-  "notes": [
-   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.29)"
-  ],
-  "audio": "2ed997af392d"
- },
  "m-goi-ngo-jiu-n4-dip-ham-sui-gok": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 唔 tone 4 sounds like 5 (p 0.12)"
   ],
   "audio": "03b466b307af"
+ },
+ "m-goi-ngo-jiu-n4-lung-beef-tripe": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.07)"
+  ],
+  "audio": "49596b2e24d9"
+ },
+ "m-goi-ngo-jiu-n4-lung-chicken-feet": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.16); 我 tone 5 sounds like 2 (p 0.36); 鳳 tone 6 sounds like 3 (p 0.42)"
+  ],
+  "audio": "d101926a6baf"
  },
  "m-goi-ngo-jiu-n4-lung-har-gow": {
   "verdict": "LISTEN",
@@ -153,14 +153,6 @@
   ],
   "audio": "d111dc44a4f3"
  },
- "m-goi-ngo-jiu-n5-dip-spare-ribs": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 唔該我要碟排骨 m goi ngo jiu dip paai gwat",
-   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.04); 五 tone 5 sounds like 3 (p 0.19)"
-  ],
-  "audio": "bb9e0033a904"
- },
  "m-goi-ngo-jiu-n5-dip-zaa-loeng": {
   "verdict": "LISTEN",
   "notes": [
@@ -176,6 +168,15 @@
    "tone doubtful: 唔 tone 4 sounds like 5 (p 0.28); 五 tone 5 sounds like 3 (p 0.31)"
   ],
   "audio": "c460f48e6640"
+ },
+ "m-goi-ngo-jiu-n5-lung-spare-ribs": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 唔 tone 4 sounds like 5 (p 0.02)",
+   "speech-to-text heard 唔該我要龍排骨 m goi ngo jiu lung paai gwat",
+   "tone doubtful: 五 tone 5 sounds like 3 (p 0.32)"
+  ],
+  "audio": "c0268ebbfa74"
  },
  "m-goi-ngo-jiu-n5-wun-congee": {
   "verdict": "LISTEN",
@@ -221,14 +222,6 @@
   ],
   "audio": "31184e1df80a"
  },
- "ngo-jiu-n1-dip-beef-tripe": {
-  "verdict": "CHECK",
-  "notes": [
-   "tone: 要 tone 3 sounds like 2 (p 0.03)",
-   "tone doubtful: 我 tone 5 sounds like 6 (p 0.36); 一 tone 1 sounds like 6 (p 0.27)"
-  ],
-  "audio": "1262a1380d5e"
- },
  "ngo-jiu-n1-dip-char-siu-sou": {
   "verdict": "LISTEN",
   "notes": [
@@ -243,14 +236,6 @@
    "tone doubtful: 我 tone 5 sounds like 2 (p 0.40); 一 tone 1 sounds like 6 (p 0.30)"
   ],
   "audio": "950d55512f36"
- },
- "ngo-jiu-n1-dip-chicken-feet": {
-  "verdict": "CHECK",
-  "notes": [
-   "tone: 要 tone 3 sounds like 2 (p 0.02)",
-   "tone doubtful: 一 tone 1 sounds like 6 (p 0.25)"
-  ],
-  "audio": "60d937decd3b"
  },
  "ngo-jiu-n1-dip-egg-tart": {
   "verdict": "LISTEN",
@@ -275,14 +260,6 @@
   ],
   "audio": "fce0e32be418"
  },
- "ngo-jiu-n1-dip-lo-mai-gai": {
-  "verdict": "CHECK",
-  "notes": [
-   "tone: 要 tone 3 sounds like 5 (p 0.03)",
-   "tone doubtful: 一 tone 1 sounds like 6 (p 0.29)"
-  ],
-  "audio": "b1aa174c22a9"
- },
  "ngo-jiu-n1-dip-pineapple-bun": {
   "verdict": "LISTEN",
   "notes": [
@@ -296,13 +273,6 @@
    "tone doubtful: 我 tone 5 sounds like 4 (p 0.05); 要 tone 3 sounds like 5 (p 0.05); 一 tone 1 sounds like 6 (p 0.24)"
   ],
   "audio": "99fd3712d73e"
- },
- "ngo-jiu-n1-dip-spare-ribs": {
-  "verdict": "LISTEN",
-  "notes": [
-   "tone doubtful: 我 tone 5 sounds like 6 (p 0.45); 要 tone 3 sounds like 5 (p 0.13); 一 tone 1 sounds like 6 (p 0.37)"
-  ],
-  "audio": "b193bd4642c9"
  },
  "ngo-jiu-n1-dip-spring-roll": {
   "verdict": "LISTEN",
@@ -327,12 +297,28 @@
   ],
   "audio": "6f6f9751b3cd"
  },
+ "ngo-jiu-n1-lung-beef-tripe": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 要 tone 3 sounds like 4 (p 0.04)",
+   "tone doubtful: 一 tone 1 sounds like 6 (p 0.34)"
+  ],
+  "audio": "81f2b5f65848"
+ },
  "ngo-jiu-n1-lung-char-siu-bao": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 要 tone 3 sounds like 2 (p 0.10); 一 tone 1 sounds like 6 (p 0.30)"
   ],
   "audio": "11cf52a27125"
+ },
+ "ngo-jiu-n1-lung-chicken-feet": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 要 tone 3 sounds like 5 (p 0.02)",
+   "tone doubtful: 一 tone 1 sounds like 6 (p 0.30)"
+  ],
+  "audio": "e454ce3b6fc3"
  },
  "ngo-jiu-n1-lung-har-gow": {
   "verdict": "CHECK",
@@ -349,6 +335,13 @@
   ],
   "audio": "e7acff4183c8"
  },
+ "ngo-jiu-n1-lung-lo-mai-gai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 我 tone 5 sounds like 6 (p 0.23); 要 tone 3 sounds like 2 (p 0.04); 一 tone 1 sounds like 6 (p 0.29); 糯 tone 6 sounds like 5 (p 0.16)"
+  ],
+  "audio": "35105579d2ea"
+ },
  "ngo-jiu-n1-lung-ma-lai-go": {
   "verdict": "LISTEN",
   "notes": [
@@ -362,6 +355,14 @@
    "tone doubtful: 要 tone 3 sounds like 5 (p 0.12); 一 tone 1 sounds like 6 (p 0.37)"
   ],
   "audio": "cf57515edbad"
+ },
+ "ngo-jiu-n1-lung-spare-ribs": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 要 tone 3 sounds like 5 (p 0.04)",
+   "tone doubtful: 一 tone 1 sounds like 6 (p 0.42)"
+  ],
+  "audio": "39e480c4e140"
  },
  "ngo-jiu-n1-lung-xiao-long-bao": {
   "verdict": "LISTEN",
@@ -391,6 +392,13 @@
    "speech-to-text heard 我要三碟炸釀 ngo jiu saam dip zaa joeng"
   ],
   "audio": "b9cfa23815bb"
+ },
+ "ngo-jiu-n4-lung-lo-mai-gai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 糯 tone 6 sounds like 5 (p 0.07)"
+  ],
+  "audio": "758592c0f174"
  },
  "ngo-jiu-n5-dip-cheung-fun": {
   "verdict": "LISTEN",

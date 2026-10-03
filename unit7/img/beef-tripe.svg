@@ -4,17 +4,19 @@
 <rect x="-14" y="-8" width="28" height="16" rx="4" fill="#958b78" stroke="#665e4f" stroke-width="1.5"/>
 <path d="M-9 -7 q2 7 0 14 M-4 -7 q2 7 0 14 M1 -7 q2 7 0 14 M6 -7 q2 7 0 14 M11 -7 q1.5 7 0 14" fill="none" stroke="#c4bba6" stroke-width="2" stroke-linecap="round"/>
 </g></defs>
-<g data-dish="plate">
-<ellipse cx="64" cy="93" rx="56" ry="21" fill="#9fb0bb" opacity=".35"/>
-<ellipse cx="64" cy="90" rx="56" ry="21" fill="#ffffff" stroke="#9fb0bb" stroke-width="2"/>
-<ellipse cx="64" cy="90" rx="45" ry="16" fill="#eef3f6"/>
-<ellipse cx="64" cy="89" rx="40" ry="13" fill="#b08a55" opacity=".5"/>
-<use href="#t" transform="translate(48 80) rotate(-12)"/>
-<use href="#t" transform="translate(78 78) rotate(10)"/>
-<use href="#t" transform="translate(38 94) rotate(8)"/>
-<use href="#t" transform="translate(66 92) rotate(-6)"/>
-<use href="#t" transform="translate(92 94) rotate(-16)"/>
-<g stroke="#f2c94c" stroke-width="2.5" stroke-linecap="round"><path d="M56 78 l8 3 M70 86 l7 -3 M44 90 l6 4 M84 90 l8 -1 M60 98 l6 2"/></g>
-<g stroke="#5fa33a" stroke-width="2.5" stroke-linecap="round"><path d="M50 86 l9 -2 M76 80 l6 5 M86 98 l7 -3 M32 88 l6 -3"/></g>
+<g data-dish="steamer">
+<ellipse cx="64" cy="74" rx="52" ry="15" fill="#9c6528" stroke="#7d4f1e" stroke-width="2"/>
+<ellipse cx="64" cy="75" rx="45" ry="11" fill="#f1e3bd"/>
+<ellipse cx="64" cy="77" rx="40" ry="9" fill="#b08a55" opacity=".5"/>
+<use href="#t" transform="translate(50 64) rotate(-12)"/>
+<use href="#t" transform="translate(78 63) rotate(10)"/>
+<use href="#t" transform="translate(38 77) rotate(8)"/>
+<use href="#t" transform="translate(64 78) rotate(-6)"/>
+<use href="#t" transform="translate(90 77) rotate(-16)"/>
+<g stroke="#f2c94c" stroke-width="2.5" stroke-linecap="round"><path d="M58 62 l8 3 M70 70 l7 -3 M44 72 l6 4 M84 72 l8 -1"/></g>
+<g stroke="#5fa33a" stroke-width="2.5" stroke-linecap="round"><path d="M52 70 l9 -2 M76 58 l6 5 M98 70 l6 -3 M28 72 l6 -3"/></g>
+<path d="M12 74 A52 15 0 0 0 116 74 L112 104 A48 13 0 0 1 16 104 Z" fill="#dcaa5e" stroke="#7d4f1e" stroke-width="2" stroke-linejoin="round"/>
+<path d="M14 90 A50 14 0 0 0 114 90" fill="none" stroke="#b07a35" stroke-width="2"/>
+<path d="M13 76 A51 15 0 0 0 115 76" fill="none" stroke="#f2cf8a" stroke-width="2.5"/>
 </g>
 </svg>

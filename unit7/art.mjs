@@ -59,38 +59,38 @@ export default {
 <path d="M0 12 L0 0 M0 0 L-11 -13 M0 0 L0 -18 M0 0 L11 -13" stroke="#d26b30" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 <path d="M-1 -5 L-1 -14 M-5 -4 l-4 -5" stroke="#f3a56f" stroke-width="2" stroke-linecap="round"/>
 </g></defs>
-` + plate(`<ellipse cx="64" cy="88" rx="42" ry="14" fill="#9a3b1c" opacity=".85"/>
-<use href="#f" transform="translate(64 76)"/>
-<use href="#f" transform="translate(42 88) rotate(-35)"/>
-<use href="#f" transform="translate(86 88) rotate(35)"/>
-<g fill="#2a1a12"><circle cx="52" cy="92" r="2.5"/><circle cx="76" cy="96" r="2.5"/><circle cx="70" cy="86" r="2.2"/><circle cx="36" cy="84" r="2.2"/></g>
-<g fill="none" stroke="#e02a1e" stroke-width="2"><circle cx="58" cy="98" r="3"/><circle cx="92" cy="80" r="3"/></g>`, { rx: 54, ry: 21 })),
+` + steamer(`<ellipse cx="64" cy="77" rx="42" ry="9" fill="#9a3b1c" opacity=".85"/>
+<use href="#f" transform="translate(64 62)"/>
+<use href="#f" transform="translate(40 74) rotate(-35)"/>
+<use href="#f" transform="translate(88 74) rotate(35)"/>
+<g fill="#2a1a12"><circle cx="52" cy="78" r="2.5"/><circle cx="76" cy="80" r="2.5"/><circle cx="72" cy="72" r="2.2"/><circle cx="30" cy="76" r="2.2"/></g>
+<g fill="none" stroke="#e02a1e" stroke-width="2"><circle cx="58" cy="80" r="3"/><circle cx="98" cy="72" r="3"/></g>`)),
 
   'spare-ribs': svg("Pai gwat (steamed spare ribs)", `<defs><g id="c">
 <rect x="-10" y="-7" width="20" height="14" rx="5" fill="#c98a5e" stroke="#8f5632" stroke-width="1.5"/>
 <ellipse cx="-6" cy="0" rx="3" ry="4" fill="#f2e6cf" stroke="#c9b48e" stroke-width="1"/>
 <path d="M-1 -4 Q4 -6 7 -3" stroke="#e3ad84" stroke-width="1.5" fill="none" stroke-linecap="round"/>
 </g></defs>
-` + plate(`<ellipse cx="64" cy="89" rx="42" ry="14" fill="#a8683a" opacity=".6"/>
-<use href="#c" transform="translate(50 78) rotate(-10)"/>
-<use href="#c" transform="translate(74 76) rotate(15)"/>
-<use href="#c" transform="translate(40 91) rotate(20)"/>
-<use href="#c" transform="translate(64 90) rotate(-5)"/>
-<use href="#c" transform="translate(88 89) rotate(-20)"/>
-<use href="#c" transform="translate(58 101) rotate(8)"/>
-<g fill="#2a1a12"><circle cx="62" cy="80" r="2.3"/><circle cx="78" cy="100" r="2.3"/><circle cx="32" cy="83" r="2"/></g>
-<g fill="#f4edd5"><rect x="86" y="78" width="3" height="3" rx=".8"/><rect x="46" y="100" width="3" height="3" rx=".8"/></g>
-<g fill="none" stroke="#e02a1e" stroke-width="2"><circle cx="97" cy="96" r="3"/><circle cx="74" cy="88" r="2.6"/></g>`, { rx: 54, ry: 21 })),
+` + steamer(`<ellipse cx="64" cy="77" rx="42" ry="9" fill="#a8683a" opacity=".6"/>
+<use href="#c" transform="translate(52 64) rotate(-10)"/>
+<use href="#c" transform="translate(76 63) rotate(15)"/>
+<use href="#c" transform="translate(36 76) rotate(20)"/>
+<use href="#c" transform="translate(58 77) rotate(-5)"/>
+<use href="#c" transform="translate(80 77) rotate(10)"/>
+<use href="#c" transform="translate(98 75) rotate(-20)"/>
+<g fill="#2a1a12"><circle cx="64" cy="66" r="2.3"/><circle cx="69" cy="80" r="2.3"/><circle cx="26" cy="74" r="2"/></g>
+<g fill="#f4edd5"><rect x="88" y="66" width="3" height="3" rx=".8"/><rect x="46" y="80" width="3" height="3" rx=".8"/></g>
+<g fill="none" stroke="#e02a1e" stroke-width="2"><circle cx="40" cy="64" r="3"/><circle cx="89" cy="82" r="2.6"/></g>`)),
 
-  'lo-mai-gai': svg("Lo mai gai (sticky rice in lotus leaf)", plate(`<path d="M12 86 C16 62 112 62 116 86 C104 104 24 104 12 86Z" fill="#6f8d3b" stroke="#4a6325" stroke-width="2"/>
-<path d="M64 98 L22 80 M64 98 L40 70 M64 98 L64 66 M64 98 L88 70 M64 98 L106 80" stroke="#58752d" stroke-width="1.5"/>
-<path d="M12 86 L4 74 L24 72 Z M116 86 L124 74 L104 72 Z" fill="#7f9c46" stroke="#4a6325" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M32 86 C32 62 96 62 96 86 C84 94 44 94 32 86Z" fill="#d7b170" stroke="#b08845" stroke-width="1.5"/>
-<g fill="#efd9a8"><ellipse cx="44" cy="80" rx="2.2" ry="1.2"/><ellipse cx="54" cy="72" rx="2.2" ry="1.2"/><ellipse cx="76" cy="70" rx="2.2" ry="1.2"/><ellipse cx="86" cy="80" rx="2.2" ry="1.2"/><ellipse cx="66" cy="86" rx="2.2" ry="1.2"/><ellipse cx="48" cy="86" rx="2.2" ry="1.2"/><ellipse cx="82" cy="87" rx="2.2" ry="1.2"/></g>
-<rect x="56" y="72" width="14" height="10" rx="3" fill="#c47a45" stroke="#94552a" stroke-width="1.2"/>
-<ellipse cx="78" cy="79" rx="6" ry="4.5" fill="#4b2e1c"/>
-<ellipse cx="77" cy="78" rx="3" ry="1.5" fill="#6d4a33"/>
-<circle cx="46" cy="78" r="4.5" fill="#f0a020" stroke="#c77d10" stroke-width="1"/>`, { cy: 90, ry: 21 })),
+  'lo-mai-gai': svg("Lo mai gai (sticky rice in lotus leaf)", steamer(`<path d="M22 78 C24 50 104 50 106 78 C94 90 34 90 22 78Z" fill="#6f8d3b" stroke="#4a6325" stroke-width="2"/>
+<path d="M64 86 L30 68 M64 86 L44 56 M64 86 L64 52 M64 86 L84 56 M64 86 L98 68" stroke="#58752d" stroke-width="1.5"/>
+<path d="M22 78 L14 64 L34 62 Z M106 78 L114 64 L94 62 Z" fill="#7f9c46" stroke="#4a6325" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M38 74 C38 50 90 50 90 74 C80 82 48 82 38 74Z" fill="#d7b170" stroke="#b08845" stroke-width="1.5"/>
+<g fill="#efd9a8"><ellipse cx="46" cy="68" rx="2.2" ry="1.2"/><ellipse cx="54" cy="60" rx="2.2" ry="1.2"/><ellipse cx="74" cy="58" rx="2.2" ry="1.2"/><ellipse cx="83" cy="68" rx="2.2" ry="1.2"/><ellipse cx="64" cy="74" rx="2.2" ry="1.2"/><ellipse cx="50" cy="74" rx="2.2" ry="1.2"/><ellipse cx="78" cy="75" rx="2.2" ry="1.2"/></g>
+<rect x="56" y="60" width="13" height="9" rx="3" fill="#c47a45" stroke="#94552a" stroke-width="1.2"/>
+<ellipse cx="76" cy="67" rx="5.5" ry="4" fill="#4b2e1c"/>
+<ellipse cx="75" cy="66" rx="2.8" ry="1.4" fill="#6d4a33"/>
+<circle cx="48" cy="66" r="4.2" fill="#f0a020" stroke="#c77d10" stroke-width="1"/>`)),
 
   'spring-roll': svg("Spring rolls", `<defs><g id="r">
 <rect x="-30" y="-8" width="60" height="16" rx="8" fill="#e2a444" stroke="#a8691f" stroke-width="1.5"/>
@@ -171,14 +171,14 @@ ${pineappleBun}
 <rect x="-14" y="-8" width="28" height="16" rx="4" fill="#958b78" stroke="#665e4f" stroke-width="1.5"/>
 <path d="M-9 -7 q2 7 0 14 M-4 -7 q2 7 0 14 M1 -7 q2 7 0 14 M6 -7 q2 7 0 14 M11 -7 q1.5 7 0 14" fill="none" stroke="#c4bba6" stroke-width="2" stroke-linecap="round"/>
 </g></defs>
-` + plate(`<ellipse cx="64" cy="89" rx="40" ry="13" fill="#b08a55" opacity=".5"/>
-<use href="#t" transform="translate(48 80) rotate(-12)"/>
-<use href="#t" transform="translate(78 78) rotate(10)"/>
-<use href="#t" transform="translate(38 94) rotate(8)"/>
-<use href="#t" transform="translate(66 92) rotate(-6)"/>
-<use href="#t" transform="translate(92 94) rotate(-16)"/>
-<g stroke="#f2c94c" stroke-width="2.5" stroke-linecap="round"><path d="M56 78 l8 3 M70 86 l7 -3 M44 90 l6 4 M84 90 l8 -1 M60 98 l6 2"/></g>
-<g stroke="#5fa33a" stroke-width="2.5" stroke-linecap="round"><path d="M50 86 l9 -2 M76 80 l6 5 M86 98 l7 -3 M32 88 l6 -3"/></g>`, { cy: 90, ry: 21 })),
+` + steamer(`<ellipse cx="64" cy="77" rx="40" ry="9" fill="#b08a55" opacity=".5"/>
+<use href="#t" transform="translate(50 64) rotate(-12)"/>
+<use href="#t" transform="translate(78 63) rotate(10)"/>
+<use href="#t" transform="translate(38 77) rotate(8)"/>
+<use href="#t" transform="translate(64 78) rotate(-6)"/>
+<use href="#t" transform="translate(90 77) rotate(-16)"/>
+<g stroke="#f2c94c" stroke-width="2.5" stroke-linecap="round"><path d="M58 62 l8 3 M70 70 l7 -3 M44 72 l6 4 M84 72 l8 -1"/></g>
+<g stroke="#5fa33a" stroke-width="2.5" stroke-linecap="round"><path d="M52 70 l9 -2 M76 58 l6 5 M98 70 l6 -3 M28 72 l6 -3"/></g>`)),
 
   'zaa-loeng': svg("Zaa loeng (fried dough in rice noodle roll)", `<defs><g id="p">
 <path d="M-11 -4 V6 A11 6 0 0 0 11 6 V-4 Z" fill="#efe9df" stroke="#cfc3b2" stroke-width="1.5"/>

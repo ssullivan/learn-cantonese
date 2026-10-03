@@ -5,19 +5,21 @@
 <ellipse cx="-6" cy="0" rx="3" ry="4" fill="#f2e6cf" stroke="#c9b48e" stroke-width="1"/>
 <path d="M-1 -4 Q4 -6 7 -3" stroke="#e3ad84" stroke-width="1.5" fill="none" stroke-linecap="round"/>
 </g></defs>
-<g data-dish="plate">
-<ellipse cx="64" cy="91" rx="54" ry="21" fill="#9fb0bb" opacity=".35"/>
-<ellipse cx="64" cy="88" rx="54" ry="21" fill="#ffffff" stroke="#9fb0bb" stroke-width="2"/>
-<ellipse cx="64" cy="88" rx="43" ry="16" fill="#eef3f6"/>
-<ellipse cx="64" cy="89" rx="42" ry="14" fill="#a8683a" opacity=".6"/>
-<use href="#c" transform="translate(50 78) rotate(-10)"/>
-<use href="#c" transform="translate(74 76) rotate(15)"/>
-<use href="#c" transform="translate(40 91) rotate(20)"/>
-<use href="#c" transform="translate(64 90) rotate(-5)"/>
-<use href="#c" transform="translate(88 89) rotate(-20)"/>
-<use href="#c" transform="translate(58 101) rotate(8)"/>
-<g fill="#2a1a12"><circle cx="62" cy="80" r="2.3"/><circle cx="78" cy="100" r="2.3"/><circle cx="32" cy="83" r="2"/></g>
-<g fill="#f4edd5"><rect x="86" y="78" width="3" height="3" rx=".8"/><rect x="46" y="100" width="3" height="3" rx=".8"/></g>
-<g fill="none" stroke="#e02a1e" stroke-width="2"><circle cx="97" cy="96" r="3"/><circle cx="74" cy="88" r="2.6"/></g>
+<g data-dish="steamer">
+<ellipse cx="64" cy="74" rx="52" ry="15" fill="#9c6528" stroke="#7d4f1e" stroke-width="2"/>
+<ellipse cx="64" cy="75" rx="45" ry="11" fill="#f1e3bd"/>
+<ellipse cx="64" cy="77" rx="42" ry="9" fill="#a8683a" opacity=".6"/>
+<use href="#c" transform="translate(52 64) rotate(-10)"/>
+<use href="#c" transform="translate(76 63) rotate(15)"/>
+<use href="#c" transform="translate(36 76) rotate(20)"/>
+<use href="#c" transform="translate(58 77) rotate(-5)"/>
+<use href="#c" transform="translate(80 77) rotate(10)"/>
+<use href="#c" transform="translate(98 75) rotate(-20)"/>
+<g fill="#2a1a12"><circle cx="64" cy="66" r="2.3"/><circle cx="69" cy="80" r="2.3"/><circle cx="26" cy="74" r="2"/></g>
+<g fill="#f4edd5"><rect x="88" y="66" width="3" height="3" rx=".8"/><rect x="46" y="80" width="3" height="3" rx=".8"/></g>
+<g fill="none" stroke="#e02a1e" stroke-width="2"><circle cx="40" cy="64" r="3"/><circle cx="89" cy="82" r="2.6"/></g>
+<path d="M12 74 A52 15 0 0 0 116 74 L112 104 A48 13 0 0 1 16 104 Z" fill="#dcaa5e" stroke="#7d4f1e" stroke-width="2" stroke-linejoin="round"/>
+<path d="M14 90 A50 14 0 0 0 114 90" fill="none" stroke="#b07a35" stroke-width="2"/>
+<path d="M13 76 A51 15 0 0 0 115 76" fill="none" stroke="#f2cf8a" stroke-width="2.5"/>
 </g>
 </svg>

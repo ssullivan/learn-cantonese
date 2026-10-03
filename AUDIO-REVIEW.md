@@ -620,11 +620,11 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 | 36 | 一籠燒賣 | jat1 lung4 siu1 maai2 | pork & shrimp dumpling (1 basket) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-siu-mai.mp3) |
 | 37 | 一籠叉燒包 | jat1 lung4 caa1 siu1 baau1 | BBQ pork bun (1 basket) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-char-siu-bao.mp3) |
 | 38 | 一碟腸粉 | jat1 dip6 coeng2 fan2 | rice noodle roll (1 plate) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-cheung-fun.mp3) |
-| 39 | 一碟鳳爪 | jat1 dip6 fung6 zaau2 | chicken feet (1 plate) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-chicken-feet.mp3) |
-| 40 | 一碟排骨 | jat1 dip6 paai4 gwat1 | steamed spare ribs (1 plate) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-spare-ribs.mp3) |
-| 41 | 一碟糯米雞 | jat1 dip6 no6 mai5 gai1 | sticky rice in lotus leaf (1 plate) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-lo-mai-gai.mp3) |
+| 39 | 一籠鳳爪 | jat1 lung4 fung6 zaau2 | chicken feet (1 basket) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-chicken-feet.mp3) |
+| 40 | 一籠排骨 | jat1 lung4 paai4 gwat1 | steamed spare ribs (1 basket) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-spare-ribs.mp3) |
+| 41 | 一籠糯米雞 | jat1 lung4 no6 mai5 gai1 | sticky rice in lotus leaf (1 basket) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-lo-mai-gai.mp3) |
 | 42 | 一籠小籠包 | jat1 lung4 siu2 lung4 baau1 | soup dumpling (1 basket) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-xiao-long-bao.mp3) |
-| 43 | 一碟牛柏葉 | jat1 dip6 ngau4 paak3 jip6 | beef tripe (1 plate) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-beef-tripe.mp3) |
+| 43 | 一籠牛柏葉 | jat1 lung4 ngau4 paak3 jip6 | beef tripe (1 basket) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-beef-tripe.mp3) |
 | 44 | 一碟炸兩 | jat1 dip6 zaa3 loeng2 | fried dough in rice noodle roll (1 plate) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-zaa-loeng.mp3) |
 | 45 | 一碟春卷 | jat1 dip6 ceon1 gyun2 | spring roll (1 plate) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-spring-roll.mp3) |
 | 46 | 一碟蘿蔔糕 | jat1 dip6 lo4 baak6 gou1 | turnip cake (1 plate) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-turnip-cake.mp3) |
@@ -649,21 +649,21 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 | 65 | 我要一碟腸粉 | ngo5 jiu3 jat1 dip6 coeng2 fan2 | I'd like one order of rice noodle roll | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ngo-jiu-n1-dip-cheung-fun.mp3) |
 | 66 | 我要五碟腸粉 | ngo5 jiu3 ng5 dip6 coeng2 fan2 | I'd like five orders of rice noodle roll | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ngo-jiu-n5-dip-cheung-fun.mp3) |
 | 67 | 唔該，我要三碟腸粉 | m4 goi1 ngo5 jiu3 saam1 dip6 coeng2 fan2 | Excuse me! I'd like three orders of rice noodle roll | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/m-goi-ngo-jiu-n3-dip-cheung-fun.mp3) |
-| 68 | 我要一碟鳳爪 | ngo5 jiu3 jat1 dip6 fung6 zaau2 | I'd like one order of chicken feet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ngo-jiu-n1-dip-chicken-feet.mp3) |
-| 69 | 我要兩碟鳳爪 | ngo5 jiu3 loeng5 dip6 fung6 zaau2 | I'd like two orders of chicken feet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ngo-jiu-loeng-dip-chicken-feet.mp3) |
-| 70 | 唔該，我要四碟鳳爪 | m4 goi1 ngo5 jiu3 sei3 dip6 fung6 zaau2 | Excuse me! I'd like four orders of chicken feet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/m-goi-ngo-jiu-n4-dip-chicken-feet.mp3) |
-| 71 | 我要一碟排骨 | ngo5 jiu3 jat1 dip6 paai4 gwat1 | I'd like one order of steamed spare ribs | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ngo-jiu-n1-dip-spare-ribs.mp3) |
-| 72 | 我要三碟排骨 | ngo5 jiu3 saam1 dip6 paai4 gwat1 | I'd like three orders of steamed spare ribs | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ngo-jiu-n3-dip-spare-ribs.mp3) |
-| 73 | 唔該，我要五碟排骨 | m4 goi1 ngo5 jiu3 ng5 dip6 paai4 gwat1 | Excuse me! I'd like five orders of steamed spare ribs | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/m-goi-ngo-jiu-n5-dip-spare-ribs.mp3) |
-| 74 | 我要一碟糯米雞 | ngo5 jiu3 jat1 dip6 no6 mai5 gai1 | I'd like one order of sticky rice in lotus leaf | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ngo-jiu-n1-dip-lo-mai-gai.mp3) |
-| 75 | 我要四碟糯米雞 | ngo5 jiu3 sei3 dip6 no6 mai5 gai1 | I'd like four orders of sticky rice in lotus leaf | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ngo-jiu-n4-dip-lo-mai-gai.mp3) |
-| 76 | 唔該，我要兩碟糯米雞 | m4 goi1 ngo5 jiu3 loeng5 dip6 no6 mai5 gai1 | Excuse me! I'd like two orders of sticky rice in lotus leaf | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/m-goi-ngo-jiu-loeng-dip-lo-mai-gai.mp3) |
+| 68 | 我要一籠鳳爪 | ngo5 jiu3 jat1 lung4 fung6 zaau2 | I'd like one order of chicken feet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ngo-jiu-n1-lung-chicken-feet.mp3) |
+| 69 | 我要兩籠鳳爪 | ngo5 jiu3 loeng5 lung4 fung6 zaau2 | I'd like two orders of chicken feet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ngo-jiu-loeng-lung-chicken-feet.mp3) |
+| 70 | 唔該，我要四籠鳳爪 | m4 goi1 ngo5 jiu3 sei3 lung4 fung6 zaau2 | Excuse me! I'd like four orders of chicken feet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/m-goi-ngo-jiu-n4-lung-chicken-feet.mp3) |
+| 71 | 我要一籠排骨 | ngo5 jiu3 jat1 lung4 paai4 gwat1 | I'd like one order of steamed spare ribs | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ngo-jiu-n1-lung-spare-ribs.mp3) |
+| 72 | 我要三籠排骨 | ngo5 jiu3 saam1 lung4 paai4 gwat1 | I'd like three orders of steamed spare ribs | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ngo-jiu-n3-lung-spare-ribs.mp3) |
+| 73 | 唔該，我要五籠排骨 | m4 goi1 ngo5 jiu3 ng5 lung4 paai4 gwat1 | Excuse me! I'd like five orders of steamed spare ribs | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/m-goi-ngo-jiu-n5-lung-spare-ribs.mp3) |
+| 74 | 我要一籠糯米雞 | ngo5 jiu3 jat1 lung4 no6 mai5 gai1 | I'd like one order of sticky rice in lotus leaf | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ngo-jiu-n1-lung-lo-mai-gai.mp3) |
+| 75 | 我要四籠糯米雞 | ngo5 jiu3 sei3 lung4 no6 mai5 gai1 | I'd like four orders of sticky rice in lotus leaf | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ngo-jiu-n4-lung-lo-mai-gai.mp3) |
+| 76 | 唔該，我要兩籠糯米雞 | m4 goi1 ngo5 jiu3 loeng5 lung4 no6 mai5 gai1 | Excuse me! I'd like two orders of sticky rice in lotus leaf | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/m-goi-ngo-jiu-loeng-lung-lo-mai-gai.mp3) |
 | 77 | 我要一籠小籠包 | ngo5 jiu3 jat1 lung4 siu2 lung4 baau1 | I'd like one order of soup dumpling | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ngo-jiu-n1-lung-xiao-long-bao.mp3) |
 | 78 | 我要五籠小籠包 | ngo5 jiu3 ng5 lung4 siu2 lung4 baau1 | I'd like five orders of soup dumpling | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ngo-jiu-n5-lung-xiao-long-bao.mp3) |
 | 79 | 唔該，我要三籠小籠包 | m4 goi1 ngo5 jiu3 saam1 lung4 siu2 lung4 baau1 | Excuse me! I'd like three orders of soup dumpling | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/m-goi-ngo-jiu-n3-lung-xiao-long-bao.mp3) |
-| 80 | 我要一碟牛柏葉 | ngo5 jiu3 jat1 dip6 ngau4 paak3 jip6 | I'd like one order of beef tripe | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ngo-jiu-n1-dip-beef-tripe.mp3) |
-| 81 | 我要兩碟牛柏葉 | ngo5 jiu3 loeng5 dip6 ngau4 paak3 jip6 | I'd like two orders of beef tripe | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ngo-jiu-loeng-dip-beef-tripe.mp3) |
-| 82 | 唔該，我要四碟牛柏葉 | m4 goi1 ngo5 jiu3 sei3 dip6 ngau4 paak3 jip6 | Excuse me! I'd like four orders of beef tripe | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/m-goi-ngo-jiu-n4-dip-beef-tripe.mp3) |
+| 80 | 我要一籠牛柏葉 | ngo5 jiu3 jat1 lung4 ngau4 paak3 jip6 | I'd like one order of beef tripe | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ngo-jiu-n1-lung-beef-tripe.mp3) |
+| 81 | 我要兩籠牛柏葉 | ngo5 jiu3 loeng5 lung4 ngau4 paak3 jip6 | I'd like two orders of beef tripe | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ngo-jiu-loeng-lung-beef-tripe.mp3) |
+| 82 | 唔該，我要四籠牛柏葉 | m4 goi1 ngo5 jiu3 sei3 lung4 ngau4 paak3 jip6 | Excuse me! I'd like four orders of beef tripe | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/m-goi-ngo-jiu-n4-lung-beef-tripe.mp3) |
 | 83 | 我要一碟炸兩 | ngo5 jiu3 jat1 dip6 zaa3 loeng2 | I'd like one order of fried dough in rice noodle roll | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ngo-jiu-n1-dip-zaa-loeng.mp3) |
 | 84 | 我要三碟炸兩 | ngo5 jiu3 saam1 dip6 zaa3 loeng2 | I'd like three orders of fried dough in rice noodle roll | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ngo-jiu-n3-dip-zaa-loeng.mp3) |
 | 85 | 唔該，我要五碟炸兩 | m4 goi1 ngo5 jiu3 ng5 dip6 zaa3 loeng2 | Excuse me! I'd like five orders of fried dough in rice noodle roll | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/m-goi-ngo-jiu-n5-dip-zaa-loeng.mp3) |
