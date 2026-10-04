@@ -168,10 +168,11 @@ ${pineappleBun}
 <use href="#d" transform="translate(92 80)"/>`)),
 
   'beef-tripe': svg("Ngau paak jip (beef tripe)", `<defs><g id="t">
-<rect x="-14" y="-8" width="28" height="16" rx="4" fill="#958b78" stroke="#665e4f" stroke-width="1.5"/>
-<path d="M-9 -7 q2 7 0 14 M-4 -7 q2 7 0 14 M1 -7 q2 7 0 14 M6 -7 q2 7 0 14 M11 -7 q1.5 7 0 14" fill="none" stroke="#c4bba6" stroke-width="2" stroke-linecap="round"/>
+<rect x="-14" y="-8" width="28" height="16" rx="4" fill="#f3ecdb" stroke="#c9b994" stroke-width="1.5"/>
+<path d="M-9 -7 q2 7 0 14 M-4 -7 q2 7 0 14 M1 -7 q2 7 0 14 M6 -7 q2 7 0 14 M11 -7 q1.5 7 0 14" fill="none" stroke="#d8c8a4" stroke-width="2" stroke-linecap="round"/>
+<path d="M-10 -5 h6" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
 </g></defs>
-` + steamer(`<ellipse cx="64" cy="77" rx="40" ry="9" fill="#b08a55" opacity=".5"/>
+` + steamer(`<ellipse cx="64" cy="77" rx="40" ry="9" fill="#a8783e" opacity=".6"/>
 <use href="#t" transform="translate(50 64) rotate(-12)"/>
 <use href="#t" transform="translate(78 63) rotate(10)"/>
 <use href="#t" transform="translate(38 77) rotate(8)"/>
