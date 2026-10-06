@@ -41,6 +41,13 @@
   ],
   "audio": "5d9dd1e14209"
  },
+ "ceot": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 七 cat"
+  ],
+  "audio": "e78b4628850f"
+ },
  "children": {
   "verdict": "LISTEN",
   "notes": [
@@ -48,12 +55,26 @@
   ],
   "audio": "949374d7378d"
  },
+ "cin-min": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 天天 tin tin"
+  ],
+  "audio": "3ce7469c67f9"
+ },
  "cow": {
   "verdict": "LISTEN",
   "notes": [
    "speech-to-text heard 歐元 au jyun"
   ],
   "audio": "0d86695bdf74"
+ },
+ "daap": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 八 baat"
+  ],
+  "audio": "f712abe0abb0"
  },
  "dai": {
   "verdict": "LISTEN",
@@ -183,6 +204,13 @@
   ],
   "audio": "7b1cd089d1fd"
  },
+ "haang-lou": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 鵬路 paang lou"
+  ],
+  "audio": "fb1e1fa8b0ef"
+ },
  "hai-mai": {
   "verdict": "CHECK",
   "notes": [
@@ -247,6 +275,14 @@
   ],
   "audio": "3ce8edb2a713"
  },
+ "kan": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Can c a n",
+   "tone doubtful: 近 tone 5 sounds like 2 (p 0.29)"
+  ],
+  "audio": "847c6f74a264"
+ },
  "lou-si": {
   "verdict": "LISTEN",
   "notes": [
@@ -289,6 +325,13 @@
    "speech-to-text heard my m y"
   ],
   "audio": "5453c62db4bc"
+ },
+ "minibus": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 小 tone 2 sounds like 5 (p 0.16)"
+  ],
+  "audio": "c33c144dfaa2"
  },
  "more-water": {
   "verdict": "LISTEN",
@@ -389,6 +432,14 @@
   ],
   "audio": "d04b55694fcf"
  },
+ "supermarket": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard TC t c",
+   "tone doubtful: 市 tone 5 sounds like 6 (p 0.45)"
+  ],
+  "audio": "09f3561dbfd5"
+ },
  "sweet": {
   "verdict": "LISTEN",
   "notes": [
@@ -410,6 +461,13 @@
   ],
   "audio": "8d1925d04100"
  },
+ "toilet": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 手 tone 2 sounds like 5 (p 0.29)"
+  ],
+  "audio": "c60cecd53906"
+ },
  "water": {
   "verdict": "LISTEN",
   "notes": [
@@ -430,6 +488,20 @@
    "speech-to-text heard 搵 wan"
   ],
   "audio": "8f57772bceee"
+ },
+ "zaam": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Dam d a m"
+  ],
+  "audio": "926b39d692f6"
+ },
+ "zo": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Jo j o"
+  ],
+  "audio": "36c2019c0cf3"
  },
  "zyu": {
   "verdict": "LISTEN",

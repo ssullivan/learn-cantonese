@@ -1142,38 +1142,38 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 
 | # | Chinese | Jyutping | English | Audio |
 |---|---|---|---|---|
-| 1 | 去 | heoi3 | to go (to) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/heoi.mp3) |
-| 2 | 嚟 | lai4 | to come | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/lai.mp3) |
-| 3 | 喺 | hai2 | to be at; at | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/hai2.mp3) |
-| 4 | 出 | ceot1 | to go out | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/ceot.mp3) |
-| 5 | 搭 | daap3 | to take (a bus, the MTR) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/daap.mp3) |
-| 6 | 行路 | haang4 lou6 | to walk | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/haang-lou.mp3) |
-| 7 | 落 | lok6 | to get off; to go down | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/lok.mp3) |
-| 8 | 邊度 | bin1 dou6 | where | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/bin-dou.mp3) |
-| 9 | 度 | dou6 | place (in 呢度, 嗰度) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/dou6.mp3) |
-| 10 | 近 | kan5 | near; close | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/kan.mp3) |
-| 11 | 遠 | jyun5 | far | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/jyun.mp3) |
-| 12 | 港鐵 | gong2 tit3 | MTR (the metro) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/metro.mp3) |
-| 13 | 巴士 | baa1 si2 | bus | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/bus.mp3) |
-| 14 | 小巴 | siu2 baa1 | minibus | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/minibus.mp3) |
-| 15 | 的士 | dik1 si2 | taxi | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/taxi.mp3) |
-| 16 | 電車 | din6 ce1 | tram | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/tram.mp3) |
-| 17 | 站 | zaam6 | station; stop | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/zaam.mp3) |
-| 18 | 洗手間 | sai2 sau2 gaan1 | toilet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/toilet.mp3) |
-| 19 | 銀行 | ngan4 hong4 | bank | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/bank.mp3) |
-| 20 | 醫院 | ji1 jyun2 | hospital | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/hospital.mp3) |
-| 21 | 超市 | ciu1 si5 | supermarket | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/supermarket.mp3) |
-| 22 | 公園 | gung1 jyun2 | park | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/park.mp3) |
-| 23 | 酒店 | zau2 dim3 | hotel | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/hotel.mp3) |
-| 24 | 機場 | gei1 coeng4 | airport | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/airport.mp3) |
-| 25 | 左 | zo2 | left | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/zo.mp3) |
-| 26 | 右 | jau6 | right | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/jau6.mp3) |
-| 27 | 左邊 | zo2 bin1 | the left (side) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/zo-bin.mp3) |
-| 28 | 右邊 | jau6 bin1 | the right (side) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/jau-bin.mp3) |
-| 29 | 直行 | zik6 haang4 | go straight on | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/zik-haang.mp3) |
-| 30 | 轉 | zyun3 | to turn | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/zyun.mp3) |
-| 31 | 前面 | cin4 min6 | ahead; in front | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/cin-min.mp3) |
-| 32 | 對面 | deoi3 min6 | opposite; across the road | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/deoi-min.mp3) |
+| 1 | 去 | heoi3 | to go (to) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/heoi.mp3) |
+| 2 | 嚟 | lai4 | to come | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/lai.mp3) |
+| 3 | 喺 | hai2 | to be at; at | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hai2.mp3) |
+| 4 | 出 | ceot1 | to go out | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ceot.mp3) |
+| 5 | 搭 | daap3 | to take (a bus, the MTR) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/daap.mp3) |
+| 6 | 行路 | haang4 lou6 | to walk | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/haang-lou.mp3) |
+| 7 | 落 | lok6 | to get off; to go down | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/lok.mp3) |
+| 8 | 邊度 | bin1 dou6 | where | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/bin-dou.mp3) |
+| 9 | 度 | dou6 | place (in 呢度, 嗰度) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/dou6.mp3) |
+| 10 | 近 | kan5 | near; close | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/kan.mp3) |
+| 11 | 遠 | jyun5 | far | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jyun.mp3) |
+| 12 | 港鐵 | gong2 tit3 | MTR (the metro) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/metro.mp3) |
+| 13 | 巴士 | baa1 si2 | bus | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/bus.mp3) |
+| 14 | 小巴 | siu2 baa1 | minibus | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/minibus.mp3) |
+| 15 | 的士 | dik1 si2 | taxi | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/taxi.mp3) |
+| 16 | 電車 | din6 ce1 | tram | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/tram.mp3) |
+| 17 | 站 | zaam6 | station; stop | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zaam.mp3) |
+| 18 | 洗手間 | sai2 sau2 gaan1 | toilet | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/toilet.mp3) |
+| 19 | 銀行 | ngan4 hong4 | bank | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/bank.mp3) |
+| 20 | 醫院 | ji1 jyun2 | hospital | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hospital.mp3) |
+| 21 | 超市 | ciu1 si5 | supermarket | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/supermarket.mp3) |
+| 22 | 公園 | gung1 jyun2 | park | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/park.mp3) |
+| 23 | 酒店 | zau2 dim3 | hotel | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hotel.mp3) |
+| 24 | 機場 | gei1 coeng4 | airport | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/airport.mp3) |
+| 25 | 左 | zo2 | left | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zo.mp3) |
+| 26 | 右 | jau6 | right | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jau6.mp3) |
+| 27 | 左邊 | zo2 bin1 | the left (side) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zo-bin.mp3) |
+| 28 | 右邊 | jau6 bin1 | the right (side) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jau-bin.mp3) |
+| 29 | 直行 | zik6 haang4 | go straight on | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zik-haang.mp3) |
+| 30 | 轉 | zyun3 | to turn | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zyun.mp3) |
+| 31 | 前面 | cin4 min6 | ahead; in front | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/cin-min.mp3) |
+| 32 | 對面 | deoi3 min6 | opposite; across the road | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/deoi-min.mp3) |
 | 33 | 港鐵站 | gong2 tit3 zaam6 | MTR station | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/metro-zaam.mp3) |
 | 34 | 巴士站 | baa1 si2 zaam6 | bus stop | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/bus-zaam.mp3) |
 | 35 | 出街 | ceot1 gaai1 | to go out | [▶ play](https://ssullivan.github.io/learn-cantonese/unit11/audio/ceot-street.mp3) |

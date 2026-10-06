@@ -18,71 +18,24 @@ Units.add(11, {
 
   // Going, coming, being somewhere.
   verbs: [
-    { id: 'heoi', hanzi: '去', jyutping: 'heoi3', english: 'to go (to)', img: false,
-      note: 'The place follows straight after: 去機場, go to the airport. No word for "to".' },
-    { id: 'lai', hanzi: '嚟', jyutping: 'lai4', english: 'to come', img: false },
-    { id: 'hai2', hanzi: '喺', jyutping: 'hai2', english: 'to be at; at', img: false,
-      note: 'hai2, rising: not 係 hai6 (to be). 我喺屋企, I\'m at home.' },
-    { id: 'ceot', hanzi: '出', jyutping: 'ceot1', english: 'to go out', img: false,
-      note: 'As in 出口 (exit) and 出年 (next year, Unit 9).' },
-    { id: 'daap', hanzi: '搭', jyutping: 'daap3', english: 'to take (a bus, the MTR)', img: false,
-      note: 'For any transport: 搭巴士, 搭的士, 搭港鐵.' },
-    { id: 'haang-lou', hanzi: '行路', jyutping: 'haang4 lou6', english: 'to walk', img: false,
-      note: 'Literally "walk road". 行 on its own is to walk, too.' },
-    { id: 'lok', hanzi: '落', jyutping: 'lok6', english: 'to get off; to go down', img: false },
+    ...Words.list('heoi lai hai2 ceot daap haang-lou lok'),
   ],
 
   where: [
-    { id: 'bin-dou', hanzi: '邊度', jyutping: 'bin1 dou6', english: 'where', img: false,
-      note: 'Goes where the answer goes: 你去邊度呀？ 我去機場.' },
-    { id: 'dou6', hanzi: '度', jyutping: 'dou6', english: 'place (in 呢度, 嗰度)', img: false },
-    { id: 'kan', hanzi: '近', jyutping: 'kan5', english: 'near; close', img: false },
-    { id: 'jyun', hanzi: '遠', jyutping: 'jyun5', english: 'far', img: false },
+    ...Words.list('bin-dou dou6 kan jyun'),
   ],
 
   transport: [
-    { id: 'metro', hanzi: '港鐵', jyutping: 'gong2 tit3', english: 'MTR (the metro)',
-      note: 'Literally "Hong Kong rail". Also called 地鐵 dei6 tit3.' },
-    { id: 'bus', hanzi: '巴士', jyutping: 'baa1 si2', english: 'bus',
-      note: 'From the English "bus". Most are double-deckers.' },
-    { id: 'minibus', hanzi: '小巴', jyutping: 'siu2 baa1', english: 'minibus',
-      note: 'Sixteen or so seats. Call out where you want to get off.' },
-    { id: 'taxi', hanzi: '的士', jyutping: 'dik1 si2', english: 'taxi',
-      note: 'From the English "taxi". Hong Kong\'s city taxis are red.' },
-    { id: 'tram', hanzi: '電車', jyutping: 'din6 ce1', english: 'tram',
-      note: 'Literally "electric car": the narrow double-decker trams on Hong Kong Island.' },
+    ...Words.list('metro bus minibus taxi tram'),
   ],
 
   places: [
-    { id: 'zaam', hanzi: '站', jyutping: 'zaam6', english: 'station; stop', img: false },
-    { id: 'toilet', hanzi: '洗手間', jyutping: 'sai2 sau2 gaan1', english: 'toilet',
-      note: 'Literally "wash hands room".' },
-    { id: 'bank', hanzi: '銀行', jyutping: 'ngan4 hong4', english: 'bank',
-      note: '行 is hong4 here, not haang4 (walk).' },
-    { id: 'hospital', hanzi: '醫院', jyutping: 'ji1 jyun2', english: 'hospital',
-      note: '院 is jyun6 on its own, but jyun2 here.' },
-    { id: 'supermarket', hanzi: '超市', jyutping: 'ciu1 si5', english: 'supermarket',
-      note: 'Short for 超級市場, "super market".' },
-    { id: 'park', hanzi: '公園', jyutping: 'gung1 jyun2', english: 'park',
-      note: '園 is jyun4 on its own, but jyun2 here.' },
-    { id: 'hotel', hanzi: '酒店', jyutping: 'zau2 dim3', english: 'hotel' },
-    { id: 'airport', hanzi: '機場', jyutping: 'gei1 coeng4', english: 'airport',
-      note: 'Literally "machine field", 機 as in 飛機.' },
+    ...Words.list('zaam toilet bank hospital supermarket park hotel airport'),
   ],
 
   // Directions are derived from these at the bottom of this file.
   way: [
-    { id: 'zo', hanzi: '左', jyutping: 'zo2', english: 'left', img: false },
-    { id: 'jau6', hanzi: '右', jyutping: 'jau6', english: 'right', img: false },
-    { id: 'zo-bin', hanzi: '左邊', jyutping: 'zo2 bin1', english: 'the left (side)', img: false,
-      note: '邊 is "side" here; in 邊度 it means "which".' },
-    { id: 'jau-bin', hanzi: '右邊', jyutping: 'jau6 bin1', english: 'the right (side)', img: false },
-    { id: 'zik-haang', hanzi: '直行', jyutping: 'zik6 haang4', english: 'go straight on', img: false,
-      note: 'Literally "straight walk".' },
-    { id: 'zyun', hanzi: '轉', jyutping: 'zyun3', english: 'to turn', img: false,
-      note: 'Before the direction: 轉左, turn left.' },
-    { id: 'cin-min', hanzi: '前面', jyutping: 'cin4 min6', english: 'ahead; in front', img: false },
-    { id: 'deoi-min', hanzi: '對面', jyutping: 'deoi3 min6', english: 'opposite; across the road', img: false },
+    ...Words.list('zo jau6 zo-bin jau-bin zik-haang zyun cin-min deoi-min'),
   ],
 });
 
