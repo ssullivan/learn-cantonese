@@ -11,10 +11,10 @@
  * With none given, the dictionary and every unit<N>/vocab.js are
  * processed. A clip is only regenerated when its voice or text changes
  * (tracked in audio/manifest.json), unless --force. A run without --only
- * also tidies the audio dirs it covers: an entry renamed or moved (from a
- * unit to the dictionary) takes its old clip with the same text and voice,
- * and its audio-check verdict, and clips of entries that are gone are
- * deleted (site.mjs clipMoves).
+ * also tidies every audio dir (whichever homes it makes clips for): an
+ * entry renamed or moved (from a unit to the dictionary) takes its old
+ * clip with the same text and voice, and its audio-check verdict, and
+ * clips of entries that are gone are deleted (site.mjs clipMoves).
  *
  * Azure is the site's voice. MiniMax is only for the few words Azure
  * can't say (it reads 年 nin2 as nin4 whatever the SSML says): MiniMax is
@@ -45,8 +45,10 @@ const args = process.argv.slice(2);
 const force = args.includes('--force');
 const onlyIdx = args.indexOf('--only');
 const only = onlyIdx >= 0 ? new Set(args[onlyIdx + 1].split(',')) : null;
-let units = args.filter((a, i) => !a.startsWith('--') && (onlyIdx < 0 || i !== onlyIdx + 1));
-if (!units.length) units = homes().filter(loadVocab);
+const named = args.filter((a, i) => !a.startsWith('--') && (onlyIdx < 0 || i !== onlyIdx + 1));
+const units = named.length ? named : homes().filter(loadVocab);
+const unknown = named.filter(home => !homes().includes(home));
+if (unknown.length) { console.error(`No such home: ${unknown.join(' ')} (words, or unit1 to ${homes().at(-1)})`); process.exit(1); }
 
 const xml = s => s.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[c]));
 
@@ -129,7 +131,8 @@ const writeJson = (path, value, indent) => writeFileSync(path, JSON.stringify(Ob
 
 // Each home's clips: the entries whose audio is there, what to send for
 // each, and its hash; with the manifest of the clips it has.
-const runs = units.map(home => {
+// Every home, so a clip moving between homes is found whichever is named.
+const runs = homes().filter(loadVocab).map(home => {
   const vocab = loadVocab(home);
   const audioDir = join(ROOT, home, 'audio');
   mkdirSync(audioDir, { recursive: true });
@@ -196,7 +199,7 @@ let made = 0, skipped = 0;
 
 if (!only) tidy();
 
-for (const { home, audioDir, clips, manifest, save } of runs) {
+for (const { home, audioDir, clips, manifest, save } of runs.filter(r => units.includes(r.home))) {
   for (const { entry, voice, viaMinimax, request, hash } of clips) {
     if (only && !only.has(entry.id)) continue;
     const file = join(audioDir, `${entry.id}.mp3`);

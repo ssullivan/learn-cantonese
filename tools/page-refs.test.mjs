@@ -41,6 +41,10 @@ ok('ids: .id === / !== / == a literal', got === 'dung jit tomato', got);
 let refs = pageReferences(`Units.word(9, 't0600'); Units.word(9, \`t\${hh}\`);`).filter(r => r.kind === 'word');
 ok('words: Units.word(n, literal), not a template', refs.length === 1 && refs[0].unit === 9 && refs[0].name === 't0600', JSON.stringify(refs));
 
+// Dictionary words: Words.get and each id of Words.list, literals only.
+got = names(`Words.get('apple'); ...Words.list(' cat  dog '); Words.get(id); Words.list(\`a \${b}\`);`, 'dictionary');
+ok('dictionary: Words.get and Words.list literals', got === 'apple cat dog', got);
+
 // Comments are skipped; strings that look like comments are not.
 got = names(`/* uses shared/measures.js */\nconst measures = Units.byId(V.measures);\n// measures.js again\nmeasures.zek;`, 'id');
 ok('comments: names in comments are skipped', got === 'zek', got);

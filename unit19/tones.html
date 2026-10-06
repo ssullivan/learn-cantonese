@@ -42,7 +42,7 @@
     key: 'u19-tones',
     levels: [
       { id: 'animals', name: '豬 馬 蛇', blurb: 'The animals.', pool: V.animals, choices: 3 },
-      { id: 'words', name: '飛 走 屬', blurb: 'What they do, the zodiac, and the zoo.', pool: [...V.words, ...V.verbs.filter(v => Units.teaches(V, v)), ...V.signs], choices: 3 },
+      { id: 'words', name: '飛 走 屬', blurb: 'What they do, the zodiac, and the zoo.', pool: [...V.words, ...V.verbs.filter(v => Units.teaches(V, v) || v.id === 'zau' /* 走, as run */), ...V.signs], choices: 3 },
       { id: 'count', name: '一隻 一條', blurb: '一隻老虎, 三條蛇, 邊隻.', pool: [...V.ones.filter(o => Units.teaches(V, o)), ...V.counts, ...V.which], choices: 4 },
       { id: 'sentences', name: '雀仔會飛', blurb: '會, 會唔會, 我屬馬 and the zoo.', pool: [...V.can, ...V.cant, ...V.asks, ...V.zodiac, ...V.sentences], choices: 4 },
     ],

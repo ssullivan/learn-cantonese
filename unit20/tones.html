@@ -33,7 +33,8 @@
 <!-- /vocab -->
 <script>
   const V = window.VOCAB;
-  const own = list => list.filter(e => Units.teaches(V, e));
+  // 粒 is unit 14's, taught here again for fruit.
+  const own = list => list.filter(e => Units.teaches(V, e) || e.id === 'nap');
   Tones.init({
     root: document.getElementById('game'),
     key: 'u20-tones',

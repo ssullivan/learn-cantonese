@@ -310,6 +310,11 @@ for (const e of entries(loadVocab('words') ?? {})) {
           const at = `line ${script.line + ref.line - 1}`;
           if (ref.kind === 'group' && !(ref.name in own.v)) bad(file, `${at}: V.${ref.name} is not in ${unit}/vocab.js`);
           if (ref.kind === 'id' && !own.ids.has(ref.name)) bad(file, `${at}: no entry ${ref.name} in ${unit}'s vocab`);
+          if (ref.kind === 'dictionary') {
+            const word = homeIds('words').has(ref.name) && entries(loadVocab('words')).find(e => e.id === ref.name);
+            if (!word) bad(file, `${at}: the dictionary has no word ${ref.name}`);
+            else if (word.taught > n) bad(file, `${at}: ${ref.name} is taught in unit ${word.taught}, after this one`);
+          }
           if (ref.kind === 'word') {
             if (ref.unit > n) bad(file, `${at}: Units.word(${ref.unit}, ...) borrows from a later unit`);
             else if (!vocabOf(`unit${ref.unit}`)?.ids.has(ref.name)) bad(file, `${at}: unit ${ref.unit} has no word ${ref.name}`);

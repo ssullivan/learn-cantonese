@@ -37,7 +37,7 @@
   SayIt.init({
     root: document.getElementById('say'),
     key: 'u13-say',
-    pool: [...V.basics, ...V.weather, ...V.feel.filter(e => Units.teaches(V, e)), ...V.seasons, ...V.grammar.filter(e => Units.teaches(V, e)), ...V.things,
+    pool: [...V.basics, ...V.weather, ...V.feel.filter(e => !['jit', 'dung'].includes(e.id)), ...V.seasons, ...V.grammar.filter(e => Units.teaches(V, e)), ...V.things,
       ...V.phrases, ...V.degrees.filter(e => e.adj === 'jit'), ...V.advice, ...V.sentences],
   });
 </script>

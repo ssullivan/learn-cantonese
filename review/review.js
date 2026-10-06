@@ -234,14 +234,20 @@
   paintAll();
 
   // The clips' hashes, to tell when a marked clip has been remade.
-  // A mark whose entry is gone moves to the rows now playing its clip.
+  // A mark whose entry is gone moves to the row now playing its clip: the
+  // only unmarked one with that clip, or the only one in the mark's unit.
+  // The same phrase in two units has the same clip, and a listener who
+  // heard one hasn't heard the other, so an unclear mark stays put.
   function followRenames() {
     const keys = new Set(rows.map(r => r.key));
+    const unmarked = rows.filter(r => !marks[r.key]); // before any mark moves
     for (const [key, m] of Object.entries(marks)) {
       if (keys.has(key) || !m.audio) continue;
-      const now = rows.filter(r => !marks[r.key] && manifests[r.home]?.[r.e.id] === m.audio);
-      if (!now.length) continue;
-      for (const r of now) marks[r.key] = m;
+      const clip = unmarked.filter(r => manifests[r.home]?.[r.e.id] === m.audio);
+      const sameUnit = clip.filter(r => key.startsWith(`unit${r.n}/`));
+      const to = clip.length === 1 ? clip[0] : sameUnit.length === 1 ? sameUnit[0] : null;
+      if (!to || marks[to.key]) continue;
+      marks[to.key] = m;
       delete marks[key];
     }
     save();

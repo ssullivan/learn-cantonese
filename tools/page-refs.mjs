@@ -14,6 +14,8 @@
  *              ctx.entry('a') when every argument is a literal, and
  *              .id === 'x' (or !==)
  *     'word'   Units.word(n, 'x'): unit n's entry x (unit: n)
+ *     'dictionary'  Words.get('x'), and each id in Words.list('a b'): a
+ *              word in the dictionary
  *
  * Comments are skipped. Only literal names are seen: ids built at run time
  * (`one-${id}`) are not.
@@ -97,6 +99,9 @@ export function pageReferences(script) {
 
   for (const m of source.matchAll(new RegExp(`\\bUnits\\.word\\(\\s*(\\d+)\\s*,\\s*(${STRING})`, 'g'))) {
     add('word', unquote(m[2]), m.index, { unit: +m[1] });
+  }
+  for (const m of source.matchAll(new RegExp(`\\bWords\\.(?:get|list)\\(\\s*(${STRING})\\s*\\)`, 'g'))) {
+    for (const id of unquote(m[1]).trim().split(/\s+/)) add('dictionary', id, m.index);
   }
   return refs;
 }
