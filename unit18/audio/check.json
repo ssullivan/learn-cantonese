@@ -1,12 +1,4 @@
 {
- "ai": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 誒 e",
-   "tone doubtful: 矮 tone 2 sounds like 5 (p 0.20)"
-  ],
-  "audio": "f8bbf97458bc"
- },
  "apple-mou-watermelon-gam3-gwai": {
   "verdict": "CHECK",
   "notes": [
@@ -475,13 +467,6 @@
    "tone doubtful: 大 tone 6 sounds like 4 (p 0.18)"
   ],
   "audio": "7914b295000f"
- },
- "sai3": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 四 sei"
-  ],
-  "audio": "dc3b18824438"
  },
  "shirt-bei-shoes-peng": {
   "verdict": "LISTEN",

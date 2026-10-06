@@ -23,29 +23,11 @@ Units.add(18, {
 
   // Adjectives in pairs. Each has a picture of the contrast.
   adjectives: [
-    { id: 'daai6', hanzi: '大', jyutping: 'daai6', english: 'big; older',
-      note: 'Of people, older: 佢比我大, they\'re older than me.' },
-    { id: 'sai3', hanzi: '細', jyutping: 'sai3', english: 'small; younger',
-      note: 'Of people, younger, as in 細佬 and 細妹 (Unit 10).' },
-    { id: 'gou', hanzi: '高', jyutping: 'gou1', english: 'tall; high' },
-    { id: 'ai', hanzi: '矮', jyutping: 'ai2', english: 'short (not tall)',
-      note: 'Many say ngai2.' },
-    { id: 'faai', hanzi: '快', jyutping: 'faai3', english: 'fast; quick' },
-    { id: 'maan6', hanzi: '慢', jyutping: 'maan6', english: 'slow',
-      note: 'Sounds just like 萬 (Unit 4), ten thousand.' },
+    ...Words.list('daai6 sai3 gou ai faai maan6'),
   ],
 
   talk: [
-    { id: 'bei', hanzi: '比', jyutping: 'bei2', english: 'than (A 比 B)', img: false,
-      note: 'A 比 B + adjective: 西瓜比蘋果貴. No 係, and no word for "more".' },
-    { id: 'zeoi', hanzi: '最', jyutping: 'zeoi3', english: 'the most; -est',
-      note: 'Before the adjective: 最大, the biggest.' },
-    { id: 'jat-joeng', hanzi: '一樣', jyutping: 'jat1 joeng6', english: 'the same',
-      note: 'A 同 B 一樣 + adjective: 我同佢一樣高, I\'m as tall as them.' },
-    { id: 'caa-m-do', hanzi: '差唔多', jyutping: 'caa1 m4 do1', english: 'about the same; almost', img: false,
-      note: '"Differ not much".' },
-    { id: 'ngaam', hanzi: '啱', jyutping: 'ngaam1', english: 'right; correct', img: false,
-      note: '啱唔啱呀？ Is that right?' },
+    ...Words.list('bei zeoi jat-joeng caa-m-do ngaam'),
   ],
 });
 

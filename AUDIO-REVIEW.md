@@ -1991,17 +1991,17 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 
 | # | Chinese | Jyutping | English | Audio |
 |---|---|---|---|---|
-| 1 | 大 | daai6 | big; older | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/daai6.mp3) |
-| 2 | 細 | sai3 | small; younger | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/sai3.mp3) |
-| 3 | 高 | gou1 | tall; high | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/gou.mp3) |
-| 4 | 矮 | ai2 | short (not tall) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/ai.mp3) |
-| 5 | 快 | faai3 | fast; quick | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/faai.mp3) |
-| 6 | 慢 | maan6 | slow | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/maan6.mp3) |
-| 7 | 比 | bei2 | than (A 比 B) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/bei.mp3) |
-| 8 | 最 | zeoi3 | the most; -est | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/zeoi.mp3) |
-| 9 | 一樣 | jat1 joeng6 | the same | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/jat-joeng.mp3) |
-| 10 | 差唔多 | caa1 m4 do1 | about the same; almost | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/caa-m-do.mp3) |
-| 11 | 啱 | ngaam1 | right; correct | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/ngaam.mp3) |
+| 1 | 大 | daai6 | big; older | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/daai6.mp3) |
+| 2 | 細 | sai3 | small; younger | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/sai3.mp3) |
+| 3 | 高 | gou1 | tall; high | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gou.mp3) |
+| 4 | 矮 | ai2 | short (not tall) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ai.mp3) |
+| 5 | 快 | faai3 | fast; quick | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/faai.mp3) |
+| 6 | 慢 | maan6 | slow | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/maan6.mp3) |
+| 7 | 比 | bei2 | than (A 比 B) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/bei.mp3) |
+| 8 | 最 | zeoi3 | the most; -est | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zeoi.mp3) |
+| 9 | 一樣 | jat1 joeng6 | the same | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jat-joeng.mp3) |
+| 10 | 差唔多 | caa1 m4 do1 | about the same; almost | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/caa-m-do.mp3) |
+| 11 | 啱 | ngaam1 | right; correct | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ngaam.mp3) |
 | 12 | 好多 | hou2 do1 | much; a lot (more) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/hou-do.mp3) |
 | 13 | 唔啱 | m4 ngaam1 | wrong; not right | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/m-ngaam.mp3) |
 | 14 | 一歲 | jat1 seoi3 | 1 year | [▶ play](https://ssullivan.github.io/learn-cantonese/unit18/audio/y1.mp3) |

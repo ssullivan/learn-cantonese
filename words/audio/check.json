@@ -13,6 +13,14 @@
   ],
   "audio": "51567f51e957"
  },
+ "ai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 誒 e",
+   "tone doubtful: 矮 tone 2 sounds like 5 (p 0.20)"
+  ],
+  "audio": "f8bbf97458bc"
+ },
  "baak": {
   "verdict": "LISTEN",
   "notes": [
@@ -600,6 +608,13 @@
    "speech-to-text heard 四 sei"
   ],
   "audio": "5f831b794672"
+ },
+ "sai3": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 四 sei"
+  ],
+  "audio": "dc3b18824438"
  },
  "seoi": {
   "verdict": "LISTEN",
