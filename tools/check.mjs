@@ -3,7 +3,8 @@
  * check.mjs — sanity checks for the whole site. Exits 1 on any problem.
  *
  *   node tools/check.mjs          report problems
- *   node tools/check.mjs --fix    also rewrite ?v=<hash> cache stamps
+ *   node tools/check.mjs --fix    also rewrite ?v=<hash> cache stamps and
+ *                                 pages' vocab scripts
  *
  * Checks:
  *   - every href/src in every .html is relative and points at a file
@@ -18,24 +19,23 @@
  *     audio/<id>.mp3 for every entry, a drawing in art.mjs for every
  *     entry without img:false, and no orphan .mp3 files or drawings
  *   - a word borrowed with Units.word(n, ...) has its audio and picture
- *     checked in unit n, and every page that loads a borrowing vocab.js
- *     (its own, or another unit's, like the review page) loads
- *     shared/units.js and unit n's vocab.js before it
- *   - pages load shared/numbers.js before any vocab.js using Canto.number
+ *     checked in unit n
+ *   - pages load vocab only between the vocab markers, where --fix writes
+ *     shared/numbers.js (if needed), shared/units.js and every earlier
+ *     unit's vocab.js and the page's own (every unit's on the review pages)
  *   - an entry's measure word matches its picture (in its own unit if
  *     borrowed): a measure with dish "steamer" needs a steamer() drawing,
  *     "plate" a plate(), and so on; one without a dish, none of them
  *   - img/*.svg match art.mjs exactly (else run node tools/draw.mjs)
  *   - audio/check.json (audio-check's verdicts) names only vocab entries
- *   - AUDIO-REVIEW.md matches the vocab (else run node tools/review.mjs),
- *     and review/index.html loads every unit's vocab.js
+ *   - AUDIO-REVIEW.md matches the vocab (else run node tools/review.mjs)
  *   - characters to write (a unit's `write`; see tools/stroke-data.mjs):
  *     each is in one of the unit's words and taught by one unit only, has
  *     a stroke-order record in tools/strokes-hk.json that checked out
  *     against Hong Kong's standard (or a person confirmed), or is composed
  *     (tools/strokes-composed.mjs) from parts that did, adding up to its
  *     stroke count, and has an up to date strokes/<hex>.json (else run node tools/strokes.mjs); no orphan
- *     stroke files; review/strokes.html loads every such unit's vocab.js;
+ *     stroke files;
  *     a unit that teaches writing has sheet.html (shared/sheet.js) and
  *     write.html (shared/write.js), with cards for them on its page
  *   - every tools/*.test.mjs passes
@@ -64,6 +64,45 @@ function walk(dir, out = []) {
 
 const files = walk(ROOT);
 const stamp = file => createHash('sha1').update(readFileSync(file)).digest('hex').slice(0, 8);
+
+// Vocab scripts: written, not typed. A page that loads vocab has them
+// between VOCAB_START and VOCAB_END: shared/numbers.js if any of them uses
+// it, shared/units.js, then every earlier unit's vocab.js and its own (a
+// unit's page), or every unit's (the review pages), as loadVocab loads them
+// in Node. Every earlier unit, not only those a vocab.js borrows from, since
+// page scripts borrow too (unit 15's planner uses unit 9's clocks).
+const VOCAB_START = '<!-- vocab: written by node tools/check.mjs --fix -->';
+const VOCAB_END = '<!-- /vocab -->';
+const vocabUnits = unitDirs().filter(u => existsSync(join(ROOT, u, 'vocab.js')));
+// The only Canto a vocab.js has is numbers.js's (loadVocab runs it, not core.js).
+const usesNumbers = unit => readFileSync(join(ROOT, unit, 'vocab.js'), 'utf8').includes('Canto.');
+function vocabScripts(html) {
+  const ownUnit = relative(ROOT, html).match(/^(unit\d+)\//)?.[1];
+  const loaded = ownUnit ? [...vocabUnits.filter(u => +u.slice(4) < +ownUnit.slice(4)), ownUnit] : vocabUnits;
+  const script = path => `<script src="${relative(dirname(html), join(ROOT, path))}?v=${stamp(join(ROOT, path))}"></script>`;
+  return [
+    VOCAB_START,
+    ...(loaded.some(usesNumbers) ? [script('shared/numbers.js')] : []),
+    script('shared/units.js'),
+    ...loaded.map(u => script(`${u}/vocab.js`)),
+    VOCAB_END,
+  ].join('\n');
+}
+let vocabBlocksWritten = 0;
+for (const html of files.filter(f => f.endsWith('.html'))) {
+  const source = readFileSync(html, 'utf8');
+  const start = source.indexOf(VOCAB_START), end = source.indexOf(VOCAB_END);
+  const outside = start < 0 ? source : source.slice(0, start) + source.slice(end + VOCAB_END.length);
+  if (/<script src="[^"]*(vocab|units|numbers)\.js/.test(outside) && /<script src="[^"]*vocab\.js/.test(source)) {
+    bad(html, `load vocab only between ${VOCAB_START} and ${VOCAB_END} (see unit7/trolley.html)`);
+  }
+  if (start < 0) continue;
+  if (end < start) { bad(html, `${VOCAB_START} needs a ${VOCAB_END} after it`); continue; }
+  const want = vocabScripts(html);
+  if (source.slice(start, end + VOCAB_END.length) === want) continue;
+  if (fix) { writeFileSync(html, source.slice(0, start) + want + source.slice(end + VOCAB_END.length)); vocabBlocksWritten++; }
+  else bad(html, 'vocab scripts out of date (run node tools/check.mjs --fix)');
+}
 
 // Links and cache stamps
 let fixed = 0;
@@ -205,48 +244,15 @@ for (const f of existsSync(join(ROOT, 'strokes')) ? readdirSync(join(ROOT, 'stro
   if (f.endsWith('.json') && !taughtIn[String.fromCodePoint(parseInt(f, 16))]) bad(join(ROOT, 'strokes', f), 'orphan (no unit teaches it: not in any write)');
 }
 
-// The stroke order review page lists every unit that teaches writing
-{
-  const page = join(ROOT, 'review/strokes.html');
-  const html = existsSync(page) ? readFileSync(page, 'utf8') : '';
-  for (const u of new Set(Object.values(taughtIn))) {
-    if (!html.includes(`src="../${u}/vocab.js`)) bad(page, `load ../${u}/vocab.js (it teaches characters to write)`);
-  }
+// The review pages list every unit (their vocab scripts are written above)
+for (const page of ['review/index.html', 'review/strokes.html']) {
+  if (!readFileSync(join(ROOT, page), 'utf8').includes(VOCAB_START)) bad(join(ROOT, page), `load every unit's vocab: add ${VOCAB_START} and ${VOCAB_END}`);
 }
 
-// The review table, and the review page, which lists every unit's clips
+// The review table
 {
-  const page = join(ROOT, 'review/index.html');
-  const html = existsSync(page) ? readFileSync(page, 'utf8') : '';
-  for (const u of unitDirs().filter(u => existsSync(join(ROOT, u, 'vocab.js')))) {
-    if (!html.includes(`src="../${u}/vocab.js`)) bad(page, `load ../${u}/vocab.js (the review page lists every unit)`);
-  }
   const { reviewMarkdown, REVIEW_FILE } = await import('./review.mjs');
   if (!existsSync(REVIEW_FILE) || readFileSync(REVIEW_FILE, 'utf8') !== reviewMarkdown()) bad(REVIEW_FILE, 'out of date (run node tools/review.mjs)');
-}
-
-// Pages load shared/units.js before any vocab.js, the vocab of every unit a
-// vocab.js borrows from before it, and shared/numbers.js before any vocab
-// that uses Canto.number. This covers every vocab.js a page loads: its own,
-// and other units' (the review page loads them all).
-for (const html of files.filter(f => f.endsWith('.html'))) {
-  const srcs = [...readFileSync(html, 'utf8').matchAll(/<script src="([^"?]+)/g)].map(m => m[1]);
-  const at = src => srcs.indexOf(src);
-  const vocabs = srcs.filter(s => /^(\.\.\/unit\d+\/)?vocab\.js$/.test(s));
-  const unitsAt = srcs.findIndex(s => s.endsWith('shared/units.js'));
-  const numbersAt = srcs.findIndex(s => s.endsWith('shared/numbers.js'));
-  // The unit a vocab src belongs to, and the src another unit's vocab has here.
-  const unitOf = v => v === 'vocab.js' ? relative(ROOT, dirname(html)) : v.split('/')[1];
-  const srcFor = n => vocabs.find(v => unitOf(v) === `unit${n}`);
-  for (const v of vocabs) {
-    const src = readFileSync(join(dirname(html), v), 'utf8');
-    if (unitsAt < 0 || unitsAt > at(v)) bad(html, `load ../shared/units.js before ${v}`);
-    for (const n of new Set([...src.matchAll(/Units\.word\((\d+)/g)].map(m => m[1]))) {
-      const need = srcFor(n);
-      if (!need || at(need) > at(v)) bad(html, `${v} borrows from unit ${n}: load ../unit${n}/vocab.js before it`);
-    }
-    if (src.includes('Canto.number') && (numbersAt < 0 || numbersAt > at(v))) bad(html, `${v} uses Canto.number: load ../shared/numbers.js before it`);
-  }
 }
 
 // Tests
@@ -255,6 +261,7 @@ for (const test of readdirSync(join(ROOT, 'tools')).filter(f => f.endsWith('.tes
   if (r.status !== 0) bad(join(ROOT, 'tools', test), `failed:\n${r.stdout}${r.stderr}`);
 }
 
+if (vocabBlocksWritten) console.log(`Wrote the vocab scripts of ${vocabBlocksWritten} page(s).`);
 if (fixed) console.log(`Updated ${fixed} cache stamp(s).`);
 if (problems.length) {
   console.log(problems.join('\n'));

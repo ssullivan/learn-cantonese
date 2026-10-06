@@ -55,7 +55,7 @@ tools/
   draw.mjs               art.mjs → img/*.svg
   tts.mjs                vocab.js → audio/*.mp3 (Azure Speech; MiniMax for a word with a `minimax:` voice)
   audio-check.mjs        machine checks on clips, by ~/audio-lang-tools (a separate repo): file, speech-to-text, per-syllable tones (see "Verifying audio")
-  check.mjs              site checks; --fix writes cache stamps; runs tools/*.test.mjs; fails if any file holds the Azure key
+  check.mjs              site checks; --fix writes cache stamps and pages' vocab scripts; runs tools/*.test.mjs; fails if any file holds the Azure key
   stroke-data.mjs        stroke-order data shared by the tools below: records, building strokes/ files, matching strokes
   stroke-check.mjs       checks characters' stroke order against the Education Bureau's animations (Playwright) → tools/strokes-hk.json
   strokes-hk.json        stroke-check's verdict per character (the Hong Kong order, scores, dates); `--confirm` adds a person's check
@@ -90,7 +90,7 @@ Run after every `tts.mjs` run. The checking lives in a separate repo, **audio-la
 4. Fix it in `vocab.js` (`phoneme: true`, `ssml` or `voice`), then run `tts.mjs --only <id>` and rerun the check.
 5. Commit the unit's `audio/check.json` (the verdicts, shown on the review page when "Show machine flags" is on). Tell the user which clips are still flagged, so a listener starts there.
 
-Human listeners use the review page (`review/`, linked from the home page): every clip with its unit, Chinese, Jyutping and English, marks kept in their browser (localStorage `audio-review`), and "Copy my notes" to send them back. A clip regenerated after it was marked says so. When adding a unit, add its `vocab.js` to `review/index.html` (check.mjs enforces it).
+Human listeners use the review page (`review/`, linked from the home page): every clip with its unit, Chinese, Jyutping and English, marks kept in their browser (localStorage `audio-review`), and "Copy my notes" to send them back. A clip regenerated after it was marked says so. Its vocab scripts are written by `check.mjs --fix`, so a new unit appears on it by itself.
 
 How good the check is, is measured in audio-lang-tools, not assumed: `uv run altools bench score` scores it on labelled clips (right and wrong tones, read from characters as this site's are, and from sapi phonemes; damaged files; real fixtures from this site) and fails below its recorded floors. When changing the checker, change it there and rerun the benchmark. `node tools/audio-check.mjs --words out.json` exports this site's words for `altools bench make`.
 
@@ -117,7 +117,7 @@ Hong Kong's standard is the guiding principle (STROKE-ORDER.md explains the appr
 - Every page links the favicon right after its viewport meta: `<link rel="icon" href="../favicon.svg" type="image/svg+xml">` (`favicon.svg` on the root page); check.mjs enforces it.
 - Local CSS and JS are loaded with a `?v=<hash>` cache stamp; `node tools/check.mjs --fix` writes them. Never edit a stamp by hand.
 - Learn pages run on `shared/learn.js`; `unit7/learn.html` + `lessons.js` is the template. Games run on `shared/game.js`; `unit7/trolley.*` is the template. Put reusable UI in `shared/`, not in a unit's script.
-- Script order: `core.js`, `audio.js`, then `learn.js` or `game.js` (+ `tones.js`, `reply.js`...), then `numbers.js` if any loaded vocab uses `Canto.number`, then `units.js`, the `../unit<n>/vocab.js` of every unit it borrows from, the unit's own `vocab.js`, and the page script. check.mjs enforces the vocab part.
+- Script order: `core.js`, `audio.js`, then `learn.js` or `game.js` (+ `tones.js`, `reply.js`...), then the vocab markers `<!-- vocab: written by node tools/check.mjs --fix -->` and `<!-- /vocab -->`, then the page script. Never write the vocab scripts by hand: `check.mjs --fix` writes them between the markers (`numbers.js` if any loaded vocab uses it, `units.js`, every earlier unit's `vocab.js`, then the unit's own; every unit's on the review pages), and fails on a stale block or a `vocab.js` loaded outside it. Every earlier unit, not only those the vocab borrows from, because page scripts borrow too (unit 15's planner uses unit 9's clocks).
 - Show Chinese with its Jyutping through `Canto.zh(hanzi, jyutping)`, never hand-built spans; plain text that mixes English and Chinese (a step title) goes through `Canto.tagZh`, which gives the Chinese `lang="zh-HK"` so it gets the Chinese font first. It puts each syllable over its character (ruby) in words on their own (word cards, answers, tiles, speech bubbles, Say It Back) at 700 px and wider, and the Jyutping after the word in prose and on phones (theme.css "Chinese with Jyutping"). A word whose characters and syllables don't pair up (卅 saa1 aa6) keeps the Jyutping after the word.
 - No emoji in the UI (they break on systems without an emoji font); use text, ▶, ★, or a Chinese character badge (`Canto.speech`).
 - Game pages and learn pages link back to their unit page with `href="./"` ("← Unit N"; `../` would go up to the site root); unit pages and review pages link to all units with `href="../"` ("← All units"). check.mjs enforces both.
