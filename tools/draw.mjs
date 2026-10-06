@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 /*
- * draw.mjs — write <home>/img/<id>.svg from the drawings in each unit's
- * art.mjs: a dictionary word's to words/img (its drawing is in the
- * art.mjs of the unit that teaches it), the rest to the unit's img/.
+ * draw.mjs — write <home>/img/<id>.svg from <home>/art.mjs, for the
+ * dictionary (words/) and every unit.
  *
  *   node tools/draw.mjs
  *

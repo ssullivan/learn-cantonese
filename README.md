@@ -67,7 +67,7 @@ The course has 21 units, each building on the ones before (the roadmap is in CLA
 ## Working on it
 
 ```sh
-node tools/draw.mjs          # unit<N>/art.mjs → words/img/*.svg (words), unit<N>/img/*.svg (the rest)
+node tools/draw.mjs          # words/art.mjs, unit<N>/art.mjs → img/*.svg
 node tools/tts.mjs           # words/words.js and unit<N>/vocab.js → audio/*.mp3 (needs Azure Speech key)
 node tools/audio-check.mjs unit9   # machine-check clips: which ones need a listen
 node tools/stroke-check.mjs  # check characters' stroke order against Hong Kong's standard (needs Playwright)

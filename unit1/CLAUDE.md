@@ -15,7 +15,7 @@ Its words are in the dictionary (`words/words.js`, unit 1). `sets` holds si / fu
 - Why: a native speaker heard HiuMaan's tones merge (5 almost like 2, 3 close to 6). Which pairs they meant is still open; WanLung keeps all six apart best of the Azure voices. The machine check can't judge this: it asks whether each tone is the voice's own, not whether two sound apart. Tone-contrast clips need a listener.
 
 ## Drawings
-`art.mjs` draws one picture per word with a picture (fish, car, water, cow, chicken...), from `svg.mjs` parts (`bowl`, `cup`, `car`).
+Unit 1's section of `words/art.mjs` draws one picture per word with a picture (fish, car, water, cow, chicken...), from `svg.mjs` parts (`bowl`, `cup`, `car`).
 
 ## Used by later units
 魚 車 水 雞 牛 (`fish`, `car`, `water`, `chicken`, `cow`): unit 5 gives them a `measure`, and later units take them from unit 5 or here. Unit 8 borrows `fan6` (份, a portion). 廣東話 (`cantonese`, unit 3), 粥 (`congee`, unit 7's bowl of congee) and 街 (`street`, unit 16).

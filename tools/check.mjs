@@ -230,7 +230,7 @@ for (const unit of homes()) {
       soundAt[sound] ??= `${unit}'s ${e.id}`;
     }
     if (!existsSync(join(dir, 'audio', `${e.id}.mp3`))) bad(vocabFile, `${e.id} has no audio (run node tools/tts.mjs ${unit})`);
-    if (e.img !== false && !art[e.id]) bad(vocabFile, `${e.id} has no drawing in ${dictionary ? `unit${e.taught}/` : ''}art.mjs`);
+    if (e.img !== false && !art[e.id]) bad(vocabFile, `${e.id} has no drawing in ${relative(ROOT, join(dir, 'art.mjs'))}`);
   }
   if (vocab.write !== undefined && typeof vocab.write !== 'string') bad(vocabFile, "write must be a string of characters: write: '一二三'");
   if (vocab.write) {

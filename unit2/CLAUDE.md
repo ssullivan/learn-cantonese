@@ -12,7 +12,7 @@
 Groups: `greetings`, `howAreYou`, `polite`. Reply Match reads `reply` (ids of good answers) and `when` (situations; the picture shows the first).
 
 ## Drawings
-`art.mjs` draws the situation each phrase is for (`when`), not the phrase: a sunrise for 早晨, a teapot and cup (`teapot`, `teacup`) for thanks.
+Unit 2's section of `words/art.mjs` draws the situation each phrase is for (`when`), not the phrase: a sunrise for 早晨, a teapot and cup (`teapot`, `teacup`) for thanks.
 
 ## Used by later units
 `m-goi` (唔該; units 7, 8, 11), `thanks` (多謝; unit 7), `no-need` (唔使; units 6, 17).

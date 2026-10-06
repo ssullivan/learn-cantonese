@@ -32,11 +32,11 @@ shared/                every page's code; each file's header comment documents i
   strokes.* write.*    a character stroke by stroke (Strokes.*); Write It (Write.init, Write.judge)
   sheet.*              printable writing sheet (Sheet.init), always ink on white
 words/                 the dictionary: words.js (Words.add(n, [...]): every word, grouped by the unit that teaches it),
-                       img/ (each word's drawing is in its teaching unit's art.mjs), audio/ (manifest.json, check.json)
+                       art.mjs (every word's drawing, in a section per teaching unit) → img/, audio/ (manifest.json, check.json)
 unit<N>/               one unit (see its CLAUDE.md):
   vocab.js             Units.add(N, {...}): the words it uses (Words.get), its own fields on them, its phrases and
                        sentences (its header documents its fields), and `write`
-  art.mjs              its drawings, from tools/svg.mjs parts → img/<id>.svg (tools/draw.mjs)
+  art.mjs              its phrases' drawings, from tools/svg.mjs parts → img/<id>.svg (tools/draw.mjs); none if it has none
   audio/               <id>.mp3 from tools/tts.mjs, manifest.json, check.json (audio-check's verdicts)
   index.html           unit page: a card per learn page and game
   learn.html lessons.js  learn page
@@ -59,7 +59,7 @@ tools/
 ```
 
 ## Words, audio and pictures
-- Every word lives once, in the dictionary `words/words.js`, under the unit that teaches it (`Words.add(n, [...])`, which sets `taught: n`): `{ id, hanzi, jyutping, english, note?, img?, measure?, dish?, counted?, say?, ssml?, phoneme?, voice? }`. Its audio and picture are in `words/`; its drawing stays in the teaching unit's `art.mjs`. Every field is listed with the kind of value it holds in `tools/vocab-fields.mjs`, and check.mjs fails on any other field, a wrong value, or an id that names no entry: add a new field there first. `id` names its files; `img: false` means no picture.
+- Every word lives once, in the dictionary `words/words.js`, under the unit that teaches it (`Words.add(n, [...])`, which sets `taught: n`): `{ id, hanzi, jyutping, english, note?, img?, measure?, dish?, counted?, say?, ssml?, phoneme?, voice? }`. Its audio, picture and drawing are in `words/`. Every field is listed with the kind of value it holds in `tools/vocab-fields.mjs`, and check.mjs fails on any other field, a wrong value, or an id that names no entry: add a new field there first. `id` names its files; `img: false` means no picture.
 - A unit's `vocab.js` lists the words it uses with `Words.get(id)` or `...Words.list('a b c')`, in the groups its pages read, adding its own fields to the copy: `{ ...Words.get('good-morning'), reply: [...], when: [...] }` (`reply`, ids of good answers, and `when`, situations, feed Reply Match; each unit's header documents its fields). A unit that uses a word in another sense overrides `english` and `note` (unit 13's 焗 is unit 7's `baked`). It uses only words taught in it or earlier, and lists every word it teaches; check.mjs enforces both. A new word goes in the dictionary under the unit that first teaches it; never write one into a `vocab.js`.
 - A word's id is unique on the whole site (when two would share one, one gets its tone number: 大 `daai6`, 戴 `daai`), and so is its hanzi, jyutping and voice; check.mjs enforces both. Phrases need only be unique in their unit.
 - `Units.word(n, id)` borrows unit n's own version of an entry: a phrase it built (unit 9's times `t0600`, unit 5's `one-fish`), or a word with what unit n added (unit 6's 蘋果 with its price). Its files stay where they are. Pages load the `vocab.js` of the units their unit borrows from this way, and no others (`tools/site.mjs` borrowsFrom).
@@ -67,7 +67,7 @@ tools/
 - Measure words: a thing's `measure` must match its picture (籠 ↔ `steamer()`, 碟 ↔ `plate()`, 碗 ↔ `bowl()`, 杯 ↔ `cup()`, no dish for the rest); check.mjs enforces it in each unit that gives a word a measure. A unit can give a word a `measure` it lacks.
 - Jyutping has a tone number on every syllable (`haa1 gaau2`). Double-check changed tones (腸粉 coeng2, 燒賣 maai2) and words with several readings.
 - Colloquial Cantonese (佢, 係, 唔, 咗), not Mandarin or written forms.
-- Pictures: add a drawing to `art.mjs` (a dictionary word's goes in the art.mjs of the unit that teaches it, and draw.mjs writes it to `words/img/`), run `node tools/draw.mjs` (which also deletes svgs no longer drawn). Reuse or extend `tools/svg.mjs` parts instead of copying markup. 128×128 flat style, fixed colors, transparent background, a `<title>`. Render and look at new drawings before committing.
+- Pictures: a word's drawing goes in `words/art.mjs`, in the section of the unit that teaches it (a function, so its helpers stay its own; one returns the helpers its unit's phrases share, which that unit's `art.mjs` imports); a phrase's in its unit's `art.mjs`. Run `node tools/draw.mjs` (which also deletes svgs no longer drawn). Reuse or extend `tools/svg.mjs` parts instead of copying markup. 128×128 flat style, fixed colors, transparent background, a `<title>`. Render and look at new drawings before committing.
 
 ### Audio
 - `node tools/tts.mjs [words|unitN ...] [--only id,id] [--force]` regenerates only entries whose text or voice changed, saving `manifest.json` after every clip. Without `--only` it also moves a renamed entry's clip (and audio-check verdict) to its new id, or from a unit to `words/` when the word moves to the dictionary (both in the same run), and deletes clips of entries that are gone, so renaming or moving costs no new audio. Credentials come from `~/.config/learning-cantonese/config.env` (`AZURE_SPEECH_KEY`, `AZURE_SPEECH_REGION`, `MINIMAX_KEY`), read by `tools/site.mjs`. **Never put a key in any committed file** (code, docs, fixtures, logs, commit messages) and never print one; check.mjs fails if any file holds one.

@@ -15,7 +15,7 @@ Times come from `Canto.time`, and weekdays, months and dates from `Canto.number`
 - `phoneme: true` on 夜晚 (`je-maan`) and 呀.
 
 ## Drawings
-A clock for every entry with `h` and `m` (and for 鐘): `art.mjs` loads vocab.js and draws them all, so a new time gets its clock from `draw.mjs`.
+A clock for every entry with `h` and `m`: `art.mjs` loads vocab.js and draws them all with `clock` from unit 9's section of `words/art.mjs` (which draws 鐘), so a new time gets its clock from `draw.mjs`.
 
 ## Used by later units
 The times with their clocks (`t0330`; unit 15's planner builds ids like `t0700` in its page script, unit 21 borrows `t0600`), 點 (`dim`), 幾 (`gei`), the weekdays (`wk<n>`, unit 13), 今日 (`gam-jat`), and 返工 / 食飯.

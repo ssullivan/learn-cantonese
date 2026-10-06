@@ -15,7 +15,7 @@ Groups: `basics`, `colours` (with `fill` and `line`), `clothes`, `measures`, `on
 `Units.phonemes` reads 著 (`zoek`) from jyutping in every phrase (錢 `cin2` comes with its own `phoneme` from unit 6).
 
 ## Drawings
-A paint swatch for every colour, the standing figure (打扮), and the clothes, each drawn in the figure's own coordinates so it fits. `art.mjs` loads vocab.js for `fit`.
+A paint swatch for every colour, the standing figure (打扮), and the clothes, each drawn in the figure's own coordinates so it fits. Unit 12's section of `words/art.mjs` draws the swatches, figure and plain clothes, loading unit 12's vocab for `fill`, `line` and `fit`; `art.mjs` draws the clothes in colours with its `alone` and `GARMENT`.
 
 ## Used by later units
 The colours (`hung`, `laam`... with their swatches and `fill`), the clothes, 著 / 戴 (`zoek`, `daai`), 頂, the measure for hats (`deng`, unit 13).

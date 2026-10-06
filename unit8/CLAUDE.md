@@ -15,7 +15,7 @@ Groups: `basics`, `drinks`, `food`, `modifiers`, `place`, `measures`, `borrowed`
 - Azure has no ning2, even in phrases with sapi, so the unit teaches 檸檬茶 ning4 mung1 caa4 and notes the short form 檸茶. MiniMax takes of the 檸茶 ning2 clips, which pass audio-check's shape test, are kept unused in `audio-alt/` (its `manifest.json` has each clip's text, voice and verdict) in case the unit switches to 檸茶.
 
 ## Drawings
-Each drink as served: hot in a cup with steam, iced in a glass with ice cubes; the plain drink is the hot one. `art.mjs` loads vocab.js to draw every entry in `served`.
+Each drink as served: hot in a cup with steam, iced in a glass with ice cubes; the plain drink is the hot one. Unit 8's section of `words/art.mjs` draws the drinks (hot) and the food; `art.mjs` loads vocab.js to draw every entry in `served` with its `drink`.
 
 ## Used by later units
 凍 / 熱 (`dung`, `jit`: unit 13's weather), 飲, 食, `cha-chaan-teng` (unit 11), and the drinks with their cup and glass pictures. 走 (`zau`) is unit 19's "to run".
