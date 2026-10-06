@@ -41,6 +41,13 @@
   ],
   "audio": "5d9dd1e14209"
  },
+ "children": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 女 tone 2 sounds like 5 (p 0.37)"
+  ],
+  "audio": "949374d7378d"
+ },
  "cow": {
   "verdict": "LISTEN",
   "notes": [
@@ -96,6 +103,13 @@
    "tone: 唔 tone 4 sounds like 5 (p 0.03); 思 tone 3 sounds like 1 (p 0.00)"
   ],
   "audio": "577a947ed73b"
+ },
+ "family": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 企 tone 2 sounds like 5 (p 0.08)"
+  ],
+  "audio": "05c7f173aa25"
  },
  "fish": {
   "verdict": "CHECK",
@@ -333,12 +347,26 @@
   ],
   "audio": "a695ffa98d08"
  },
+ "seoi": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Sir s i r"
+  ],
+  "audio": "50ef89c52082"
+ },
  "si1": {
   "verdict": "LISTEN",
   "notes": [
    "speech-to-text heard c c"
   ],
   "audio": "6df070a62635"
+ },
+ "siblings": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 妹 tone 6 sounds like 2 (p 0.00)"
+  ],
+  "audio": "9f838e5c0c4e"
  },
  "siu": {
   "verdict": "LISTEN",
@@ -402,5 +430,12 @@
    "speech-to-text heard 搵 wan"
   ],
   "audio": "8f57772bceee"
+ },
+ "zyu": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard J j"
+  ],
+  "audio": "cdead166bad9"
  }
 }

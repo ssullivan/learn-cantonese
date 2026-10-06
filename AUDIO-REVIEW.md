@@ -1064,28 +1064,28 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 
 | # | Chinese | Jyutping | English | Audio |
 |---|---|---|---|---|
-| 1 | 屋企 | uk1 kei2 | home; family | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/home.mp3) |
-| 2 | 屋企人 | uk1 kei2 jan4 | family (the people) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/family.mp3) |
-| 3 | 爸爸 | baa4 baa1 | dad; father | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/dad.mp3) |
-| 4 | 媽媽 | maa4 maa1 | mum; mother | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/mum.mp3) |
-| 5 | 哥哥 | go4 go1 | older brother | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/elder-brother.mp3) |
-| 6 | 家姐 | gaa1 ze1 | older sister | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/elder-sister.mp3) |
-| 7 | 細佬 | sai3 lou2 | younger brother | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/younger-brother.mp3) |
-| 8 | 細妹 | sai3 mui2 | younger sister | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/younger-sister.mp3) |
-| 9 | 兄弟姊妹 | hing1 dai6 zi2 mui6 | brothers and sisters | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/siblings.mp3) |
-| 10 | 爺爺 | je4 je2 | grandpa (dad's dad) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/dads-dad.mp3) |
-| 11 | 嫲嫲 | maa4 maa4 | grandma (dad's mum) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/dads-mum.mp3) |
-| 12 | 公公 | gung4 gung1 | grandpa (mum's dad) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/mums-dad.mp3) |
-| 13 | 婆婆 | po4 po2 | grandma (mum's mum) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/mums-mum.mp3) |
-| 14 | 老公 | lou5 gung1 | husband | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/husband.mp3) |
-| 15 | 老婆 | lou5 po4 | wife | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/wife.mp3) |
-| 16 | 仔 | zai2 | son | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/son.mp3) |
-| 17 | 女 | neoi2 | daughter _(MiniMax voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/daughter.mp3) |
-| 18 | 仔女 | zai2 neoi2 | children (sons and daughters) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/children.mp3) |
-| 19 | 嘅 | ge3 | 's; of (makes "my", "whose") | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/ge.mp3) |
-| 20 | 同 | tung4 | and; with | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/tung.mp3) |
-| 21 | 住 | zyu6 | to live (somewhere) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/zyu.mp3) |
-| 22 | 歲 | seoi3 | years old | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/seoi.mp3) |
+| 1 | 屋企 | uk1 kei2 | home; family | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/home.mp3) |
+| 2 | 屋企人 | uk1 kei2 jan4 | family (the people) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/family.mp3) |
+| 3 | 爸爸 | baa4 baa1 | dad; father | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/dad.mp3) |
+| 4 | 媽媽 | maa4 maa1 | mum; mother | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/mum.mp3) |
+| 5 | 哥哥 | go4 go1 | older brother | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/elder-brother.mp3) |
+| 6 | 家姐 | gaa1 ze1 | older sister | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/elder-sister.mp3) |
+| 7 | 細佬 | sai3 lou2 | younger brother | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/younger-brother.mp3) |
+| 8 | 細妹 | sai3 mui2 | younger sister | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/younger-sister.mp3) |
+| 9 | 兄弟姊妹 | hing1 dai6 zi2 mui6 | brothers and sisters | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/siblings.mp3) |
+| 10 | 爺爺 | je4 je2 | grandpa (dad's dad) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/dads-dad.mp3) |
+| 11 | 嫲嫲 | maa4 maa4 | grandma (dad's mum) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/dads-mum.mp3) |
+| 12 | 公公 | gung4 gung1 | grandpa (mum's dad) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/mums-dad.mp3) |
+| 13 | 婆婆 | po4 po2 | grandma (mum's mum) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/mums-mum.mp3) |
+| 14 | 老公 | lou5 gung1 | husband | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/husband.mp3) |
+| 15 | 老婆 | lou5 po4 | wife | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/wife.mp3) |
+| 16 | 仔 | zai2 | son | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/son.mp3) |
+| 17 | 女 | neoi2 | daughter _(MiniMax voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/daughter.mp3) |
+| 18 | 仔女 | zai2 neoi2 | children (sons and daughters) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/children.mp3) |
+| 19 | 嘅 | ge3 | 's; of (makes "my", "whose") | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ge.mp3) |
+| 20 | 同 | tung4 | and; with | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/tung.mp3) |
+| 21 | 住 | zyu6 | to live (somewhere) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zyu.mp3) |
+| 22 | 歲 | seoi3 | years old | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/seoi.mp3) |
 | 23 | 爸爸嘅爸爸 | baa4 baa1 ge3 baa4 baa1 | dad's dad | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/dad-ge-dad.mp3) |
 | 24 | 爸爸嘅媽媽 | baa4 baa1 ge3 maa4 maa1 | dad's mum | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/dad-ge-mum.mp3) |
 | 25 | 媽媽嘅爸爸 | maa4 maa1 ge3 baa4 baa1 | mum's dad | [▶ play](https://ssullivan.github.io/learn-cantonese/unit10/audio/mum-ge-dad.mp3) |

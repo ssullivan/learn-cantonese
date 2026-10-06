@@ -18,60 +18,27 @@ Units.add(10, {
   write: '女仔公',
 
   parents: [
-    { id: 'home', hanzi: '屋企', jyutping: 'uk1 kei2', english: 'home; family',
-      note: '企 is kei5 on its own, but kei2 here.' },
-    { id: 'family', hanzi: '屋企人', jyutping: 'uk1 kei2 jan4', english: 'family (the people)',
-      note: 'Literally "home people".' },
-    { id: 'dad', hanzi: '爸爸', jyutping: 'baa4 baa1', english: 'dad; father',
-      note: 'Low, then high. Casually 老豆 lou5 dau6.' },
-    { id: 'mum', hanzi: '媽媽', jyutping: 'maa4 maa1', english: 'mum; mother',
-      note: 'Low, then high, like 爸爸. Casually 阿媽 aa3 maa1.' },
+    ...Words.list('home family dad mum'),
   ],
 
   // Older and younger always get different words.
   siblings: [
-    { id: 'elder-brother', hanzi: '哥哥', jyutping: 'go4 go1', english: 'older brother',
-      note: 'Casually 大佬 daai6 lou2, "big guy".' },
-    { id: 'elder-sister', hanzi: '家姐', jyutping: 'gaa1 ze1', english: 'older sister',
-      note: '姐 is ze2 on its own, but ze1 here.' },
-    { id: 'younger-brother', hanzi: '細佬', jyutping: 'sai3 lou2', english: 'younger brother',
-      note: '細 is small, as in 細路 (child).' },
-    { id: 'younger-sister', hanzi: '細妹', jyutping: 'sai3 mui2', english: 'younger sister',
-      note: '妹 is mui6 on its own, but mui2 here.' },
-    { id: 'siblings', hanzi: '兄弟姊妹', jyutping: 'hing1 dai6 zi2 mui6', english: 'brothers and sisters',
-      note: 'Four words in one: older and younger brothers, older and younger sisters.' },
+    ...Words.list('elder-brother elder-sister younger-brother younger-sister siblings'),
   ],
 
   // Dad's parents and mum's parents have different names.
   grandparents: [
-    { id: 'dads-dad', hanzi: '爺爺', jyutping: 'je4 je2', english: 'grandpa (dad\'s dad)' },
-    { id: 'dads-mum', hanzi: '嫲嫲', jyutping: 'maa4 maa4', english: 'grandma (dad\'s mum)',
-      note: 'Low and falling twice, unlike 媽媽 maa4 maa1.' },
-    { id: 'mums-dad', hanzi: '公公', jyutping: 'gung4 gung1', english: 'grandpa (mum\'s dad)',
-      note: '公 is gung1, but the first one drops to tone 4.' },
-    { id: 'mums-mum', hanzi: '婆婆', jyutping: 'po4 po2', english: 'grandma (mum\'s mum)',
-      note: 'Also a polite word for any old lady.' },
+    ...Words.list('dads-dad dads-mum mums-dad mums-mum'),
   ],
 
   own: [
-    { id: 'husband', hanzi: '老公', jyutping: 'lou5 gung1', english: 'husband' },
-    { id: 'wife', hanzi: '老婆', jyutping: 'lou5 po4', english: 'wife' },
-    { id: 'son', measure: 'go', hanzi: '仔', jyutping: 'zai2', english: 'son',
-      note: 'Counted with 個: 我個仔, my son.' },
+    ...Words.list('husband wife son'),
     // Azure says 女 on its own as neoi5 whatever it's told, so MiniMax makes it.
-    { id: 'daughter', measure: 'go', hanzi: '女', jyutping: 'neoi2', english: 'daughter', voice: 'minimax:Cantonese_ProfessionalHost（F)',
-      note: '女 is neoi5 (female), but neoi2 for a daughter: 我個女.' },
-    { id: 'children', hanzi: '仔女', jyutping: 'zai2 neoi2', english: 'children (sons and daughters)' },
+    ...Words.list('daughter children'),
   ],
 
   words: [
-    { id: 'ge', hanzi: '嘅', jyutping: 'ge3', english: '\'s; of (makes "my", "whose")', img: false,
-      note: 'After a person: 我嘅書, my book. On its own at the end: 係我嘅, it\'s mine.' },
-    { id: 'tung', hanzi: '同', jyutping: 'tung4', english: 'and; with', img: false,
-      note: 'Joins people: 爸爸同媽媽. Before a verb it means "with": 我同佢住.' },
-    { id: 'zyu', hanzi: '住', jyutping: 'zyu6', english: 'to live (somewhere)', img: false },
-    { id: 'seoi', hanzi: '歲', jyutping: 'seoi3', english: 'years old', img: false,
-      note: 'No 係 needed: 佢三歲, he / she is three.' },
+    ...Words.list('ge tung zyu seoi'),
   ],
 });
 

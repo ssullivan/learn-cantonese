@@ -1,24 +1,10 @@
 {
- "children": {
-  "verdict": "LISTEN",
-  "notes": [
-   "tone doubtful: 女 tone 2 sounds like 5 (p 0.37)"
-  ],
-  "audio": "949374d7378d"
- },
  "dad-ge-wife": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 老 tone 5 sounds like 2 (p 0.20)"
   ],
   "audio": "ff339ada1c3f"
- },
- "family": {
-  "verdict": "LISTEN",
-  "notes": [
-   "tone doubtful: 企 tone 2 sounds like 5 (p 0.08)"
-  ],
-  "audio": "05c7f173aa25"
  },
  "keoi-bun-book": {
   "verdict": "LISTEN",
@@ -119,26 +105,5 @@
    "tone doubtful: 係 tone 6 sounds like 3 (p 0.10)"
   ],
   "audio": "3ebca58cd8b6"
- },
- "seoi": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard Sir s i r"
-  ],
-  "audio": "50ef89c52082"
- },
- "siblings": {
-  "verdict": "CHECK",
-  "notes": [
-   "tone: 妹 tone 6 sounds like 2 (p 0.00)"
-  ],
-  "audio": "9f838e5c0c4e"
- },
- "zyu": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard J j"
-  ],
-  "audio": "cdead166bad9"
  }
 }
