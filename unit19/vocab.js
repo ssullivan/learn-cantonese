@@ -22,39 +22,16 @@ Units.add(19, {
 
   // Animals new in this unit. Each has a picture. 隻 for most; 條 for long ones.
   animals: [
-    { id: 'mouse', measure: 'zek', hanzi: '老鼠', jyutping: 'lou5 syu2', english: 'mouse; rat', counted: ['a mouse', 'mice'],
-      note: '老 here isn\'t "old": 老鼠, 老虎.' },
-    { id: 'tiger', measure: 'zek', hanzi: '老虎', jyutping: 'lou5 fu2', english: 'tiger' },
-    { id: 'rabbit', measure: 'zek', hanzi: '兔仔', jyutping: 'tou3 zai2', english: 'rabbit', note: '仔: little, as in 雀仔.' },
-    { id: 'dragon', measure: 'tiu', hanzi: '龍', jyutping: 'lung4', english: 'dragon',
-      note: 'Long like a snake, so 一條龍. A lucky animal: dragon boats are 龍舟.' },
-    { id: 'snake', measure: 'tiu', hanzi: '蛇', jyutping: 'se4', english: 'snake', note: 'Long and thin, so 一條蛇.' },
-    { id: 'horse', measure: 'zek', hanzi: '馬', jyutping: 'maa5', english: 'horse', note: 'Written 一匹馬; people say 一隻馬.' },
-    { id: 'sheep', measure: 'zek', hanzi: '羊', jyutping: 'joeng4', english: 'sheep; goat', counted: ['a sheep', 'sheep'],
-      note: 'Both: 綿羊 is a sheep, 山羊 a goat.' },
-    { id: 'monkey', measure: 'zek', hanzi: '馬騮', jyutping: 'maa5 lau1', english: 'monkey',
-      note: 'The everyday word. In writing, 猴子 hau4 zi2.' },
-    { id: 'pig', measure: 'zek', hanzi: '豬', jyutping: 'zyu1', english: 'pig' },
-    { id: 'bird', measure: 'zek', hanzi: '雀仔', jyutping: 'zoek3 zai2', english: 'bird', note: 'Many say zoek2 zai2.' },
-    { id: 'panda', measure: 'zek', hanzi: '熊貓', jyutping: 'hung4 maau1', english: 'panda', note: '"Bear cat".' },
+    ...Words.list('mouse tiger rabbit dragon snake horse sheep monkey pig bird panda'),
   ],
 
   words: [
-    { id: 'dung-mat', hanzi: '動物', jyutping: 'dung6 mat6', english: 'animal', img: false },
-    { id: 'dung-mat-jyun', hanzi: '動物園', jyutping: 'dung6 mat6 jyun4', english: 'zoo', note: '"Animal garden".' },
-    { id: 'bin', hanzi: '邊', jyutping: 'bin1', english: 'which', img: false,
-      note: 'With a measure word: 邊隻, which one (animal).' },
-    { id: 'suk', hanzi: '屬', jyutping: 'suk6', english: 'to be born in the year of', img: false,
-      note: '我屬馬: I\'m a Horse.' },
-    { id: 'saang-ciu', hanzi: '生肖', jyutping: 'saang1 ciu3', english: 'Chinese zodiac sign', img: false,
-      note: 'Twelve animals, one for each year in turn.' },
-    { id: 'nin', hanzi: '年', jyutping: 'nin4', english: 'year', img: false, note: '馬年: the year of the Horse.' },
+    ...Words.list('dung-mat dung-mat-jyun bin suk saang-ciu nin'),
   ],
 
   // What animals can do.
   verbs: [
-    { id: 'fei', hanzi: '飛', jyutping: 'fei1', english: 'to fly', img: false, note: '飛機 (Unit 5) is a "flying machine".' },
-    { id: 'paa-syu', hanzi: '爬樹', jyutping: 'paa4 syu6', english: 'to climb trees', img: false, note: '爬: climb; 樹: tree.' },
+    ...Words.list('fei paa-syu'),
     { ...Units.word(8, 'zau'), english: 'to run',
       note: 'In Cantonese 走 is run (or leave); walk is 行.' },
   ],
@@ -62,10 +39,10 @@ Units.add(19, {
   // Zodiac names that differ from the everyday word. The other eight are
   // the animal's own word.
   signs: [
-    { id: 'z-syu', animal: 'mouse', hanzi: '鼠', jyutping: 'syu2', english: 'Rat (zodiac)', img: false, note: 'Everyday: 老鼠.' },
-    { id: 'z-fu', animal: 'tiger', hanzi: '虎', jyutping: 'fu2', english: 'Tiger (zodiac)', img: false, note: 'Everyday: 老虎.' },
-    { id: 'z-tou', animal: 'rabbit', hanzi: '兔', jyutping: 'tou3', english: 'Rabbit (zodiac)', img: false, note: 'Everyday: 兔仔.' },
-    { id: 'z-hau', animal: 'monkey', hanzi: '猴', jyutping: 'hau4', english: 'Monkey (zodiac)', img: false, note: 'Everyday: 馬騮.' },
+    { ...Words.get('z-syu'), animal: 'mouse' },
+    { ...Words.get('z-fu'), animal: 'tiger' },
+    { ...Words.get('z-tou'), animal: 'rabbit' },
+    { ...Words.get('z-hau'), animal: 'monkey' },
   ],
 });
 

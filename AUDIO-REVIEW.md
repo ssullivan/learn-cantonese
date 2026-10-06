@@ -2123,29 +2123,29 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 
 | # | Chinese | Jyutping | English | Audio |
 |---|---|---|---|---|
-| 1 | 老鼠 | lou5 syu2 | mouse; rat | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/mouse.mp3) |
-| 2 | 老虎 | lou5 fu2 | tiger | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/tiger.mp3) |
-| 3 | 兔仔 | tou3 zai2 | rabbit | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/rabbit.mp3) |
-| 4 | 龍 | lung4 | dragon | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/dragon.mp3) |
-| 5 | 蛇 | se4 | snake | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/snake.mp3) |
-| 6 | 馬 | maa5 | horse | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/horse.mp3) |
-| 7 | 羊 | joeng4 | sheep; goat | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/sheep.mp3) |
-| 8 | 馬騮 | maa5 lau1 | monkey | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/monkey.mp3) |
-| 9 | 豬 | zyu1 | pig | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/pig.mp3) |
-| 10 | 雀仔 | zoek3 zai2 | bird | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/bird.mp3) |
-| 11 | 熊貓 | hung4 maau1 | panda | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/panda.mp3) |
-| 12 | 動物 | dung6 mat6 | animal | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/dung-mat.mp3) |
-| 13 | 動物園 | dung6 mat6 jyun4 | zoo | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/dung-mat-jyun.mp3) |
-| 14 | 邊 | bin1 | which | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/bin.mp3) |
-| 15 | 屬 | suk6 | to be born in the year of | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/suk.mp3) |
-| 16 | 生肖 | saang1 ciu3 | Chinese zodiac sign | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/saang-ciu.mp3) |
-| 17 | 年 | nin4 | year | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/nin.mp3) |
-| 18 | 飛 | fei1 | to fly | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/fei.mp3) |
-| 19 | 爬樹 | paa4 syu6 | to climb trees | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/paa-syu.mp3) |
-| 20 | 鼠 | syu2 | Rat (zodiac) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/z-syu.mp3) |
-| 21 | 虎 | fu2 | Tiger (zodiac) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/z-fu.mp3) |
-| 22 | 兔 | tou3 | Rabbit (zodiac) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/z-tou.mp3) |
-| 23 | 猴 | hau4 | Monkey (zodiac) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/z-hau.mp3) |
+| 1 | 老鼠 | lou5 syu2 | mouse; rat | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/mouse.mp3) |
+| 2 | 老虎 | lou5 fu2 | tiger | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/tiger.mp3) |
+| 3 | 兔仔 | tou3 zai2 | rabbit | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/rabbit.mp3) |
+| 4 | 龍 | lung4 | dragon | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/dragon.mp3) |
+| 5 | 蛇 | se4 | snake | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/snake.mp3) |
+| 6 | 馬 | maa5 | horse | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/horse.mp3) |
+| 7 | 羊 | joeng4 | sheep; goat | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/sheep.mp3) |
+| 8 | 馬騮 | maa5 lau1 | monkey | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/monkey.mp3) |
+| 9 | 豬 | zyu1 | pig | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/pig.mp3) |
+| 10 | 雀仔 | zoek3 zai2 | bird | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/bird.mp3) |
+| 11 | 熊貓 | hung4 maau1 | panda | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/panda.mp3) |
+| 12 | 動物 | dung6 mat6 | animal | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/dung-mat.mp3) |
+| 13 | 動物園 | dung6 mat6 jyun4 | zoo | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/dung-mat-jyun.mp3) |
+| 14 | 邊 | bin1 | which | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/bin.mp3) |
+| 15 | 屬 | suk6 | to be born in the year of | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/suk.mp3) |
+| 16 | 生肖 | saang1 ciu3 | Chinese zodiac sign | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/saang-ciu.mp3) |
+| 17 | 年 | nin4 | year | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/nin.mp3) |
+| 18 | 飛 | fei1 | to fly | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fei.mp3) |
+| 19 | 爬樹 | paa4 syu6 | to climb trees | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/paa-syu.mp3) |
+| 20 | 鼠 | syu2 | Rat (zodiac) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/z-syu.mp3) |
+| 21 | 虎 | fu2 | Tiger (zodiac) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/z-fu.mp3) |
+| 22 | 兔 | tou3 | Rabbit (zodiac) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/z-tou.mp3) |
+| 23 | 猴 | hau4 | Monkey (zodiac) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/z-hau.mp3) |
 | 24 | 一隻老鼠 | jat1 zek3 lou5 syu2 | a mouse | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/one-mouse.mp3) |
 | 25 | 一隻老虎 | jat1 zek3 lou5 fu2 | a tiger | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/one-tiger.mp3) |
 | 26 | 一隻兔仔 | jat1 zek3 tou3 zai2 | a rabbit | [▶ play](https://ssullivan.github.io/learn-cantonese/unit19/audio/one-rabbit.mp3) |

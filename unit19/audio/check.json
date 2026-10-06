@@ -1,11 +1,4 @@
 {
- "bin": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard Bin b i n"
-  ],
-  "audio": "0c56c0144c54"
- },
  "bin-zek-wui-fei-aa": {
   "verdict": "CHECK",
   "notes": [
@@ -243,13 +236,6 @@
   ],
   "audio": "758e5156a7b4"
  },
- "monkey": {
-  "verdict": "LISTEN",
-  "notes": [
-   "tone doubtful: 馬 tone 5 sounds like 2 (p 0.09)"
-  ],
-  "audio": "ade453411d21"
- },
  "monkey-wui-m-wui-paa-syu-aa": {
   "verdict": "CHECK",
   "notes": [
@@ -414,13 +400,6 @@
   ],
   "audio": "329876712fd4"
  },
- "nin": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard NI n i"
-  ],
-  "audio": "469ccba270e6"
- },
  "one-monkey": {
   "verdict": "LISTEN",
   "notes": [
@@ -442,13 +421,6 @@
    "tone doubtful: 會 tone 5 sounds like 5 (p 0.41); 樹 tone 6 sounds like 3 (p 0.14)"
   ],
   "audio": "6bdea9c77f34"
- },
- "pig": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard D d"
-  ],
-  "audio": "54211e545cfe"
  },
  "pig-m-wui-fei": {
   "verdict": "LISTEN",
@@ -503,20 +475,6 @@
   ],
   "audio": "f4c38f025cec"
  },
- "sheep": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 一 jat"
-  ],
-  "audio": "ede1cf3fd361"
- },
- "snake": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard Se s e"
-  ],
-  "audio": "1d67e737ec2c"
- },
  "snake-m-wui-zau": {
   "verdict": "LISTEN",
   "notes": [
@@ -565,20 +523,6 @@
   ],
   "audio": "4beee3a67851"
  },
- "suk": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard So s o"
-  ],
-  "audio": "386e57621ff6"
- },
- "tiger": {
-  "verdict": "LISTEN",
-  "notes": [
-   "tone doubtful: 老 tone 5 sounds like 2 (p 0.37)"
-  ],
-  "audio": "d974dba9fae7"
- },
  "tiger-bei-cat-daai6": {
   "verdict": "CHECK",
   "notes": [
@@ -617,19 +561,5 @@
    "tone doubtful: 會 tone 5 sounds like 5 (p 0.35)"
   ],
   "audio": "125efd1817a2"
- },
- "z-fu": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard Fo f o"
-  ],
-  "audio": "a2a91c9dd097"
- },
- "z-tou": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 鋪 pou"
-  ],
-  "audio": "9ea5847c322e"
  }
 }

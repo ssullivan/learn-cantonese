@@ -42,6 +42,13 @@
   ],
   "audio": "3e0861b63207"
  },
+ "bin": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Bin b i n"
+  ],
+  "audio": "0c56c0144c54"
+ },
  "bing": {
   "verdict": "LISTEN",
   "notes": [
@@ -510,6 +517,13 @@
   ],
   "audio": "c33c144dfaa2"
  },
+ "monkey": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 馬 tone 5 sounds like 2 (p 0.09)"
+  ],
+  "audio": "ade453411d21"
+ },
  "more-water": {
   "verdict": "LISTEN",
   "notes": [
@@ -560,6 +574,13 @@
   ],
   "audio": "721fc7ba4eee"
  },
+ "nin": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard NI n i"
+  ],
+  "audio": "469ccba270e6"
+ },
  "nose": {
   "verdict": "LISTEN",
   "notes": [
@@ -602,6 +623,13 @@
   ],
   "audio": "a695ffa98d08"
  },
+ "pig": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard D d"
+  ],
+  "audio": "54211e545cfe"
+ },
  "sai": {
   "verdict": "LISTEN",
   "notes": [
@@ -622,6 +650,13 @@
    "speech-to-text heard Sir s i r"
   ],
   "audio": "50ef89c52082"
+ },
+ "sheep": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 一 jat"
+  ],
+  "audio": "ede1cf3fd361"
  },
  "si1": {
   "verdict": "LISTEN",
@@ -658,6 +693,13 @@
   ],
   "audio": "df8570071c02"
  },
+ "snake": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Se s e"
+  ],
+  "audio": "1d67e737ec2c"
+ },
  "so-so": {
   "verdict": "CHECK",
   "notes": [
@@ -678,6 +720,13 @@
    "speech-to-text heard Song s o n g"
   ],
   "audio": "d04b55694fcf"
+ },
+ "suk": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard So s o"
+  ],
+  "audio": "386e57621ff6"
  },
  "supermarket": {
   "verdict": "LISTEN",
@@ -707,6 +756,13 @@
    "speech-to-text heard 七 cat"
   ],
   "audio": "0c615fcf3542"
+ },
+ "tiger": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 老 tone 5 sounds like 2 (p 0.37)"
+  ],
+  "audio": "d974dba9fae7"
  },
  "tiu": {
   "verdict": "LISTEN",
@@ -785,6 +841,20 @@
    "speech-to-text heard 搵 wan"
   ],
   "audio": "8f57772bceee"
+ },
+ "z-fu": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Fo f o"
+  ],
+  "audio": "a2a91c9dd097"
+ },
+ "z-tou": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 鋪 pou"
+  ],
+  "audio": "9ea5847c322e"
  },
  "zaam": {
   "verdict": "LISTEN",
