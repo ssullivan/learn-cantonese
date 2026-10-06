@@ -13,10 +13,21 @@
  *   azureConfig()    { key, region } for Azure Speech, from the environment
  *                    or ~/.config/learning-cantonese/config.env; exits if
  *                    missing (tts.mjs, audio-check.mjs)
+ *   azureAgain(error, tries)
+ *                    whether to retry a failed Azure request (for
+ *                    retrying): busy (429) or failing (5xx) up to 5 more
+ *                    times, and 401, which Azure sometimes answers to a
+ *                    burst of requests with a good key, 2 more (so a wrong
+ *                    key still fails in seconds)
  *   minimaxConfig()  { key } for MiniMax (MINIMAX_KEY), the same way (tts.mjs)
  *   secrets()        { azureKey, azureRegion, minimaxKey }, undefined when
  *                    not set, without exiting (check.mjs, to make sure no
  *                    file holds a key)
+ *   retrying(attempt, again, sleep?)
+ *                    runs attempt() until it returns, waiting 2 s, 4 s,
+ *                    8 s... after each error while again(error, tries so
+ *                    far) says to try once more (tts.mjs: busy or flaky
+ *                    TTS services); sleep(ms) can be replaced in tests
  *   langTools(args, input)
  *                    runs audio-lang-tools' `altools <args>` (the separate
  *                    repo at $AUDIO_LANG_TOOLS or ~/audio-lang-tools, with
@@ -90,6 +101,9 @@ export function azureConfig() {
   return { key, region };
 }
 
+export const azureAgain = (err, tries) =>
+  err.status === 401 ? tries < 2 : (err.status === 429 || err.status >= 500) && tries < 5;
+
 export function minimaxConfig() {
   const { minimaxKey: key } = secrets();
   if (!key) {
@@ -97,6 +111,19 @@ export function minimaxConfig() {
     process.exit(1);
   }
   return { key };
+}
+
+const wait = ms => new Promise(r => setTimeout(r, ms));
+
+export async function retrying(attempt, again, sleep = wait) {
+  for (let tries = 0; ; tries++) {
+    try {
+      return await attempt();
+    } catch (err) {
+      if (!again(err, tries)) throw err;
+      await sleep(2000 * 2 ** tries);
+    }
+  }
 }
 
 export function langTools(args, input) {

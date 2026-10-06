@@ -27,9 +27,13 @@
 import { createHash } from 'node:crypto';
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { ROOT, unitDirs, loadVocab, entries, own, azureConfig, minimaxConfig } from './site.mjs';
+import { ROOT, unitDirs, loadVocab, entries, own, azureConfig, minimaxConfig, retrying, azureAgain } from './site.mjs';
 
 const FORMAT = 'audio-24khz-48kbitrate-mono-mp3';
+// Every clip so far was made in this format, before the format counted
+// in a clip's hash. It adds nothing to the hash, so those clips stay up to
+// date; any other format is hashed, so changing FORMAT remakes every clip.
+const FIRST_FORMAT = 'audio-24khz-48kbitrate-mono-mp3';
 
 const args = process.argv.slice(2);
 const force = args.includes('--force');
@@ -57,7 +61,7 @@ function ssmlFor(entry, voice, byId) {
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 async function synth({ key, region }, ssml) {
-  for (let attempt = 0; ; attempt++) {
+  return retrying(async () => {
     const res = await fetch(`https://${region}.tts.speech.microsoft.com/cognitiveservices/v1`, {
       method: 'POST',
       headers: {
@@ -69,12 +73,8 @@ async function synth({ key, region }, ssml) {
       body: ssml,
     });
     if (res.ok) return Buffer.from(await res.arrayBuffer());
-    if ((res.status === 429 || res.status >= 500) && attempt < 5) {
-      await sleep(2000 * 2 ** attempt);
-      continue;
-    }
-    throw new Error(`Azure TTS ${res.status}: ${await res.text()}`);
-  }
+    throw Object.assign(new Error(`Azure TTS ${res.status}: ${await res.text()}`), { status: res.status });
+  }, azureAgain);
 }
 
 // MiniMax: Cantonese with the jyutping of every syllable (without it the
@@ -88,7 +88,7 @@ const minimaxRequest = (entry, voiceId) => ({
 });
 
 async function minimax({ key }, request) {
-  for (let attempt = 0; ; attempt++) {
+  return retrying(async () => {
     const res = await fetch('https://api.minimax.io/v1/t2a_v2', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${key}` },
@@ -96,12 +96,9 @@ async function minimax({ key }, request) {
     });
     const out = res.ok ? await res.json() : null;
     if (out?.base_resp?.status_code === 0) return Buffer.from(out.data.audio, 'hex');
-    if ((!res.ok && (res.status === 429 || res.status >= 500)) && attempt < 5) {
-      await sleep(2000 * 2 ** attempt);
-      continue;
-    }
-    throw new Error(`MiniMax TTS ${res.status} ${out?.base_resp?.status_code ?? ''}: ${out?.base_resp?.status_msg ?? await res.text()}`);
-  }
+    const msg = `MiniMax TTS ${res.status} ${out?.base_resp?.status_code ?? ''}: ${out?.base_resp?.status_msg ?? await res.text()}`;
+    throw Object.assign(new Error(msg), { status: res.ok ? undefined : res.status });
+  }, (err, tries) => (err.status === 429 || err.status >= 500) && tries < 5);
 }
 
 // Make MiniMax takes until one passes audio-check; keep the best.
@@ -132,6 +129,8 @@ for (const unit of units) {
   mkdirSync(audioDir, { recursive: true });
   const manifestPath = join(audioDir, 'manifest.json');
   const manifest = existsSync(manifestPath) ? JSON.parse(readFileSync(manifestPath, 'utf8')) : {};
+  // Saved after every clip, so a run that fails partway keeps what it made.
+  const save = () => writeFileSync(manifestPath, JSON.stringify(Object.fromEntries(Object.entries(manifest).sort()), null, 2) + '\n');
 
   const byId = Object.fromEntries(entries(vocab).map(e => [e.id, e]));
   const mine = entries(vocab).filter(e => own(e, unit)); // borrowed words have audio in their own unit
@@ -142,7 +141,8 @@ for (const unit of units) {
     const voice = entry.voice ?? vocab.voice;
     const viaMinimax = voice.startsWith(MINIMAX);
     const request = viaMinimax ? JSON.stringify(minimaxRequest(entry, voice.slice(MINIMAX.length))) : ssmlFor(entry, voice, byId);
-    const hash = createHash('sha1').update(request).digest('hex').slice(0, 12);
+    const hashed = viaMinimax || FORMAT === FIRST_FORMAT ? request : request + FORMAT;  // MiniMax's request has its format
+    const hash = createHash('sha1').update(hashed).digest('hex').slice(0, 12);
     const file = join(audioDir, `${entry.id}.mp3`);
     if (!force && manifest[entry.id] === hash && existsSync(file)) { skipped++; continue; }
 
@@ -154,13 +154,13 @@ for (const unit of units) {
       writeFileSync(file, await synth(cfg, request));
     }
     manifest[entry.id] = hash;
+    save();
     made++;
     console.log(`${unit}/audio/${entry.id}.mp3  ${entry.hanzi}${how}`);
     await sleep(300);
   }
 
-  const sorted = Object.fromEntries(Object.entries(manifest).sort());
-  writeFileSync(manifestPath, JSON.stringify(sorted, null, 2) + '\n');
+  save();
 }
 
 console.log(`${made} generated, ${skipped} unchanged.`);
