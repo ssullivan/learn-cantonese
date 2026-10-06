@@ -39,7 +39,13 @@
  *   Canto.play(entries)          play one entry's clip, or several in a row;
  *                                resolves when done (see Speak.play)
  *   Canto.entries(vocab)         every entry from every list in a vocab object
- *   Canto.picButton(entry)       picture-only answer <button data-id> (.pic-btn)
+ *   Canto.picButton(entry, label = 'none')
+ *                                picture answer <button data-id> (.pic-btn),
+ *                                with the entry's Chinese under it (.pic-label):
+ *                                label 'none' hides it, 'hanzi' shows the
+ *                                characters, 'both' adds the Jyutping
+ *   Canto.showLabels(el)         show every .pic-btn label in `el` in full
+ *                                (characters and Jyutping), once answered
  *   Canto.speech(who, html, onReplay?)
  *                                speech bubble (.speech, game.css): a round
  *                                badge with one character `who` (客 customer,
@@ -136,17 +142,20 @@
     return Speak.play(list.map(audioSrc), list.map(e => e.say || e.hanzi));
   }
 
-  function picButton(entry) {
+  function picButton(entry, label = 'none') {
     const b = el('button', 'pic-btn');
     b.type = 'button';
     b.dataset.id = entry.id;
+    b.dataset.label = label;
     b.setAttribute('aria-label', entry.english);
     const img = el('img');
     img.src = imgSrc(entry);
     img.alt = '';
-    b.append(img);
+    b.append(img, el('span', 'pic-label', zh(entry.hanzi, entry.jyutping)));
     return b;
   }
+
+  const showLabels = root => root.querySelectorAll('.pic-btn').forEach(b => { b.dataset.label = 'both'; });
 
   function speech(who, html, onReplay) {
     const b = el('div', 'speech');
@@ -179,5 +188,5 @@
     };
   }
 
-  window.Canto = { el, esc, tagZh, jyutping, zh, pairs, tones, toneChart, shuffle, pick, confusable, imgSrc, audioSrc, play, picButton, speech, entries, store };
+  window.Canto = { el, esc, tagZh, jyutping, zh, pairs, tones, toneChart, shuffle, pick, confusable, imgSrc, audioSrc, play, picButton, showLabels, speech, entries, store };
 })();

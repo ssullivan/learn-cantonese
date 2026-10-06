@@ -22,13 +22,16 @@
  *   ctx.words(...ids)          ctx.grid of the entries with those ids
  *   ctx.play(entry)            play an entry's clip
  *   ctx.complete()             mark this step done (unlocks Next if gated)
- *   ctx.listenQuiz(el, { pool, rounds, choices, show })
+ *   ctx.listenQuiz(el, { pool, rounds, choices, show, labels })
  *                              hear a word, pick it from `choices` answers;
  *                              completes the step when the last round is
  *                              answered. show: 'picture' (default; entries
  *                              need one), 'jyutping' (text buttons, e.g.
  *                              syllables that differ only in tone) or
- *                              'numeral' (each entry's english, a number)
+ *                              'numeral' (each entry's english, a number).
+ *                              labels: the Chinese under the pictures
+ *                              ('none', 'hanzi' or 'both'; Canto.picButton),
+ *                              shown in full once answered
  *
  * Helpers for step content (Canto.zh etc. are in core.js):
  *   Learn.p(html)              <p> element
@@ -37,7 +40,7 @@
  * Progress ({ step, done: [ids] }) is saved under `key`.
  */
 (function () {
-  const { el: $, esc, tagZh, jyutping, zh, shuffle, imgSrc, play, picButton } = Canto;
+  const { el: $, esc, tagZh, jyutping, zh, shuffle, imgSrc, play, picButton, showLabels } = Canto;
 
   const p = html => $('p', null, html);
   const tip = html => $('div', 'tip', html);
@@ -161,7 +164,7 @@
     go(state.step);
   }
 
-  function listenQuiz(el, { pool, rounds = 8, choices = 4, show: kind = 'picture' }, ctx) {
+  function listenQuiz(el, { pool, rounds = 8, choices = 4, show: kind = 'picture', labels = 'none' }, ctx) {
     let order, round, score, answered;
 
     function start() {
@@ -187,7 +190,7 @@
       fb.setAttribute('aria-live', 'polite');
 
       shuffle([answer, ...others]).forEach(o => {
-        const b = kind === 'picture' ? picButton(o) : textButton(o, kind);
+        const b = kind === 'picture' ? picButton(o, labels) : textButton(o, kind);
         b.addEventListener('click', () => pick(o, b, grid, fb, answer));
         grid.append(b);
       });
@@ -204,6 +207,7 @@
       [...grid.children].forEach(c => { c.disabled = true; });
       b.classList.add(right ? 'right' : 'wrong');
       if (!right) grid.querySelector(`[data-id="${answer.id}"]`).classList.add('right');
+      showLabels(grid);
       fb.className = 'quiz-feedback feedback ' + (right ? 'good' : 'bad');
       fb.innerHTML = (right ? '對！ Correct: ' : 'Not quite. That was ') +
         `${zh(answer.hanzi, answer.jyutping)} — ${esc(answer.english)}`;

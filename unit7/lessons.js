@@ -48,7 +48,7 @@
         render(el, ctx) {
           const quiz = document.createElement('div');
           el.append(p('Listen to the word, then tap the matching dish. Finish all eight to unlock the next step.'), quiz);
-          ctx.listenQuiz(quiz, { pool: V.items, rounds: 8, choices: 4 });
+          ctx.listenQuiz(quiz, { pool: V.items, rounds: 8, choices: 4, labels: 'hanzi' });
         },
       },
       {

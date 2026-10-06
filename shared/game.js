@@ -10,6 +10,9 @@
  *       id, name, blurb,
  *       rounds,    rounds per play
  *       time,      seconds per round (0 = untimed)
+ *       labels,    'none' (default), 'hanzi' or 'both': the Chinese under
+ *                  picture answers (Canto.picButton), as ctx.labels; levels
+ *                  can drop them as they get harder
  *       round(stage, ctx, n)   render round n into `stage`. Set ctx.answer
  *                  (HTML naming the right answer, shown after the round)
  *                  and call ctx.done(correct) once. Optionally set
@@ -23,7 +26,7 @@
  *     }],
  *   })
  *
- * ctx: { level, done(correct), answer, reveal, after, play(entries) }
+ * ctx: { level, labels, done(correct), answer, reveal, after, play(entries) }
  *
  * Helpers for rounds:
  *   Game.choose(ctx, answer, options, label, gridCls = 'choice-grid')
@@ -176,6 +179,7 @@
 
         const ctx = current = {
           level,
+          labels: level.labels ?? 'none',
           answer: '',
           reveal: null,
           after: null,
