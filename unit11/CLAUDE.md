@@ -16,5 +16,5 @@ Groups: `verbs`, `where`, `transport`, `places`, `way`, `borrowed`, `elsewhere`,
 ## Drawings
 Transport and the places Route puts on its map (`car`, `plane` from `svg.mjs`, the rest local).
 
-## Borrowed by later units
+## Used by later units
 The places and transport with their pictures, 去 (`heoi`), 喺, 搭, 邊度, 度 (`dou6`), 出街 (`ceot-street`), 出 (`ceot`), 嚟 (`lai`).

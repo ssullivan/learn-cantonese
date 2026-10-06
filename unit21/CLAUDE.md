@@ -16,5 +16,5 @@ Tasks are a verb and a thing (煲 + 水), like unit 16's hobbies. Groups: `appli
 ## Drawings
 Appliances white or steel with grey outlines, each with a hint of what it does (a glow in the microwave, flames on the stove, toast popping up), and a kitchen made of them.
 
-## Borrowed by later units
+## Used by later units
 None yet (the last unit). On offer: the appliances (`fridge`, `microwave`... with their pictures and `task`), 廚房, 電器, 部, the kitchen verbs 用 叮 煲 炒 整 攞 閂 入, 壞, 幾耐, 分鐘 and the durations (`mins2`...), and the tasks (`bou1-water`, `sai-wun`... with their `tool`).

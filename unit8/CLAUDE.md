@@ -17,5 +17,5 @@ Groups: `basics`, `drinks`, `food`, `modifiers`, `place`, `measures`, `borrowed`
 ## Drawings
 Each drink as served: hot in a cup with steam, iced in a glass with ice cubes; the plain drink is the hot one. `art.mjs` loads vocab.js to draw every entry in `served`.
 
-## Borrowed by later units
+## Used by later units
 凍 / 熱 (`dung`, `jit`: unit 13's weather), 飲, 食, `cha-chaan-teng` (unit 11), and the drinks with their cup and glass pictures. 走 (`zau`) is unit 19's "to run".

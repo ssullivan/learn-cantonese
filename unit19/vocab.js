@@ -1,8 +1,11 @@
 /*
- * Unit 19 vocabulary: the single source for the learn page, tools/tts.mjs
- * (audio/<id>.mp3) and tools/check.mjs (img/<id>.svg, audio files).
+ * Unit 19 vocabulary, for its pages, tools/tts.mjs and tools/check.mjs: the
+ * words it uses, from the dictionary (words/words.js; the ones it teaches
+ * are under unit 19 there, with their audio and pictures in words/), with
+ * the fields this unit adds, and the phrases and sentences it builds from
+ * them (audio/<id>.mp3 and img/<id>.svg here).
  *
- * Entry fields: id (unique in the unit, used for file names), hanzi,
+ * Entry fields: id (names its files), hanzi,
  * jyutping, english, note?, img (false = no picture), measure? (id of
  * the measure word it is counted with), counted? ([one, many] English),
  * phoneme? (true: tools/tts.mjs reads the jyutping exactly), plus
@@ -32,7 +35,7 @@ Units.add(19, {
   // What animals can do.
   verbs: [
     ...Words.list('fei paa-syu'),
-    { ...Units.word(8, 'zau'), english: 'to run',
+    { ...Words.get('zau'), english: 'to run',
       note: 'In Cantonese 走 is run (or leave); walk is 行.' },
   ],
 
@@ -53,22 +56,22 @@ Units.add(19, {
 (V => {
   V.pets = ['cat', 'dog', 'fish', 'chicken', 'cow'].map(id => Units.word(5, id));
   V.pets.find(t => t.id === 'fish').counted = ['a fish', 'fish'];
-  V.measures = ['zek', 'tiu'].map(id => Units.word(5, id));
+  V.measures = Words.list('zek tiu');
   V.ones = V.pets.map(t => Units.word(5, `one-${t.id}`));
   V.verbs.push(
-    Units.word(16, 'haang'),
-    Units.word(16, 'tiu3'), // 跳; tiu is 條
+    Words.get('haang'),
+    Words.get('tiu3'), // 跳; tiu is 條
     { ...Units.word(16, 'jau4-water'), img: false },
   );
   V.borrowed = [
-    ...['ngo', 'nei', 'hai', 'm', 'aa', 'mat-je'].map(id => Units.word(3, id)),
-    Units.word(5, 'jau'),
+    ...Words.list('ngo nei hai m aa mat-je'),
+    Words.get('jau'),
     ...['n0', 'n2', 'n6', 'loeng'].map(id => Units.word(4, id)),
-    Units.word(11, 'heoi'),
-    { ...Units.word(13, 'wui'), english: 'can; will',
+    Words.get('heoi'),
+    { ...Words.get('wui'), english: 'can; will',
       note: 'What an animal can do: 雀仔會飛. For a skill you learned, 識 (Unit 16) works too.' },
-    ...['zung-ji', 'soeng'].map(id => Units.word(16, id)),
-    ...['zeoi', 'bei', 'daai6', 'faai'].map(id => Units.word(18, id)),
+    ...Words.list('zung-ji soeng'),
+    ...Words.list('zeoi bei daai6 faai'),
   ];
 })(window.VOCAB);
 

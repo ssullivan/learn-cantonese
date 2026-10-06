@@ -1,8 +1,11 @@
 /*
- * Unit 5 vocabulary: the single source for the learn page, tools/tts.mjs
- * (audio/<id>.mp3) and tools/check.mjs (img/<id>.svg, audio files).
+ * Unit 5 vocabulary, for its pages, tools/tts.mjs and tools/check.mjs: the
+ * words it uses, from the dictionary (words/words.js; the ones it teaches
+ * are under unit 5 there, with their audio and pictures in words/), with
+ * the fields this unit adds, and the phrases and sentences it builds from
+ * them (audio/<id>.mp3 and img/<id>.svg here).
  *
- * Entry fields: id (unique in the unit, used for file names), hanzi,
+ * Entry fields: id (names its files), hanzi,
  * jyutping, english, note?, img (false = no picture), measure? (id of
  * the measure word it is counted with; a measure with a `dish` must
  * match the picture's cup or bowl, which tools/check.mjs verifies),
@@ -36,19 +39,19 @@ Units.add(5, {
 // from unit 1; the numbers, 兩 and 幾多 (unit 4) and the people and question
 // words (unit 3) make the sentences. Things stay in measure-word order.
 (V => {
-  V.measures.unshift({ ...Units.word(4, 'go'), english: 'the everyday one',
+  V.measures.unshift({ ...Words.get('go'), english: 'the everyday one',
     note: 'People, round things, and anything without its own measure word. When unsure, 個 is the safe guess.' });
   V.things.push(
-    { ...Units.word(1, 'chicken'), measure: 'zek', note: undefined },
-    { ...Units.word(1, 'cow'), measure: 'zek', note: 'Farm animals too: 一隻牛.' },
-    { ...Units.word(1, 'fish'), measure: 'tiu', note: 'A fish is long and thin, so 一條魚.' },
-    { ...Units.word(1, 'car'), measure: 'gaa', note: undefined },
-    { ...Units.word(1, 'water'), measure: 'bui', counted: ['a glass of water', 'glasses of water'], note: undefined },
+    { ...Words.get('chicken'), measure: 'zek', note: undefined },
+    { ...Words.get('cow'), measure: 'zek', note: 'Farm animals too: 一隻牛.' },
+    { ...Words.get('fish'), measure: 'tiu', note: 'A fish is long and thin, so 一條魚.' },
+    { ...Words.get('car'), measure: 'gaa', note: undefined },
+    { ...Words.get('water'), measure: 'bui', counted: ['a glass of water', 'glasses of water'], note: undefined },
   );
   const order = V.measures.map(m => m.id);
   V.things.sort((a, b) => order.indexOf(a.measure) - order.indexOf(b.measure));
   V.borrowed = [
-    ...['ngo', 'nei', 'keoi', 'ngo-dei', 'hai', 'mat-je', 'aa'].map(id => Units.word(3, id)),
+    ...Words.list('ngo nei keoi ngo-dei hai mat-je aa'),
     ...['n1', 'n3', 'loeng', 'gei-do'].map(id => Units.word(4, id)),
   ];
 })(window.VOCAB);

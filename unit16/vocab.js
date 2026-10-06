@@ -1,8 +1,11 @@
 /*
- * Unit 16 vocabulary: the single source for the learn page, tools/tts.mjs
- * (audio/<id>.mp3) and tools/check.mjs (img/<id>.svg, audio files).
+ * Unit 16 vocabulary, for its pages, tools/tts.mjs and tools/check.mjs: the
+ * words it uses, from the dictionary (words/words.js; the ones it teaches
+ * are under unit 16 there, with their audio and pictures in words/), with
+ * the fields this unit adds, and the phrases and sentences it builds from
+ * them (audio/<id>.mp3 and img/<id>.svg here).
  *
- * Entry fields: id (unique in the unit, used for file names), hanzi,
+ * Entry fields: id (names its files), hanzi,
  * jyutping, english, note?, img (false = no picture), phoneme? (true:
  * tools/tts.mjs reads the jyutping exactly), plus ing (the English
  * "…ing"), out (true: you go out for it, so 想去 + it) and skill (true: a
@@ -26,7 +29,7 @@ Units.add(16, {
   // What they are done to. 波 水 are borrowed below.
   things: [
     ...Words.list('hei3 gei1 kei go1 saan'),
-    { ...Units.word(1, 'street'), english: 'a street' },
+    { ...Words.get('street'), english: 'a street' },
     ...Words.list('mou5 soeng2 waa daan-ce'),
   ],
 
@@ -44,17 +47,17 @@ Units.add(16, {
 // and 會 (unit 13), 睇 冇 未 (unit 14), and 做 過 and reading and TV
 // (unit 15), with the measure words those nouns are counted with.
 (V => {
-  V.measures = [Units.word(4, 'go'), Units.word(5, 'zek')];
+  V.measures = [Words.get('go'), Words.get('zek')];
   V.borrowed = [
-    Units.word(1, 'water'),
-    ...['ngo', 'nei', 'keoi', 'm', 'sik', 'dou', 'mat-je', 'aa'].map(id => Units.word(3, id)),
-    ...['ball', 'cat', 'jau'].map(id => Units.word(5, id)),
-    Units.word(6, 'hou'),
+    Words.get('water'),
+    ...Words.list('ngo nei keoi m sik dou mat-je aa'),
+    ...Words.list('ball cat jau'),
+    Words.get('hou'),
     ...['ting-jat', 'wk6', 'wk7'].map(id => Units.word(9, id)),
-    Units.word(11, 'heoi'),
-    ...['daa', 'wui'].map(id => Units.word(13, id)),
-    ...['tai', 'mou', 'mei'].map(id => Units.word(14, id)),
-    ...['zou6', 'gwo'].map(id => Units.word(15, id)),
+    Words.get('heoi'),
+    ...Words.list('daa wui'),
+    ...Words.list('tai mou mei'),
+    ...Words.list('zou6 gwo'),
   ];
 })(window.VOCAB);
 

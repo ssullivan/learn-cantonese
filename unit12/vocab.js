@@ -1,8 +1,11 @@
 /*
- * Unit 12 vocabulary: the single source for the learn page, tools/tts.mjs
- * (audio/<id>.mp3) and tools/check.mjs (img/<id>.svg, audio files).
+ * Unit 12 vocabulary, for its pages, tools/tts.mjs and tools/check.mjs: the
+ * words it uses, from the dictionary (words/words.js; the ones it teaches
+ * are under unit 12 there, with their audio and pictures in words/), with
+ * the fields this unit adds, and the phrases and sentences it builds from
+ * them (audio/<id>.mp3 and img/<id>.svg here).
  *
- * Entry fields: id (unique in the unit, used for file names), hanzi,
+ * Entry fields: id (names its files), hanzi,
  * jyutping, english, note?, img (false = no picture), measure? (id of
  * the measure word it is counted with), phoneme? (true: tools/tts.mjs
  * reads the jyutping exactly), plus fill and line (its colours) on
@@ -54,14 +57,14 @@ Units.add(12, {
 // rest, and 呢 (unit 5); people, 係, 乜嘢, 呀 (unit 3); 要, 好, 錢 and 幾多
 // (units 4 and 6); 嘅 and 同 (unit 10).
 (V => {
-  V.clothes.unshift(...['shirt', 'trousers', 'shoes'].map(id => Units.word(5, id)));
-  V.measures.push(...['gin', 'tiu', 'deoi'].map(id => Units.word(5, id)));
+  V.clothes.unshift(...Words.list('shirt trousers shoes'));
+  V.measures.push(...Words.list('gin tiu deoi'));
   V.ones = ['shirt', 'trousers', 'shoes'].map(id => Units.word(5, `one-${id}`));
   V.borrowed = [
-    ...['ngo', 'nei', 'keoi', 'hai', 'm', 'mat-je', 'aa'].map(id => Units.word(3, id)),
-    Units.word(4, 'gei-do'), Units.word(5, 'ni'),
-    ...['jiu', 'hou', 'cin2'].map(id => Units.word(6, id)),
-    ...['ge', 'tung'].map(id => Units.word(10, id)),
+    ...Words.list('ngo nei keoi hai m mat-je aa'),
+    Words.get('gei-do'), Words.get('ni'),
+    ...Words.list('jiu hou cin2'),
+    ...Words.list('ge tung'),
   ];
 })(window.VOCAB);
 

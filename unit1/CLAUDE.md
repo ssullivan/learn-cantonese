@@ -17,5 +17,5 @@ Its words are in the dictionary (`words/words.js`, unit 1). `sets` holds si / fu
 ## Drawings
 `art.mjs` draws one picture per word with a picture (fish, car, water, cow, chicken...), from `svg.mjs` parts (`bowl`, `cup`, `car`).
 
-## Borrowed by later units
+## Used by later units
 魚 車 水 雞 牛 (`fish`, `car`, `water`, `chicken`, `cow`): unit 5 gives them a `measure`, and later units take them from unit 5 or here. Unit 8 borrows `fan6` (份, a portion). 廣東話 (`cantonese`, unit 3), 粥 (`congee`, unit 7's bowl of congee) and 街 (`street`, unit 16).

@@ -1,8 +1,11 @@
 /*
- * Unit 20 vocabulary: the single source for the learn page, tools/tts.mjs
- * (audio/<id>.mp3) and tools/check.mjs (img/<id>.svg, audio files).
+ * Unit 20 vocabulary, for its pages, tools/tts.mjs and tools/check.mjs: the
+ * words it uses, from the dictionary (words/words.js; the ones it teaches
+ * are under unit 20 there, with their audio and pictures in words/), with
+ * the fields this unit adds, and the phrases and sentences it builds from
+ * them (audio/<id>.mp3 and img/<id>.svg here).
  *
- * Entry fields: id (unique in the unit, used for file names), hanzi,
+ * Entry fields: id (names its files), hanzi,
  * jyutping, english, note?, img (false = no picture), measure? (id of
  * the measure word it is counted with), counted? ([one, many] English),
  * phoneme? (true: tools/tts.mjs reads the jyutping exactly), plus kind
@@ -41,7 +44,7 @@ Units.add(20, {
 
   // Measure words for fruit and vegetables. 個 and 條 are borrowed below.
   measures: [
-    { ...Units.word(14, 'nap'), english: 'for small round things',
+    { ...Words.get('nap'), english: 'for small round things',
       note: 'Grapes, strawberries, sweets: 一粒提子.' },
     Words.get('po'),
   ],
@@ -54,19 +57,19 @@ Units.add(20, {
 (V => {
   const CATTY = { apple: 13, orange: 12, watermelon: 8 };
   V.fruit.push(...Object.entries(CATTY).map(([id, catty]) => ({ ...Units.word(6, id), kind: 'fruit', catty, price: undefined })));
-  V.measures.push(Units.word(4, 'go'), Units.word(5, 'tiu'));
+  V.measures.push(Words.get('go'), Words.get('tiu'));
   V.ones = Object.keys(CATTY).map(id => Units.word(6, `one-${id}`));
   V.borrowed = [
-    ...['ngo', 'nei', 'hai', 'm', 'aa'].map(id => Units.word(3, id)),
-    Units.word(4, 'gei-do'),
-    { ...Units.word(5, 'di'), english: 'some; the (more than one)', note: 'Before a noun: 買啲生果, buy some fruit.' },
-    Units.word(5, 'ni'),
-    ...['maai5', 'jiu', 'cin2', 'hou', 'peng', 'gwai'].map(id => Units.word(6, id)),
-    Units.word(7, 'sweet'),
-    ...['sik6', 'ding'].map(id => Units.word(8, id)),
-    Units.word(11, 'heoi'),
-    ...['zung-ji', 'soeng'].map(id => Units.word(16, id)),
-    Units.word(18, 'zeoi'),
+    ...Words.list('ngo nei hai m aa'),
+    Words.get('gei-do'),
+    { ...Words.get('di'), english: 'some; the (more than one)', note: 'Before a noun: 買啲生果, buy some fruit.' },
+    Words.get('ni'),
+    ...Words.list('maai5 jiu cin2 hou peng gwai'),
+    Words.get('sweet'),
+    ...Words.list('sik6 ding'),
+    Words.get('heoi'),
+    ...Words.list('zung-ji soeng'),
+    Words.get('zeoi'),
   ];
 })(window.VOCAB);
 

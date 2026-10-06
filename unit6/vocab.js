@@ -1,8 +1,11 @@
 /*
- * Unit 6 vocabulary: the single source for the learn page, tools/tts.mjs
- * (audio/<id>.mp3) and tools/check.mjs (img/<id>.svg, audio files).
+ * Unit 6 vocabulary, for its pages, tools/tts.mjs and tools/check.mjs: the
+ * words it uses, from the dictionary (words/words.js; the ones it teaches
+ * are under unit 6 there, with their audio and pictures in words/), with
+ * the fields this unit adds, and the phrases and sentences it builds from
+ * them (audio/<id>.mp3 and img/<id>.svg here).
  *
- * Entry fields: id (unique in the unit, used for file names), hanzi,
+ * Entry fields: id (names its files), hanzi,
  * jyutping, english, note?, img (false = no picture), measure? (id of
  * the measure word it is counted with), price? (what one usually costs,
  * in dollars), phoneme? (true: tools/tts.mjs reads the jyutping exactly),
@@ -38,17 +41,17 @@ Units.add(6, {
 // from unit 5 and unit 1's 魚, each with a usual price; and the words that
 // make the sentences.
 (V => {
-  V.measures = [Units.word(4, 'go'), ...['zek', 'bun', 'tiu', 'zi', 'gin', 'deoi'].map(id => Units.word(5, id))];
+  V.measures = [Words.get('go'), ...Words.list('zek bun tiu zi gin deoi')];
   const PRICES = { apple: 5, ball: 120, book: 88, pen: 12, flower: 20, shirt: 150, cake: 28, trousers: 250, shoes: 380, chopsticks: 15 };
   V.things.push(
     ...Object.entries(PRICES).map(([id, price]) => ({ ...Units.word(5, id), price })),
-    { ...Units.word(1, 'fish'), measure: 'tiu', price: 68 },
+    { ...Words.get('fish'), measure: 'tiu', price: 68 },
   );
   V.borrowed = [
-    ...['ngo', 'nei', 'm', 'aa'].map(id => Units.word(3, id)),
-    ...['loeng', 'gei-do'].map(id => Units.word(4, id)),
-    ...['ni', 'go2', 'di'].map(id => Units.word(5, id)),
-    Units.word(2, 'no-need'),
+    ...Words.list('ngo nei m aa'),
+    ...Words.list('loeng gei-do'),
+    ...Words.list('ni go2 di'),
+    Words.get('no-need'),
   ];
 })(window.VOCAB);
 

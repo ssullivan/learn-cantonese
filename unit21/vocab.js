@@ -1,8 +1,11 @@
 /*
- * Unit 21 vocabulary: the single source for the learn page, tools/tts.mjs
- * (audio/<id>.mp3) and tools/check.mjs (img/<id>.svg, audio files).
+ * Unit 21 vocabulary, for its pages, tools/tts.mjs and tools/check.mjs: the
+ * words it uses, from the dictionary (words/words.js; the ones it teaches
+ * are under unit 21 there, with their audio and pictures in words/), with
+ * the fields this unit adds, and the phrases and sentences it builds from
+ * them (audio/<id>.mp3 and img/<id>.svg here).
  *
- * Entry fields: id (unique in the unit, used for file names), hanzi,
+ * Entry fields: id (names its files), hanzi,
  * jyutping, english, note?, img (false = no picture), measure? (id of
  * the measure word it is counted with), phoneme? (true: tools/tts.mjs
  * reads the jyutping exactly), plus task (the id of what it is used
@@ -45,27 +48,27 @@ Units.add(21, {
 // 未 (unit 14), 煮 洗 放 (unit 15) and 開 (unit 17). Food is borrowed
 // without its measure word.
 (V => {
-  const food = (n, id) => ({ ...Units.word(n, id), measure: undefined });
-  V.measures.push(Units.word(4, 'go'));
-  V.food = [food(5, 'rice'), food(5, 'cake'), food(6, 'orange'), food(8, 'toast')];
+  const food = id => ({ ...Words.get(id), measure: undefined });
+  V.measures.push(Words.get('go'));
+  V.food = ['rice', 'cake', 'orange', 'toast'].map(food);
   V.borrowed = [
-    Units.word(1, 'water'),
-    ...['ngo', 'nei', 'm', 'mat-je', 'aa'].map(id => Units.word(3, id)),
-    { ...Units.word(5, 'wun'), english: 'a bowl; the dishes', note: '洗碗 is washing up: bowls, plates and all.' },
-    ...['di', 'jau'].map(id => Units.word(5, id)),
-    Units.word(6, 'jiu'),
-    { ...Units.word(7, 'baked'), english: 'to bake' },
-    ...['jit', 'dung'].map(id => Units.word(8, id)),
+    Words.get('water'),
+    ...Words.list('ngo nei m mat-je aa'),
+    { ...Words.get('wun'), english: 'a bowl; the dishes', note: '洗碗 is washing up: bowls, plates and all.' },
+    ...Words.list('di jau'),
+    Words.get('jiu'),
+    { ...Words.get('baked'), english: 'to bake' },
+    ...Words.list('jit dung'),
     Units.word(9, 't0600'),
-    Units.word(10, 'home'),
-    { ...Units.word(11, 'ceot'), english: 'out' },
-    Units.word(11, 'lai'),
-    { ...Units.word(13, 'syut'), english: 'to chill; snow', note: 'Snow (Unit 13), as a verb: 雪凍, chill in the fridge.' },
-    ...['zo2', 'mou', 'mei'].map(id => Units.word(14, id)),
-    Units.word(15, 'zyu2'),
-    Units.word(15, 'sai'),
-    { ...Units.word(15, 'fong'), english: 'to put; to let go' },
-    { ...Units.word(17, 'hoi'), english: 'to open; to turn on', note: '開雪櫃 opens the fridge; 開焗爐 turns the oven on.' },
+    Words.get('home'),
+    { ...Words.get('ceot'), english: 'out' },
+    Words.get('lai'),
+    { ...Words.get('syut'), english: 'to chill; snow', note: 'Snow (Unit 13), as a verb: 雪凍, chill in the fridge.' },
+    ...Words.list('zo2 mou mei'),
+    Words.get('zyu2'),
+    Words.get('sai'),
+    { ...Words.get('fong'), english: 'to put; to let go' },
+    { ...Words.get('hoi'), english: 'to open; to turn on', note: '開雪櫃 opens the fridge; 開焗爐 turns the oven on.' },
   ];
 })(window.VOCAB);
 
@@ -87,7 +90,7 @@ Units.add(21, {
     ['stove', 'caau2 coi', 'stir-fry vegetables'],
   ];
   // 菜 from Unit 20, for 炒菜.
-  V.borrowed.push(Units.word(20, 'coi'));
+  V.borrowed.push(Words.get('coi'));
   say = Units.sentences(V);
   V.tasks = TASK.map(([tool, ids, english]) => say(ids, `to ${english}`, { tool }));
   V.tasks[0].note = '叮熱: microwave until hot.';

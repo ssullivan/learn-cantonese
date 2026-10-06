@@ -5,10 +5,13 @@
  *   unitDirs()       ["unit1", ...] in number order
  *   homes()          where entries' files live: "words" (the dictionary,
  *                    words/words.js) and every unit, in that order
+ *   borrowsFrom(unit) the earlier units whose vocab.js a unit's pages load:
+ *                    those its vocab.js and page scripts name in
+ *                    Units.word(n, ...), and the ones those borrow from
  *   loadVocab(home)  unit<N>/vocab.js's vocab, or null if none. Runs
  *                    shared/units.js, shared/numbers.js, words/words.js
- *                    and every earlier unit's vocab.js first, as a page
- *                    would, so Units.word(), Words.get() and
+ *                    and the vocab.js of the units it borrows from first,
+ *                    as a page does, so Units.word(), Words.get() and
  *                    Canto.number() work. loadVocab("words") is the
  *                    dictionary as a vocab: { voice, unit<n>: [words] }
  *   entries(vocab)   every entry from every list, in file order
@@ -78,6 +81,23 @@ const WORDS = join(ROOT, 'words', 'words.js');
 
 export const homes = () => [...(existsSync(WORDS) ? ['words'] : []), ...unitDirs()];
 
+const BORROW = /Units\.word\((\d+)/g;
+
+export function borrowsFrom(unit) {
+  const named = files => files.flatMap(f => [...readFileSync(f, 'utf8').matchAll(BORROW)].map(m => `unit${m[1]}`));
+  const need = new Set();
+  const visit = (u, files) => {
+    for (const v of named(files)) {
+      if (v === u || need.has(v)) continue;
+      need.add(v);
+      visit(v, [join(ROOT, v, 'vocab.js')]);
+    }
+  };
+  const dir = join(ROOT, unit);
+  visit(unit, readdirSync(dir).filter(f => /\.(js|html)$/.test(f)).map(f => join(dir, f)));
+  return unitDirs().filter(u => need.has(u));
+}
+
 export function loadVocab(home) {
   const vocabPath = u => join(ROOT, u, 'vocab.js');
   if (home !== 'words' && !existsSync(vocabPath(home))) return null;
@@ -89,10 +109,9 @@ export function loadVocab(home) {
   run(join(ROOT, 'shared/numbers.js'));
   if (existsSync(WORDS)) run(WORDS);
   if (home === 'words') return { voice: sandbox.Words.voice, ...sandbox.WORDS };
-  const n = +home.slice(4);
-  for (const u of unitDirs().filter(u => u.slice(4) < n && existsSync(vocabPath(u)))) run(vocabPath(u));
+  for (const u of borrowsFrom(home)) run(vocabPath(u));
   run(vocabPath(home));
-  return sandbox.UNITS[n];
+  return sandbox.UNITS[+home.slice(4)];
 }
 
 export const entries = vocab => Object.values(vocab).filter(Array.isArray).flat();

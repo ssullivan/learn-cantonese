@@ -16,5 +16,5 @@ Groups: `fruit`, `veg` (each with `kind`: fruit / veg, and `catty`: dollars for 
 ## Drawings
 In unit 5 and 6's style (one big item, a highlight, a soft shadow), a market stall for 街市 and a scale for 斤.
 
-## Borrowed by later units
+## Used by later units
 菜 (`coi`, unit 21). On offer: the fruit and vegetables (`banana`, `choy-sum`... with their pictures, `kind` and `catty`), 棵, 斤 (`gan1`) and the weights, prices per 斤, 生果, 街市, 一共, 新鮮, 酸.

@@ -1,8 +1,11 @@
 /*
- * Unit 10 vocabulary: the single source for the learn page, tools/tts.mjs
- * (audio/<id>.mp3) and tools/check.mjs (img/<id>.svg, audio files).
+ * Unit 10 vocabulary, for its pages, tools/tts.mjs and tools/check.mjs: the
+ * words it uses, from the dictionary (words/words.js; the ones it teaches
+ * are under unit 10 there, with their audio and pictures in words/), with
+ * the fields this unit adds, and the phrases and sentences it builds from
+ * them (audio/<id>.mp3 and img/<id>.svg here).
  *
- * Entry fields: id (unique in the unit, used for file names), hanzi,
+ * Entry fields: id (names its files), hanzi,
  * jyutping, english, note?, img (false = no picture), measure? (id of
  * the measure word it is counted with), phoneme? (true: tools/tts.mjs
  * reads the jyutping exactly), member (true: one person on the family
@@ -51,12 +54,12 @@ Units.add(10, {
 // Borrowed: people and question words (unit 3), 個, 兩, 幾多 and 三 (unit 4),
 // and measure words, 有, 呢 and things to own (unit 5).
 (V => {
-  V.measures = [Units.word(4, 'go'), ...['zek', 'bun', 'zi', 'gin'].map(id => Units.word(5, id))];
-  V.things = ['cat', 'dog', 'book', 'pen', 'shirt'].map(id => Units.word(5, id));
+  V.measures = [Words.get('go'), ...Words.list('zek bun zi gin')];
+  V.things = Words.list('cat dog book pen shirt');
   V.borrowed = [
-    ...['ngo', 'nei', 'keoi', 'hai', 'bin-go', 'aa'].map(id => Units.word(3, id)),
+    ...Words.list('ngo nei keoi hai bin-go aa'),
     ...['loeng', 'gei-do', 'n3'].map(id => Units.word(4, id)),
-    ...['jau', 'ni'].map(id => Units.word(5, id)),
+    ...Words.list('jau ni'),
   ];
 })(window.VOCAB);
 

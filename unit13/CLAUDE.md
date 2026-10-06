@@ -16,5 +16,5 @@ Temperatures (`c<n>`, from `Canto.number`), degree phrases, advice and sentences
 ## Drawings
 Weather icons built from a few local parts (sun, cloud, rain, snowflake, lightning), a thermometer for 好熱 and 好凍, the four seasons, and an umbrella.
 
-## Borrowed by later units
+## Used by later units
 The weather (`lok-jyu`, `tin-cing`..., and 好熱 / 好凍 as `hou-jit`, `hou-dung`, with their pictures), the seasons, temperatures (`c25`), 太, 會 (`wui`, unit 19), 啦 / 喇 (`laa1`, `laa3`, unit 17), 帶 / 遮, 雪 (`syut`, unit 21's 雪櫃).

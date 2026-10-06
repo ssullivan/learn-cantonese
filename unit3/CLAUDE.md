@@ -16,5 +16,5 @@ Groups: `people`, `words`, `things`, `asking`, and the derived `statements`, `ma
 ## Drawings
 The pronouns share one scene: the speaker (left, red, speech bubble) talks to the listener (right) with a third person at the back. The speaker points at the person or people meant, coloured (listener blue, others green) inside a gold ring; the rest are grey. Person words (man, woman...) use other colours so they never look like a pronoun.
 
-## Borrowed by later units
+## Used by later units
 Almost every unit borrows its pronouns and 係 / 唔係 / 乜嘢 / 邊個 (`ngo`, `nei`, `keoi`, `ngo-dei`, `bin-go`...), along with `aa` (呀) and its `phoneme`.

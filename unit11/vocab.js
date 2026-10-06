@@ -1,8 +1,11 @@
 /*
- * Unit 11 vocabulary: the single source for the learn page, tools/tts.mjs
- * (audio/<id>.mp3) and tools/check.mjs (img/<id>.svg, audio files).
+ * Unit 11 vocabulary, for its pages, tools/tts.mjs and tools/check.mjs: the
+ * words it uses, from the dictionary (words/words.js; the ones it teaches
+ * are under unit 11 there, with their audio and pictures in words/), with
+ * the fields this unit adds, and the phrases and sentences it builds from
+ * them (audio/<id>.mp3 and img/<id>.svg here).
  *
- * Entry fields: id (unique in the unit, used for file names), hanzi,
+ * Entry fields: id (names its files), hanzi,
  * jyutping, english, note?, img (false = no picture), phoneme? (true:
  * tools/tts.mjs reads the jyutping exactly), plus turn ('zik' straight
  * on, 'zo' left, 'jau' right) and side ('zo' or 'jau') on directions,
@@ -44,17 +47,17 @@ Units.add(11, {
 // 食飯 (unit 9), and 屋企 住 (unit 10).
 (V => {
   V.borrowed = [
-    ...['car', 'street', 'hong-kong'].map(id => Units.word(1, id)),
+    ...Words.list('car street hong-kong'),
     Units.word(2, 'm-goi'),
-    ...['ngo', 'nei', 'keoi', 'm', 'aa'].map(id => Units.word(3, id)),
+    ...Words.list('ngo nei keoi m aa'),
     Units.word(4, 'n10'),
-    ...['ni', 'go2', 'jau'].map(id => Units.word(5, id)),
-    ...['hou', 'jiu'].map(id => Units.word(6, id)),
-    ...['fan', 'zung', 'gei-si', 'sik-faan'].map(id => Units.word(9, id)),
-    Units.word(10, 'zyu'),
+    ...Words.list('ni go2 jau'),
+    ...Words.list('hou jiu'),
+    ...Words.list('fan zung gei-si sik-faan'),
+    Words.get('zyu'),
   ];
   // Places on the map from earlier units, with their pictures.
-  V.elsewhere = [Units.word(8, 'cha-chaan-teng'), Units.word(10, 'home')];
+  V.elsewhere = [Words.get('cha-chaan-teng'), Words.get('home')];
 })(window.VOCAB);
 
 // Derived: stations, phrases, directions, "where is it?" and sentences.

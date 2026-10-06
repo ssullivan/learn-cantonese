@@ -1,8 +1,11 @@
 /*
- * Unit 15 vocabulary: the single source for the learn page, tools/tts.mjs
- * (audio/<id>.mp3) and tools/check.mjs (img/<id>.svg, audio files).
+ * Unit 15 vocabulary, for its pages, tools/tts.mjs and tools/check.mjs: the
+ * words it uses, from the dictionary (words/words.js; the ones it teaches
+ * are under unit 15 there, with their audio and pictures in words/), with
+ * the fields this unit adds, and the phrases and sentences it builds from
+ * them (audio/<id>.mp3 and img/<id>.svg here).
  *
- * Entry fields: id (unique in the unit, used for file names), hanzi,
+ * Entry fields: id (names its files), hanzi,
  * jyutping, english, note?, img (false = no picture), phoneme? (true:
  * tools/tts.mjs reads the jyutping exactly), plus at ([hour, minute] on a
  * 24-hour clock: when it usually happens), ing and done (the English
@@ -49,23 +52,23 @@ Units.add(15, {
 (V => {
   // The measure words of the borrowed nouns.
   V.measures = [
-    Units.word(4, 'go'),
-    ...['zek', 'bun', 'gaa', 'gin', 'bui', 'wun'].map(id => Units.word(5, id)),
-    Units.word(7, 'lung'),
+    Words.get('go'),
+    ...Words.list('zek bun gaa gin bui wun'),
+    Words.get('lung'),
   ];
   V.borrowed = [
-    ...['hong-kong', 'fan3'].map(id => Units.word(1, id)),
-    ...['ngo', 'nei', 'keoi', 'mat-je', 'aa'].map(id => Units.word(3, id)),
-    ...['shirt', 'book', 'rice', 'plane', 'jau'].map(id => Units.word(5, id)),
-    Units.word(6, 'jiu'),
+    ...Words.list('hong-kong fan3'),
+    ...Words.list('ngo nei keoi mat-je aa'),
+    ...Words.list('shirt book rice plane jau'),
+    Words.get('jiu'),
     Units.word(7, 'har-gow'),
-    ...['sik6', 'jam2', 'milk-tea', 'yuenyeung', 'pineapple-butter', 'spam-egg-noodles'].map(id => Units.word(8, id)),
-    ...['ji-gaa', 'gei', 'dim', 'sik-faan'].map(id => Units.word(9, id)),
-    Units.word(10, 'home'),
-    ...['heoi', 'daap', 'airport', 'hospital', 'park', 'tram', 'minibus'].map(id => Units.word(11, id)),
-    Units.word(12, 'zoek'),
-    ...['loeng4', 'laa3'].map(id => Units.word(13, id)),
-    ...['tooth', 'hand', 'tai', 'mui', 'jat6', 'zo2', 'mou', 'mei'].map(id => Units.word(14, id)),
+    ...Words.list('sik6 jam2 milk-tea yuenyeung pineapple-butter spam-egg-noodles'),
+    ...Words.list('ji-gaa gei dim sik-faan'),
+    Words.get('home'),
+    ...Words.list('heoi daap airport hospital park tram minibus'),
+    Words.get('zoek'),
+    ...Words.list('loeng4 laa3'),
+    ...Words.list('tooth hand tai mui jat6 zo2 mou mei'),
   ];
 })(window.VOCAB);
 

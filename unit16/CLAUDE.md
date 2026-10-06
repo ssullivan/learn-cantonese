@@ -16,5 +16,5 @@ Hobbies are a verb and a thing (游 + 水), like unit 15's day, so 過 and 緊 s
 ## Drawings
 One per hobby; reading and TV are unit 15's.
 
-## Borrowed by later units
+## Used by later units
 The hobbies (`tai-hei3`, `jau4-water`... with their pictures, `out` and `skill`), 鍾意 (and 鍾, `zung1`, for 鍾唔鍾意), 想 (`soeng`), 興趣, 得閒, 周末, 一齊; 行 (`haang`), 跳 (`tiu3`, unit 19).

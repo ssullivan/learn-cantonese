@@ -1,8 +1,11 @@
 /*
- * Unit 7 vocabulary: the single source for the learn page, tools/tts.mjs
- * (audio/<id>.mp3) and tools/check.mjs (img/<id>.svg, audio files).
+ * Unit 7 vocabulary, for its pages, tools/tts.mjs and tools/check.mjs: the
+ * words it uses, from the dictionary (words/words.js; the ones it teaches
+ * are under unit 7 there, with their audio and pictures in words/), with
+ * the fields this unit adds, and the phrases and sentences it builds from
+ * them (audio/<id>.mp3 and img/<id>.svg here).
  *
- * Entry fields: id (unique in the unit, used for file names), hanzi,
+ * Entry fields: id (names its files), hanzi,
  * jyutping, english, note?, img (false = no picture), measure? (id of
  * the measure word used to order it; must match its picture's steamer
  * plate or bowl, which tools/check.mjs verifies),
@@ -49,7 +52,7 @@ Units.add(7, {
     { ...Words.get('fried-rice'), group: 'rice-noodles' },
     { ...Words.get('seafood-noodles'), group: 'rice-noodles' },
     { ...Words.get('beef-ho-fun'), group: 'rice-noodles' },
-    { ...Units.word(1, 'congee'), measure: 'wun', group: 'rice-noodles', english: 'congee',
+    { ...Words.get('congee'), measure: 'wun', group: 'rice-noodles', english: 'congee',
       note: 'Smooth rice porridge, often with century egg and pork. It comes in a bowl: 一碗粥.' },
   ],
 
@@ -59,7 +62,7 @@ Units.add(7, {
 });
 
 // Borrowed: 碗 is taught in unit 5; congee comes in a bowl.
-window.VOCAB.measures.push({ ...Units.word(5, 'wun'), english: 'bowl',
+window.VOCAB.measures.push({ ...Words.get('wun'), english: 'bowl',
   note: 'For anything that comes in a bowl: 一碗粥.' });
 
 // Derived: "one basket/plate/bowl of X" for every dish (一籠蝦餃), used for
@@ -90,8 +93,8 @@ window.VOCAB.phrases.unshift(Units.word(2, 'm-goi'));
 // They are read from their jyutping: audio-check flagged a third fewer
 // clips than reading the characters (tone 5 said like 2 in 我 兩 五).
 (V => {
-  V.orderWords = [Units.word(3, 'ngo'), Units.word(6, 'jiu'), Units.word(2, 'thanks'),
-    Units.word(4, 'loeng'), ...[1, 2, 3, 4, 5].map(n => Units.word(4, `n${n}`))];
+  V.orderWords = [Words.get('ngo'), Words.get('jiu'), Units.word(2, 'thanks'),
+    Words.get('loeng'), ...[1, 2, 3, 4, 5].map(n => Units.word(4, `n${n}`))];
   const say = Units.sentences(V);
   const NUM = ['', 'one', 'two', 'three', 'four', 'five'];
   const count = n => n === 2 ? 'loeng' : `n${n}`;

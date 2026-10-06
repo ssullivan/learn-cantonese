@@ -16,5 +16,5 @@ Groups: `feelings`, `halves` (first syllables, for A唔A: 開唔開心; a two-sy
 ## Drawings
 A face for each feeling and for 唔開心, from `face()`'s expressions (mouth, eyes, brows), with local touches (rosy cheeks, sparkles, a tear).
 
-## Borrowed by later units
+## Used by later units
 The feelings (`hoi-sam`, `gui`, `tou-ngo`... with their faces, 唔開心 as `m-hoi-sam`, and each `half`), 我好X as `ngo-hou-<id>`, 心情, 覺得, 點解, 因為, 咁 (`gam3`, unit 18), 考試, 開 (`hoi`, unit 21), and the particles 喎 囉 嘛 (`wo3`, `lo1`, `maa3`).

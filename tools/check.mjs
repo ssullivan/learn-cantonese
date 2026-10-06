@@ -61,7 +61,7 @@ import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from '
 import { dirname, join, relative, extname } from 'node:path';
 import vm from 'node:vm';
 import { spawnSync } from 'node:child_process';
-import { ROOT, unitDirs, homes, homeOf, loadVocab, entries, own, loadArt, secrets } from './site.mjs';
+import { ROOT, unitDirs, homes, homeOf, borrowsFrom, loadVocab, entries, own, loadArt, secrets } from './site.mjs';
 import { inlineScripts, pageReferences } from './page-refs.mjs';
 import { entryProblems } from './vocab-fields.mjs';
 import { RECORDS, readRecords, recordProblem, strokeFile, meta, COMPOSED, composedProblem, composedMeta } from './stroke-data.mjs';
@@ -83,11 +83,11 @@ const stamp = file => createHash('sha1').update(readFileSync(file)).digest('hex'
 
 // Vocab scripts: written, not typed. A page that loads vocab has them
 // between VOCAB_START and VOCAB_END: shared/numbers.js if any of them uses
-// it, shared/units.js, the dictionary (words/words.js), then every earlier
-// unit's vocab.js and its own (a
-// unit's page), or every unit's (the review pages), as loadVocab loads them
-// in Node. Every earlier unit, not only those a vocab.js borrows from, since
-// page scripts borrow too (unit 15's planner uses unit 9's clocks).
+// it, shared/units.js, the dictionary (words/words.js), then the vocab.js
+// of each unit its unit borrows from (site.mjs borrowsFrom: from its
+// vocab.js and page scripts, so unit 15's planner gets unit 9's clocks)
+// and its own (a unit's page), or every unit's (the review pages), as
+// loadVocab loads them in Node.
 const VOCAB_START = '<!-- vocab: written by node tools/check.mjs --fix -->';
 const VOCAB_END = '<!-- /vocab -->';
 const vocabUnits = unitDirs().filter(u => existsSync(join(ROOT, u, 'vocab.js')));
@@ -96,7 +96,7 @@ const DICTIONARY = 'words/words.js';
 const usesNumbers = path => readFileSync(join(ROOT, path), 'utf8').includes('Canto.');
 function vocabScripts(html) {
   const ownUnit = relative(ROOT, html).match(/^(unit\d+)\//)?.[1];
-  const loaded = ownUnit ? [...vocabUnits.filter(u => +u.slice(4) < +ownUnit.slice(4)), ownUnit] : vocabUnits;
+  const loaded = ownUnit ? [...borrowsFrom(ownUnit), ownUnit] : vocabUnits;
   const script = path => `<script src="${relative(dirname(html), join(ROOT, path))}?v=${stamp(join(ROOT, path))}"></script>`;
   const vocabs = [DICTIONARY, ...loaded.map(u => `${u}/vocab.js`)];
   return [

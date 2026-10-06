@@ -17,5 +17,5 @@ All numbers come from `Canto.number` (`shared/numbers.js`) at the bottom of voca
 ## Drawings
 0–10 are counters on a ten frame, two rows of five (6 is a full row and one more), not hand signs.
 
-## Borrowed by later units
+## Used by later units
 個 (`go`, by nearly every unit), 兩 (`loeng`), 幾多 (`gei-do`), and the numbers `n1`…`n99` (unit 7's portions, unit 11's `n10`). Later units make new numbers with `Canto.number` rather than borrowing them.

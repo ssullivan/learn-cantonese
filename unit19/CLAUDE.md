@@ -18,5 +18,5 @@ Groups: `animals` (隻 for most, 條 for long ones), `words`, `verbs`, `signs`, 
 ## Drawings
 The animals in unit 5's style (flat, outlined, a soft shadow), and the zoo gate.
 
-## Borrowed by later units
+## Used by later units
 Nothing yet. On offer: the animals (`tiger`, `panda`, `dragon`... with their pictures, counts and 一隻 / 一條 forms), 動物, 動物園, 飛, 爬樹, 走 (run), 邊, 屬, 生肖, 年, `V.zodiac` (我屬馬), and `V.abilities`.

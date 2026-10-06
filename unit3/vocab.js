@@ -1,8 +1,11 @@
 /*
- * Unit 3 vocabulary: the single source for the learn page, tools/tts.mjs
- * (audio/<id>.mp3) and tools/check.mjs (img/<id>.svg, audio files).
+ * Unit 3 vocabulary, for its pages, tools/tts.mjs and tools/check.mjs: the
+ * words it uses, from the dictionary (words/words.js; the ones it teaches
+ * are under unit 3 there, with their audio and pictures in words/), with
+ * the fields this unit adds, and the phrases and sentences it builds from
+ * them (audio/<id>.mp3 and img/<id>.svg here).
  *
- * Entry fields: id (unique in the unit, used for file names), hanzi,
+ * Entry fields: id (names its files), hanzi,
  * jyutping, english, note?, img (false = no picture), say? (text to
  * speak if not hanzi), ssml? (SSML inside <voice> to force a reading
  * the voice gets wrong), phoneme? (true: tools/tts.mjs reads the
@@ -28,7 +31,7 @@ Units.add(3, {
 
   things: [
     ...Words.list('lou-si hok-saang pang-jau hoeng-gong-jan jing-gwok-jan mei-gwok-jan'),
-    Units.word(1, 'cantonese'),
+    Words.get('cantonese'),
     Words.get('jing-man'),
   ],
 

@@ -1,8 +1,11 @@
 /*
- * Unit 9 vocabulary: the single source for the learn page, tools/tts.mjs
- * (audio/<id>.mp3) and tools/check.mjs (img/<id>.svg, audio files).
+ * Unit 9 vocabulary, for its pages, tools/tts.mjs and tools/check.mjs: the
+ * words it uses, from the dictionary (words/words.js; the ones it teaches
+ * are under unit 9 there, with their audio and pictures in words/), with
+ * the fields this unit adds, and the phrases and sentences it builds from
+ * them (audio/<id>.mp3 and img/<id>.svg here).
  *
- * Entry fields: id (unique in the unit, used for file names), hanzi,
+ * Entry fields: id (names its files), hanzi,
  * jyutping, english, note?, img (false = no picture), phoneme? (true:
  * tools/tts.mjs reads the jyutping exactly), voice? (another voice for
  * this word, e.g. 'minimax:<voice id>'), plus h and m (hour and
@@ -49,9 +52,9 @@ Units.add(9, {
 // and 飲茶 from unit 7.
 (V => {
   V.borrowed = [
-    Units.word(6, 'bun3'), Units.word(4, 'go'),
-    ...['ngo', 'nei', 'ngo-dei', 'hai', 'aa'].map(id => Units.word(3, id)),
-    Units.word(7, 'yum-cha'),
+    Words.get('bun3'), Words.get('go'),
+    ...Words.list('ngo nei ngo-dei hai aa'),
+    Words.get('yum-cha'),
   ];
 })(window.VOCAB);
 

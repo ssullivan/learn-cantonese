@@ -1,8 +1,11 @@
 /*
- * Unit 8 vocabulary: the single source for the learn page, tools/tts.mjs
- * (audio/<id>.mp3) and tools/check.mjs (img/<id>.svg, audio files).
+ * Unit 8 vocabulary, for its pages, tools/tts.mjs and tools/check.mjs: the
+ * words it uses, from the dictionary (words/words.js; the ones it teaches
+ * are under unit 8 there, with their audio and pictures in words/), with
+ * the fields this unit adds, and the phrases and sentences it builds from
+ * them (audio/<id>.mp3 and img/<id>.svg here).
  *
- * Entry fields: id (unique in the unit, used for file names), hanzi,
+ * Entry fields: id (names its files), hanzi,
  * jyutping, english, note?, img (false = no picture), measure? (id of
  * the measure word it is ordered with; must match its picture's cup or
  * bowl, which tools/check.mjs verifies), phoneme? (true: tools/tts.mjs
@@ -44,12 +47,12 @@ Units.add(8, {
 // unit 1), 甜 and 唔該埋單 (unit 7), 唔該 (unit 2), people and question
 // words (unit 3), 呢 (unit 5), and 要, 好 and $2 (unit 6).
 (V => {
-  V.measures = [Units.word(4, 'go'), ...['bui', 'wun'].map(id => Units.word(5, id)),
-    { ...Units.word(1, 'fan6'), english: 'a portion of', note: 'For a serving of food: 一份多士.' }];
+  V.measures = [Words.get('go'), ...Words.list('bui wun'),
+    { ...Words.get('fan6'), english: 'a portion of', note: 'For a serving of food: 一份多士.' }];
   V.borrowed = [
-    Units.word(4, 'n1'), Units.word(7, 'sweet'), Units.word(7, 'bill'), Units.word(2, 'm-goi'),
-    ...['ngo', 'nei', 'm', 'mat-je', 'aa'].map(id => Units.word(3, id)),
-    Units.word(5, 'ni'),
+    Units.word(4, 'n1'), Words.get('sweet'), Words.get('bill'), Units.word(2, 'm-goi'),
+    ...Words.list('ngo nei m mat-je aa'),
+    Words.get('ni'),
     ...['jiu', 'hou', 'p200'].map(id => Units.word(6, id)),
   ];
 })(window.VOCAB);

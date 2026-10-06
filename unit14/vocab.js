@@ -1,8 +1,11 @@
 /*
- * Unit 14 vocabulary: the single source for the learn page, tools/tts.mjs
- * (audio/<id>.mp3) and tools/check.mjs (img/<id>.svg, audio files).
+ * Unit 14 vocabulary, for its pages, tools/tts.mjs and tools/check.mjs: the
+ * words it uses, from the dictionary (words/words.js; the ones it teaches
+ * are under unit 14 there, with their audio and pictures in words/), with
+ * the fields this unit adds, and the phrases and sentences it builds from
+ * them (audio/<id>.mp3 and img/<id>.svg here).
  *
- * Entry fields: id (unique in the unit, used for file names), hanzi,
+ * Entry fields: id (names its files), hanzi,
  * jyutping, english, note?, img (false = no picture), measure? (id of
  * the measure word it is counted with), phoneme? (true: tools/tts.mjs
  * reads the jyutping exactly), plus part (the body part) on aches (頭痛),
@@ -47,19 +50,19 @@ Units.add(14, {
 // 醫院 去 邊度 (unit 11), and 啦 有啲 (unit 13).
 (V => {
   V.measures = [
-    Units.word(4, 'go'),
-    { ...Units.word(5, 'zek'), english: 'for animals; one of a pair', note: 'One hand, one eye, one ear, one foot: 一隻手. And teeth.' },
-    { ...Units.word(5, 'tiu'), note: 'For long, thin things: 一條褲, and 條喉嚨.' },
-    Units.word(5, 'wun'),
+    Words.get('go'),
+    { ...Words.get('zek'), english: 'for animals; one of a pair', note: 'One hand, one eye, one ear, one foot: 一隻手. And teeth.' },
+    { ...Words.get('tiu'), note: 'For long, thin things: 一條褲, and 條喉嚨.' },
+    Words.get('wun'),
   ];
   V.borrowed = [
-    Units.word(1, 'water'),
-    ...['ngo', 'nei', 'keoi', 'm', 'aa'].map(id => Units.word(3, id)),
-    ...['jau', 'di', 'rice'].map(id => Units.word(5, id)),
-    ...['jiu', 'hou'].map(id => Units.word(6, id)),
-    ...['sik6', 'jam2', 'do'].map(id => Units.word(8, id)),
-    Units.word(9, 'gam-jat'),
-    ...['hospital', 'heoi', 'bin-dou'].map(id => Units.word(11, id)),
+    Words.get('water'),
+    ...Words.list('ngo nei keoi m aa'),
+    ...Words.list('jau di rice'),
+    ...Words.list('jiu hou'),
+    ...Words.list('sik6 jam2 do'),
+    Words.get('gam-jat'),
+    ...Words.list('hospital heoi bin-dou'),
     ...['laa1', 'jau-di'].map(id => Units.word(13, id)),
   ];
 })(window.VOCAB);

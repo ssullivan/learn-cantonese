@@ -16,5 +16,5 @@ Groups: `parents`, `siblings`, `grandparents`, `own`, `words`, `measures`, `thin
 ## Drawings
 Each family word is a small family tree: 我 in gold, the person or people meant in colour with an arrow, the rest grey. Tree A is the family you grow up in (grandparents, parents, brothers and sisters); tree B is your own (partner and children).
 
-## Borrowed by later units
+## Used by later units
 The family words (`dad`, `elder-sister`...) with their family-tree pictures, 嘅, 同, 住 (`zyu`), and 屋企 (`home`; units 11, 15, 21).

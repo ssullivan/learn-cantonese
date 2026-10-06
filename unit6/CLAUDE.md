@@ -16,5 +16,5 @@ Prices come from `Canto.price` and sentences from `Units.sentences` at the botto
 ## Drawings
 The new things to buy, and Hong Kong coins and notes, one per `cash` entry (`p200` is the $2 coin). The other things are unit 5's and unit 1's.
 
-## Borrowed by later units
+## Used by later units
 要 (`jiu`), 好 (`hou`), 半 (`bun3`), the coins (unit 8 borrows `p200`), and the things with their `price`: unit 18 compares their prices, unit 20 takes the fruit (蘋果 橙 西瓜) and their prices. Their pictures stay in unit 5.

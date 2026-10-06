@@ -17,5 +17,5 @@ Groups: `basics`, `colours` (with `fill` and `line`), `clothes`, `measures`, `on
 ## Drawings
 A paint swatch for every colour, the standing figure (打扮), and the clothes, each drawn in the figure's own coordinates so it fits. `art.mjs` loads vocab.js for `fit`.
 
-## Borrowed by later units
+## Used by later units
 The colours (`hung`, `laam`... with their swatches and `fill`), the clothes, 著 / 戴 (`zoek`, `daai`), 頂, the measure for hats (`deng`, unit 13).

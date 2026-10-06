@@ -1,8 +1,11 @@
 /*
- * Unit 18 vocabulary: the single source for the learn page, tools/tts.mjs
- * (audio/<id>.mp3) and tools/check.mjs (img/<id>.svg, audio files).
+ * Unit 18 vocabulary, for its pages, tools/tts.mjs and tools/check.mjs: the
+ * words it uses, from the dictionary (words/words.js; the ones it teaches
+ * are under unit 18 there, with their audio and pictures in words/), with
+ * the fields this unit adds, and the phrases and sentences it builds from
+ * them (audio/<id>.mp3 and img/<id>.svg here).
  *
- * Entry fields: id (unique in the unit, used for file names), hanzi,
+ * Entry fields: id (names its files), hanzi,
  * jyutping, english, note?, img (false = no picture), phoneme? (true:
  * tools/tts.mjs reads the jyutping exactly), plus what can be compared
  * on the things and people: price (dollars, from unit 6), size (cm),
@@ -56,7 +59,7 @@ Units.add(18, {
     ...['watermelon', 'apple', 'orange', 'egg', 'bread', 'ball', 'book', 'pen', 'flower', 'shirt', 'cake',
       'trousers', 'shoes', 'chopsticks', 'fish'].map(id => add(Units.word(6, id))),
     ...['table', 'cat', 'dog', 'plane'].map(id => add(Units.word(5, id))),
-    add(Units.word(1, 'car')),
+    add(Words.get('car')),
     ...['metro', 'bus', 'minibus', 'taxi', 'tram'].map(id => add(Units.word(11, id))),
   ];
 
@@ -65,27 +68,27 @@ Units.add(18, {
     'younger-brother': [17, 150], 'younger-sister': [15, 140] };
   V.people = [
     ...Object.entries(FAMILY).map(([id, [age, height]]) => ({ ...Units.word(10, id), age, height })),
-    { ...Units.word(3, 'ngo'), age: 20, height: 170 },
+    { ...Words.get('ngo'), age: 20, height: 170 },
   ];
 
-  V.measures = [Units.word(4, 'go'), ...['zek', 'bun', 'zoeng', 'tiu', 'zi', 'gaa', 'gin', 'deoi'].map(id => Units.word(5, id))];
+  V.measures = [Words.get('go'), ...Words.list('zek bun zoeng tiu zi gaa gin deoi')];
   V.borrowed = [
-    ...['nei', 'keoi', 'hai', 'm', 'aa', 'siu-siu', 'mat-je'].map(id => Units.word(3, id)),
-    { ...Units.word(3, 'bin-go'), english: 'who; which one', note: 'Of things too: 邊個平啲呀？ Which one is cheaper?' },
-    Units.word(3, 'ngo-dei'),
-    Units.word(4, 'loeng'),
-    { ...Units.word(5, 'di'), english: 'a bit (-er)', note: 'After an adjective: 平啲, a bit cheaper; 大啲, bigger.' },
-    Units.word(5, 'ni'),
-    ...['peng', 'gwai', 'hou'].map(id => Units.word(6, id)),
-    ...['jit', 'dung', 'do', 'ding', 'sik6'].map(id => Units.word(8, id)),
-    ...['gam-jat', 'kam-jat'].map(id => Units.word(9, id)),
-    Units.word(4, 'gei-do'),
-    ...['tung', 'seoi'].map(id => Units.word(10, id)),
-    Units.word(14, 'mou'),
-    { ...Units.word(15, 'gwo'), english: 'than (after an adjective)',
+    ...Words.list('nei keoi hai m aa siu-siu mat-je'),
+    { ...Words.get('bin-go'), english: 'who; which one', note: 'Of things too: 邊個平啲呀？ Which one is cheaper?' },
+    Words.get('ngo-dei'),
+    Words.get('loeng'),
+    { ...Words.get('di'), english: 'a bit (-er)', note: 'After an adjective: 平啲, a bit cheaper; 大啲, bigger.' },
+    Words.get('ni'),
+    ...Words.list('peng gwai hou'),
+    ...Words.list('jit dung do ding sik6'),
+    ...Words.list('gam-jat kam-jat'),
+    Words.get('gei-do'),
+    ...Words.list('tung seoi'),
+    Words.get('mou'),
+    { ...Words.get('gwo'), english: 'than (after an adjective)',
       note: 'Adjective + 過 + B: 西瓜貴過蘋果. The everyday spoken way to say A 比 B.' },
     ...['zung-ji', 'jau4-water'].map(id => Units.word(16, id)),
-    Units.word(17, 'gam3'),
+    Words.get('gam3'),
   ];
 })(window.VOCAB);
 

@@ -1,8 +1,11 @@
 /*
- * Unit 17 vocabulary: the single source for the learn page, tools/tts.mjs
- * (audio/<id>.mp3) and tools/check.mjs (img/<id>.svg, audio files).
+ * Unit 17 vocabulary, for its pages, tools/tts.mjs and tools/check.mjs: the
+ * words it uses, from the dictionary (words/words.js; the ones it teaches
+ * are under unit 17 there, with their audio and pictures in words/), with
+ * the fields this unit adds, and the phrases and sentences it builds from
+ * them (audio/<id>.mp3 and img/<id>.svg here).
  *
- * Entry fields: id (unique in the unit, used for file names), hanzi,
+ * Entry fields: id (names its files), hanzi,
  * jyutping, english, note?, img (false = no picture), phoneme? (true:
  * tools/tts.mjs reads the jyutping exactly), plus half (the id of its
  * first syllable, for A唔A: 開唔開心) on two-syllable feelings, feeling
@@ -55,27 +58,27 @@ Units.add(17, {
 // measure words those nouns are counted with, 個 and 隻.
 (V => {
   V.halves.push(
-    { ...Units.word(14, 'eye'), note: '眼瞓 asked A唔A: 眼唔眼瞓.' },
-    { ...Units.word(14, 'stomach'), note: '肚餓 asked A唔A: 肚唔肚餓.' },
-    { ...Units.word(15, 'gan'), english: 'tight', note: 'As in 緊張. After a verb it is -ing (Unit 15).' },
+    { ...Words.get('eye'), note: '眼瞓 asked A唔A: 眼唔眼瞓.' },
+    { ...Words.get('stomach'), note: '肚餓 asked A唔A: 肚唔肚餓.' },
+    { ...Words.get('gan'), english: 'tight', note: 'As in 緊張. After a verb it is -ing (Unit 15).' },
   );
   V.particles.unshift(
-    { ...Units.word(13, 'laa1'), english: '(go on; a friendly suggestion)', note: 'laa1, high: 瞓覺啦！ Go to sleep! (Unit 13)' },
-    { ...Units.word(13, 'laa3'), english: '(now; it has changed)', note: 'laa3, mid: 我攰喇, I\'m tired now. (Unit 13)' },
+    { ...Words.get('laa1'), english: '(go on; a friendly suggestion)', note: 'laa1, high: 瞓覺啦！ Go to sleep! (Unit 13)' },
+    { ...Words.get('laa3'), english: '(now; it has changed)', note: 'laa3, mid: 我攰喇, I\'m tired now. (Unit 13)' },
   );
-  V.measures = [Units.word(4, 'go'), Units.word(5, 'zek')];
+  V.measures = [Words.get('go'), Words.get('zek')];
   V.borrowed = [
-    Units.word(1, 'water'),
-    Units.word(2, 'no-need'),
-    ...['ngo', 'nei', 'keoi', 'hai', 'm', 'aa'].map(id => Units.word(3, id)),
-    ...['dog', 'di', 'bui'].map(id => Units.word(5, id)),
-    Units.word(6, 'hou'),
-    ...['dung', 'jam2', 'sik6', 'pineapple-butter'].map(id => Units.word(8, id)),
-    { ...Units.word(9, 'dim'), english: 'how', note: 'As in 最近點呀？ (Unit 2).' },
-    ...['gam-jat', 'ting-jat', 'sik-faan'].map(id => Units.word(9, id)),
+    Words.get('water'),
+    Words.get('no-need'),
+    ...Words.list('ngo nei keoi hai m aa'),
+    ...Words.list('dog di bui'),
+    Words.get('hou'),
+    ...Words.list('dung jam2 sik6 pineapple-butter'),
+    { ...Words.get('dim'), english: 'how', note: 'As in 最近點呀？ (Unit 2).' },
+    ...Words.list('gam-jat ting-jat sik-faan'),
     Units.word(11, 'ceot-street'),
     ...['jau-di', 'm-hai-hou', 'm-hou'].map(id => Units.word(13, id)),
-    ...['zou', 'jau-sik', 'hou-faan', 'cold', 'zo2', 'mou'].map(id => Units.word(14, id)),
+    ...Words.list('zou jau-sik hou-faan cold zo2 mou'),
     ...['je', 'fan3-gaau', 'sik6-zou-caan'].map(id => Units.word(15, id)),
   ];
 })(window.VOCAB);

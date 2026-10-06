@@ -16,5 +16,5 @@ Groups: `body` (隻 for one of a pair and teeth, 個 for the rest, 條 for the t
 ## Drawings
 A body part is ringed in gold on a face (close up) or a whole figure (`face`, `figure`); an ache is the same picture with the ring in red, "ouch" lines and a pained face. Symptoms, the doctor and prescriptions (a box of pills for each time a day) use the same parts (`inBed`, `zzz`, `drop`, `puff`).
 
-## Borrowed by later units
+## Used by later units
 The body parts (`hand`, `head`, `eye`, `stomach`... with their pictures) and aches (`head-tung3`...), 醫生, 藥, 休息, 咗 (`zo2`), 冇 (`mou`), 未, 次, 日, 粒 (`nap`, unit 20's fruit).

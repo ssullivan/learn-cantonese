@@ -1,8 +1,11 @@
 /*
- * Unit 13 vocabulary: the single source for the learn page, tools/tts.mjs
- * (audio/<id>.mp3) and tools/check.mjs (img/<id>.svg, audio files).
+ * Unit 13 vocabulary, for its pages, tools/tts.mjs and tools/check.mjs: the
+ * words it uses, from the dictionary (words/words.js; the ones it teaches
+ * are under unit 13 there, with their audio and pictures in words/), with
+ * the fields this unit adds, and the phrases and sentences it builds from
+ * them (audio/<id>.mp3 and img/<id>.svg here).
  *
- * Entry fields: id (unique in the unit, used for file names), hanzi,
+ * Entry fields: id (names its files), hanzi,
  * jyutping, english, note?, img (false = no picture), phoneme? (true:
  * tools/tts.mjs reads the jyutping exactly), plus n on temperatures,
  * adj and degree on "very hot" phrases (好熱, 太凍), and for on advice
@@ -30,7 +33,7 @@ Units.add(13, {
   // How it feels. 熱 and 凍 come from Unit 8 below.
   feel: [
     ...Words.list('nyun loeng4'),
-    { ...Units.word(7, 'baked'), english: 'hot and stuffy; muggy',
+    { ...Words.get('baked'), english: 'hot and stuffy; muggy',
       note: 'Hot, humid and still, like an oven: 焗 is to bake.' },
     ...Words.list('sap gon'),
   ],
@@ -55,26 +58,26 @@ Units.add(13, {
 // with the measure words of the clothes, 件 and 頂.
 (V => {
   V.feel.unshift(
-    { ...Units.word(8, 'jit'), note: 'Hot weather, food or drinks: 今日好熱.' },
-    { ...Units.word(8, 'dung'), english: 'cold', note: 'dung3, mid and level: 冬 dung1 (winter) is high.' },
+    { ...Words.get('jit'), note: 'Hot weather, food or drinks: 今日好熱.' },
+    { ...Words.get('dung'), english: 'cold', note: 'dung3, mid and level: 冬 dung1 (winter) is high.' },
   );
   V.grammar.unshift(
-    { ...Units.word(6, 'hou'), english: 'very', note: 'Before an adjective: 好熱. It\'s there even when it\'s only a bit hot.' },
-    { ...Units.word(9, 'gei'), english: 'quite; fairly', note: 'Before an adjective: 幾熱, quite hot. In 幾點 (Unit 9) it asks which.' },
+    { ...Words.get('hou'), english: 'very', note: 'Before an adjective: 好熱. It\'s there even when it\'s only a bit hot.' },
+    { ...Words.get('gei'), english: 'quite; fairly', note: 'Before an adjective: 幾熱, quite hot. In 幾點 (Unit 9) it asks which.' },
   );
-  V.days = ['kam-jat', 'gam-jat', 'ting-jat', 'hau-jat'].map(id => Units.word(9, id));
+  V.days = Words.list('kam-jat gam-jat ting-jat hau-jat');
   V.weekdays = [1, 2, 3, 4, 5, 6, 7].map(n => Units.word(9, `wk${n}`));
-  V.measures = [Units.word(5, 'gin'), Units.word(12, 'deng')];
+  V.measures = [Words.get('gin'), Words.get('deng')];
   V.borrowed = [
-    ...['water', 'hong-kong'].map(id => Units.word(1, id)),
-    ...['ngo', 'nei', 'hai', 'm', 'aa'].map(id => Units.word(3, id)),
-    Units.word(4, 'gei-do'),
-    ...['jau', 'di', 'shirt'].map(id => Units.word(5, id)),
-    ...['jam2', 'do'].map(id => Units.word(8, id)),
-    { ...Units.word(9, 'dim'), english: 'how', note: 'As in 最近點呀？ (Unit 2).' },
+    ...Words.list('water hong-kong'),
+    ...Words.list('ngo nei hai m aa'),
+    Words.get('gei-do'),
+    ...Words.list('jau di shirt'),
+    ...Words.list('jam2 do'),
+    { ...Words.get('dim'), english: 'how', note: 'As in 最近點呀？ (Unit 2).' },
     ...['lok', 'ceot', 'ceot-street'].map(id => Units.word(11, id)),
-    { ...Units.word(11, 'dou6'), english: 'degree(s)', note: 'After the number: 三十度. In 呢度 (Unit 11) it is a place.' },
-    ...['zoek', 'daai', 'hat', 'coat'].map(id => Units.word(12, id)),
+    { ...Words.get('dou6'), english: 'degree(s)', note: 'After the number: 三十度. In 呢度 (Unit 11) it is a place.' },
+    ...Words.list('zoek daai hat coat'),
   ];
 })(window.VOCAB);
 

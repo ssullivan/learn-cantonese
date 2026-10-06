@@ -18,5 +18,5 @@ Borrows 個 (`go`) from unit 4, and unit 1's 魚 車 水 雞 牛, giving each a 
 ## Drawings
 One per noun, grouped by measure word: flat, outlined, with a soft shadow. Unit 19's animals and unit 20's fruit follow this style.
 
-## Borrowed by later units
+## Used by later units
 The measure words (`zek` 隻, `tiu` 條, `gin` 件, `wun` 碗, `di` 啲...), 呢 (`ni`), 有 (`jau`), and the things with their pictures and `one-<id>` phrases. Unit 18 takes them by way of unit 6, with prices.
