@@ -27,6 +27,13 @@
   ],
   "audio": "d99075d9c87b"
  },
+ "dak": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard nothing "
+  ],
+  "audio": "e1ae4318aadc"
+ },
  "di": {
   "verdict": "LISTEN",
   "notes": [
@@ -128,6 +135,13 @@
   ],
   "audio": "6894372675bd"
  },
+ "jiu": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard you y o u"
+  ],
+  "audio": "88e915f0586f"
+ },
  "jyutping": {
   "verdict": "LISTEN",
   "notes": [
@@ -164,6 +178,13 @@
   ],
   "audio": "99468c999b8e"
  },
+ "maai6": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard my m y"
+  ],
+  "audio": "5453c62db4bc"
+ },
  "nei": {
   "verdict": "LISTEN",
   "notes": [
@@ -186,6 +207,13 @@
   ],
   "audio": "721fc7ba4eee"
  },
+ "orange": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 慘 caam"
+  ],
+  "audio": "1ab88dbf05f3"
+ },
  "paper": {
   "verdict": "LISTEN",
   "notes": [
@@ -199,6 +227,13 @@
    "speech-to-text heard 八 baat"
   ],
   "audio": "00cae19e0bbd"
+ },
+ "peng": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 停 ting"
+  ],
+  "audio": "a695ffa98d08"
  },
  "si1": {
   "verdict": "LISTEN",

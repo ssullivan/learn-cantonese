@@ -481,22 +481,22 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 
 | # | Chinese | Jyutping | English | Audio |
 |---|---|---|---|---|
-| 1 | 錢 | cin2 | money | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/cin2.mp3) |
-| 2 | 蚊 | man1 | dollar | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/man.mp3) |
-| 3 | 毫 | hou4 | ten cents | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/hou4.mp3) |
-| 4 | 半 | bun3 | half | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/bun3.mp3) |
-| 5 | 找 | zaau2 | to give change | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/zaau.mp3) |
-| 6 | 買 | maai5 | to buy | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/maai5.mp3) |
-| 7 | 賣 | maai6 | to sell | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/maai6.mp3) |
-| 8 | 要 | jiu3 | to want; I'll take | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/jiu.mp3) |
-| 9 | 平 | peng4 | cheap | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/peng.mp3) |
-| 10 | 貴 | gwai3 | expensive | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/gwai.mp3) |
-| 11 | 好 | hou2 | very; good | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/hou.mp3) |
-| 12 | 得 | dak1 | OK; can do | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/dak.mp3) |
-| 13 | 橙 | caang2 | orange | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/orange.mp3) |
-| 14 | 雞蛋 | gai1 daan2 | egg | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/egg.mp3) |
-| 15 | 西瓜 | sai1 gwaa1 | watermelon | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/watermelon.mp3) |
-| 16 | 麵包 | min6 baau1 | bread roll | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/bread.mp3) |
+| 1 | 錢 | cin2 | money | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/cin2.mp3) |
+| 2 | 蚊 | man1 | dollar | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/man.mp3) |
+| 3 | 毫 | hou4 | ten cents | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hou4.mp3) |
+| 4 | 半 | bun3 | half | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/bun3.mp3) |
+| 5 | 找 | zaau2 | to give change | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zaau.mp3) |
+| 6 | 買 | maai5 | to buy | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/maai5.mp3) |
+| 7 | 賣 | maai6 | to sell | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/maai6.mp3) |
+| 8 | 要 | jiu3 | to want; I'll take | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jiu.mp3) |
+| 9 | 平 | peng4 | cheap | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/peng.mp3) |
+| 10 | 貴 | gwai3 | expensive | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gwai.mp3) |
+| 11 | 好 | hou2 | very; good | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hou.mp3) |
+| 12 | 得 | dak1 | OK; can do | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/dak.mp3) |
+| 13 | 橙 | caang2 | orange | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/orange.mp3) |
+| 14 | 雞蛋 | gai1 daan2 | egg | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/egg.mp3) |
+| 15 | 西瓜 | sai1 gwaa1 | watermelon | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/watermelon.mp3) |
+| 16 | 麵包 | min6 baau1 | bread roll | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/bread.mp3) |
 | 17 | 一毫 | jat1 hou4 | $0.10 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p10.mp3) |
 | 18 | 兩毫 | loeng5 hou4 | $0.20 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p20.mp3) |
 | 19 | 五毫 | ng5 hou4 | $0.50 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit6/audio/p50.mp3) |

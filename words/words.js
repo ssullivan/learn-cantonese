@@ -238,3 +238,39 @@ Words.add(5, [
     note: 'Before a measure word: 嗰本書, that book.' },
   { id: 'jau', hanzi: '有', jyutping: 'jau5', english: 'to have; there is', img: false },
 ]);
+
+// Unit 6 · Money & Shopping 買嘢
+Words.add(6, [
+  // money
+  { id: 'cin2', hanzi: '錢', jyutping: 'cin2', english: 'money', img: false, phoneme: true,
+    note: 'cin4 in writing; everyday speech says cin2, as in 幾多錢.' },
+  { id: 'man', hanzi: '蚊', jyutping: 'man1', english: 'dollar', img: false,
+    note: 'The spoken word for a dollar. Price tags write $ or 元.' },
+  { id: 'hou4', hanzi: '毫', jyutping: 'hou4', english: 'ten cents', img: false,
+    note: 'Also 毫子. 五毫 is 50 cents; Hong Kong has no smaller coin.' },
+  { id: 'bun3', hanzi: '半', jyutping: 'bun3', english: 'half', img: false,
+    note: 'After 蚊 it means 50 cents: 三蚊半, $3.50.' },
+  { id: 'zaau', hanzi: '找', jyutping: 'zaau2', english: 'to give change', img: false },
+  // words
+  { id: 'maai5', hanzi: '買', jyutping: 'maai5', english: 'to buy', img: false,
+    note: 'Low rising tone 5. 買嘢 is "to go shopping".' },
+  { id: 'maai6', hanzi: '賣', jyutping: 'maai6', english: 'to sell', img: false,
+    note: 'Low level tone 6: only the tone tells buy and sell apart.' },
+  { id: 'jiu', hanzi: '要', jyutping: 'jiu3', english: 'to want; I\'ll take', img: false,
+    note: '我要 is how you ask for something in a shop. 唔要, "don\'t want".' },
+  { id: 'peng', hanzi: '平', jyutping: 'peng4', english: 'cheap', img: false, phoneme: true,
+    note: 'peng4 in speech; ping4 in words like 和平 (peace).' },
+  { id: 'gwai', hanzi: '貴', jyutping: 'gwai3', english: 'expensive', img: false },
+  { id: 'hou', hanzi: '好', jyutping: 'hou2', english: 'very; good', img: false,
+    note: 'Before an adjective: 好貴, very expensive. An adjective needs no 係.' },
+  { id: 'dak', hanzi: '得', jyutping: 'dak1', english: 'OK; can do', img: false,
+    note: '得唔得？ asks "is that OK?". Answer 得 (yes) or 唔得 (no).' },
+  // things
+  { id: 'orange', hanzi: '橙', jyutping: 'caang2', english: 'orange', measure: 'go', counted: ['an orange', 'oranges'] },
+  { id: 'egg', hanzi: '雞蛋', jyutping: 'gai1 daan2', english: 'egg', measure: 'zek', counted: ['an egg', 'eggs'], phoneme: true,
+    note: '蛋 is daan6, but 雞蛋 changes to daan2. Eggs take 隻.' },
+  { id: 'watermelon', hanzi: '西瓜', jyutping: 'sai1 gwaa1', english: 'watermelon', measure: 'go',
+    note: 'Literally "western melon".' },
+  { id: 'bread', hanzi: '麵包', jyutping: 'min6 baau1', english: 'bread roll', measure: 'go',
+    note: '麵包 is any bread; a roll or bun takes 個.' },
+]);

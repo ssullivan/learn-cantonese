@@ -17,42 +17,20 @@ Units.add(6, {
   write: '平半西',
 
   money: [
-    { id: 'cin2', hanzi: '錢', jyutping: 'cin2', english: 'money', img: false, phoneme: true,
-      note: 'cin4 in writing; everyday speech says cin2, as in 幾多錢.' },
-    { id: 'man', hanzi: '蚊', jyutping: 'man1', english: 'dollar', img: false,
-      note: 'The spoken word for a dollar. Price tags write $ or 元.' },
-    { id: 'hou4', hanzi: '毫', jyutping: 'hou4', english: 'ten cents', img: false,
-      note: 'Also 毫子. 五毫 is 50 cents; Hong Kong has no smaller coin.' },
-    { id: 'bun3', hanzi: '半', jyutping: 'bun3', english: 'half', img: false,
-      note: 'After 蚊 it means 50 cents: 三蚊半, $3.50.' },
-    { id: 'zaau', hanzi: '找', jyutping: 'zaau2', english: 'to give change', img: false },
+    ...Words.list('cin2 man hou4 bun3 zaau'),
   ],
 
   words: [
-    { id: 'maai5', hanzi: '買', jyutping: 'maai5', english: 'to buy', img: false,
-      note: 'Low rising tone 5. 買嘢 is "to go shopping".' },
-    { id: 'maai6', hanzi: '賣', jyutping: 'maai6', english: 'to sell', img: false,
-      note: 'Low level tone 6: only the tone tells buy and sell apart.' },
-    { id: 'jiu', hanzi: '要', jyutping: 'jiu3', english: 'to want; I\'ll take', img: false,
-      note: '我要 is how you ask for something in a shop. 唔要, "don\'t want".' },
-    { id: 'peng', hanzi: '平', jyutping: 'peng4', english: 'cheap', img: false, phoneme: true,
-      note: 'peng4 in speech; ping4 in words like 和平 (peace).' },
-    { id: 'gwai', hanzi: '貴', jyutping: 'gwai3', english: 'expensive', img: false },
-    { id: 'hou', hanzi: '好', jyutping: 'hou2', english: 'very; good', img: false,
-      note: 'Before an adjective: 好貴, very expensive. An adjective needs no 係.' },
-    { id: 'dak', hanzi: '得', jyutping: 'dak1', english: 'OK; can do', img: false,
-      note: '得唔得？ asks "is that OK?". Answer 得 (yes) or 唔得 (no).' },
+    ...Words.list('maai5 maai6 jiu peng gwai hou dak'),
   ],
 
   // Things to buy: `price` is roughly what one costs. More come from units
   // 5 and 1 below.
   things: [
-    { id: 'orange', measure: 'go', price: 3.5, hanzi: '橙', jyutping: 'caang2', english: 'orange', counted: ['an orange', 'oranges'] },
-    { id: 'egg', measure: 'zek', price: 2.2, hanzi: '雞蛋', jyutping: 'gai1 daan2', english: 'egg', counted: ['an egg', 'eggs'], phoneme: true,
-      note: '蛋 is daan6, but 雞蛋 changes to daan2. Eggs take 隻.' },
-    { id: 'watermelon', measure: 'go', price: 45, hanzi: '西瓜', jyutping: 'sai1 gwaa1', english: 'watermelon', note: 'Literally "western melon".' },
-    { id: 'bread', measure: 'go', price: 8.5, hanzi: '麵包', jyutping: 'min6 baau1', english: 'bread roll',
-      note: '麵包 is any bread; a roll or bun takes 個.' },
+    { ...Words.get('orange'), price: 3.5 },
+    { ...Words.get('egg'), price: 2.2 },
+    { ...Words.get('watermelon'), price: 45 },
+    { ...Words.get('bread'), price: 8.5 },
   ],
 });
 

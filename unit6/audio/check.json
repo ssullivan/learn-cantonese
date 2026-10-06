@@ -1,11 +1,4 @@
 {
- "dak": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard nothing "
-  ],
-  "audio": "e1ae4318aadc"
- },
  "gei-do-cin2-aa": {
   "verdict": "CHECK",
   "notes": [
@@ -21,20 +14,6 @@
    "tone doubtful: 嗰 tone 2 sounds like 5 (p 0.06)"
   ],
   "audio": "09bd41d9d2bf"
- },
- "jiu": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard you y o u"
-  ],
-  "audio": "88e915f0586f"
- },
- "maai6": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard my m y"
-  ],
-  "audio": "5453c62db4bc"
  },
  "ngo-jiu-loeng-go-orange": {
   "verdict": "LISTEN",
@@ -86,13 +65,6 @@
    "tone doubtful: 一 tone 1 sounds like 6 (p 0.23); 個 tone 3 sounds like 6 (p 0.09)"
   ],
   "audio": "ce6b256f7b23"
- },
- "orange": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 慘 caam"
-  ],
-  "audio": "1ab88dbf05f3"
  },
  "p1250": {
   "verdict": "LISTEN",
@@ -172,13 +144,6 @@
    "speech-to-text heard 8008蚊 baat cin ling baat man"
   ],
   "audio": "cb4cf8036d65"
- },
- "peng": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 停 ting"
-  ],
-  "audio": "a695ffa98d08"
  },
  "peng-di-dak-m-dak-aa": {
   "verdict": "LISTEN",
