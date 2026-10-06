@@ -630,6 +630,13 @@
   ],
   "audio": "54211e545cfe"
  },
+ "po": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 撲 pok"
+  ],
+  "audio": "e0eb73c50904"
+ },
  "sai": {
   "verdict": "LISTEN",
   "notes": [
@@ -720,6 +727,13 @@
    "speech-to-text heard Song s o n g"
   ],
   "audio": "d04b55694fcf"
+ },
+ "strawberry": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 士 tone 6 sounds like 3 (p 0.43)"
+  ],
+  "audio": "28e5fb4e70ac"
  },
  "suk": {
   "verdict": "LISTEN",

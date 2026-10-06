@@ -2247,25 +2247,25 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 
 | # | Chinese | Jyutping | English | Audio |
 |---|---|---|---|---|
-| 1 | 香蕉 | hoeng1 ziu1 | banana | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/banana.mp3) |
-| 2 | 提子 | tai4 zi2 | grapes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/grapes.mp3) |
-| 3 | 士多啤梨 | si6 do1 be1 lei2 | strawberry | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/strawberry.mp3) |
-| 4 | 芒果 | mong1 gwo2 | mango | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/mango.mp3) |
-| 5 | 菠蘿 | bo1 lo4 | pineapple | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/pineapple.mp3) |
-| 6 | 啤梨 | be1 lei2 | pear | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/pear.mp3) |
-| 7 | 菜心 | coi3 sam1 | choy sum | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/choy-sum.mp3) |
-| 8 | 白菜 | baak6 coi3 | bok choy | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/bok-choy.mp3) |
-| 9 | 番茄 | faan1 ke2 | tomato | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/tomato.mp3) |
-| 10 | 薯仔 | syu4 zai2 | potato | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/potato.mp3) |
-| 11 | 紅蘿蔔 | hung4 lo4 baak6 | carrot | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/carrot.mp3) |
-| 12 | 生果 | saang1 gwo2 | fruit | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/saang-gwo.mp3) |
-| 13 | 菜 | coi3 | vegetables; greens | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/coi.mp3) |
-| 14 | 街市 | gaai1 si5 | wet market | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/gaai-si.mp3) |
-| 15 | 斤 | gan1 | catty (about 600 g) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/gan1.mp3) |
-| 16 | 一共 | jat1 gung6 | altogether; in total | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/jat-gung.mp3) |
-| 17 | 新鮮 | san1 sin1 | fresh | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/san-sin.mp3) |
-| 18 | 酸 | syun1 | sour | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/syun.mp3) |
-| 19 | 棵 | po1 | for plants | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/po.mp3) |
+| 1 | 香蕉 | hoeng1 ziu1 | banana | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/banana.mp3) |
+| 2 | 提子 | tai4 zi2 | grapes | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/grapes.mp3) |
+| 3 | 士多啤梨 | si6 do1 be1 lei2 | strawberry | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/strawberry.mp3) |
+| 4 | 芒果 | mong1 gwo2 | mango | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/mango.mp3) |
+| 5 | 菠蘿 | bo1 lo4 | pineapple | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/pineapple.mp3) |
+| 6 | 啤梨 | be1 lei2 | pear | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/pear.mp3) |
+| 7 | 菜心 | coi3 sam1 | choy sum | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/choy-sum.mp3) |
+| 8 | 白菜 | baak6 coi3 | bok choy | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/bok-choy.mp3) |
+| 9 | 番茄 | faan1 ke2 | tomato | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/tomato.mp3) |
+| 10 | 薯仔 | syu4 zai2 | potato | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/potato.mp3) |
+| 11 | 紅蘿蔔 | hung4 lo4 baak6 | carrot | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/carrot.mp3) |
+| 12 | 生果 | saang1 gwo2 | fruit | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/saang-gwo.mp3) |
+| 13 | 菜 | coi3 | vegetables; greens | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/coi.mp3) |
+| 14 | 街市 | gaai1 si5 | wet market | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gaai-si.mp3) |
+| 15 | 斤 | gan1 | catty (about 600 g) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gan1.mp3) |
+| 16 | 一共 | jat1 gung6 | altogether; in total | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jat-gung.mp3) |
+| 17 | 新鮮 | san1 sin1 | fresh | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/san-sin.mp3) |
+| 18 | 酸 | syun1 | sour | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/syun.mp3) |
+| 19 | 棵 | po1 | for plants | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/po.mp3) |
 | 20 | 一條香蕉 | jat1 tiu4 hoeng1 ziu1 | a banana | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/one-banana.mp3) |
 | 21 | 一粒提子 | jat1 nap1 tai4 zi2 | a grape | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/one-grapes.mp3) |
 | 22 | 一粒士多啤梨 | jat1 nap1 si6 do1 be1 lei2 | a strawberry | [▶ play](https://ssullivan.github.io/learn-cantonese/unit20/audio/one-strawberry.mp3) |

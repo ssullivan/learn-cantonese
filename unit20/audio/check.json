@@ -231,26 +231,12 @@
   ],
   "audio": "9f872290bf7a"
  },
- "po": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 撲 pok"
-  ],
-  "audio": "e0eb73c50904"
- },
  "potato-gei-do-cin2-w1-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 幾 tone 2 sounds like 6 (p 0.02); 呀 tone 3 sounds like 1 (p 0.01)"
   ],
   "audio": "a7435966f9da"
- },
- "strawberry": {
-  "verdict": "LISTEN",
-  "notes": [
-   "tone doubtful: 士 tone 6 sounds like 3 (p 0.43)"
-  ],
-  "audio": "28e5fb4e70ac"
  },
  "strawberry-gei-do-cin2-w1-aa": {
   "verdict": "CHECK",

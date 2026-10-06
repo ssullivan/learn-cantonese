@@ -948,3 +948,43 @@ Words.add(19, [
   { id: 'z-hau', hanzi: '猴', jyutping: 'hau4', english: 'Monkey (zodiac)', img: false,
     note: 'Everyday: 馬騮.' },
 ]);
+
+// Unit 20 · Fruit & Vegetables 生果同菜
+Words.add(20, [
+  // fruit
+  { id: 'banana', hanzi: '香蕉', jyutping: 'hoeng1 ziu1', english: 'banana', measure: 'tiu',
+    note: 'One banana is 一條; a whole hand of them, 一梳 so1.' },
+  { id: 'grapes', hanzi: '提子', jyutping: 'tai4 zi2', english: 'grapes', measure: 'nap', counted: ['a grape', 'grapes'],
+    note: 'One grape is 一粒; a bunch, 一串 cyun3.' },
+  { id: 'strawberry', hanzi: '士多啤梨', jyutping: 'si6 do1 be1 lei2', english: 'strawberry', measure: 'nap', counted: ['a strawberry', 'strawberries'],
+    note: 'From the English word, like 啤梨.' },
+  { id: 'mango', hanzi: '芒果', jyutping: 'mong1 gwo2', english: 'mango', measure: 'go', counted: ['a mango', 'mangoes'] },
+  { id: 'pineapple', hanzi: '菠蘿', jyutping: 'bo1 lo4', english: 'pineapple', measure: 'go',
+    note: 'The 菠蘿 in 菠蘿油 (Unit 8): its crackly top looks like one.' },
+  { id: 'pear', hanzi: '啤梨', jyutping: 'be1 lei2', english: 'pear', measure: 'go',
+    note: 'From the English "pear". In writing, 梨 lei4.' },
+  // veg
+  { id: 'choy-sum', hanzi: '菜心', jyutping: 'coi3 sam1', english: 'choy sum', measure: 'po', counted: ['a head of choy sum', 'choy sum'],
+    note: '"Vegetable heart": the everyday Hong Kong green.' },
+  { id: 'bok-choy', hanzi: '白菜', jyutping: 'baak6 coi3', english: 'bok choy', measure: 'po', counted: ['a head of bok choy', 'bok choy'],
+    note: '"White vegetable".' },
+  { id: 'tomato', hanzi: '番茄', jyutping: 'faan1 ke2', english: 'tomato', measure: 'go', counted: ['a tomato', 'tomatoes'],
+    note: 'A fruit to a botanist, but 菜 in the kitchen and at the market.' },
+  { id: 'potato', hanzi: '薯仔', jyutping: 'syu4 zai2', english: 'potato', measure: 'go', counted: ['a potato', 'potatoes'] },
+  { id: 'carrot', hanzi: '紅蘿蔔', jyutping: 'hung4 lo4 baak6', english: 'carrot', measure: 'tiu',
+    note: '"Red radish"; 白蘿蔔 is the white one.' },
+  // words
+  { id: 'saang-gwo', hanzi: '生果', jyutping: 'saang1 gwo2', english: 'fruit', img: false },
+  { id: 'coi', hanzi: '菜', jyutping: 'coi3', english: 'vegetables; greens', img: false,
+    note: 'Also a dish of food: 叫菜, to order dishes.' },
+  { id: 'gaai-si', hanzi: '街市', jyutping: 'gaai1 si5', english: 'wet market',
+    note: '"Street market": fresh fruit, vegetables, fish and meat, sold by weight.' },
+  { id: 'gan1', hanzi: '斤', jyutping: 'gan1', english: 'catty (about 600 g)',
+    note: 'Markets price things by the 斤, about 600 grams.' },
+  { id: 'jat-gung', hanzi: '一共', jyutping: 'jat1 gung6', english: 'altogether; in total', img: false },
+  { id: 'san-sin', hanzi: '新鮮', jyutping: 'san1 sin1', english: 'fresh', img: false },
+  { id: 'syun', hanzi: '酸', jyutping: 'syun1', english: 'sour', img: false },
+  // measures
+  { id: 'po', hanzi: '棵', jyutping: 'po1', english: 'for plants', img: false, phoneme: true,
+    note: 'Greens and trees: 一棵菜心.' },
+]);
