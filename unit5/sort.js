@@ -32,7 +32,7 @@
 
   // Sort: tap everything counted with one measure word.
   function sort(stage, ctx) {
-    const [m] = pick(V.measures, 1);
+    const m = ctx.draw(V.measures);
     const want = pick(V.things.filter(t => t.measure === m.id), 3);
     const cart = shuffle([...want, ...pick(V.things.filter(t => t.measure !== m.id), 6 - want.length)]);
     const say = () => ctx.play(m);
@@ -57,7 +57,7 @@
   // 呢 or 嗰: the thing is next to you or over there. The wrong options
   // swap 呢 / 嗰, or the measure word.
   function thisThat(stage, ctx) {
-    const [t] = pick(V.things, 1);
+    const t = ctx.draw(V.things);
     const near = Math.random() < 0.5;
     const right = byId[`${near ? 'this' : 'that'}-${t.id}`];
     const [wrongM] = pick(V.measures.filter(m => m.id !== t.measure), 1);

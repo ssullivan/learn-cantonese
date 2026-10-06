@@ -28,7 +28,7 @@
   function round({ pool, vocab, decoys = [], extra = 2, say = false }) {
     const byId = Units.byId(vocab);
     return (stage, ctx) => {
-      const [e] = pick(pool, 1);
+      const e = ctx.draw(pool);
       if (say) ctx.after = SayIt.practice(e);
       const words = e.words.map(id => byId[id]);
       const own = (e.decoys ?? []).filter(id => !e.words.includes(id));

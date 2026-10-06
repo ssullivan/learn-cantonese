@@ -1,0 +1,5 @@
+# Credentials live in ~/.config/learning-cantonese/config.env, never here.
+.env
+.env.*
+*.env
+node_modules/

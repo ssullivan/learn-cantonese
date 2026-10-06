@@ -32,7 +32,7 @@
   }
 
   const round = ({ pool, choices, tones }) => (stage, ctx) => {
-    const [e] = pick(pool, 1);
+    const e = ctx.draw(pool);
     const say = () => ctx.play(e);
 
     const head = Canto.speech('聽', `<span class="hanzi" lang="zh-HK">${esc(e.hanzi)}</span> ${esc(e.english)}<br>Which tones do you hear?`, say);

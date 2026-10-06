@@ -50,7 +50,7 @@
 
   // Hear a thing to do, tap its picture.
   const what = (stage, ctx) => {
-    const [e] = pick(V.activities, 1);
+    const e = ctx.draw(V.activities);
     const say = () => ctx.play(e);
     ctx.answer = answerText(e);
     stage.replaceChildren(speech('聽', '做乜嘢？ What do they do?', say),
@@ -60,7 +60,7 @@
 
   // Hear 我七點起身, tap the clock.
   const when = (stage, ctx) => {
-    const [e] = pick(V.when, 1);
+    const e = ctx.draw(V.when);
     const [h, m] = byId[e.act].at;
     const right = clock(h * 60 + m);
     const near = shuffle(Canto.nearTime(h % 12 || 12, m)).slice(0, 3).map(([nh, nm]) => clock(nh * 60 + nm));
@@ -74,7 +74,7 @@
   // Hear 先…然後, …之後 or …之前; tap the two pictures in the order they
   // happen.
   const order = (stage, ctx) => {
-    const [e] = pick(V.sequence, 1);
+    const e = ctx.draw(V.sequence);
     const want = [byId[e.first], byId[e.then]];
     const options = shuffle([...want, ...pick(V.activities.filter(a => !want.includes(a)), 2)]);
     const tapped = [];

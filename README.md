@@ -73,6 +73,7 @@ node tools/audio-check.mjs unit9   # machine-check clips: which ones need a list
 node tools/stroke-check.mjs  # check characters' stroke order against Hong Kong's standard (needs Playwright)
 node tools/strokes.mjs       # tools/strokes-hk.json → strokes/*.json
 node tools/check.mjs --fix   # check links/assets, update cache stamps
+git config core.hooksPath .githooks   # run check.mjs before every commit (once per clone)
 python3 -m http.server       # preview at http://localhost:8000
 ```
 

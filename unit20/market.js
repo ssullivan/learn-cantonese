@@ -19,7 +19,7 @@
 
   // Hear it, tap it.
   const hear = (stage, ctx) => {
-    const [e] = pick(produce, 1);
+    const e = ctx.draw(produce);
     const say = () => ctx.play(e);
     ctx.answer = Game.answerText(e);
     stage.replaceChildren(speech('聽', '邊樣？ Which one?', say),
@@ -30,7 +30,7 @@
   // 生果定菜？
   const kinds = { fruit: byId['saang-gwo'], veg: byId.coi };
   const sort = (stage, ctx) => {
-    const [e] = pick(produce, 1);
+    const e = ctx.draw(produce);
     const right = kinds[e.kind];
     const img = $('img', 'prompt-pic');
     img.src = imgSrc(e);
@@ -42,7 +42,7 @@
 
   // The customer asks 香蕉幾多錢一斤呀？: read the sign and answer.
   const sign = (stage, ctx) => {
-    const [q] = pick(V.asks, 1);
+    const q = ctx.draw(V.asks);
     const t = byId[q.thing];
     const right = V.perCatty.find(p => p.n === t.catty);
     const say = () => ctx.play(q);
@@ -55,7 +55,7 @@
 
   // Hear 我要斤半菠蘿: how much does the customer want?
   const weigh = (stage, ctx) => {
-    const [o] = pick(V.orders, 1);
+    const o = ctx.draw(V.orders);
     const w = byId[o.weight];
     const say = () => ctx.play(o);
     playOnReveal(ctx, w);
@@ -67,7 +67,7 @@
 
   // Hear the order, read the sign: what does it come to?
   const total = (stage, ctx) => {
-    const [o] = pick(V.orders, 1);
+    const o = ctx.draw(V.orders);
     const t = byId[o.thing], w = byId[o.weight], right = byId[o.total];
     // Wrong answers: the same price for another weight.
     const others = [...new Set(V.weights.filter(x => x !== w).map(x => t.catty * x.n))]

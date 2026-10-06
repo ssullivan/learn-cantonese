@@ -23,7 +23,7 @@
 
   // Hear a price, tap it.
   const hear = pool => (stage, ctx) => {
-    const [e] = pick(pool, 1);
+    const e = ctx.draw(pool);
     const say = () => ctx.play(e);
     const grid = choose(ctx, e, shuffle([e, ...confusable(e, pool, 3)]), o => esc(o.english), 'choice-grid nums');
     ctx.answer = answerText(e);
@@ -33,7 +33,7 @@
 
   // See a price tag, pick how to say it; the answer plays afterwards.
   function read(stage, ctx) {
-    const [e] = pick(prices, 1);
+    const e = ctx.draw(prices);
     const grid = choose(ctx, e, shuffle([e, ...confusable(e, prices, 3)]), o => zh(o.hanzi, o.jyutping));
     grid.addEventListener('click', ev => { if (ev.target.closest('button')) ctx.play(e); });
     ctx.answer = answerText(e);
@@ -43,7 +43,7 @@
   // Hear what a thing costs and pay exactly that: tap coins and notes onto
   // the counter (tap one there to take it back), then Pay.
   function pay(stage, ctx) {
-    const [t] = pick(V.things, 1);
+    const t = ctx.draw(V.things);
     const price = byN.get(t.price);
     const say = () => ctx.play([one(t), price]);
     const till = $('div', 'till');
@@ -89,7 +89,7 @@
   // A thing at a silly price: say 好平 or 好貴. The price is at most an
   // eighth of what it usually costs, or at least eight times it.
   function cheapOrDear(stage, ctx) {
-    const [t] = pick(V.things, 1);
+    const t = ctx.draw(V.things);
     const cheap = prices.filter(p => p.n <= t.price / 8), dear = prices.filter(p => p.n >= t.price * 8);
     const isCheap = !dear.length || (cheap.length && Math.random() < 0.5);
     const [price] = pick(isCheap ? cheap : dear, 1);

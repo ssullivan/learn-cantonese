@@ -48,7 +48,7 @@
   // Count them: n pictures; pick the count. Wrong options are off by one,
   // or use another measure word.
   function countThem(stage, ctx) {
-    const [c] = pick(V.counts, 1);
+    const c = ctx.draw(V.counts);
     const t = byId[c.thing];
     const [wrongM] = pick(V.measures.filter(m => m.id !== t.measure), 1);
     const right = { key: 'right', ...counted(c.n, t) };
@@ -62,7 +62,7 @@
   // Hear a count; tap the matching group. The others change the number,
   // the thing, or both.
   function hearIt(stage, ctx) {
-    const [c] = pick(V.counts, 1);
+    const c = ctx.draw(V.counts);
     const t = byId[c.thing];
     const [other] = pick(V.things.filter(x => x !== t), 1);
     const n2 = c.n === 2 ? 3 : c.n === MAX ? c.n - 1 : pick([c.n - 1, c.n + 1], 1)[0];

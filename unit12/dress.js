@@ -8,7 +8,7 @@
 
   // Hear a colour, tap its swatch.
   function colour(stage, ctx) {
-    const [e] = pick(V.colours, 1);
+    const e = ctx.draw(V.colours);
     const say = () => ctx.play(e);
     ctx.answer = answerText(e);
     stage.replaceChildren(speech('聽', '乜嘢顏色？ Which colour do you hear?', say),
@@ -25,7 +25,7 @@
 
   // Hear 紅色嘅衫, tap it.
   function garment(stage, ctx) {
-    const [e] = pick(V.coloured, 1);
+    const e = ctx.draw(V.coloured);
     const say = () => ctx.play(e);
     ctx.answer = answerText(e);
     stage.replaceChildren(speech('聽', 'Which one do you hear?', say),
@@ -35,7 +35,7 @@
 
   // See a garment: 我著… or 我戴…? The right one plays afterwards.
   function wear(stage, ctx) {
-    const [e] = pick(V.wear, 1);
+    const e = ctx.draw(V.wear);
     const thing = byId[e.thing];
     const [right, wrong] = e.words[1] === 'zoek' ? ['zoek', 'daai'] : ['daai', 'zoek'];
     const other = { id: 'other', hanzi: `我${byId[wrong].hanzi}${thing.hanzi}`, jyutping: `ngo5 ${byId[wrong].jyutping} ${thing.jyutping}` };

@@ -12,7 +12,7 @@
 
   // Hear a place or a way to travel, tap its picture.
   function hear(stage, ctx) {
-    const [e] = pick(things, 1);
+    const e = ctx.draw(things);
     const say = () => ctx.play(e);
     ctx.answer = answerText(e);
     stage.replaceChildren(speech('聽', '邊度？ Which one do you hear?', say),

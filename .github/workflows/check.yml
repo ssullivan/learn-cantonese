@@ -1,0 +1,16 @@
+# Runs the site checks (tools/check.mjs: links, stamps, vocab ↔ audio ↔ art,
+# stroke files, tests) on every push and pull request. No keys here, so the
+# key scan is skipped; the pre-commit hook (.githooks/) runs it locally.
+name: Check
+on:
+  push:
+  pull_request:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node tools/check.mjs

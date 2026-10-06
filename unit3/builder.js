@@ -14,7 +14,7 @@
   const no = noun => option([byId['m-hai-aa'], byId[`keoi-hai-${noun}`]]);
 
   function answerBack(stage, ctx) {
-    const [q] = pick(questions, 1);
+    const q = ctx.draw(questions);
     const asked = NOUNS.find(n => q.words.includes(n));
     const shown = Math.random() < 0.5 ? asked : pick(NOUNS.filter(n => n !== asked), 1)[0];
     const noes = Object.fromEntries(NOUNS.filter(n => n !== asked).map(n => [n, no(n)]));

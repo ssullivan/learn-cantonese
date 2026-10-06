@@ -8,7 +8,7 @@
 
   // Hear something, tap its picture among others from the same pool.
   const hear = (pool, ask) => (stage, ctx) => {
-    const [e] = pick(pool, 1);
+    const e = ctx.draw(pool);
     const say = () => ctx.play(e);
     ctx.answer = answerText(e);
     stage.replaceChildren(speech('聽', ask, say),

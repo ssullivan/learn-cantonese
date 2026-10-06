@@ -20,7 +20,7 @@
 
   // Hear a feeling, tap its face.
   const what = (stage, ctx) => {
-    const [e] = pick(faces, 1);
+    const e = ctx.draw(faces);
     const say = () => ctx.play(e);
     ctx.answer = tell(e);
     const others = pick(faces.filter(o => !near(o.id, e.id)), 3);
@@ -31,7 +31,7 @@
 
   // A face, and a question about it: 你開唔開心呀？ Answer 開心 or 唔開心.
   const ask = (stage, ctx) => {
-    const [f] = pick(V.feelings, 1);
+    const f = ctx.draw(V.feelings);
     const yes = Math.random() < 0.5;
     const [q] = yes ? V.asks.filter(a => a.feeling === f.id) : pick(V.asks.filter(a => !near(a.feeling, f.id)), 1);
     const [y, n] = q.answers.map(id => byId[id]);
@@ -47,7 +47,7 @@
   // A friend says 我好攰; say something kind with 啦.
   const helped = V.feelings.filter(f => V.comfort.some(c => c.for.includes(f.id)));
   const comfort = (stage, ctx) => {
-    const [f] = pick(helped, 1);
+    const f = ctx.draw(helped);
     const line = byId[`ngo-hou-${f.id}`];
     const [right] = pick(V.comfort.filter(c => c.for.includes(f.id)), 1);
     const wrong = pick(V.comfort.filter(c => !c.for.some(id => near(id, f.id))), 3);
@@ -63,7 +63,7 @@
   // gloss: show what each particle does on its button.
   const sentences = [...V.particled, ...V.comfort];
   const particle = gloss => (stage, ctx) => {
-    const [e] = pick(sentences, 1);
+    const e = ctx.draw(sentences);
     const p = byId[e.particle];
     const body = e.words.slice(0, -1).map(id => byId[id]);
     const gap = `${zh(body.map(w => w.hanzi).join(''), body.map(w => w.jyutping).join(' '))}＿`;
@@ -77,7 +77,7 @@
 
   // Hear a sentence with a particle; pick what it means.
   const hear = (stage, ctx) => {
-    const [e] = pick(sentences, 1);
+    const e = ctx.draw(sentences);
     const say = () => ctx.play(e);
     ctx.answer = tell(e);
     const others = pick(sentences.filter(o => o.english !== e.english), 3);

@@ -26,7 +26,12 @@
  *     }],
  *   })
  *
- * ctx: { level, labels, done(correct), answer, reveal, after, play(entries) }
+ * ctx: { level, labels, done(correct), answer, reveal, after, play(entries),
+ *        draw(pool) }
+ *   ctx.draw(pool) picks the round's word (or question) from `pool`: every
+ *   item comes up once before any repeats, and never twice in a row, over
+ *   a whole play of the level (Canto.deck). Use it, not Canto.pick, for
+ *   what the round asks about; pick is fine for wrong answers.
  *
  * Helpers for rounds:
  *   Game.choose(ctx, answer, options, label, gridCls = 'choice-grid')
@@ -123,6 +128,7 @@
       let timer = null;
       let alive = true;
       let current = null;  // the round's ctx
+      const draw = Canto.deck();
       const leave = () => current?.after?.stop?.();
 
       const hud = $('div', 'hud');
@@ -185,6 +191,7 @@
           after: null,
           finished: false,
           play: Canto.play,
+          draw,
           done(correct, timedOut = false) {
             if (ctx.finished) return;
             ctx.finished = true;

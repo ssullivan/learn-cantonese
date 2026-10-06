@@ -9,7 +9,7 @@
   // Hear a drink or a dish, tap its picture.
   const menu = [...V.drinks, ...V.food];
   function hear(stage, ctx) {
-    const [e] = pick(menu, 1);
+    const e = ctx.draw(menu);
     const say = () => ctx.play(e);
     ctx.answer = answerText(e);
     stage.replaceChildren(speech('客', '唔該！ What did the customer ask for?', say),
@@ -20,7 +20,7 @@
   // Hear 凍奶茶, tap the glass: the same drink the other way round is offered,
   // and another drink both ways.
   function hotCold(stage, ctx) {
-    const [e] = pick(V.served, 1);
+    const e = ctx.draw(V.served);
     const [other] = pick(V.drinks.filter(d => d.id !== e.drink), 1);
     const options = V.served.filter(s => s.drink === e.drink || s.drink === other.id);
     const say = () => ctx.play(e);
@@ -34,7 +34,7 @@
   // sweetness and (iced only) the ice, and Check.
   const pool = [...V.served, ...V.orders];
   function ticket(stage, ctx) {
-    const [e] = pick(pool, 1);
+    const e = ctx.draw(pool);
     const want = { drink: e.drink, temp: e.temp, sweet: e.sweet ?? '', ice: e.ice ?? '' };
     const got = { drink: null, temp: null, sweet: '', ice: '' };
     const rows = {};
@@ -111,7 +111,7 @@
   // nor 凍 for 飲乜嘢.
   const hotOrCold = e => Boolean(e.temp) || e.id === 'dung' || e.id === 'jit';
   function waiter(stage, ctx) {
-    const [q] = pick(V.questions, 1);
+    const q = ctx.draw(V.questions);
     const replies = q.reply.map(id => byId[id]);
     const [e] = pick(replies, 1);
     const clash = replies.some(hotOrCold) ? hotOrCold : () => false;

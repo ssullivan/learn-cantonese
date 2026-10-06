@@ -9,7 +9,7 @@
 
   // Hear it, tap it.
   const hear = (stage, ctx) => {
-    const [e] = pick(V.appliances, 1);
+    const e = ctx.draw(V.appliances);
     const say = () => ctx.play(e);
     ctx.answer = Game.answerText(e);
     stage.replaceChildren(speech('聽', '邊樣？ Which one?', say),
@@ -19,7 +19,7 @@
 
   // 用乜嘢煲飯呀？: tap the appliance for the job.
   const use = (stage, ctx) => {
-    const [q] = pick(V.asks, 1);
+    const q = ctx.draw(V.asks);
     const right = byId[q.tool];
     const say = () => ctx.play(q);
     playOnReveal(ctx, right);
@@ -31,7 +31,7 @@
 
   // See an appliance: what is it for?
   const what = (stage, ctx) => {
-    const [a] = pick(V.appliances, 1);
+    const a = ctx.draw(V.appliances);
     const right = byId[a.task];
     const img = $('img', 'prompt-pic');
     img.src = imgSrc(a);
@@ -45,7 +45,7 @@
   // Hear 用微波爐叮兩分鐘: how long?
   const timed = V.howLong.filter(h => h.mins);
   const long = (stage, ctx) => {
-    const [h] = pick(timed, 1);
+    const h = ctx.draw(timed);
     const right = V.minutes.find(m => m.mins === h.mins);
     const say = () => ctx.play(h);
     playOnReveal(ctx, right);

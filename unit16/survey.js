@@ -8,7 +8,7 @@
 
   // Hear a hobby, tap its picture.
   const what = (stage, ctx) => {
-    const [e] = pick(V.hobbies, 1);
+    const e = ctx.draw(V.hobbies);
     const say = () => ctx.play(e);
     ctx.answer = answerText(e);
     stage.replaceChildren(speech('聽', '做乜嘢？ Which hobby?', say),
@@ -49,7 +49,7 @@
 
   // Read a question in English; pick how to ask it: 鍾唔鍾意, 識唔識 or 想唔想.
   const ask = (stage, ctx) => {
-    const [h] = pick(V.hobbies.filter(h => h.skill), 1);
+    const h = ctx.draw(V.hobbies.filter(h => h.skill));
     const options = V.asks.filter(q => q.hobby === h.id);
     const [q] = pick(options, 1);
     ctx.answer = `${said(q)} ${esc(q.english)}${q.note ? ' ' + esc(q.note) : ''}`;

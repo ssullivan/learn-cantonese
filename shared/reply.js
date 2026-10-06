@@ -48,7 +48,7 @@
 
   const modes = {
     meaning(stage, ctx, { pool, choices }) {
-      const [e] = pick(pool, 1);
+      const e = ctx.draw(pool);
       const say = () => ctx.play(e);
       const head = Canto.speech('聽', 'What does this mean?', say);
       // Wrong answers must not share the right one's English.
@@ -60,7 +60,7 @@
 
     reply(stage, ctx, { pool, choices }, byId) {
       // Wrong answers come from the whole unit, since replies are often outside the pool.
-      const [e] = pick(pool.filter(o => o.reply), 1);
+      const e = ctx.draw(pool.filter(o => o.reply));
       const good = e.reply.map(id => byId[id]);
       const [right] = pick(good, 1);
       const say = () => ctx.play(e);
@@ -73,7 +73,7 @@
     },
 
     when(stage, ctx, { pool, choices }) {
-      const [e] = pick(pool.filter(o => o.when), 1);
+      const e = ctx.draw(pool.filter(o => o.when));
       const [situation] = pick(e.when, 1);
       const parts = [];
       if (e.img !== false && situation === e.when[0]) {

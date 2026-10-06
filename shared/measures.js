@@ -25,7 +25,7 @@
     const ask = prompt ?? ((t, one) => `How do you say <strong>${esc(one.english)}</strong>?`);
 
     return (stage, ctx) => {
-      const [thing] = pick(pool, 1);
+      const thing = ctx.draw(pool);
       const right = byId[thing.measure];
       const one = byId[owner ? `${owner.id}-${thing.measure}-${thing.id}` : `one-${thing.id}`];
       const img = $('img', 'prompt-pic');

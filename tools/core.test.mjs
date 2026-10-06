@@ -10,7 +10,7 @@ import { ROOT } from './site.mjs';
 
 const sb = { window: {} };
 vm.runInNewContext(readFileSync(join(ROOT, 'shared/core.js'), 'utf8'), sb);
-const { tones, toneChart, pairs, zh, tagZh } = sb.window.Canto;
+const { tones, toneChart, pairs, zh, tagZh, deck } = sb.window.Canto;
 let fail = 0;
 const quiet = process.argv.includes('--quiet');
 const ok = (name, cond, info = '') => { if (!cond || !quiet) console.log((cond ? 'PASS ' : 'FAIL ') + name + '  ' + info); if (!cond) fail++; };
@@ -48,4 +48,34 @@ h = zh('好嗎？', 'hou2 maa3');
 ok('zh: no line break before punctuation', h.includes('</ruby>？') && !h.includes('<wbr>？') && !h.startsWith('<span class="zh"><span class="hanzi" lang="zh-HK"><wbr>'), h);
 h = zh('卅', 'saa1 aa6');
 ok('zh: unpaired words are flat, with no ruby', h.includes('zh-flat') && !h.includes('<ruby>'), h);
+
+// A round's word: every item once before any repeats, never twice in a row.
+{
+  const pool = ['a', 'b', 'c', 'd', 'e'].map(id => ({ id }));
+  for (let trial = 0; trial < 200; trial++) {
+    const draw = deck();
+    const ids = Array.from({ length: 23 }, () => draw(pool).id);
+    const laps = [0, 5, 10, 15].map(i => new Set(ids.slice(i, i + 5)).size);
+    const twice = ids.findIndex((id, i) => i && id === ids[i - 1]);
+    if (laps.some(n => n !== 5) || twice >= 0) { ok('deck: each lap of the pool has every item, no item twice in a row', false, ids.join('')); break; }
+    if (trial === 199) ok('deck: each lap of the pool has every item, no item twice in a row', true);
+  }
+  // Told apart by id: a pool filtered afresh (new array, same entries, or
+  // copies) is the same deck.
+  const draw = deck();
+  const got = new Set([0, 1, 2, 3, 4].map(() => draw(pool.map(e => ({ ...e }))).id));
+  ok('deck: items are told apart by id', got.size === 5, [...got].join(''));
+  // Items without an id (unit 9's [-1, 'kam-jat'] pairs) are told apart by themselves.
+  const pairsPool = [[-1, 'x'], [1, 'y']];
+  const drawPair = deck();
+  const seq = Array.from({ length: 6 }, () => drawPair(pairsPool)[1]).join('');
+  ok('deck: items without an id alternate in a pool of two', seq === 'xyxyxy' || seq === 'yxyxyx', seq);
+  const one = deck();
+  ok('deck: a pool of one keeps giving it', [1, 2, 3].every(() => one([{ id: 'only' }]).id === 'only'));
+  const shrink = deck();
+  shrink(pool);
+  const sub = pool.slice(0, 2);
+  const s = Array.from({ length: 4 }, () => shrink(sub).id);
+  ok('deck: a smaller pool is still covered before repeats', new Set(s.slice(0, 2)).size === 2 && new Set(s.slice(2, 4)).size === 2, s.join(''));
+}
 process.exit(fail ? 1 : 0);

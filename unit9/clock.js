@@ -19,7 +19,7 @@
 
   // Hear a time, tap its clock.
   const hear = pool => (stage, ctx) => {
-    const [e] = pick(pool, 1);
+    const e = ctx.draw(pool);
     const say = () => ctx.play(e);
     ctx.answer = answerText(e);
     stage.replaceChildren(speech('聽', '幾點？ Which clock shows it?', say),
@@ -29,7 +29,7 @@
 
   // See a clock, pick how to say the time; the answer plays afterwards.
   const read = pool => (stage, ctx) => {
-    const [e] = pick(pool, 1);
+    const e = ctx.draw(pool);
     const img = $('img', 'prompt-pic');
     img.src = imgSrc(e);
     img.alt = 'A clock';
@@ -41,7 +41,7 @@
 
   // Hear a time and set the clock to it: hour and five-minute steppers.
   function set(stage, ctx) {
-    const [e] = pick(V.times.filter(t => t.h !== 12 || t.m), 1);
+    const e = ctx.draw(V.times.filter(t => t.h !== 12 || t.m));
     let h = 12, m = 0;
     const img = $('img', 'prompt-pic');
     img.alt = 'The clock you are setting';
@@ -84,7 +84,7 @@
 
   // Hear a day of the week, pick it.
   function hearDay(stage, ctx) {
-    const [e] = pick(V.weekdays, 1);
+    const e = ctx.draw(V.weekdays);
     const say = () => ctx.play(e);
     ctx.answer = answerText(e);
     stage.replaceChildren(speech('聽', '星期幾？ Which day do you hear?', say),
@@ -97,7 +97,7 @@
   const weekday = n => V.weekdays[((n - 1) % 7 + 7) % 7];
   function relative(stage, ctx) {
     const [today] = pick(V.weekdays, 1);
-    const [[k, id]] = pick(REL, 1);
+    const [k, id] = ctx.draw(REL);
     const rel = byId[id], answer = weekday(today.n + k);
     const wrong = [...new Set([weekday(today.n - k), today, weekday(today.n + k + 1), weekday(today.n + k - 1)])]
       .filter(d => d !== answer).slice(0, 3);

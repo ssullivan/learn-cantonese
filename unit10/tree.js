@@ -17,7 +17,7 @@
 
   // Hear a family word, tap them on the tree.
   function find(stage, ctx) {
-    const [e] = pick(members, 1);
+    const e = ctx.draw(members);
     const say = () => ctx.play(e);
     ctx.answer = answerText(e);
     stage.replaceChildren(speech('聽', '邊個係邊個？ Who is it? Tap them on the tree.', say),
@@ -27,7 +27,7 @@
 
   // See someone on the tree, pick their name; it plays afterwards.
   function name(stage, ctx) {
-    const [e] = pick(members, 1);
+    const e = ctx.draw(members);
     const img = $('img', 'prompt-pic');
     img.src = imgSrc(e);
     img.alt = 'A family tree with one person marked';
@@ -39,7 +39,7 @@
 
   // Hear 爸爸嘅媽媽, tap 嫲嫲. The people named in the chain are offered too.
   function chain(stage, ctx) {
-    const [r] = pick(V.relations, 1);
+    const r = ctx.draw(V.relations);
     const e = byId[r.means];
     const named = r.words.map(id => byId[id]).filter(w => w.member);
     const say = () => ctx.play(r);

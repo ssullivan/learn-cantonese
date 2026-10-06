@@ -11,7 +11,7 @@
 
   // Hear the weather, tap its picture.
   function sky(stage, ctx) {
-    const [e] = pick(skies, 1);
+    const e = ctx.draw(skies);
     const say = () => ctx.play(e);
     ctx.answer = answerText(e);
     stage.replaceChildren(speech('聽', '乜嘢天氣？ What\'s the weather?', say),
@@ -21,7 +21,7 @@
 
   // Hear 廿三度, tap 23°C among numbers easy to mix up with it (32, 13...).
   function temp(stage, ctx) {
-    const [e] = pick(V.temps, 1);
+    const e = ctx.draw(V.temps);
     const say = () => ctx.play(e);
     ctx.answer = answerText(e);
     stage.replaceChildren(speech('聽', '幾多度？ How many degrees?', say),
@@ -32,7 +32,7 @@
   // Hear 有啲凍, pick "a bit cold": the other answers put other words
   // before the same adjective, or the same word before another.
   function degree(stage, ctx) {
-    const [e] = pick(V.degrees, 1);
+    const e = ctx.draw(V.degrees);
     const wrong = [
       ...pick(V.degrees.filter(o => o.adj === e.adj && o !== e), 2),
       ...pick(V.degrees.filter(o => o.degree === e.degree && o !== e), 1),
@@ -47,7 +47,7 @@
   // See the weather, pick the advice for it. Advice that suits it too is
   // never offered as a wrong answer. The right one plays afterwards.
   function advise(stage, ctx) {
-    const [e] = pick(V.advice, 1);
+    const e = ctx.draw(V.advice);
     const weather = byId[e.for[0]];
     const img = $('img', 'prompt-pic');
     img.src = imgSrc(weather);

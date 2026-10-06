@@ -11,7 +11,7 @@
 
   // Hear an animal, tap it.
   const hear = (stage, ctx) => {
-    const [e] = pick(animals, 1);
+    const e = ctx.draw(animals);
     const say = () => ctx.play(e);
     ctx.answer = Game.answerText(e);
     stage.replaceChildren(speech('聽', '邊隻？ Which animal?', say),
@@ -22,7 +22,7 @@
   // See an animal, hear 雀仔會唔會飛呀？, answer 會 or 唔會.
   const [yes, no] = [byId.wui, byId['m-wui']];
   const can = (stage, ctx) => {
-    const [q] = pick(V.asks, 1);
+    const q = ctx.draw(V.asks);
     const right = q.can ? yes : no;
     const say = () => ctx.play(q);
     playOnReveal(ctx, right);
@@ -33,7 +33,7 @@
 
   // Hear 邊隻會飛呀？; of four animals, only one can.
   const which = (stage, ctx) => {
-    const [q] = pick(V.whichCan, 1);
+    const q = ctx.draw(V.whichCan);
     const { can: cans, cant } = V.abilities[q.verb];
     const [right] = pick(cans, 1).map(id => byId[id]);
     const others = pick(cant, 3).map(id => byId[id]);
@@ -46,7 +46,7 @@
 
   // Hear 我屬猴; tap the animal. Four of the zodiac names differ from the everyday word.
   const zodiac = (stage, ctx) => {
-    const [z] = pick(V.zodiac, 1);
+    const z = ctx.draw(V.zodiac);
     const right = byId[z.animal];
     const others = pick(V.zodiac.filter(o => o !== z), 3).map(o => byId[o.animal]);
     const sign = byId[z.words[2]];
@@ -62,7 +62,7 @@
   const measures = Units.byId(V.measures);
   const phrase = (n, t, m) => { const { hanzi, jyutping } = Canto.number(n, { measure: m }); return { hanzi: hanzi + t.hanzi, jyutping: `${jyutping} ${t.jyutping}` }; };
   const count = (stage, ctx) => {
-    const [e] = pick(V.counts, 1);
+    const e = ctx.draw(V.counts);
     const t = byId[e.thing];
     const other = measures[t.measure === 'zek' ? 'tiu' : 'zek'];
     const options = [

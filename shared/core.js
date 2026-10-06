@@ -25,6 +25,13 @@
  *                                contour, number, name, example word
  *   Canto.shuffle(list)          shuffled copy
  *   Canto.pick(list, n)          n random items
+ *   Canto.deck()                 draw(pool): one random item of `pool`, each
+ *                                drawn once before any comes again, and never
+ *                                the same twice in a row (unless it is all the
+ *                                pool has). Items are told apart by id (by
+ *                                themselves if they have none), so a pool
+ *                                filtered afresh each time still works, and
+ *                                one deck can serve several pools
  *   Canto.confusable(e, pool, count)
  *                                `count` other entries from `pool` (entries
  *                                with a value `n`) to offer as wrong answers:
@@ -126,6 +133,23 @@
 
   const pick = (list, n) => shuffle(list).slice(0, n);
 
+  function deck() {
+    const drawn = new Set();
+    let last;
+    const keyOf = item => item?.id ?? item;
+    return pool => {
+      let fresh = pool.filter(x => !drawn.has(keyOf(x)));
+      if (!fresh.length) {
+        pool.forEach(x => drawn.delete(keyOf(x)));
+        fresh = pool;
+      }
+      const notLast = fresh.filter(x => keyOf(x) !== last);
+      const [item] = pick(notLast.length ? notLast : fresh, 1);
+      drawn.add(last = keyOf(item));
+      return item;
+    };
+  }
+
   function confusable(e, pool, count) {
     const byN = new Map(pool.map(x => [x.n, x]));
     const close = shuffle(Canto.near(e.n).filter(m => byN.has(m))).map(m => byN.get(m));
@@ -188,5 +212,5 @@
     };
   }
 
-  window.Canto = { el, esc, tagZh, jyutping, zh, pairs, tones, toneChart, shuffle, pick, confusable, imgSrc, audioSrc, play, picButton, showLabels, speech, entries, store };
+  window.Canto = { el, esc, tagZh, jyutping, zh, pairs, tones, toneChart, shuffle, pick, deck, confusable, imgSrc, audioSrc, play, picButton, showLabels, speech, entries, store };
 })();

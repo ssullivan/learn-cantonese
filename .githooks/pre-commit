@@ -1,0 +1,6 @@
+#!/bin/sh
+# Runs the site checks before every commit, including the key scan (which
+# needs the keys on this machine, so CI can't do it). Enable once per clone:
+#   git config core.hooksPath .githooks
+# It checks the working tree, not only what is staged.
+exec node tools/check.mjs

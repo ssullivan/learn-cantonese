@@ -40,7 +40,7 @@
 
   // Hear 邊個平啲呀？ (or 邊個最平呀？ with 最), tap the one.
   const ask = (questions, n) => (stage, ctx) => {
-    const [scale] = pick(SCALES, 1);
+    const scale = ctx.draw(SCALES);
     const s = V.scales[scale];
     const [adj] = pick([s.more, s.less], 1);
     const q = questions.find(w => w.adj === adj);
@@ -59,7 +59,7 @@
   const claims = [...V.bei, ...V.gwo];
   const [yes, no] = ['ngaam', 'm-ngaam'].map(id => byId[id]);
   const right = (stage, ctx) => {
-    const [e] = pick(claims, 1);
+    const e = ctx.draw(claims);
     const { a, b, scale, holds } = e.cmp;
     const answer = holds ? yes : no;
     const say = () => ctx.play(e);
@@ -92,7 +92,7 @@
   // Hear A 冇 B 咁 + adjective; tap the one that is more so (B).
   const notAs = V.notAs.filter(e => e.cmp);
   const unlike = (stage, ctx) => {
-    const [e] = pick(notAs, 1);
+    const e = ctx.draw(notAs);
     const { a, b, adj } = e.cmp;
     const q = V.which.find(w => w.adj === adj);
     const say = () => ctx.play(e);
@@ -104,7 +104,7 @@
 
   // A brother or sister and me, with our ages: 大幾多歲？
   const older = (stage, ctx) => {
-    const [q] = pick(V.howOld, 1);
+    const q = ctx.draw(V.howOld);
     const [gap] = pick(V.ages, 1);
     const mine = 16 + Math.floor(Math.random() * 15);
     const theirs = q.who.startsWith('elder') ? mine + gap.n : mine - gap.n;

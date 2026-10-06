@@ -8,7 +8,7 @@
 
   // Hear a number, tap its numeral.
   const hear = ({ pool, choices = 4 }) => (stage, ctx) => {
-    const [e] = pick(pool, 1);
+    const e = ctx.draw(pool);
     const say = () => ctx.play(e);
     const grid = choose(ctx, e, shuffle([e, ...confusable(e, pool, choices - 1)]), o => esc(o.english), 'choice-grid nums');
     ctx.answer = answerText(e);
@@ -18,7 +18,7 @@
 
   // See a numeral, pick how to say it; the answer plays afterwards.
   const read = ({ pool, choices = 4 }) => (stage, ctx) => {
-    const [e] = pick(pool, 1);
+    const e = ctx.draw(pool);
     const grid = choose(ctx, e, shuffle([e, ...confusable(e, pool, choices - 1)]), o => zh(o.hanzi, o.jyutping));
     grid.addEventListener('click', ev => { if (ev.target.closest('button')) ctx.play(e); });
     ctx.answer = answerText(e);
@@ -39,7 +39,7 @@
   }
 
   function twoOrLoeng(stage, ctx) {
-    const [e] = pick(TWOS, 1);
+    const e = ctx.draw(TWOS);
     const grid = choose(ctx, e, shuffle([e, flip(e)]), o => zh(o.hanzi, o.jyutping));
     grid.addEventListener('click', ev => { if (ev.target.closest('button')) ctx.play(e); });
     ctx.answer = answerText(e);

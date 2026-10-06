@@ -39,8 +39,9 @@
  *     a unit that teaches writing has sheet.html (shared/sheet.js) and
  *     write.html (shared/write.js), with cards for them on its page
  *   - every tools/*.test.mjs passes
- *   - no file holds the Azure Speech or MiniMax key (when set on this
- *     machine): keys must never be committed
+ *   - no file git would commit (tracked, or untracked and not ignored,
+ *     dotfiles included) holds the Azure Speech or MiniMax key (when set on
+ *     this machine): keys must never be committed
  */
 import { createHash } from 'node:crypto';
 import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
@@ -131,11 +132,18 @@ for (const html of files.filter(f => f.endsWith('.html'))) {
 }
 
 // API keys must never be in the repo. Checked against the keys on this
-// machine, never printed.
+// machine, never printed, in every file git would commit: tracked, or
+// untracked and not ignored (dotfiles too: a copied .env, which walk()
+// skips).
 const { azureKey, minimaxKey } = secrets();
+const committable = (() => {
+  const r = spawnSync('git', ['ls-files', '-z', '--cached', '--others', '--exclude-standard'], { cwd: ROOT, encoding: 'utf8' });
+  if (r.status !== 0) return files;
+  return r.stdout.split('\0').filter(Boolean).map(f => join(ROOT, f)).filter(f => existsSync(f) && statSync(f).isFile());
+})();
 for (const [name, secret] of [['Azure Speech', azureKey], ['MiniMax', minimaxKey]]) {
   if (!secret) continue;
-  for (const file of files) {
+  for (const file of committable) {
     if (readFileSync(file).includes(secret)) bad(file, `contains the ${name} key: remove it, never commit it`);
   }
 }
