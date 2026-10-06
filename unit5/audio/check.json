@@ -1,32 +1,4 @@
 {
- "bui": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard nothing "
-  ],
-  "audio": "5d9dd1e14209"
- },
- "di": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard d d"
-  ],
-  "audio": "8f2e63154111"
- },
- "gin": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 二 ji"
-  ],
-  "audio": "83c133c1586e"
- },
- "go2": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 果 gwo"
-  ],
-  "audio": "a4a514d0eb22"
- },
  "go2-go-hai-mat-je-aa": {
   "verdict": "CHECK",
   "notes": [
@@ -99,13 +71,6 @@
   ],
   "audio": "ec7d30428013"
  },
- "ni": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard nothing "
-  ],
-  "audio": "721fc7ba4eee"
- },
  "ni-di-hai-mat-je-aa": {
   "verdict": "CHECK",
   "notes": [
@@ -135,27 +100,6 @@
    "tone: 魚 tone 4 sounds like 2 (p 0.00)"
   ],
   "audio": "5497aa6ad018"
- },
- "paper": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard nothing "
-  ],
-  "audio": "0f072008f77b"
- },
- "pen": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 八 baat"
-  ],
-  "audio": "00cae19e0bbd"
- },
- "tea": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 七 cat"
-  ],
-  "audio": "0c615fcf3542"
  },
  "that-fish": {
   "verdict": "CHECK",
@@ -213,25 +157,11 @@
   ],
   "audio": "b74efe4266b1"
  },
- "tiu": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard two t w o"
-  ],
-  "audio": "8d1925d04100"
- },
  "two-fish": {
   "verdict": "CHECK",
   "notes": [
    "tone: 魚 tone 4 sounds like 5 (p 0.00)"
   ],
   "audio": "2bb86f54c7b2"
- },
- "wun": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 搵 wan"
-  ],
-  "audio": "8f57772bceee"
  }
 }

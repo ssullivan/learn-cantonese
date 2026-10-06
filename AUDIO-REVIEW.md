@@ -296,38 +296,38 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 
 | # | Chinese | Jyutping | English | Audio |
 |---|---|---|---|---|
-| 1 | 隻 | zek3 | for animals | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/zek.mp3) |
-| 2 | 本 | bun2 | for books | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/bun.mp3) |
-| 3 | 張 | zoeng1 | for flat things | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/zoeng.mp3) |
-| 4 | 條 | tiu4 | for long, thin things | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/tiu.mp3) |
-| 5 | 枝 | zi1 | for sticks | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/zi.mp3) |
-| 6 | 架 | gaa3 | for vehicles and machines | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/gaa.mp3) |
-| 7 | 件 | gin6 | for tops and pieces | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/gin.mp3) |
-| 8 | 杯 | bui1 | a cup of | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/bui.mp3) |
-| 9 | 碗 | wun2 | a bowl of | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/wun.mp3) |
-| 10 | 對 | deoi3 | a pair of | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/deoi.mp3) |
-| 11 | 蘋果 | ping4 gwo2 | apple | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/apple.mp3) |
-| 12 | 波 | bo1 | ball | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/ball.mp3) |
-| 13 | 貓 | maau1 | cat | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/cat.mp3) |
-| 14 | 狗 | gau2 | dog | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/dog.mp3) |
-| 15 | 書 | syu1 | book | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/book.mp3) |
-| 16 | 紙 | zi2 | paper | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/paper.mp3) |
-| 17 | 枱 | toi2 | table | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/table.mp3) |
-| 18 | 褲 | fu3 | trousers | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/trousers.mp3) |
-| 19 | 筆 | bat1 | pen | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/pen.mp3) |
-| 20 | 花 | faa1 | flower | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/flower.mp3) |
-| 21 | 飛機 | fei1 gei1 | plane | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/plane.mp3) |
-| 22 | 衫 | saam1 | shirt | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/shirt.mp3) |
-| 23 | 蛋糕 | daan6 gou1 | cake | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/cake.mp3) |
-| 24 | 茶 | caa4 | tea | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/tea.mp3) |
-| 25 | 飯 | faan6 | rice | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/rice.mp3) |
-| 26 | 麵 | min6 | noodles | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/noodles.mp3) |
-| 27 | 鞋 | haai4 | shoes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/shoes.mp3) |
-| 28 | 筷子 | faai3 zi2 | chopsticks | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/chopsticks.mp3) |
-| 29 | 啲 | di1 | some; the (more than one) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/di.mp3) |
-| 30 | 呢 | ni1 | this | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/ni.mp3) |
-| 31 | 嗰 | go2 | that | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/go2.mp3) |
-| 32 | 有 | jau5 | to have; there is | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/jau.mp3) |
+| 1 | 隻 | zek3 | for animals | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zek.mp3) |
+| 2 | 本 | bun2 | for books | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/bun.mp3) |
+| 3 | 張 | zoeng1 | for flat things | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zoeng.mp3) |
+| 4 | 條 | tiu4 | for long, thin things | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/tiu.mp3) |
+| 5 | 枝 | zi1 | for sticks | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zi.mp3) |
+| 6 | 架 | gaa3 | for vehicles and machines | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gaa.mp3) |
+| 7 | 件 | gin6 | for tops and pieces | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gin.mp3) |
+| 8 | 杯 | bui1 | a cup of | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/bui.mp3) |
+| 9 | 碗 | wun2 | a bowl of | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/wun.mp3) |
+| 10 | 對 | deoi3 | a pair of | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/deoi.mp3) |
+| 11 | 蘋果 | ping4 gwo2 | apple | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/apple.mp3) |
+| 12 | 波 | bo1 | ball | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ball.mp3) |
+| 13 | 貓 | maau1 | cat | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/cat.mp3) |
+| 14 | 狗 | gau2 | dog | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/dog.mp3) |
+| 15 | 書 | syu1 | book | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/book.mp3) |
+| 16 | 紙 | zi2 | paper | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/paper.mp3) |
+| 17 | 枱 | toi2 | table | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/table.mp3) |
+| 18 | 褲 | fu3 | trousers | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/trousers.mp3) |
+| 19 | 筆 | bat1 | pen | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/pen.mp3) |
+| 20 | 花 | faa1 | flower | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/flower.mp3) |
+| 21 | 飛機 | fei1 gei1 | plane | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/plane.mp3) |
+| 22 | 衫 | saam1 | shirt | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/shirt.mp3) |
+| 23 | 蛋糕 | daan6 gou1 | cake | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/cake.mp3) |
+| 24 | 茶 | caa4 | tea | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/tea.mp3) |
+| 25 | 飯 | faan6 | rice | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/rice.mp3) |
+| 26 | 麵 | min6 | noodles | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/noodles.mp3) |
+| 27 | 鞋 | haai4 | shoes | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/shoes.mp3) |
+| 28 | 筷子 | faai3 zi2 | chopsticks | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/chopsticks.mp3) |
+| 29 | 啲 | di1 | some; the (more than one) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/di.mp3) |
+| 30 | 呢 | ni1 | this | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ni.mp3) |
+| 31 | 嗰 | go2 | that | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/go2.mp3) |
+| 32 | 有 | jau5 | to have; there is | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jau.mp3) |
 | 33 | 一個蘋果 | jat1 go3 ping4 gwo2 | an apple | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-apple.mp3) |
 | 34 | 一個波 | jat1 go3 bo1 | a ball | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-ball.mp3) |
 | 35 | 一隻貓 | jat1 zek3 maau1 | a cat | [▶ play](https://ssullivan.github.io/learn-cantonese/unit5/audio/one-cat.mp3) |
