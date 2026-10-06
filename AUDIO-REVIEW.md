@@ -801,37 +801,37 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 
 | # | Chinese | Jyutping | English | Audio |
 |---|---|---|---|---|
-| 1 | 點 | dim2 | o'clock (hour) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/dim.mp3) |
-| 2 | 鐘 | zung1 | clock; o'clock | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/zung.mp3) |
-| 3 | 字 | zi6 | five minutes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/zi6.mp3) |
-| 4 | 分 | fan1 | minute | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/fan.mp3) |
-| 5 | 幾 | gei2 | which; how many | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/gei.mp3) |
-| 6 | 幾時 | gei2 si4 | when | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/gei-si.mp3) |
-| 7 | 而家 | ji4 gaa1 | now | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/ji-gaa.mp3) |
-| 8 | 朝早 | ziu1 zou2 | morning | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/ziu-zou.mp3) |
-| 9 | 上晝 | soeng6 zau3 | before noon; a.m. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/soeng-zau.mp3) |
-| 10 | 晏晝 | aan3 zau3 | midday; early afternoon | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/aan-zau.mp3) |
-| 11 | 下晝 | haa6 zau3 | afternoon; p.m. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/haa-zau.mp3) |
-| 12 | 夜晚 | je6 maan5 | evening; night | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/je-maan.mp3) |
-| 13 | 今朝 | gam1 ziu1 | this morning | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/gam-ziu.mp3) |
-| 14 | 今晚 | gam1 maan5 | tonight | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/gam-maan.mp3) |
-| 15 | 星期 | sing1 kei4 | week; day of the week | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/sing-kei.mp3) |
-| 16 | 月 | jyut6 | month | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/jyut.mp3) |
-| 17 | 號 | hou6 | day of the month | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/hou6.mp3) |
-| 18 | 上 | soeng6 | last (week, month) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/soeng6.mp3) |
-| 19 | 下 | haa6 | next (week, month) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/haa.mp3) |
-| 20 | 前日 | cin4 jat6 | the day before yesterday | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/cin-jat.mp3) |
-| 21 | 琴日 | kam4 jat6 | yesterday | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/kam-jat.mp3) |
-| 22 | 今日 | gam1 jat6 | today | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/gam-jat.mp3) |
-| 23 | 聽日 | ting1 jat6 | tomorrow | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/ting-jat.mp3) |
-| 24 | 後日 | hau6 jat6 | the day after tomorrow | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/hau-jat.mp3) |
-| 25 | 今年 | gam1 nin2 | this year _(MiniMax voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/gam-nin.mp3) |
-| 26 | 舊年 | gau6 nin2 | last year _(MiniMax voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/gau-nin.mp3) |
-| 27 | 出年 | ceot1 nin2 | next year _(MiniMax voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/ceot-nin.mp3) |
-| 28 | 返工 | faan1 gung1 | to go to work | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/faan-gung.mp3) |
-| 29 | 放工 | fong3 gung1 | to finish work | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/fong-gung.mp3) |
-| 30 | 食飯 | sik6 faan6 | to eat; to have a meal | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/sik-faan.mp3) |
-| 31 | 見 | gin3 | to see; to meet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/gin3.mp3) |
+| 1 | 點 | dim2 | o'clock (hour) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/dim.mp3) |
+| 2 | 鐘 | zung1 | clock; o'clock | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zung.mp3) |
+| 3 | 字 | zi6 | five minutes | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zi6.mp3) |
+| 4 | 分 | fan1 | minute | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fan.mp3) |
+| 5 | 幾 | gei2 | which; how many | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gei.mp3) |
+| 6 | 幾時 | gei2 si4 | when | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gei-si.mp3) |
+| 7 | 而家 | ji4 gaa1 | now | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ji-gaa.mp3) |
+| 8 | 朝早 | ziu1 zou2 | morning | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ziu-zou.mp3) |
+| 9 | 上晝 | soeng6 zau3 | before noon; a.m. | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/soeng-zau.mp3) |
+| 10 | 晏晝 | aan3 zau3 | midday; early afternoon | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/aan-zau.mp3) |
+| 11 | 下晝 | haa6 zau3 | afternoon; p.m. | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/haa-zau.mp3) |
+| 12 | 夜晚 | je6 maan5 | evening; night | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/je-maan.mp3) |
+| 13 | 今朝 | gam1 ziu1 | this morning | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gam-ziu.mp3) |
+| 14 | 今晚 | gam1 maan5 | tonight | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gam-maan.mp3) |
+| 15 | 星期 | sing1 kei4 | week; day of the week | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/sing-kei.mp3) |
+| 16 | 月 | jyut6 | month | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jyut.mp3) |
+| 17 | 號 | hou6 | day of the month | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hou6.mp3) |
+| 18 | 上 | soeng6 | last (week, month) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/soeng6.mp3) |
+| 19 | 下 | haa6 | next (week, month) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/haa.mp3) |
+| 20 | 前日 | cin4 jat6 | the day before yesterday | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/cin-jat.mp3) |
+| 21 | 琴日 | kam4 jat6 | yesterday | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/kam-jat.mp3) |
+| 22 | 今日 | gam1 jat6 | today | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gam-jat.mp3) |
+| 23 | 聽日 | ting1 jat6 | tomorrow | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ting-jat.mp3) |
+| 24 | 後日 | hau6 jat6 | the day after tomorrow | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hau-jat.mp3) |
+| 25 | 今年 | gam1 nin2 | this year _(MiniMax voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gam-nin.mp3) |
+| 26 | 舊年 | gau6 nin2 | last year _(MiniMax voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gau-nin.mp3) |
+| 27 | 出年 | ceot1 nin2 | next year _(MiniMax voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ceot-nin.mp3) |
+| 28 | 返工 | faan1 gung1 | to go to work | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/faan-gung.mp3) |
+| 29 | 放工 | fong3 gung1 | to finish work | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fong-gung.mp3) |
+| 30 | 食飯 | sik6 faan6 | to eat; to have a meal | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/sik-faan.mp3) |
+| 31 | 見 | gin3 | to see; to meet | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gin3.mp3) |
 | 32 | 一點鐘 | jat1 dim2 zung1 | 1:00 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0100.mp3) |
 | 33 | 一點一個字 | jat1 dim2 jat1 go3 zi6 | 1:05 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0105.mp3) |
 | 34 | 一點兩個字 | jat1 dim2 loeng5 go3 zi6 | 1:10 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit9/audio/t0110.mp3) |

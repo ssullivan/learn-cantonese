@@ -1,11 +1,4 @@
 {
- "aan-zau": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 蘭州 laan zau"
-  ],
-  "audio": "51567f51e957"
- },
  "d12": {
   "verdict": "LISTEN",
   "notes": [
@@ -71,20 +64,6 @@
   ],
   "audio": "64e957dae953"
  },
- "gau-nin": {
-  "verdict": "LISTEN",
-  "notes": [
-   "tone doubtful: 舊 tone 6 sounds like 4 (p 0.03)"
-  ],
-  "audio": "a34e18a1492c"
- },
- "gei": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard gay g a y"
-  ],
-  "audio": "dae7402f4051"
- },
  "gei-dim": {
   "verdict": "CHECK",
   "notes": [
@@ -99,27 +78,6 @@
    "tone doubtful: 幾 tone 2 sounds like 4 (p 0.05); 月 tone 6 sounds like 3 (p 0.34)"
   ],
   "audio": "ebbe730227c7"
- },
- "gin3": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard G g"
-  ],
-  "audio": "7ad933e626b1"
- },
- "haa": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 怕 paa"
-  ],
-  "audio": "7b1cd089d1fd"
- },
- "hou6": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 鋪 pou"
-  ],
-  "audio": "e60e69ff8a27"
  },
  "ji-gaa-gei-dim-aa": {
   "verdict": "CHECK",
@@ -187,13 +145,6 @@
    "tone doubtful: 我 tone 5 sounds like 2 (p 0.34)"
   ],
   "audio": "771eeefd8a5e"
- },
- "soeng6": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard Song s o n g"
-  ],
-  "audio": "d04b55694fcf"
  },
  "t0105": {
   "verdict": "CHECK",
