@@ -28,6 +28,13 @@
   ],
   "audio": "ea55a19f1796"
  },
+ "hai-mai": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 咪 tone 6 sounds like 2 (p 0.00)"
+  ],
+  "audio": "ae3cba453763"
+ },
  "hello": {
   "verdict": "LISTEN",
   "notes": [
@@ -50,12 +57,34 @@
   ],
   "audio": "46dab8e43dc6"
  },
+ "jing-man": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 文 tone 2 sounds like 5 (p 0.01)"
+  ],
+  "audio": "6894372675bd"
+ },
  "jyutping": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 粵 tone 6 sounds like 3 (p 0.32)"
   ],
   "audio": "3ce8edb2a713"
+ },
+ "lou-si": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 老 tone 5 sounds like 2 (p 0.18)"
+  ],
+  "audio": "caf7506e7203"
+ },
+ "m": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard nothing ",
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.13)"
+  ],
+  "audio": "5af57fe6ef4b"
  },
  "m-goi": {
   "verdict": "LISTEN",
@@ -70,6 +99,13 @@
    "tone doubtful: 唔 tone 4 sounds like 6 (p 0.31)"
   ],
   "audio": "99468c999b8e"
+ },
+ "nei": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard nothing "
+  ],
+  "audio": "0aa90f92754c"
  },
  "ng": {
   "verdict": "LISTEN",

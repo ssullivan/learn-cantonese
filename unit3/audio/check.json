@@ -7,20 +7,6 @@
   ],
   "audio": "b8efb2077939"
  },
- "hai-mai": {
-  "verdict": "CHECK",
-  "notes": [
-   "tone: 咪 tone 6 sounds like 2 (p 0.00)"
-  ],
-  "audio": "ae3cba453763"
- },
- "jing-man": {
-  "verdict": "CHECK",
-  "notes": [
-   "tone: 文 tone 2 sounds like 5 (p 0.01)"
-  ],
-  "audio": "6894372675bd"
- },
  "keoi-dei-hai-pang-jau-maa": {
   "verdict": "CHECK",
   "notes": [
@@ -129,21 +115,6 @@
   ],
   "audio": "fec9a8599085"
  },
- "lou-si": {
-  "verdict": "LISTEN",
-  "notes": [
-   "tone doubtful: 老 tone 5 sounds like 2 (p 0.18)"
-  ],
-  "audio": "caf7506e7203"
- },
- "m": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard nothing ",
-   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.13)"
-  ],
-  "audio": "5af57fe6ef4b"
- },
  "m-hai-aa": {
   "verdict": "LISTEN",
   "notes": [
@@ -157,13 +128,6 @@
    "speech-to-text heard 唔識 m sik"
   ],
   "audio": "e50a7fdc27eb"
- },
- "nei": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard nothing "
-  ],
-  "audio": "0aa90f92754c"
  },
  "nei-dei-hai-m-hai-mei-gwok-jan-aa": {
   "verdict": "CHECK",

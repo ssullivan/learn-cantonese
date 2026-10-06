@@ -70,34 +70,34 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 
 | # | Chinese | Jyutping | English | Audio |
 |---|---|---|---|---|
-| 1 | 我 | ngo5 | I; me | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/ngo.mp3) |
-| 2 | 你 | nei5 | you | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/nei.mp3) |
-| 3 | 佢 | keoi5 | he; she; it | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/keoi.mp3) |
-| 4 | 我哋 | ngo5 dei6 | we; us | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/ngo-dei.mp3) |
-| 5 | 你哋 | nei5 dei6 | you (more than one) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/nei-dei.mp3) |
-| 6 | 佢哋 | keoi5 dei6 | they; them | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/keoi-dei.mp3) |
-| 7 | 係 | hai6 | am; is; are | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/hai.mp3) |
-| 8 | 唔 | m4 | not | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/m.mp3) |
-| 9 | 叫 | giu3 | to be called | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/giu.mp3) |
-| 10 | 名 | meng2 | name | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/meng.mp3) |
-| 11 | 識 | sik1 | to know how to; can | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/sik.mp3) |
-| 12 | 講 | gong2 | to speak; to say | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/gong.mp3) |
-| 13 | 都 | dou1 | also; too | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/dou.mp3) |
-| 14 | 阿明 | aa3 ming4 | Ah Ming (a name) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/aa-ming.mp3) |
-| 15 | 老師 | lou5 si1 | teacher | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/lou-si.mp3) |
-| 16 | 學生 | hok6 saang1 | student | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/hok-saang.mp3) |
-| 17 | 朋友 | pang4 jau5 | friend | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/pang-jau.mp3) |
-| 18 | 香港人 | hoeng1 gong2 jan4 | Hongkonger | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/hoeng-gong-jan.mp3) |
-| 19 | 英國人 | jing1 gwok3 jan4 | British person | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/jing-gwok-jan.mp3) |
-| 20 | 美國人 | mei5 gwok3 jan4 | American | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/mei-gwok-jan.mp3) |
-| 21 | 英文 | jing1 man2 | English | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/jing-man.mp3) |
-| 22 | 邊個 | bin1 go3 | who | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/bin-go.mp3) |
-| 23 | 乜嘢 | mat1 je5 | what | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/mat-je.mp3) |
-| 24 | 嗎 | maa3 | (turns a sentence into a yes/no question) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/maa.mp3) |
-| 25 | 呀 | aa3 | (softens a question or an answer) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/aa.mp3) |
-| 26 | 呢 | ne1 | and ...? (what about) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/ne.mp3) |
-| 27 | 少少 | siu2 siu2 | a little | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/siu-siu.mp3) |
-| 28 | 係咪 | hai6 mai6 | is it? (short for 係唔係) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/hai-mai.mp3) |
+| 1 | 我 | ngo5 | I; me | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ngo.mp3) |
+| 2 | 你 | nei5 | you | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/nei.mp3) |
+| 3 | 佢 | keoi5 | he; she; it | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/keoi.mp3) |
+| 4 | 我哋 | ngo5 dei6 | we; us | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ngo-dei.mp3) |
+| 5 | 你哋 | nei5 dei6 | you (more than one) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/nei-dei.mp3) |
+| 6 | 佢哋 | keoi5 dei6 | they; them | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/keoi-dei.mp3) |
+| 7 | 係 | hai6 | am; is; are | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hai.mp3) |
+| 8 | 唔 | m4 | not | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/m.mp3) |
+| 9 | 叫 | giu3 | to be called | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/giu.mp3) |
+| 10 | 名 | meng2 | name | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/meng.mp3) |
+| 11 | 識 | sik1 | to know how to; can | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/sik.mp3) |
+| 12 | 講 | gong2 | to speak; to say | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gong.mp3) |
+| 13 | 都 | dou1 | also; too | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/dou.mp3) |
+| 14 | 阿明 | aa3 ming4 | Ah Ming (a name) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/aa-ming.mp3) |
+| 15 | 老師 | lou5 si1 | teacher | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/lou-si.mp3) |
+| 16 | 學生 | hok6 saang1 | student | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hok-saang.mp3) |
+| 17 | 朋友 | pang4 jau5 | friend | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/pang-jau.mp3) |
+| 18 | 香港人 | hoeng1 gong2 jan4 | Hongkonger | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hoeng-gong-jan.mp3) |
+| 19 | 英國人 | jing1 gwok3 jan4 | British person | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jing-gwok-jan.mp3) |
+| 20 | 美國人 | mei5 gwok3 jan4 | American | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/mei-gwok-jan.mp3) |
+| 21 | 英文 | jing1 man2 | English | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jing-man.mp3) |
+| 22 | 邊個 | bin1 go3 | who | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/bin-go.mp3) |
+| 23 | 乜嘢 | mat1 je5 | what | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/mat-je.mp3) |
+| 24 | 嗎 | maa3 | (turns a sentence into a yes/no question) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/maa.mp3) |
+| 25 | 呀 | aa3 | (softens a question or an answer) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/aa.mp3) |
+| 26 | 呢 | ne1 | and ...? (what about) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ne.mp3) |
+| 27 | 少少 | siu2 siu2 | a little | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/siu-siu.mp3) |
+| 28 | 係咪 | hai6 mai6 | is it? (short for 係唔係) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hai-mai.mp3) |
 | 29 | 我係學生 | ngo5 hai6 hok6 saang1 | I am a student. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/ngo-hai-hok-saang.mp3) |
 | 30 | 佢係老師 | keoi5 hai6 lou5 si1 | He / she is a teacher. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/keoi-hai-lou-si.mp3) |
 | 31 | 佢係學生 | keoi5 hai6 hok6 saang1 | He / she is a student. | [▶ play](https://ssullivan.github.io/learn-cantonese/unit3/audio/keoi-hai-hok-saang.mp3) |

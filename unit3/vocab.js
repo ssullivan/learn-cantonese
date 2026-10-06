@@ -19,58 +19,22 @@ Units.add(3, {
   // Pictures: the speaker has the speech bubble, the listener faces them,
   // and a third person stands behind. The one(s) meant are highlighted.
   people: [
-    { id: 'ngo', hanzi: '我', jyutping: 'ngo5', english: 'I; me' },
-    { id: 'nei', hanzi: '你', jyutping: 'nei5', english: 'you' },
-    { id: 'keoi', hanzi: '佢', jyutping: 'keoi5', english: 'he; she; it',
-      note: 'One word for he, she and it.' },
-    { id: 'ngo-dei', hanzi: '我哋', jyutping: 'ngo5 dei6', english: 'we; us',
-      note: 'Add 哋 to make any of the three plural.' },
-    { id: 'nei-dei', hanzi: '你哋', jyutping: 'nei5 dei6', english: 'you (more than one)' },
-    { id: 'keoi-dei', hanzi: '佢哋', jyutping: 'keoi5 dei6', english: 'they; them' },
+    ...Words.list('ngo nei keoi ngo-dei nei-dei keoi-dei'),
   ],
 
   words: [
-    { id: 'hai', hanzi: '係', jyutping: 'hai6', english: 'am; is; are', img: false,
-      note: 'Links two nouns: 我係學生, I am a student. Never before an adjective.' },
-    { id: 'm', hanzi: '唔', jyutping: 'm4', english: 'not', img: false,
-      note: 'Goes right before the verb: 唔係, 唔識.' },
-    { id: 'giu', hanzi: '叫', jyutping: 'giu3', english: 'to be called', img: false },
-    { id: 'meng', hanzi: '名', jyutping: 'meng2', english: 'name', img: false, phoneme: true,
-      note: 'meng4 in writing, but meng2 when you ask a name.' },
-    { id: 'sik', hanzi: '識', jyutping: 'sik1', english: 'to know how to; can', img: false,
-      note: 'For skills you have learned, like a language.' },
-    { id: 'gong', hanzi: '講', jyutping: 'gong2', english: 'to speak; to say', img: false },
-    { id: 'dou', hanzi: '都', jyutping: 'dou1', english: 'also; too', img: false,
-      note: 'Goes before the verb: 我都係, me too.' },
-    { id: 'aa-ming', hanzi: '阿明', jyutping: 'aa3 ming4', english: 'Ah Ming (a name)', img: false,
-      note: '阿 before one syllable of a name is friendly, like a nickname.' },
+    ...Words.list('hai m giu meng sik gong dou aa-ming'),
   ],
 
   things: [
-    { id: 'lou-si', hanzi: '老師', jyutping: 'lou5 si1', english: 'teacher' },
-    { id: 'hok-saang', hanzi: '學生', jyutping: 'hok6 saang1', english: 'student' },
-    { id: 'pang-jau', hanzi: '朋友', jyutping: 'pang4 jau5', english: 'friend' },
-    { id: 'hoeng-gong-jan', hanzi: '香港人', jyutping: 'hoeng1 gong2 jan4', english: 'Hongkonger',
-      note: '人 after a place makes a person from there.' },
-    { id: 'jing-gwok-jan', hanzi: '英國人', jyutping: 'jing1 gwok3 jan4', english: 'British person', img: false },
-    { id: 'mei-gwok-jan', hanzi: '美國人', jyutping: 'mei5 gwok3 jan4', english: 'American', img: false },
+    ...Words.list('lou-si hok-saang pang-jau hoeng-gong-jan jing-gwok-jan mei-gwok-jan'),
     Units.word(1, 'cantonese'),
-    { id: 'jing-man', hanzi: '英文', jyutping: 'jing1 man2', english: 'English', img: false, phoneme: true },
+    Words.get('jing-man'),
   ],
 
   // Question words stay where the answer goes: 佢係邊個？ 佢係阿明。
   asking: [
-    { id: 'bin-go', hanzi: '邊個', jyutping: 'bin1 go3', english: 'who', img: false },
-    { id: 'mat-je', hanzi: '乜嘢', jyutping: 'mat1 je5', english: 'what', img: false },
-    { id: 'maa', hanzi: '嗎', jyutping: 'maa3', english: '(turns a sentence into a yes/no question)', img: false, phoneme: true,
-      note: 'Add it to the end of a sentence. Never with 邊個, 乜嘢 or A唔A.' },
-    { id: 'aa', hanzi: '呀', jyutping: 'aa3', english: '(softens a question or an answer)', img: false, phoneme: true,
-      note: 'Questions without it can sound blunt.' },
-    { id: 'ne', hanzi: '呢', jyutping: 'ne1', english: 'and ...? (what about)', img: false, phoneme: true,
-      note: 'After a person: 你呢？, and you?' },
-    { id: 'siu-siu', hanzi: '少少', jyutping: 'siu2 siu2', english: 'a little', img: false },
-    { id: 'hai-mai', hanzi: '係咪', jyutping: 'hai6 mai6', english: 'is it? (short for 係唔係)', img: false,
-      note: 'Fast speech squeezes 係唔係 into 係咪. You will hear it everywhere.' },
+    ...Words.list('bin-go mat-je maa aa ne siu-siu hai-mai'),
   ],
 });
 
