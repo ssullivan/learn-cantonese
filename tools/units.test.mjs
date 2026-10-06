@@ -59,15 +59,15 @@ ok('byId gives the entries themselves', Units.byId(sb.UNITS[3]).cat === sb.UNITS
 
 const v7 = loadVocab('unit7');
 const mGoi = entries(v7).find(e => e.id === 'm-goi');
-ok('loadVocab resolves unit 7 borrowing 唔該', mGoi?.unit === 2 && !own(mGoi, 'unit7') && own(mGoi, 'unit2'), JSON.stringify(mGoi?.unit));
+ok('loadVocab resolves unit 7 borrowing 唔該, with its files where it is taught', mGoi && ['unit2', 'words'].includes(homeOf(mGoi, 'unit7')), homeOf(mGoi ?? {}, 'unit7'));
 const v5 = loadVocab('unit5');
 const go = v5.measures.find(m => m.id === 'go');
-ok('unit 5 borrows 個 from unit 4', go?.unit === 4 && !own(go, 'unit5'), JSON.stringify(go?.unit));
+ok('unit 5 borrows 個 from unit 4', go && ['unit4', 'words'].includes(homeOf(go, 'unit5')), homeOf(go ?? {}, 'unit5'));
 const measureIds = new Set(v5.measures.map(m => m.id));
 const stray = v5.things.filter(t => !measureIds.has(t.measure)).map(t => t.id);
 ok('every unit 5 thing has a unit 5 measure word', !stray.length, stray.join(' '));
 const fish = v5.things.find(t => t.id === 'fish');
-ok('a borrowed thing keeps its unit and gains a measure', fish?.unit === 1 && fish.measure === 'tiu', JSON.stringify(fish));
+ok('a borrowed thing keeps its files and gains a measure', fish && !own(fish, 'unit5') && fish.measure === 'tiu', JSON.stringify(fish));
 
 const say = Units.sentences({ words: [cat, { id: 'aa', hanzi: '呀', jyutping: 'aa3', english: '(particle)' }] });
 const q = say('cat aa', 'A cat?', { note: 'n' });
@@ -88,9 +88,9 @@ const apple = v6.things.find(t => t.id === 'apple');
 Units.add(4, { words: [{ ...cat, legs: 4 }] });
 const again = Units.word(4, 'cat');
 ok('borrowing a borrowed word keeps its home unit', again.unit === 3 && again.legs === 4 && Canto.imgSrc(again) === '../unit3/img/cat.svg', JSON.stringify(again));
-ok('unit 6 borrows unit 5 things with a price', apple?.unit === 5 && apple.price > 0 && apple.measure === 'go', JSON.stringify(apple));
+ok('unit 6 borrows unit 5 things with a price', apple && !own(apple, 'unit6') && apple.price > 0 && apple.measure === 'go', JSON.stringify(apple));
 const oneFish = v6.ones.find(o => o.id === 'one-fish');
-ok('unit 6 borrows 一條魚 from unit 5, where it was made', oneFish?.unit === 5, JSON.stringify(oneFish?.unit));
+ok('unit 6 borrows 一條魚 from unit 5, where it was made', oneFish && homeOf(oneFish, 'unit6') === 'unit5', homeOf(oneFish ?? {}, 'unit6'));
 const allPrices = new Map([...v6.cash, ...v6.prices].map(p => [p.n, p]));
 const priceless = v6.things.filter(t => !allPrices.has(t.price)).map(t => t.id);
 ok('every unit 6 thing\'s price has an entry', !priceless.length, priceless.join(' '));

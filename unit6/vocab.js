@@ -109,7 +109,7 @@ Units.add(6, {
   // its things (and 魚).
   const measure = Units.byId(V.measures);
   V.ones = V.things.map(t => {
-    if (t.unit) return Units.word(5, `one-${t.id}`);
+    if (!Units.teaches(V, t)) return Units.word(5, `one-${t.id}`);
     const { hanzi, jyutping } = Canto.number(1, { measure: measure[t.measure] });
     return { id: `one-${t.id}`, thing: t.id, hanzi: hanzi + t.hanzi, jyutping: `${jyutping} ${t.jyutping}`,
       english: t.counted?.[0] ?? `a ${t.english}`, img: false, ...(t.phoneme && { phoneme: true }) };

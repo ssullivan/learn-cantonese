@@ -8,10 +8,10 @@ How to read Jyutping and hear the six tones. Grammar point: tone numbers 1–6 o
 - `sheet.html`, `write.html` (`u1-write`): writes 水牛好.
 
 ## Words
-`sets` holds si / fu / fan in all six tones; their ids are the jyutping (`si1`…`fan6`), so lessons can find a syllable's set and a tone's examples. `basics`, `spelling` (an example word per trap), `praise`; `V.inTones` is a helper for lessons.
+Its words are in the dictionary (`words/words.js`, unit 1). `sets` holds si / fu / fan in all six tones; their ids are the jyutping (`si1`…`fan6`), so lessons can find a syllable's set and a tone's examples. `basics`, `spelling` (an example word per trap), `praise`; `V.inTones` is a helper for lessons.
 
 ## Audio
-- The six-tone sets are read by WanLung (`zh-HK-WanLungNeural`, set at the bottom of vocab.js); everything else by the site's voice, HiuMaan.
+- The six-tone sets are read by WanLung (`zh-HK-WanLungNeural`, the `voice` of each in `words/words.js`); everything else by the site's voice, HiuMaan.
 - Why: a native speaker heard HiuMaan's tones merge (5 almost like 2, 3 close to 6). Which pairs they meant is still open; WanLung keeps all six apart best of the Azure voices. The machine check can't judge this: it asks whether each tone is the voice's own, not whether two sound apart. Tone-contrast clips need a listener.
 
 ## Drawings

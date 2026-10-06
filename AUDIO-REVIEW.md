@@ -8,37 +8,37 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 
 | # | Chinese | Jyutping | English | Audio |
 |---|---|---|---|---|
-| 1 | 廣東話 | gwong2 dung1 waa2 | Cantonese | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/cantonese.mp3) |
-| 2 | 粵拼 | jyut6 ping3 | Jyutping | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/jyutping.mp3) |
-| 3 | 聲調 | sing1 diu6 | tone | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/tone.mp3) |
-| 4 | 詩 | si1 | poem _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/si1.mp3) |
-| 5 | 史 | si2 | history _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/si2.mp3) |
-| 6 | 試 | si3 | to try _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/si3.mp3) |
-| 7 | 時 | si4 | time _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/si4.mp3) |
-| 8 | 市 | si5 | market _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/si5.mp3) |
-| 9 | 事 | si6 | matter, thing _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/si6.mp3) |
-| 10 | 夫 | fu1 | husband _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fu1.mp3) |
-| 11 | 苦 | fu2 | bitter _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fu2.mp3) |
-| 12 | 富 | fu3 | rich _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fu3.mp3) |
-| 13 | 扶 | fu4 | to help up _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fu4.mp3) |
-| 14 | 婦 | fu5 | woman _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fu5.mp3) |
-| 15 | 父 | fu6 | father _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fu6.mp3) |
-| 16 | 分 | fan1 | to share out _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fan1.mp3) |
-| 17 | 粉 | fan2 | powder, rice noodles _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fan2.mp3) |
-| 18 | 瞓 | fan3 | to sleep _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fan3.mp3) |
-| 19 | 墳 | fan4 | grave _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fan4.mp3) |
-| 20 | 憤 | fan5 | anger _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fan5.mp3) |
-| 21 | 份 | fan6 | portion, share _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fan6.mp3) |
-| 22 | 魚 | jyu4 | fish | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/fish.mp3) |
-| 23 | 牛 | ngau4 | cow | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/cow.mp3) |
-| 24 | 吳 | ng4 | Ng (a family name) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/ng.mp3) |
-| 25 | 粥 | zuk1 | congee (rice porridge) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/congee.mp3) |
-| 26 | 車 | ce1 | car | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/car.mp3) |
-| 27 | 水 | seoi2 | water | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/water.mp3) |
-| 28 | 香港 | hoeng1 gong2 | Hong Kong | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/hong-kong.mp3) |
-| 29 | 雞 | gai1 | chicken | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/chicken.mp3) |
-| 30 | 街 | gaai1 | street | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/street.mp3) |
-| 31 | 好叻呀！ | hou2 lek1 aa3 | Well done! (literally "so clever!") | [▶ play](https://ssullivan.github.io/learn-cantonese/unit1/audio/hou-lek.mp3) |
+| 1 | 廣東話 | gwong2 dung1 waa2 | Cantonese | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/cantonese.mp3) |
+| 2 | 粵拼 | jyut6 ping3 | Jyutping | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jyutping.mp3) |
+| 3 | 聲調 | sing1 diu6 | tone | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/tone.mp3) |
+| 4 | 詩 | si1 | poem _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/si1.mp3) |
+| 5 | 史 | si2 | history _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/si2.mp3) |
+| 6 | 試 | si3 | to try _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/si3.mp3) |
+| 7 | 時 | si4 | time _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/si4.mp3) |
+| 8 | 市 | si5 | market _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/si5.mp3) |
+| 9 | 事 | si6 | matter, thing _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/si6.mp3) |
+| 10 | 夫 | fu1 | husband _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fu1.mp3) |
+| 11 | 苦 | fu2 | bitter _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fu2.mp3) |
+| 12 | 富 | fu3 | rich _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fu3.mp3) |
+| 13 | 扶 | fu4 | to help up _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fu4.mp3) |
+| 14 | 婦 | fu5 | woman _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fu5.mp3) |
+| 15 | 父 | fu6 | father _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fu6.mp3) |
+| 16 | 分 | fan1 | to share out _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fan1.mp3) |
+| 17 | 粉 | fan2 | powder, rice noodles _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fan2.mp3) |
+| 18 | 瞓 | fan3 | to sleep _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fan3.mp3) |
+| 19 | 墳 | fan4 | grave _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fan4.mp3) |
+| 20 | 憤 | fan5 | anger _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fan5.mp3) |
+| 21 | 份 | fan6 | portion, share _(WanLung voice)_ | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fan6.mp3) |
+| 22 | 魚 | jyu4 | fish | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fish.mp3) |
+| 23 | 牛 | ngau4 | cow | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/cow.mp3) |
+| 24 | 吳 | ng4 | Ng (a family name) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ng.mp3) |
+| 25 | 粥 | zuk1 | congee (rice porridge) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/congee.mp3) |
+| 26 | 車 | ce1 | car | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/car.mp3) |
+| 27 | 水 | seoi2 | water | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/water.mp3) |
+| 28 | 香港 | hoeng1 gong2 | Hong Kong | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hong-kong.mp3) |
+| 29 | 雞 | gai1 | chicken | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/chicken.mp3) |
+| 30 | 街 | gaai1 | street | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/street.mp3) |
+| 31 | 好叻呀！ | hou2 lek1 aa3 | Well done! (literally "so clever!") | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hou-lek.mp3) |
 
 ## Unit 2
 

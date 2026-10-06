@@ -65,7 +65,7 @@
  * Stars: 1 at 50% right, 2 at 80%, 3 for all right. A level unlocks when
  * the one before it has a star. Best score and stars per level are saved.
  * A perfect level celebrates: fireworks the first time, petals after, and
- * 好叻呀！ (CHEER, unit 1's word) is said.
+ * 好叻呀！ (CHEER, the dictionary word unit 1 teaches) is said.
  */
 (function () {
   const { el: $ } = Canto;
@@ -80,7 +80,7 @@
   });
   // Said after a perfect level: unit 1's hou-lek (tools/units.test.mjs
   // checks it matches). Its hanzi is spoken if the clip can't play.
-  const CHEER = { id: 'hou-lek', unit: 1, hanzi: '好叻呀！' };
+  const CHEER = { id: 'hou-lek', taught: 1, hanzi: '好叻呀！' };
 
   const starsFor = (right, total) => right === total ? 3 : right >= total * 0.8 ? 2 : right >= total * 0.5 ? 1 : 0;
   const starText = n => '★'.repeat(n) + '☆'.repeat(3 - n);
