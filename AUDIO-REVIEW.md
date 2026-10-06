@@ -1875,31 +1875,31 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 
 | # | Chinese | Jyutping | English | Audio |
 |---|---|---|---|---|
-| 1 | 開心 | hoi1 sam1 | happy | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/hoi-sam.mp3) |
-| 2 | 傷心 | soeng1 sam1 | sad | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/soeng-sam.mp3) |
-| 3 | 興奮 | hing1 fan5 | excited | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/hing-fan.mp3) |
-| 4 | 嬲 | nau1 | angry | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/nau.mp3) |
-| 5 | 驚 | geng1 | scared; afraid (of) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/geng.mp3) |
-| 6 | 緊張 | gan2 zoeng1 | nervous | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/gan-zoeng.mp3) |
-| 7 | 攰 | gui6 | tired | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/gui.mp3) |
-| 8 | 眼瞓 | ngaan5 fan3 | sleepy | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/ngaan-fan.mp3) |
-| 9 | 悶 | mun6 | bored; boring | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/mun.mp3) |
-| 10 | 肚餓 | tou5 ngo6 | hungry | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/tou-ngo.mp3) |
-| 11 | 頸渴 | geng2 hot3 | thirsty | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/geng-hot.mp3) |
-| 12 | 開 | hoi1 | to open | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/hoi.mp3) |
-| 13 | 傷 | soeng1 | to hurt; a wound | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/soeng1.mp3) |
-| 14 | 興 | hing1 | to rise; to flourish | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/hing1.mp3) |
-| 15 | 頸 | geng2 | neck | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/geng2.mp3) |
-| 16 | 心情 | sam1 cing4 | mood | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/sam-cing.mp3) |
-| 17 | 覺得 | gok3 dak1 | to feel; to think | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/gok-dak.mp3) |
-| 18 | 點解 | dim2 gaai2 | why | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/dim-gaai.mp3) |
-| 19 | 因為 | jan1 wai6 | because | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/jan-wai.mp3) |
-| 20 | 咁 | gam3 | so (this much) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/gam3.mp3) |
-| 21 | 考試 | haau2 si5 | to take an exam; an exam | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/haau-si.mp3) |
-| 22 | 辦法 | baan6 faat3 | a way (to do it) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/baan-faat.mp3) |
-| 23 | 喎 | wo3 | (hey! I notice; news) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/wo3.mp3) |
-| 24 | 囉 | lo1 | (obviously; oh well, that's that) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/lo1.mp3) |
-| 25 | 嘛 | maa3 | (you know; as you should know) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/maa3.mp3) |
+| 1 | 開心 | hoi1 sam1 | happy | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hoi-sam.mp3) |
+| 2 | 傷心 | soeng1 sam1 | sad | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/soeng-sam.mp3) |
+| 3 | 興奮 | hing1 fan5 | excited | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hing-fan.mp3) |
+| 4 | 嬲 | nau1 | angry | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/nau.mp3) |
+| 5 | 驚 | geng1 | scared; afraid (of) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/geng.mp3) |
+| 6 | 緊張 | gan2 zoeng1 | nervous | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gan-zoeng.mp3) |
+| 7 | 攰 | gui6 | tired | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gui.mp3) |
+| 8 | 眼瞓 | ngaan5 fan3 | sleepy | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ngaan-fan.mp3) |
+| 9 | 悶 | mun6 | bored; boring | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/mun.mp3) |
+| 10 | 肚餓 | tou5 ngo6 | hungry | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/tou-ngo.mp3) |
+| 11 | 頸渴 | geng2 hot3 | thirsty | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/geng-hot.mp3) |
+| 12 | 開 | hoi1 | to open | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hoi.mp3) |
+| 13 | 傷 | soeng1 | to hurt; a wound | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/soeng1.mp3) |
+| 14 | 興 | hing1 | to rise; to flourish | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hing1.mp3) |
+| 15 | 頸 | geng2 | neck | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/geng2.mp3) |
+| 16 | 心情 | sam1 cing4 | mood | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/sam-cing.mp3) |
+| 17 | 覺得 | gok3 dak1 | to feel; to think | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gok-dak.mp3) |
+| 18 | 點解 | dim2 gaai2 | why | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/dim-gaai.mp3) |
+| 19 | 因為 | jan1 wai6 | because | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jan-wai.mp3) |
+| 20 | 咁 | gam3 | so (this much) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gam3.mp3) |
+| 21 | 考試 | haau2 si5 | to take an exam; an exam | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/haau-si.mp3) |
+| 22 | 辦法 | baan6 faat3 | a way (to do it) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/baan-faat.mp3) |
+| 23 | 喎 | wo3 | (hey! I notice; news) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/wo3.mp3) |
+| 24 | 囉 | lo1 | (obviously; oh well, that's that) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/lo1.mp3) |
+| 25 | 嘛 | maa3 | (you know; as you should know) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/maa3.mp3) |
 | 26 | 唔開心 | m4 hoi1 sam1 | unhappy; not happy | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/m-hoi-sam.mp3) |
 | 27 | 唔傷心 | m4 soeng1 sam1 | not sad | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/m-soeng-sam.mp3) |
 | 28 | 唔興奮 | m4 hing1 fan5 | not excited | [▶ play](https://ssullivan.github.io/learn-cantonese/unit17/audio/m-hing-fan.mp3) |

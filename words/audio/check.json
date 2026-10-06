@@ -254,6 +254,13 @@
   ],
   "audio": "e1bf4ba6fd2c"
  },
+ "geng-hot": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 渴 tone 3 sounds like 6 (p 0.09)"
+  ],
+  "audio": "7829941bed69"
+ },
  "gin": {
   "verdict": "LISTEN",
   "notes": [
@@ -282,6 +289,13 @@
   ],
   "audio": "a4a514d0eb22"
  },
+ "gui": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 對 deoi"
+  ],
+  "audio": "477006a5e285"
+ },
  "gwo": {
   "verdict": "LISTEN",
   "notes": [
@@ -302,6 +316,13 @@
    "speech-to-text heard 鵬路 paang lou"
   ],
   "audio": "fb1e1fa8b0ef"
+ },
+ "haau-si": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 試 tone 5 sounds like 6 (p 0.04)"
+  ],
+  "audio": "53368fd6491f"
  },
  "hai-mai": {
   "verdict": "CHECK",
@@ -453,6 +474,13 @@
   ],
   "audio": "043426875c4f"
  },
+ "maa3": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard MA m a"
+  ],
+  "audio": "b06b1699d0c2"
+ },
  "maai6": {
   "verdict": "LISTEN",
   "notes": [
@@ -487,6 +515,20 @@
    "speech-to-text heard 跑 paau"
   ],
   "audio": "323ef7dc138a"
+ },
+ "mun": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Mwn m w n"
+  ],
+  "audio": "84f660fc44d7"
+ },
+ "nau": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Naw n a w"
+  ],
+  "audio": "4d3a20db61c4"
  },
  "nei": {
   "verdict": "LISTEN",
@@ -608,6 +650,13 @@
   ],
   "audio": "0bdfca20e8be"
  },
+ "soeng1": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Sang s a n g"
+  ],
+  "audio": "85952613b343"
+ },
  "soeng6": {
   "verdict": "LISTEN",
   "notes": [
@@ -671,6 +720,13 @@
    "speech-to-text heard 噶 got"
   ],
   "audio": "b4632fce655d"
+ },
+ "tou-ngo": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 肚 tone 5 sounds like 6 (p 0.08)"
+  ],
+  "audio": "3840484c40c0"
  },
  "umbrella": {
   "verdict": "LISTEN",

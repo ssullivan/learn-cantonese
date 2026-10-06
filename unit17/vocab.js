@@ -20,62 +20,31 @@ Units.add(17, {
 
   // How you feel. Each has a picture of a face.
   feelings: [
-    { id: 'hoi-sam', half: 'hoi', hanzi: '開心', jyutping: 'hoi1 sam1', english: 'happy',
-      note: '"Open heart". 心 is the heart in many feelings.' },
-    { id: 'soeng-sam', half: 'soeng1', hanzi: '傷心', jyutping: 'soeng1 sam1', english: 'sad',
-      note: '"Hurt heart": sad, heartbroken. For a little down, 唔開心.' },
-    { id: 'hing-fan', half: 'hing1', hanzi: '興奮', jyutping: 'hing1 fan5', english: 'excited' },
-    { id: 'nau', hanzi: '嬲', jyutping: 'nau1', english: 'angry',
-      note: 'Also angry with someone: 佢嬲我, they\'re angry with me.' },
-    { id: 'geng', hanzi: '驚', jyutping: 'geng1', english: 'scared; afraid (of)',
-      note: 'Before what scares you: 我驚狗, I\'m scared of dogs.' },
-    { id: 'gan-zoeng', half: 'gan', hanzi: '緊張', jyutping: 'gan2 zoeng1', english: 'nervous',
-      note: '"Tight and stretched".' },
-    { id: 'gui', hanzi: '攰', jyutping: 'gui6', english: 'tired' },
-    { id: 'ngaan-fan', half: 'eye', hanzi: '眼瞓', jyutping: 'ngaan5 fan3', english: 'sleepy',
-      note: '"Eyes sleep": 眼 (Unit 14) and 瞓 (Unit 1).' },
-    { id: 'mun', hanzi: '悶', jyutping: 'mun6', english: 'bored; boring',
-      note: 'Both: 我好悶, I\'m bored; 呢套戲好悶, this film is boring.' },
-    { id: 'tou-ngo', half: 'stomach', hanzi: '肚餓', jyutping: 'tou5 ngo6', english: 'hungry',
-      note: '"Belly hungry": 肚 (Unit 14).' },
-    { id: 'geng-hot', half: 'geng2', hanzi: '頸渴', jyutping: 'geng2 hot3', english: 'thirsty',
-      note: '"Neck thirsty". 頸 geng2 rises; 驚 geng1 (scared) is high.' },
+    { ...Words.get('hoi-sam'), half: 'hoi' },
+    { ...Words.get('soeng-sam'), half: 'soeng1' },
+    { ...Words.get('hing-fan'), half: 'hing1' },
+    ...Words.list('nau geng'),
+    { ...Words.get('gan-zoeng'), half: 'gan' },
+    Words.get('gui'),
+    { ...Words.get('ngaan-fan'), half: 'eye' },
+    Words.get('mun'),
+    { ...Words.get('tou-ngo'), half: 'stomach' },
+    { ...Words.get('geng-hot'), half: 'geng2' },
   ],
 
   // First syllables, for asking A唔A: 開唔開心. 眼 肚 緊 are borrowed below.
   halves: [
-    { id: 'hoi', hanzi: '開', jyutping: 'hoi1', english: 'to open', img: false,
-      note: 'Only the first syllable comes twice: 開唔開心.' },
-    { id: 'soeng1', hanzi: '傷', jyutping: 'soeng1', english: 'to hurt; a wound', img: false },
-    { id: 'hing1', hanzi: '興', jyutping: 'hing1', english: 'to rise; to flourish', img: false,
-      note: 'hing1 here; in 興趣 (Unit 16) it is hing3.' },
-    { id: 'geng2', hanzi: '頸', jyutping: 'geng2', english: 'neck', img: false },
+    ...Words.list('hoi soeng1 hing1 geng2'),
   ],
 
   talk: [
-    { id: 'sam-cing', hanzi: '心情', jyutping: 'sam1 cing4', english: 'mood', img: false,
-      note: '"Heart feelings".' },
-    { id: 'gok-dak', hanzi: '覺得', jyutping: 'gok3 dak1', english: 'to feel; to think', img: false,
-      note: 'Before how you feel: 我覺得好攰. Or what you think: 你覺得點呀？' },
-    { id: 'dim-gaai', hanzi: '點解', jyutping: 'dim2 gaai2', english: 'why', img: false,
-      note: '"How explain". Before the verb, or first: 點解你咁嬲呀？' },
-    { id: 'jan-wai', hanzi: '因為', jyutping: 'jan1 wai6', english: 'because', img: false },
-    { id: 'gam3', hanzi: '咁', jyutping: 'gam3', english: 'so (this much)', img: false,
-      note: 'Before a feeling: 咁攰, so tired.' },
-    { id: 'haau-si', hanzi: '考試', jyutping: 'haau2 si5', english: 'to take an exam; an exam', img: false },
-    { id: 'baan-faat', hanzi: '辦法', jyutping: 'baan6 faat3', english: 'a way (to do it)', img: false,
-      note: '冇辦法: there\'s no way; nothing to be done.' },
+    ...Words.list('sam-cing gok-dak dim-gaai jan-wai gam3 haau-si baan-faat'),
   ],
 
   // Sentence particles: said at the end, they add how you feel about
   // it. 啦 and 喇 are borrowed below.
   particles: [
-    { id: 'wo3', hanzi: '喎', jyutping: 'wo3', english: '(hey! I notice; news)', img: false,
-      note: 'For something you\'ve just noticed, or news: 好凍喎！ Ooh, it\'s cold!' },
-    { id: 'lo1', hanzi: '囉', jyutping: 'lo1', english: '(obviously; oh well, that\'s that)', img: false,
-      note: 'It\'s obvious, or it can\'t be helped: 冇辦法囉, nothing to be done.' },
-    { id: 'maa3', hanzi: '嘛', jyutping: 'maa3', english: '(you know; as you should know)', img: false,
-      note: 'Sounds like 嗎, but it isn\'t a question: it gives a reason the listener should know.' },
+    ...Words.list('wo3 lo1 maa3'),
   ],
 });
 

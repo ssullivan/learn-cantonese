@@ -13,27 +13,6 @@
   ],
   "audio": "a97705fee79f"
  },
- "geng-hot": {
-  "verdict": "LISTEN",
-  "notes": [
-   "tone doubtful: 渴 tone 3 sounds like 6 (p 0.09)"
-  ],
-  "audio": "7829941bed69"
- },
- "gui": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 對 deoi"
-  ],
-  "audio": "477006a5e285"
- },
- "haau-si": {
-  "verdict": "LISTEN",
-  "notes": [
-   "tone doubtful: 試 tone 5 sounds like 6 (p 0.04)"
-  ],
-  "audio": "53368fd6491f"
- },
  "jam2-bui-water-laa1": {
   "verdict": "LISTEN",
   "notes": [
@@ -135,33 +114,12 @@
   ],
   "audio": "0fa1e974b1ae"
  },
- "maa3": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard MA m a"
-  ],
-  "audio": "b06b1699d0c2"
- },
  "mou-je-lo1": {
   "verdict": "CHECK",
   "notes": [
    "tone: 嘢 tone 5 sounds like 2 (p 0.01)"
   ],
   "audio": "05bbbd2cbda7"
- },
- "mun": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard Mwn m w n"
-  ],
-  "audio": "84f660fc44d7"
- },
- "nau": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard Naw n a w"
-  ],
-  "audio": "4d3a20db61c4"
  },
  "nei-dim-gaai-gam3-nau-aa": {
   "verdict": "CHECK",
@@ -483,20 +441,6 @@
    "tone doubtful: 唔 tone 4 sounds like 4 (p 0.40)"
   ],
   "audio": "8a21fb14d845"
- },
- "soeng1": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard Sang s a n g"
-  ],
-  "audio": "85952613b343"
- },
- "tou-ngo": {
-  "verdict": "LISTEN",
-  "notes": [
-   "tone doubtful: 肚 tone 5 sounds like 6 (p 0.08)"
-  ],
-  "audio": "3840484c40c0"
  },
  "zou-di-fan3-gaau-laa1": {
   "verdict": "LISTEN",
