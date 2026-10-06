@@ -27,7 +27,7 @@ Units.add(16, {
     { id: 'haang', hanzi: '行', jyutping: 'haang4', english: 'to walk', img: false,
       note: 'As in 行路 (Unit 11).' },
     { id: 'tek', hanzi: '踢', jyutping: 'tek3', english: 'to kick', img: false },
-    { id: 'tiu', hanzi: '跳', jyutping: 'tiu3', english: 'to jump', img: false },
+    { id: 'tiu3', hanzi: '跳', jyutping: 'tiu3', english: 'to jump', img: false },
     { id: 'jing', hanzi: '影', jyutping: 'jing2', english: 'to take (a photo)', img: false },
     { id: 'waak', hanzi: '畫', jyutping: 'waak6', english: 'to draw; to paint', img: false,
       note: 'The verb is waak6; the picture you make is waa2.' },
@@ -43,7 +43,7 @@ Units.add(16, {
       note: 'The English letter K, from "karaoke".' },
     { id: 'go1', hanzi: '歌', jyutping: 'go1', english: 'a song', img: false },
     { id: 'saan', hanzi: '山', jyutping: 'saan1', english: 'a hill; a mountain', img: false },
-    { id: 'gaai', hanzi: '街', jyutping: 'gaai1', english: 'a street', img: false },
+    { ...Units.word(1, 'street'), english: 'a street' },
     { id: 'mou5', hanzi: '舞', jyutping: 'mou5', english: 'a dance', img: false },
     { id: 'soeng2', hanzi: '相', jyutping: 'soeng2', english: 'a photo', img: false },
     { id: 'waa', hanzi: '畫', jyutping: 'waa2', english: 'a picture; a painting', img: false,
@@ -55,7 +55,7 @@ Units.add(16, {
   grammar: [
     { id: 'zung-ji', hanzi: '鍾意', jyutping: 'zung1 ji3', english: 'to like', img: false,
       note: 'Before a verb or a thing: 鍾意游水, 鍾意貓. Also written 中意.' },
-    { id: 'zung', hanzi: '鍾', jyutping: 'zung1', english: '(the first half of 鍾意)', img: false,
+    { id: 'zung1', hanzi: '鍾', jyutping: 'zung1', english: '(the first half of 鍾意)', img: false,
       note: 'Asking A唔A, only the first half comes twice: 鍾唔鍾意.' },
     { id: 'soeng', hanzi: '想', jyutping: 'soeng2', english: 'to want to; would like to', img: false,
       note: 'Before the verb: 想去, want to go.' },
@@ -107,8 +107,8 @@ Units.add(16, {
     ['teng go1', 'to listen to music', 'listening to music', 0],
     ['jau4 water', 'to swim', 'swimming', OUT | SKILL],
     ['haang saan', 'to go hiking', 'hiking', OUT],
-    ['haang gaai', 'to go shopping; to stroll round the shops', 'going shopping', OUT],
-    ['tiu mou5', 'to dance', 'dancing', OUT | SKILL],
+    ['haang street', 'to go shopping; to stroll round the shops', 'going shopping', OUT],
+    ['tiu3 mou5', 'to dance', 'dancing', OUT | SKILL],
     ['jing soeng2', 'to take photos', 'taking photos', 0],
     ['waak waa', 'to draw; to paint', 'drawing', SKILL],
     ['caai daan-ce', 'to ride a bike', 'cycling', OUT | SKILL],
@@ -121,7 +121,7 @@ Units.add(16, {
     'teng-go1': '"Listen to songs".',
     'jau4-water': '"Swim the water".',
     'haang-saan': '"Walk the hills": Hong Kong has lots of trails.',
-    'haang-gaai': '"Walk the streets": shopping, or just looking.',
+    'haang-street': '"Walk the streets": shopping, or just looking.',
     'caai-daan-ce': '"Pedal the bicycle".',
   };
   V.hobbies = [
@@ -160,7 +160,7 @@ Units.add(16, {
   ];
   const go = h => h.out ? `heoi ${h.id}` : h.id;
   V.asks = [
-    ...V.hobbies.map(h => say(`nei zung m zung-ji ${h.id} aa`, `Do you like ${h.ing}?`,
+    ...V.hobbies.map(h => say(`nei zung1 m zung-ji ${h.id} aa`, `Do you like ${h.ing}?`,
       { hobby: h.id, kind: 'like', answers: ['zung-ji', 'm-zung-ji'] })),
     ...skills.flatMap(h => [
       say(`nei sik m sik ${h.id} aa`, `Can you ${base(h)}?`, { hobby: h.id, kind: 'can', answers: ['sik', 'm-sik'] }),
@@ -186,7 +186,7 @@ Units.add(16, {
     say('ngo wk6 wui heoi jau4-water', 'I\'m going swimming on Saturday.', { note: '會 (Unit 13): will. The day goes before it.' }),
     say('nei ting-jat wui m wui heoi tek-ball aa', 'Are you going to play football tomorrow?', { note: '會唔會: will you or not?' }),
     say('ngo wui jau4-water', 'I can swim.', { note: '會 can say can too: 我會游水 is 我識游水.' }),
-    say('keoi m sik tiu-mou5', 'They can\'t dance.'),
+    say('keoi m sik tiu3-mou5', 'They can\'t dance.'),
     say('nei jau mou coeng gwo kei aa', 'Have you ever been to karaoke?', { note: '過 goes after the verb (Unit 15), inside the activity: 唱過K.' }),
     say('ngo mei haang gwo saan', 'I haven\'t been hiking yet.'),
   ];

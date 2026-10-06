@@ -58,7 +58,7 @@ const swatch = ({ fill, line }) => `<path d="M30 30 C44 14 84 16 100 30 C114 42 
 const PLAIN = { hat: 'laam', coat: 'fe', skirt: 'fan-hung', glasses: 'hak' };
 const art = {
   'ngaan-sik': svg('A palette of colours', `<path d="M64 14 C98 14 118 36 118 62 C118 84 102 92 90 88 C80 85 76 92 80 100 C84 110 76 116 64 116 C34 116 10 94 10 64 C10 36 32 14 64 14 Z" fill="#f4e6c8" stroke="#9c6528" stroke-width="3" stroke-linejoin="round"/>
-${[['hung', 34, 50], ['wong', 52, 32], ['luk', 76, 30], ['laam', 96, 46], ['zi', 98, 66], ['fan-hung', 30, 74], ['hak', 50, 94]]
+${[['hung', 34, 50], ['wong', 52, 32], ['luk', 76, 30], ['laam', 96, 46], ['zi2', 98, 66], ['fan-hung', 30, 74], ['hak', 50, 94]]
     .map(([id, x, y]) => `<circle cx="${x}" cy="${y}" r="9" fill="${byId[id].fill}" stroke="${byId[id].line}" stroke-width="2"/>`).join('\n')}`),
   'daa-baan': svg('A person, ready to dress', figure),
 };

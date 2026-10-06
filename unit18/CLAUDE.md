@@ -18,4 +18,4 @@ Groups: `adjectives`, `talk`, `things`, `people`, `measures`, `borrowed`, `words
 Each adjective as a contrast with a gold arrow on the one meant (大 細 高 矮), a fast car and a slow snail, a podium for 最, two balls the same for 一樣 (`ball`, `figure`, `arrow`, `car`).
 
 ## Borrowed by later units
-The adjectives 大 細 高 矮 快 慢 (`daai`, `sai`, `gou`, `ai`, `faai`, `maan`, with their pictures), 比, 最 (`zeoi`, unit 20), 一樣, 差唔多, 啱 / 唔啱, 好多, the ages. A later unit's things can be compared by adding a `size`, `speed`... (unit 19's animals could add a `size`).
+The adjectives 大 細 高 矮 快 慢 (`daai6`, `sai3`, `gou`, `ai`, `faai`, `maan6`, with their pictures), 比, 最 (`zeoi`, unit 20), 一樣, 差唔多, 啱 / 唔啱, 好多, the ages. A later unit's things can be compared by adding a `size`, `speed`... (unit 19's animals could add a `size`).

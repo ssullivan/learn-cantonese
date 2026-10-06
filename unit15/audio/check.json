@@ -13,7 +13,7 @@
   ],
   "audio": "522c25936364"
  },
- "caat-zo-tooth": {
+ "caat-zo2-tooth": {
   "verdict": "LISTEN",
   "notes": [
    "speech-to-text heard 拆咗呀 caak zo aa",
@@ -28,7 +28,7 @@
   ],
   "audio": "a036dd83ecc6"
  },
- "faan-zo-home": {
+ "faan-zo2-home": {
   "verdict": "CHECK",
   "notes": [
    "tone: 企 tone 2 sounds like 5 (p 0.00)"
@@ -42,7 +42,7 @@
   ],
   "audio": "0db72155c8e2"
  },
- "fan3-zo-gaau": {
+ "fan3-zo2-gaau": {
   "verdict": "LISTEN",
   "notes": [
    "speech-to-text heard 訓左覺 fan zo gok"
@@ -78,7 +78,7 @@
   ],
   "audio": "73bc22bc1b1e"
  },
- "hei-zo-san": {
+ "hei-zo2-san": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 起 tone 2 sounds like 5 (p 0.04)"
@@ -92,7 +92,7 @@
   ],
   "audio": "af4114b51a43"
  },
- "keoi-caat-zo-tooth-mei-aa": {
+ "keoi-caat-zo2-tooth-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -100,14 +100,14 @@
   ],
   "audio": "2be9f26dde94"
  },
- "keoi-cung-zo-loeng-mei-aa": {
+ "keoi-cung-zo2-loeng4-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 佢 tone 5 sounds like 6 (p 0.03); 未 tone 6 sounds like 2 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)"
   ],
   "audio": "2cd1273643bc"
  },
- "keoi-faan-zo-gung-mei-aa": {
+ "keoi-faan-zo2-gung-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -115,7 +115,7 @@
   ],
   "audio": "13858f2d4519"
  },
- "keoi-faan-zo-hok-mei-aa": {
+ "keoi-faan-zo2-hok-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -123,7 +123,7 @@
   ],
   "audio": "208a49f6a346"
  },
- "keoi-faan-zo-home-mei-aa": {
+ "keoi-faan-zo2-home-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 佢 tone 5 sounds like 6 (p 0.03); 咗 tone 2 sounds like 6 (p 0.01); 屋 tone 1 sounds like 2 (p 0.02); 呀 tone 3 sounds like 1 (p 0.00)",
@@ -138,7 +138,7 @@
   ],
   "audio": "aa5296063adb"
  },
- "keoi-fan3-zo-gaau-mei-aa": {
+ "keoi-fan3-zo2-gaau-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 未 tone 6 sounds like 2 (p 0.02); 呀 tone 3 sounds like 1 (p 0.00)",
@@ -146,7 +146,7 @@
   ],
   "audio": "2738b88fbdef"
  },
- "keoi-fong-zo-gung-mei-aa": {
+ "keoi-fong-zo2-gung-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -154,7 +154,7 @@
   ],
   "audio": "d7192e0c6b54"
  },
- "keoi-fong-zo-hok-mei-aa": {
+ "keoi-fong-zo2-hok-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -162,7 +162,7 @@
   ],
   "audio": "e22a8d5a2ab5"
  },
- "keoi-hei-zo-san-mei-aa": {
+ "keoi-hei-zo2-san-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -178,7 +178,7 @@
   ],
   "audio": "13b857416070"
  },
- "keoi-sai-zo-hand-mei-aa": {
+ "keoi-sai-zo2-hand-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -186,7 +186,7 @@
   ],
   "audio": "7c085cc26bc3"
  },
- "keoi-sai-zo-min-mei-aa": {
+ "keoi-sai-zo2-min-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 未 tone 6 sounds like 2 (p 0.04); 呀 tone 3 sounds like 1 (p 0.00)",
@@ -194,7 +194,7 @@
   ],
   "audio": "941990be8d7a"
  },
- "keoi-sik6-zo-aan-mei-aa": {
+ "keoi-sik6-zo2-aan-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -202,14 +202,14 @@
   ],
   "audio": "73113b9fa69a"
  },
- "keoi-sik6-zo-maan-faan-mei-aa": {
+ "keoi-sik6-zo2-maan-faan-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 未 tone 6 sounds like 2 (p 0.00); 呀 tone 3 sounds like 1 (p 0.00)"
   ],
   "audio": "e53d609d80ab"
  },
- "keoi-sik6-zo-zou-caan-mei-aa": {
+ "keoi-sik6-zo2-zou-caan-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -217,7 +217,7 @@
   ],
   "audio": "96999d0fd422"
  },
- "keoi-tai-zo-book-mei-aa": {
+ "keoi-tai-zo2-book-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -225,7 +225,7 @@
   ],
   "audio": "8b017ea81a32"
  },
- "keoi-tai-zo-din-si-mei-aa": {
+ "keoi-tai-zo2-din-si-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 未 tone 6 sounds like 5 (p 0.00); 呀 tone 3 sounds like 1 (p 0.00)",
@@ -233,7 +233,7 @@
   ],
   "audio": "bd4c4e9b3e22"
  },
- "keoi-zoek-zo-shirt-mei-aa": {
+ "keoi-zoek-zo2-shirt-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 佢 tone 5 sounds like 6 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)",
@@ -241,7 +241,7 @@
   ],
   "audio": "8df469d2b8b7"
  },
- "keoi-zou6-zo-je-mei-aa": {
+ "keoi-zou6-zo2-je-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -249,7 +249,7 @@
   ],
   "audio": "53dd8116a168"
  },
- "keoi-zyu-zo-rice-mei-aa": {
+ "keoi-zyu2-zo2-rice-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 未 tone 6 sounds like 2 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)",
@@ -264,7 +264,7 @@
   ],
   "audio": "d3f8d2a87a56"
  },
- "mei-cung-loeng": {
+ "mei-cung-loeng4": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 未 tone 6 sounds like 3 (p 0.38)"
@@ -501,7 +501,7 @@
   ],
   "audio": "ef318ab84fba"
  },
- "ngo-faan-home-zi-hau-zyu-rice": {
+ "ngo-faan-home-zi-hau-zyu2-rice": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 企 tone 2 sounds like 5 (p 0.15)"
@@ -564,7 +564,7 @@
   ],
   "audio": "13957fe41ae5"
  },
- "ngo-sin-tai-din-si-jin-hau-cung-loeng": {
+ "ngo-sin-tai-din-si-jin-hau-cung-loeng4": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 我 tone 5 sounds like 2 (p 0.42); 睇 tone 2 sounds like 3 (p 0.11); 然 tone 4 sounds like 5 (p 0.09)"
@@ -578,7 +578,7 @@
   ],
   "audio": "49388323d0b5"
  },
- "ngo-t0645-zyu-rice": {
+ "ngo-t0645-zyu2-rice": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 字 tone 6 sounds like 4 (p 0.05)"
@@ -686,14 +686,14 @@
   ],
   "audio": "937f374c3ecd"
  },
- "tai-zo-book": {
+ "tai-zo2-book": {
   "verdict": "CHECK",
   "notes": [
    "tone: 睇 tone 2 sounds like 5 (p 0.01)"
   ],
   "audio": "475fe897c5ff"
  },
- "tai-zo-din-si": {
+ "tai-zo2-din-si": {
   "verdict": "CHECK",
   "notes": [
    "tone: 睇 tone 2 sounds like 5 (p 0.03)"
@@ -707,7 +707,7 @@
   ],
   "audio": "7a449d963cfe"
  },
- "zyu-gan-rice": {
+ "zyu2-gan-rice": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 煮 tone 2 sounds like 5 (p 0.05)"

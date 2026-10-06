@@ -53,7 +53,7 @@
             p('Answer with the feeling:'),
             ctx.words('hoi-sam', 'm-hoi-sam', 'gui', 'm-gui'),
             p(`Why? ${zh('點解', 'dim2 gaai2')}. Because: ${zh('因為', 'jan1 wai6')}. ${zh('咁', 'gam3')} is "so", before the feeling:`),
-            ctx.words('nei-dim-gaai-gam3-nau-aa', 'jan-wai-keoi-sik6-zo-ngo-go-pineapple-butter', 'nei-dim-gaai-m-hoi-sam-aa', 'jan-wai-ngo-ting-jat-haau-si'),
+            ctx.words('nei-dim-gaai-gam3-nau-aa', 'jan-wai-keoi-sik6-zo2-ngo-go-pineapple-butter', 'nei-dim-gaai-m-hoi-sam-aa', 'jan-wai-ngo-ting-jat-haau-si'),
           );
         },
       },
@@ -89,7 +89,7 @@
             p(`${zh('囉', 'lo1')}: it's obvious, or it can't be helped.`),
             ctx.words('lo1', 'mou-baan-faat-lo1', 'mou-je-lo1', 'hai-lo1'),
             p(`${zh('嘛', 'maa3')}: the reason, which the listener should know already.`),
-            ctx.words('maa3', 'ngo-ting-jat-haau-si-maa3', 'ngo-mou-sik6-zou-caan-maa3', 'keoi-cold-zo-maa3'),
+            ctx.words('maa3', 'ngo-ting-jat-haau-si-maa3', 'ngo-mou-sik6-zou-caan-maa3', 'keoi-cold-zo2-maa3'),
             tip('<strong>嘛 sounds like 嗎.</strong> Both are maa3, but 嗎 asks (你肚餓嗎？ Are you hungry?) and 嘛 tells (我肚餓嘛, I\'m hungry, you know). Listen to the sentence, not the particle.'),
           );
         },

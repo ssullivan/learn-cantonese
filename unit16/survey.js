@@ -63,7 +63,7 @@
   };
 
   const build = Tiles.round({ pool: [...V.sentences, ...V.likes, ...V.cans], vocab: V,
-    decoys: ['zung', 'm', 'soeng', 'sik', 'wui', 'dou', 'heoi'], extra: 2 });
+    decoys: ['zung1', 'm', 'soeng', 'sik', 'wui', 'dou', 'heoi'], extra: 2 });
   const rush = (stage, ctx, n) => [what, note][n % 2](stage, ctx, n);
 
   Game.init({

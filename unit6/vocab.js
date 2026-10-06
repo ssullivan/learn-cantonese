@@ -17,7 +17,7 @@ Units.add(6, {
   write: '平半西',
 
   money: [
-    { id: 'cin', hanzi: '錢', jyutping: 'cin2', english: 'money', img: false, phoneme: true,
+    { id: 'cin2', hanzi: '錢', jyutping: 'cin2', english: 'money', img: false, phoneme: true,
       note: 'cin4 in writing; everyday speech says cin2, as in 幾多錢.' },
     { id: 'man', hanzi: '蚊', jyutping: 'man1', english: 'dollar', img: false,
       note: 'The spoken word for a dollar. Price tags write $ or 元.' },
@@ -127,10 +127,10 @@ Units.add(6, {
     say('m gwai', 'not expensive'),
   ];
   V.sentences = [
-    say('gei-do cin aa', 'How much is it?', { note: 'Literally "how much money?"' }),
-    say('ni go gei-do cin aa', 'How much is this?', { note: '呢個, this one: point at it.' }),
-    say('go2 go gei-do cin aa', 'How much is that one?'),
-    say('ni bun book gei-do cin aa', 'How much is this book?', { note: 'Use the thing\'s own measure word: 呢本書.' }),
+    say('gei-do cin2 aa', 'How much is it?', { note: 'Literally "how much money?"' }),
+    say('ni go gei-do cin2 aa', 'How much is this?', { note: '呢個, this one: point at it.' }),
+    say('go2 go gei-do cin2 aa', 'How much is that one?'),
+    say('ni bun book gei-do cin2 aa', 'How much is this book?', { note: 'Use the thing\'s own measure word: 呢本書.' }),
     say('ngo jiu ni go', 'I\'ll take this one.'),
     say('ngo m jiu go2 go', 'I don\'t want that one.'),
     say('ngo jiu loeng go orange', 'I\'d like two oranges.'),

@@ -34,7 +34,7 @@
   ],
   "audio": "f9d1d932877c"
  },
- "keoi-m-sik-tiu-mou5": {
+ "keoi-m-sik-tiu3-mou5": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 佢 tone 5 sounds like 3 (p 0.24)"
@@ -102,7 +102,7 @@
   ],
   "audio": "a8c013379950"
  },
- "nei-sik-m-sik-tiu-mou5-aa": {
+ "nei-sik-m-sik-tiu3-mou5-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 舞 tone 5 sounds like 2 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)"
@@ -144,7 +144,7 @@
   ],
   "audio": "44cb87835021"
  },
- "nei-soeng-m-soeng-heoi-tiu-mou5-aa": {
+ "nei-soeng-m-soeng-heoi-tiu3-mou5-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 舞 tone 5 sounds like 3 (p 0.02); 呀 tone 3 sounds like 2 (p 0.00)"
@@ -173,7 +173,7 @@
   ],
   "audio": "3def86b9d1eb"
  },
- "nei-zung-m-zung-ji-caai-daan-ce-aa": {
+ "nei-zung1-m-zung-ji-caai-daan-ce-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -181,7 +181,7 @@
   ],
   "audio": "6084cf0b0b5c"
  },
- "nei-zung-m-zung-ji-coeng-kei-aa": {
+ "nei-zung1-m-zung-ji-coeng-kei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: aa tone 3 sounds like 1 (p 0.00)",
@@ -190,7 +190,7 @@
   ],
   "audio": "b97e31da5f5d"
  },
- "nei-zung-m-zung-ji-daa-ball-aa": {
+ "nei-zung1-m-zung-ji-daa-ball-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -198,7 +198,7 @@
   ],
   "audio": "eb1ffb33978d"
  },
- "nei-zung-m-zung-ji-daa-gei1-aa": {
+ "nei-zung1-m-zung-ji-daa-gei1-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -206,15 +206,7 @@
   ],
   "audio": "cffc9a4eb4e6"
  },
- "nei-zung-m-zung-ji-haang-gaai-aa": {
-  "verdict": "CHECK",
-  "notes": [
-   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
-   "tone doubtful: 你 tone 5 sounds like 2 (p 0.20); 意 tone 3 sounds like 2 (p 0.14)"
-  ],
-  "audio": "b75e0cd60f4d"
- },
- "nei-zung-m-zung-ji-haang-saan-aa": {
+ "nei-zung1-m-zung-ji-haang-saan-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -222,14 +214,22 @@
   ],
   "audio": "5d868ee9a1d6"
  },
- "nei-zung-m-zung-ji-jau4-water-aa": {
+ "nei-zung1-m-zung-ji-haang-street-aa": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 你 tone 5 sounds like 2 (p 0.20); 意 tone 3 sounds like 2 (p 0.14)"
+  ],
+  "audio": "b75e0cd60f4d"
+ },
+ "nei-zung1-m-zung-ji-jau4-water-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)"
   ],
   "audio": "34dbe0bd08d2"
  },
- "nei-zung-m-zung-ji-jing-soeng2-aa": {
+ "nei-zung1-m-zung-ji-jing-soeng2-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -237,7 +237,7 @@
   ],
   "audio": "ef950a51b4ae"
  },
- "nei-zung-m-zung-ji-tai-book-aa": {
+ "nei-zung1-m-zung-ji-tai-book-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -245,7 +245,7 @@
   ],
   "audio": "4aa4e3fc8748"
  },
- "nei-zung-m-zung-ji-tai-din-si-aa": {
+ "nei-zung1-m-zung-ji-tai-din-si-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 2 (p 0.00)",
@@ -253,7 +253,7 @@
   ],
   "audio": "62deba0cf065"
  },
- "nei-zung-m-zung-ji-tai-hei3-aa": {
+ "nei-zung1-m-zung-ji-tai-hei3-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -261,7 +261,7 @@
   ],
   "audio": "9439da2e27eb"
  },
- "nei-zung-m-zung-ji-tek-ball-aa": {
+ "nei-zung1-m-zung-ji-tek-ball-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -269,7 +269,7 @@
   ],
   "audio": "34852eea5bf8"
  },
- "nei-zung-m-zung-ji-teng-go1-aa": {
+ "nei-zung1-m-zung-ji-teng-go1-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -277,7 +277,7 @@
   ],
   "audio": "82bbe2a23e63"
  },
- "nei-zung-m-zung-ji-tiu-mou5-aa": {
+ "nei-zung1-m-zung-ji-tiu3-mou5-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 意 tone 3 sounds like 6 (p 0.02); 呀 tone 3 sounds like 1 (p 0.00)",
@@ -285,7 +285,7 @@
   ],
   "audio": "f0bcc264a426"
  },
- "nei-zung-m-zung-ji-waak-waa-aa": {
+ "nei-zung1-m-zung-ji-waak-waa-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -364,7 +364,7 @@
   ],
   "audio": "111f4d890fcc"
  },
- "ngo-m-zung-ji-tiu-mou5": {
+ "ngo-m-zung-ji-tiu3-mou5": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 意 tone 3 sounds like 6 (p 0.31)"
@@ -406,7 +406,7 @@
   ],
   "audio": "607566406ec3"
  },
- "ngo-sik-tiu-mou5": {
+ "ngo-sik-tiu3-mou5": {
   "verdict": "CHECK",
   "notes": [
    "tone: 我 tone 5 sounds like 2 (p 0.03)"
@@ -469,7 +469,7 @@
   ],
   "audio": "5383597fda09"
  },
- "ngo-zung-ji-tiu-mou5": {
+ "ngo-zung-ji-tiu3-mou5": {
   "verdict": "CHECK",
   "notes": [
    "tone: 意 tone 3 sounds like 6 (p 0.01)",
@@ -477,7 +477,7 @@
   ],
   "audio": "5048c18eaeaf"
  },
- "tiu": {
+ "tiu3": {
   "verdict": "LISTEN",
   "notes": [
    "speech-to-text heard Duw d u w"

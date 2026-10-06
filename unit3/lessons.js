@@ -53,8 +53,8 @@
             ctx.words('m'),
             ctx.words('ngo-m-hai-lou-si', 'keoi-dei-m-hai-jing-gwok-jan'),
             p(`It works with every verb. ${zh('識', 'sik1')} means "know how to", for skills like languages:`),
-            ctx.words('sik', 'gong', 'gwong-dung-waa', 'jing-man'),
-            ctx.words('ngo-sik-gong-gwong-dung-waa', 'keoi-m-sik-gong-jing-man'),
+            ctx.words('sik', 'gong', 'cantonese', 'jing-man'),
+            ctx.words('ngo-sik-gong-cantonese', 'keoi-m-sik-gong-jing-man'),
             p(`And ${zh('都', 'dou1')}, "also", goes before the verb too:`),
             ctx.words('dou', 'ngo-dou-hai-hoeng-gong-jan'),
           );
@@ -80,7 +80,7 @@
           el.append(
             p(`The easiest way to ask: take a sentence and add ${zh('嗎', 'maa3')} at the end. The word order stays the same.`),
             ctx.words('maa'),
-            ctx.words('nei-hai-hok-saang-maa', 'keoi-hai-lou-si-maa', 'nei-sik-gong-gwong-dung-waa-maa'),
+            ctx.words('nei-hai-hok-saang-maa', 'keoi-hai-lou-si-maa', 'nei-sik-gong-cantonese-maa'),
           );
         },
       },

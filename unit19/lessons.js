@@ -92,7 +92,7 @@
         render(el, ctx) {
           el.append(
             ctx.words('ngo-soeng-heoi-dung-mat-jyun', 'dung-mat-jyun-jau-panda', 'dung-mat-jyun-jau-loeng-zek-panda',
-              'nei-zeoi-zung-ji-mat-je-dung-mat-aa', 'ngo-zeoi-zung-ji-panda', 'tiger-bei-cat-daai', 'horse-bei-pig-faai'),
+              'nei-zeoi-zung-ji-mat-je-dung-mat-aa', 'ngo-zeoi-zung-ji-panda', 'tiger-bei-cat-daai6', 'horse-bei-pig-faai'),
           );
         },
       },

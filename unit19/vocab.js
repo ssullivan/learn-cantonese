@@ -55,7 +55,7 @@ Units.add(19, {
   verbs: [
     { id: 'fei', hanzi: '飛', jyutping: 'fei1', english: 'to fly', img: false, note: '飛機 (Unit 5) is a "flying machine".' },
     { id: 'paa-syu', hanzi: '爬樹', jyutping: 'paa4 syu6', english: 'to climb trees', img: false, note: '爬: climb; 樹: tree.' },
-    { id: 'zau', hanzi: '走', jyutping: 'zau2', english: 'to run', img: false,
+    { ...Units.word(8, 'zau'), english: 'to run',
       note: 'In Cantonese 走 is run (or leave); walk is 行.' },
   ],
 
@@ -80,7 +80,7 @@ Units.add(19, {
   V.ones = V.pets.map(t => Units.word(5, `one-${t.id}`));
   V.verbs.push(
     Units.word(16, 'haang'),
-    Units.word(16, 'tiu', 'tiu3'), // 跳; tiu is 條
+    Units.word(16, 'tiu3'), // 跳; tiu is 條
     { ...Units.word(16, 'jau4-water'), img: false },
   );
   V.borrowed = [
@@ -91,7 +91,7 @@ Units.add(19, {
     { ...Units.word(13, 'wui'), english: 'can; will',
       note: 'What an animal can do: 雀仔會飛. For a skill you learned, 識 (Unit 16) works too.' },
     ...['zung-ji', 'soeng'].map(id => Units.word(16, id)),
-    ...['zeoi', 'bei', 'daai', 'faai'].map(id => Units.word(18, id)),
+    ...['zeoi', 'bei', 'daai6', 'faai'].map(id => Units.word(18, id)),
   ];
 })(window.VOCAB);
 
@@ -155,7 +155,7 @@ Units.add(19, {
     say('ngo soeng heoi dung-mat-jyun', 'I want to go to the zoo.'),
     say('ngo zeoi zung-ji panda', 'I like pandas best.', { note: '最鍾意 (Unit 18): like best.' }),
     say('nei zeoi zung-ji mat-je dung-mat aa', 'Which animal do you like best?', { note: '乜嘢 + noun: which, what kind of.' }),
-    say('tiger bei cat daai', 'Tigers are bigger than cats.', { note: 'A 比 B + adjective (Unit 18).' }),
+    say('tiger bei cat daai6', 'Tigers are bigger than cats.', { note: 'A 比 B + adjective (Unit 18).' }),
     say('horse bei pig faai', 'Horses are faster than pigs.'),
     say('nei suk mat-je aa', 'What\'s your zodiac sign?', { note: '"You belong to what?"' }),
     say('n2 n0 n2 n6 nin hai horse nin', '2026 is the year of the Horse.', { note: 'Years are read digit by digit: 二零二六年. 2027 is the Goat, 羊年.' }),

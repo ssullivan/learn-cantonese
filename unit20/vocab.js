@@ -52,7 +52,7 @@ Units.add(20, {
       note: 'Also a dish of food: 叫菜, to order dishes.' },
     { id: 'gaai-si', hanzi: '街市', jyutping: 'gaai1 si5', english: 'wet market',
       note: '"Street market": fresh fruit, vegetables, fish and meat, sold by weight.' },
-    { id: 'gan', hanzi: '斤', jyutping: 'gan1', english: 'catty (about 600 g)',
+    { id: 'gan1', hanzi: '斤', jyutping: 'gan1', english: 'catty (about 600 g)',
       note: 'Markets price things by the 斤, about 600 grams.' },
     { id: 'jat-gung', hanzi: '一共', jyutping: 'jat1 gung6', english: 'altogether; in total', img: false },
     { id: 'san-sin', hanzi: '新鮮', jyutping: 'san1 sin1', english: 'fresh', img: false },
@@ -61,7 +61,7 @@ Units.add(20, {
 
   // Measure words for fruit and vegetables. 個 and 條 are borrowed below.
   measures: [
-    { id: 'nap', hanzi: '粒', jyutping: 'nap1', english: 'for small round things', img: false,
+    { ...Units.word(14, 'nap'), english: 'for small round things',
       note: 'Grapes, strawberries, sweets: 一粒提子.' },
     { id: 'po', hanzi: '棵', jyutping: 'po1', english: 'for plants', img: false,
       note: 'Greens and trees: 一棵菜心.' },
@@ -82,7 +82,7 @@ Units.add(20, {
     Units.word(4, 'gei-do'),
     { ...Units.word(5, 'di'), english: 'some; the (more than one)', note: 'Before a noun: 買啲生果, buy some fruit.' },
     Units.word(5, 'ni'),
-    ...['maai5', 'jiu', 'cin', 'hou', 'peng', 'gwai'].map(id => Units.word(6, id)),
+    ...['maai5', 'jiu', 'cin2', 'hou', 'peng', 'gwai'].map(id => Units.word(6, id)),
     Units.word(7, 'sweet'),
     ...['sik6', 'ding'].map(id => Units.word(8, id)),
     Units.word(11, 'heoi'),
@@ -108,7 +108,7 @@ Units.add(20, {
   // Weights: 半斤, 一斤, 斤半, 兩斤, 三斤.
   const cattyText = n => n === 0.5 ? 'half a catty' : `${n === 1.5 ? '1½' : n} ${n > 1 ? 'catties' : 'catty'}`;
   V.weights = [0.5, 1, 1.5, 2, 3].map(n => ({
-    id: `w${String(n).replace('.', '')}`, n, ...Canto.number(n, { measure: byId.gan, clip: true }), english: cattyText(n), img: false,
+    id: `w${String(n).replace('.', '')}`, n, ...Canto.number(n, { measure: byId.gan1, clip: true }), english: cattyText(n), img: false,
     ...(n === 1.5 && { note: '一斤半, said 斤半, like 百五 (Unit 4).' }),
     ...(n === 0.5 && { note: '半 (Unit 6) before the 斤: half a catty.' }),
   }));
@@ -134,7 +134,7 @@ Units.add(20, {
     .map(n => say(`${priceOf(n).id} w1`, `${dollars(n)} a catty`, { n }));
   V.perCatty[0].note = 'Price first, then 一斤: "six dollars one catty".';
   // 香蕉幾多錢一斤呀？
-  V.asks = produce.map(t => say(`${t.id} gei-do cin w1 aa`, `How much is a catty of ${many(t)}?`, { thing: t.id }));
+  V.asks = produce.map(t => say(`${t.id} gei-do cin2 w1 aa`, `How much is a catty of ${many(t)}?`, { thing: t.id }));
   V.asks[0].note = '幾多錢一斤: "how much money a catty".';
   // 我要兩斤香蕉, and what it comes to.
   V.orders = orderWeight.map(([t, w]) => say(`ngo jiu ${w.id} ${t.id}`, `I'd like ${w.english} of ${many(t)}.`,
@@ -153,7 +153,7 @@ Units.add(20, {
 
   V.sentences = [
     say('ngo heoi gaai-si maai5 coi', 'I\'m going to the market to buy vegetables.', { note: '去 + place + what for.' }),
-    say('jat-gung gei-do cin aa', 'How much is it altogether?', { note: '一共: in total. Ask it when you pay.' }),
+    say('jat-gung gei-do cin2 aa', 'How much is it altogether?', { note: '一共: in total. Ask it when you pay.' }),
     say('ni di mango hou sweet', 'These mangoes are very sweet.', { note: '呢啲: these.' }),
     say('ni di orange hou syun', 'These oranges are very sour.'),
     say('tomato hai saang-gwo ding hai coi aa', 'Is a tomato a fruit or a vegetable?', { note: '定係 (Unit 8): or, in a question.' }),
@@ -163,7 +163,7 @@ Units.add(20, {
   // Read from their jyutping: 錢 (cin2 in speech) and 平, as in Unit 6,
   // and 棵 (po1 in speech; the voice reads the dictionary's fo2), with
   // every 一棵 phrase.
-  Units.phonemes(V, ['cin', 'peng', 'po']);
+  Units.phonemes(V, ['cin2', 'peng', 'po']);
   byId = Units.byId(V);
   for (const e of V.ones) if (!e.unit && byId[byId[e.thing].measure].phoneme) e.phoneme = true;
 })(window.VOCAB);

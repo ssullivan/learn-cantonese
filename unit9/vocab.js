@@ -21,7 +21,7 @@ Units.add(9, {
       note: 'Counts hours like a measure word: 三點, and 兩點 for two o\'clock.' },
     { id: 'zung', hanzi: '鐘', jyutping: 'zung1', english: 'clock; o\'clock',
       note: '三點鐘 is "three o\'clock"; the 鐘 is often left out.' },
-    { id: 'zi', hanzi: '字', jyutping: 'zi6', english: 'five minutes', img: false,
+    { id: 'zi6', hanzi: '字', jyutping: 'zi6', english: 'five minutes', img: false,
       note: 'Literally "character": one numeral on the clock face, so 三點兩個字 is 3:10.' },
     { id: 'fan', hanzi: '分', jyutping: 'fan1', english: 'minute', img: false,
       note: 'For exact minutes: 三點十五分. 三點三個字 is more everyday.' },
@@ -50,7 +50,7 @@ Units.add(9, {
     { id: 'jyut', hanzi: '月', jyutping: 'jyut6', english: 'month', img: false },
     { id: 'hou6', hanzi: '號', jyutping: 'hou6', english: 'day of the month', img: false,
       note: '三號 is the 3rd. Written dates use 日 instead.' },
-    { id: 'soeng', hanzi: '上', jyutping: 'soeng6', english: 'last (week, month)', img: false },
+    { id: 'soeng6', hanzi: '上', jyutping: 'soeng6', english: 'last (week, month)', img: false },
     { id: 'haa', hanzi: '下', jyutping: 'haa6', english: 'next (week, month)', img: false },
   ],
 
@@ -76,7 +76,7 @@ Units.add(9, {
     { id: 'fong-gung', hanzi: '放工', jyutping: 'fong3 gung1', english: 'to finish work', img: false },
     { id: 'sik-faan', hanzi: '食飯', jyutping: 'sik6 faan6', english: 'to eat; to have a meal', img: false,
       note: 'Literally "eat rice", for any meal.' },
-    { id: 'gin', hanzi: '見', jyutping: 'gin3', english: 'to see; to meet', img: false,
+    { id: 'gin3', hanzi: '見', jyutping: 'gin3', english: 'to see; to meet', img: false,
       note: 'After a time, "see you then": 聽日見！' },
   ],
 });
@@ -154,9 +154,9 @@ Units.add(9, {
     say('gei dim', 'what time?', { note: '幾點呀？ on its own asks the time.' }),
     say('sing-kei gei', 'what day of the week?'),
     say('gei jyut gei hou6', 'what date?', { note: 'Month first, then day: big to small.' }),
-    say('soeng go sing-kei', 'last week'),
+    say('soeng6 go sing-kei', 'last week'),
     say('haa go sing-kei', 'next week'),
-    say('soeng go jyut', 'last month'),
+    say('soeng6 go jyut', 'last month'),
     say('haa go jyut', 'next month'),
   ];
 
@@ -180,7 +180,7 @@ Units.add(9, {
     say('ting-jat hai wk6', 'Tomorrow is Saturday.'),
     say('gam-jat gei jyut gei hou6 aa', 'What\'s the date today?'),
     say('gam-jat m5 d3', 'Today is the 3rd of May.', { note: 'Month, then day: 五月三號.' }),
-    say('ting-jat gin', 'See you tomorrow!'),
-    say('wk1 gin', 'See you on Monday!'),
+    say('ting-jat gin3', 'See you tomorrow!'),
+    say('wk1 gin3', 'See you on Monday!'),
   ];
 })(window.VOCAB);

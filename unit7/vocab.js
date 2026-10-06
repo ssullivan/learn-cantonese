@@ -82,7 +82,7 @@ Units.add(7, {
     { id: 'beef-ho-fun', measure: 'dip', group: 'rice-noodles', hanzi: '乾炒牛河', jyutping: 'gon1 caau2 ngau4 ho2', english: 'dry-fried beef ho fun',
       ssml: '乾炒牛<phoneme alphabet="sapi" ph="ho 2">河</phoneme>',
       note: 'Wide rice noodles stir-fried "dry" (乾), with no sauce, with beef and bean sprouts. 河 is usually ho4; here it changes to ho2.' },
-    { id: 'congee', measure: 'wun', group: 'rice-noodles', hanzi: '粥', jyutping: 'zuk1', english: 'congee',
+    { ...Units.word(1, 'congee'), measure: 'wun', group: 'rice-noodles', english: 'congee',
       note: 'Smooth rice porridge, often with century egg and pork. It comes in a bowl: 一碗粥.' },
   ],
 

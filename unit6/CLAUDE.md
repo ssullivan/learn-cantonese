@@ -11,7 +11,7 @@
 Prices come from `Canto.price` and sentences from `Units.sentences` at the bottom of vocab.js, never typed out. Groups: `money`, `words`, `things` (each with `price` in dollars), `measures`, `borrowed`, `cash` (`p<cents>` with `cash: 'coin' | 'note'`), `prices` (with `n` dollars), `ones`, `adjectives`, `sentences`. Borrows things from units 1 and 5.
 
 ## Audio
-`phoneme: true` on 錢 (`cin`), 平 (`peng`), 蛋 (`egg`), 呢, 呀, and every phrase with 平.
+`phoneme: true` on 錢 (`cin2`), 平 (`peng`), 蛋 (`egg`), 呢, 呀, and every phrase with 平.
 
 ## Drawings
 The new things to buy, and Hong Kong coins and notes, one per `cash` entry (`p200` is the $2 coin). The other things are unit 5's and unit 1's.

@@ -65,12 +65,6 @@ const apple = v6.things.find(t => t.id === 'apple');
 Units.add(4, { words: [{ ...cat, legs: 4 }] });
 const again = Units.word(4, 'cat');
 ok('borrowing a borrowed word keeps its home unit', again.unit === 3 && again.legs === 4 && Canto.imgSrc(again) === '../unit3/img/cat.svg', JSON.stringify(again));
-const kitty = Units.word(4, 'cat', 'kitty');
-ok('borrowing under another id keeps its files', kitty.id === 'kitty' && kitty.file === 'cat' && kitty.unit === 3
-  && Canto.audioSrc(kitty) === '../unit3/audio/cat.mp3' && Canto.imgSrc(kitty) === '../unit3/img/cat.svg', JSON.stringify(kitty));
-Units.add(5, { words: [kitty] });
-const kitty2 = Units.word(5, 'kitty', 'puss');
-ok('borrowing it again under a third id still finds the first file', kitty2.file === 'cat' && Canto.audioSrc(kitty2) === '../unit3/audio/cat.mp3', JSON.stringify(kitty2));
 ok('unit 6 borrows unit 5 things with a price', apple?.unit === 5 && apple.price > 0 && apple.measure === 'go', JSON.stringify(apple));
 const oneFish = v6.ones.find(o => o.id === 'one-fish');
 ok('unit 6 borrows 一條魚 from unit 5, where it was made', oneFish?.unit === 5, JSON.stringify(oneFish?.unit));

@@ -64,10 +64,10 @@
         render(el, ctx) {
           el.append(
             p(`A colour goes before the thing, joined by ${zh('嘅', 'ge3')} (Unit 10):`),
-            ctx.words('hung-ge-shirt', 'laam-ge-trousers', 'hak-ge-hat', 'fan-hung-ge-skirt', 'baak-ge-shoes'),
+            ctx.words('hung-ge-shirt', 'laam-ge-trousers', 'hak-ge-hat', 'fan-hung-ge-skirt', 'baak6-ge-shoes'),
             p('In speech the 嘅 is often left out:'),
             ctx.words('hung-shirt'),
-            ctx.words('keoi-zoek-hung-ge-shirt', 'keoi-zoek-laam-ge-trousers-tung-baak-ge-shoes', 'ngo-daai-hak-ge-hat'),
+            ctx.words('keoi-zoek-hung-ge-shirt', 'keoi-zoek-laam-ge-trousers-tung-baak6-ge-shoes', 'ngo-daai-hak-ge-hat'),
           );
         },
       },
@@ -80,7 +80,7 @@
             ctx.words('nei-gin-shirt-hai-mat-je-ngaan-sik-aa', 'ngo-gin-shirt-hai-laam-ge'),
             tip(`<strong>係藍色嘅.</strong> "It's a blue one", like 係我嘅, "it's mine".`),
             p(`Shopping for clothes, with ${zh('靚', 'leng3')}, pretty:`),
-            ctx.words('leng', 'ni-tiu-skirt-hou-leng', 'ni-gin-coat-gei-do-cin-aa', 'ngo-jiu-baak-ge-shoes', 'ngo-m-zoek-coat'),
+            ctx.words('leng', 'ni-tiu-skirt-hou-leng', 'ni-gin-coat-gei-do-cin2-aa', 'ngo-jiu-baak6-ge-shoes', 'ngo-m-zoek-coat'),
           );
         },
       },

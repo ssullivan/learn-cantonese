@@ -20,7 +20,7 @@
   ],
   "audio": "c920c3f60902"
  },
- "ear-tung": {
+ "ear-tung3": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 耳 tone 5 sounds like 6 (p 0.10)"
@@ -77,7 +77,7 @@
   ],
   "audio": "a25c26eed564"
  },
- "nei-bin-dou-tung-aa": {
+ "nei-bin-dou-tung3-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -85,7 +85,7 @@
   ],
   "audio": "d64b1a5ff650"
  },
- "nei-jam2-zo-water-mei-aa": {
+ "nei-jam2-zo2-water-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -109,7 +109,7 @@
   ],
   "audio": "b105aa2daf11"
  },
- "nei-jau-mou-head-tung-aa": {
+ "nei-jau-mou-head-tung3-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -125,7 +125,7 @@
   ],
   "audio": "184bdb0b0cff"
  },
- "nei-jau-mou-stomach-tung-aa": {
+ "nei-jau-mou-stomach-tung3-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -133,14 +133,14 @@
   ],
   "audio": "115aa7ab0a7a"
  },
- "nei-jau-mou-throat-tung-aa": {
+ "nei-jau-mou-throat-tung3-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 冇 tone 5 sounds like 2 (p 0.00); 痛 tone 3 sounds like 1 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)"
   ],
   "audio": "6839d1022c21"
  },
- "nei-jau-sik-zo-mei-aa": {
+ "nei-jau-sik-zo2-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -148,7 +148,7 @@
   ],
   "audio": "3966db30ffff"
  },
- "nei-sik6-zo-joek-mei-aa": {
+ "nei-sik6-zo2-joek-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -156,14 +156,14 @@
   ],
   "audio": "798327754bd7"
  },
- "nei-sik6-zo-rice-mei-aa": {
+ "nei-sik6-zo2-rice-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 未 tone 6 sounds like 2 (p 0.00); 呀 tone 3 sounds like 1 (p 0.00)"
   ],
   "audio": "3b2cedc21da2"
  },
- "nei-tai-zo-ji-sang-mei-aa": {
+ "nei-tai-zo2-ji-sang-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -171,7 +171,7 @@
   ],
   "audio": "623be3e0109c"
  },
- "ngo-gam-jat-tai-zo-ji-sang": {
+ "ngo-gam-jat-tai-zo2-ji-sang": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 睇 tone 2 sounds like 5 (p 0.17)"
@@ -192,7 +192,7 @@
   ],
   "audio": "643966efc3d8"
  },
- "ngo-tiu-throat-hou-tung": {
+ "ngo-tiu-throat-hou-tung3": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 我 tone 5 sounds like 2 (p 0.23)"
@@ -276,14 +276,14 @@
   ],
   "audio": "b4632fce655d"
  },
- "tooth-tung": {
+ "tooth-tung3": {
   "verdict": "LISTEN",
   "notes": [
    "speech-to-text heard 亞通 aa tung"
   ],
   "audio": "26ab0857a261"
  },
- "zo": {
+ "zo2": {
   "verdict": "LISTEN",
   "notes": [
    "speech-to-text heard Jo j o"

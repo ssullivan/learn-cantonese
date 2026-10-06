@@ -100,7 +100,7 @@
   ],
   "audio": "ebbe730227c7"
  },
- "gin": {
+ "gin3": {
   "verdict": "LISTEN",
   "notes": [
    "speech-to-text heard G g"
@@ -188,7 +188,7 @@
   ],
   "audio": "771eeefd8a5e"
  },
- "soeng": {
+ "soeng6": {
   "verdict": "LISTEN",
   "notes": [
    "speech-to-text heard Song s o n g"

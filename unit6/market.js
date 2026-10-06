@@ -103,7 +103,7 @@
     return say();
   }
 
-  const build = Tiles.round({ pool: V.sentences, vocab: V, decoys: ['maai6', 'peng', 'gwai', 'go', 'ni', 'go2', 'cin', 'jiu'], extra: 2 });
+  const build = Tiles.round({ pool: V.sentences, vocab: V, decoys: ['maai6', 'peng', 'gwai', 'go', 'ni', 'go2', 'cin2', 'jiu'], extra: 2 });
   const hearAll = hear(prices);
   const rush = (stage, ctx, n) => [hearAll, read, cheapOrDear][n % 3](stage, ctx, n);
 

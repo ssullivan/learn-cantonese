@@ -25,7 +25,7 @@
         title: 'Films, music and more',
         render(el, ctx) {
           el.append(
-            ctx.words('tai-hei3', 'teng-go1', 'coeng-kei', 'daa-gei1', 'tiu-mou5', 'jing-soeng2', 'waak-waa', 'haang-gaai'),
+            ctx.words('tai-hei3', 'teng-go1', 'coeng-kei', 'daa-gei1', 'tiu3-mou5', 'jing-soeng2', 'waak-waa', 'haang-street'),
             p('And from Unit 15:'),
             ctx.words('tai-book', 'tai-din-si'),
             tip(`<strong>畫畫 is one character read twice.</strong> The verb is waak6, the picture waa2: ${zh('畫畫', 'waak6 waa2')}, "draw a picture".`),
@@ -67,7 +67,7 @@
         render(el, ctx) {
           el.append(
             p(`Ask A唔A, as with 係唔係 (Unit 3). With a two-syllable verb only the first syllable comes twice: ${zh('鍾唔鍾意', 'zung1 m4 zung1 ji3')}.`),
-            ctx.words('zung', 'nei-zung-m-zung-ji-tai-hei3-aa', 'nei-zung-m-zung-ji-haang-saan-aa'),
+            ctx.words('zung1', 'nei-zung1-m-zung-ji-tai-hei3-aa', 'nei-zung1-m-zung-ji-haang-saan-aa'),
             p('Answer with the verb, not "yes" or "no":'),
             ctx.words('zung-ji', 'm-zung-ji'),
             p('Asking about hobbies:'),
@@ -82,7 +82,7 @@
         render(el, ctx) {
           el.append(
             p(`${zh('識', 'sik1')} (Unit 3) is to know how to: for things you learn, like swimming or a language.`),
-            ctx.words('ngo-sik-jau4-water', 'ngo-m-sik-tiu-mou5', 'nei-sik-m-sik-caai-daan-ce-aa', 'sik', 'm-sik'),
+            ctx.words('ngo-sik-jau4-water', 'ngo-m-sik-tiu3-mou5', 'nei-sik-m-sik-caai-daan-ce-aa', 'sik', 'm-sik'),
             p(`You'll hear ${zh('會', 'wui5')} for "can" too:`),
             ctx.words('ngo-wui-jau4-water'),
             tip('<strong>識 or 會?</strong> For a skill, both: 我識游水, 我會游水. 識 is the everyday word; 會 also means "will" (Unit 13), as in the next step.'),

@@ -60,7 +60,7 @@
             p(`${zh('有啲', 'jau5 di1')} is "a bit", for something you'd rather have less of, and ${zh('唔係好', 'm4 hai6 hou2')} is "not very":`),
             ctx.words('jau-di-dung', 'm-hai-hou-dung'),
             tip(`<strong>好 is nearly always there.</strong> A bare 熱 sounds like a comparison ("hotter than..."), so people say 好熱 even when it's only a bit hot.`),
-            ctx.words('gam-jat-hou-jit', 'gam-jat-gei-dung', 'gam-jat-jau-di-guk', 'gam-jat-m-hai-hou-dung', 'taai-jit-laa3'),
+            ctx.words('gam-jat-hou-jit', 'gam-jat-gei-dung', 'gam-jat-jau-di-baked', 'gam-jat-m-hai-hou-dung', 'taai-jit-laa3'),
           );
         },
       },

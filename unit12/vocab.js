@@ -42,13 +42,13 @@ Units.add(12, {
     { id: 'wong', hanzi: '黃色', jyutping: 'wong4 sik1', english: 'yellow', fill: '#f2c94c', line: '#9a7a1a' },
     { id: 'luk', hanzi: '綠色', jyutping: 'luk6 sik1', english: 'green', fill: '#3a9a6e', line: '#26684a' },
     { id: 'laam', hanzi: '藍色', jyutping: 'laam4 sik1', english: 'blue', fill: '#3f7cc0', line: '#24507f' },
-    { id: 'zi', hanzi: '紫色', jyutping: 'zi2 sik1', english: 'purple', fill: '#8a5cc0', line: '#5a3a86' },
+    { id: 'zi2', hanzi: '紫色', jyutping: 'zi2 sik1', english: 'purple', fill: '#8a5cc0', line: '#5a3a86' },
     { id: 'fan-hung', hanzi: '粉紅色', jyutping: 'fan2 hung4 sik1', english: 'pink', fill: '#f29bb8', line: '#b0587a',
       note: '"Powder red".' },
     { id: 'fe', hanzi: '啡色', jyutping: 'fe1 sik1', english: 'brown', fill: '#8a5a34', line: '#5a3a1e',
       note: 'The colour of 咖啡, coffee.' },
     { id: 'hak', hanzi: '黑色', jyutping: 'hak1 sik1', english: 'black', fill: '#2e2e33', line: '#101014' },
-    { id: 'baak', hanzi: '白色', jyutping: 'baak6 sik1', english: 'white', fill: '#f7f7f5', line: '#8a9aa5' },
+    { id: 'baak6', hanzi: '白色', jyutping: 'baak6 sik1', english: 'white', fill: '#f7f7f5', line: '#8a9aa5' },
     { id: 'fui', hanzi: '灰色', jyutping: 'fui1 sik1', english: 'grey', fill: '#9aa3aa', line: '#5f6a72',
       note: '灰 is ash.' },
   ],
@@ -83,7 +83,7 @@ Units.add(12, {
   V.borrowed = [
     ...['ngo', 'nei', 'keoi', 'hai', 'm', 'mat-je', 'aa'].map(id => Units.word(3, id)),
     Units.word(4, 'gei-do'), Units.word(5, 'ni'),
-    ...['jiu', 'hou', 'cin'].map(id => Units.word(6, id)),
+    ...['jiu', 'hou', 'cin2'].map(id => Units.word(6, id)),
     ...['ge', 'tung'].map(id => Units.word(10, id)),
   ];
 })(window.VOCAB);
@@ -114,7 +114,7 @@ Units.add(12, {
     skirt: { slot: 'bottom', fit: { cx: 64, cy: 84, s: 2.4 } },
     shoes: { slot: 'feet', fit: { cx: 64, cy: 116, s: 2.6 } },
   };
-  const COLOURS = ['hung', 'caang', 'wong', 'luk', 'laam', 'fan-hung', 'hak', 'baak'];
+  const COLOURS = ['hung', 'caang', 'wong', 'luk', 'laam', 'fan-hung', 'hak', 'baak6'];
   V.coloured = Object.entries(WEAR).flatMap(([g, where]) => COLOURS.map(c =>
     say(`${c} ge ${g}`, `${byId[c].english} ${byId[g].english.replace(/;.*| \(.*/, '')}`,
       { garment: g, colour: c, ...where, img: undefined })));
@@ -128,12 +128,12 @@ Units.add(12, {
     say('nei gin shirt hai mat-je ngaan-sik aa', 'What colour is your top?', { note: '你件衫: your top (measure word, as in Unit 10).' }),
     say('ngo gin shirt hai laam ge', 'My top is blue.', { note: '係藍色嘅, "is a blue one", like 係我嘅 in Unit 10.' }),
     say('keoi zoek hung ge shirt', 'He / she wears a red top.'),
-    say('keoi zoek laam ge trousers tung baak ge shoes', 'He / she wears blue trousers and white shoes.'),
+    say('keoi zoek laam ge trousers tung baak6 ge shoes', 'He / she wears blue trousers and white shoes.'),
     say('keoi daai glasses', 'He / she wears glasses.'),
     say('ngo daai hak ge hat', 'I wear a black hat.'),
-    say('ngo jiu baak ge shoes', 'I\'d like the white shoes.'),
+    say('ngo jiu baak6 ge shoes', 'I\'d like the white shoes.'),
     say('ni tiu skirt hou leng', 'This skirt is very pretty.'),
-    say('ni gin coat gei-do cin aa', 'How much is this coat?'),
+    say('ni gin coat gei-do cin2 aa', 'How much is this coat?'),
     say('ngo m zoek coat', 'I\'m not wearing a coat.'),
   ];
 

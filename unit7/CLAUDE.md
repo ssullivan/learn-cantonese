@@ -18,4 +18,4 @@ Groups: `basics`, `groups` (steamed, fried...), `measures` (籠 碟, with 碗 bo
 `steamer`, `plate`, `bowl`, `teapot`, `teacup`, `pineappleBun` from `svg.mjs`. Fried rice is a dome of separate grains (so it can't pass for an omelette); beef tripe is creamy white, not grey.
 
 ## Borrowed by later units
-`bill` (埋單) and `sweet` (unit 8), `yum-cha` (unit 9), `har-gow` and `lung` (unit 15), `baked` (unit 21).
+`bill` (埋單) and `sweet` (unit 8), `yum-cha` (unit 9), `har-gow` and `lung` (unit 15), `baked` (unit 21, and unit 13's muggy 焗). 粥 is unit 1's `congee`, with a measure.

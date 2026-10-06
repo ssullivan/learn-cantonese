@@ -15,9 +15,9 @@
   // A working day and a school day, in the order of their times.
   const DAYS = [
     ['hei-san', 'caat-tooth', 'sai-min', 'zoek-shirt', 'sik6-zou-caan', 'faan-gung', 'zou6-je', 'sai-hand', 'sik6-aan',
-      'fong-gung', 'faan-home', 'zyu-rice', 'sik6-maan-faan', 'tai-din-si', 'cung-loeng', 'fan3-gaau'],
+      'fong-gung', 'faan-home', 'zyu2-rice', 'sik6-maan-faan', 'tai-din-si', 'cung-loeng4', 'fan3-gaau'],
     ['hei-san', 'caat-tooth', 'sai-min', 'zoek-shirt', 'sik6-zou-caan', 'faan-hok', 'sai-hand', 'sik6-aan',
-      'fong-hok', 'faan-home', 'tai-book', 'sik6-maan-faan', 'cung-loeng', 'fan3-gaau'],
+      'fong-hok', 'faan-home', 'tai-book', 'sik6-maan-faan', 'cung-loeng4', 'fan3-gaau'],
   ].map(ids => ids.map(id => byId[id]).sort((x, y) => mins(x) - mins(y)));
 
   // Four things in a row from one of the days, each on until the next
@@ -156,7 +156,7 @@
     return say();
   };
 
-  const build = Tiles.round({ pool: [...V.sentences, ...V.sequence], vocab: V, decoys: ['gan', 'zo', 'gwo', 'mei', 'mou', 'sin', 'jin-hau'], extra: 2 });
+  const build = Tiles.round({ pool: [...V.sentences, ...V.sequence], vocab: V, decoys: ['gan', 'zo2', 'gwo', 'mei', 'mou', 'sin', 'jin-hau'], extra: 2 });
   const rush = (stage, ctx, n) => [what, when][n % 2](stage, ctx, n);
 
   Game.init({

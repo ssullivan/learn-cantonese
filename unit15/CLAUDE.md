@@ -17,4 +17,4 @@ Activities are a verb and a thing (返 + 工), so 緊, 咗 and 過 go between th
 One per activity. Going to work or school is someone walking to the building's door, finishing is walking away from it; a sun or moon in the top-left corner says when (morning, midday, evening, night).
 
 ## Borrowed by later units
-The activities (`hei-san`, `faan-gung`... with their pictures and their 咗 / 緊 / 未 forms), 返, 做, 緊 (`gan`), 過 (`gwo`), 通常, 先 / 然後, 之前 / 之後, and 放 / 洗 / 煮 (`fong`, `sai`, `zyu`, unit 21).
+The activities (`hei-san`, `faan-gung`... with their pictures and their 咗 / 緊 / 未 forms), 返, 做, 緊 (`gan`), 過 (`gwo`), 通常, 先 / 然後, 之前 / 之後, and 放 / 洗 / 煮 (`fong`, `sai`, `zyu2`, unit 21).

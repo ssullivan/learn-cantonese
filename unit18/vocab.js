@@ -23,15 +23,15 @@ Units.add(18, {
 
   // Adjectives in pairs. Each has a picture of the contrast.
   adjectives: [
-    { id: 'daai', hanzi: '大', jyutping: 'daai6', english: 'big; older',
+    { id: 'daai6', hanzi: '大', jyutping: 'daai6', english: 'big; older',
       note: 'Of people, older: 佢比我大, they\'re older than me.' },
-    { id: 'sai', hanzi: '細', jyutping: 'sai3', english: 'small; younger',
+    { id: 'sai3', hanzi: '細', jyutping: 'sai3', english: 'small; younger',
       note: 'Of people, younger, as in 細佬 and 細妹 (Unit 10).' },
     { id: 'gou', hanzi: '高', jyutping: 'gou1', english: 'tall; high' },
     { id: 'ai', hanzi: '矮', jyutping: 'ai2', english: 'short (not tall)',
       note: 'Many say ngai2.' },
     { id: 'faai', hanzi: '快', jyutping: 'faai3', english: 'fast; quick' },
-    { id: 'maan', hanzi: '慢', jyutping: 'maan6', english: 'slow',
+    { id: 'maan6', hanzi: '慢', jyutping: 'maan6', english: 'slow',
       note: 'Sounds just like 萬 (Unit 4), ten thousand.' },
   ],
 
@@ -58,10 +58,10 @@ Units.add(18, {
 (V => {
   V.scales = {
     price: { more: 'gwai', less: 'peng' },
-    size: { more: 'daai', less: 'sai' },
-    speed: { more: 'faai', less: 'maan' },
+    size: { more: 'daai6', less: 'sai3' },
+    speed: { more: 'faai', less: 'maan6' },
     height: { more: 'gou', less: 'ai' },
-    age: { more: 'daai', less: 'sai' },
+    age: { more: 'daai6', less: 'sai3' },
   };
 
   // Rough sizes (cm) and speeds (km/h): only pairs that differ clearly are
@@ -131,7 +131,7 @@ Units.add(18, {
     : V.people.includes(byId[id]) ? `my ${name(id)}` : `the ${name(id)}`;
   const PLURAL = ['shoes', 'trousers', 'chopsticks'];
   const is = id => id === 'ngo' ? 'am' : PLURAL.includes(id) ? 'are' : 'is';
-  const ENGLISH = { gwai: ['more expensive', 'cheaper'], daai: ['bigger', 'smaller'], faai: ['faster', 'slower'],
+  const ENGLISH = { gwai: ['more expensive', 'cheaper'], daai6: ['bigger', 'smaller'], faai: ['faster', 'slower'],
     gou: ['taller', 'shorter'] };
   const OLDER = ['older', 'younger'];
   // "is bigger than" in English for scale and adjective.
@@ -170,8 +170,8 @@ Units.add(18, {
     gwo('watermelon', 'gwai', 'apple', 'price'),
     gwo('metro', 'faai', 'bus', 'speed'),
     gwo('elder-brother', 'gou', 'ngo', 'height'),
-    gwo('elder-sister', 'daai', 'ngo', 'age'),
-    gwo('plane', 'daai', 'car', 'size'),
+    gwo('elder-sister', 'daai6', 'ngo', 'age'),
+    gwo('plane', 'daai6', 'car', 'size'),
   ];
   V.gwo[0].note = '貴過蘋果: "more expensive past the apple". Same meaning as 西瓜比蘋果貴.';
 
@@ -183,16 +183,16 @@ Units.add(18, {
     say('cake bei flower gwai siu-siu', 'The cake is a little more expensive than the flower.',
       { note: '少少 (Unit 3): a little.' }),
     say('metro faai gwo bus hou-do', 'The MTR is much faster than the bus.'),
-    say('elder-sister bei ngo daai y3', 'My older sister is three years older than me.',
+    say('elder-sister bei ngo daai6 y3', 'My older sister is three years older than me.',
       { note: 'The amount goes last: 大三歲.' }),
-    say('younger-brother bei ngo sai y3', 'My younger brother is three years younger than me.'),
+    say('younger-brother bei ngo sai3 y3', 'My younger brother is three years younger than me.'),
   ];
 
   // How much older or younger each brother or sister is: the question for
   // the ages round.
   V.howOld = ['elder-brother', 'elder-sister', 'younger-brother', 'younger-sister'].map(id => {
     const older = id.startsWith('elder');
-    return say(`${id} bei ngo ${older ? 'daai' : 'sai'} gei-do seoi aa`,
+    return say(`${id} bei ngo ${older ? 'daai6' : 'sai3'} gei-do seoi aa`,
       `How much ${older ? 'older' : 'younger'} than you is your ${name(id)}?`, { who: id });
   });
   V.howOld[0].note = '大幾多歲: "older by how many years".';
@@ -208,15 +208,15 @@ Units.add(18, {
   // The same, or about the same.
   V.same = [
     say('ngo tung keoi jat-joeng gou', 'I\'m as tall as them.', { note: 'A 同 B 一樣 + adjective. 同 (Unit 10): and.' }),
-    say('ngo-dei jat-joeng daai', 'We\'re the same age.', { note: '大 for age: "we\'re equally old".' }),
-    say('orange tung apple caa-m-do daai', 'Oranges and apples are about the same size.'),
+    say('ngo-dei jat-joeng daai6', 'We\'re the same age.', { note: '大 for age: "we\'re equally old".' }),
+    say('orange tung apple caa-m-do daai6', 'Oranges and apples are about the same size.'),
     say('ni loeng go jat-joeng gwai', 'These two cost the same.'),
   ];
 
   // Which one? 邊個 + adjective + 啲; 邊個最 + adjective; A 定 B.
-  const ASK = { daai: 'bigger', sai: 'smaller', gou: 'taller', ai: 'shorter', faai: 'faster', maan: 'slower',
+  const ASK = { daai6: 'bigger', sai3: 'smaller', gou: 'taller', ai: 'shorter', faai: 'faster', maan6: 'slower',
     gwai: 'more expensive', peng: 'cheaper' };
-  const MOST = { daai: 'biggest', sai: 'smallest', gou: 'tallest', ai: 'shortest', faai: 'fastest', maan: 'slowest',
+  const MOST = { daai6: 'biggest', sai3: 'smallest', gou: 'tallest', ai: 'shortest', faai: 'fastest', maan6: 'slowest',
     gwai: 'most expensive', peng: 'cheapest' };
   V.which = Object.entries(ASK).map(([adj, english]) => say(`bin-go ${adj} di aa`, `Which one is ${english}?`, { adj }));
   V.which[0].note = '啲 after the adjective asks "which is more so": 大啲, a bit bigger.';

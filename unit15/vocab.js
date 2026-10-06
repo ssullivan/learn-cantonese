@@ -31,7 +31,7 @@ Units.add(15, {
     { id: 'faan', hanzi: '返', jyutping: 'faan1', english: 'to go back; to go (to work, school)', img: false,
       note: 'Where you go every day: 返工, 返學, 返屋企.' },
     { id: 'fong', hanzi: '放', jyutping: 'fong3', english: 'to let go; to finish (work, school)', img: false },
-    { id: 'zyu', hanzi: '煮', jyutping: 'zyu2', english: 'to cook; to boil', img: false },
+    { id: 'zyu2', hanzi: '煮', jyutping: 'zyu2', english: 'to cook; to boil', img: false },
     { id: 'zou6', hanzi: '做', jyutping: 'zou6', english: 'to do; to make', img: false },
   ],
 
@@ -99,8 +99,8 @@ Units.add(15, {
     Units.word(10, 'home'),
     ...['heoi', 'daap', 'airport', 'hospital', 'park', 'tram', 'minibus'].map(id => Units.word(11, id)),
     Units.word(12, 'zoek'),
-    ...['loeng', 'laa3'].map(id => Units.word(13, id)),
-    ...['tooth', 'hand', 'tai', 'mui', 'jat6', 'zo', 'mou', 'mei'].map(id => Units.word(14, id)),
+    ...['loeng4', 'laa3'].map(id => Units.word(13, id)),
+    ...['tooth', 'hand', 'tai', 'mui', 'jat6', 'zo2', 'mou', 'mei'].map(id => Units.word(14, id)),
   ];
 })(window.VOCAB);
 
@@ -128,11 +128,11 @@ Units.add(15, {
     ['fong hok', [15, 30], 'to finish school', null, 'finished school'],
     ['fong gung', [18, 0], 'to finish work', null, 'finished work'],
     ['faan home', [18, 30], 'to go home', 'going home', 'gone home'],
-    ['zyu rice', [18, 45], 'to cook', 'cooking', 'cooked'],
+    ['zyu2 rice', [18, 45], 'to cook', 'cooking', 'cooked'],
     ['sik6 maan-faan', [19, 30], 'to have dinner', 'having dinner', 'had dinner'],
     ['tai din-si', [20, 0], 'to watch TV', 'watching TV', 'watched TV'],
     ['tai book', [20, 30], 'to read', 'reading', 'read'],
-    ['cung loeng', [21, 0], 'to have a shower', 'having a shower', 'had a shower'],
+    ['cung loeng4', [21, 0], 'to have a shower', 'having a shower', 'had a shower'],
     ['fan3 gaau', [23, 0], 'to go to bed; to sleep', 'sleeping', 'gone to sleep'],
   ];
   const NOTE = {
@@ -140,9 +140,9 @@ Units.add(15, {
     'caat-tooth': '牙 is tooth (Unit 14).',
     'faan-gung': '返工 is in Unit 9 too: here it comes apart, 返緊工.',
     'faan-home': '屋企 is home (Unit 10).',
-    'zyu-rice': '"Cook rice": cooking any meal.',
+    'zyu2-rice': '"Cook rice": cooking any meal.',
     'sik6-aan': 'Lunch is 食晏, "eat at midday". 午餐 is the written word.',
-    'cung-loeng': '"Pour on cool": a shower, or a bath. 涼 is cool, as in Unit 13.',
+    'cung-loeng4': '"Pour on cool": a shower, or a bath. 涼 is cool, as in Unit 13.',
     'fan3-gaau': '瞓 is to sleep (Unit 1); 覺 is a sleep.',
   };
   V.activities = ACT.map(([ids, at, english, ing, done]) => {
@@ -160,7 +160,7 @@ Units.add(15, {
   V.forms = V.activities.flatMap(a => {
     const [verb, rest] = split(a);
     return [
-      say(`${verb} zo ${rest}`, `${a.done} (done)`, { act: a.id, form: 'zo' }),
+      say(`${verb} zo2 ${rest}`, `${a.done} (done)`, { act: a.id, form: 'zo' }),
       a.ing && say(`${verb} gan ${rest}`, `${a.ing} (now)`, { act: a.id, form: 'gan' }),
       say(`mei ${verb} ${rest}`, `not ${a.done} yet`, { act: a.id, form: 'mei' }),
     ].filter(Boolean);
@@ -168,7 +168,7 @@ Units.add(15, {
   V.forms.find(f => f.form === 'gan').note = '緊 goes after the verb, inside the activity: 起緊身, not 起身緊.';
   V.asks = V.activities.map(a => {
     const [verb, rest] = split(a);
-    return say(`keoi ${verb} zo ${rest} mei aa`, `Have they ${a.done} yet?`, { act: a.id, form: 'ask' });
+    return say(`keoi ${verb} zo2 ${rest} mei aa`, `Have they ${a.done} yet?`, { act: a.id, form: 'ask' });
   });
 
   // When: 我七點起身. The time (from Unit 9) goes before the verb.
@@ -189,10 +189,10 @@ Units.add(15, {
   );
   V.sequence = [
     then('hei-san', 'caat-tooth'), then('caat-tooth', 'sai-min'), then('sai-min', 'zoek-shirt'),
-    then('zoek-shirt', 'sik6-zou-caan'), then('fong-gung', 'faan-home'), then('zyu-rice', 'sik6-maan-faan'),
-    then('tai-din-si', 'cung-loeng'), then('cung-loeng', 'fan3-gaau'),
-    after('sik6-zou-caan', 'faan-gung'), after('fong-hok', 'faan-home'), after('sik6-maan-faan', 'tai-book'), after('faan-home', 'zyu-rice'),
-    before('sai-hand', 'sik6-aan'), before('caat-tooth', 'fan3-gaau'), before('zoek-shirt', 'faan-hok'), before('cung-loeng', 'fan3-gaau'),
+    then('zoek-shirt', 'sik6-zou-caan'), then('fong-gung', 'faan-home'), then('zyu2-rice', 'sik6-maan-faan'),
+    then('tai-din-si', 'cung-loeng4'), then('cung-loeng4', 'fan3-gaau'),
+    after('sik6-zou-caan', 'faan-gung'), after('fong-hok', 'faan-home'), after('sik6-maan-faan', 'tai-book'), after('faan-home', 'zyu2-rice'),
+    before('sai-hand', 'sik6-aan'), before('caat-tooth', 'fan3-gaau'), before('zoek-shirt', 'faan-hok'), before('cung-loeng4', 'fan3-gaau'),
   ];
   V.sequence[0].note = '先 first, 然後 then: in the order they happen.';
   V.sequence[8].note = '之後 comes after what happens first: 食早餐之後, after breakfast.';
@@ -233,7 +233,7 @@ Units.add(15, {
     say('ngo ji-gaa tai gan din-si', 'I\'m watching TV now.'),
     say('keoi fan3 gan gaau', 'They\'re asleep.', { note: '瞓緊覺: 緊 inside the activity, after the verb.' }),
     say('ngo faan gan gung', 'I\'m on my way to work.'),
-    say('ngo sik6 zo zou-caan laa3', 'I\'ve had breakfast.'),
+    say('ngo sik6 zo2 zou-caan laa3', 'I\'ve had breakfast.'),
     say('ngo mei sik6 zou-caan', 'I haven\'t had breakfast yet.'),
     say('nei jau mou heoi gwo hong-kong aa', 'Have you ever been to Hong Kong?'),
     say('ngo heoi gwo hong-kong', 'I\'ve been to Hong Kong.'),

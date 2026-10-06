@@ -39,7 +39,7 @@
   };
 
   const mine = Measures.round({ pool: V.body.filter(e => e.measure), vocab: V, choices: 3, owner: byId.ngo });
-  const build = Tiles.round({ pool: [...V.sentences, ...V.asks], vocab: V, decoys: ['zo', 'mou', 'mei', 'jau', 'hou', 'zek', 'go'], extra: 2 });
+  const build = Tiles.round({ pool: [...V.sentences, ...V.asks], vocab: V, decoys: ['zo2', 'mou', 'mei', 'jau', 'hou', 'zek', 'go'], extra: 2 });
   const rush = (stage, ctx, n) => [part, hurt, rx][n % 3](stage, ctx, n);
 
   Game.init({

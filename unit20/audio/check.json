@@ -1,5 +1,5 @@
 {
- "apple-gei-do-cin-w1-aa": {
+ "apple-gei-do-cin2-w1-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -7,7 +7,7 @@
   ],
   "audio": "93c03d01c613"
  },
- "banana-gei-do-cin-w1-aa": {
+ "banana-gei-do-cin2-w1-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -15,7 +15,7 @@
   ],
   "audio": "11202000d69d"
  },
- "bok-choy-gei-do-cin-w1-aa": {
+ "bok-choy-gei-do-cin2-w1-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -23,7 +23,7 @@
   ],
   "audio": "b4b07468fcae"
  },
- "carrot-gei-do-cin-w1-aa": {
+ "carrot-gei-do-cin2-w1-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -31,7 +31,7 @@
   ],
   "audio": "ba8c798a2b29"
  },
- "choy-sum-gei-do-cin-w1-aa": {
+ "choy-sum-gei-do-cin2-w1-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -46,7 +46,7 @@
   ],
   "audio": "dc150bfddf55"
  },
- "grapes-gei-do-cin-w1-aa": {
+ "grapes-gei-do-cin2-w1-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -54,7 +54,7 @@
   ],
   "audio": "fd0474073955"
  },
- "jat-gung-gei-do-cin-aa": {
+ "jat-gung-gei-do-cin2-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -70,7 +70,7 @@
   ],
   "audio": "56ae075ee66e"
  },
- "mango-gei-do-cin-w1-aa": {
+ "mango-gei-do-cin2-w1-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -164,7 +164,7 @@
   ],
   "audio": "7ea563bedea3"
  },
- "orange-gei-do-cin-w1-aa": {
+ "orange-gei-do-cin2-w1-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -214,7 +214,7 @@
   ],
   "audio": "0e750bd1d8d5"
  },
- "pear-gei-do-cin-w1-aa": {
+ "pear-gei-do-cin2-w1-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -223,7 +223,7 @@
   ],
   "audio": "13f5560d3bff"
  },
- "pineapple-gei-do-cin-w1-aa": {
+ "pineapple-gei-do-cin2-w1-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -238,7 +238,7 @@
   ],
   "audio": "e0eb73c50904"
  },
- "potato-gei-do-cin-w1-aa": {
+ "potato-gei-do-cin2-w1-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 幾 tone 2 sounds like 6 (p 0.02); 呀 tone 3 sounds like 1 (p 0.01)"
@@ -252,7 +252,7 @@
   ],
   "audio": "28e5fb4e70ac"
  },
- "strawberry-gei-do-cin-w1-aa": {
+ "strawberry-gei-do-cin2-w1-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -261,7 +261,7 @@
   ],
   "audio": "4aebb0e5aa9d"
  },
- "tomato-gei-do-cin-w1-aa": {
+ "tomato-gei-do-cin2-w1-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -278,7 +278,7 @@
   ],
   "audio": "6450cff9b165"
  },
- "watermelon-gei-do-cin-w1-aa": {
+ "watermelon-gei-do-cin2-w1-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",

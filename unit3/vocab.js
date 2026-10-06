@@ -54,7 +54,7 @@ Units.add(3, {
       note: '人 after a place makes a person from there.' },
     { id: 'jing-gwok-jan', hanzi: '英國人', jyutping: 'jing1 gwok3 jan4', english: 'British person', img: false },
     { id: 'mei-gwok-jan', hanzi: '美國人', jyutping: 'mei5 gwok3 jan4', english: 'American', img: false },
-    { id: 'gwong-dung-waa', hanzi: '廣東話', jyutping: 'gwong2 dung1 waa2', english: 'Cantonese', img: false },
+    Units.word(1, 'cantonese'),
     { id: 'jing-man', hanzi: '英文', jyutping: 'jing1 man2', english: 'English', img: false, phoneme: true },
   ],
 
@@ -91,7 +91,7 @@ Units.add(3, {
     say('keoi-dei m hai jing-gwok-jan', 'They are not British.'),
     say('nei-dei hai mei-gwok-jan', 'You (all) are American.'),
     say('ngo giu aa-ming', 'My name is Ah Ming.', { note: 'Literally "I am called Ah Ming".' }),
-    say('ngo sik gong gwong-dung-waa', 'I can speak Cantonese.'),
+    say('ngo sik gong cantonese', 'I can speak Cantonese.'),
     say('keoi m sik gong jing-man', 'He / she can\'t speak English.'),
     say('ngo dou hai hoeng-gong-jan', 'I am a Hongkonger too.'),
   ];
@@ -102,7 +102,7 @@ Units.add(3, {
     say('keoi hai hok-saang maa', 'Is he / she a student?'),
     say('keoi hai hoeng-gong-jan maa', 'Is he / she a Hongkonger?'),
     say('keoi-dei hai pang-jau maa', 'Are they friends?'),
-    say('nei sik gong gwong-dung-waa maa', 'Can you speak Cantonese?'),
+    say('nei sik gong cantonese maa', 'Can you speak Cantonese?'),
   ];
 
   V.aNotA = [

@@ -12,7 +12,7 @@ Groups: `basics`, `colours` (with `fill` and `line`), `clothes`, `measures`, `on
 `fit { cx, cy, s }` places a garment on the standing figure: its picture is the garment drawn on the figure, centred on cx, cy and enlarged s times, and Dress Up puts it back on the figure with the same numbers. Change a garment's drawing and its `fit` together.
 
 ## Audio
-`Units.phonemes` reads 著 (`zoek`) from jyutping in every phrase (錢 `cin` comes with its own `phoneme` from unit 6).
+`Units.phonemes` reads 著 (`zoek`) from jyutping in every phrase (錢 `cin2` comes with its own `phoneme` from unit 6).
 
 ## Drawings
 A paint swatch for every colour, the standing figure (打扮), and the clothes, each drawn in the figure's own coordinates so it fits. `art.mjs` loads vocab.js for `fit`.

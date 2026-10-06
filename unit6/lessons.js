@@ -18,7 +18,7 @@
         render(el, ctx) {
           el.append(
             p(`${zh('錢', 'cin2')} is money. A dollar is ${zh('蚊', 'man1')}, and ten cents is ${zh('毫', 'hou4')}. Hong Kong has no smaller coin.`),
-            ctx.words('cin', 'man', 'hou4'),
+            ctx.words('cin2', 'man', 'hou4'),
             p('Tap each coin and note to hear it:'),
             ctx.grid(V.cash),
             tip(`<strong>蚊 is spoken.</strong> Price tags write $ or 元 (jyun4), but people say 蚊.`),
@@ -57,7 +57,7 @@
         render(el, ctx) {
           el.append(
             p(`Ask ${zh('幾多錢呀？', 'gei2 do1 cin2 aa3')}, "how much money?". Point with ${zh('呢個', 'ni1 go3')} or ${zh('嗰個', 'go2 go3')}, or use the thing's own measure word from Unit 5:`),
-            ctx.words('gei-do-cin-aa', 'ni-go-gei-do-cin-aa', 'go2-go-gei-do-cin-aa', 'ni-bun-book-gei-do-cin-aa'),
+            ctx.words('gei-do-cin2-aa', 'ni-go-gei-do-cin2-aa', 'go2-go-gei-do-cin2-aa', 'ni-bun-book-gei-do-cin2-aa'),
             p('Things you can buy in this unit:'),
             ctx.grid(V.things),
           );

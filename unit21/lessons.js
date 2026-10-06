@@ -79,7 +79,7 @@
             p(`${said(ctx, 'fong')} (put) + the thing + ${said(ctx, 'jap6')} + where: put it into. ${said(ctx, 'lo2')} (take) + the thing + ${zh('出嚟', 'ceot1 lai4')}: take it out.`),
             ctx.words('fong-di-orange-jap6-fridge', 'lo2-di-orange-ceot-lai', 'fong-go-cake-jap6-oven'),
             p(`${said(ctx, 'hoi')} opens a door or turns a thing on; ${said(ctx, 'saan1')} closes it or turns it off.`),
-            ctx.words('hoi-fridge', 'hoi-oven', 'saan1-stove', 'saan1-zo-stove-mei-aa'),
+            ctx.words('hoi-fridge', 'hoi-oven', 'saan1-stove', 'saan1-zo2-stove-mei-aa'),
           );
         },
       },

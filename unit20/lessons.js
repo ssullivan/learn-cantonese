@@ -50,7 +50,7 @@
         render(el, ctx) {
           el.append(
             p(`Markets sell by weight, in ${zh('斤', 'gan1')} (catties). A catty is about 600 grams.`),
-            ctx.words('gan'),
+            ctx.words('gan1'),
             ctx.words('w05', 'w1', 'w15', 'w2', 'w3'),
             tip(`<strong>Halves go after 斤:</strong> 兩斤半 is two and a half catties. Half a catty is 半斤, and one and a half is 斤半, like 百五 (Unit 4).`),
           );
@@ -63,11 +63,11 @@
           el.append(
             ctx.words('gaai-si'),
             p('Ask the price of a catty. The answer puts the price first:'),
-            ctx.words('banana-gei-do-cin-w1-aa', 'p1200-w1', 'mango-gei-do-cin-w1-aa', 'p2000-w1'),
+            ctx.words('banana-gei-do-cin2-w1-aa', 'p1200-w1', 'mango-gei-do-cin2-w1-aa', 'p2000-w1'),
             p(`Say how much you want, like a count: ${zh('兩斤香蕉', 'loeng5 gan1 hoeng1 ziu1')}, like 兩個橙.`),
             ctx.words('ngo-jiu-w2-banana', 'ngo-jiu-w15-pineapple', 'ngo-jiu-w05-mango'),
             p(`And when you pay, ${zh('一共', 'jat1 gung6')}: altogether.`),
-            ctx.words('jat-gung-gei-do-cin-aa'),
+            ctx.words('jat-gung-gei-do-cin2-aa'),
           );
         },
       },
@@ -87,7 +87,7 @@
         id: 'market',
         title: 'Going to the market',
         render(el, ctx) {
-          el.append(ctx.words('ngo-heoi-gaai-si-maai5-coi', 'ngo-zeoi-zung-ji-sik6-mango', 'jat-gung-gei-do-cin-aa'));
+          el.append(ctx.words('ngo-heoi-gaai-si-maai5-coi', 'ngo-zeoi-zung-ji-sik6-mango', 'jat-gung-gei-do-cin2-aa'));
         },
       },
       {
@@ -105,7 +105,7 @@
         title: '好叻！ Well done',
         render(el, ctx) {
           el.append(
-            p(`You can shop at a wet market: ${said(ctx, 'banana-gei-do-cin-w1-aa')} ${said(ctx, 'ngo-jiu-w2-banana')} ${said(ctx, 'jat-gung-gei-do-cin-aa')}`),
+            p(`You can shop at a wet market: ${said(ctx, 'banana-gei-do-cin2-w1-aa')} ${said(ctx, 'ngo-jiu-w2-banana')} ${said(ctx, 'jat-gung-gei-do-cin2-aa')}`),
             p('Practise at the <a href="market.html">Wet Market</a>, or <a href="../">go back to Unit 20</a>.'),
           );
         },

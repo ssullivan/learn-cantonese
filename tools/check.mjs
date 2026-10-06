@@ -23,6 +23,10 @@
  *     entry without img:false, and no orphan .mp3 files or drawings
  *   - a word borrowed with Units.word(n, ...) has its audio and picture
  *     checked in unit n
+ *   - each word (an entry not made of `words`) is defined once on the
+ *     site: no other unit has a word with its id, or with its hanzi,
+ *     jyutping and voice (borrow it instead). Phrases need only be
+ *     unique in their unit
  *   - every vocab group and entry id a unit's page scripts name (V.verbs,
  *     byId['dung'], ctx.words('a', 'b'), Units.word(9, 't0600')...; see
  *     tools/page-refs.mjs) is in the vocab the page loads
@@ -184,6 +188,7 @@ for (const [char, r] of Object.entries(records)) {
   if (p) bad(RECORDS, `${char}: ${p}`);
 }
 const taughtIn = {};
+const wordAt = {}, soundAt = {}; // a word's id, and its hanzi, jyutping and voice: where defined
 const homeIdSets = {};
 const homeIds = n => homeIdSets[n] ??= new Set(entries(loadVocab(`unit${n}`) ?? {}).map(e => e.id));
 for (const unit of unitDirs()) {
@@ -205,6 +210,13 @@ for (const unit of unitDirs()) {
     for (const p of entryProblems(e, isId)) bad(vocabFile, p);
     if (e.jyutping && !/^[a-z]+[1-6]( [a-z]+[1-6])*$/.test(e.jyutping)) bad(vocabFile, `${e.id}: jyutping "${e.jyutping}" needs a tone number on every syllable`);
     if (!own(e, unit)) continue;
+    if (!e.words) {
+      const sound = `${e.hanzi} ${e.jyutping} ${e.voice ?? vocab.voice}`;
+      if (wordAt[e.id]) bad(vocabFile, `${e.id}: ${wordAt[e.id]} has a word with this id (give the later one its tone number: maan6)`);
+      else if (soundAt[sound]) bad(vocabFile, `${e.id}: ${e.hanzi} ${e.jyutping} is ${soundAt[sound]} (borrow it with Units.word)`);
+      wordAt[e.id] ??= `${unit}`;
+      soundAt[sound] ??= `${unit}'s ${e.id}`;
+    }
     if (!existsSync(join(dir, 'audio', `${e.id}.mp3`))) bad(vocabFile, `${e.id} has no audio (run node tools/tts.mjs ${unit})`);
     if (e.img !== false && !art[e.id]) bad(vocabFile, `${e.id} has no drawing in art.mjs`);
   }
@@ -242,7 +254,7 @@ for (const unit of unitDirs()) {
   for (const e of all.filter(e => e.measure)) {
     const m = measures[e.measure];
     if (!m) { bad(vocabFile, `${e.id}: unknown measure ${e.measure}`); continue; }
-    const pic = own(e, unit) ? art[e.id] : (await loadArt(`unit${e.unit}`))?.[e.file ?? e.id];
+    const pic = own(e, unit) ? art[e.id] : (await loadArt(`unit${e.unit}`))?.[e.id];
     const dish = /data-dish="(\w+)"/.exec(pic ?? '')?.[1];
     if (dish !== m.dish) bad(vocabFile, `${e.id}: ordered by ${m.hanzi} (${m.dish}) but drawn on a ${dish ?? 'nothing'}`);
   }

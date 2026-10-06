@@ -10,7 +10,7 @@
 ## Words
 Groups: `animals` (隻 for most, 條 for long ones), `words`, `verbs`, `signs`, `pets`, `measures`, `ones`, `borrowed`, and the derived `counts`, `which`, `zodiac` (in order, each with `animal`), `asks`, `answers`, `whichCan`, `can`, `cant` (with `animal`, `verb`, `can`), `sentences`.
 `V.abilities` lists, for each verb, the animals that clearly can and clearly can't: only those are ever asked about, so add an animal there only when the answer is obvious.
-條 is `tiu` here, so unit 16's 跳 is borrowed as `tiu3` (`Units.word(16, 'tiu', 'tiu3')`).
+條 is `tiu` (unit 5) and 跳 `tiu3` (unit 16). 走 is unit 8's `zau` ("without"), borrowed as "to run".
 
 ## Audio
 `Units.phonemes` reads 馬騮 (`monkey`), 雀仔 (`bird`), 行 (`haang`) and 魚 (`fish`) from jyutping in every phrase.

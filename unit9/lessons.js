@@ -33,7 +33,7 @@
             p(`Half past is ${zh('半', 'bun3')}, as in 三蚊半 from Unit 6:`),
             times(ctx, [3, 30], [7, 30], [12, 30]),
             p(`Other minutes are counted in ${zh('字', 'zi6')}: one 字 is five minutes, one numeral on the clock face. Read the number the minute hand points at, then 個字:`),
-            ctx.words('zi'),
+            ctx.words('zi6'),
             times(ctx, [3, 5], [3, 10], [3, 15], [3, 20], [3, 45], [12, 55]),
             tip(`<strong>Look at the minute hand.</strong> At 3:20 it points at the 4, so it's ${zh('三點四個字', 'saam1 dim2 sei3 go3 zi6')}. Don't mix it up with ${zh('四點三個字', 'sei3 dim2 saam1 go3 zi6')}, 4:15. In fast speech the 個字 drops off: ${zh('三點三', 'saam1 dim2 saam1')} is 3:15.`),
           );
@@ -99,7 +99,7 @@
             ctx.words('cin-jat', 'kam-jat', 'gam-jat', 'ting-jat', 'hau-jat'),
             tip(`<strong>今日 or 琴日?</strong> ${zh('今日', 'gam1 jat6')} (today) is high, ${zh('琴日', 'kam4 jat6')} (yesterday) is low and falling. Listen to the first syllable.`),
             p(`Weeks and months use ${zh('上', 'soeng6')} (last) and ${zh('下', 'haa6')} (next) with 個:`),
-            ctx.words('soeng', 'haa', 'soeng-go-sing-kei', 'haa-go-sing-kei', 'soeng-go-jyut', 'haa-go-jyut'),
+            ctx.words('soeng6', 'haa', 'soeng6-go-sing-kei', 'haa-go-sing-kei', 'soeng6-go-jyut', 'haa-go-jyut'),
             p('And years:'),
             ctx.words('gau-nin', 'gam-nin', 'ceot-nin'),
           );
@@ -114,9 +114,9 @@
             ctx.words('ngo-dei-ting-jat-yum-cha', 'ting-jat-ngo-dei-yum-cha', 'ngo-wk6-yum-cha'),
             tip(`<strong>我哋飲茶聽日 is wrong.</strong> "We have dim sum tomorrow" is ${zh('我哋聽日飲茶', 'ngo5 dei6 ting1 jat6 jam2 caa4')}.`),
             p('Some things to do at a time:'),
-            ctx.words('faan-gung', 'fong-gung', 'sik-faan', 'gin'),
+            ctx.words('faan-gung', 'fong-gung', 'sik-faan', 'gin3'),
             ctx.words('nei-gei-dim-faan-gung-aa', 'ngo-t0900-faan-gung', 'ngo-t0600-fong-gung', 'ngo-dei-je-maan-t0700-sik-faan',
-              'gei-si', 'nei-gei-si-yum-cha-aa', 'ting-jat-gin', 'wk1-gin'),
+              'gei-si', 'nei-gei-si-yum-cha-aa', 'ting-jat-gin3', 'wk1-gin3'),
           );
         },
       },

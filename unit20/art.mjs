@@ -105,7 +105,7 @@ ${shine('M34 64 C36 56 42 52 50 50')}`),
 <rect x="56" y="58" width="16" height="12" rx="2" fill="#ffffff" stroke="#8a9aa5" stroke-width="1.5"/><path d="M64 70 V84" stroke="#7d4f1e" stroke-width="2"/>
 <path d="M60 64 h8" stroke="#d6453a" stroke-width="2" stroke-linecap="round"/>`),
 
-  gan: svg('A market scale, weighing oranges', `${shadow(64, 118, 40)}
+  gan1: svg('A market scale, weighing oranges', `${shadow(64, 118, 40)}
 <path d="M34 50 H94 L88 60 H40 Z" fill="#c8ced3" stroke="#6f8796" stroke-width="2.5" stroke-linejoin="round"/>
 <g fill="#f39422" stroke="#b5650c" stroke-width="2"><circle cx="52" cy="40" r="9"/><circle cx="76" cy="40" r="9"/><circle cx="64" cy="30" r="9"/></g>
 <rect x="60" y="60" width="8" height="10" fill="#6f8796"/>

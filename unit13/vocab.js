@@ -47,9 +47,9 @@ Units.add(13, {
   // How it feels. 熱 and 凍 come from Unit 8 below.
   feel: [
     { id: 'nyun', hanzi: '暖', jyutping: 'nyun5', english: 'warm', img: false },
-    { id: 'loeng', hanzi: '涼', jyutping: 'loeng4', english: 'cool (pleasantly)', img: false,
+    { id: 'loeng4', hanzi: '涼', jyutping: 'loeng4', english: 'cool (pleasantly)', img: false,
       note: 'Nice and cool: 今日好涼. 沖涼 is to take a shower.' },
-    { id: 'guk', hanzi: '焗', jyutping: 'guk6', english: 'hot and stuffy; muggy', img: false,
+    { ...Units.word(7, 'baked'), english: 'hot and stuffy; muggy',
       note: 'Hot, humid and still, like an oven: 焗 is to bake.' },
     { id: 'sap', hanzi: '濕', jyutping: 'sap1', english: 'damp; humid', img: false,
       note: 'In spring the walls drip: 回南天, when the south wind comes back.' },
@@ -149,9 +149,9 @@ Units.add(13, {
   // How hot: 好熱 幾熱 太熱 有啲熱 唔係好熱, and the same for 凍 and 焗.
   say = Units.sentences(V);
   const DEGREE = { hou: 'very', gei: 'quite', taai: 'too', 'jau-di': 'a bit', 'm-hai-hou': 'not very' };
-  const ADJ = { jit: 'hot', dung: 'cold', guk: 'muggy' };
+  const ADJ = { jit: 'hot', dung: 'cold', baked: 'muggy' };
   V.degrees = Object.entries(ADJ).flatMap(([adj, a]) => Object.entries(DEGREE).map(([degree, d]) =>
-    say(`${degree} ${adj}`, `${d} ${a}`, { adj, degree, ...(degree === 'hou' && adj !== 'guk' && { img: undefined }) })));
+    say(`${degree} ${adj}`, `${d} ${a}`, { adj, degree, ...(degree === 'hou' && adj !== 'baked' && { img: undefined }) })));
 
   // Advice for the weather, softened with 啦.
   V.advice = [
@@ -169,7 +169,7 @@ Units.add(13, {
     say('gam-jat tin-hei dim aa', 'How\'s the weather today?'),
     say('gam-jat hou jit', 'It\'s very hot today.', { note: 'No 係 before an adjective: 今日好熱, not 今日係熱.' }),
     say('gam-jat gei dung', 'It\'s quite cold today.'),
-    say('gam-jat jau di guk', 'It\'s a bit muggy today.'),
+    say('gam-jat jau di baked', 'It\'s a bit muggy today.'),
     say('gam-jat m hai hou dung', 'It isn\'t very cold today.'),
     say('taai jit laa3', 'It\'s too hot!'),
     say('gam-jat tin-hei hou hou', 'The weather is lovely today.', { note: '好好: "very good".' }),

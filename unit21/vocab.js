@@ -97,8 +97,8 @@ Units.add(21, {
     { ...Units.word(11, 'ceot'), english: 'out' },
     Units.word(11, 'lai'),
     { ...Units.word(13, 'syut'), english: 'to chill; snow', note: 'Snow (Unit 13), as a verb: 雪凍, chill in the fridge.' },
-    ...['zo', 'mou', 'mei'].map(id => Units.word(14, id)),
-    Units.word(15, 'zyu'),
+    ...['zo2', 'mou', 'mei'].map(id => Units.word(14, id)),
+    Units.word(15, 'zyu2'),
     Units.word(15, 'sai'),
     { ...Units.word(15, 'fong'), english: 'to put; to let go' },
     { ...Units.word(17, 'hoi'), english: 'to open; to turn on', note: '開雪櫃 opens the fridge; 開焗爐 turns the oven on.' },
@@ -169,11 +169,11 @@ Units.add(21, {
     say('hoi fridge', 'Open the fridge.'),
     say('hoi oven', 'Turn the oven on.', { note: '開 is open, and turn on.' }),
     say('saan1 stove', 'Turn off the gas stove.', { note: '閂 is close, and turn off.' }),
-    say('saan1 zo stove mei aa', 'Have you turned off the gas stove?', { note: '咗…未呀？ (Unit 14): done yet?' }),
+    say('saan1 zo2 stove mei aa', 'Have you turned off the gas stove?', { note: '咗…未呀？ (Unit 14): done yet?' }),
   ];
 
   V.sentences = [
-    say('fridge waai6 zo', 'The fridge is broken.', { note: '壞咗: it has broken.' }),
+    say('fridge waai6 zo2', 'The fridge is broken.', { note: '壞咗: it has broken.' }),
     say('ngo home mou oven', 'There\'s no oven at my home.', { note: 'Many Hong Kong flats have no oven: a 多士爐 or 微波爐 does instead.' }),
     // Read from jyutping: from characters, 有 sounds like jau3.
     say('kitchen jau mou dishwasher aa', 'Is there a dishwasher in the kitchen?', { note: '有冇 (Unit 14): is there?', phoneme: true }),

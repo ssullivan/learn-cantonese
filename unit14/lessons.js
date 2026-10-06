@@ -45,10 +45,10 @@
         render(el, ctx) {
           el.append(
             p(`The body part, then ${zh('痛', 'tung3')}. No "have", no "a":`),
-            ctx.words('tung', 'ngo-head-tung'),
+            ctx.words('tung3', 'ngo-head-tung3'),
             ctx.grid(V.aches),
             p('Or with the measure word and 好, when one part hurts a lot:'),
-            ctx.words('ngo-go-head-hou-tung', 'ngo-zek-foot-hou-tung', 'ngo-tiu-throat-hou-tung'),
+            ctx.words('ngo-go-head-hou-tung3', 'ngo-zek-foot-hou-tung3', 'ngo-tiu-throat-hou-tung3'),
           );
         },
       },
@@ -60,7 +60,7 @@
             p(`You "look at" a doctor with ${zh('睇', 'tai2')}, and "eat" medicine with 食 (Unit 8):`),
             ctx.words('ji-sang', 'tai-ji-sang', 'joek', 'sik6-joek', 'jau-sik'),
             p('What the doctor asks, and what\'s wrong:'),
-            ctx.words('nei-bin-dou-m-syu-fuk-aa', 'nei-bin-dou-tung-aa', 'm-syu-fuk'),
+            ctx.words('nei-bin-dou-m-syu-fuk-aa', 'nei-bin-dou-tung3-aa', 'm-syu-fuk'),
             ctx.grid([...V.symptoms, ctx.entry('cold')]),
           );
         },
@@ -83,11 +83,11 @@
         render(el, ctx) {
           el.append(
             p(`${zh('咗', 'zo2')}, straight after the verb, says it's done: it has happened.`),
-            ctx.words('zo', 'ngo-sik6-zo-joek', 'ngo-gam-jat-tai-zo-ji-sang', 'ngo-cold-zo'),
+            ctx.words('zo2', 'ngo-sik6-zo2-joek', 'ngo-gam-jat-tai-zo2-ji-sang', 'ngo-cold-zo2'),
             p(`Ask "yet?" with ${zh('未', 'mei6')} at the end. Answer with the verb and 咗, or 未, "not yet":`),
-            ctx.words('mei', 'nei-sik6-zo-joek-mei-aa', 'sik6-zo', 'ngo-mei-sik6-joek'),
+            ctx.words('mei', 'nei-sik6-zo2-joek-mei-aa', 'sik6-zo2', 'ngo-mei-sik6-joek'),
             tip(`<strong>食咗飯未呀？</strong> "Have you eaten yet?" is also how friends say hello. Answer 食咗 or 未呀.`),
-            ctx.words('nei-sik6-zo-rice-mei-aa'),
+            ctx.words('nei-sik6-zo2-rice-mei-aa'),
           );
         },
       },

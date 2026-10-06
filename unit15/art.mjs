@@ -171,11 +171,11 @@ const art = {
   'fong-hok': svg('Walking away from school in the afternoon', from(school, 'midday', 'school')),
   'fong-gung': svg('Walking away from work in the evening', from(office, 'evening', 'work')),
   'faan-home': svg('Walking home in the evening', to(home, 'evening')),
-  'zyu-rice': svg('Cooking in a wok', wok),
+  'zyu2-rice': svg('Cooking in a wok', wok),
   'sik6-maan-faan': svg('Dinner: a bowl of rice and chopsticks, at night', `${SKY.night}\n<g transform="translate(8 24) scale(.85)">${bowl(rice)}</g>\n${chopsticks}`),
   'tai-din-si': svg('Watching television', tv),
   'tai-book': svg('Reading a book', face({ extra: book })),
-  'cung-loeng': svg('Having a shower', shower),
+  'cung-loeng4': svg('Having a shower', shower),
   'fan3-gaau': svg('Asleep in bed at night', `${SKY.night}\n${inBed}\n${zzz}`),
 };
 export default art;

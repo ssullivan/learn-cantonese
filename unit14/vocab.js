@@ -43,7 +43,7 @@ Units.add(14, {
   ],
 
   health: [
-    { id: 'tung', hanzi: '痛', jyutping: 'tung3', english: 'to hurt; pain', img: false,
+    { id: 'tung3', hanzi: '痛', jyutping: 'tung3', english: 'to hurt; pain', img: false,
       note: 'After the body part: 頭痛, a headache.' },
     { id: 'ji-sang', hanzi: '醫生', jyutping: 'ji1 sang1', english: 'doctor',
       note: '醫 as in 醫院, hospital (Unit 11).' },
@@ -73,7 +73,7 @@ Units.add(14, {
   ],
 
   grammar: [
-    { id: 'zo', hanzi: '咗', jyutping: 'zo2', english: '(done; has happened)', img: false,
+    { id: 'zo2', hanzi: '咗', jyutping: 'zo2', english: '(done; has happened)', img: false,
       note: 'Straight after the verb: 食咗藥, took the medicine.' },
     { id: 'mou', hanzi: '冇', jyutping: 'mou5', english: 'not have; there isn\'t', img: false,
       note: 'The opposite of 有. Never 唔有.' },
@@ -125,7 +125,7 @@ Units.add(14, {
   // 頭痛: the part, then 痛.
   const ACHE = { head: 'a headache', eye: 'sore eyes', ear: 'an earache', tooth: 'a toothache', throat: 'a sore throat',
     hand: 'a sore hand', foot: 'a sore foot', stomach: 'a stomach ache', back: 'a backache' };
-  V.aches = Object.entries(ACHE).map(([part, english]) => say(`${part} tung`, english, { part, img: undefined }));
+  V.aches = Object.entries(ACHE).map(([part, english]) => say(`${part} tung3`, english, { part, img: undefined }));
   V.aches[0].note = 'The body part, then 痛: 頭痛. No word for "have".';
 
   // What else is wrong: 流鼻水 (a runny nose) with 發燒 and 咳.
@@ -149,20 +149,20 @@ Units.add(14, {
 
   // The doctor asks 有冇 (有 or 冇), and 咗未 (done, or 未).
   say = Units.sentences(V);
-  const ASK = { fever: 'a fever', cough: 'a cough', 'lau-nose-water': 'a runny nose', 'head-tung': 'a headache', 'throat-tung': 'a sore throat', 'stomach-tung': 'a stomach ache' };
+  const ASK = { fever: 'a fever', cough: 'a cough', 'lau-nose-water': 'a runny nose', 'head-tung3': 'a headache', 'throat-tung3': 'a sore throat', 'stomach-tung3': 'a stomach ache' };
   V.asks = Object.entries(ASK).map(([s, english]) => say(`nei jau mou ${s} aa`, `Do you have ${english}?`, { about: s, answers: ['jau', 'mou'] }));
   V.asks[0].note = 'Answer 有 (yes) or 冇 (no).';
 
   // Asked about things to do (休息 too), answered 食咗, 睇咗... or 未.
   const todo = [...V.todo, byId['jau-sik']];
   const DONE = { sik6: 'Yes, I have (eaten it).', tai: 'Yes, I have (seen them).', jam2: 'Yes, I have (drunk it).', 'jau-sik': 'Yes, I have (rested).' };
-  V.done = Object.entries(DONE).map(([verb, english]) => say(`${verb} zo`, english));
+  V.done = Object.entries(DONE).map(([verb, english]) => say(`${verb} zo2`, english));
   V.done[0].note = 'Answer with the verb and 咗, or 未 for "not yet".';
   V.asks.push(...todo.map(t => {
     const [verb, ...rest] = t.words ?? [t.id];
-    return say(['nei', verb, 'zo', ...rest, 'mei', 'aa'].join(' '), `Have you ${{
+    return say(['nei', verb, 'zo2', ...rest, 'mei', 'aa'].join(' '), `Have you ${{
       'sik6-joek': 'taken your medicine', 'tai-ji-sang': 'seen a doctor', 'jam2-water': 'drunk some water', 'sik6-rice': 'eaten', 'jau-sik': 'rested',
-    }[t.id]} yet?`, { about: t.id, answers: [`${verb}-zo`, 'mei'] });
+    }[t.id]} yet?`, { about: t.id, answers: [`${verb}-zo2`, 'mei'] });
   }));
   V.asks.find(q => q.about === 'sik6-rice').note = 'Also a greeting: "have you eaten?" means "how are you?"';
 
@@ -180,17 +180,17 @@ Units.add(14, {
   say = Units.sentences(V);
   V.sentences = [
     say('nei bin-dou m syu-fuk aa', 'What\'s wrong?', { note: '"Where are you unwell?": what a doctor asks.' }),
-    say('nei bin-dou tung aa', 'Where does it hurt?'),
-    say('ngo head-tung', 'I have a headache.'),
-    say('ngo go head hou tung', 'My head really hurts.', { note: '我個頭: the measure word says whose, as in Unit 10.' }),
-    say('ngo zek foot hou tung', 'My foot really hurts.'),
-    say('ngo tiu throat hou tung', 'My throat is really sore.'),
+    say('nei bin-dou tung3 aa', 'Where does it hurt?'),
+    say('ngo head-tung3', 'I have a headache.'),
+    say('ngo go head hou tung3', 'My head really hurts.', { note: '我個頭: the measure word says whose, as in Unit 10.' }),
+    say('ngo zek foot hou tung3', 'My foot really hurts.'),
+    say('ngo tiu throat hou tung3', 'My throat is really sore.'),
     say('ngo jau-di fever', 'I have a bit of a fever.'),
-    say('ngo cold zo', 'I\'ve caught a cold.', { note: '咗: it has happened.' }),
+    say('ngo cold zo2', 'I\'ve caught a cold.', { note: '咗: it has happened.' }),
     say('ngo mou fever', 'I don\'t have a fever.', { note: '冇 before a verb: "didn\'t", "don\'t".' }),
-    say('ngo sik6 zo joek', 'I\'ve taken my medicine.', { note: '咗 right after the verb: 食咗藥, not 食藥咗.' }),
+    say('ngo sik6 zo2 joek', 'I\'ve taken my medicine.', { note: '咗 right after the verb: 食咗藥, not 食藥咗.' }),
     say('ngo mei sik6 joek', 'I haven\'t taken my medicine yet.', { note: '未 before the verb: not yet.' }),
-    say('ngo gam-jat tai zo ji-sang', 'I saw a doctor today.'),
+    say('ngo gam-jat tai zo2 ji-sang', 'I saw a doctor today.'),
     say('nei jiu sik6 joek', 'You need to take medicine.'),
     say('nei jiu do di jau-sik', 'You need to rest more.', { note: '多啲 before the verb: more.' }),
     say('ngo jiu heoi hospital', 'I need to go to hospital.'),

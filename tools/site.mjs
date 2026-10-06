@@ -19,6 +19,15 @@
  *                    times, and 401, which Azure sometimes answers to a
  *                    burst of requests with a good key, 2 more (so a wrong
  *                    key still fails in seconds)
+ *   clipMoves(manifest, wanted)
+ *                    what to do with an audio dir's clips when its ids change
+ *                    (tts.mjs): manifest is { id: hash } as saved, wanted
+ *                    { id: hash } for the entries it should now hold.
+ *                    Returns { moves: [[from, to]], dropped: [ids] }: a
+ *                    wanted id without its clip takes the clip of an id no
+ *                    longer wanted that has the same hash (a renamed word
+ *                    keeps its audio), and the other ids no longer wanted
+ *                    are dropped
  *   minimaxConfig()  { key } for MiniMax (MINIMAX_KEY), the same way (tts.mjs)
  *   secrets()        { azureKey, azureRegion, minimaxKey }, undefined when
  *                    not set, without exiting (check.mjs, to make sure no
@@ -103,6 +112,17 @@ export function azureConfig() {
 
 export const shouldRetryAzure = (error, failures) =>
   error.status === 401 ? failures < 2 : (error.status === 429 || error.status >= 500) && failures < 5;
+
+export function clipMoves(manifest, wanted) {
+  const stale = Object.keys(manifest).filter(id => !(id in wanted));
+  const moves = [];
+  for (const [id, hash] of Object.entries(wanted)) {
+    if (manifest[id] === hash) continue;
+    const from = stale.find(old => manifest[old] === hash && !moves.some(([taken]) => taken === old));
+    if (from) moves.push([from, id]);
+  }
+  return { moves, dropped: stale.filter(id => !moves.some(([from]) => from === id)) };
+}
 
 export function minimaxConfig() {
   const { minimaxKey: key } = secrets();

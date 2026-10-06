@@ -27,7 +27,7 @@
   ],
   "audio": "ba76e5bf19c9"
  },
- "fridge-waai6-zo": {
+ "fridge-waai6-zo2": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 雪 tone 3 sounds like 6 (p 0.18)"
@@ -294,7 +294,7 @@
   ],
   "audio": "155c1495be30"
  },
- "saan1-zo-stove-mei-aa": {
+ "saan1-zo2-stove-mei-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",

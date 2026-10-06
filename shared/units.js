@@ -14,10 +14,6 @@
  *                         vocab.js must be loaded first: a page lists
  *                         ../unit<n>/vocab.js before its own, which
  *                         tools/check.mjs verifies.
- *   Units.word(n, id, as) the same, under the id `as`, for when `id` is
- *                         taken in the borrowing unit (unit 19 has 條 and
- *                         跳, both tiu): file: id keeps its audio and
- *                         picture (Canto.audioSrc uses file ?? id)
  *   Units.byId(vocab)     { id: entry } for every entry in every list of a
  *                         vocab object, or of one list of entries (a
  *                         vocab.js part way through, a page, a game)
@@ -51,11 +47,11 @@
     return vocab;
   }
 
-  function word(n, id, as) {
+  function word(n, id) {
     if (!units[n]) throw new Error(`unit ${n}'s vocab.js is not loaded`);
     const entry = entriesOf(units[n]).find(e => e.id === id);
     if (!entry) throw new Error(`unit ${n} has no word ${id}`);
-    return { ...entry, unit: entry.unit ?? n, ...(as && { id: as, file: entry.file ?? id }) };
+    return { ...entry, unit: entry.unit ?? n };
   }
 
   function sentences(vocab) {

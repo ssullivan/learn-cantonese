@@ -1,19 +1,19 @@
 {
- "baak-ge-coat": {
+ "baak6-ge-coat": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 嘅 tone 3 sounds like 6 (p 0.17)"
   ],
   "audio": "050e881fd57c"
  },
- "baak-ge-shirt": {
+ "baak6-ge-shirt": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 嘅 tone 3 sounds like 6 (p 0.20)"
   ],
   "audio": "528b6d9ab6b2"
  },
- "baak-ge-trousers": {
+ "baak6-ge-trousers": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 嘅 tone 3 sounds like 6 (p 0.16)"
@@ -104,7 +104,7 @@
   ],
   "audio": "4c2ed51085c2"
  },
- "keoi-zoek-laam-ge-trousers-tung-baak-ge-shoes": {
+ "keoi-zoek-laam-ge-trousers-tung-baak6-ge-shoes": {
   "verdict": "CHECK",
   "notes": [
    "tone: 佢 tone 5 sounds like 3 (p 0.03)",
@@ -170,7 +170,7 @@
   ],
   "audio": "23a667c87c3f"
  },
- "ngo-jiu-baak-ge-shoes": {
+ "ngo-jiu-baak6-ge-shoes": {
   "verdict": "LISTEN",
   "notes": [
    "speech-to-text heard 我要白色既鞋 ngo jiu baak sik gei haai"
@@ -184,7 +184,7 @@
   ],
   "audio": "1176ed5e662c"
  },
- "ni-gin-coat-gei-do-cin-aa": {
+ "ni-gin-coat-gei-do-cin2-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",

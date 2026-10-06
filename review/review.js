@@ -6,7 +6,9 @@
  * Marks (OK / Sounds wrong + note) stay in this browser under
  * "audio-review", keyed unit<N>/<id>, with the clip's hash from
  * unit<N>/audio/manifest.json: a clip regenerated since it was marked says
- * so. "Copy my notes" gives the marks as text to send back.
+ * so, and a mark on an entry since renamed follows its clip (by the hash;
+ * tools/tts.mjs moves a renamed entry's clip). "Copy my notes" gives the
+ * marks as text to send back.
  *
  * The machine flags (unit<N>/audio/check.json, written by
  * tools/audio-check.mjs) stay hidden until switched on, so the listener
@@ -230,6 +232,20 @@
   paintAll();
 
   // The clips' hashes, to tell when a marked clip has been remade.
+  // A mark whose entry is gone moves to the rows now playing its clip.
+  function followRenames() {
+    const keys = new Set(rows.map(r => r.key));
+    for (const [key, m] of Object.entries(marks)) {
+      if (keys.has(key) || !m.audio) continue;
+      const now = rows.filter(r => !marks[r.key] && manifests[r.n]?.[r.e.id] === m.audio);
+      if (!now.length) continue;
+      for (const r of now) marks[r.key] = m;
+      delete marks[key];
+    }
+    save();
+  }
+
   Promise.all(units.map(async n => { manifests[n] = await fetchJson(`../unit${n}/audio/manifest.json`) ?? {}; }))
+    .then(followRenames)
     .then(paintAll);
 })();

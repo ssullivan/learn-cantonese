@@ -44,12 +44,12 @@ const podium = `${floor}
 ${star(64, 34, 20)}`;
 
 const art = {
-  daai: svg('A big ball and a small one, the big one marked', `${balls}${arrow(84, 42)}`),
-  sai: svg('A big ball and a small one, the small one marked', `${balls}${arrow(24, 80)}`),
+  daai6: svg('A big ball and a small one, the big one marked', `${balls}${arrow(84, 42)}`),
+  sai3: svg('A big ball and a small one, the small one marked', `${balls}${arrow(24, 80)}`),
   gou: svg('A tall person and a short one, the tall one marked', `${people}${arrow(40, tallTop)}`),
   ai: svg('A tall person and a short one, the short one marked', `${people}${arrow(94, shortTop)}`),
   faai: svg('A car speeding along', `<g transform="translate(18 8) scale(.86)">${car}</g>${lines(22, 52)}`),
-  maan: svg('A snail, crawling slowly', snail),
+  maan6: svg('A snail, crawling slowly', snail),
   zeoi: svg('A podium, with a gold star over the winner', podium),
   'jat-joeng': svg('Two balls the same size', `${shadow(30, 104, 22)}${shadow(98, 104, 22)}${ball(30, 80, 22)}${ball(98, 80, 22)}
 <path d="M56 74 H72 M56 86 H72" stroke="#e0a526" stroke-width="5" stroke-linecap="round"/>`),

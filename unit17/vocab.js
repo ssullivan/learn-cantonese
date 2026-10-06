@@ -106,7 +106,7 @@ Units.add(17, {
     ...['gam-jat', 'ting-jat', 'sik-faan'].map(id => Units.word(9, id)),
     Units.word(11, 'ceot-street'),
     ...['jau-di', 'm-hai-hou', 'm-hou'].map(id => Units.word(13, id)),
-    ...['zou', 'jau-sik', 'hou-faan', 'cold', 'zo', 'mou'].map(id => Units.word(14, id)),
+    ...['zou', 'jau-sik', 'hou-faan', 'cold', 'zo2', 'mou'].map(id => Units.word(14, id)),
     ...['je', 'fan3-gaau', 'sik6-zou-caan'].map(id => Units.word(15, id)),
   ];
 })(window.VOCAB);
@@ -173,7 +173,7 @@ Units.add(17, {
       { note: '嘛: the reason is obvious. 考試 is the verb here: I take an exam.' }),
     P('maa3', 'ngo mou sik6-zou-caan', 'I didn\'t have breakfast, you know.', 'Your friend asks why you\'re so hungry. You give the obvious reason.',
       { note: '冇 before a verb: didn\'t.' }),
-    P('maa3', 'keoi cold zo', 'They\'ve got a cold, you know.', 'Your friend asks why their classmate is so tired. You remind them.'),
+    P('maa3', 'keoi cold zo2', 'They\'ve got a cold, you know.', 'Your friend asks why their classmate is so tired. You remind them.'),
   ];
 
   say = Units.sentences(V);
@@ -186,7 +186,7 @@ Units.add(17, {
     say('ngo geng dog', 'I\'m scared of dogs.', { note: '驚 + what scares you, like 鍾意 + what you like.' }),
     say('gam-jat hou mun', 'Today is so boring.', { note: '悶 is bored, and boring.' }),
     say('nei dim-gaai gam3 nau aa', 'Why are you so angry?', { note: '點解 why, 咁 so: 咁嬲, this angry.' }),
-    say('jan-wai keoi sik6 zo ngo go pineapple-butter', 'Because they ate my pineapple bun!',
+    say('jan-wai keoi sik6 zo2 ngo go pineapple-butter', 'Because they ate my pineapple bun!',
       { note: '我個菠蘿油: my pineapple bun (嘅 left out, as in Unit 10).' }),
     say('nei dim-gaai m hoi-sam aa', 'Why are you unhappy?'),
     say('jan-wai ngo ting-jat haau-si', 'Because I\'ve got an exam tomorrow.'),

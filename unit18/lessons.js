@@ -14,7 +14,7 @@
         title: 'Big and small · 大 細',
         render(el, ctx) {
           el.append(
-            ctx.words('daai', 'sai', 'gou', 'ai', 'faai', 'maan'),
+            ctx.words('daai6', 'sai3', 'gou', 'ai', 'faai', 'maan6'),
             p('And pairs you know already:'),
             ctx.words('gwai', 'peng', 'jit', 'dung'),
             tip(`<strong>大 and 細 for age.</strong> Of people, ${zh('大', 'daai6')} is older and ${zh('細', 'sai3')} younger: that's why a younger brother is ${zh('細佬', 'sai3 lou2')}.`),
@@ -38,7 +38,7 @@
         render(el, ctx) {
           el.append(
             p(`In everyday speech the adjective often comes first, then ${zh('過', 'gwo3')} and the other one. It means just the same as 比.`),
-            ctx.words('watermelon-gwai-gwo-apple', 'metro-faai-gwo-bus', 'elder-brother-gou-gwo-ngo', 'elder-sister-daai-gwo-ngo', 'plane-daai-gwo-car'),
+            ctx.words('watermelon-gwai-gwo-apple', 'metro-faai-gwo-bus', 'elder-brother-gou-gwo-ngo', 'elder-sister-daai6-gwo-ngo', 'plane-daai6-gwo-car'),
             tip('<strong>西瓜比蘋果貴 = 西瓜貴過蘋果.</strong> 比 works everywhere, in speech and in writing; 過 is what you\'ll hear most on the street.'),
           );
         },
@@ -51,7 +51,7 @@
             p(`How much more goes after the adjective: ${zh('好多', 'hou2 do1')} (much) or ${zh('少少', 'siu2 siu2')} (a little).`),
             ctx.words('watermelon-bei-apple-gwai-hou-do', 'cake-bei-flower-gwai-siu-siu', 'metro-faai-gwo-bus-hou-do'),
             p('An amount goes there too. With 大 and 細, years:'),
-            ctx.words('elder-sister-bei-ngo-daai-y3', 'younger-brother-bei-ngo-sai-y3', 'elder-brother-bei-ngo-daai-gei-do-seoi-aa'),
+            ctx.words('elder-sister-bei-ngo-daai6-y3', 'younger-brother-bei-ngo-sai3-y3', 'elder-brother-bei-ngo-daai6-gei-do-seoi-aa'),
           );
         },
       },
@@ -65,7 +65,7 @@
             tip('<strong>The first one is the less one.</strong> 巴士冇港鐵咁快: the bus "doesn\'t have the MTR\'s so-fast", so the MTR is faster. To say "not more", use 冇…咁, not 唔比.'),
             p(`The same: A ${zh('同', 'tung4')} B ${zh('一樣', 'jat1 joeng6')} + adjective. About the same: ${zh('差唔多', 'caa1 m4 do1')}.`),
             ctx.words('jat-joeng'),
-            ctx.words('ngo-tung-keoi-jat-joeng-gou', 'ngo-dei-jat-joeng-daai', 'orange-tung-apple-caa-m-do-daai', 'ni-loeng-go-jat-joeng-gwai'),
+            ctx.words('ngo-tung-keoi-jat-joeng-gou', 'ngo-dei-jat-joeng-daai6', 'orange-tung-apple-caa-m-do-daai6', 'ni-loeng-go-jat-joeng-gwai'),
           );
         },
       },
@@ -90,7 +90,7 @@
           el.append(
             p(`${zh('最', 'zeoi3')} goes before the adjective: ${zh('最快', 'zeoi3 faai3')}, the fastest.`),
             ctx.words('zeoi'),
-            ctx.words('bin-go-zeoi-daai-aa', 'bin-go-zeoi-peng-aa', 'plane-zeoi-faai', 'elder-brother-zeoi-gou'),
+            ctx.words('bin-go-zeoi-daai6-aa', 'bin-go-zeoi-peng-aa', 'plane-zeoi-faai', 'elder-brother-zeoi-gou'),
             p(`And before ${zh('鍾意', 'zung1 ji3')} (Unit 16), for what you like best:`),
             ctx.words('ngo-zeoi-zung-ji-jau4-water', 'nei-zeoi-zung-ji-sik6-mat-je-aa'),
           );

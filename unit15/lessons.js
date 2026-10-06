@@ -37,7 +37,7 @@
         title: 'The evening · 夜晚',
         render(el, ctx) {
           el.append(
-            ctx.words('zyu-rice', 'sik6-maan-faan', 'tai-din-si', 'tai-book', 'cung-loeng', 'fan3-gaau'),
+            ctx.words('zyu2-rice', 'sik6-maan-faan', 'tai-din-si', 'tai-book', 'cung-loeng4', 'fan3-gaau'),
             tip(`<strong>睇 is to watch and to read.</strong> 睇電視 is watching TV, 睇書 reading a book, and 睇醫生 seeing a doctor (Unit 14).`),
           );
         },
@@ -50,7 +50,7 @@
             p('The verbs:'),
             ctx.grid([...V.verbs, ...['sik6', 'tai', 'zoek', 'fan3'].map(ctx.entry)]),
             p('And what they are done to:'),
-            ctx.grid([...V.things, ...['tooth', 'hand', 'shirt', 'book', 'rice', 'home', 'loeng'].map(ctx.entry)]),
+            ctx.grid([...V.things, ...['tooth', 'hand', 'shirt', 'book', 'rice', 'home', 'loeng4'].map(ctx.entry)]),
             tip('<strong>Why take them apart?</strong> The little words that say when, 緊 咗 過, go straight after the verb, inside the activity.'),
           );
         },
@@ -73,7 +73,7 @@
         render(el, ctx) {
           el.append(
             p(`${zh('先', 'sin1')} (first) goes before the first verb, ${zh('然後', 'jin4 hau6')} (then) before the next:`),
-            ctx.words('sin', 'jin-hau', 'ngo-sin-hei-san-jin-hau-caat-tooth', 'ngo-sin-cung-loeng-jin-hau-fan3-gaau'),
+            ctx.words('sin', 'jin-hau', 'ngo-sin-hei-san-jin-hau-caat-tooth', 'ngo-sin-cung-loeng4-jin-hau-fan3-gaau'),
             p(`${zh('之後', 'zi1 hau6')} (after) and ${zh('之前', 'zi1 cin4')} (before) go after the thing they are before or after:`),
             ctx.words('zi-hau', 'zi-cin', 'ngo-sik6-zou-caan-zi-hau-faan-gung', 'ngo-fan3-gaau-zi-cin-caat-tooth', 'sik-faan-zi-cin-jiu-sai-hand'),
             tip('<strong>Listen for the order.</strong> 瞓覺之前刷牙 says bed first, but you brush your teeth first.'),
@@ -97,10 +97,10 @@
         render(el, ctx) {
           el.append(
             p(`${zh('咗', 'zo2')} (Unit 14) goes in the same place as 緊. ${zh('未', 'mei6')} goes before the verb:`),
-            ctx.words('sik6-zo-zou-caan', 'sik6-gan-zou-caan', 'mei-sik6-zou-caan'),
-            ctx.words('fan3-zo-gaau', 'fan3-gan-gaau', 'mei-fan3-gaau'),
+            ctx.words('sik6-zo2-zou-caan', 'sik6-gan-zou-caan', 'mei-sik6-zou-caan'),
+            ctx.words('fan3-zo2-gaau', 'fan3-gan-gaau', 'mei-fan3-gaau'),
             p('Asking "yet?", and answering:'),
-            ctx.words('keoi-sik6-zo-zou-caan-mei-aa', 'ngo-sik6-zo-zou-caan-laa3', 'ngo-mei-sik6-zou-caan'),
+            ctx.words('keoi-sik6-zo2-zou-caan-mei-aa', 'ngo-sik6-zo2-zou-caan-laa3', 'ngo-mei-sik6-zou-caan'),
             tip('<strong>Some things take no time.</strong> You 放工 in a moment, so there\'s no 放緊工: it\'s 放咗工 or 未放工.'),
           );
         },

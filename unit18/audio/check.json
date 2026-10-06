@@ -24,7 +24,7 @@
   ],
   "audio": "d5c043533117"
  },
- "bin-go-daai-di-aa": {
+ "bin-go-daai6-di-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)"
@@ -52,7 +52,7 @@
   ],
   "audio": "ae855d1426f9"
  },
- "bin-go-maan-di-aa": {
+ "bin-go-maan6-di-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -67,7 +67,7 @@
   ],
   "audio": "3074dff38a96"
  },
- "bin-go-sai-di-aa": {
+ "bin-go-sai3-di-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)"
@@ -82,7 +82,7 @@
   ],
   "audio": "2d5dac443d25"
  },
- "bin-go-zeoi-daai-aa": {
+ "bin-go-zeoi-daai6-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -111,7 +111,7 @@
   ],
   "audio": "71f2bab38d18"
  },
- "bin-go-zeoi-maan-aa": {
+ "bin-go-zeoi-maan6-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -126,7 +126,7 @@
   ],
   "audio": "aeb9a2c55e79"
  },
- "bin-go-zeoi-sai-aa": {
+ "bin-go-zeoi-sai3-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.01)",
@@ -148,7 +148,7 @@
   ],
   "audio": "65d819fefaef"
  },
- "bus-bei-car-daai": {
+ "bus-bei-car-daai6": {
   "verdict": "CHECK",
   "notes": [
    "tone: 士 tone 2 sounds like 3 (p 0.00)",
@@ -156,7 +156,7 @@
   ],
   "audio": "eb506237e21c"
  },
- "bus-bei-car-sai": {
+ "bus-bei-car-sai3": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 士 tone 2 sounds like 3 (p 0.08)"
@@ -170,7 +170,7 @@
   ],
   "audio": "c8c5129775a0"
  },
- "bus-bei-metro-maan": {
+ "bus-bei-metro-maan6": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 士 tone 2 sounds like 2 (p 0.44); 鐵 tone 3 sounds like 1 (p 0.32)"
@@ -192,7 +192,7 @@
   ],
   "audio": "7b28d66b3739"
  },
- "car-mou-bus-gam3-daai": {
+ "car-mou-bus-gam3-daai6": {
   "verdict": "CHECK",
   "notes": [
    "tone: 士 tone 2 sounds like 4 (p 0.00)",
@@ -200,35 +200,35 @@
   ],
   "audio": "6c82fb0622bb"
  },
- "car-mou-plane-gam3-daai": {
+ "car-mou-plane-gam3-daai6": {
   "verdict": "CHECK",
   "notes": [
    "tone: 冇 tone 5 sounds like 6 (p 0.03)"
   ],
   "audio": "ad584c4a6aac"
  },
- "dad-bei-mum-daai": {
+ "dad-bei-mum-daai6": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 大 tone 6 sounds like 4 (p 0.37)"
   ],
   "audio": "d9e0b19ac838"
  },
- "egg-bei-ball-daai": {
+ "egg-bei-ball-daai6": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 比 tone 2 sounds like 5 (p 0.17); 大 tone 6 sounds like 4 (p 0.33)"
   ],
   "audio": "4b95b49a560f"
  },
- "egg-bei-ball-sai": {
+ "egg-bei-ball-sai3": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 比 tone 2 sounds like 5 (p 0.19)"
   ],
   "audio": "7cd35dbb242c"
  },
- "egg-mou-ball-gam3-daai": {
+ "egg-mou-ball-gam3-daai6": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 冇 tone 5 sounds like 6 (p 0.07)"
@@ -244,7 +244,7 @@
   ],
   "audio": "443c4309947f"
  },
- "elder-brother-bei-ngo-daai-gei-do-seoi-aa": {
+ "elder-brother-bei-ngo-daai6-gei-do-seoi-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 比 tone 2 sounds like 4 (p 0.04); 我 tone 5 sounds like 3 (p 0.00); 呀 tone 3 sounds like 1 (p 0.00)",
@@ -266,7 +266,7 @@
   ],
   "audio": "adafb5f5c78c"
  },
- "elder-sister-bei-ngo-daai": {
+ "elder-sister-bei-ngo-daai6": {
   "verdict": "CHECK",
   "notes": [
    "tone: 比 tone 2 sounds like 6 (p 0.02); 我 tone 5 sounds like 6 (p 0.01)",
@@ -274,7 +274,7 @@
   ],
   "audio": "794615c26540"
  },
- "elder-sister-bei-ngo-daai-gei-do-seoi-aa": {
+ "elder-sister-bei-ngo-daai6-gei-do-seoi-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 比 tone 2 sounds like 5 (p 0.02); 我 tone 5 sounds like 3 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)",
@@ -282,21 +282,21 @@
   ],
   "audio": "0823420d112a"
  },
- "elder-sister-bei-ngo-daai-y3": {
+ "elder-sister-bei-ngo-daai6-y3": {
   "verdict": "CHECK",
   "notes": [
    "tone: 比 tone 2 sounds like 4 (p 0.01); 我 tone 5 sounds like 3 (p 0.01)"
   ],
   "audio": "154bff5f07f8"
  },
- "elder-sister-bei-ngo-sai": {
+ "elder-sister-bei-ngo-sai3": {
   "verdict": "CHECK",
   "notes": [
    "tone: 比 tone 2 sounds like 6 (p 0.02); 我 tone 5 sounds like 6 (p 0.02)"
   ],
   "audio": "46aebd37f155"
  },
- "elder-sister-daai-gwo-ngo": {
+ "elder-sister-daai6-gwo-ngo": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 大 tone 6 sounds like 4 (p 0.11); 我 tone 5 sounds like 2 (p 0.11)"
@@ -324,7 +324,7 @@
   ],
   "audio": "1378246540a3"
  },
- "metro-bei-plane-maan": {
+ "metro-bei-plane-maan6": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 鐵 tone 3 sounds like 6 (p 0.13); 慢 tone 6 sounds like 4 (p 0.06)"
@@ -375,7 +375,7 @@
   ],
   "audio": "1558dc3230dd"
  },
- "minibus-bei-tram-maan": {
+ "minibus-bei-tram-maan6": {
   "verdict": "CHECK",
   "notes": [
    "tone: 小 tone 2 sounds like 6 (p 0.03)"
@@ -434,14 +434,14 @@
   ],
   "audio": "2219a847dbb2"
  },
- "orange-mou-watermelon-gam3-daai": {
+ "orange-mou-watermelon-gam3-daai6": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 冇 tone 5 sounds like 6 (p 0.08); 大 tone 6 sounds like 4 (p 0.28)"
   ],
   "audio": "d89e59880211"
  },
- "orange-tung-apple-caa-m-do-daai": {
+ "orange-tung-apple-caa-m-do-daai6": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 大 tone 6 sounds like 4 (p 0.17)"
@@ -462,21 +462,21 @@
   ],
   "audio": "42cc26cfc565"
  },
- "plane-bei-car-daai": {
+ "plane-bei-car-daai6": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 大 tone 6 sounds like 4 (p 0.05)"
   ],
   "audio": "e78cab8cea3b"
  },
- "plane-daai-gwo-car": {
+ "plane-daai6-gwo-car": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 大 tone 6 sounds like 4 (p 0.18)"
   ],
   "audio": "7914b295000f"
  },
- "sai": {
+ "sai3": {
   "verdict": "LISTEN",
   "notes": [
    "speech-to-text heard 四 sei"
@@ -504,7 +504,7 @@
   ],
   "audio": "8f807137ec8a"
  },
- "taxi-bei-tram-maan": {
+ "taxi-bei-tram-maan6": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 士 tone 2 sounds like 3 (p 0.09)"
@@ -546,7 +546,7 @@
   ],
   "audio": "cba7994e5eb8"
  },
- "younger-brother-bei-ngo-daai": {
+ "younger-brother-bei-ngo-daai6": {
   "verdict": "CHECK",
   "notes": [
    "tone: 比 tone 2 sounds like 6 (p 0.03); 我 tone 5 sounds like 6 (p 0.01)",
@@ -554,14 +554,14 @@
   ],
   "audio": "727d0e6c5c67"
  },
- "younger-brother-bei-ngo-sai": {
+ "younger-brother-bei-ngo-sai3": {
   "verdict": "CHECK",
   "notes": [
    "tone: 比 tone 2 sounds like 6 (p 0.02); 我 tone 5 sounds like 6 (p 0.02)"
   ],
   "audio": "f75b08f26163"
  },
- "younger-brother-bei-ngo-sai-gei-do-seoi-aa": {
+ "younger-brother-bei-ngo-sai3-gei-do-seoi-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 比 tone 2 sounds like 4 (p 0.01); 我 tone 5 sounds like 3 (p 0.00); 呀 tone 3 sounds like 1 (p 0.00)",
@@ -569,14 +569,14 @@
   ],
   "audio": "ee2c83e3ed7e"
  },
- "younger-brother-bei-ngo-sai-y3": {
+ "younger-brother-bei-ngo-sai3-y3": {
   "verdict": "CHECK",
   "notes": [
    "tone: 比 tone 2 sounds like 6 (p 0.01); 我 tone 5 sounds like 3 (p 0.01)"
   ],
   "audio": "7f7aaee588a5"
  },
- "younger-sister-bei-ngo-sai-gei-do-seoi-aa": {
+ "younger-sister-bei-ngo-sai3-gei-do-seoi-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 比 tone 2 sounds like 4 (p 0.00); 我 tone 5 sounds like 3 (p 0.01); 呀 tone 3 sounds like 1 (p 0.00)",

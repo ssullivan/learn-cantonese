@@ -6,7 +6,7 @@
   ],
   "audio": "e1ae4318aadc"
  },
- "gei-do-cin-aa": {
+ "gei-do-cin2-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -14,7 +14,7 @@
   ],
   "audio": "72f184eed9b9"
  },
- "go2-go-gei-do-cin-aa": {
+ "go2-go-gei-do-cin2-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -50,7 +50,7 @@
   ],
   "audio": "abfd6071022f"
  },
- "ni-bun-book-gei-do-cin-aa": {
+ "ni-bun-book-gei-do-cin2-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",
@@ -58,7 +58,7 @@
   ],
   "audio": "fd2706a8bb1d"
  },
- "ni-go-gei-do-cin-aa": {
+ "ni-go-gei-do-cin2-aa": {
   "verdict": "CHECK",
   "notes": [
    "tone: 呀 tone 3 sounds like 1 (p 0.00)",

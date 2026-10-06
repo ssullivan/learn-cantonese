@@ -259,10 +259,4 @@ ${pineappleBun}
 <g fill="#6b3a22" stroke="#4a2716" stroke-width="1.2"><ellipse cx="58" cy="78" rx="8" ry="4" transform="rotate(-15 58 78)"/><ellipse cx="82" cy="80" rx="8" ry="4" transform="rotate(12 82 80)"/><ellipse cx="46" cy="96" rx="7.5" ry="3.8" transform="rotate(10 46 96)"/><ellipse cx="76" cy="98" rx="7.5" ry="3.8" transform="rotate(-8 76 98)"/></g>
 <g stroke="#8c5236" stroke-width="1.2" stroke-linecap="round"><path d="M54 77 l7 -2 M79 78 l7 2"/></g>`, { cy: 90, ry: 21 })),
 
-  congee: svg("Zuk (congee)", bowl(`<ellipse cx="64" cy="61" rx="46" ry="10" fill="#f5f0e2"/>
-<path d="M30 60 q8 -3 16 0 M70 57 q8 -3 16 0 M52 65 q6 -2 12 0" stroke="#e4dcc6" stroke-width="2" fill="none" stroke-linecap="round"/>
-<g stroke="#2e2418" stroke-width="1.2"><path d="M40 56 L54 52 L52 62 Z" fill="#5a4630"/><path d="M76 62 L90 60 L84 68 Z" fill="#5a4630"/></g>
-<g fill="#6f7d52"><circle cx="50" cy="56" r="2.5"/><circle cx="84" cy="62" r="2.3"/></g>
-<g fill="#c99a7a"><path d="M62 54 q5 -2 9 1 l-1 2 q-4 -2 -8 -1Z"/><path d="M36 64 q5 -2 9 1 l-1 2 q-4 -2 -8 -1Z"/><path d="M68 66 q4 -2 8 1 l-1 2 q-4 -2 -7 -1Z"/></g>
-<g fill="none" stroke="#5fa33a" stroke-width="1.8"><circle cx="60" cy="61" r="2.2"/><circle cx="74" cy="55" r="2.2"/><circle cx="46" cy="61" r="2"/><circle cx="92" cy="57" r="2"/></g>`)),
 };

@@ -41,7 +41,7 @@
   ],
   "audio": "5d55fa76c5c8"
  },
- "jan-wai-keoi-sik6-zo-ngo-go-pineapple-butter": {
+ "jan-wai-keoi-sik6-zo2-ngo-go-pineapple-butter": {
   "verdict": "CHECK",
   "notes": [
    "tone: 我 tone 5 sounds like 3 (p 0.01)"
@@ -55,7 +55,7 @@
   ],
   "audio": "d13a4e06781f"
  },
- "keoi-cold-zo-maa3": {
+ "keoi-cold-zo2-maa3": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 佢 tone 5 sounds like 6 (p 0.07); 冒 tone 6 sounds like 3 (p 0.32)"
