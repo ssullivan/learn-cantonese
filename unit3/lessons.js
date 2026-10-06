@@ -114,12 +114,22 @@
       },
       {
         id: 'listen',
-        title: 'Listen and pick',
+        title: 'Listen and pick · 我, 你, 佢',
         gate: true,
         render(el, ctx) {
           const quiz = $('div');
-          el.append(p('Listen to the word, then tap its picture. Watch for 哋! Finish all eight to unlock the next step.'), quiz);
-          ctx.listenQuiz(quiz, { pool: Canto.entries(V).filter(e => e.img !== false), rounds: 8, choices: 4 });
+          el.append(p('Listen to the word, then tap its picture: who is the speaker pointing at? Watch for 哋! Finish all six to unlock the next step.'), quiz);
+          ctx.listenQuiz(quiz, { pool: V.people, rounds: 6, choices: 4 });
+        },
+      },
+      {
+        id: 'listen-people',
+        title: 'Listen and pick · 老師, 學生...',
+        gate: true,
+        render(el, ctx) {
+          const quiz = $('div');
+          el.append(p('Now the people words. Listen, then tap the picture. Finish all four to unlock the next step.'), quiz);
+          ctx.listenQuiz(quiz, { pool: V.things.filter(e => e.img !== false), rounds: 4, choices: 4 });
         },
       },
       {
