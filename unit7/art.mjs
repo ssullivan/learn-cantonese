@@ -4,6 +4,28 @@
  */
 import { svg, steamer, plate, bowl, teapot, teacup, pineappleBun } from '../tools/svg.mjs';
 
+// Fried rice heaped in a dome, as Hong Kong restaurants serve it: separate
+// grains all over (so it can't pass for an omelette), with egg, char siu,
+// shrimp, peas and spring onion on top.
+function friedRice() {
+  const inDome = (x, y) => ((x - 64) / 40) ** 2 + ((y - 92) / 54) ** 2 < 0.88 && y < 98;
+  const grains = [];
+  for (let y = 42, row = 0; y <= 96; y += 4.2, row++) {
+    for (let x = 22 + (row % 2) * 3.5; x <= 106; x += 7) {
+      const jx = x + 2 * Math.sin(x * 7.3 + y), jy = y + 1.2 * Math.cos(x * 3.1 + y * 5);
+      if (inDome(jx, jy)) grains.push(`<ellipse cx="${jx.toFixed(1)}" cy="${jy.toFixed(1)}" rx="3.3" ry="1.6" transform="rotate(${Math.round(60 * Math.sin(x * 5.7 + y * 2.3))} ${jx.toFixed(1)} ${jy.toFixed(1)})"/>`);
+    }
+  }
+  return `<path d="M24 96 C22 62 40 40 64 40 C88 40 106 62 104 96 C88 104 40 104 24 96Z" fill="#ecd08a" stroke="#c9a85a" stroke-width="2"/>
+<path d="M82 46 C98 58 104 76 104 96 C98 99 92 100 86 101 C92 82 90 62 82 46Z" fill="#d9b86c" opacity=".7"/>
+<g fill="#fffaea" stroke="#cdae62" stroke-width=".7">${grains.join('')}</g>
+<g fill="#f7cf2c" stroke="#d9a514" stroke-width="1"><path d="M44 66 l7 -3 l3 5 l-6 3Z"/><path d="M70 54 l7 -1 l1 6 l-7 1Z"/><path d="M80 80 l7 -2 l2 6 l-7 2Z"/><path d="M36 86 l6 -2 l2 5 l-6 2Z"/><path d="M60 88 l6 -3 l3 5 l-6 3Z"/></g>
+<g fill="#b8402e" stroke="#7d2318" stroke-width="1"><rect x="56" y="64" width="6" height="5" rx="1"/><rect x="86" y="66" width="6" height="5" rx="1"/><rect x="46" y="80" width="6" height="5" rx="1"/><rect x="72" y="92" width="6" height="5" rx="1"/></g>
+<g fill="none" stroke="#f08e70" stroke-width="3.5" stroke-linecap="round"><path d="M58 50 a4.5 4.5 0 1 1 7 3.5"/><path d="M68 74 a4.5 4.5 0 1 1 7 3.5"/></g>
+<g fill="#5fa33a" stroke="#3d7a22" stroke-width=".8"><circle cx="52" cy="56" r="2.2"/><circle cx="78" cy="64" r="2.2"/><circle cx="38" cy="74" r="2.2"/><circle cx="94" cy="84" r="2.2"/><circle cx="56" cy="96" r="2.2"/></g>
+<g fill="none" stroke="#3f9a3a" stroke-width="1.6"><circle cx="64" cy="58" r="2.4"/><circle cx="90" cy="74" r="2.4"/><circle cx="32" cy="92" r="2.4"/></g>`;
+}
+
 export default {
   'yum-cha': svg("Yum cha (teapot and teacup)", `<path d="M84 22 c-4 -6 4 -10 0 -16 M94 26 c-4 -6 4 -10 0 -16" stroke="#9fb0bb" stroke-width="2.5" fill="none" stroke-linecap="round"/>
 ` + teapot() + '\n' + teacup()),
@@ -216,12 +238,7 @@ ${pineappleBun}
 <use href="#s" transform="translate(84 80) rotate(6)"/>
 <use href="#s" transform="translate(64 96)"/>`, { cy: 90, ry: 21 })),
 
-  'fried-rice': svg("Caau faan (fried rice)", plate(`<path d="M20 90 C24 58 104 58 108 90 C92 102 36 102 20 90Z" fill="#f4e2a8" stroke="#d7bb6e" stroke-width="2"/>
-<g fill="#fbf1cf"><ellipse cx="40" cy="80" rx="2.6" ry="1.3"/><ellipse cx="54" cy="70" rx="2.6" ry="1.3"/><ellipse cx="70" cy="68" rx="2.6" ry="1.3"/><ellipse cx="86" cy="74" rx="2.6" ry="1.3"/><ellipse cx="96" cy="86" rx="2.6" ry="1.3"/><ellipse cx="62" cy="80" rx="2.6" ry="1.3"/><ellipse cx="46" cy="92" rx="2.6" ry="1.3"/><ellipse cx="78" cy="92" rx="2.6" ry="1.3"/><ellipse cx="32" cy="88" rx="2.6" ry="1.3"/></g>
-<g fill="#f7d33c"><path d="M46 76 q4 -4 8 0 q-4 3 -8 0Z"/><path d="M74 78 q5 -4 9 1 q-5 3 -9 -1Z"/><path d="M58 90 q4 -3 8 0 q-4 3 -8 0Z"/><path d="M88 82 q3 -3 7 0 q-3 3 -7 0Z"/></g>
-<g fill="#c0392b"><rect x="62" y="72" width="5" height="4" rx="1"/><rect x="38" y="86" width="5" height="4" rx="1"/><rect x="84" y="90" width="5" height="4" rx="1"/></g>
-<g fill="none" stroke="#f08e70" stroke-width="3.5" stroke-linecap="round"><path d="M50 84 a4 4 0 1 1 6 3"/><path d="M76 70 a4 4 0 1 1 6 3"/></g>
-<g fill="#5fa33a"><rect x="56" y="76" width="3.5" height="3" rx="1"/><rect x="70" y="86" width="3.5" height="3" rx="1"/><rect x="92" y="78" width="3.5" height="3" rx="1"/><rect x="42" y="72" width="3.5" height="3" rx="1"/><rect x="66" y="96" width="3.5" height="3" rx="1"/></g>`, { cy: 90, ry: 21 })),
+  'fried-rice': svg("Caau faan (fried rice)", plate(friedRice(), { cy: 90, ry: 21 })),
 
   'seafood-noodles': svg("Hoi sin caau min (seafood fried noodles)", plate(`<ellipse cx="64" cy="88" rx="44" ry="15" fill="#e8b04a" stroke="#b77b24" stroke-width="1.5"/>
 <g fill="none" stroke="#c98a2a" stroke-width="1.8" stroke-linecap="round"><path d="M26 86 q6 -6 12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t10 0"/><path d="M32 94 q6 -6 12 0 t12 0 t12 0 t12 0 t12 0 t12 0"/><path d="M36 80 q6 -6 12 0 t12 0 t12 0 t12 0 t12 0"/></g>
