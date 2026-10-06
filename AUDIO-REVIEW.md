@@ -44,27 +44,27 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 
 | # | Chinese | Jyutping | English | Audio |
 |---|---|---|---|---|
-| 1 | 你好 | nei5 hou2 | hello | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/hello.mp3) |
-| 2 | 早晨 | zou2 san4 | good morning | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/good-morning.mp3) |
-| 3 | 早唞 | zou2 tau2 | good night | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/good-night.mp3) |
-| 4 | 拜拜 | baai1 baai3 | bye-bye | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/bye.mp3) |
-| 5 | 再見 | zoi3 gin3 | goodbye | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/goodbye.mp3) |
-| 6 | 你好嗎？ | nei5 hou2 maa3 | how are you? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/how-are-you.mp3) |
-| 7 | 最近點呀？ | zeoi3 gan6 dim2 aa3 | how have you been? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/how-lately.mp3) |
-| 8 | 幾好 | gei2 hou2 | pretty good | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/pretty-good.mp3) |
-| 9 | 麻麻哋 | maa4 maa2 dei2 | so-so | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/so-so.mp3) |
-| 10 | 好耐冇見 | hou2 noi6 mou5 gin3 | long time no see | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/long-time.mp3) |
-| 11 | 食咗飯未呀？ | sik6 zo2 faan6 mei6 aa3 | have you eaten yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/eaten-yet.mp3) |
-| 12 | 食咗喇 | sik6 zo2 laa3 | I have eaten | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/eaten.mp3) |
-| 13 | 唔該 | m4 goi1 | thank you (for a service); excuse me | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/m-goi.mp3) |
-| 14 | 唔該晒 | m4 goi1 saai3 | thanks a lot | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/m-goi-saai.mp3) |
-| 15 | 多謝 | do1 ze6 | thank you (for a gift) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/thanks.mp3) |
-| 16 | 唔使 | m4 sai2 | no need; you're welcome | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/no-need.mp3) |
-| 17 | 唔使客氣 | m4 sai2 haak3 hei3 | you're welcome | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/welcome.mp3) |
-| 18 | 對唔住 | deoi3 m4 zyu6 | sorry | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/sorry.mp3) |
-| 19 | 唔好意思 | m4 hou2 ji3 si3 | excuse me; sorry (small) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/excuse-me.mp3) |
-| 20 | 唔緊要 | m4 gan2 jiu3 | never mind; it's OK | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/never-mind.mp3) |
-| 21 | 冇問題 | mou5 man6 tai4 | no problem | [▶ play](https://ssullivan.github.io/learn-cantonese/unit2/audio/no-problem.mp3) |
+| 1 | 你好 | nei5 hou2 | hello | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hello.mp3) |
+| 2 | 早晨 | zou2 san4 | good morning | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/good-morning.mp3) |
+| 3 | 早唞 | zou2 tau2 | good night | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/good-night.mp3) |
+| 4 | 拜拜 | baai1 baai3 | bye-bye | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/bye.mp3) |
+| 5 | 再見 | zoi3 gin3 | goodbye | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/goodbye.mp3) |
+| 6 | 你好嗎？ | nei5 hou2 maa3 | how are you? | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/how-are-you.mp3) |
+| 7 | 最近點呀？ | zeoi3 gan6 dim2 aa3 | how have you been? | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/how-lately.mp3) |
+| 8 | 幾好 | gei2 hou2 | pretty good | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/pretty-good.mp3) |
+| 9 | 麻麻哋 | maa4 maa2 dei2 | so-so | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/so-so.mp3) |
+| 10 | 好耐冇見 | hou2 noi6 mou5 gin3 | long time no see | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/long-time.mp3) |
+| 11 | 食咗飯未呀？ | sik6 zo2 faan6 mei6 aa3 | have you eaten yet? | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/eaten-yet.mp3) |
+| 12 | 食咗喇 | sik6 zo2 laa3 | I have eaten | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/eaten.mp3) |
+| 13 | 唔該 | m4 goi1 | thank you (for a service); excuse me | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/m-goi.mp3) |
+| 14 | 唔該晒 | m4 goi1 saai3 | thanks a lot | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/m-goi-saai.mp3) |
+| 15 | 多謝 | do1 ze6 | thank you (for a gift) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/thanks.mp3) |
+| 16 | 唔使 | m4 sai2 | no need; you're welcome | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/no-need.mp3) |
+| 17 | 唔使客氣 | m4 sai2 haak3 hei3 | you're welcome | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/welcome.mp3) |
+| 18 | 對唔住 | deoi3 m4 zyu6 | sorry | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/sorry.mp3) |
+| 19 | 唔好意思 | m4 hou2 ji3 si3 | excuse me; sorry (small) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/excuse-me.mp3) |
+| 20 | 唔緊要 | m4 gan2 jiu3 | never mind; it's OK | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/never-mind.mp3) |
+| 21 | 冇問題 | mou5 man6 tai4 | no problem | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/no-problem.mp3) |
 
 ## Unit 3
 

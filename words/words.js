@@ -68,3 +68,46 @@ Words.add(1, [
   { id: 'hou-lek', hanzi: '好叻呀！', jyutping: 'hou2 lek1 aa3', english: 'Well done! (literally "so clever!")', img: false,
     note: '叻 lek1 means clever or good at something. You\'ll hear this in the games when you get a whole level right.' },
 ]);
+
+// Unit 2 · Greetings 打招呼
+Words.add(2, [
+  // greetings
+  { id: 'hello', hanzi: '你好', jyutping: 'nei5 hou2', english: 'hello', img: false,
+    note: 'Polite, a little formal. Friends often just say "hi" or "hello" in English.' },
+  { id: 'good-morning', hanzi: '早晨', jyutping: 'zou2 san4', english: 'good morning',
+    note: 'Used until about noon. There is no everyday "good afternoon".' },
+  { id: 'good-night', hanzi: '早唞', jyutping: 'zou2 tau2', english: 'good night',
+    note: 'Only when someone is going to sleep, never as "good evening".' },
+  { id: 'bye', hanzi: '拜拜', jyutping: 'baai1 baai3', english: 'bye-bye',
+    note: 'From English "bye-bye". What most people say.' },
+  { id: 'goodbye', hanzi: '再見', jyutping: 'zoi3 gin3', english: 'goodbye', img: false,
+    note: 'Literally "see again". More formal than 拜拜.' },
+  // howAreYou
+  { id: 'how-are-you', hanzi: '你好嗎？', jyutping: 'nei5 hou2 maa3', english: 'how are you?', img: false,
+    note: 'The textbook question. Correct, but it sounds stiff.' },
+  { id: 'how-lately', hanzi: '最近點呀？', jyutping: 'zeoi3 gan6 dim2 aa3', english: 'how have you been?', img: false,
+    note: 'What people really say. 點 means "how", and 呀 makes it friendly.' },
+  { id: 'pretty-good', hanzi: '幾好', jyutping: 'gei2 hou2', english: 'pretty good', img: false },
+  { id: 'so-so', hanzi: '麻麻哋', jyutping: 'maa4 maa2 dei2', english: 'so-so', img: false },
+  { id: 'long-time', hanzi: '好耐冇見', jyutping: 'hou2 noi6 mou5 gin3', english: 'long time no see', img: false },
+  { id: 'eaten-yet', hanzi: '食咗飯未呀？', jyutping: 'sik6 zo2 faan6 mei6 aa3', english: 'have you eaten yet?', img: false,
+    note: 'A friendly greeting, not an invitation. Just answer and chat on.' },
+  { id: 'eaten', hanzi: '食咗喇', jyutping: 'sik6 zo2 laa3', english: 'I have eaten', img: false },
+  // polite
+  { id: 'm-goi', hanzi: '唔該', jyutping: 'm4 goi1', english: 'thank you (for a service); excuse me',
+    note: 'For a service or a favour, and to get someone\'s attention.' },
+  { id: 'm-goi-saai', hanzi: '唔該晒', jyutping: 'm4 goi1 saai3', english: 'thanks a lot', img: false,
+    note: '晒 means "all": thanks for everything you did.' },
+  { id: 'thanks', hanzi: '多謝', jyutping: 'do1 ze6', english: 'thank you (for a gift)',
+    note: 'For a gift or a compliment.' },
+  { id: 'no-need', hanzi: '唔使', jyutping: 'm4 sai2', english: 'no need; you\'re welcome', img: false,
+    note: 'The answer to 唔該: "no need to thank me".' },
+  { id: 'welcome', hanzi: '唔使客氣', jyutping: 'm4 sai2 haak3 hei3', english: 'you\'re welcome', img: false,
+    note: 'The answer to 多謝: "no need to be polite".' },
+  { id: 'sorry', hanzi: '對唔住', jyutping: 'deoi3 m4 zyu6', english: 'sorry',
+    note: 'A real apology, when you did something wrong.' },
+  { id: 'excuse-me', hanzi: '唔好意思', jyutping: 'm4 hou2 ji3 si3', english: 'excuse me; sorry (small)', img: false,
+    note: 'For small things: a bump, being late, asking a stranger.' },
+  { id: 'never-mind', hanzi: '唔緊要', jyutping: 'm4 gan2 jiu3', english: 'never mind; it\'s OK', img: false },
+  { id: 'no-problem', hanzi: '冇問題', jyutping: 'mou5 man6 tai4', english: 'no problem', img: false },
+]);

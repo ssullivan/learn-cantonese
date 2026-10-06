@@ -6,6 +6,20 @@
   ],
   "audio": "0d86695bdf74"
  },
+ "eaten-yet": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 未 tone 6 sounds like 2 (p 0.02); 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "a45af5b61ab6"
+ },
+ "excuse-me": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 唔 tone 4 sounds like 5 (p 0.03); 思 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "577a947ed73b"
+ },
  "fish": {
   "verdict": "CHECK",
   "notes": [
@@ -14,12 +28,48 @@
   ],
   "audio": "ea55a19f1796"
  },
+ "hello": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 你 tone 5 sounds like 2 (p 0.24)"
+  ],
+  "audio": "c06757cdf304"
+ },
+ "how-are-you": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 嗎 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 你 tone 5 sounds like 2 (p 0.42)"
+  ],
+  "audio": "a4430102403d"
+ },
+ "how-lately": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 呀 tone 3 sounds like 1 (p 0.00)"
+  ],
+  "audio": "46dab8e43dc6"
+ },
  "jyutping": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 粵 tone 6 sounds like 3 (p 0.32)"
   ],
   "audio": "3ce8edb2a713"
+ },
+ "m-goi": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.18)"
+  ],
+  "audio": "590b31b1a4a4"
+ },
+ "m-goi-saai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 6 (p 0.31)"
+  ],
+  "audio": "99468c999b8e"
  },
  "ng": {
   "verdict": "LISTEN",
@@ -36,11 +86,25 @@
   ],
   "audio": "6df070a62635"
  },
+ "so-so": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 哋 tone 2 sounds like 6 (p 0.00)"
+  ],
+  "audio": "0bdfca20e8be"
+ },
  "water": {
   "verdict": "LISTEN",
   "notes": [
    "speech-to-text heard sir s i r"
   ],
   "audio": "32484cd074ca"
+ },
+ "welcome": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.23)"
+  ],
+  "audio": "1f516288c2da"
  }
 }
