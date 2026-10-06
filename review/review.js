@@ -1,16 +1,17 @@
 /*
  * Audio review: every clip on the site, for a native speaker to hear and
- * mark. Rows come from every loaded unit's vocab (its own entries: a
- * borrowed word is listed once, in its own unit), so nothing is typed out.
+ * mark. Rows come from every loaded unit's vocab (what it teaches: its own
+ * phrases and the dictionary words taught there; a borrowed word is listed
+ * once, where it is taught), so nothing is typed out.
  *
  * Marks (OK / Sounds wrong + note) stay in this browser under
- * "audio-review", keyed unit<N>/<id>, with the clip's hash from
- * unit<N>/audio/manifest.json: a clip regenerated since it was marked says
- * so, and a mark on an entry since renamed follows its clip (by the hash;
- * tools/tts.mjs moves a renamed entry's clip). "Copy my notes" gives the
- * marks as text to send back.
+ * "audio-review", keyed <home>/<id> (unit<N>, or words for a dictionary
+ * word), with the clip's hash from <home>/audio/manifest.json: a clip
+ * regenerated since it was marked says so, and a mark on an entry since
+ * renamed or moved follows its clip (by the hash; tools/tts.mjs moves the
+ * clip). "Copy my notes" gives the marks as text to send back.
  *
- * The machine flags (unit<N>/audio/check.json, written by
+ * The machine flags (<home>/audio/check.json, written by
  * tools/audio-check.mjs) stay hidden until switched on, so the listener
  * isn't primed by them.
  */
@@ -25,11 +26,12 @@
   const units = Object.keys(window.UNITS).map(Number).sort((a, b) => a - b);
   const rows = units.flatMap(n => {
     const vocab = window.UNITS[n];
-    return Canto.entries(vocab).filter(e => !e.unit).map((e, i) => ({
-      n, i, e, key: `unit${n}/${e.id}`, src: `../unit${n}/audio/${e.id}.mp3`,
-      voice: voiceName(e, vocab),
-    }));
+    return Canto.entries(vocab).filter(e => Units.teaches(vocab, e)).map((e, i) => {
+      const home = e.taught ? 'words' : `unit${n}`;
+      return { n, i, e, home, key: `${home}/${e.id}`, src: `../${home}/audio/${e.id}.mp3`, voice: voiceName(e, vocab) };
+    });
   });
+  const homes = [...new Set(rows.map(r => r.home))];
   const manifests = {}, verdicts = {};
   let showFlags = false, filter = 'all';
 
@@ -114,7 +116,7 @@
       b.addEventListener('click', () => {
         const m = marks[row.key];
         if (m?.mark === mark) delete marks[row.key];
-        else marks[row.key] = { ...m, mark, audio: manifests[row.n]?.[row.e.id] };
+        else marks[row.key] = { ...m, mark, audio: manifests[row.home]?.[row.e.id] };
         save();
         paintRow(row);
         paintProgress();
@@ -122,7 +124,7 @@
       });
     }
     note.addEventListener('input', () => {
-      marks[row.key] = { mark: 'wrong', ...marks[row.key], note: note.value, audio: manifests[row.n]?.[row.e.id] };
+      marks[row.key] = { mark: 'wrong', ...marks[row.key], note: note.value, audio: manifests[row.home]?.[row.e.id] };
       save();
       paintRow(row);
       paintProgress();
@@ -154,9 +156,9 @@
     row.tr.classList.toggle('is-ok', m?.mark === 'ok');
     row.tr.classList.toggle('is-wrong', m?.mark === 'wrong');
     if (document.activeElement !== row.note) row.note.value = m?.note ?? '';
-    const now = manifests[row.n]?.[row.e.id];
+    const now = manifests[row.home]?.[row.e.id];
     const changed = m && m.audio && now && m.audio !== now;
-    const v = showFlags && verdicts[row.n]?.[row.e.id];
+    const v = showFlags && verdicts[row.home]?.[row.e.id];
     const stale = v && v.audio !== now;
     row.status.innerHTML = [
       changed ? '<span class="review-changed">Clip changed since you marked it: listen again.</span>' : '',
@@ -168,7 +170,7 @@
     const m = marks[row.key];
     if (filter === 'todo') return !m;
     if (filter === 'wrong') return m?.mark === 'wrong';
-    if (filter === 'flagged') return !!verdicts[row.n]?.[row.e.id];
+    if (filter === 'flagged') return !!verdicts[row.home]?.[row.e.id];
     return true;
   }
 
@@ -192,7 +194,7 @@
   flagBox.addEventListener('change', async () => {
     showFlags = flagBox.checked;
     if (showFlags && !Object.keys(verdicts).length) {
-      await Promise.all(units.map(async n => { verdicts[n] = await fetchJson(`../unit${n}/audio/check.json`) ?? {}; }));
+      await Promise.all(homes.map(async h => { verdicts[h] = await fetchJson(`../${h}/audio/check.json`) ?? {}; }));
     }
     paintFilters();
     paintAll();
@@ -237,7 +239,7 @@
     const keys = new Set(rows.map(r => r.key));
     for (const [key, m] of Object.entries(marks)) {
       if (keys.has(key) || !m.audio) continue;
-      const now = rows.filter(r => !marks[r.key] && manifests[r.n]?.[r.e.id] === m.audio);
+      const now = rows.filter(r => !marks[r.key] && manifests[r.home]?.[r.e.id] === m.audio);
       if (!now.length) continue;
       for (const r of now) marks[r.key] = m;
       delete marks[key];
@@ -245,7 +247,7 @@
     save();
   }
 
-  Promise.all(units.map(async n => { manifests[n] = await fetchJson(`../unit${n}/audio/manifest.json`) ?? {}; }))
+  Promise.all(homes.map(async h => { manifests[h] = await fetchJson(`../${h}/audio/manifest.json`) ?? {}; }))
     .then(followRenames)
     .then(paintAll);
 })();

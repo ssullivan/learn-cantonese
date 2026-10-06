@@ -39,8 +39,9 @@
  *                                (Canto.near, so load numbers.js), then any
  *                                others
  *   Canto.imgSrc(entry)          "img/<id>.svg"
- *   Canto.audioSrc(entry)        "audio/<id>.mp3"; both use ../unit<n>/ for
- *                                an entry borrowed from unit n (Units.word)
+ *   Canto.audioSrc(entry)        "audio/<id>.mp3"; both use ../words/ for a
+ *                                dictionary word (Words.get), and ../unit<n>/
+ *                                for an entry borrowed from unit n (Units.word)
  *   Canto.play(entries)          play one entry's clip, or several in a row;
  *                                resolves when done (see Speak.play)
  *   Canto.entries(vocab)         every entry from every list in a vocab object
@@ -155,7 +156,7 @@
     return [...close, ...rest].slice(0, count);
   }
 
-  const home = entry => entry.unit ? `../unit${entry.unit}/` : '';
+  const home = entry => entry.taught ? '../words/' : entry.unit ? `../unit${entry.unit}/` : '';
   const imgSrc = entry => `${home(entry)}img/${entry.id}.svg`;
   const audioSrc = entry => `${home(entry)}audio/${entry.id}.mp3`;
 

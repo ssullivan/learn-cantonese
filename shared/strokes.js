@@ -112,7 +112,7 @@
     return chain;
   }
 
-  const word = (vocab, char) => Object.values(vocab).filter(Array.isArray).flat().find(e => !e.unit && e.hanzi.includes(char));
+  const word = (vocab, char) => Object.values(vocab).filter(Array.isArray).flat().find(e => Units.teaches(vocab, e) && e.hanzi.includes(char));
 
   window.Strokes = { src, load, svg, word, animate };
 })();

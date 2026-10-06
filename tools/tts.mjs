@@ -6,12 +6,15 @@
  *
  *   node tools/tts.mjs [unit1 ...] [--force] [--only id,id]
  *
- * With no units given, every unit<N>/vocab.js is processed. A clip is only
- * regenerated when its voice or text changes (tracked in
- * audio/manifest.json), unless --force. A full run of a unit (no --only)
- * also tidies its audio dir: a renamed entry takes its old clip (same
- * text and voice) with its audio-check verdict, and clips of entries
- * that are gone are deleted (site.mjs clipMoves).
+ *   node tools/tts.mjs words ...    the dictionary (words/words.js)
+ *
+ * With none given, the dictionary and every unit<N>/vocab.js are
+ * processed. A clip is only regenerated when its voice or text changes
+ * (tracked in audio/manifest.json), unless --force. A run without --only
+ * also tidies the audio dirs it covers: an entry renamed or moved (from a
+ * unit to the dictionary) takes its old clip with the same text and voice,
+ * and its audio-check verdict, and clips of entries that are gone are
+ * deleted (site.mjs clipMoves).
  *
  * Azure is the site's voice. MiniMax is only for the few words Azure
  * can't say (it reads 年 nin2 as nin4 whatever the SSML says): MiniMax is
@@ -30,7 +33,7 @@
 import { createHash } from 'node:crypto';
 import { existsSync, readFileSync, writeFileSync, mkdirSync, renameSync, rmSync } from 'node:fs';
 import { join } from 'node:path';
-import { ROOT, unitDirs, loadVocab, entries, own, clipMoves, azureConfig, minimaxConfig, retrying, shouldRetryAzure } from './site.mjs';
+import { ROOT, homes, loadVocab, entries, own, clipMoves, azureConfig, minimaxConfig, retrying, shouldRetryAzure } from './site.mjs';
 
 const FORMAT = 'audio-24khz-48kbitrate-mono-mp3';
 // Every clip so far was made in this format, before the format counted
@@ -43,7 +46,7 @@ const force = args.includes('--force');
 const onlyIdx = args.indexOf('--only');
 const only = onlyIdx >= 0 ? new Set(args[onlyIdx + 1].split(',')) : null;
 let units = args.filter((a, i) => !a.startsWith('--') && (onlyIdx < 0 || i !== onlyIdx + 1));
-if (!units.length) units = unitDirs().filter(loadVocab);
+if (!units.length) units = homes().filter(loadVocab);
 
 const xml = s => s.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[c]));
 
@@ -121,63 +124,79 @@ async function minimaxTakes(unit, entry, voice, file) {
   return { take: best.take, issues: best.issues };
 }
 
-// Renamed entries take their old clips, and gone entries lose theirs,
-// with their audio-check verdicts (audio/check.json).
-function tidy(audioDir, manifest, wanted) {
-  const mp3 = id => join(audioDir, `${id}.mp3`);
-  const say = msg => console.log(`${audioDir.slice(ROOT.length + 1)}/${msg}`);
-  for (const id of Object.keys(manifest)) if (!existsSync(mp3(id))) delete manifest[id];
-  const verdictsPath = join(audioDir, 'check.json');
-  const verdicts = existsSync(verdictsPath) ? JSON.parse(readFileSync(verdictsPath, 'utf8')) : {};
-  const { moves, dropped } = clipMoves(manifest, wanted);
-  for (const id of dropped) {
-    rmSync(mp3(id));
-    delete manifest[id];
-    delete verdicts[id];
-    say(`${id}.mp3 deleted (no entry)`);
-  }
-  // Through temporary names, so a clip can move to an id another is leaving.
-  const moved = moves.map(([from, to]) => ({ from, to, hash: manifest[from], verdict: verdicts[from] }));
-  for (const { from } of moved) {
-    renameSync(mp3(from), mp3(`${from}.moving`));
-    delete manifest[from];
-    delete verdicts[from];
-  }
-  for (const { from, to, hash, verdict } of moved) {
-    renameSync(mp3(`${from}.moving`), mp3(to));
-    manifest[to] = hash;
-    if (verdict) verdicts[to] = verdict;
-    say(`${from}.mp3 → ${to}.mp3`);
-  }
-  if (existsSync(verdictsPath)) writeFileSync(verdictsPath, JSON.stringify(Object.fromEntries(Object.entries(verdicts).sort()), null, 1) + '\n');
-}
+const readJson = path => existsSync(path) ? JSON.parse(readFileSync(path, 'utf8')) : null;
+const writeJson = (path, value, indent) => writeFileSync(path, JSON.stringify(Object.fromEntries(Object.entries(value).sort()), null, indent) + '\n');
 
-const cfg = azureConfig();
-let mmCfg;
-let made = 0, skipped = 0;
-
-for (const unit of units) {
-  const dir = join(ROOT, unit);
-  const vocab = loadVocab(unit);
-  const audioDir = join(dir, 'audio');
+// Each home's clips: the entries whose audio is there, what to send for
+// each, and its hash; with the manifest of the clips it has.
+const runs = units.map(home => {
+  const vocab = loadVocab(home);
+  const audioDir = join(ROOT, home, 'audio');
   mkdirSync(audioDir, { recursive: true });
   const manifestPath = join(audioDir, 'manifest.json');
-  const manifest = existsSync(manifestPath) ? JSON.parse(readFileSync(manifestPath, 'utf8')) : {};
-  // Saved after every clip, so a run that fails partway keeps what it made.
-  const save = () => writeFileSync(manifestPath, JSON.stringify(Object.fromEntries(Object.entries(manifest).sort()), null, 2) + '\n');
-
   const byId = Object.fromEntries(entries(vocab).map(e => [e.id, e]));
-  const mine = entries(vocab).filter(e => own(e, unit)); // borrowed words have audio in their own unit
-  const clips = mine.map(entry => {
+  const clips = entries(vocab).filter(e => own(e, home)).map(entry => {
     const voice = entry.voice ?? vocab.voice;
     const viaMinimax = voice.startsWith(MINIMAX);
     const request = viaMinimax ? JSON.stringify(minimaxRequest(entry, voice.slice(MINIMAX.length))) : ssmlFor(entry, voice, byId);
     const hashed = viaMinimax || FORMAT === FIRST_FORMAT ? request : request + FORMAT;  // MiniMax's request has its format
     return { entry, voice, viaMinimax, request, hash: createHash('sha1').update(hashed).digest('hex').slice(0, 12) };
   });
-  if (!only) tidy(audioDir, manifest, Object.fromEntries(clips.map(c => [c.entry.id, c.hash])));
-  save();
+  const manifest = readJson(manifestPath) ?? {};
+  // Saved after every clip, so a run that fails partway keeps what it made.
+  return { home, audioDir, clips, manifest, save: () => writeJson(manifestPath, manifest, 2) };
+});
 
+// Renamed or moved entries take their old clips, and gone entries lose
+// theirs, with their audio-check verdicts (audio/check.json). Clips are
+// named "<home>/<id>" here, so one can move between homes.
+function tidy() {
+  const byHome = Object.fromEntries(runs.map(r => [r.home, r]));
+  const mp3 = name => { const [home, id] = name.split('/'); return join(byHome[home].audioDir, `${id}.mp3`); };
+  const saved = {}, wanted = {};
+  for (const { home, manifest, clips } of runs) {
+    for (const [id, hash] of Object.entries(manifest)) {
+      if (existsSync(mp3(`${home}/${id}`))) saved[`${home}/${id}`] = hash; else delete manifest[id];
+    }
+    for (const { entry, hash } of clips) wanted[`${home}/${entry.id}`] = hash;
+  }
+  const verdicts = Object.fromEntries(runs.map(r => [r.home, readJson(join(r.audioDir, 'check.json'))]));
+  const take = name => {
+    const [home, id] = name.split('/');
+    const verdict = verdicts[home]?.[id];
+    delete byHome[home].manifest[id];
+    if (verdicts[home]) delete verdicts[home][id];
+    return verdict;
+  };
+  const { moves, dropped } = clipMoves(saved, wanted);
+  for (const name of dropped) {
+    rmSync(mp3(name));
+    take(name);
+    console.log(`${name.replace('/', '/audio/')}.mp3  deleted (no entry)`);
+  }
+  // Through temporary names, so a clip can move to a name another is leaving.
+  const moving = moves.map(([from, to]) => ({ from, to, hash: saved[from], verdict: take(from) }));
+  for (const { from } of moving) renameSync(mp3(from), `${mp3(from)}.moving`);
+  for (const { from, to, hash, verdict } of moving) {
+    renameSync(`${mp3(from)}.moving`, mp3(to));
+    const [home, id] = to.split('/');
+    byHome[home].manifest[id] = hash;
+    if (verdict) (verdicts[home] ??= {})[id] = verdict;
+    console.log(`${from.replace('/', '/audio/')}.mp3 → ${to.replace('/', '/audio/')}.mp3`);
+  }
+  for (const r of runs) {
+    r.save();
+    if (verdicts[r.home]) writeJson(join(r.audioDir, 'check.json'), verdicts[r.home], 1);
+  }
+}
+
+const cfg = azureConfig();
+let mmCfg;
+let made = 0, skipped = 0;
+
+if (!only) tidy();
+
+for (const { home, audioDir, clips, manifest, save } of runs) {
   for (const { entry, voice, viaMinimax, request, hash } of clips) {
     if (only && !only.has(entry.id)) continue;
     const file = join(audioDir, `${entry.id}.mp3`);
@@ -185,7 +204,7 @@ for (const unit of units) {
 
     let how = '';
     if (viaMinimax) {
-      const { take, issues } = await minimaxTakes(unit, entry, voice, file);
+      const { take, issues } = await minimaxTakes(home, entry, voice, file);
       how = issues ? `  MiniMax take ${take} of ${TAKES}, none passed: ${issues.join('; ')}` : `  MiniMax take ${take} passed`;
     } else {
       writeFileSync(file, await synth(cfg, request));
@@ -193,10 +212,9 @@ for (const unit of units) {
     manifest[entry.id] = hash;
     save();
     made++;
-    console.log(`${unit}/audio/${entry.id}.mp3  ${entry.hanzi}${how}`);
+    console.log(`${home}/audio/${entry.id}.mp3  ${entry.hanzi}${how}`);
     await sleep(300);
   }
-
   save();
 }
 

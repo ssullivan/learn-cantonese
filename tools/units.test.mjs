@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 /*
- * units.test.mjs — tests borrowing words between units: shared/units.js,
- * tools/site.mjs's loadVocab, and Canto.audioSrc / imgSrc paths. Run by
+ * units.test.mjs — tests the dictionary and borrowing words between
+ * units: shared/units.js, tools/site.mjs's loadVocab, homeOf and own, and
+ * Canto.audioSrc / imgSrc paths. Run by
  * tools/check.mjs; exits 1 on failure.
  */
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import vm from 'node:vm';
-import { ROOT, loadVocab, entries, own } from './site.mjs';
+import { ROOT, loadVocab, entries, own, homeOf } from './site.mjs';
 
 let fail = 0;
 const quiet = process.argv.includes('--quiet');
@@ -16,7 +17,7 @@ const ok = (name, cond, info = '') => { if (!cond || !quiet) console.log((cond ?
 const sb = vm.createContext({});
 sb.window = sb;
 for (const f of ['shared/units.js', 'shared/core.js']) vm.runInContext(readFileSync(join(ROOT, f), 'utf8'), sb);
-const { Units, Canto } = sb;
+const { Units, Words, Canto } = sb;
 
 Units.add(3, { words: [{ id: 'cat', hanzi: '貓', jyutping: 'maau1', english: 'cat' }] });
 const cat = Units.word(3, 'cat');
@@ -28,6 +29,28 @@ ok('own word paths stay relative', Canto.audioSrc({ id: 'dog' }) === 'audio/dog.
 const throws = f => { try { f(); return false; } catch { return true; } };
 ok('unknown word throws', throws(() => Units.word(3, 'dog')));
 ok('unloaded unit throws', throws(() => Units.word(9, 'cat')));
+
+// The dictionary
+Words.add(2, [{ id: 'dog', hanzi: '狗', jyutping: 'gau2', english: 'dog' }]);
+Words.add(4, [{ id: 'bird', hanzi: '雀', jyutping: 'zoek3', english: 'bird' }]);
+const dog = Words.get('dog');
+ok('a word knows the unit that teaches it', dog.taught === 2 && dog.hanzi === '狗', JSON.stringify(dog));
+ok('Words.get copies', (dog.legs = 4) && !('legs' in Words.get('dog')));
+ok('a word\'s files are in words/', Canto.audioSrc(dog) === '../words/audio/dog.mp3' && Canto.imgSrc(dog) === '../words/img/dog.svg', Canto.audioSrc(dog));
+ok('Words.list takes space-separated ids', Words.list(' dog  bird ').map(w => w.id).join() === 'dog,bird');
+ok('an unknown word throws', throws(() => Words.get('cow')) && throws(() => Words.list('dog cow')));
+ok('a word added twice throws', throws(() => Words.add(5, [{ id: 'dog' }])));
+ok('WORDS has each unit\'s words', sb.WORDS.unit2.length === 1 && sb.WORDS.unit4[0].id === 'bird');
+const v4 = Units.add(4, { voice: 'x', animals: [{ ...Words.get('dog'), legs: 4 }, Words.get('bird')] });
+const dog4 = Units.word(4, 'dog');
+ok('borrowing a unit\'s dictionary word keeps words/ and what the unit added', !('unit' in dog4) && dog4.legs === 4
+  && Canto.audioSrc(dog4) === '../words/audio/dog.mp3', JSON.stringify(dog4));
+ok('a unit teaches its own words, not earlier ones', Units.teaches(v4, v4.animals[1]) && !Units.teaches(v4, v4.animals[0]));
+ok('a unit teaches its own phrases, not borrowed ones', Units.teaches(sb.UNITS[3], sb.UNITS[3].words[0]) && !Units.teaches(v4, cat));
+ok('homeOf: words for a dictionary word, the unit for a borrowed one, else here',
+  homeOf(dog4, 'unit9') === 'words' && homeOf(cat, 'unit9') === 'unit3' && homeOf({ id: 'x' }, 'unit9') === 'unit9');
+ok('own: a dictionary word only in words', own(dog4, 'words') && !own(dog4, 'unit4') && own({ id: 'x' }, 'unit4'));
+ok('loadVocab("words") is the dictionary, with its voice', typeof loadVocab('words')?.voice === 'string');
 
 const byId = Units.byId({ voice: 'x', words: [{ id: 'a' }, { id: 'b' }], more: [{ id: 'c' }] });
 ok('byId has every entry of every list', Object.keys(byId).join() === 'a,b,c', Object.keys(byId).join());
@@ -90,8 +113,13 @@ const wrongOrders = orders.filter(o => {
 ok('unit 7 orders say their number the way Canto.number does', orders.length === 3 * v7.items.length && !wrongOrders.length,
   `${orders.length} orders; wrong: ${wrongOrders.join(' ')}`);
 
-// Every game says unit 1's 好叻呀！ after a perfect level (CHEER in game.js).
-const cheer = /const CHEER = \{ id: '([^']+)', unit: (\d+), hanzi: '([^']+)' \}/.exec(readFileSync(join(ROOT, 'shared/game.js'), 'utf8'));
-const cheered = cheer && entries(loadVocab(`unit${cheer[2]}`)).find(e => e.id === cheer[1] && !e.unit);
-ok('game.js\'s CHEER is a word in its unit, with the same hanzi', cheered?.hanzi === cheer?.[3], JSON.stringify(cheer?.slice(1)));
+// Every game says unit 1's 好叻呀！ after a perfect level (CHEER in game.js):
+// written out there, so its clip's path must be the word's.
+const cheerSource = /const CHEER = (\{[^}]*\});/.exec(readFileSync(join(ROOT, 'shared/game.js'), 'utf8'))?.[1];
+const CHEER = cheerSource && vm.runInContext(`(${cheerSource})`, sb);
+const cheerUnit = CHEER?.taught ?? CHEER?.unit;
+const cheered = CHEER && entries(loadVocab(`unit${cheerUnit}`)).find(e => e.id === CHEER.id);
+const cheeredSrc = cheered && Canto.audioSrc(cheered.taught ? cheered : { ...cheered, unit: cheerUnit });
+ok('game.js\'s CHEER is its word, with the same hanzi and clip', cheered?.hanzi === CHEER?.hanzi && Canto.audioSrc(CHEER) === cheeredSrc,
+  `${Canto.audioSrc(CHEER ?? {})} vs ${cheeredSrc}`);
 process.exit(fail ? 1 : 0);

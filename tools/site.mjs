@@ -3,13 +3,21 @@
  *
  *   ROOT             repo root
  *   unitDirs()       ["unit1", ...] in number order
- *   loadVocab(unit)  unit<N>/vocab.js's vocab, or null if none. Runs
- *                    shared/units.js, shared/numbers.js and every earlier
- *                    unit's vocab.js first, as a page would, so
- *                    Units.word() and Canto.number() work
+ *   homes()          where entries' files live: "words" (the dictionary,
+ *                    words/words.js) and every unit, in that order
+ *   loadVocab(home)  unit<N>/vocab.js's vocab, or null if none. Runs
+ *                    shared/units.js, shared/numbers.js, words/words.js
+ *                    and every earlier unit's vocab.js first, as a page
+ *                    would, so Units.word(), Words.get() and
+ *                    Canto.number() work. loadVocab("words") is the
+ *                    dictionary as a vocab: { voice, unit<n>: [words] }
  *   entries(vocab)   every entry from every list, in file order
- *   own(entry, unit) true unless the entry is borrowed from another unit
- *   loadArt(unit)    unit<N>/art.mjs's { id: svg }, or null if none
+ *   homeOf(entry, here)
+ *                    where the entry's audio and picture are: "words" for
+ *                    a dictionary word, its unit for one borrowed with
+ *                    Units.word, else `here` (the vocab it is in)
+ *   own(entry, home) whether they are in that home
+ *   loadArt(home)    <home>/art.mjs's { id: svg }, or null if none
  *   azureConfig()    { key, region } for Azure Speech, from the environment
  *                    or ~/.config/learning-cantonese/config.env; exits if
  *                    missing (tts.mjs, audio-check.mjs)
@@ -63,26 +71,35 @@ export const unitDirs = () => readdirSync(ROOT)
   .filter(d => /^unit\d+$/.test(d))
   .sort((a, b) => a.slice(4) - b.slice(4));
 
-export function loadVocab(unit) {
+const WORDS = join(ROOT, 'words', 'words.js');
+
+export const homes = () => [...(existsSync(WORDS) ? ['words'] : []), ...unitDirs()];
+
+export function loadVocab(home) {
   const vocabPath = u => join(ROOT, u, 'vocab.js');
-  if (!existsSync(vocabPath(unit))) return null;
+  if (home !== 'words' && !existsSync(vocabPath(home))) return null;
+  if (home === 'words' && !existsSync(WORDS)) return null;
   const sandbox = vm.createContext({});
   sandbox.window = sandbox;
   const run = path => vm.runInContext(readFileSync(path, 'utf8'), sandbox, { filename: path });
   run(join(ROOT, 'shared/units.js'));
   run(join(ROOT, 'shared/numbers.js'));
-  const n = +unit.slice(4);
+  if (existsSync(WORDS)) run(WORDS);
+  if (home === 'words') return { voice: sandbox.Words.voice, ...sandbox.WORDS };
+  const n = +home.slice(4);
   for (const u of unitDirs().filter(u => u.slice(4) < n && existsSync(vocabPath(u)))) run(vocabPath(u));
-  run(vocabPath(unit));
+  run(vocabPath(home));
   return sandbox.UNITS[n];
 }
 
 export const entries = vocab => Object.values(vocab).filter(Array.isArray).flat();
 
-export const own = (entry, unit) => !entry.unit || `unit${entry.unit}` === unit;
+export const homeOf = (entry, here) => entry.taught ? 'words' : entry.unit ? `unit${entry.unit}` : here;
 
-export async function loadArt(unit) {
-  const path = join(ROOT, unit, 'art.mjs');
+export const own = (entry, home) => homeOf(entry, home) === home;
+
+export async function loadArt(home) {
+  const path = join(ROOT, home, 'art.mjs');
   return existsSync(path) ? (await import(pathToFileURL(path))).default : null;
 }
 

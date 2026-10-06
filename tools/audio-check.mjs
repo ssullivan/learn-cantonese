@@ -8,9 +8,10 @@
  *
  *   node tools/audio-check.mjs unit9 [--only id,id] [--all] [--json out.json]
  *       also writes unit9/audio/check.json: the flagged clips' verdicts
- *       (CHECK or LISTEN) and notes, for the review page's machine flags
+ *       (CHECK or LISTEN) and notes, for the review page's machine flags.
+ *       `words` instead of unit9 checks the dictionary's clips (words/)
  *   node tools/audio-check.mjs --words out.json
- *       every unit's own words as [{ id, text, jyutping, plain }], for
+ *       every clip's entry (dictionary and units) as [{ id, text, jyutping, plain }], for
  *       `altools bench make --words` (plain: made from its characters,
  *       with no phoneme, ssml, say or voice)
  *
@@ -31,7 +32,7 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { ROOT, unitDirs, loadVocab, entries, own, langTools } from './site.mjs';
+import { ROOT, homes, loadVocab, entries, own, langTools } from './site.mjs';
 
 const clip = (u, id) => join(ROOT, u, 'audio', `${id}.mp3`);
 const item = (e, voice, path) => ({ id: e.id, path, text: e.hanzi, jyutping: e.jyutping, voice });
@@ -52,7 +53,7 @@ if (import.meta.url === pathToFileURL(process.argv[1]).href) {
   const flag = name => { const i = args.indexOf(name); return i < 0 ? null : args[i + 1]; };
 
   if (flag('--words')) {
-    const words = unitDirs().filter(loadVocab).flatMap(u =>
+    const words = homes().filter(loadVocab).flatMap(u =>
       entries(loadVocab(u)).filter(e => own(e, u)).map(e => ({ id: `${u}/${e.id}`, text: e.hanzi, jyutping: e.jyutping,
         // plain: read from its characters, as the voice reads them by default
         plain: !(e.phoneme || e.ssml || e.say || e.voice) })));
@@ -64,8 +65,8 @@ if (import.meta.url === pathToFileURL(process.argv[1]).href) {
   const only = flag('--only') && new Set(flag('--only').split(','));
   const showAll = args.includes('--all');
   const jsonOut = flag('--json');
-  const unit = args.find((a, i) => /^unit\d+$/.test(a) && !['--only', '--json'].includes(args[i - 1]));
-  if (!unit) { console.error('usage: node tools/audio-check.mjs unit<N> [--only id,id] [--all] [--json out.json] | --words out.json'); process.exit(1); }
+  const unit = args.find((a, i) => /^(unit\d+|words)$/.test(a) && !['--only', '--json'].includes(args[i - 1]));
+  if (!unit) { console.error('usage: node tools/audio-check.mjs unit<N>|words [--only id,id] [--all] [--json out.json] | --words out.json'); process.exit(1); }
 
   const vocab = loadVocab(unit);
   const list = entries(vocab).filter(e => own(e, unit) && (!only || only.has(e.id)));

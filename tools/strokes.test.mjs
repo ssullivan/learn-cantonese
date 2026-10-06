@@ -151,8 +151,8 @@ ok('verdict: all strong is "ok"', verdictFor(3, 3, [1, 0.77, 0.98]) === 'ok');
 {
   const sb = vm.createContext({});
   sb.window = sb;
-  vm.runInContext(readFileSync(join(ROOT, 'shared/strokes.js'), 'utf8'), sb);
-  const { Strokes } = sb;
+  for (const f of ['shared/units.js', 'shared/strokes.js']) vm.runInContext(readFileSync(join(ROOT, f), 'utf8'), sb);
+  const { Strokes, Units, Words } = sb;
   const data = { char: '十', strokes: ['M 0 0 Z', 'M 1 1 Z'], medians: [[[100, 400], [900, 400]], [[500, 800], [500, 0]]] };
   const count = (svg, re) => (svg.match(re) ?? []).length;
   ok('src names the file by code point', Strokes.src('十') === '../strokes/5341.json', Strokes.src('十'));
@@ -176,8 +176,12 @@ ok('verdict: all strong is "ok"', verdictFor(3, 3, [1, 0.77, 0.98]) === 'ok');
   ok('svg keeps crowded numbers apart', spots.length === 8 && gap >= 2 * spots[0][2] - 0.5, `closest ${gap.toFixed(1)}`);
   ok('svg keeps numbers inside the box', spots.every(([x, y, r]) => x - r >= 0 && x + r <= 1024 && y - r >= 0 && y + r <= 1024));
 
-  const vocab = { voice: 'x', write: '三', words: [{ id: 'b', hanzi: '三', unit: 1 }, { id: 'c', hanzi: '三個' }], numbers: [{ id: 'd', hanzi: '三' }] };
+  const vocab = Units.add(2, { voice: 'x', write: '三', words: [{ id: 'b', hanzi: '三', unit: 1 }, { id: 'c', hanzi: '三個' }], numbers: [{ id: 'd', hanzi: '三' }] });
   ok('word is the first own entry with the character', Strokes.word(vocab, '三')?.id === 'c');
+  Words.add(1, [{ id: 'saam', hanzi: '三' }]);
+  Words.add(3, [{ id: 'saam-go', hanzi: '三個' }]);
+  const v3 = Units.add(3, { voice: 'x', write: '三', words: [Words.get('saam'), Words.get('saam-go')] });
+  ok('word skips a dictionary word taught earlier, and finds one taught here', Strokes.word(v3, '三')?.id === 'saam-go', Strokes.word(v3, '三')?.id);
 }
 
 // --- shared/write.js: is a drawn stroke the right one?

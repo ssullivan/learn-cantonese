@@ -21,7 +21,8 @@ shared/                every page's code; each file's header comment documents i
   theme.css            colors (light/dark), fonts, header, pills, buttons, cards, feedback
   core.js              Canto.*: zh, tagZh, jyutping, tones, pick, deck, play, store, picButton, speech...
   audio.js             Speak.play: MP3s with a zh-HK speechSynthesis fallback
-  units.js             Units.add, Units.word (borrowing), Units.byId, Units.sentences, Units.phonemes
+  units.js             Words.add/get/list (the dictionary); Units.add, Units.word (borrowing), Units.teaches, Units.byId,
+                       Units.sentences, Units.phonemes
   numbers.js           Canto.number, price, near, time, nearTime (runs in Node too)
   learn.*              learn-page engine (Learn.init)
   game.*               game engine (Game.init: levels, rounds, timer, stars, unlocks, ctx.draw, labels; Game.choose, pic...)
@@ -30,6 +31,8 @@ shared/                every page's code; each file's header comment documents i
   pitch.js sayit.*     pitch tracking (Node too); Say It Back (SayIt.init, SayIt.practice)
   strokes.* write.*    a character stroke by stroke (Strokes.*); Write It (Write.init, Write.judge)
   sheet.*              printable writing sheet (Sheet.init), always ink on white
+words/                 the dictionary: words.js (Words.add(n, [...]): every word, grouped by the unit that teaches it),
+                       art.mjs → img/<id>.svg, audio/ (manifest.json, check.json), like a unit's
 unit<N>/               one unit (see its CLAUDE.md):
   vocab.js             Units.add(N, {...}): every word (source of truth; its header documents the unit's fields), and `write`
   art.mjs              its drawings, from tools/svg.mjs parts → img/<id>.svg (tools/draw.mjs)
@@ -41,7 +44,8 @@ unit<N>/               one unit (see its CLAUDE.md):
 .githooks/pre-commit   tools/check.mjs before every commit (git config core.hooksPath .githooks)
 .github/workflows/     check.yml: tools/check.mjs on every push and pull request (no keys, so no key scan)
 tools/
-  site.mjs             shared helpers for the scripts (unitDirs, loadVocab, loadArt, langTools, shouldRetryAzure)
+  site.mjs             shared helpers for the scripts (unitDirs, homes: words and the units, loadVocab, homeOf, loadArt,
+                       langTools, shouldRetryAzure)
   check.mjs            site checks (its header lists them); --fix writes cache stamps and pages' vocab scripts
   vocab-fields.mjs     every field a vocab entry may have and its kind of value (text, number, id, ids...), checked by check.mjs
   page-refs.mjs        the vocab groups and ids a page script names (V.verbs, byId['dung'], ctx.words('a')...), which check.mjs
@@ -55,6 +59,7 @@ tools/
 
 ## Words, audio and pictures
 - Every word lives once, in `unit<N>/vocab.js`: `{ id, hanzi, jyutping, english, note?, img?, measure?, say?, ssml?, phoneme?, voice?, reply?, when?, words? }` plus the unit's own fields (documented in its header). Every field is listed with the kind of value it holds in `tools/vocab-fields.mjs`, and check.mjs fails on any other field, a wrong value, or an id that names no entry: add a new field there first. `id` names its files; `img: false` means no picture. `reply` (ids of good answers) and `when` (situations) feed Reply Match; `words` (the ids a derived sentence is made of) feeds Tiles.round.
+- The dictionary, `words/words.js`, holds words once with the unit that teaches them (`taught`); their audio and picture are in `words/`. A unit takes them with `Words.get(id)` or `Words.list('a b c')`, adding its own fields (`{ ...Words.get('milk-tea'), drink: ... }`), and keeps its phrases and sentences, whose audio stays in the unit. check.mjs fails when a unit uses a word taught after it, or the teaching unit doesn't list it. Units are moving their words there; until a unit has, its words are in its `vocab.js` as below.
 - A word belongs to the first unit that teaches it. A later unit borrows it with `Units.word(n, id)` in the derived section of its `vocab.js`; its audio and picture stay in `unit<n>/`. Borrowing a borrowed word keeps its home unit and what was added to it. Borrow only from earlier units; never copy a word into a second vocab.js. A word's id is unique on the whole site (when two words would share one, one gets its tone number: 大 `daai6`, 戴 `daai`), and so is its hanzi, jyutping and voice; check.mjs enforces both. A later unit that uses a word in another sense borrows it and overrides `english` and `note` (unit 13's 焗 is unit 7's `baked`). Phrases need only be unique in their unit.
 - Derive, don't copy: phrases and sentences are computed at the bottom of `vocab.js` (`Units.sentences`), and get audio like any entry. Numbers, counts and times come from `Canto.number` and `Canto.time`, prices from `Canto.price`, never typed out. Extend `shared/numbers.js` (and `tools/numbers.test.mjs`) when a unit needs a new form.
 - Measure words: a thing's `measure` must match its picture (籠 ↔ `steamer()`, 碟 ↔ `plate()`, 碗 ↔ `bowl()`, 杯 ↔ `cup()`, no dish for the rest); check.mjs enforces it, in a borrowed word's own unit. A borrowed noun can gain a `measure`.
@@ -63,14 +68,14 @@ tools/
 - Pictures: add a drawing to `art.mjs`, run `node tools/draw.mjs` (which also deletes svgs no longer drawn). Reuse or extend `tools/svg.mjs` parts instead of copying markup. 128×128 flat style, fixed colors, transparent background, a `<title>`. Render and look at new drawings before committing.
 
 ### Audio
-- `node tools/tts.mjs [unitN] [--only id,id] [--force]` regenerates only entries whose text or voice changed, saving `manifest.json` after every clip. Without `--only` it also moves a renamed entry's clip (and audio-check verdict) to its new id, and deletes clips of entries that are gone, so renaming an id costs no new audio. Credentials come from `~/.config/learning-cantonese/config.env` (`AZURE_SPEECH_KEY`, `AZURE_SPEECH_REGION`, `MINIMAX_KEY`), read by `tools/site.mjs`. **Never put a key in any committed file** (code, docs, fixtures, logs, commit messages) and never print one; check.mjs fails if any file holds one.
+- `node tools/tts.mjs [words|unitN ...] [--only id,id] [--force]` regenerates only entries whose text or voice changed, saving `manifest.json` after every clip. Without `--only` it also moves a renamed entry's clip (and audio-check verdict) to its new id, or from a unit to `words/` when the word moves to the dictionary (both in the same run), and deletes clips of entries that are gone, so renaming or moving costs no new audio. Credentials come from `~/.config/learning-cantonese/config.env` (`AZURE_SPEECH_KEY`, `AZURE_SPEECH_REGION`, `MINIMAX_KEY`), read by `tools/site.mjs`. **Never put a key in any committed file** (code, docs, fixtures, logs, commit messages) and never print one; check.mjs fails if any file holds one.
 - A misread word: `phoneme: true` reads its jyutping exactly (particles 呀 嗎 呢, changed tones like 名 meng2), or an `ssml` override (zh-HK accepts only the `sapi` alphabet: `<phoneme alphabet="sapi" ph="je 6 maan 1">`). On a phrase, `phoneme: [ids]` reads only those words from jyutping; `Units.phonemes(V, ids)` sets it on every entry using them. Reading one word that way can upset its neighbours, so keep the list to words the check shows it helps.
 - If Azure can't say a syllable at all (it has no nin2, no ning2, no neoi2 alone), give that word `voice: 'minimax:Cantonese_ProfessionalHost（F)'`. tts.mjs makes up to five MiniMax takes and keeps the first that passes audio-check. Keep it to the few words that need it: MiniMax failed single-syllable tone drills that Azure passed, and it sounds unlike the rest of the site.
 - Azure sometimes answers 401 to a burst; tts.mjs retries twice (`shouldRetryAzure`), so a wrong key still fails fast.
 
 ### Verifying audio
 Run after every `tts.mjs` run. The checker is a separate repo, **audio-lang-tools** (`~/audio-lang-tools` or `$AUDIO_LANG_TOOLS`; see its CLAUDE.md); `tools/audio-check.mjs` is the adapter. AUDIO-CHECKING.md explains it for people.
-1. `node tools/audio-check.mjs unit<N>` (`--only id,id`, `--all`, `--json out.json`; cached by clip). It decodes each clip (broken, silent, clipped, wrong length), transcribes it with Azure speech-to-text and compares sounds ignoring tone, and scores each syllable's tone by forced alignment and a model trained on that voice (HiuMaan, WanLung, HiuGaai; MiniMax only on shape, so only LISTEN). `媽4→1 (0.12)` means another tone is likelier.
+1. `node tools/audio-check.mjs unit<N>` or `words` (`--only id,id`, `--all`, `--json out.json`; cached by clip). It decodes each clip (broken, silent, clipped, wrong length), transcribes it with Azure speech-to-text and compares sounds ignoring tone, and scores each syllable's tone by forced alignment and a model trained on that voice (HiuMaan, WanLung, HiuGaai; MiniMax only on shape, so only LISTEN). `媽4→1 (0.12)` means another tone is likelier.
 2. **CHECK**: a file problem or a clearly unlikely tone. **LISTEN**: other sounds heard, or a doubtful tone.
 3. For each CHECK, find out whether the voice or the measurement is wrong: swap an SSML variant into the clip (plain, `phoneme: true`, explicit sapi) and rerun `--only <id>`; a variant that matches a reading exactly is what the voice says. Restore with `git checkout unit<N>/audio/`.
 4. Fix it in `vocab.js`, run `tts.mjs --only <id>`, rerun the check.

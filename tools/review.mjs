@@ -2,7 +2,8 @@
 /*
  * review.mjs — AUDIO-REVIEW.md: every clip on the site in a table (unit,
  * Chinese, Jyutping, English, a link that plays it), for a native speaker
- * to listen through. Generated from the vocab: never edit it by hand.
+ * to listen through. A dictionary word is listed in the unit that
+ * teaches it. Generated from the vocab: never edit it by hand.
  * tools/tts.mjs rewrites it after every run, and tools/check.mjs fails if
  * it is out of date. The review page (review/) shows the same rows, with
  * play buttons and marks.
@@ -18,7 +19,7 @@
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { ROOT, unitDirs, loadVocab, entries, own } from './site.mjs';
+import { ROOT, unitDirs, loadVocab, entries, homeOf } from './site.mjs';
 
 const SITE = 'https://ssullivan.github.io/learn-cantonese/';
 export const REVIEW_FILE = join(ROOT, 'AUDIO-REVIEW.md');
@@ -31,9 +32,13 @@ export function voiceName(e, vocab) {
 
 const cell = s => String(s).replace(/\|/g, '\\|');
 
+// A unit's clips: its own phrases and the dictionary words it teaches, in
+// file order.
+const taughtIn = (vocab, u) => entries(vocab).filter(e => e.taught ? `unit${e.taught}` === u : homeOf(e, u) === u);
+
 export function reviewMarkdown() {
   const units = unitDirs().map(u => [u, loadVocab(u)]).filter(([, v]) => v);
-  const count = units.reduce((n, [u, v]) => n + entries(v).filter(e => own(e, u)).length, 0);
+  const count = units.reduce((n, [u, v]) => n + taughtIn(v, u).length, 0);
   const out = [
     '# Audio review',
     '',
@@ -43,11 +48,11 @@ export function reviewMarkdown() {
     '',
   ];
   for (const [u, vocab] of units) {
-    const mine = entries(vocab).filter(e => own(e, u));
+    const mine = taughtIn(vocab, u);
     out.push(`## Unit ${u.slice(4)}`, '', '| # | Chinese | Jyutping | English | Audio |', '|---|---|---|---|---|');
     mine.forEach((e, i) => {
       const voice = voiceName(e, vocab);
-      out.push(`| ${i + 1} | ${cell(e.hanzi)} | ${cell(e.jyutping)} | ${cell(e.english)}${voice ? ` _(${voice} voice)_` : ''} | [▶ play](${SITE}${u}/audio/${e.id}.mp3) |`);
+      out.push(`| ${i + 1} | ${cell(e.hanzi)} | ${cell(e.jyutping)} | ${cell(e.english)}${voice ? ` _(${voice} voice)_` : ''} | [▶ play](${SITE}${homeOf(e, u)}/audio/${e.id}.mp3) |`);
     });
     out.push('');
   }

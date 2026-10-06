@@ -35,6 +35,7 @@ export const FIELDS = {
   voice: 'text',                      // another voice, e.g. 'minimax:<voice id>'
   // Borrowing (shared/units.js sets these)
   unit: 'number',                     // home unit
+  taught: 'number',                   // a dictionary word's unit (Words.add sets it)
   // Shared engines
   words: 'ids',                       // a derived sentence's words (Tiles.round)
   reply: 'ids', when: 'texts',        // Reply Match

@@ -88,7 +88,7 @@ Azure respects tones given as phonemes. So if a variant spelled out in Jyutping 
 - **Teach a form the voice can say**, when both forms are right. Unit 8 teaches 檸檬茶 rather than the short 檸茶, and mentions the short form. Good takes of 檸茶 are kept aside in case we switch.
 - **A different voice for contrasts.** The six-tone sets use WanLung, because HiuMaan blurs 5 with 2 and 3 with 6.
 
-**Then record what's left.** Each unit's verdicts are saved (`unit<N>/audio/check.json`) and shown on the review page. We also note the clips that are still flagged, so a listener knows where to start.
+**Then record what's left.** Each unit's verdicts are saved (`unit<N>/audio/check.json`, and the dictionary's in `words/audio/check.json`) and shown on the review page. We also note the clips that are still flagged, so a listener knows where to start.
 
 ## How you can help
 Open the [audio review page](https://ssullivan.github.io/learn-cantonese/review/). Every clip is there with its unit, Chinese, Jyutping and English.

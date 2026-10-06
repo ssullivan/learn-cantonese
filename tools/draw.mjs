@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /*
- * draw.mjs — write unit<N>/img/<id>.svg from unit<N>/art.mjs.
+ * draw.mjs — write <home>/img/<id>.svg from <home>/art.mjs, for the
+ * dictionary (words/) and every unit.
  *
  *   node tools/draw.mjs
  *
@@ -11,13 +12,13 @@
  */
 import { writeFileSync, mkdirSync, readdirSync, rmSync } from 'node:fs';
 import { join } from 'node:path';
-import { ROOT, unitDirs, loadArt } from './site.mjs';
+import { ROOT, homes, loadArt } from './site.mjs';
 
 let n = 0, gone = 0;
-for (const unit of unitDirs()) {
-  const art = await loadArt(unit);
+for (const home of homes()) {
+  const art = await loadArt(home);
   if (!art) continue;
-  const dir = join(ROOT, unit, 'img');
+  const dir = join(ROOT, home, 'img');
   mkdirSync(dir, { recursive: true });
   for (const [id, svg] of Object.entries(art)) {
     writeFileSync(join(dir, `${id}.svg`), svg);

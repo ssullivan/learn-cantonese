@@ -27,6 +27,9 @@
  *     site: no other unit has a word with its id, or with its hanzi,
  *     jyutping and voice (borrow it instead). Phrases need only be
  *     unique in their unit
+ *   - the dictionary (words/words.js) is checked like a unit: audio,
+ *     drawings, orphans. Each of its words is in the vocab of the unit
+ *     that teaches it, and no unit uses one taught after it
  *   - every vocab group and entry id a unit's page scripts name (V.verbs,
  *     byId['dung'], ctx.words('a', 'b'), Units.word(9, 't0600')...; see
  *     tools/page-refs.mjs) is in the vocab the page loads
@@ -58,7 +61,7 @@ import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from '
 import { dirname, join, relative, extname } from 'node:path';
 import vm from 'node:vm';
 import { spawnSync } from 'node:child_process';
-import { ROOT, unitDirs, loadVocab, entries, own, loadArt, secrets } from './site.mjs';
+import { ROOT, unitDirs, homes, homeOf, loadVocab, entries, own, loadArt, secrets } from './site.mjs';
 import { inlineScripts, pageReferences } from './page-refs.mjs';
 import { entryProblems } from './vocab-fields.mjs';
 import { RECORDS, readRecords, recordProblem, strokeFile, meta, COMPOSED, composedProblem, composedMeta } from './stroke-data.mjs';
@@ -80,24 +83,27 @@ const stamp = file => createHash('sha1').update(readFileSync(file)).digest('hex'
 
 // Vocab scripts: written, not typed. A page that loads vocab has them
 // between VOCAB_START and VOCAB_END: shared/numbers.js if any of them uses
-// it, shared/units.js, then every earlier unit's vocab.js and its own (a
+// it, shared/units.js, the dictionary (words/words.js), then every earlier
+// unit's vocab.js and its own (a
 // unit's page), or every unit's (the review pages), as loadVocab loads them
 // in Node. Every earlier unit, not only those a vocab.js borrows from, since
 // page scripts borrow too (unit 15's planner uses unit 9's clocks).
 const VOCAB_START = '<!-- vocab: written by node tools/check.mjs --fix -->';
 const VOCAB_END = '<!-- /vocab -->';
 const vocabUnits = unitDirs().filter(u => existsSync(join(ROOT, u, 'vocab.js')));
+const DICTIONARY = 'words/words.js';
 // The only Canto a vocab.js has is numbers.js's (loadVocab runs it, not core.js).
-const usesNumbers = unit => readFileSync(join(ROOT, unit, 'vocab.js'), 'utf8').includes('Canto.');
+const usesNumbers = path => readFileSync(join(ROOT, path), 'utf8').includes('Canto.');
 function vocabScripts(html) {
   const ownUnit = relative(ROOT, html).match(/^(unit\d+)\//)?.[1];
   const loaded = ownUnit ? [...vocabUnits.filter(u => +u.slice(4) < +ownUnit.slice(4)), ownUnit] : vocabUnits;
   const script = path => `<script src="${relative(dirname(html), join(ROOT, path))}?v=${stamp(join(ROOT, path))}"></script>`;
+  const vocabs = [DICTIONARY, ...loaded.map(u => `${u}/vocab.js`)];
   return [
     VOCAB_START,
-    ...(loaded.some(usesNumbers) ? [script('shared/numbers.js')] : []),
+    ...(vocabs.some(usesNumbers) ? [script('shared/numbers.js')] : []),
     script('shared/units.js'),
-    ...loaded.map(u => script(`${u}/vocab.js`)),
+    ...vocabs.map(script),
     VOCAB_END,
   ].join('\n');
 }
@@ -106,7 +112,7 @@ for (const html of files.filter(f => f.endsWith('.html'))) {
   const source = readFileSync(html, 'utf8');
   const start = source.indexOf(VOCAB_START), end = source.indexOf(VOCAB_END);
   const outside = start < 0 ? source : source.slice(0, start) + source.slice(end + VOCAB_END.length);
-  if (/<script src="[^"]*(vocab|units|numbers)\.js/.test(outside) && /<script src="[^"]*vocab\.js/.test(source)) {
+  if (/<script src="[^"]*(vocab|units|numbers|words)\.js/.test(outside) && /<script src="[^"]*vocab\.js/.test(source)) {
     bad(html, `load vocab only between ${VOCAB_START} and ${VOCAB_END} (see unit7/trolley.html)`);
   }
   if (start < 0) continue;
@@ -190,10 +196,12 @@ for (const [char, r] of Object.entries(records)) {
 const taughtIn = {};
 const wordAt = {}, soundAt = {}; // a word's id, and its hanzi, jyutping and voice: where defined
 const homeIdSets = {};
-const homeIds = n => homeIdSets[n] ??= new Set(entries(loadVocab(`unit${n}`) ?? {}).map(e => e.id));
-for (const unit of unitDirs()) {
+const homeIds = home => homeIdSets[home] ??= new Set(entries(loadVocab(home) ?? {}).map(e => e.id));
+const listedBy = {}; // unit<n>: ids of the dictionary words its vocab has
+for (const unit of homes()) {
   const dir = join(ROOT, unit);
-  const vocabFile = join(dir, 'vocab.js');
+  const dictionary = unit === 'words';
+  const vocabFile = dictionary ? join(ROOT, DICTIONARY) : join(dir, 'vocab.js');
   let vocab, art;
   try { vocab = loadVocab(unit); } catch (e) { bad(vocabFile, e.message); continue; }
   try { art = (await loadArt(unit)) ?? {}; } catch (e) { bad(join(dir, 'art.mjs'), e.message); continue; }
@@ -205,10 +213,14 @@ for (const unit of unitDirs()) {
     ids.add(e.id);
   }
   for (const e of all) {
-    // A borrowed entry's ids may be its home unit's (unit 18's 蘋果 keeps unit 5's measure).
-    const isId = id => ids.has(id) || (e.unit && homeIds(e.unit).has(id));
+    // A borrowed entry's ids may be its home's (unit 18's 蘋果 keeps unit 5's measure).
+    const isId = id => ids.has(id) || homeIds(homeOf(e, unit)).has(id) || homeIds('words').has(id);
     for (const p of entryProblems(e, isId)) bad(vocabFile, p);
     if (e.jyutping && !/^[a-z]+[1-6]( [a-z]+[1-6])*$/.test(e.jyutping)) bad(vocabFile, `${e.id}: jyutping "${e.jyutping}" needs a tone number on every syllable`);
+    if (e.taught && !dictionary) {
+      if (e.taught > +unit.slice(4)) bad(vocabFile, `${e.id} is taught in unit ${e.taught}, after this one`);
+      (listedBy[unit] ??= new Set()).add(e.id);
+    }
     if (!own(e, unit)) continue;
     if (!e.words) {
       const sound = `${e.hanzi} ${e.jyutping} ${e.voice ?? vocab.voice}`;
@@ -251,10 +263,11 @@ for (const unit of unitDirs()) {
     }
   }
   const measures = Object.fromEntries((vocab.measures ?? []).map(m => [m.id, m]));
-  for (const e of all.filter(e => e.measure)) {
+  // A word's measure is checked in each unit that uses it, against that unit's measures.
+  for (const e of dictionary ? [] : all.filter(e => e.measure)) {
     const m = measures[e.measure];
     if (!m) { bad(vocabFile, `${e.id}: unknown measure ${e.measure}`); continue; }
-    const pic = own(e, unit) ? art[e.id] : (await loadArt(`unit${e.unit}`))?.[e.id];
+    const pic = own(e, unit) ? art[e.id] : (await loadArt(homeOf(e, unit)))?.[e.id];
     const dish = /data-dish="(\w+)"/.exec(pic ?? '')?.[1];
     if (dish !== m.dish) bad(vocabFile, `${e.id}: ordered by ${m.hanzi} (${m.dish}) but drawn on a ${dish ?? 'nothing'}`);
   }
@@ -269,8 +282,12 @@ for (const unit of unitDirs()) {
   for (const f of list('img')) if (f.endsWith('.svg') && !art[f.slice(0, -4)]) bad(join(dir, 'img', f), 'orphan (not in art.mjs)');
   const verdicts = join(dir, 'audio', 'check.json');
   if (existsSync(verdicts)) {
-    for (const id of Object.keys(JSON.parse(readFileSync(verdicts, 'utf8')))) if (!ids.has(id)) bad(verdicts, `${id} is not in vocab.js (rerun node tools/audio-check.mjs ${unit})`);
+    for (const id of Object.keys(JSON.parse(readFileSync(verdicts, 'utf8')))) if (!ids.has(id)) bad(verdicts, `${id} is not in ${relative(ROOT, vocabFile)} (rerun node tools/audio-check.mjs ${unit})`);
   }
+}
+// Each dictionary word is in the vocab of the unit that teaches it.
+for (const e of entries(loadVocab('words') ?? {})) {
+  if (!listedBy[`unit${e.taught}`]?.has(e.id)) bad(join(ROOT, DICTIONARY), `${e.id}: taught in unit ${e.taught}, but unit${e.taught}/vocab.js doesn't list it (Words.get('${e.id}'))`);
 }
 
 // Names page scripts take from the vocab: a misspelt group or id is
