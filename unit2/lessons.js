@@ -3,7 +3,6 @@
   const V = window.VOCAB;
   const { p, tip } = Learn;
   const { el: $, zh } = Canto;
-  const words = (ctx, ...ids) => ctx.grid(ids.map(ctx.entry));
 
   Learn.init({
     root: document.getElementById('learn'),
@@ -16,7 +15,7 @@
         render(el, ctx) {
           el.append(
             p(`${zh('你好', 'nei5 hou2')} is literally "you good". It is polite and always correct, and it is what you say to a shopkeeper or someone you have just met.`),
-            words(ctx, 'hello'),
+            ctx.words('hello'),
             tip('<strong>In real life:</strong> Hong Kong friends often greet each other in English ("hi", "hello"), or skip the greeting and just start talking.'),
           );
         },
@@ -28,7 +27,7 @@
           el.append(
             p(`Until about noon, say ${zh('早晨', 'zou2 san4')}. Cantonese has no everyday "good afternoon" or "good evening": after noon, go back to 你好.`),
             p(`${zh('早唞', 'zou2 tau2')} is only for bedtime, when someone is going to sleep.`),
-            words(ctx, 'good-morning', 'good-night'),
+            ctx.words('good-morning', 'good-night'),
           );
         },
       },
@@ -38,7 +37,7 @@
         render(el, ctx) {
           el.append(
             p('Most people say 拜拜, borrowed from English "bye-bye". 再見 is more formal.'),
-            words(ctx, 'bye', 'goodbye'),
+            ctx.words('bye', 'goodbye'),
           );
         },
       },
@@ -48,11 +47,11 @@
         render(el, ctx) {
           el.append(
             p('Textbooks teach 你好嗎？, but people rarely say it. Among friends you will hear 最近點呀？ ("how have you been lately?").'),
-            words(ctx, 'how-are-you', 'how-lately'),
+            ctx.words('how-are-you', 'how-lately'),
             p('Two easy answers:'),
-            words(ctx, 'pretty-good', 'so-so'),
+            ctx.words('pretty-good', 'so-so'),
             p('And two classics:'),
-            words(ctx, 'long-time', 'eaten-yet', 'eaten'),
+            ctx.words('long-time', 'eaten-yet', 'eaten'),
             tip('<strong>Have you eaten?</strong> 食咗飯未呀？ is a greeting, not an invitation. Answer 食咗喇 even if you haven\'t, and keep chatting.'),
           );
         },
@@ -63,11 +62,11 @@
         render(el, ctx) {
           el.append(
             p(`Cantonese has two thank-yous. ${zh('唔該', 'm4 goi1')} is for a <strong>service or a favour</strong>: someone pours your tea, holds a door, passes the salt. ${zh('多謝', 'do1 ze6')} is for a <strong>gift or a compliment</strong>.`),
-            words(ctx, 'm-goi', 'thanks'),
+            ctx.words('m-goi', 'thanks'),
             p('Each has its own reply:'),
-            words(ctx, 'no-need', 'welcome'),
+            ctx.words('no-need', 'welcome'),
             p('For a big favour, add 晒 ("all"):'),
-            words(ctx, 'm-goi-saai'),
+            ctx.words('m-goi-saai'),
             tip(`<strong>唔該 also means "excuse me":</strong> say it to call a waiter over, or before asking a stranger a question. You'll use it at <a href="../unit7/">yum cha</a>.`),
           );
         },
@@ -78,9 +77,9 @@
         render(el, ctx) {
           el.append(
             p(`${zh('對唔住', 'deoi3 m4 zyu6')} is a real apology, when you did something wrong. For small things (a bump on the bus, being a few minutes late, interrupting) say ${zh('唔好意思', 'm4 hou2 ji3 si3')}.`),
-            words(ctx, 'sorry', 'excuse-me'),
+            ctx.words('sorry', 'excuse-me'),
             p('If someone says sorry to you:'),
-            words(ctx, 'never-mind', 'no-problem'),
+            ctx.words('never-mind', 'no-problem'),
           );
         },
       },

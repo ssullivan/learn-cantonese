@@ -3,8 +3,7 @@
   const V = window.VOCAB;
   const { p, tip } = Learn;
   const { el: $, zh } = Canto;
-  const words = (ctx, ...ids) => ctx.grid(ids.map(ctx.entry));
-  const nums = (ctx, ...ns) => words(ctx, ...ns.map(n => `n${n}`));
+  const nums = (ctx, ...ns) => ctx.words(...ns.map(n => `n${n}`));
 
   Learn.init({
     root: document.getElementById('learn'),
@@ -65,7 +64,7 @@
         render(el, ctx) {
           el.append(
             p(`In quick, casual speech the 十 in the middle of 31–99 shrinks to <em>aa6</em>. Thirty-something even has its own character, ${zh('卅', 'saa1 aa6')}.`),
-            words(ctx, ...V.short.map(e => e.id)),
+            ctx.words(...V.short.map(e => e.id)),
             tip('You don\'t need to say these, but listen for them: prices at the market and phone numbers are often read this way.'),
           );
         },
@@ -76,7 +75,7 @@
         render(el, ctx) {
           el.append(
             p('Hundred, thousand, and ten thousand. Say each digit with its place: 三百六十 is "three hundred six ten", 360.'),
-            words(ctx, 'baak', 'cin', 'maan'),
+            ctx.words('baak', 'cin', 'maan'),
             nums(ctx, 100, 360, 1000, 3500, 10000),
             p(`When a place in the middle is empty, say ${zh('零', 'ling4')} once:`),
             nums(ctx, 101, 1001, 3008),
@@ -91,12 +90,12 @@
         render(el, ctx) {
           el.append(
             p(`Cantonese has two words for two. ${zh('二', 'ji6')} is for counting and inside numbers. ${zh('兩', 'loeng5')} is for "two of something", with a measure word like ${zh('個', 'go3')}:`),
-            words(ctx, 'loeng', 'go', 'loeng-go'),
+            ctx.words('loeng', 'go', 'loeng-go'),
             p('A 2 at the very start, before 百, 千 or 萬, is also 兩:'),
             nums(ctx, 200, 2000, 20000),
             p('Everywhere else it stays 二: in 12, 20, 22, and in 第二 (second).'),
             nums(ctx, 12, 20, 22),
-            words(ctx, 'dai-2'),
+            ctx.words('dai-2'),
           );
         },
       },
@@ -106,9 +105,9 @@
         render(el, ctx) {
           el.append(
             p(`Put ${zh('第', 'dai6')} in front of a number to make first, second, third:`),
-            words(ctx, 'dai', 'dai-1', 'dai-2', 'dai-3'),
+            ctx.words('dai', 'dai-1', 'dai-2', 'dai-3'),
             p(`${zh('幾多', 'gei2 do1')} asks "how many" or "how much". Answer with the number and its measure word:`),
-            words(ctx, 'gei-do', 'gei-do-go', 'loeng-go'),
+            ctx.words('gei-do', 'gei-do-go', 'loeng-go'),
           );
         },
       },

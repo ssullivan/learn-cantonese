@@ -100,10 +100,10 @@
 
   function prompt(mode, w, char) {
     const { esc, zh } = Canto;
-    const gap = blank(w.hanzi, char);
+    const blankedWord = blank(w.hanzi, char);
     if (mode === 'watch' || mode === 'trace') return `Write ${zh(w.hanzi, w.jyutping)}: ${esc(w.english)}`;
-    if (mode === 'recall') return `Write the missing character:<br><span class="hanzi" lang="zh-HK">${esc(gap)}</span> <span class="jp">${Canto.jyutping(w.jyutping)}</span> ${esc(w.english)}`;
-    return w.hanzi === char ? 'Write the character you hear.' : `Write the missing character you hear:<br><span class="hanzi" lang="zh-HK">${esc(gap)}</span>`;
+    if (mode === 'recall') return `Write the missing character:<br><span class="hanzi" lang="zh-HK">${esc(blankedWord)}</span> <span class="jp">${Canto.jyutping(w.jyutping)}</span> ${esc(w.english)}`;
+    return w.hanzi === char ? 'Write the character you hear.' : `Write the missing character you hear:<br><span class="hanzi" lang="zh-HK">${esc(blankedWord)}</span>`;
   }
 
   function round({ vocab, mode }) {

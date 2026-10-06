@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /*
- * site.test.mjs — tests tools/site.mjs's retrying, with azureAgain (when
+ * site.test.mjs — tests tools/site.mjs's retrying, with shouldRetryAzure (when
  * tts.mjs retries Azure), on made-up failures without waiting. Run by
  * tools/check.mjs; exits 1 on failure.
  */
-import { retrying, azureAgain } from './site.mjs';
+import { retrying, shouldRetryAzure } from './site.mjs';
 
 let fail = 0;
 const quiet = process.argv.includes('--quiet');
@@ -20,7 +20,7 @@ async function run(statuses) {
     throw Object.assign(new Error(`HTTP ${status}`), { status });
   };
   try {
-    return { result: await retrying(attempt, azureAgain, async ms => { waits.push(ms); }), calls, waits };
+    return { result: await retrying(attempt, shouldRetryAzure, async ms => { waits.push(ms); }), calls, waits };
   } catch (err) {
     return { error: err.message, calls, waits };
   }
@@ -48,7 +48,7 @@ async function run(statuses) {
 {
   const r = await run([400]);
   ok('a bad request (400) is not retried', r.error === 'HTTP 400' && r.calls === 1);
-  const net = await retrying(async () => { throw new TypeError('fetch failed'); }, azureAgain, async () => {}).catch(e => e.message);
+  const net = await retrying(async () => { throw new TypeError('fetch failed'); }, shouldRetryAzure, async () => {}).catch(e => e.message);
   ok('a network error (no status) is not retried', net === 'fetch failed');
 }
 

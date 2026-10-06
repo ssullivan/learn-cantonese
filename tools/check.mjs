@@ -12,6 +12,8 @@
  *   - every page links back: a unit's learn pages and games to its unit
  *     page (./), unit pages and review pages to all units (../)
  *   - every .js file compiles
+ *   - no site script copies a shared helper (Units.byId, ctx.words,
+ *     Game.pic, Game.playOnReveal) instead of using it
  *   - each unit<N>/vocab.js: unique ids, tone numbers in jyutping,
  *     audio/<id>.mp3 for every entry, a drawing in art.mjs for every
  *     entry without img:false, and no orphan .mp3 files or drawings
@@ -103,6 +105,21 @@ for (const [name, secret] of [['Azure Speech', azureKey], ['MiniMax', minimaxKey
 for (const js of files.filter(f => f.endsWith('.js'))) {
   try { new vm.Script(readFileSync(js, 'utf8'), { filename: js }); }
   catch (e) { bad(js, `syntax error: ${e.message}`); }
+}
+
+// Shared helpers, not copies of them, in the site's scripts (each defined
+// once, in the file named).
+const HELPER_COPIES = [
+  [/Object\.fromEntries\([^;]*?\.map\(\s*(\w+)\s*=>\s*\[\s*\1\.id\s*,\s*\1\s*\]\s*\)\s*\)/, 'Units.byId(vocab)', 'shared/units.js'],
+  [/ctx\.grid\(\s*\w+\.map\(\s*ctx\.entry\s*\)\s*\)/, 'ctx.words(...ids)', 'shared/learn.js'],
+  [/<img src="\$\{(?:Canto\.)?imgSrc\((\w+)\)\}" alt="\$\{(?:Canto\.)?esc\(\1\.english\)\}">/, 'Game.pic(entry)', 'shared/game.js'],
+  [/ctx\.reveal = \(\) => \{\s*\w+\??\.?\(\);\s*ctx\.play\(\w+\);\s*\}/, 'Game.playOnReveal(ctx, entry)', 'shared/game.js'],
+];
+for (const script of files.filter(f => f.endsWith('.js') && !f.includes(`${join(ROOT, 'tools')}/`))) {
+  const source = readFileSync(script, 'utf8');
+  for (const [pattern, helper, definedIn] of HELPER_COPIES) {
+    if (join(ROOT, definedIn) !== script && pattern.test(source)) bad(script, `use ${helper} (${definedIn}) instead of a copy of it`);
+  }
 }
 
 // Unit vocab and assets

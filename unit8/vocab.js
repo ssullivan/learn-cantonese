@@ -124,7 +124,7 @@ Units.add(8, {
   V.orders[0].note = 'Temperature, drink, then what to change: 熱奶茶少甜.';
 
   // 一杯奶茶, 一個菠蘿油, 一碗餐蛋麵, 一份多士, for Measures.round.
-  const measure = Object.fromEntries(V.measures.map(m => [m.id, m]));
+  const measure = Units.byId(V.measures);
   V.ones = [...V.drinks, ...V.food].map(t => {
     const m = measure[t.measure], { hanzi, jyutping } = Canto.number(1, { measure: m });
     const english = t.measure === 'go' ? `a ${t.english}` : `${m.english} ${t.english.replace(/ \(.*/, '')}`;

@@ -101,7 +101,7 @@ Units.add(5, {
 // Derived: phrases for every noun, and sentences. Audio is generated like
 // any entry. A phrase is read from its jyutping when its noun is.
 (V => {
-  const byId = Object.fromEntries(Object.values(V).filter(Array.isArray).flat().map(e => [e.id, e]));
+  const byId = Units.byId(V);
   const one = t => t.counted?.[0] ?? `a ${t.english}`;
   const many = t => t.counted?.[1] ?? `${t.english}s`;
   const bare = t => one(t).replace(/^an? /, '');

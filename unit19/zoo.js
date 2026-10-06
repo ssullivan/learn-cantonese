@@ -2,17 +2,11 @@
 (function () {
   const V = window.VOCAB;
   const { el: $, esc, zh, pick, shuffle, imgSrc, speech } = Canto;
-  const { choose } = Game;
-  const byId = Object.fromEntries(Canto.entries(V).map(e => [e.id, e]));
+  const { choose, pic, playOnReveal } = Game;
+  const byId = Units.byId(V);
   const said = e => zh(e.hanzi, e.jyutping);
-  const pic = e => `<img src="${imgSrc(e)}" alt="${esc(e.english)}">`;
   const prompt = e => { const img = $('img', 'prompt-pic'); img.src = imgSrc(e); img.alt = ''; return img; };
   const name = e => esc(e.english.replace(/;.*/, ''));
-  // Play `e` once the right answer is shown, however the round ended.
-  const playOnReveal = (ctx, e) => {
-    const show = ctx.reveal;
-    ctx.reveal = () => { show(); ctx.play(e); };
-  };
   const animals = [...V.animals, ...V.pets];
 
   // Hear an animal, tap it.
@@ -65,7 +59,7 @@
 
   // A pen of animals: how many, and with which measure word? The wrong
   // answers swap the measure word or miss one.
-  const measures = Object.fromEntries(V.measures.map(m => [m.id, m]));
+  const measures = Units.byId(V.measures);
   const phrase = (n, t, m) => { const { hanzi, jyutping } = Canto.number(n, { measure: m }); return { hanzi: hanzi + t.hanzi, jyutping: `${jyutping} ${t.jyutping}` }; };
   const count = (stage, ctx) => {
     const [e] = pick(V.counts, 1);

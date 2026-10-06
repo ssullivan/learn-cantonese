@@ -2,17 +2,11 @@
 (function () {
   const V = window.VOCAB;
   const { el: $, esc, zh, pick, shuffle, imgSrc, speech, confusable } = Canto;
-  const { choose } = Game;
-  const byId = Object.fromEntries(Canto.entries(V).map(e => [e.id, e]));
+  const { choose, pic, playOnReveal } = Game;
+  const byId = Units.byId(V);
   const said = e => zh(e.hanzi, e.jyutping);
-  const pic = e => `<img src="${imgSrc(e)}" alt="${esc(e.english)}">`;
   const dollars = n => `$${n % 1 ? n.toFixed(2) : n}`;
   const produce = [...V.fruit, ...V.veg];
-  // Play `e` once the right answer is shown, however the round ended.
-  const playOnReveal = (ctx, e) => {
-    const show = ctx.reveal;
-    ctx.reveal = () => { show(); ctx.play(e); };
-  };
   // A thing on the stall, with its sign: $12/斤.
   function stall(t) {
     const box = $('div', 'stall');

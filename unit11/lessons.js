@@ -3,7 +3,6 @@
   const V = window.VOCAB;
   const { p, tip } = Learn;
   const { el: $, zh } = Canto;
-  const words = (ctx, ...ids) => ctx.grid(ids.map(ctx.entry));
 
   Learn.init({
     root: document.getElementById('learn'),
@@ -18,7 +17,7 @@
             p(`${zh('出街', 'ceot1 gaai1')} is going out, anywhere. Hong Kong has plenty of ways to get about:`),
             ctx.grid(V.transport),
             p(`Take any of them with ${zh('搭', 'daap3')}, or walk: ${zh('行路', 'haang4 lou6')}.`),
-            words(ctx, 'ceot-street', 'daap', 'haang-lou'),
+            ctx.words('ceot-street', 'daap', 'haang-lou'),
           );
         },
       },
@@ -28,7 +27,7 @@
         render(el, ctx) {
           el.append(
             p(`A ${zh('站', 'zaam6')} is a station or a stop:`),
-            words(ctx, 'zaam', 'metro-zaam', 'bus-zaam'),
+            ctx.words('zaam', 'metro-zaam', 'bus-zaam'),
             p('And places to go:'),
             ctx.grid(V.places.filter(e => e.img !== false)),
             tip(`<strong>Changed tones.</strong> 院 and 園 are jyun6 and jyun4 on their own, but ${zh('醫院', 'ji1 jyun2')} and ${zh('公園', 'gung1 jyun2')} both rise.`),
@@ -41,11 +40,11 @@
         render(el, ctx) {
           el.append(
             p(`${zh('去', 'heoi3')} is "go to": the place comes straight after, with no word for "to". Ask where with ${zh('邊度', 'bin1 dou6')}, in the place's spot:`),
-            words(ctx, 'heoi', 'bin-dou', 'nei-heoi-bin-dou-aa', 'ngo-heoi-airport'),
+            ctx.words('heoi', 'bin-dou', 'nei-heoi-bin-dou-aa', 'ngo-heoi-airport'),
             p('How you go comes first, then 去 and where:'),
-            words(ctx, 'ngo-daap-bus-heoi-airport', 'ngo-daap-metro-heoi-hotel', 'ngo-haang-lou-heoi-park'),
+            ctx.words('ngo-daap-bus-heoi-airport', 'ngo-daap-metro-heoi-hotel', 'ngo-haang-lou-heoi-park'),
             p(`And ${zh('嚟', 'lai4')}, to come:`),
-            words(ctx, 'lai', 'nei-gei-si-lai-aa'),
+            ctx.words('lai', 'nei-gei-si-lai-aa'),
           );
         },
       },
@@ -55,9 +54,9 @@
         render(el, ctx) {
           el.append(
             p(`${zh('喺', 'hai2')} is "be at". Don't mix it up with ${zh('係', 'hai6')} (to be, Unit 3): 喺 rises.`),
-            words(ctx, 'hai2', 'ngo-hai2-bank', 'keoi-hai2-home'),
+            ctx.words('hai2', 'ngo-hai2-bank', 'keoi-hai2-home'),
             p('With another verb, 喺 + place goes before it, like a time does in Unit 9:'),
-            words(ctx, 'ngo-hai2-home-sik-faan', 'ngo-hai2-hong-kong-zyu'),
+            ctx.words('ngo-hai2-home-sik-faan', 'ngo-hai2-hong-kong-zyu'),
             tip(`<strong>我喺屋企食飯.</strong> Who, where, then what: not 我食飯喺屋企.`),
           );
         },
@@ -68,11 +67,11 @@
         render(el, ctx) {
           el.append(
             p('Ask with the place, 喺, and 邊度. Start with 唔該 to get someone\'s attention:'),
-            words(ctx, 'toilet-hai2-bin-dou-aa', 'm-goi-toilet-hai2-bin-dou-aa'),
+            ctx.words('toilet-hai2-bin-dou-aa', 'm-goi-toilet-hai2-bin-dou-aa'),
             p(`Here and there are ${zh('呢', 'ni1')} and ${zh('嗰', 'go2')} (Unit 5) with ${zh('度', 'dou6')}, "place":`),
-            words(ctx, 'ni-dou6', 'go2-dou6', 'toilet-hai2-go2-dou6'),
+            ctx.words('ni-dou6', 'go2-dou6', 'toilet-hai2-go2-dou6'),
             p('Near or far?'),
-            words(ctx, 'kan', 'jyun', 'jyun-m-jyun-aa', 'hou-kan', 'haang-lou-jiu-n10-fan-zung'),
+            ctx.words('kan', 'jyun', 'jyun-m-jyun-aa', 'hou-kan', 'haang-lou-jiu-n10-fan-zung'),
           );
         },
       },
@@ -81,11 +80,11 @@
         title: 'Left, right, straight on',
         render(el, ctx) {
           el.append(
-            words(ctx, 'zo', 'jau6', 'zik-haang', 'zyun', 'zyun-zo', 'zyun-jau6'),
+            ctx.words('zo', 'jau6', 'zik-haang', 'zyun', 'zyun-zo', 'zyun-jau6'),
             p(`Which side: ${zh('左邊', 'zo2 bin1')} and ${zh('右邊', 'jau6 bin1')}, with 喺:`),
-            words(ctx, 'zo-bin', 'jau-bin', 'hai2-zo-bin', 'hai2-jau-bin'),
+            ctx.words('zo-bin', 'jau-bin', 'hai2-zo-bin', 'hai2-jau-bin'),
             p('Or ahead, or across the road:'),
-            words(ctx, 'cin-min', 'deoi-min', 'supermarket-hai2-cin-min', 'bank-hai2-deoi-min'),
+            ctx.words('cin-min', 'deoi-min', 'supermarket-hai2-cin-min', 'bank-hai2-deoi-min'),
           );
         },
       },
@@ -97,7 +96,7 @@
             p('Which road, then which side of it:'),
             ctx.grid(V.directions),
             tip(`<strong>Left and right as you walk.</strong> After 轉左 you face the other way along the new road, so 喺右邊 is the side you'd see on your right.`),
-            words(ctx, 'zik-haang-zyun-zo'),
+            ctx.words('zik-haang-zyun-zo'),
           );
         },
       },
@@ -107,7 +106,7 @@
         render(el, ctx) {
           el.append(
             p(`Get off is ${zh('落車', 'lok6 ce1')}. On a minibus, call out before your stop:`),
-            words(ctx, 'lok', 'lok-car', 'cin-min-jau-lok'),
+            ctx.words('lok', 'lok-car', 'cin-min-jau-lok'),
           );
         },
       },

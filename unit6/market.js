@@ -2,7 +2,7 @@
 (function () {
   const V = window.VOCAB;
   const { el: $, esc, zh, pick, shuffle, confusable, imgSrc, picButton, speech } = Canto;
-  const byId = Object.fromEntries(Canto.entries(V).map(e => [e.id, e]));
+  const byId = Units.byId(V);
   const prices = [...V.cash, ...V.prices].sort((a, b) => a.n - b.n);
   const byN = new Map(prices.map(p => [p.n, p]));
   const dimes = n => Math.round(n * 10);

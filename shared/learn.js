@@ -1,5 +1,6 @@
 /*
- * learn.js — engine for step-by-step learn pages. Needs core.js, audio.js.
+ * learn.js — engine for step-by-step learn pages. Needs core.js, audio.js,
+ * units.js.
  *
  *   Learn.init({
  *     root,          element to render into
@@ -18,6 +19,7 @@
  *   ctx.entry(id)              look up any entry by id
  *   ctx.card(entry)            <button> word card; tap plays the audio
  *   ctx.grid(entries)          grid of word cards (wider columns if none has a picture)
+ *   ctx.words(...ids)          ctx.grid of the entries with those ids
  *   ctx.play(entry)            play an entry's clip
  *   ctx.complete()             mark this step done (unlocks Next if gated)
  *   ctx.listenQuiz(el, { pool, rounds, choices, show })
@@ -42,7 +44,7 @@
 
   function init(opts) {
     const { root, key, vocab, steps } = opts;
-    const byId = Object.fromEntries(Canto.entries(vocab).map(e => [e.id, e]));
+    const byId = Units.byId(vocab);
 
     const store = Canto.store(key, { step: 0, done: [] });
     const state = store.get();
@@ -136,6 +138,7 @@
         vocab,
         entry: id => byId[id],
         card, grid, play,
+        words: (...ids) => grid(ids.map(id => byId[id])),
         complete: () => markDone(i),
         listenQuiz: (el, o) => listenQuiz(el, o, ctx),
       };

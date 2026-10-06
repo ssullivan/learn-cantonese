@@ -91,8 +91,8 @@ Units.add(12, {
 // Derived: 一頂帽 and the rest, clothes in colours, what you wear with
 // 著 or 戴, and sentences. Audio is generated like any entry.
 (V => {
-  const byId = Object.fromEntries(Object.values(V).filter(Array.isArray).flat().map(e => [e.id, e]));
-  const measure = Object.fromEntries(V.measures.map(m => [m.id, m]));
+  const byId = Units.byId(V);
+  const measure = Units.byId(V.measures);
   V.ones.push(...V.clothes.filter(t => !t.unit).map(t => {
     const m = measure[t.measure], { hanzi, jyutping } = Canto.number(1, { measure: m });
     return { id: `one-${t.id}`, thing: t.id, hanzi: hanzi + t.hanzi, jyutping: `${jyutping} ${t.jyutping}`,

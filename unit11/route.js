@@ -1,11 +1,10 @@
 /* Unit 11 game: Route. Hear places and transport, follow directions on a crossroads map (直行 / 轉左 / 轉右, then 喺左邊 / 喺右邊), say where a place is, and build sentences with 喺 and 去 (shared/tiles.js). Runs on shared/game.js. */
 (function () {
   const V = window.VOCAB;
-  const { el: $, esc, zh, pick, shuffle, imgSrc, speech } = Canto;
-  const { choose, answerText } = Game;
-  const byId = Object.fromEntries(Canto.entries(V).map(e => [e.id, e]));
+  const { el: $, esc, zh, pick, shuffle, speech } = Canto;
+  const { choose, answerText, pic } = Game;
+  const byId = Units.byId(V);
   const said = e => zh(e.hanzi, e.jyutping);
-  const pic = e => `<img src="${imgSrc(e)}" alt="${esc(e.english)}">`;
 
   // Everywhere a place can be on the map, and everything to hear.
   const places = [...V.stations, ...V.places.filter(p => p.img !== false), ...V.elsewhere];

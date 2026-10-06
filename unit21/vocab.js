@@ -110,7 +110,6 @@ Units.add(21, {
 // like any entry.
 (V => {
   let say = Units.sentences(V);
-  const all = () => Object.fromEntries(Object.values(V).filter(Array.isArray).flat().map(e => [e.id, e]));
 
   // What each appliance is for: a verb and a thing.
   const TASK = [
@@ -135,7 +134,7 @@ Units.add(21, {
   say = Units.sentences(V);
   const base = t => t.english.replace(/^to /, '');
   V.uses = V.tasks.filter(t => t.tool !== 'fridge').map(t =>
-    say(`ngo jung ${t.tool} ${t.words.join(' ')}`, `I use the ${all()[t.tool].english} to ${base(t)}.`, { tool: t.tool }));
+    say(`ngo jung ${t.tool} ${t.words.join(' ')}`, `I use the ${Units.byId(V)[t.tool].english} to ${base(t)}.`, { tool: t.tool }));
   V.uses[0].note = '用 + the thing you use comes before the verb.';
   // 用乜嘢煲水呀？
   V.asks = V.tasks.map(t => say(`jung mat-je ${t.words.join(' ')} aa`, `What do you use to ${base(t)}?`, { tool: t.tool }));
@@ -145,7 +144,7 @@ Units.add(21, {
   // How long: 一分鐘 to 三十分鐘, after the verb.
   const MINS = [1, 2, 3, 5, 10, 15, 20, 30];
   V.minutes = MINS.map(n => ({
-    id: `mins${n}`, mins: n, ...Canto.number(n, { measure: all()['fan-zung'] }),
+    id: `mins${n}`, mins: n, ...Canto.number(n, { measure: Units.byId(V)['fan-zung'] }),
     english: `${n} minute${n > 1 ? 's' : ''}`, img: false,
   }));
   say = Units.sentences(V);
@@ -182,7 +181,7 @@ Units.add(21, {
   ];
 
   // One of them: 一部雪櫃, 一個水煲.
-  const byId = all();
+  const byId = Units.byId(V);
   V.ones = V.appliances.filter(a => a.measure).map(a => {
     const { hanzi, jyutping } = Canto.number(1, { measure: byId[a.measure] });
     return { id: `one-${a.id}`, thing: a.id, hanzi: hanzi + a.hanzi, jyutping: `${jyutping} ${a.jyutping}`, english: `a ${a.english}`, img: false };

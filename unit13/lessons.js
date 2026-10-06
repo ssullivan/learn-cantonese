@@ -3,7 +3,6 @@
   const V = window.VOCAB;
   const { p, tip } = Learn;
   const { el: $, zh } = Canto;
-  const words = (ctx, ...ids) => ctx.grid(ids.map(ctx.entry));
 
   Learn.init({
     root: document.getElementById('learn'),
@@ -16,11 +15,11 @@
         render(el, ctx) {
           el.append(
             p(`${zh('天氣', 'tin1 hei3')} is the weather. Ask about it with ${zh('點', 'dim2')}, "how", as in 最近點呀？ (Unit 2):`),
-            words(ctx, 'tin-hei', 'tin-hei-dim-aa'),
+            ctx.words('tin-hei', 'tin-hei-dim-aa'),
             p('Up in the sky:'),
-            words(ctx, 'taai-joeng', 'wan', 'tin-cing', 'jam-tin'),
+            ctx.words('taai-joeng', 'wan', 'tin-cing', 'jam-tin'),
             p(`When the sun comes out, it ${zh('出', 'ceot1')}, as in 出街 (Unit 11):`),
-            words(ctx, 'ceot-taai-joeng'),
+            ctx.words('ceot-taai-joeng'),
           );
         },
       },
@@ -30,11 +29,11 @@
         render(el, ctx) {
           el.append(
             p(`Rain and snow "come down", with ${zh('落', 'lok6')} from Unit 11:`),
-            words(ctx, 'jyu', 'lok-jyu', 'syut', 'lok-syut'),
+            ctx.words('jyu', 'lok-jyu', 'syut', 'lok-syut'),
             p('Wind and storms:'),
-            words(ctx, 'fung', 'daai-fung', 'haang-leoi', 'daa-fung'),
+            ctx.words('fung', 'daai-fung', 'haang-leoi', 'daa-fung'),
             tip(`<strong>打風.</strong> In summer, typhoons "strike". ${zh('天文台', 'tin1 man4 toi4')}, the Observatory, raises signals 1, 3, 8 and up; at 8, offices and schools close.`),
-            words(ctx, 'tin-man-toi'),
+            ctx.words('tin-man-toi'),
           );
         },
       },
@@ -44,7 +43,7 @@
         render(el, ctx) {
           el.append(
             p('From Unit 8, where they were drinks: 熱奶茶, 凍奶茶. They are the weather too:'),
-            words(ctx, 'jit', 'dung'),
+            ctx.words('jit', 'dung'),
             p('And in between:'),
             ctx.grid(V.feel.filter(e => !e.unit)),
             tip(`<strong>Hear the tone.</strong> ${zh('凍', 'dung3')} (cold) is mid and level; ${zh('冬', 'dung1')} in ${zh('冬天', 'dung1 tin1')} (winter) is high.`),
@@ -57,11 +56,11 @@
         render(el, ctx) {
           el.append(
             p(`An adjective takes a word before it that says how much. There is no ${zh('係', 'hai6')}: 今日好熱, not 今日係熱.`),
-            words(ctx, 'hou-jit', 'gei-jit', 'taai-jit'),
+            ctx.words('hou-jit', 'gei-jit', 'taai-jit'),
             p(`${zh('有啲', 'jau5 di1')} is "a bit", for something you'd rather have less of, and ${zh('唔係好', 'm4 hai6 hou2')} is "not very":`),
-            words(ctx, 'jau-di-dung', 'm-hai-hou-dung'),
+            ctx.words('jau-di-dung', 'm-hai-hou-dung'),
             tip(`<strong>好 is nearly always there.</strong> A bare 熱 sounds like a comparison ("hotter than..."), so people say 好熱 even when it's only a bit hot.`),
-            words(ctx, 'gam-jat-hou-jit', 'gam-jat-gei-dung', 'gam-jat-jau-di-guk', 'gam-jat-m-hai-hou-dung', 'taai-jit-laa3'),
+            ctx.words('gam-jat-hou-jit', 'gam-jat-gei-dung', 'gam-jat-jau-di-guk', 'gam-jat-m-hai-hou-dung', 'taai-jit-laa3'),
           );
         },
       },
@@ -73,7 +72,7 @@
             p(`Every season ends in ${zh('天', 'tin1')}:`),
             ctx.grid(V.seasons),
             p('What the seasons are like in Hong Kong:'),
-            words(ctx, 'hong-kong-haa-tin-hou-jit', 'hong-kong-dung-tin-m-hai-hou-dung', 'ceon-tin-hou-sap'),
+            ctx.words('hong-kong-haa-tin-hou-jit', 'hong-kong-dung-tin-m-hai-hou-dung', 'ceon-tin-hou-sap'),
           );
         },
       },
@@ -83,11 +82,11 @@
         render(el, ctx) {
           el.append(
             p(`A temperature is a number and ${zh('度', 'dou6')}, degrees. 21 to 29 use 廿 (Unit 4):`),
-            words(ctx, 'gei-do-dou6', 'gam-jat-gei-do-dou6-aa', 'c32', 'gam-jat-c32', 'c25', 'c8'),
+            ctx.words('gei-do-dou6', 'gam-jat-gei-do-dou6-aa', 'c32', 'gam-jat-c32', 'c25', 'c8'),
             p(`For the forecast, ${zh('會', 'wui5')} goes before the verb: "will".`),
-            words(ctx, 'wui', 'ting-jat-wui-lok-jyu', 'ting-jat-wui-daa-fung', 'ting-jat-wui-m-wui-lok-jyu-aa'),
+            ctx.words('wui', 'ting-jat-wui-lok-jyu', 'ting-jat-wui-daa-fung', 'ting-jat-wui-m-wui-lok-jyu-aa'),
             p('And no past tense: the day says when (Unit 9).'),
-            words(ctx, 'kam-jat-hou-daai-fung'),
+            ctx.words('kam-jat-hou-daai-fung'),
           );
         },
       },
@@ -97,10 +96,10 @@
         render(el, ctx) {
           el.append(
             p(`${zh('啦', 'laa1')} at the end of a sentence turns an order into friendly advice. ${zh('帶', 'daai3')} (bring) sounds just like 戴 (wear, Unit 12):`),
-            words(ctx, 'laa1', 'daai-bring', 'umbrella'),
+            ctx.words('laa1', 'daai-bring', 'umbrella'),
             ctx.grid(V.advice),
             p(`${zh('喇', 'laa3')}, lower, says something has changed: it's raining now, and it wasn't before.`),
-            words(ctx, 'laa3', 'lok-jyu-laa3', 'ceot-taai-joeng-laa3'),
+            ctx.words('laa3', 'lok-jyu-laa3', 'ceot-taai-joeng-laa3'),
           );
         },
       },

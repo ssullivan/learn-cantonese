@@ -119,7 +119,7 @@ Units.add(14, {
 // answers, prescriptions and sentences. Audio is generated like any entry;
 // art.mjs draws the aches and prescriptions.
 (V => {
-  const byId = Object.fromEntries(Object.values(V).filter(Array.isArray).flat().map(e => [e.id, e]));
+  const byId = Units.byId(V);
   let say = Units.sentences(V);
 
   // 頭痛: the part, then 痛.

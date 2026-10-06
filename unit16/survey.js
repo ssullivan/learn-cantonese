@@ -2,10 +2,9 @@
 (function () {
   const V = window.VOCAB;
   const { esc, zh, pick, shuffle, imgSrc, speech } = Canto;
-  const { choose, answerText, chart, mark } = Game;
-  const byId = Object.fromEntries(Canto.entries(V).map(e => [e.id, e]));
+  const { choose, answerText, chart, mark, pic, playOnReveal } = Game;
+  const byId = Units.byId(V);
   const said = e => zh(e.hanzi, e.jyutping);
-  const pic = e => `<img src="${imgSrc(e)}" alt="${esc(e.english)}">`;
 
   // Hear a hobby, tap its picture.
   const what = (stage, ctx) => {
@@ -55,8 +54,7 @@
     const [q] = pick(options, 1);
     ctx.answer = `${said(q)} ${esc(q.english)}${q.note ? ' ' + esc(q.note) : ''}`;
     const grid = choose(ctx, q, shuffle(options), said);
-    const show = ctx.reveal;
-    ctx.reveal = () => { show(); ctx.play(q); };
+    playOnReveal(ctx, q);
     const img = document.createElement('img');
     img.className = 'prompt-pic';
     img.src = imgSrc(h);

@@ -3,7 +3,6 @@
   const V = window.VOCAB;
   const { p, tip } = Learn;
   const { el: $, zh } = Canto;
-  const words = (ctx, ...ids) => ctx.grid(ids.map(ctx.entry));
 
   Learn.init({
     root: document.getElementById('learn'),
@@ -16,7 +15,7 @@
         render(el, ctx) {
           el.append(
             p(`${zh('身體', 'san1 tai2')} is the body, and your health. On the face:`),
-            words(ctx, 'body', 'eye', 'ear', 'nose', 'mouth', 'tooth', 'throat'),
+            ctx.words('body', 'eye', 'ear', 'nose', 'mouth', 'tooth', 'throat'),
           );
         },
       },
@@ -25,7 +24,7 @@
         title: 'The body · 身體',
         render(el, ctx) {
           el.append(
-            words(ctx, 'head', 'hand', 'foot', 'stomach', 'back'),
+            ctx.words('head', 'hand', 'foot', 'stomach', 'back'),
             tip(`<strong>One word, more body.</strong> ${zh('手', 'sau2')} is the hand and the whole arm; ${zh('腳', 'goek3')} the foot and the whole leg.`),
           );
         },
@@ -46,10 +45,10 @@
         render(el, ctx) {
           el.append(
             p(`The body part, then ${zh('痛', 'tung3')}. No "have", no "a":`),
-            words(ctx, 'tung', 'ngo-head-tung'),
+            ctx.words('tung', 'ngo-head-tung'),
             ctx.grid(V.aches),
             p('Or with the measure word and 好, when one part hurts a lot:'),
-            words(ctx, 'ngo-go-head-hou-tung', 'ngo-zek-foot-hou-tung', 'ngo-tiu-throat-hou-tung'),
+            ctx.words('ngo-go-head-hou-tung', 'ngo-zek-foot-hou-tung', 'ngo-tiu-throat-hou-tung'),
           );
         },
       },
@@ -59,9 +58,9 @@
         render(el, ctx) {
           el.append(
             p(`You "look at" a doctor with ${zh('睇', 'tai2')}, and "eat" medicine with 食 (Unit 8):`),
-            words(ctx, 'ji-sang', 'tai-ji-sang', 'joek', 'sik6-joek', 'jau-sik'),
+            ctx.words('ji-sang', 'tai-ji-sang', 'joek', 'sik6-joek', 'jau-sik'),
             p('What the doctor asks, and what\'s wrong:'),
-            words(ctx, 'nei-bin-dou-m-syu-fuk-aa', 'nei-bin-dou-tung-aa', 'm-syu-fuk'),
+            ctx.words('nei-bin-dou-m-syu-fuk-aa', 'nei-bin-dou-tung-aa', 'm-syu-fuk'),
             ctx.grid([...V.symptoms, ctx.entry('cold')]),
           );
         },
@@ -72,8 +71,8 @@
         render(el, ctx) {
           el.append(
             p(`${zh('有', 'jau5')} and its opposite ${zh('冇', 'mou5')} together ask "have or not?", like 係唔係 (Unit 3). Answer with just one of them:`),
-            words(ctx, 'mou', 'jau-mou', 'nei-jau-mou-fever-aa', 'nei-jau-mou-cough-aa'),
-            words(ctx, 'ngo-mou-fever', 'ngo-jau-di-fever'),
+            ctx.words('mou', 'jau-mou', 'nei-jau-mou-fever-aa', 'nei-jau-mou-cough-aa'),
+            ctx.words('ngo-mou-fever', 'ngo-jau-di-fever'),
             tip(`<strong>冇, never 唔有.</strong> 冇 is the only way to say "not have", and before a verb it means "didn't": 我冇發燒.`),
           );
         },
@@ -84,11 +83,11 @@
         render(el, ctx) {
           el.append(
             p(`${zh('咗', 'zo2')}, straight after the verb, says it's done: it has happened.`),
-            words(ctx, 'zo', 'ngo-sik6-zo-joek', 'ngo-gam-jat-tai-zo-ji-sang', 'ngo-cold-zo'),
+            ctx.words('zo', 'ngo-sik6-zo-joek', 'ngo-gam-jat-tai-zo-ji-sang', 'ngo-cold-zo'),
             p(`Ask "yet?" with ${zh('未', 'mei6')} at the end. Answer with the verb and 咗, or 未, "not yet":`),
-            words(ctx, 'mei', 'nei-sik6-zo-joek-mei-aa', 'sik6-zo', 'ngo-mei-sik6-joek'),
+            ctx.words('mei', 'nei-sik6-zo-joek-mei-aa', 'sik6-zo', 'ngo-mei-sik6-joek'),
             tip(`<strong>食咗飯未呀？</strong> "Have you eaten yet?" is also how friends say hello. Answer 食咗 or 未呀.`),
-            words(ctx, 'nei-sik6-zo-rice-mei-aa'),
+            ctx.words('nei-sik6-zo-rice-mei-aa'),
           );
         },
       },
@@ -98,10 +97,10 @@
         render(el, ctx) {
           el.append(
             p(`How often, with ${zh('次', 'ci3')} (times), and how many with ${zh('粒', 'nap1')}, the measure word for pills. ${zh('每', 'mui5')} is "each":`),
-            words(ctx, 'ci', 'nap', 'mui'),
+            ctx.words('ci', 'nap', 'mui'),
             ctx.grid(V.rx.filter(e => [2, 3].includes(e.times))),
             p('And some advice:'),
-            words(ctx, 'nei-jiu-sik6-joek', 'nei-jiu-do-di-jau-sik', 'ngo-jiu-heoi-hospital', 'zou-di-hou-faan-laa1', 'bou-zung'),
+            ctx.words('nei-jiu-sik6-joek', 'nei-jiu-do-di-jau-sik', 'ngo-jiu-heoi-hospital', 'zou-di-hou-faan-laa1', 'bou-zung'),
           );
         },
       },

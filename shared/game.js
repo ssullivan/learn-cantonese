@@ -29,7 +29,14 @@
  *   Game.choose(ctx, answer, options, label, gridCls = 'choice-grid')
  *                a grid of .choice buttons, one per option (entries with
  *                an id), showing label(option) HTML. Tapping one ends the
- *                round (right if it is `answer`); sets ctx.reveal
+ *                round (right if it is `answer`); sets ctx.reveal, keeping
+ *                one set before it (Game.playOnReveal)
+ *   Game.pic(entry, className?)
+ *                HTML for the entry's picture, its English as alt text
+ *                (with class `className` if given)
+ *   Game.playOnReveal(ctx, entry)
+ *                say the entry when the round's answer is shown, besides
+ *                what ctx.reveal does; before or after Game.choose
  *   Game.answerText(entry)   HTML for ctx.answer: "三點半 saam1… is 3:30."
  *                plus the entry's note
  *   Game.chart([[entry, yes], ...], label)
@@ -368,8 +375,21 @@
       });
       grid.append(b);
     });
-    ctx.reveal = () => grid.querySelector(`[data-id="${answer.id}"]`).classList.add('right');
+    // Keep a reveal set before (Game.playOnReveal), whichever came first.
+    const revealBefore = ctx.reveal;
+    ctx.reveal = () => {
+      grid.querySelector(`[data-id="${answer.id}"]`).classList.add('right');
+      revealBefore?.();
+    };
     return grid;
+  }
+
+  // className only if a string: .map(pic) passes an index.
+  const pic = (entry, className) => `<img${typeof className === 'string' && className ? ` class="${Canto.esc(className)}"` : ''} src="${Canto.imgSrc(entry)}" alt="${Canto.esc(entry.english)}">`;
+
+  function playOnReveal(ctx, entry) {
+    const revealBefore = ctx.reveal;
+    ctx.reveal = () => { revealBefore?.(); ctx.play(entry); };
   }
 
   const answerText = e => `${Canto.zh(e.hanzi, e.jyutping)} is ${Canto.esc(e.english)}.${e.note ? ' ' + Canto.esc(e.note) : ''}`;
@@ -384,5 +404,5 @@
     return box;
   }
 
-  window.Game = { init, choose, answerText, chart, mark, celebrate };
+  window.Game = { init, choose, pic, playOnReveal, answerText, chart, mark, celebrate };
 })();

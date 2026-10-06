@@ -3,7 +3,6 @@
   const V = window.VOCAB;
   const { p, tip } = Learn;
   const { el: $, zh } = Canto;
-  const words = (ctx, ...ids) => ctx.grid(ids.map(ctx.entry));
   const said = (ctx, id) => { const e = ctx.entry(id); return zh(e.hanzi, e.jyutping); };
 
   Learn.init({
@@ -17,7 +16,7 @@
         render(el, ctx) {
           el.append(
             p(`${zh('動物', 'dung6 mat6')} are animals. Some you know already: 牛, 雞 and 魚 (Unit 1), 貓 and 狗 (Unit 5).`),
-            words(ctx, 'pig', 'horse', 'sheep', 'cow', 'chicken', 'cat', 'dog', 'mouse'),
+            ctx.words('pig', 'horse', 'sheep', 'cow', 'chicken', 'cat', 'dog', 'mouse'),
             tip(`<strong>馬 maa5, 媽 maa1.</strong> A horse and a mum differ only in tone. 馬 is low rising, 媽 high and level.`),
           );
         },
@@ -27,9 +26,9 @@
         title: 'At the zoo · 動物園',
         render(el, ctx) {
           el.append(
-            words(ctx, 'dung-mat-jyun', 'tiger', 'panda', 'monkey', 'bird', 'rabbit', 'snake', 'fish'),
+            ctx.words('dung-mat-jyun', 'tiger', 'panda', 'monkey', 'bird', 'rabbit', 'snake', 'fish'),
             p('And one you won\'t see at the zoo:'),
-            words(ctx, 'dragon'),
+            ctx.words('dragon'),
             tip(`<strong>Little ones get 仔:</strong> ${said(ctx, 'bird')}, ${said(ctx, 'rabbit')}. And 老 in ${said(ctx, 'tiger')} and ${said(ctx, 'mouse')} doesn't mean old.`),
           );
         },
@@ -40,10 +39,10 @@
         render(el, ctx) {
           el.append(
             p(`Most animals are counted with ${zh('隻', 'zek3')}. Long, thin ones take ${zh('條', 'tiu4')}, like trousers and roads (Unit 5).`),
-            words(ctx, 'one-tiger', 'one-bird', 'one-snake', 'one-dragon', 'one-fish'),
-            words(ctx, 'n3-tiger', 'n6-snake', 'n2-sheep', 'n2-mouse'),
+            ctx.words('one-tiger', 'one-bird', 'one-snake', 'one-dragon', 'one-fish'),
+            ctx.words('n3-tiger', 'n6-snake', 'n2-sheep', 'n2-mouse'),
             p(`Which one? ${zh('邊', 'bin1')} + the measure word:`),
-            words(ctx, 'bin-zek', 'bin-tiu'),
+            ctx.words('bin-zek', 'bin-tiu'),
           );
         },
       },
@@ -53,8 +52,8 @@
         render(el, ctx) {
           el.append(
             p(`${zh('會', 'wui5')} before a verb says what an animal can do. ${zh('唔會', 'm4 wui5')}: can't.`),
-            words(ctx, 'fei', 'jau4-water', 'paa-syu', 'haang', 'zau', 'tiu3'),
-            words(ctx, 'bird-wui-fei', 'fish-wui-jau4-water', 'monkey-wui-paa-syu', 'rabbit-wui-tiu3', 'tiger-wui-jau4-water',
+            ctx.words('fei', 'jau4-water', 'paa-syu', 'haang', 'zau', 'tiu3'),
+            ctx.words('bird-wui-fei', 'fish-wui-jau4-water', 'monkey-wui-paa-syu', 'rabbit-wui-tiu3', 'tiger-wui-jau4-water',
               'fish-m-wui-haang', 'pig-m-wui-fei'),
             tip('<strong>走 is run, 行 is walk.</strong> 馬會走: horses can run. In Mandarin 走 means walk, so watch out.'),
           );
@@ -66,9 +65,9 @@
         render(el, ctx) {
           el.append(
             p('Ask with 會唔會, and answer 會 or 唔會:'),
-            words(ctx, 'bird-wui-m-wui-fei-aa', 'panda-wui-m-wui-paa-syu-aa', 'snake-wui-m-wui-zau-aa', 'wui', 'm-wui'),
+            ctx.words('bird-wui-m-wui-fei-aa', 'panda-wui-m-wui-paa-syu-aa', 'snake-wui-m-wui-zau-aa', 'wui', 'm-wui'),
             p(`Which one can? ${zh('邊隻', 'bin1 zek3')} + 會:`),
-            words(ctx, 'bin-zek-wui-fei-aa', 'bin-zek-wui-paa-syu-aa'),
+            ctx.words('bin-zek-wui-fei-aa', 'bin-zek-wui-paa-syu-aa'),
           );
         },
       },
@@ -79,11 +78,11 @@
           const order = V.zodiac.map(z => { const [, , sign] = z.words; return said(ctx, sign); }).join(' ');
           el.append(
             p(`Each year belongs to one of twelve animals, in this order: ${order}. 2020 was the Rat, and 2026 is the Horse.`),
-            words(ctx, 'saang-ciu', 'suk', 'nei-suk-mat-je-aa', 'n2-n0-n2-n6-nin-hai-horse-nin'),
+            ctx.words('saang-ciu', 'suk', 'nei-suk-mat-je-aa', 'n2-n0-n2-n6-nin-hai-horse-nin'),
             p(`Say yours with ${zh('屬', 'suk6')}:`),
             ctx.grid(V.zodiac),
             tip('<strong>Four go by a shorter name</strong> in the zodiac: 鼠 (老鼠), 虎 (老虎), 兔 (兔仔) and 猴 (馬騮).'),
-            words(ctx, 'z-syu', 'z-fu', 'z-tou', 'z-hau'),
+            ctx.words('z-syu', 'z-fu', 'z-tou', 'z-hau'),
           );
         },
       },
@@ -92,7 +91,7 @@
         title: 'Going to the zoo',
         render(el, ctx) {
           el.append(
-            words(ctx, 'ngo-soeng-heoi-dung-mat-jyun', 'dung-mat-jyun-jau-panda', 'dung-mat-jyun-jau-loeng-zek-panda',
+            ctx.words('ngo-soeng-heoi-dung-mat-jyun', 'dung-mat-jyun-jau-panda', 'dung-mat-jyun-jau-loeng-zek-panda',
               'nei-zeoi-zung-ji-mat-je-dung-mat-aa', 'ngo-zeoi-zung-ji-panda', 'tiger-bei-cat-daai', 'horse-bei-pig-faai'),
           );
         },

@@ -167,6 +167,6 @@ Units.add(11, {
   // kan6. 轉 on its own comes out zyun2, and 喺 in these two like hai5:
   // they read right from their jyutping.
   Units.phonemes(V, ['bus', 'taxi', 'kan']);
-  const byId = Object.fromEntries(Object.values(V).filter(Array.isArray).flat().map(e => [e.id, e]));
+  const byId = Units.byId(V);
   for (const id of ['zyun', 'hai2-zo-bin', 'bank-hai2-deoi-min']) byId[id].phoneme = true;
 })(window.VOCAB);

@@ -129,7 +129,7 @@ Units.add(10, {
   const owned = [...V.own.filter(e => e.measure), ...V.things];
   V.mine = Object.entries(OWNER).flatMap(([who, whose]) =>
     owned.map(t => say(`${who} ${t.measure} ${t.id}`, `${whose} ${t.english}`, { thing: t.id })));
-  const byId = Object.fromEntries(V.mine.map(e => [e.id, e]));
+  const byId = Units.byId(V.mine);
   byId['ngo-go-son'].note = 'Person + measure word + noun: 我個仔. 我嘅仔 is right too, but less usual.';
   byId['ngo-zek-cat'].note = 'The measure word does the work of 嘅: 我隻貓, my cat.';
 

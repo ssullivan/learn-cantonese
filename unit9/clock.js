@@ -2,8 +2,8 @@
 (function () {
   const V = window.VOCAB;
   const { el: $, esc, zh, pick, shuffle, imgSrc, speech } = Canto;
-  const { choose, answerText } = Game;
-  const byId = Object.fromEntries(Canto.entries(V).map(e => [e.id, e]));
+  const { choose, answerText, pic } = Game;
+  const byId = Units.byId(V);
   const pad = n => String(n).padStart(2, '0');
   const timeAt = (h, m) => byId[`t${pad(h)}${pad(m)}`];
   const said = e => zh(e.hanzi, e.jyutping);
@@ -17,15 +17,13 @@
     return [...near, ...rest].slice(0, count);
   }
 
-  const clockPic = t => `<img src="${imgSrc(t)}" alt="${esc(t.english)}">`;
-
   // Hear a time, tap its clock.
   const hear = pool => (stage, ctx) => {
     const [e] = pick(pool, 1);
     const say = () => ctx.play(e);
     ctx.answer = answerText(e);
     stage.replaceChildren(speech('聽', '幾點？ Which clock shows it?', say),
-      choose(ctx, e, shuffle([e, ...others(e, pool, 3)]), clockPic, 'pic-grid pics'));
+      choose(ctx, e, shuffle([e, ...others(e, pool, 3)]), pic, 'pic-grid pics'));
     return say();
   };
 

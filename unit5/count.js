@@ -2,7 +2,7 @@
 (function () {
   const V = window.VOCAB;
   const { el: $, esc, zh, pick, shuffle, imgSrc, speech } = Canto;
-  const byId = Object.fromEntries(Canto.entries(V).map(e => [e.id, e]));
+  const byId = Units.byId(V);
   const MAX = 9;
 
   // `n` of thing `t`, counted with measure `m` (its own unless given).

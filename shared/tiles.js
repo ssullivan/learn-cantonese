@@ -1,6 +1,6 @@
 /*
  * tiles.js — a game.js round where you build a sentence from word tiles.
- * Any unit can use it. Needs core.js, audio.js, game.js; with `say`, also
+ * Any unit can use it. Needs core.js, audio.js, game.js, units.js; with `say`, also
  * pitch.js and sayit.js. Styles: game.css (.tile-line, .tile-bank, .tile),
  * and sayit.css with `say`.
  *
@@ -26,7 +26,7 @@
   const { el: $, esc, zh, shuffle, pick } = Canto;
 
   function round({ pool, vocab, decoys = [], extra = 2, say = false }) {
-    const byId = Object.fromEntries(Canto.entries(vocab).map(e => [e.id, e]));
+    const byId = Units.byId(vocab);
     return (stage, ctx) => {
       const [e] = pick(pool, 1);
       if (say) ctx.after = SayIt.practice(e);

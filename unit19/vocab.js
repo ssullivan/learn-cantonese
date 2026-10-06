@@ -98,7 +98,7 @@ Units.add(19, {
 // Derived: 一隻老虎, counts, 邊隻, the zodiac, 會 and 會唔會, and sentences.
 // Audio is generated like any entry; art.mjs draws the animals and the zoo.
 (V => {
-  const byId = Object.fromEntries(Object.values(V).filter(Array.isArray).flat().map(e => [e.id, e]));
+  const byId = Units.byId(V);
   const one = t => t.counted?.[0] ?? `a ${t.english.replace(/;.*/, '')}`;
   const many = t => t.counted?.[1] ?? `${t.english.replace(/;.*/, '')}s`;
   const count = (n, t) => {

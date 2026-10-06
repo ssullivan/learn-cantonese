@@ -27,7 +27,7 @@
 import { createHash } from 'node:crypto';
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
-import { ROOT, unitDirs, loadVocab, entries, own, azureConfig, minimaxConfig, retrying, azureAgain } from './site.mjs';
+import { ROOT, unitDirs, loadVocab, entries, own, azureConfig, minimaxConfig, retrying, shouldRetryAzure } from './site.mjs';
 
 const FORMAT = 'audio-24khz-48kbitrate-mono-mp3';
 // Every clip so far was made in this format, before the format counted
@@ -74,7 +74,7 @@ async function synth({ key, region }, ssml) {
     });
     if (res.ok) return Buffer.from(await res.arrayBuffer());
     throw Object.assign(new Error(`Azure TTS ${res.status}: ${await res.text()}`), { status: res.status });
-  }, azureAgain);
+  }, shouldRetryAzure);
 }
 
 // MiniMax: Cantonese with the jyutping of every syllable (without it the
@@ -98,7 +98,7 @@ async function minimax({ key }, request) {
     if (out?.base_resp?.status_code === 0) return Buffer.from(out.data.audio, 'hex');
     const msg = `MiniMax TTS ${res.status} ${out?.base_resp?.status_code ?? ''}: ${out?.base_resp?.status_msg ?? await res.text()}`;
     throw Object.assign(new Error(msg), { status: res.ok ? undefined : res.status });
-  }, (err, tries) => (err.status === 429 || err.status >= 500) && tries < 5);
+  }, (error, failures) => (error.status === 429 || error.status >= 500) && failures < 5);
 }
 
 // Make MiniMax takes until one passes audio-check; keep the best.

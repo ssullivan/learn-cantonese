@@ -2,16 +2,10 @@
 (function () {
   const V = window.VOCAB;
   const { el: $, esc, zh, pick, shuffle, imgSrc, speech } = Canto;
-  const { choose } = Game;
-  const byId = Object.fromEntries(Canto.entries(V).map(e => [e.id, e]));
+  const { choose, pic, playOnReveal } = Game;
+  const byId = Units.byId(V);
   const said = e => zh(e.hanzi, e.jyutping);
-  const pic = e => `<img src="${imgSrc(e)}" alt="${esc(e.english)}">`;
   const others = (e, pool, n) => pick(pool.filter(o => o !== e), n);
-  // Play `e` once the right answer is shown, however the round ended.
-  const playOnReveal = (ctx, e) => {
-    const show = ctx.reveal;
-    ctx.reveal = () => { show(); ctx.play(e); };
-  };
 
   // Hear it, tap it.
   const hear = (stage, ctx) => {

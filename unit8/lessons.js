@@ -3,7 +3,6 @@
   const V = window.VOCAB;
   const { p, tip } = Learn;
   const { el: $, zh } = Canto;
-  const words = (ctx, ...ids) => ctx.grid(ids.map(ctx.entry));
 
   Learn.init({
     root: document.getElementById('learn'),
@@ -16,9 +15,9 @@
         render(el, ctx) {
           el.append(
             p(`A ${zh('茶餐廳', 'caa4 caan1 teng1')} is a Hong Kong café: milk tea, toast, noodles and set meals, served fast. Call the ${zh('伙記', 'fo2 gei3')} over to order.`),
-            words(ctx, 'cha-chaan-teng', 'waiter'),
+            ctx.words('cha-chaan-teng', 'waiter'),
             p(`Two verbs: ${zh('飲', 'jam2')}, to drink (as in 飲茶), and ${zh('食', 'sik6')}, to eat. The waiter asks:`),
-            words(ctx, 'jam2', 'sik6', 'nei-jam2-mat-je-aa', 'nei-sik6-mat-je-aa'),
+            ctx.words('jam2', 'sik6', 'nei-jam2-mat-je-aa', 'nei-sik6-mat-je-aa'),
           );
         },
       },
@@ -39,12 +38,12 @@
         render(el, ctx) {
           el.append(
             p(`${zh('凍', 'dung3')} is iced and ${zh('熱', 'jit6')} hot. It goes <em>before</em> the drink:`),
-            words(ctx, 'dung', 'jit'),
+            ctx.words('dung', 'jit'),
             ctx.grid(V.served),
             p(`The waiter may ask with ${zh('定', 'ding6')}, "or":`),
-            words(ctx, 'ding', 'dung-ding-jit-aa'),
+            ctx.words('ding', 'dung-ding-jit-aa'),
             p(`Iced drinks cost a little more. The menu says so with ${zh('加', 'gaa1')}, "add":`),
-            words(ctx, 'dung-jam', 'gaa1', 'dung-jam-gaa1-p200'),
+            ctx.words('dung-jam', 'gaa1', 'dung-jam-gaa1-p200'),
           );
         },
       },
@@ -67,7 +66,7 @@
         render(el, ctx) {
           el.append(
             p(`Change a drink with ${zh('走', 'zau2')} (leave it out), ${zh('少', 'siu2')} (less) or ${zh('多', 'do1')} (more), and what to change: ${zh('甜', 'tim4')} (sweet) or ${zh('冰', 'bing1')} (ice).`),
-            words(ctx, 'zau', 'siu', 'do', 'sweet', 'bing'),
+            ctx.words('zau', 'siu', 'do', 'sweet', 'bing'),
             ctx.grid(V.mods),
             tip(`<strong>走 is "go away".</strong> 走甜 sends the sugar away: no sugar. 走冰, no ice.`),
           );
@@ -79,10 +78,10 @@
         render(el, ctx) {
           el.append(
             p('Hot or iced, then the drink, then what to change:'),
-            words(ctx, 'jit-milk-tea-zau-sweet', 'dung-lemon-tea-siu-sweet', 'dung-coffee-zau-bing', 'dung-yuenyeung-do-bing'),
+            ctx.words('jit-milk-tea-zau-sweet', 'dung-lemon-tea-siu-sweet', 'dung-coffee-zau-bing', 'dung-yuenyeung-do-bing'),
             tip(`<strong>凍 + 奶茶 + 少甜.</strong> 凍 comes first, 走 / 少 / 多 last: ${zh('凍奶茶少甜', 'dung3 naai5 caa4 siu2 tim4')}.`),
             p(`Start with ${zh('我要', 'ngo5 jiu3')} (Unit 6) or ${zh('唔該', 'm4 goi1')}:`),
-            words(ctx, 'ngo-jiu-n1-bui-dung-milk-tea', 'm-goi-dung-lemon-tea-siu-sweet', 'ngo-jiu-n1-go-pineapple-butter',
+            ctx.words('ngo-jiu-n1-bui-dung-milk-tea', 'm-goi-dung-lemon-tea-siu-sweet', 'ngo-jiu-n1-go-pineapple-butter',
               'ngo-jiu-n1-wun-spam-egg-noodles', 'n1-fan6-toast-n1-bui-coffee', 'ngo-m-jiu-bing'),
           );
         },
@@ -93,12 +92,12 @@
         render(el, ctx) {
           el.append(
             p('Eat at the table, or take it with you?'),
-            words(ctx, 'tong-sik', 'ling-zau', 'tong-sik-ding-ling-zau-aa', 'ngo-jiu-ling-zau'),
+            ctx.words('tong-sik', 'ling-zau', 'tong-sik-ding-ling-zau-aa', 'ngo-jiu-ling-zau'),
             p(`${zh('好', 'hou2')} before a verb makes "good to …": ${zh('好飲', 'hou2 jam2')}, ${zh('好食', 'hou2 sik6')}.`),
             ctx.grid(V.tasty),
-            words(ctx, 'ni-bui-milk-tea-hou-jam2', 'pineapple-butter-hou-hou-sik6'),
+            ctx.words('ni-bui-milk-tea-hou-jam2', 'pineapple-butter-hou-hou-sik6'),
             p('And when you\'re done:'),
-            words(ctx, 'bill'),
+            ctx.words('bill'),
           );
         },
       },

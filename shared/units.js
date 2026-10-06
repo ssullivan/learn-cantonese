@@ -18,6 +18,9 @@
  *                         taken in the borrowing unit (unit 19 has 條 and
  *                         跳, both tiu): file: id keeps its audio and
  *                         picture (Canto.audioSrc uses file ?? id)
+ *   Units.byId(vocab)     { id: entry } for every entry in every list of a
+ *                         vocab object, or of one list of entries (a
+ *                         vocab.js part way through, a page, a game)
  *   Units.sentences(vocab)
  *                         say(ids, english, extra?): a sentence entry made
  *                         of the entries with those space-separated ids
@@ -39,6 +42,9 @@
 (function (root) {
   const units = root.UNITS = root.UNITS || {};
 
+  const entriesOf = vocab => Object.values(vocab).filter(Array.isArray).flat();
+  const byId = vocabOrList => Object.fromEntries((Array.isArray(vocabOrList) ? vocabOrList : entriesOf(vocabOrList)).map(entry => [entry.id, entry]));
+
   function add(n, vocab) {
     units[n] = vocab;
     root.VOCAB = vocab;
@@ -47,17 +53,17 @@
 
   function word(n, id, as) {
     if (!units[n]) throw new Error(`unit ${n}'s vocab.js is not loaded`);
-    const entry = Object.values(units[n]).filter(Array.isArray).flat().find(e => e.id === id);
+    const entry = entriesOf(units[n]).find(e => e.id === id);
     if (!entry) throw new Error(`unit ${n} has no word ${id}`);
     return { ...entry, unit: entry.unit ?? n, ...(as && { id: as, file: entry.file ?? id }) };
   }
 
   function sentences(vocab) {
-    const byId = Object.fromEntries(Object.values(vocab).filter(Array.isArray).flat().map(e => [e.id, e]));
+    const entryById = byId(vocab);
     return (ids, english, extra) => {
       const ws = ids.split(' ').map(id => {
-        if (!byId[id]) throw new Error(`no word ${id} for "${english}"`);
-        return byId[id];
+        if (!entryById[id]) throw new Error(`no word ${id} for "${english}"`);
+        return entryById[id];
       });
       return {
         id: ids.replace(/ /g, '-'), words: ws.map(w => w.id),
@@ -70,7 +76,7 @@
 
   function phonemes(vocab, ids) {
     const misread = new Set(ids);
-    for (const e of Object.values(vocab).filter(Array.isArray).flat()) {
+    for (const e of entriesOf(vocab)) {
       if (misread.has(e.id)) e.phoneme = true;
       else if (e.words?.some(id => misread.has(id))) {
         e.phoneme = e.words.filter(id => misread.has(id));
@@ -79,5 +85,5 @@
     }
   }
 
-  root.Units = { add, word, sentences, phonemes };
+  root.Units = { add, word, byId, sentences, phonemes };
 })(typeof window !== 'undefined' ? window : globalThis);

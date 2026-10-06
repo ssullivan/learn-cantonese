@@ -29,6 +29,11 @@ const throws = f => { try { f(); return false; } catch { return true; } };
 ok('unknown word throws', throws(() => Units.word(3, 'dog')));
 ok('unloaded unit throws', throws(() => Units.word(9, 'cat')));
 
+const byId = Units.byId({ voice: 'x', words: [{ id: 'a' }, { id: 'b' }], more: [{ id: 'c' }] });
+ok('byId has every entry of every list', Object.keys(byId).join() === 'a,b,c', Object.keys(byId).join());
+ok('byId of one list', Object.keys(Units.byId([{ id: 'x' }, { id: 'y' }])).join() === 'x,y');
+ok('byId gives the entries themselves', Units.byId(sb.UNITS[3]).cat === sb.UNITS[3].words[0]);
+
 const v7 = loadVocab('unit7');
 const mGoi = entries(v7).find(e => e.id === 'm-goi');
 ok('loadVocab resolves unit 7 borrowing 唔該', mGoi?.unit === 2 && !own(mGoi, 'unit7') && own(mGoi, 'unit2'), JSON.stringify(mGoi?.unit));

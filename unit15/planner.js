@@ -1,11 +1,10 @@
 /* Unit 15 game: Day Planner. Hear what someone does and when, put two things in the order they happen, read a day planner to say what they're doing now (緊) and what's done (咗) or not yet (未), answer 過 questions from a chart, and build sentences (shared/tiles.js). Runs on shared/game.js. */
 (function () {
   const V = window.VOCAB;
-  const { el: $, esc, zh, pick, shuffle, imgSrc, picButton, speech } = Canto;
-  const { choose, answerText, chart } = Game;
-  const byId = Object.fromEntries(Canto.entries(V).map(e => [e.id, e]));
+  const { el: $, esc, zh, pick, shuffle, picButton, speech } = Canto;
+  const { choose, answerText, chart, pic } = Game;
+  const byId = Units.byId(V);
   const said = e => zh(e.hanzi, e.jyutping);
-  const pic = (e, cls = '') => `<img${cls && ` class="${cls}"`} src="${imgSrc(e)}" alt="${esc(e.english)}">`;
   const pad = n => String(n).padStart(2, '0');
 
   // Unit 9's clock for a time in minutes after midnight (12-hour clock).

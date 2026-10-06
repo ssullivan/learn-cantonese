@@ -1,7 +1,7 @@
 /*
  * measures.js — a game.js round: see a thing, say "one of it" with the
  * right measure word (一籠蝦餃, 一隻貓). Any unit can use it. Needs core.js,
- * audio.js, game.js, numbers.js.
+ * audio.js, game.js, numbers.js, units.js.
  *
  *   Measures.round({ pool, vocab, choices?, prompt?, owner? })   a round for Game.init
  *     pool     things to count: entries with a picture and `measure`, the
@@ -20,7 +20,7 @@
   const { el: $, esc, zh, pick, shuffle, imgSrc, speech } = Canto;
 
   function round({ pool, vocab, choices = 2, prompt, owner }) {
-    const byId = Object.fromEntries(Canto.entries(vocab).map(e => [e.id, e]));
+    const byId = Units.byId(vocab);
     const measures = [...new Set(pool.map(t => t.measure))].map(id => byId[id]);
     const ask = prompt ?? ((t, one) => `How do you say <strong>${esc(one.english)}</strong>?`);
 

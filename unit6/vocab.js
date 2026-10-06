@@ -107,7 +107,7 @@ Units.add(6, {
 
   // 一個橙: what the stallholder is selling. Unit 5 already has them for
   // its things (and 魚).
-  const measure = Object.fromEntries(V.measures.map(m => [m.id, m]));
+  const measure = Units.byId(V.measures);
   V.ones = V.things.map(t => {
     if (t.unit) return Units.word(5, `one-${t.id}`);
     const { hanzi, jyutping } = Canto.number(1, { measure: measure[t.measure] });

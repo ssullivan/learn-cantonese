@@ -13,7 +13,7 @@
  *   azureConfig()    { key, region } for Azure Speech, from the environment
  *                    or ~/.config/learning-cantonese/config.env; exits if
  *                    missing (tts.mjs, audio-check.mjs)
- *   azureAgain(error, tries)
+ *   shouldRetryAzure(error, failures)
  *                    whether to retry a failed Azure request (for
  *                    retrying): busy (429) or failing (5xx) up to 5 more
  *                    times, and 401, which Azure sometimes answers to a
@@ -23,11 +23,11 @@
  *   secrets()        { azureKey, azureRegion, minimaxKey }, undefined when
  *                    not set, without exiting (check.mjs, to make sure no
  *                    file holds a key)
- *   retrying(attempt, again, sleep?)
+ *   retrying(attempt, shouldRetry, sleepFor?)
  *                    runs attempt() until it returns, waiting 2 s, 4 s,
- *                    8 s... after each error while again(error, tries so
- *                    far) says to try once more (tts.mjs: busy or flaky
- *                    TTS services); sleep(ms) can be replaced in tests
+ *                    8 s... after each error while shouldRetry(error,
+ *                    failures so far) says to try once more (tts.mjs: busy
+ *                    or flaky TTS services); sleepFor(ms) can be replaced in tests
  *   langTools(args, input)
  *                    runs audio-lang-tools' `altools <args>` (the separate
  *                    repo at $AUDIO_LANG_TOOLS or ~/audio-lang-tools, with
@@ -101,8 +101,8 @@ export function azureConfig() {
   return { key, region };
 }
 
-export const azureAgain = (err, tries) =>
-  err.status === 401 ? tries < 2 : (err.status === 429 || err.status >= 500) && tries < 5;
+export const shouldRetryAzure = (error, failures) =>
+  error.status === 401 ? failures < 2 : (error.status === 429 || error.status >= 500) && failures < 5;
 
 export function minimaxConfig() {
   const { minimaxKey: key } = secrets();
@@ -113,15 +113,15 @@ export function minimaxConfig() {
   return { key };
 }
 
-const wait = ms => new Promise(r => setTimeout(r, ms));
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
-export async function retrying(attempt, again, sleep = wait) {
-  for (let tries = 0; ; tries++) {
+export async function retrying(attempt, shouldRetry, sleepFor = sleep) {
+  for (let failures = 0; ; failures++) {
     try {
       return await attempt();
-    } catch (err) {
-      if (!again(err, tries)) throw err;
-      await sleep(2000 * 2 ** tries);
+    } catch (error) {
+      if (!shouldRetry(error, failures)) throw error;
+      await sleepFor(2000 * 2 ** failures);
     }
   }
 }

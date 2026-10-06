@@ -94,8 +94,7 @@ Units.add(20, {
 // Derived: 一條香蕉, weights (半斤 to 三斤), prices per 斤, orders and what
 // they cost, 啲, and sentences. Audio is generated like any entry.
 (V => {
-  const all = () => Object.fromEntries(Object.values(V).filter(Array.isArray).flat().map(e => [e.id, e]));
-  let byId = all();
+  let byId = Units.byId(V);
   const produce = [...V.fruit, ...V.veg];
   const one = t => t.counted?.[0] ?? `a ${t.english}`;
   const many = t => t.counted?.[1] ?? `${t.english}s`;
@@ -127,7 +126,7 @@ Units.add(20, {
   for (const [t, w] of orderWeight) amounts.add(t.catty * w.n);
   V.prices = [...amounts].sort((a, b) => a - b).map(price);
 
-  byId = all();
+  byId = Units.byId(V);
   let say = Units.sentences(V);
   const priceOf = n => byId[`p${Math.round(n * 100)}`];
   // 十二蚊一斤: what a stall's sign says.
@@ -165,6 +164,6 @@ Units.add(20, {
   // and 棵 (po1 in speech; the voice reads the dictionary's fo2), with
   // every 一棵 phrase.
   Units.phonemes(V, ['cin', 'peng', 'po']);
-  byId = all();
+  byId = Units.byId(V);
   for (const e of V.ones) if (!e.unit && byId[byId[e.thing].measure].phoneme) e.phoneme = true;
 })(window.VOCAB);

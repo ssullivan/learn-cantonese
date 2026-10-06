@@ -1,25 +1,19 @@
 /* Unit 18 game: Which Is Bigger. Hear 邊個平啲呀？ and tap the one, find the biggest or cheapest with 最, say whether a comparison is right (啱) or wrong, choose 好多 or 少少, work out which one 冇…咁 means, say how much older a brother or sister is, and build sentences (shared/tiles.js). Runs on shared/game.js. What each thing costs, how big and fast it is, and each person's age and height come from vocab.js. */
 (function () {
   const V = window.VOCAB;
-  const { el: $, esc, zh, pick, shuffle, imgSrc, speech, confusable } = Canto;
-  const { choose } = Game;
-  const byId = Object.fromEntries(Canto.entries(V).map(e => [e.id, e]));
+  const { el: $, esc, zh, pick, shuffle, speech, confusable } = Canto;
+  const { choose, playOnReveal, pic } = Game;
+  const byId = Units.byId(V);
   const said = e => zh(e.hanzi, e.jyutping);
   const tell = e => `${said(e)} ${esc(e.english)}${e.note ? ' ' + esc(e.note) : ''}`;
-  // Play `e` once the right answer is shown, however the round ended.
-  const playOnReveal = (ctx, e) => {
-    const show = ctx.reveal;
-    ctx.reveal = () => { show(); ctx.play(e); };
-  };
 
   // A tag for the scales you can't see in a picture; sizes and speeds are common sense.
   const TAG = { price: n => `$${n % 1 ? n.toFixed(2) : n}`, age: n => `${n}歲`, height: n => `${n}cm` };
   // A thing or person: its picture (or its characters, for 我), with a tag
   // for `scale` if it has one. `value` overrides the entry's own.
   const look = (e, scale, value = e[scale]) => {
-    const pic = e.img === false ? `<span class="pic-word" lang="zh-HK">${esc(e.hanzi)}</span>`
-      : `<img src="${imgSrc(e)}" alt="${esc(e.english)}">`;
-    return pic + (TAG[scale] && value != null ? `<span class="tag">${TAG[scale](value)}</span>` : '');
+    const pictureOrWord = e.img === false ? `<span class="pic-word" lang="zh-HK">${esc(e.hanzi)}</span>` : pic(e);
+    return pictureOrWord + (TAG[scale] && value != null ? `<span class="tag">${TAG[scale](value)}</span>` : '');
   };
   const side = (...items) => $('div', 'versus', items.map(([e, scale, value]) => `<div class="versus-item">${look(e, scale, value)}</div>`).join(''));
 

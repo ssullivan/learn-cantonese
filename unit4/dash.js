@@ -2,7 +2,7 @@
 (function () {
   const V = window.VOCAB;
   const { el: $, esc, zh, pick, shuffle, confusable, speech } = Canto;
-  const byId = Object.fromEntries(Canto.entries(V).map(e => [e.id, e]));
+  const byId = Units.byId(V);
   const all = [...V.numbers, ...V.big];
   const { choose, answerText } = Game;
 

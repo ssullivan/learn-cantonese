@@ -1,11 +1,10 @@
 /* Unit 14 game: Doctor's Visit. Hear body parts, aches and symptoms, say whose with a measure word (shared/measures.js), answer the doctor's 有冇 and 咗未 questions from a patient's chart, follow a prescription, and build sentences (shared/tiles.js). Runs on shared/game.js. */
 (function () {
   const V = window.VOCAB;
-  const { esc, zh, pick, shuffle, imgSrc, speech } = Canto;
-  const { choose, answerText, chart } = Game;
-  const byId = Object.fromEntries(Canto.entries(V).map(e => [e.id, e]));
+  const { esc, zh, pick, shuffle, speech } = Canto;
+  const { choose, answerText, chart, pic } = Game;
+  const byId = Units.byId(V);
   const said = e => zh(e.hanzi, e.jyutping);
-  const pic = e => `<img src="${imgSrc(e)}" alt="${esc(e.english)}">`;
 
   // Hear something, tap its picture among others from the same pool.
   const hear = (pool, ask) => (stage, ctx) => {

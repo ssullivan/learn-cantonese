@@ -2,7 +2,7 @@
 (function () {
   const V = window.VOCAB;
   const { el: $, esc, zh, pick, shuffle, picButton, speech } = Canto;
-  const byId = Object.fromEntries(Canto.entries(V).map(e => [e.id, e]));
+  const byId = Units.byId(V);
   const one = t => byId[`one-${t.id}`];
   const said = entries => entries.map(e => `${zh(e.hanzi, e.jyutping)} (${esc(e.english)})`).join(', ');
 

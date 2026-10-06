@@ -1,6 +1,6 @@
 /*
  * reply.js — Reply Match: pick what to say. Any unit can use it.
- * Needs core.js, audio.js, game.js. Reads two optional entry fields:
+ * Needs core.js, audio.js, game.js, units.js. Reads two optional entry fields:
  *   reply: [ids]   good answers when someone says this entry to you
  *   when: [text]   situations where you'd say it; the entry's picture
  *                  (if any) shows the first one
@@ -68,8 +68,7 @@
       const others = Object.values(byId).filter(o => !e.reply.includes(o.id));
       stage.replaceChildren(head, answers(ctx, right, others, choices, said));
       ctx.answer = `${good.map(g => zh(g.hanzi, g.jyutping)).join(' or ')} — ${good.map(g => esc(g.english)).join(' / ')}`;
-      const reveal = ctx.reveal;
-      ctx.reveal = () => { reveal(); ctx.play(right); };
+      Game.playOnReveal(ctx, right);
       return say();
     },
 
@@ -87,13 +86,12 @@
       const others = pool.filter(o => o.when && !o.when.includes(situation));
       stage.replaceChildren(...parts, answers(ctx, e, others, choices, said));
       ctx.answer = `${zh(e.hanzi, e.jyutping)} — ${esc(e.english)}`;
-      const reveal = ctx.reveal;
-      ctx.reveal = () => { reveal(); ctx.play(e); };
+      Game.playOnReveal(ctx, e);
     },
   };
 
   function init({ root, key, vocab, levels }) {
-    const byId = Object.fromEntries(Canto.entries(vocab).map(e => [e.id, e]));
+    const byId = Units.byId(vocab);
     Game.init({
       root,
       key,

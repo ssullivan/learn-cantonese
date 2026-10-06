@@ -1,11 +1,10 @@
 /* Unit 8 game: Order Up. Hear drinks and dishes, hot or iced, and fill in the order ticket a customer calls (凍檸茶少甜); order food with its measure word (shared/measures.js), answer the waiter, and build orders (shared/tiles.js). Runs on shared/game.js. */
 (function () {
   const V = window.VOCAB;
-  const { el: $, esc, zh, pick, shuffle, imgSrc, picButton, speech } = Canto;
-  const { choose, answerText } = Game;
-  const byId = Object.fromEntries(Canto.entries(V).map(e => [e.id, e]));
+  const { el: $, esc, zh, pick, shuffle, picButton, speech } = Canto;
+  const { choose, answerText, pic } = Game;
+  const byId = Units.byId(V);
   const said = e => zh(e.hanzi, e.jyutping);
-  const pic = e => `<img src="${imgSrc(e)}" alt="${esc(e.english)}">`;
 
   // Hear a drink or a dish, tap its picture.
   const menu = [...V.drinks, ...V.food];

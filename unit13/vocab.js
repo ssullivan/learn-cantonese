@@ -120,7 +120,7 @@ Units.add(13, {
 // Derived: 落雨 and the rest, temperatures, 好熱 and the rest, advice with
 // 啦, and sentences. Audio is generated like any entry.
 (V => {
-  const byId = Object.fromEntries(Object.values(V).filter(Array.isArray).flat().map(e => [e.id, e]));
+  const byId = Units.byId(V);
   let say = Units.sentences(V);
 
   // Rain and snow "come down" (落, Unit 11); a typhoon strikes.

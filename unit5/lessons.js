@@ -3,15 +3,14 @@
   const V = window.VOCAB;
   const { p, tip } = Learn;
   const { el: $, zh } = Canto;
-  const words = (ctx, ...ids) => ctx.grid(ids.map(ctx.entry));
-  const ones = (ctx, ...ids) => words(ctx, ...ids.map(id => `one-${id}`));
+  const ones = (ctx, ...ids) => ctx.words(...ids.map(id => `one-${id}`));
 
   // A step for some measure words: each one's card, then its things.
   const measureStep = (id, title, intro, ms, extra = () => []) => ({
     id, title,
     render(el, ctx) {
       const things = V.things.filter(t => ms.includes(t.measure));
-      el.append(p(intro), words(ctx, ...ms), ctx.grid(things), ones(ctx, ...things.map(t => t.id)), ...extra(ctx));
+      el.append(p(intro), ctx.words(...ms), ctx.grid(things), ones(ctx, ...things.map(t => t.id)), ...extra(ctx));
     },
   });
 
@@ -26,7 +25,7 @@
         render(el, ctx) {
           el.append(
             p(`English counts some things with a word in between: a <em>cup</em> of tea, a <em>sheet</em> of paper. Cantonese does it for everything. Between a number and a noun there is always a measure word, and you met the first one in Unit 4: ${zh('個', 'go3')}.`),
-            words(ctx, 'go'),
+            ctx.words('go'),
             ctx.grid(V.things.filter(t => t.measure === 'go')),
             ones(ctx, 'apple', 'ball'),
             tip(`<strong>一貓 is wrong:</strong> say ${zh('一隻貓', 'jat1 zek3 maau1')}. The measure word is chosen by what the thing is like: its shape, or how it comes. Tap each card to hear it.`),
@@ -45,9 +44,9 @@
         render(el, ctx) {
           el.append(
             p(`Leave out the number and the measure word means <em>the</em>: the one you both know about.`),
-            words(ctx, 'the-cat', 'the-book', 'the-car'),
+            ctx.words('the-cat', 'the-book', 'the-car'),
             p(`For more than one, or an amount, use ${zh('啲', 'di1')}. It never takes a number.`),
-            words(ctx, 'di'),
+            ctx.words('di'),
             tip(`<strong>隻貓 or 一隻貓?</strong> ${zh('一隻貓', 'jat1 zek3 maau1')} is "a cat" (or "one cat"); ${zh('隻貓', 'zek3 maau1')} is "the cat".`),
           );
         },
@@ -58,9 +57,9 @@
         render(el, ctx) {
           el.append(
             p(`${zh('呢', 'ni1')} (this) and ${zh('嗰', 'go2')} (that) go where the number goes, and the measure word stays:`),
-            words(ctx, 'ni', 'go2', 'this-cat', 'that-cat', 'this-book', 'that-car'),
+            ctx.words('ni', 'go2', 'this-cat', 'that-cat', 'this-book', 'that-car'),
             p(`With ${zh('個', 'go3')} and no noun, they mean "this one" and "that one". With ${zh('啲', 'di1')}, "these" and "those":`),
-            words(ctx, 'ni-go-hai-mat-je-aa', 'go2-go-hai-mat-je-aa', 'ni-di-hai-mat-je-aa'),
+            ctx.words('ni-go-hai-mat-je-aa', 'go2-go-hai-mat-je-aa', 'ni-di-hai-mat-je-aa'),
           );
         },
       },
@@ -70,9 +69,9 @@
         render(el, ctx) {
           el.append(
             p(`Put any number before the measure word. Two is always ${zh('兩', 'loeng5')} here, never 二:`),
-            words(ctx, 'two-cat', 'n5-cat', 'two-book', 'n9-book'),
+            ctx.words('two-cat', 'n5-cat', 'two-book', 'n9-book'),
             p(`${zh('有', 'jau5')} is "to have". Ask how many with ${zh('幾多', 'gei2 do1')} and the measure word:`),
-            words(ctx, 'jau', ...V.sentences.filter(s => s.words.includes('jau')).map(s => s.id)),
+            ctx.words('jau', ...V.sentences.filter(s => s.words.includes('jau')).map(s => s.id)),
           );
         },
       },

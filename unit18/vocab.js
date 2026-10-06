@@ -125,7 +125,7 @@ Units.add(18, {
   }));
 
   // English names: "the watermelon", "my dad", "I" (or "me" after "than").
-  const byId = Object.fromEntries([...V.things, ...V.people].map(e => [e.id, e]));
+  const byId = Units.byId([...V.things, ...V.people]);
   const name = id => byId[id].english.replace(/;.*/, '').replace(/ \(.*\)/, '');
   const the = (id, object) => id === 'ngo' ? (object ? 'me' : 'I')
     : V.people.includes(byId[id]) ? `my ${name(id)}` : `the ${name(id)}`;

@@ -3,7 +3,6 @@
   const V = window.VOCAB;
   const { p, tip } = Learn;
   const { el: $, zh } = Canto;
-  const words = (ctx, ...ids) => ctx.grid(ids.map(ctx.entry));
   const said = (ctx, id) => { const e = ctx.entry(id); return zh(e.hanzi, e.jyutping); };
 
   Learn.init({
@@ -16,7 +15,7 @@
         title: 'In the kitchen · 廚房',
         render(el, ctx) {
           el.append(
-            words(ctx, 'kitchen'),
+            ctx.words('kitchen'),
             p(`The appliances in a ${zh('廚房', 'cyu4 fong2')}, its ${zh('電器', 'din6 hei3')}:`),
             ctx.grid(V.appliances),
             tip(`<strong>Words in parts:</strong> ${zh('爐', 'lou4')} is a stove or an oven (焗爐, 微波爐, 多士爐), ${zh('機', 'gei1')} a machine (洗碗機), and ${zh('煲', 'bou1')} a pot (水煲, 電飯煲). ${zh('電', 'din6')} is electric.`),
@@ -29,7 +28,7 @@
         render(el, ctx) {
           el.append(
             p(`Machines are counted with ${zh('部', 'bou6')}; smaller things, like a pot, with ${zh('個', 'go3')}.`),
-            words(ctx, 'one-fridge', 'one-microwave', 'one-dishwasher', 'one-rice-cooker', 'one-kettle', 'one-toaster'),
+            ctx.words('one-fridge', 'one-microwave', 'one-dishwasher', 'one-rice-cooker', 'one-kettle', 'one-toaster'),
           );
         },
       },
@@ -39,7 +38,7 @@
         render(el, ctx) {
           el.append(
             p(`Kitchen verbs: ${said(ctx, 'ding1')} is to microwave, from the sound of its bell. ${said(ctx, 'bou1')} is to boil, and the pot. ${said(ctx, 'caau2')} is to stir-fry, and ${said(ctx, 'zing2')} to make.`),
-            words(ctx, 'ding1', 'bou1', 'baked', 'caau2', 'zing2', 'sai'),
+            ctx.words('ding1', 'bou1', 'baked', 'caau2', 'zing2', 'sai'),
             p('A verb and a thing, one for each appliance:'),
             ctx.grid(V.tasks),
             tip(`<strong>叮熱 and 雪凍:</strong> the verb, then what it makes the food: hot (熱) or cold (凍). 雪 is snow (Unit 13).`),
@@ -54,7 +53,7 @@
             p(`${said(ctx, 'jung')} is to use. Say what you use first, then the verb: ${zh('用水煲煲水', 'jung6 seoi2 bou1 bou1 seoi2')}, "use the kettle, boil water".`),
             ctx.grid(V.uses),
             p(`Ask with ${zh('用乜嘢', 'jung6 mat1 je5')}: use what?`),
-            words(ctx, 'jung-mat-je-bou1-rice-aa', 'jung-mat-je-sai-wun-aa'),
+            ctx.words('jung-mat-je-bou1-rice-aa', 'jung-mat-je-sai-wun-aa'),
             tip(`<strong>Where English puts "with" at the end</strong> ("boil water with the kettle"), Cantonese puts 用 + the thing before the verb.`),
           );
         },
@@ -67,7 +66,7 @@
             p(`${said(ctx, 'fan-zung')} counts minutes, like a measure word: ${zh('兩分鐘', 'loeng5 fan1 zung1')}.`),
             ctx.grid(V.minutes),
             p('How long goes <em>after</em> the verb:'),
-            words(ctx, 'jung-microwave-ding1-mins2', 'jung-oven-baked-mins20', 'caau2-mins3', 'jiu-ding1-gei-noi-aa'),
+            ctx.words('jung-microwave-ding1-mins2', 'jung-oven-baked-mins20', 'caau2-mins3', 'jiu-ding1-gei-noi-aa'),
             tip(`<strong>When, before; how long, after.</strong> ${said(ctx, 'ngo-t0600-bou1-rice')} puts the time before the verb (Unit 9), but ${zh('叮兩分鐘', 'ding1 loeng5 fan1 zung1')} puts how long after it.`),
           );
         },
@@ -78,9 +77,9 @@
         render(el, ctx) {
           el.append(
             p(`${said(ctx, 'fong')} (put) + the thing + ${said(ctx, 'jap6')} + where: put it into. ${said(ctx, 'lo2')} (take) + the thing + ${zh('出嚟', 'ceot1 lai4')}: take it out.`),
-            words(ctx, 'fong-di-orange-jap6-fridge', 'lo2-di-orange-ceot-lai', 'fong-go-cake-jap6-oven'),
+            ctx.words('fong-di-orange-jap6-fridge', 'lo2-di-orange-ceot-lai', 'fong-go-cake-jap6-oven'),
             p(`${said(ctx, 'hoi')} opens a door or turns a thing on; ${said(ctx, 'saan1')} closes it or turns it off.`),
-            words(ctx, 'hoi-fridge', 'hoi-oven', 'saan1-stove', 'saan1-zo-stove-mei-aa'),
+            ctx.words('hoi-fridge', 'hoi-oven', 'saan1-stove', 'saan1-zo-stove-mei-aa'),
           );
         },
       },

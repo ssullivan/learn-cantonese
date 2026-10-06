@@ -2,10 +2,9 @@
 (function () {
   const V = window.VOCAB;
   const { el: $, esc, zh, pick, shuffle, imgSrc, speech } = Canto;
-  const { choose, answerText } = Game;
-  const byId = Object.fromEntries(Canto.entries(V).map(e => [e.id, e]));
+  const { choose, answerText, pic } = Game;
+  const byId = Units.byId(V);
   const said = e => zh(e.hanzi, e.jyutping);
-  const treePic = e => `<img src="${imgSrc(e)}" alt="${esc(e.english)}">`;
 
   // Members in rows of the tree: wrong answers come from e's own row
   // first (爺爺 or 公公? 細佬 or 哥哥?), then any others.
@@ -22,7 +21,7 @@
     const say = () => ctx.play(e);
     ctx.answer = answerText(e);
     stage.replaceChildren(speech('聽', '邊個係邊個？ Who is it? Tap them on the tree.', say),
-      choose(ctx, e, shuffle([e, ...others(e, 3)]), treePic, 'pic-grid pics'));
+      choose(ctx, e, shuffle([e, ...others(e, 3)]), pic, 'pic-grid pics'));
     return say();
   }
 
@@ -46,7 +45,7 @@
     const say = () => ctx.play(r);
     ctx.answer = `${said(r)} (${esc(r.english)}) is ${said(e)}, ${esc(e.english)}.`;
     stage.replaceChildren(speech('聽', `${said(r)}<br>Who is it? Tap them on the tree.`, say),
-      choose(ctx, e, shuffle([e, ...others(e, 3, named)]), treePic, 'pic-grid pics'));
+      choose(ctx, e, shuffle([e, ...others(e, 3, named)]), pic, 'pic-grid pics'));
     return say();
   }
 

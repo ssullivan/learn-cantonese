@@ -7,7 +7,7 @@
   // Answer back: a picture of someone, and a question about them. Answer
   // 係呀, or 唔係呀 and what they are.
   const NOUNS = ['lou-si', 'hok-saang', 'hoeng-gong-jan'];
-  const byId = Object.fromEntries(Canto.entries(V).map(e => [e.id, e]));
+  const byId = Units.byId(V);
   const questions = [...V.maa, ...V.aNotA].filter(q => q.words[0] === 'keoi' && NOUNS.some(n => q.words.includes(n)));
   const option = parts => ({ parts, hanzi: parts.map(p => p.hanzi).join('，'), jyutping: parts.map(p => p.jyutping).join(' ') });
   const yes = option([byId['hai-aa']]);

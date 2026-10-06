@@ -149,7 +149,7 @@ Units.add(15, {
     const e = say(ids, english, { at, ing, done, img: undefined });
     return NOTE[e.id] ? { ...e, note: NOTE[e.id] } : e;
   });
-  const act = Object.fromEntries(V.activities.map(a => [a.id, a]));
+  const act = Units.byId(V.activities);
   // "I …": 'to brush your teeth' → 'brush my teeth'.
   const I = id => act[id].english.replace(/^to |;.*/g, '').replace('your', 'my');
 

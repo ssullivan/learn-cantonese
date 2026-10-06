@@ -101,7 +101,7 @@ window.VOCAB.measures.push({ ...Units.word(5, 'wun'), english: 'bowl',
 // Derived: "one basket/plate/bowl of X" for every dish (一籠蝦餃), used for
 // orders in the trolley game. Audio is generated like any other entry.
 (V => {
-  const m = Object.fromEntries(V.measures.map(x => [x.id, x]));
+  const m = Units.byId(V.measures);
   V.portions = V.items.map(i => ({
     id: `one-${i.id}`,
     hanzi: `一${m[i.measure].hanzi}${i.hanzi}`,
