@@ -7,8 +7,7 @@
  * .stars, .btn.small, .speech (a speech bubble), .tray (labelled box
  * of answer buttons), .prompt-pic (big picture to answer about),
  * .prompt-pic.far (the same, small and faded: "over there"),
- * .prompt-num (big numeral to answer about), .choice-grid.nums (numeral
- * answers: two columns even on phones), .pic-row (a group of small
+ * .prompt-num (big numeral to answer about), .pic-row (a group of small
  * pictures to count, in rows of five; smaller inside .choice-grid.groups answers), .tile-line / .tile-bank >
  * button.tile (word tiles, tiles.js; .tile-line.right / .wrong),
  * .stall (a .prompt-pic with an optional .price-tag), .till (a box that
@@ -139,8 +138,6 @@
 @media (max-width: 420px) { .pic-row img { width: 52px; height: 52px; } }
 .choice-grid.groups .pic-row img { width: 40px; height: 40px; }
 .prompt-num { margin: 0 0 16px; font-size: 56px; font-weight: 800; line-height: 1.1; color: var(--accent); font-variant-numeric: tabular-nums; }
-.choice-grid.nums { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.choice-grid.nums .choice { font-size: 28px; font-weight: 800; font-variant-numeric: tabular-nums; }
 
 /* Word tiles (tiles.js) */
 .tile-line, .tile-bank, .till { display: flex; flex-wrap: wrap; gap: 8px; max-width: 664px; }

@@ -15,7 +15,8 @@
  * Answers:  .pic-grid > button.pic-btn (Canto.picButton): .picked .right .wrong
  *           (red is only for .wrong: hover is a neutral border, mouse only,
  *           so a button under a finger after a tap never looks marked)
- *           .choice-grid > button.choice (text answers), same states
+ *           .choice-grid > button.choice (text answers), same states;
+ *           .choice-grid.nums: numeral answers, two columns even on phones
  * Tones:    .tone-chart (Canto.toneChart)
  * Text:     [lang="zh-HK"] gets the Chinese font; .jp is jyutping,
  *           its tone digits are <sup> (see Canto.jyutping in core.js).
@@ -214,6 +215,7 @@ a.card:hover { border-color: var(--accent); }
   .choice-grid { grid-template-columns: 1fr; }
 }
 .pic-grid.cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.choice-grid.nums { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .pic-btn, .choice {
   border: 2px solid var(--line);
   border-radius: var(--radius);
@@ -226,6 +228,7 @@ a.card:hover { border-color: var(--accent); }
 .pic-btn img { width: 100%; height: 100%; }
 .choice { padding: 14px 16px; font-size: 20px; text-align: center; }
 .choice .hanzi { font-size: 24px; font-weight: 700; }
+.choice-grid.nums .choice { font-size: 28px; font-weight: 800; font-variant-numeric: tabular-nums; }
 @media (hover: hover) and (pointer: fine) { :is(.pic-btn, .choice):hover:not(:disabled, .picked, .right, .wrong) { border-color: var(--ink-soft); } }
 :is(.pic-btn, .choice):disabled { cursor: default; }
 :is(.pic-btn, .choice):focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }

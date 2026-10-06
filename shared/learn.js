@@ -24,8 +24,9 @@
  *                              hear a word, pick it from `choices` answers;
  *                              completes the step when the last round is
  *                              answered. show: 'picture' (default; entries
- *                              need one) or 'jyutping' (text buttons, e.g.
- *                              syllables that differ only in tone)
+ *                              need one), 'jyutping' (text buttons, e.g.
+ *                              syllables that differ only in tone) or
+ *                              'numeral' (each entry's english, a number)
  *
  * Helpers for step content (Canto.zh etc. are in core.js):
  *   Learn.p(html)              <p> element
@@ -178,12 +179,12 @@
       listen.type = 'button';
       listen.addEventListener('click', () => play(answer));
 
-      const grid = $('div', kind === 'jyutping' ? 'choice-grid' : 'pic-grid');
+      const grid = $('div', { jyutping: 'choice-grid', numeral: 'choice-grid nums' }[kind] ?? 'pic-grid');
       const fb = $('div', 'quiz-feedback');
       fb.setAttribute('aria-live', 'polite');
 
       shuffle([answer, ...others]).forEach(o => {
-        const b = kind === 'jyutping' ? textButton(o) : picButton(o);
+        const b = kind === 'picture' ? picButton(o) : textButton(o, kind);
         b.addEventListener('click', () => pick(o, b, grid, fb, answer));
         grid.append(b);
       });
@@ -225,8 +226,8 @@
     start();
   }
 
-  function textButton(entry) {
-    const b = $('button', 'choice', `<span class="jp">${jyutping(entry.jyutping)}</span>`);
+  function textButton(entry, kind) {
+    const b = $('button', 'choice', kind === 'numeral' ? esc(entry.english) : `<span class="jp">${jyutping(entry.jyutping)}</span>`);
     b.type = 'button';
     b.dataset.id = entry.id;
     return b;

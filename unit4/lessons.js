@@ -117,8 +117,8 @@
         gate: true,
         render(el, ctx) {
           const quiz = $('div');
-          el.append(p('Listen to the number, then tap its hand sign. Finish all eight to unlock the next step.'), quiz);
-          ctx.listenQuiz(quiz, { pool: V.numbers.filter(e => e.img !== false), rounds: 8, choices: 4 });
+          el.append(p('Listen to the number, then tap it. Finish all eight to unlock the next step.'), quiz);
+          ctx.listenQuiz(quiz, { pool: V.numbers.slice(0, 11), rounds: 8, choices: 4, show: 'numeral' });
         },
       },
       {
