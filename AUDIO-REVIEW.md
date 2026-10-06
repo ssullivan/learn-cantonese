@@ -2341,28 +2341,28 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 
 | # | Chinese | Jyutping | English | Audio |
 |---|---|---|---|---|
-| 1 | 雪櫃 | syut3 gwai6 | fridge | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/fridge.mp3) |
-| 2 | 微波爐 | mei4 bo1 lou4 | microwave | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/microwave.mp3) |
-| 3 | 焗爐 | guk6 lou4 | oven | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/oven.mp3) |
-| 4 | 煤氣爐 | mui4 hei3 lou4 | gas stove | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/stove.mp3) |
-| 5 | 電飯煲 | din6 faan6 bou1 | rice cooker | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/rice-cooker.mp3) |
-| 6 | 水煲 | seoi2 bou1 | kettle | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/kettle.mp3) |
-| 7 | 多士爐 | do1 si2 lou4 | toaster | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/toaster.mp3) |
-| 8 | 洗碗機 | sai2 wun2 gei1 | dishwasher | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/dishwasher.mp3) |
-| 9 | 廚房 | cyu4 fong2 | kitchen | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/kitchen.mp3) |
-| 10 | 電器 | din6 hei3 | electrical appliance | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/din-hei.mp3) |
-| 11 | 幾耐 | gei2 noi6 | how long | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/gei-noi.mp3) |
-| 12 | 分鐘 | fan1 zung1 | minute (how long) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/fan-zung.mp3) |
-| 13 | 用 | jung6 | to use | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/jung.mp3) |
-| 14 | 叮 | ding1 | to microwave | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/ding1.mp3) |
-| 15 | 煲 | bou1 | to boil; a pot | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/bou1.mp3) |
-| 16 | 炒 | caau2 | to stir-fry | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/caau2.mp3) |
-| 17 | 整 | zing2 | to make; to fix | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/zing2.mp3) |
-| 18 | 入 | jap6 | in; into | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/jap6.mp3) |
-| 19 | 攞 | lo2 | to take; to get | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/lo2.mp3) |
-| 20 | 閂 | saan1 | to close; to turn off | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/saan1.mp3) |
-| 21 | 壞 | waai6 | broken | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/waai6.mp3) |
-| 22 | 部 | bou6 | for machines | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/bou6.mp3) |
+| 1 | 雪櫃 | syut3 gwai6 | fridge | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fridge.mp3) |
+| 2 | 微波爐 | mei4 bo1 lou4 | microwave | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/microwave.mp3) |
+| 3 | 焗爐 | guk6 lou4 | oven | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/oven.mp3) |
+| 4 | 煤氣爐 | mui4 hei3 lou4 | gas stove | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/stove.mp3) |
+| 5 | 電飯煲 | din6 faan6 bou1 | rice cooker | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/rice-cooker.mp3) |
+| 6 | 水煲 | seoi2 bou1 | kettle | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/kettle.mp3) |
+| 7 | 多士爐 | do1 si2 lou4 | toaster | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/toaster.mp3) |
+| 8 | 洗碗機 | sai2 wun2 gei1 | dishwasher | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/dishwasher.mp3) |
+| 9 | 廚房 | cyu4 fong2 | kitchen | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/kitchen.mp3) |
+| 10 | 電器 | din6 hei3 | electrical appliance | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/din-hei.mp3) |
+| 11 | 幾耐 | gei2 noi6 | how long | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gei-noi.mp3) |
+| 12 | 分鐘 | fan1 zung1 | minute (how long) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fan-zung.mp3) |
+| 13 | 用 | jung6 | to use | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jung.mp3) |
+| 14 | 叮 | ding1 | to microwave | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ding1.mp3) |
+| 15 | 煲 | bou1 | to boil; a pot | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/bou1.mp3) |
+| 16 | 炒 | caau2 | to stir-fry | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/caau2.mp3) |
+| 17 | 整 | zing2 | to make; to fix | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zing2.mp3) |
+| 18 | 入 | jap6 | in; into | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jap6.mp3) |
+| 19 | 攞 | lo2 | to take; to get | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/lo2.mp3) |
+| 20 | 閂 | saan1 | to close; to turn off | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/saan1.mp3) |
+| 21 | 壞 | waai6 | broken | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/waai6.mp3) |
+| 22 | 部 | bou6 | for machines | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/bou6.mp3) |
 | 23 | 叮熱啲飯 | ding1 jit6 di1 faan6 | to heat up the rice | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/ding1-jit-di-rice.mp3) |
 | 24 | 雪凍啲橙 | syut3 dung3 di1 caang2 | to chill the oranges | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/syut-dung-di-orange.mp3) |
 | 25 | 煲水 | bou1 seoi2 | to boil water | [▶ play](https://ssullivan.github.io/learn-cantonese/unit21/audio/bou1-water.mp3) |

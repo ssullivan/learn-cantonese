@@ -988,3 +988,52 @@ Words.add(20, [
   { id: 'po', hanzi: '棵', jyutping: 'po1', english: 'for plants', img: false, phoneme: true,
     note: 'Greens and trees: 一棵菜心.' },
 ]);
+
+// Unit 21 · Kitchen Appliances 廚房電器
+Words.add(21, [
+  // appliances
+  { id: 'fridge', hanzi: '雪櫃', jyutping: 'syut3 gwai6', english: 'fridge', measure: 'bou6',
+    note: '"Snow cupboard": 雪 as in Unit 13.' },
+  { id: 'microwave', hanzi: '微波爐', jyutping: 'mei4 bo1 lou4', english: 'microwave', measure: 'bou6',
+    note: '"Tiny wave stove". Its bell gives the verb 叮.' },
+  { id: 'oven', hanzi: '焗爐', jyutping: 'guk6 lou4', english: 'oven',
+    note: '"Bake stove": 焗 as in Unit 7\'s baked dim sum.' },
+  { id: 'stove', hanzi: '煤氣爐', jyutping: 'mui4 hei3 lou4', english: 'gas stove', phoneme: true,
+    note: '"Gas stove": most Hong Kong kitchens cook on gas.' },
+  { id: 'rice-cooker', hanzi: '電飯煲', jyutping: 'din6 faan6 bou1', english: 'rice cooker', measure: 'go',
+    note: '"Electric rice pot".' },
+  { id: 'kettle', hanzi: '水煲', jyutping: 'seoi2 bou1', english: 'kettle', measure: 'go',
+    note: '"Water pot". An electric one is 電水煲.' },
+  { id: 'toaster', hanzi: '多士爐', jyutping: 'do1 si2 lou4', english: 'toaster', measure: 'go',
+    note: '"Toast stove": 多士 as in Unit 8.' },
+  { id: 'dishwasher', hanzi: '洗碗機', jyutping: 'sai2 wun2 gei1', english: 'dishwasher', measure: 'bou6',
+    note: '"Wash bowl machine": 洗 (Unit 15), 碗 (Unit 5), 機 (Unit 16).' },
+  // words
+  { id: 'kitchen', hanzi: '廚房', jyutping: 'cyu4 fong2', english: 'kitchen' },
+  { id: 'din-hei', hanzi: '電器', jyutping: 'din6 hei3', english: 'electrical appliance', img: false,
+    note: '電 is electric, as in 電車 (Unit 11) and 電視 (Unit 15).' },
+  { id: 'gei-noi', hanzi: '幾耐', jyutping: 'gei2 noi6', english: 'how long', img: false,
+    note: 'Ask it after the verb: 叮幾耐？' },
+  { id: 'fan-zung', hanzi: '分鐘', jyutping: 'fan1 zung1', english: 'minute (how long)', img: false,
+    note: 'A length of time. 分 alone is a minute on the clock (Unit 9).' },
+  // verbs
+  { id: 'jung', hanzi: '用', jyutping: 'jung6', english: 'to use', img: false,
+    note: '用 + a thing, then the verb: 用水煲煲水, boil water with the kettle.' },
+  { id: 'ding1', hanzi: '叮', jyutping: 'ding1', english: 'to microwave', img: false,
+    note: 'The sound of the bell: 叮 when it\'s done.' },
+  { id: 'bou1', hanzi: '煲', jyutping: 'bou1', english: 'to boil; a pot', img: false,
+    note: 'Boil water or cook rice; also the pot itself, as in 水煲.' },
+  { id: 'caau2', hanzi: '炒', jyutping: 'caau2', english: 'to stir-fry', img: false,
+    note: 'As in 炒飯 (Unit 7).' },
+  { id: 'zing2', hanzi: '整', jyutping: 'zing2', english: 'to make; to fix', img: false },
+  { id: 'jap6', hanzi: '入', jyutping: 'jap6', english: 'in; into', img: false,
+    note: 'After a verb: 放入雪櫃, put into the fridge.' },
+  { id: 'lo2', hanzi: '攞', jyutping: 'lo2', english: 'to take; to get', img: false },
+  { id: 'saan1', hanzi: '閂', jyutping: 'saan1', english: 'to close; to turn off', img: false,
+    note: 'The opposite of 開: 閂門 shut the door, 閂燈 turn off the light.' },
+  { id: 'waai6', hanzi: '壞', jyutping: 'waai6', english: 'broken', img: false,
+    note: 'With 咗 (Unit 14): 壞咗, it\'s broken.' },
+  // measures
+  { id: 'bou6', hanzi: '部', jyutping: 'bou6', english: 'for machines', img: false,
+    note: 'Machines: 一部雪櫃, 一部洗碗機. Small things, like a 水煲, take 個.' },
+]);

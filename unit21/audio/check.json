@@ -20,26 +20,12 @@
   ],
   "audio": "762454c75046"
  },
- "dishwasher": {
-  "verdict": "LISTEN",
-  "notes": [
-   "tone doubtful: 碗 tone 2 sounds like 5 (p 0.29)"
-  ],
-  "audio": "ba76e5bf19c9"
- },
  "fridge-waai6-zo2": {
   "verdict": "LISTEN",
   "notes": [
    "tone doubtful: 雪 tone 3 sounds like 6 (p 0.18)"
   ],
   "audio": "aee5bdfb1acd"
- },
- "jap6": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard Yup y u p"
-  ],
-  "audio": "fd20eed11bca"
  },
  "jiu-ding1-gei-noi-aa": {
   "verdict": "CHECK",
@@ -280,13 +266,6 @@
   ],
   "audio": "e5040188aeb1"
  },
- "saan1": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 三 saam"
-  ],
-  "audio": "3525b5f3d005"
- },
  "saan1-stove": {
   "verdict": "LISTEN",
   "notes": [
@@ -302,19 +281,5 @@
    "tone doubtful: 爐 tone 4 sounds like 5 (p 0.26); 未 tone 6 sounds like 6 (p 0.47)"
   ],
   "audio": "fedd70cebfd3"
- },
- "stove": {
-  "verdict": "LISTEN",
-  "notes": [
-   "tone doubtful: 煤 tone 4 sounds like 6 (p 0.19)"
-  ],
-  "audio": "44b6ff163925"
- },
- "waai6": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 喂 wai"
-  ],
-  "audio": "eb1005e57c37"
  }
 }

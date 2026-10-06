@@ -161,6 +161,13 @@
   ],
   "audio": "2ab390ab45ad"
  },
+ "dishwasher": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 碗 tone 2 sounds like 5 (p 0.29)"
+  ],
+  "audio": "ba76e5bf19c9"
+ },
  "do": {
   "verdict": "LISTEN",
   "notes": [
@@ -395,6 +402,13 @@
    "tone: 呀 tone 3 sounds like 1 (p 0.00)"
   ],
   "audio": "46dab8e43dc6"
+ },
+ "jap6": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Yup y u p"
+  ],
+  "audio": "fd20eed11bca"
  },
  "je": {
   "verdict": "LISTEN",
@@ -637,6 +651,13 @@
   ],
   "audio": "e0eb73c50904"
  },
+ "saan1": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 三 saam"
+  ],
+  "audio": "3525b5f3d005"
+ },
  "sai": {
   "verdict": "LISTEN",
   "notes": [
@@ -727,6 +748,13 @@
    "speech-to-text heard Song s o n g"
   ],
   "audio": "d04b55694fcf"
+ },
+ "stove": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 煤 tone 4 sounds like 6 (p 0.19)"
+  ],
+  "audio": "44b6ff163925"
  },
  "strawberry": {
   "verdict": "LISTEN",
@@ -819,6 +847,13 @@
    "speech-to-text heard 車 ce"
   ],
   "audio": "7c61583d0864"
+ },
+ "waai6": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 喂 wai"
+  ],
+  "audio": "eb1005e57c37"
  },
  "waak": {
   "verdict": "LISTEN",
