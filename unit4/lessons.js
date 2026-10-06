@@ -16,7 +16,7 @@
         title: '一 to 五',
         render(el, ctx) {
           el.append(
-            p('Tap each number to hear it. The pictures show how to count on one hand in Hong Kong: one hand goes all the way to ten.'),
+            p('Tap each number to hear it. Count the dots: they fill a row of five, then start the next row.'),
             nums(ctx, 1, 2, 3, 4, 5),
           );
         },
@@ -26,8 +26,9 @@
         title: '六 to 十',
         render(el, ctx) {
           el.append(
-            p('From six on, the hand signs are not "five plus one". Each has its own shape:'),
+            p('From six on, the second row fills up:'),
             nums(ctx, 6, 7, 8, 9, 10),
+            tip('<strong>Counting on one hand:</strong> in Hong Kong one hand goes all the way to ten. 6 is the thumb and little finger out, 7 the fingertips pinched together, 8 the thumb and index finger like an L, 9 a hooked index finger, and 10 two index fingers crossed like 十.'),
             tip(`<strong>四 or 十?</strong> ${zh('四', 'sei3')} (4) and ${zh('十', 'sap6')} (10) are easy to mix up. 十 ends in a closed <em>p</em>: your lips shut and no air comes out.`),
             p(`And ${zh('零', 'ling4')}, zero, which also fills gaps inside bigger numbers:`),
             nums(ctx, 0),

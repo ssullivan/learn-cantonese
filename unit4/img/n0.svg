@@ -1,7 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
-<title>1: 1 counter on a ten frame</title>
+<title>0: an empty ten frame</title>
 <rect x="4" y="40" width="120" height="48" rx="5" fill="#fbf8f1" stroke="#6f8796" stroke-width="3"/>
 <path d="M28 40 V88 M52 40 V88 M76 40 V88 M100 40 V88 M4 64 H124" stroke="#6f8796" stroke-width="2"/>
-<circle cx="16" cy="52" r="9.5" fill="#d6453a" stroke="#8e2a22" stroke-width="2"/>
-<circle cx="13" cy="49" r="2.6" fill="#f2a097"/>
+
 </svg>

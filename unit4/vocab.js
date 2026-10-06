@@ -67,7 +67,7 @@ Units.add(4, {
   };
 
   V.numbers = Array.from({ length: 100 }, (_, n) => num(n, {
-    ...(n >= 1 && n <= 10 && { img: undefined }),
+    ...(n <= 10 && { img: undefined }),
     ...(NOTES[n] && { note: NOTES[n] }),
   }));
 
