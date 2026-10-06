@@ -69,6 +69,13 @@
   ],
   "audio": "0d86695bdf74"
  },
+ "daa": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Da d a"
+  ],
+  "audio": "f045ed262a81"
+ },
  "daap": {
   "verdict": "LISTEN",
   "notes": [
@@ -376,6 +383,13 @@
   ],
   "audio": "721fc7ba4eee"
  },
+ "nyun": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Nynn n y n n"
+  ],
+  "audio": "c03048b85b45"
+ },
  "orange": {
   "verdict": "LISTEN",
   "notes": [
@@ -468,6 +482,13 @@
   ],
   "audio": "730df1992e9d"
  },
+ "taai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 派 paai"
+  ],
+  "audio": "9f9f0a45ef68"
+ },
  "tea": {
   "verdict": "LISTEN",
   "notes": [
@@ -489,6 +510,13 @@
   ],
   "audio": "c60cecd53906"
  },
+ "umbrella": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 車 ce"
+  ],
+  "audio": "7c61583d0864"
+ },
  "water": {
   "verdict": "LISTEN",
   "notes": [
@@ -502,6 +530,14 @@
    "tone doubtful: 唔 tone 4 sounds like 5 (p 0.23)"
   ],
   "audio": "1f516288c2da"
+ },
+ "wui": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 喂 wai",
+   "tone doubtful: 會 tone 5 sounds like 3 (p 0.06)"
+  ],
+  "audio": "c0dfd6844aeb"
  },
  "wun": {
   "verdict": "LISTEN",

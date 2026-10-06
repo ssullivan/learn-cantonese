@@ -606,3 +606,59 @@ Words.add(12, [
   { id: 'fu', hanzi: '副', jyutping: 'fu3', english: 'a pair of (glasses)', img: false,
     note: 'For a set that goes together: 一副眼鏡.' },
 ]);
+
+// Unit 13 · Weather 天氣
+Words.add(13, [
+  // basics
+  { id: 'tin-hei', hanzi: '天氣', jyutping: 'tin1 hei3', english: 'weather',
+    note: 'Literally "sky air".' },
+  { id: 'tin-man-toi', hanzi: '天文台', jyutping: 'tin1 man4 toi4', english: 'the Hong Kong Observatory', img: false,
+    note: 'Literally "astronomy tower": it gives the forecast and hoists the typhoon signals.' },
+  { id: 'taai-joeng', hanzi: '太陽', jyutping: 'taai3 joeng4', english: 'the sun' },
+  { id: 'wan', hanzi: '雲', jyutping: 'wan4', english: 'cloud' },
+  { id: 'jyu', hanzi: '雨', jyutping: 'jyu5', english: 'rain', img: false },
+  { id: 'syut', hanzi: '雪', jyutping: 'syut3', english: 'snow', img: false },
+  { id: 'fung', hanzi: '風', jyutping: 'fung1', english: 'wind', img: false },
+  { id: 'daa', hanzi: '打', jyutping: 'daa2', english: 'to hit; to strike', img: false,
+    note: 'As in 打風, a typhoon "strikes".' },
+  // weather
+  { id: 'tin-cing', hanzi: '天晴', jyutping: 'tin1 cing4', english: 'sunny; fine',
+    note: 'The sky is clear.' },
+  { id: 'jam-tin', hanzi: '陰天', jyutping: 'jam1 tin1', english: 'cloudy; overcast',
+    note: '陰 is shade.' },
+  { id: 'daai-fung', hanzi: '大風', jyutping: 'daai6 fung1', english: 'windy; a strong wind',
+    note: '"Big wind": 今日好大風, it\'s very windy today.' },
+  { id: 'haang-leoi', hanzi: '行雷', jyutping: 'haang4 leoi4', english: 'to thunder; a thunderstorm',
+    note: 'Literally "the thunder walks". 行 as in 行路 (Unit 11).' },
+  // feel
+  { id: 'nyun', hanzi: '暖', jyutping: 'nyun5', english: 'warm', img: false },
+  { id: 'loeng4', hanzi: '涼', jyutping: 'loeng4', english: 'cool (pleasantly)', img: false,
+    note: 'Nice and cool: 今日好涼. 沖涼 is to take a shower.' },
+  { id: 'sap', hanzi: '濕', jyutping: 'sap1', english: 'damp; humid', img: false,
+    note: 'In spring the walls drip: 回南天, when the south wind comes back.' },
+  { id: 'gon', hanzi: '乾', jyutping: 'gon1', english: 'dry', img: false },
+  // seasons
+  { id: 'gwai-zit', hanzi: '季節', jyutping: 'gwai3 zit3', english: 'season' },
+  { id: 'ceon-tin', hanzi: '春天', jyutping: 'ceon1 tin1', english: 'spring',
+    note: 'Warm, grey and 濕: March and April.' },
+  { id: 'haa-tin', hanzi: '夏天', jyutping: 'haa6 tin1', english: 'summer',
+    note: 'Hot, 焗 and rainy, with typhoons: May to September.' },
+  { id: 'cau-tin', hanzi: '秋天', jyutping: 'cau1 tin1', english: 'autumn',
+    note: 'Sunny and dry: the best weather of the year.' },
+  { id: 'dung-tin', hanzi: '冬天', jyutping: 'dung1 tin1', english: 'winter',
+    note: '冬 dung1, high and level; 凍 dung3 (cold) is mid.' },
+  // grammar
+  { id: 'taai', hanzi: '太', jyutping: 'taai3', english: 'too (much)', img: false,
+    note: 'Before an adjective: 太熱, too hot.' },
+  { id: 'wui', hanzi: '會', jyutping: 'wui5', english: 'will; is going to', img: false,
+    note: 'Before the verb: 聽日會落雨, it will rain tomorrow.' },
+  { id: 'laa1', hanzi: '啦', jyutping: 'laa1', english: '(softens advice: go on, do)', img: false, phoneme: true,
+    note: 'At the end of a suggestion: 帶遮啦！ Take an umbrella!' },
+  { id: 'laa3', hanzi: '喇', jyutping: 'laa3', english: '(now; it has changed)', img: false, phoneme: true,
+    note: 'Something new has happened: 落雨喇！ It\'s started raining!' },
+  // things
+  { id: 'umbrella', hanzi: '遮', jyutping: 'ze1', english: 'umbrella',
+    note: 'For rain and for sun.' },
+  { id: 'daai-bring', hanzi: '帶', jyutping: 'daai3', english: 'to bring; to take along', img: false,
+    note: 'Sounds just like 戴 (wear, Unit 12).' },
+]);

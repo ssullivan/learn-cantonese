@@ -1323,36 +1323,36 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 
 | # | Chinese | Jyutping | English | Audio |
 |---|---|---|---|---|
-| 1 | 天氣 | tin1 hei3 | weather | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/tin-hei.mp3) |
-| 2 | 天文台 | tin1 man4 toi4 | the Hong Kong Observatory | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/tin-man-toi.mp3) |
-| 3 | 太陽 | taai3 joeng4 | the sun | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/taai-joeng.mp3) |
-| 4 | 雲 | wan4 | cloud | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/wan.mp3) |
-| 5 | 雨 | jyu5 | rain | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/jyu.mp3) |
-| 6 | 雪 | syut3 | snow | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/syut.mp3) |
-| 7 | 風 | fung1 | wind | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/fung.mp3) |
-| 8 | 打 | daa2 | to hit; to strike | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/daa.mp3) |
+| 1 | 天氣 | tin1 hei3 | weather | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/tin-hei.mp3) |
+| 2 | 天文台 | tin1 man4 toi4 | the Hong Kong Observatory | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/tin-man-toi.mp3) |
+| 3 | 太陽 | taai3 joeng4 | the sun | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/taai-joeng.mp3) |
+| 4 | 雲 | wan4 | cloud | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/wan.mp3) |
+| 5 | 雨 | jyu5 | rain | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jyu.mp3) |
+| 6 | 雪 | syut3 | snow | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/syut.mp3) |
+| 7 | 風 | fung1 | wind | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fung.mp3) |
+| 8 | 打 | daa2 | to hit; to strike | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/daa.mp3) |
 | 9 | 落雨 | lok6 jyu5 | to rain | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/lok-jyu.mp3) |
 | 10 | 落雪 | lok6 syut3 | to snow | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/lok-syut.mp3) |
 | 11 | 打風 | daa2 fung1 | a typhoon hits | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/daa-fung.mp3) |
-| 12 | 天晴 | tin1 cing4 | sunny; fine | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/tin-cing.mp3) |
-| 13 | 陰天 | jam1 tin1 | cloudy; overcast | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/jam-tin.mp3) |
-| 14 | 大風 | daai6 fung1 | windy; a strong wind | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/daai-fung.mp3) |
-| 15 | 行雷 | haang4 leoi4 | to thunder; a thunderstorm | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/haang-leoi.mp3) |
-| 16 | 暖 | nyun5 | warm | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/nyun.mp3) |
-| 17 | 涼 | loeng4 | cool (pleasantly) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/loeng4.mp3) |
-| 18 | 濕 | sap1 | damp; humid | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/sap.mp3) |
-| 19 | 乾 | gon1 | dry | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/gon.mp3) |
-| 20 | 季節 | gwai3 zit3 | season | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/gwai-zit.mp3) |
-| 21 | 春天 | ceon1 tin1 | spring | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/ceon-tin.mp3) |
-| 22 | 夏天 | haa6 tin1 | summer | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/haa-tin.mp3) |
-| 23 | 秋天 | cau1 tin1 | autumn | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/cau-tin.mp3) |
-| 24 | 冬天 | dung1 tin1 | winter | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/dung-tin.mp3) |
-| 25 | 太 | taai3 | too (much) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/taai.mp3) |
-| 26 | 會 | wui5 | will; is going to | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/wui.mp3) |
-| 27 | 啦 | laa1 | (softens advice: go on, do) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/laa1.mp3) |
-| 28 | 喇 | laa3 | (now; it has changed) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/laa3.mp3) |
-| 29 | 遮 | ze1 | umbrella | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/umbrella.mp3) |
-| 30 | 帶 | daai3 | to bring; to take along | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/daai-bring.mp3) |
+| 12 | 天晴 | tin1 cing4 | sunny; fine | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/tin-cing.mp3) |
+| 13 | 陰天 | jam1 tin1 | cloudy; overcast | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jam-tin.mp3) |
+| 14 | 大風 | daai6 fung1 | windy; a strong wind | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/daai-fung.mp3) |
+| 15 | 行雷 | haang4 leoi4 | to thunder; a thunderstorm | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/haang-leoi.mp3) |
+| 16 | 暖 | nyun5 | warm | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/nyun.mp3) |
+| 17 | 涼 | loeng4 | cool (pleasantly) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/loeng4.mp3) |
+| 18 | 濕 | sap1 | damp; humid | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/sap.mp3) |
+| 19 | 乾 | gon1 | dry | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gon.mp3) |
+| 20 | 季節 | gwai3 zit3 | season | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gwai-zit.mp3) |
+| 21 | 春天 | ceon1 tin1 | spring | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ceon-tin.mp3) |
+| 22 | 夏天 | haa6 tin1 | summer | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/haa-tin.mp3) |
+| 23 | 秋天 | cau1 tin1 | autumn | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/cau-tin.mp3) |
+| 24 | 冬天 | dung1 tin1 | winter | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/dung-tin.mp3) |
+| 25 | 太 | taai3 | too (much) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/taai.mp3) |
+| 26 | 會 | wui5 | will; is going to | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/wui.mp3) |
+| 27 | 啦 | laa1 | (softens advice: go on, do) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/laa1.mp3) |
+| 28 | 喇 | laa3 | (now; it has changed) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/laa3.mp3) |
+| 29 | 遮 | ze1 | umbrella | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/umbrella.mp3) |
+| 30 | 帶 | daai3 | to bring; to take along | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/daai-bring.mp3) |
 | 31 | 五度 | ng5 dou6 | 5°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c5.mp3) |
 | 32 | 六度 | luk6 dou6 | 6°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c6.mp3) |
 | 33 | 七度 | cat1 dou6 | 7°C | [▶ play](https://ssullivan.github.io/learn-cantonese/unit13/audio/c7.mp3) |

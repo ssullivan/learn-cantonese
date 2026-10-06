@@ -27,13 +27,6 @@
   ],
   "audio": "c5990a5814f2"
  },
- "daa": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard Da d a"
-  ],
-  "audio": "f045ed262a81"
- },
  "gam-jat-c32": {
   "verdict": "LISTEN",
   "notes": [
@@ -112,20 +105,6 @@
   ],
   "audio": "9de4f14f7c3f"
  },
- "nyun": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard Nynn n y n n"
-  ],
-  "audio": "c03048b85b45"
- },
- "taai": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 派 paai"
-  ],
-  "audio": "9f9f0a45ef68"
- },
  "taai-baked": {
   "verdict": "LISTEN",
   "notes": [
@@ -161,20 +140,5 @@
    "tone doubtful: 雨 tone 5 sounds like 3 (p 0.05)"
   ],
   "audio": "b95f6494eb08"
- },
- "umbrella": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 車 ce"
-  ],
-  "audio": "7c61583d0864"
- },
- "wui": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 喂 wai",
-   "tone doubtful: 會 tone 5 sounds like 3 (p 0.06)"
-  ],
-  "audio": "c0dfd6844aeb"
  }
 }
