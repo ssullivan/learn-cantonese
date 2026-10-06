@@ -20,6 +20,13 @@
   ],
   "audio": "3e0861b63207"
  },
+ "bing": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Bing b i n g"
+  ],
+  "audio": "d49507133566"
+ },
  "bui": {
   "verdict": "LISTEN",
   "notes": [
@@ -61,6 +68,13 @@
    "speech-to-text heard 貼 tip"
   ],
   "audio": "2ab390ab45ad"
+ },
+ "do": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Do d o"
+  ],
+  "audio": "e0fb4511f081"
  },
  "eaten-yet": {
   "verdict": "CHECK",
@@ -155,6 +169,13 @@
    "tone: 文 tone 2 sounds like 5 (p 0.01)"
   ],
   "audio": "6894372675bd"
+ },
+ "jit": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 二 ji"
+  ],
+  "audio": "6e8e48619630"
  },
  "jiu": {
   "verdict": "LISTEN",
@@ -276,6 +297,13 @@
    "speech-to-text heard c c"
   ],
   "audio": "6df070a62635"
+ },
+ "siu": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Suw s u w"
+  ],
+  "audio": "b76b9a799c01"
  },
  "so-so": {
   "verdict": "CHECK",

@@ -1,18 +1,4 @@
 {
- "bing": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard Bing b i n g"
-  ],
-  "audio": "d49507133566"
- },
- "do": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard Do d o"
-  ],
-  "audio": "e0fb4511f081"
- },
  "dung-coffee-siu-bing": {
   "verdict": "LISTEN",
   "notes": [
@@ -106,13 +92,6 @@
    "tone doubtful: 少 tone 2 sounds like 3 (p 0.25)"
   ],
   "audio": "a843c18026ad"
- },
- "jit": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 二 ji"
-  ],
-  "audio": "6e8e48619630"
  },
  "jit-coffee-siu-sweet": {
   "verdict": "LISTEN",
@@ -214,13 +193,6 @@
    "speech-to-text heard 1杯咖啡 jat bui kaa fe"
   ],
   "audio": "19770653b1d2"
- },
- "siu": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard Suw s u w"
-  ],
-  "audio": "b76b9a799c01"
  },
  "siu-bing": {
   "verdict": "LISTEN",

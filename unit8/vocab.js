@@ -18,64 +18,25 @@ Units.add(8, {
   write: '冰油走',
 
   basics: [
-    { id: 'cha-chaan-teng', hanzi: '茶餐廳', jyutping: 'caa4 caan1 teng1', english: 'cha chaan teng (Hong Kong café)',
-      note: 'Literally "tea restaurant": milk tea, toast, noodles and set meals, fast and cheap.' },
-    { id: 'waiter', hanzi: '伙記', jyutping: 'fo2 gei3', english: 'waiter',
-      note: 'Call out 伙記！ to get a waiter\'s attention. Also written 伙計.' },
-    { id: 'jam2', hanzi: '飲', jyutping: 'jam2', english: 'to drink', img: false,
-      note: 'As in 飲茶 (Unit 7): "drink tea".' },
-    { id: 'sik6', hanzi: '食', jyutping: 'sik6', english: 'to eat', img: false },
+    ...Words.list('cha-chaan-teng waiter jam2 sik6'),
   ],
 
   // Ordered by the cup: 一杯奶茶.
   drinks: [
-    { id: 'milk-tea', measure: 'bui', hanzi: '奶茶', jyutping: 'naai5 caa4', english: 'milk tea',
-      note: 'Strong black tea with evaporated milk, strained through a cloth "silk stocking". Hot unless you say 凍.' },
-    { id: 'coffee', measure: 'bui', hanzi: '咖啡', jyutping: 'gaa3 fe1', english: 'coffee' },
-    { id: 'yuenyeung', measure: 'bui', hanzi: '鴛鴦', jyutping: 'jyun1 joeng1', english: 'yuenyeung (coffee with milk tea)',
-      note: 'Named after mandarin ducks, which pair for life: coffee and tea together.' },
-    { id: 'lemon-tea', measure: 'bui', hanzi: '檸檬茶', jyutping: 'ning4 mung1 caa4', english: 'lemon tea',
-      note: 'Often shortened to 檸茶 ning2 caa4. Iced, it comes with the lemon slices mashed in.' },
+    ...Words.list('milk-tea coffee yuenyeung lemon-tea'),
   ],
 
   food: [
-    { id: 'pineapple-butter', measure: 'go', hanzi: '菠蘿油', jyutping: 'bo1 lo4 jau4', english: 'pineapple bun with butter',
-      note: 'A warm 菠蘿包 (Unit 7) cut open around a thick slab of cold butter. 油 is oil, and butter here.' },
-    { id: 'spam-egg-noodles', measure: 'wun', hanzi: '餐蛋麵', jyutping: 'caan1 daan2 min6', english: 'luncheon meat and egg noodles',
-      note: '餐肉 (luncheon meat) + 蛋 (egg) + 麵 (instant noodles, in soup). 蛋 is daan6, but daan2 here, as in 雞蛋.' },
-    { id: 'macaroni', measure: 'wun', hanzi: '通粉', jyutping: 'tung1 fan2', english: 'macaroni (in soup)',
-      note: 'Literally "through noodles": they have a hole. Usually with ham: 火腿通粉.' },
-    { id: 'toast', measure: 'fan6', hanzi: '多士', jyutping: 'do1 si2', english: 'toast',
-      note: 'From the English "toast". Comes with butter, jam or condensed milk.' },
-    { id: 'french-toast', measure: 'fan6', hanzi: '西多士', jyutping: 'sai1 do1 si2', english: 'French toast',
-      note: '"Western toast": deep-fried, with butter and syrup on top.' },
+    ...Words.list('pineapple-butter spam-egg-noodles macaroni toast french-toast'),
   ],
 
   // How you want it: hot or iced, then leave out (走), less (少) or more (多).
   modifiers: [
-    { id: 'dung', hanzi: '凍', jyutping: 'dung3', english: 'iced; cold', img: false,
-      note: 'Goes before the drink: 凍奶茶. Iced drinks usually cost a little more.' },
-    { id: 'jit', hanzi: '熱', jyutping: 'jit6', english: 'hot', img: false,
-      note: 'Drinks are hot unless you ask for 凍, so 熱 is often left out.' },
-    { id: 'zau', hanzi: '走', jyutping: 'zau2', english: 'without (leave out)', img: false,
-      note: 'Literally "go away": 走甜 is no sugar, 走冰 no ice. Goes after the drink.' },
-    { id: 'siu', hanzi: '少', jyutping: 'siu2', english: 'less; a little', img: false,
-      note: 'After the drink: 少甜, less sweet. Not siu3 (young).' },
-    { id: 'do', hanzi: '多', jyutping: 'do1', english: 'more; a lot', img: false,
-      note: 'After the drink: 多冰, extra ice.' },
-    { id: 'bing', hanzi: '冰', jyutping: 'bing1', english: 'ice', img: false },
-    { id: 'ding', hanzi: '定', jyutping: 'ding6', english: 'or (in a question)', img: false,
-      note: 'Asks which one: 凍定熱？ Iced or hot?' },
-    { id: 'gaa1', hanzi: '加', jyutping: 'gaa1', english: 'to add; extra', img: false,
-      note: 'As in 唔該加水 (Unit 7). 加錢 is to pay extra.' },
-    { id: 'dung-jam', hanzi: '凍飲', jyutping: 'dung3 jam2', english: 'cold drink', img: false },
+    ...Words.list('dung jit zau siu do bing ding gaa1 dung-jam'),
   ],
 
   place: [
-    { id: 'tong-sik', hanzi: '堂食', jyutping: 'tong4 sik6', english: 'eat in', img: false,
-      note: 'Literally "hall eat": eat at the table.' },
-    { id: 'ling-zau', hanzi: '拎走', jyutping: 'ling1 zau2', english: 'take away', img: false,
-      note: '拎 is to carry; 走 is to go, as in 走甜.' },
+    ...Words.list('tong-sik ling-zau'),
   ],
 });
 

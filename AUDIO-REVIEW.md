@@ -706,30 +706,30 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 
 | # | Chinese | Jyutping | English | Audio |
 |---|---|---|---|---|
-| 1 | 茶餐廳 | caa4 caan1 teng1 | cha chaan teng (Hong Kong café) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/cha-chaan-teng.mp3) |
-| 2 | 伙記 | fo2 gei3 | waiter | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/waiter.mp3) |
-| 3 | 飲 | jam2 | to drink | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/jam2.mp3) |
-| 4 | 食 | sik6 | to eat | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/sik6.mp3) |
-| 5 | 奶茶 | naai5 caa4 | milk tea | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/milk-tea.mp3) |
-| 6 | 咖啡 | gaa3 fe1 | coffee | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/coffee.mp3) |
-| 7 | 鴛鴦 | jyun1 joeng1 | yuenyeung (coffee with milk tea) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/yuenyeung.mp3) |
-| 8 | 檸檬茶 | ning4 mung1 caa4 | lemon tea | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/lemon-tea.mp3) |
-| 9 | 菠蘿油 | bo1 lo4 jau4 | pineapple bun with butter | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/pineapple-butter.mp3) |
-| 10 | 餐蛋麵 | caan1 daan2 min6 | luncheon meat and egg noodles | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/spam-egg-noodles.mp3) |
-| 11 | 通粉 | tung1 fan2 | macaroni (in soup) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/macaroni.mp3) |
-| 12 | 多士 | do1 si2 | toast | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/toast.mp3) |
-| 13 | 西多士 | sai1 do1 si2 | French toast | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/french-toast.mp3) |
-| 14 | 凍 | dung3 | iced; cold | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/dung.mp3) |
-| 15 | 熱 | jit6 | hot | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/jit.mp3) |
-| 16 | 走 | zau2 | without (leave out) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/zau.mp3) |
-| 17 | 少 | siu2 | less; a little | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/siu.mp3) |
-| 18 | 多 | do1 | more; a lot | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/do.mp3) |
-| 19 | 冰 | bing1 | ice | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/bing.mp3) |
-| 20 | 定 | ding6 | or (in a question) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/ding.mp3) |
-| 21 | 加 | gaa1 | to add; extra | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/gaa1.mp3) |
-| 22 | 凍飲 | dung3 jam2 | cold drink | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/dung-jam.mp3) |
-| 23 | 堂食 | tong4 sik6 | eat in | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/tong-sik.mp3) |
-| 24 | 拎走 | ling1 zau2 | take away | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/ling-zau.mp3) |
+| 1 | 茶餐廳 | caa4 caan1 teng1 | cha chaan teng (Hong Kong café) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/cha-chaan-teng.mp3) |
+| 2 | 伙記 | fo2 gei3 | waiter | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/waiter.mp3) |
+| 3 | 飲 | jam2 | to drink | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jam2.mp3) |
+| 4 | 食 | sik6 | to eat | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/sik6.mp3) |
+| 5 | 奶茶 | naai5 caa4 | milk tea | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/milk-tea.mp3) |
+| 6 | 咖啡 | gaa3 fe1 | coffee | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/coffee.mp3) |
+| 7 | 鴛鴦 | jyun1 joeng1 | yuenyeung (coffee with milk tea) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/yuenyeung.mp3) |
+| 8 | 檸檬茶 | ning4 mung1 caa4 | lemon tea | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/lemon-tea.mp3) |
+| 9 | 菠蘿油 | bo1 lo4 jau4 | pineapple bun with butter | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/pineapple-butter.mp3) |
+| 10 | 餐蛋麵 | caan1 daan2 min6 | luncheon meat and egg noodles | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/spam-egg-noodles.mp3) |
+| 11 | 通粉 | tung1 fan2 | macaroni (in soup) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/macaroni.mp3) |
+| 12 | 多士 | do1 si2 | toast | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/toast.mp3) |
+| 13 | 西多士 | sai1 do1 si2 | French toast | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/french-toast.mp3) |
+| 14 | 凍 | dung3 | iced; cold | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/dung.mp3) |
+| 15 | 熱 | jit6 | hot | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jit.mp3) |
+| 16 | 走 | zau2 | without (leave out) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zau.mp3) |
+| 17 | 少 | siu2 | less; a little | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/siu.mp3) |
+| 18 | 多 | do1 | more; a lot | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/do.mp3) |
+| 19 | 冰 | bing1 | ice | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/bing.mp3) |
+| 20 | 定 | ding6 | or (in a question) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ding.mp3) |
+| 21 | 加 | gaa1 | to add; extra | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gaa1.mp3) |
+| 22 | 凍飲 | dung3 jam2 | cold drink | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/dung-jam.mp3) |
+| 23 | 堂食 | tong4 sik6 | eat in | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/tong-sik.mp3) |
+| 24 | 拎走 | ling1 zau2 | take away | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ling-zau.mp3) |
 | 25 | 熱奶茶 | jit6 naai5 caa4 | hot milk tea | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/jit-milk-tea.mp3) |
 | 26 | 凍奶茶 | dung3 naai5 caa4 | iced milk tea | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/dung-milk-tea.mp3) |
 | 27 | 熱咖啡 | jit6 gaa3 fe1 | hot coffee | [▶ play](https://ssullivan.github.io/learn-cantonese/unit8/audio/jit-coffee.mp3) |
