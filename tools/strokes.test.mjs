@@ -218,6 +218,8 @@ ok('verdict: all strong is "ok"', verdictFor(3, 3, [1, 0.77, 0.98]) === 'ok');
   ok('judge: a scribble along the stroke is wrong', !Write.judge(along(three.medians[0]).map(([x, y], i) => [x, y + (i % 2 ? 45 : -45)]), three, 0).ok);
   const down = Write.judge(along(ten.medians[1]), ten, 0);
   ok('judge: 十 written down-stroke first is out of Hong Kong order', !down.ok && down.other === 1, JSON.stringify(down));
+  ok('blank: every copy of the character is blanked (公公 gives nothing away)', Write.blank('公公', '公') === '＿＿');
+  ok('blank: only that character', Write.blank('最近點呀？', '近') === '最＿點呀？');
   ok('judge: a finished stroke is not offered again', Write.judge(along(ten.medians[0]), ten, 1).other === null);
 }
 

@@ -43,6 +43,8 @@
  *                (.celebrate) that ignores taps; nothing if the reader
  *                prefers reduced motion. Returns a stop function
  *
+ * A round's timer stands still while the page is hidden.
+ *
  * Scoring: a right answer is worth 100, plus up to 50 for speed on timed
  * levels, plus 10 per answer in the current streak (max +50).
  * Stars: 1 at 50% right, 2 at 80%, 3 for all right. A level unlocks when
@@ -54,6 +56,13 @@
   const { el: $ } = Canto;
   const AUTO_NEXT_MS = 1200;
   let party = null;  // stops the celebration on screen
+  // The round's timer stands still while the page is hidden (another app,
+  // another tab): its start moves on by the time spent away.
+  let running = null, hiddenAt = 0;
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) hiddenAt = performance.now();
+    else if (running && hiddenAt) running.t0 += performance.now() - Math.max(hiddenAt, running.t0);
+  });
   // Said after a perfect level: unit 1's hou-lek (tools/units.test.mjs
   // checks it matches). Its hanzi is spoken if the clip can't play.
   const CHEER = { id: 'hou-lek', unit: 1, hanzi: '好叻呀！' };
@@ -129,17 +138,17 @@
 
       function stopTimer() {
         if (timer) cancelAnimationFrame(timer.raf);
-        timer = null;
+        timer = running = null;
       }
 
       function startTimer(ctx) {
         if (!level.time || ctx.finished || !alive) return;
-        const t0 = performance.now();
         const ms = level.time * 1000;
-        timer = { t0, ms, raf: 0 };
+        timer = running = { t0: performance.now(), ms, raf: 0 };
         const tick = now => {
           if (!timer) return;
-          const left = Math.max(0, 1 - (now - t0) / ms);
+          if (document.hidden) { timer.raf = requestAnimationFrame(tick); return; }
+          const left = Math.max(0, 1 - (now - timer.t0) / ms);
           fill.style.transform = `scaleX(${left})`;
           fill.classList.toggle('low', left < 0.3);
           if (left <= 0) return ctx.done(false, true);

@@ -4,7 +4,10 @@
  *   Speak.play(src, text)   Play the MP3 at `src`, or an array of MP3s one
  *                           after another. If a clip is missing or fails,
  *                           speak `text` with the browser's zh-HK voice
- *                           instead (if the device has one). Returns a
+ *                           instead (if the device has one). With an array
+ *                           of texts, one per clip, only the failed clip's
+ *                           text is spoken and the rest still play; with
+ *                           one text, it is spoken and playing ends. Returns a
  *                           Promise that resolves when playback finishes
  *                           or is stopped; it never rejects.
  *   Speak.stop()            Stop whatever is playing.
@@ -50,7 +53,12 @@
         const a = new Audio(srcs[i]);
         current = a;
         let failed = false;
-        const fail = () => { if (!failed && mine === token) { failed = true; fallback(text, done); } };
+        const fail = () => {
+          if (failed || mine !== token) return;
+          failed = true;
+          if (Array.isArray(text)) fallback(text[i], () => next(i + 1));
+          else fallback(text, done);
+        };
         a.addEventListener('ended', () => setTimeout(() => next(i + 1), GAP_MS));
         a.addEventListener('error', fail);
         const p = a.play();

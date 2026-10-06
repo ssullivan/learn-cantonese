@@ -133,7 +133,7 @@
 
   function play(entries) {
     const list = [].concat(entries);
-    return Speak.play(list.map(audioSrc), list.map(e => e.say || e.hanzi).join('，'));
+    return Speak.play(list.map(audioSrc), list.map(e => e.say || e.hanzi));
   }
 
   function picButton(entry) {

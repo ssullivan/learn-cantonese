@@ -34,6 +34,7 @@
   function practice(entry) {
     let mine = null;       // { url, blob, contour }: the latest recording
     let recorder = null;
+    let starting = false;  // waiting for the microphone: a second tap must not start another
     let gone = false;
 
     const box = $('div', 'pitch-box');
@@ -58,6 +59,8 @@
     }
 
     async function startRecording() {
+      if (starting) return;
+      starting = true;
       Speak.stop();
       let stream;
       try {
@@ -65,6 +68,8 @@
       } catch (err) {
         box.innerHTML = '<p class="feedback bad">Microphone access was blocked. Allow it in your browser settings to record.</p>';
         return;
+      } finally {
+        starting = false;
       }
       if (gone) return stream.getTracks().forEach(t => t.stop());
       const chunks = [];

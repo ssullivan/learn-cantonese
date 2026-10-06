@@ -29,6 +29,8 @@
  *   Write.match(points, median, leniency = 1)
  *                                   does the drawn line follow the median
  *                                   (Make Me a Hanzi's, y up)?
+ *   Write.blank(hanzi, char)        the word with every copy of the
+ *                                   character blanked out (公公 → ＿＿)
  *   Write.judge(points, data, k, leniency = 1)
  *                                   { ok, other }: ok if stroke k is the closest
  *                                   of the strokes still to write that it
@@ -89,16 +91,19 @@
     return best === k ? { ok: true, other: null } : { ok: false, other: best };
   }
 
+  // The word with every copy of the character blanked out (公公 → ＿＿).
+  const blank = (hanzi, char) => hanzi.replaceAll(char, '＿');
+
   // --- the game (browser only)
 
   const ord = n => `stroke ${n}`;
 
   function prompt(mode, w, char) {
     const { esc, zh } = Canto;
-    const blank = w.hanzi.replace(char, '＿');
+    const gap = blank(w.hanzi, char);
     if (mode === 'watch' || mode === 'trace') return `Write ${zh(w.hanzi, w.jyutping)}: ${esc(w.english)}`;
-    if (mode === 'recall') return `Write the missing character:<br><span class="hanzi" lang="zh-HK">${esc(blank)}</span> <span class="jp">${Canto.jyutping(w.jyutping)}</span> ${esc(w.english)}`;
-    return w.hanzi === char ? 'Write the character you hear.' : `Write the missing character you hear:<br><span class="hanzi" lang="zh-HK">${esc(blank)}</span>`;
+    if (mode === 'recall') return `Write the missing character:<br><span class="hanzi" lang="zh-HK">${esc(gap)}</span> <span class="jp">${Canto.jyutping(w.jyutping)}</span> ${esc(w.english)}`;
+    return w.hanzi === char ? 'Write the character you hear.' : `Write the missing character you hear:<br><span class="hanzi" lang="zh-HK">${esc(gap)}</span>`;
   }
 
   function round({ vocab, mode }) {
@@ -114,7 +119,7 @@
       const total = data.strokes.length;
       const allowed = Math.max(1, Math.round(total / 6));
       const ghost = mode === 'watch' || mode === 'trace';
-      let k = 0, slips = 0, tries = 0, hinting = false, ready = mode !== 'watch';
+      let k = 0, slips = 0, tries = 0, hinting = false, ready = true;
 
       const say = () => ctx.play(w);
       const head = Canto.speech(mode === 'dictation' ? '聽' : '寫', prompt(mode, w, char), mode === 'dictation' || mode === 'recall' ? say : null);
@@ -136,6 +141,7 @@
       const where = () => `${ord(k + 1)} of ${total}`;
 
       async function watch() {
+        if (!ready) return;  // already being written
         ready = false;
         tell('Watch the strokes, in order.');
         await Strokes.animate(art, data, { ghost });
@@ -229,6 +235,6 @@
     });
   }
 
-  const api = { init, round, resample, match, judge };
+  const api = { init, round, resample, match, judge, blank };
   (typeof window !== 'undefined' ? window : globalThis).Write = api;
 })();
