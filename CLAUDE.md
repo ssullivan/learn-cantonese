@@ -51,7 +51,7 @@ unit<N>/
 tools/
   site.mjs               shared helpers for the scripts (unitDirs, loadVocab, loadArt, langTools)
   review.mjs             vocab → AUDIO-REVIEW.md (run by tts.mjs; check.mjs fails if it is stale)
-  svg.mjs                shared drawing parts (svg; person, arrow, bubble for people; face (with mouth, eyes and brows for expressions), figure, inBed, zzz, drop, puff, house, shadow, walker; steamer, plate, bowl, cup, pineappleBun; ball at any size; car, plane)
+  svg.mjs                shared drawing parts (svg; person, arm, arrow, ring, bubble for people; face (with mouth, eyes and brows for expressions), figure, inBed, zzz, drop, puff, house, shadow, walker; steamer, plate, bowl, cup, pineappleBun; ball at any size; car, plane)
   draw.mjs               art.mjs → img/*.svg
   tts.mjs                vocab.js → audio/*.mp3 (Azure Speech; MiniMax for a word with a `minimax:` voice)
   audio-check.mjs        machine checks on clips, by ~/audio-lang-tools (a separate repo): file, speech-to-text, per-syllable tones (see "Verifying audio")

@@ -15,7 +15,7 @@
         title: '我, 你, 佢',
         render(el, ctx) {
           el.append(
-            p('In the pictures, the person on the left is talking (see the speech bubble) to the person on the right. The arrow shows who the word means.'),
+            p('In the pictures, the person in red is talking (see the speech bubble) to the person on the right. They point at who the word means, and a gold ring goes around them.'),
             words(ctx, 'ngo', 'nei', 'keoi'),
             tip(`<strong>One word for he, she and it:</strong> ${zh('佢', 'keoi5')} doesn't tell you if the person is a man or a woman. All three words are tone 5, low rising.`),
           );

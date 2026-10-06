@@ -1,38 +1,34 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img">
-<title>你哋: the people being spoken to</title>
+<title>你哋: the people being spoken to, ringed together</title>
 <path d="M4 124 H124" stroke="#9fb0bb" stroke-width="3" stroke-linecap="round"/>
-<g transform="translate(52 58) scale(0.75)">
+<g transform="translate(76 36) scale(0.8)">
 <path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
 <circle r="12" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
 
 </g>
-<g transform="translate(76 58) scale(0.75)">
-<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
-<circle r="12" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
-
+<g transform="translate(26 80) scale(1)">
+<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#d6453a" stroke="#4a3a33" stroke-width="2.5" stroke-linejoin="round"/>
+<circle r="12" fill="#f2c9a0" stroke="#b07a52" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M-11 -2 C-12 -14 -4 -17 0 -17 C8 -17 12 -12 11 -2 C8 -9 -6 -10 -11 -2 Z" fill="#3b2f2a"/>
 </g>
-<g transform="translate(16 82) scale(1)">
-<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
-<circle r="12" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
-
-</g>
-<g transform="translate(42 88) scale(1)">
-<path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
-<circle r="12" fill="#c9d3da" stroke="#8a9aa5" stroke-width="2.5" stroke-linejoin="round"/>
-
-</g>
-<g transform="translate(112 82) scale(1)">
+<rect x="64.2" y="61.3" width="61.8" height="64.7" rx="14" fill="#e0a526" fill-opacity="0.18" stroke="#e0a526" stroke-width="3.5"/>
+<g transform="translate(84 88) scale(0.9)">
 <path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#3f7cc0" stroke="#4a3a33" stroke-width="2.5" stroke-linejoin="round"/>
 <circle r="12" fill="#f2c9a0" stroke="#b07a52" stroke-width="2.5" stroke-linejoin="round"/>
 <path d="M-11 -2 C-12 -14 -4 -17 0 -17 C8 -17 12 -12 11 -2 C8 -9 -6 -10 -11 -2 Z" fill="#3b2f2a"/>
 </g>
-<g transform="translate(86 88) scale(1)">
+<g transform="translate(110 82) scale(0.9)">
 <path d="M-17 44 V30 C-17 20 -10 16 0 16 C10 16 17 20 17 30 V44 Z" fill="#3f7cc0" stroke="#4a3a33" stroke-width="2.5" stroke-linejoin="round"/>
 <circle r="12" fill="#f2c9a0" stroke="#b07a52" stroke-width="2.5" stroke-linejoin="round"/>
 <path d="M-11 -2 C-12 -14 -4 -17 0 -17 C8 -17 12 -12 11 -2 C8 -9 -6 -10 -11 -2 Z" fill="#3b2f2a"/>
 </g>
-<path d="M6 8 H44 Q50 8 50 14 V26 Q50 32 44 32 H26 L18 40 L20 32 H6 Q0 32 0 26 V14 Q0 8 6 8 Z" fill="#ffffff" stroke="#6f8796" stroke-width="2.5" stroke-linejoin="round"/>
-<path d="M10 17 H40 M10 24 H32" stroke="#9fb0bb" stroke-width="3" stroke-linecap="round"/>
-<path d="M105 52 H119 L112 62 Z" fill="#e0a526" stroke="#9a6c0e" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M79 58 H93 L86 68 Z" fill="#e0a526" stroke="#9a6c0e" stroke-width="1.5" stroke-linejoin="round"/>
+<g stroke-linecap="round" stroke-linejoin="round" fill="none">
+<path d="M38 102 L52 104 L62 100" stroke="#4a3a33" stroke-width="10"/>
+<path d="M38 102 L52 104 L62 100" stroke="#d6453a" stroke-width="5.5"/>
+<path d="M62 100 l8.9 -1.3" stroke="#b07a52" stroke-width="5.5"/>
+<path d="M62 100 l8.9 -1.3" stroke="#f2c9a0" stroke-width="3"/>
+<circle cx="62" cy="100" r="4.5" fill="#f2c9a0" stroke="#b07a52" stroke-width="2"/>
+</g>
+<path d="M6 4 H44 Q50 4 50 10 V24 Q50 30 44 30 H36 L30 60 L26 30 H6 Q0 30 0 24 V10 Q0 4 6 4 Z" fill="#ffffff" stroke="#6f8796" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M10 13 H40 M10 21 H32" stroke="#9fb0bb" stroke-width="3" stroke-linecap="round"/>
 </svg>

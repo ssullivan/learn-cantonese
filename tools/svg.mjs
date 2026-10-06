@@ -13,10 +13,19 @@
  *                      hair when coloured and none when grey. `look`:
  *                      { hair: 'short' | 'long' | 'bun' | 'none', old } draws
  *                      that hair (white when old) on grey people too
- *   SHIRT              { red, blue, green, gold } shirt colours
+ *   arm(points, shirt, s = 1, { finger })
+ *                      an arm through `points` ([[x, y], ...], shoulder to
+ *                      hand) in a `shirt` sleeve (null: grey), with a hand
+ *                      at the last point; `finger` [dx, dy] makes it point
+ *                      that way. Draw it after the person it belongs to
+ *   SHIRT              { red, blue, green, gold, purple, orange, white }
+ *                      shirt colours (unit 3's pronouns use red, blue and
+ *                      green for speaker, listener and others)
  *   LINE               stroke attributes for outlines
  *   arrow(x, y)        gold arrow pointing down at x, y (marks who is meant)
- *   bubble             speech bubble in the top-left corner
+ *   ring(x1, y1, x2, y2)  gold ring around a box (marks who is meant)
+ *   bubble(x, y)       speech bubble in the top-left corner, its tail
+ *                      pointing at x, y (the speaker's mouth)
  *   floor              a line along the bottom
  *
  * Food:
@@ -76,7 +85,8 @@ ${body}
 
 const SKIN = '#f2c9a0', SKIN_LINE = '#b07a52';
 const GREY = 'fill="#c9d3da" stroke="#8a9aa5"';
-export const SHIRT = { red: '#d6453a', blue: '#3f7cc0', green: '#3a9a6e', gold: '#e0a526' };
+export const SHIRT = { red: '#d6453a', blue: '#3f7cc0', green: '#3a9a6e', gold: '#e0a526',
+  purple: '#7d5bb6', orange: '#e57d2c', white: '#f7f5ef' };
 export const LINE = 'stroke-width="2.5" stroke-linejoin="round"';
 
 // Hair, drawn over the head (front) and, for long hair and buns, behind it.
@@ -102,8 +112,22 @@ ${hair.front ? `<path d="${hair.front}" fill="${fill}"/>` : ''}
 }
 
 export const arrow = (x, y) => `<path d="M${x - 7} ${y - 10} H${x + 7} L${x} ${y} Z" fill="#e0a526" stroke="#9a6c0e" stroke-width="1.5" stroke-linejoin="round"/>`;
-export const bubble = `<path d="M6 8 H44 Q50 8 50 14 V26 Q50 32 44 32 H26 L18 40 L20 32 H6 Q0 32 0 26 V14 Q0 8 6 8 Z" fill="#ffffff" stroke="#6f8796" stroke-width="2.5" stroke-linejoin="round"/>
-<path d="M10 17 H40 M10 24 H32" stroke="#9fb0bb" stroke-width="3" stroke-linecap="round"/>`;
+export const bubble = (x, y) => `<path d="M6 4 H44 Q50 4 50 10 V24 Q50 30 44 30 H${Math.max(x, 16) + 6} L${x} ${y} L${Math.max(x, 16) - 4} 30 H6 Q0 30 0 24 V10 Q0 4 6 4 Z" fill="#ffffff" stroke="#6f8796" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M10 13 H40 M10 21 H32" stroke="#9fb0bb" stroke-width="3" stroke-linecap="round"/>`;
+export const ring = (x1, y1, x2, y2) => `<rect x="${x1}" y="${y1}" width="${x2 - x1}" height="${y2 - y1}" rx="14" fill="#e0a526" fill-opacity="0.18" stroke="#e0a526" stroke-width="3.5"/>`;
+
+export function arm(points, shirt, s = 1, { finger } = {}) {
+  const line = points.map(([x, y], i) => `${i ? 'L' : 'M'}${x} ${y}`).join(' ');
+  const [hx, hy] = points.at(-1);
+  const [skin, skinLine] = shirt ? [SKIN, SKIN_LINE] : ['#c9d3da', '#8a9aa5'];
+  const len = finger && Math.hypot(...finger);
+  const tip = finger && `M${hx} ${hy} l${(finger[0] / len * 9 * s).toFixed(1)} ${(finger[1] / len * 9 * s).toFixed(1)}`;
+  return `<g stroke-linecap="round" stroke-linejoin="round" fill="none">
+<path d="${line}" stroke="${shirt ? '#4a3a33' : '#8a9aa5'}" stroke-width="${10 * s}"/>
+<path d="${line}" stroke="${shirt ? SHIRT[shirt] : '#c9d3da'}" stroke-width="${5.5 * s}"/>
+${tip ? `<path d="${tip}" stroke="${skinLine}" stroke-width="${5.5 * s}"/>\n<path d="${tip}" stroke="${skin}" stroke-width="${3 * s}"/>\n` : ''}<circle cx="${hx}" cy="${hy}" r="${4.5 * s}" fill="${skin}" stroke="${skinLine}" stroke-width="2"/>
+</g>`;
+}
 export const floor = '<path d="M4 124 H124" stroke="#9fb0bb" stroke-width="3" stroke-linecap="round"/>';
 
 export const steamer = food => `<g data-dish="steamer">
