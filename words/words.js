@@ -160,3 +160,21 @@ Words.add(3, [
   { id: 'hai-mai', hanzi: '係咪', jyutping: 'hai6 mai6', english: 'is it? (short for 係唔係)', img: false,
     note: 'Fast speech squeezes 係唔係 into 係咪. You will hear it everywhere.' },
 ]);
+
+// Unit 4 · Numbers 數字
+Words.add(4, [
+  // words
+  { id: 'baak', hanzi: '百', jyutping: 'baak3', english: 'hundred', img: false },
+  { id: 'cin', hanzi: '千', jyutping: 'cin1', english: 'thousand', img: false },
+  { id: 'maan', hanzi: '萬', jyutping: 'maan6', english: 'ten thousand', img: false,
+    note: 'Big numbers are counted in 萬s: 100,000 is 十萬, "ten ten-thousands".' },
+  { id: 'loeng', hanzi: '兩', jyutping: 'loeng5', english: 'two (of something)', img: false,
+    note: 'Before a measure word (兩個) and at the start of 兩百, 兩千, 兩萬.' },
+  { id: 'go', hanzi: '個', jyutping: 'go3', english: 'the everyday measure word', img: false,
+    note: 'A number needs a measure word before a noun: 三個人, three people. Unit 5 has many more.' },
+  { id: 'dai', hanzi: '第', jyutping: 'dai6', english: '-th (makes an ordinal)', img: false,
+    note: '第 + number: 第一 first, 第二 second.' },
+  { id: 'gei-do', hanzi: '幾多', jyutping: 'gei2 do1', english: 'how many; how much', img: false,
+    note: 'Ask 幾多？ for any number. 幾多錢？ asks a price (unit 6).' },
+  { id: 'gei-do-go', hanzi: '幾多個？', jyutping: 'gei2 do1 go3', english: 'how many (of them)?', img: false },
+]);

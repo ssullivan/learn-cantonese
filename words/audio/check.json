@@ -1,10 +1,24 @@
 {
+ "baak": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 八 baat"
+  ],
+  "audio": "ec5be7faac9e"
+ },
  "cow": {
   "verdict": "LISTEN",
   "notes": [
    "speech-to-text heard 歐元 au jyun"
   ],
   "audio": "0d86695bdf74"
+ },
+ "dai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard d d"
+  ],
+  "audio": "d99075d9c87b"
  },
  "eaten-yet": {
   "verdict": "CHECK",
@@ -27,6 +41,28 @@
    "speech-to-text heard 二 ji"
   ],
   "audio": "ea55a19f1796"
+ },
+ "gei-do": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 幾 tone 2 sounds like 5 (p 0.35)"
+  ],
+  "audio": "e655cc1d7e30"
+ },
+ "gei-do-go": {
+  "verdict": "CHECK",
+  "notes": [
+   "tone: 個 tone 3 sounds like 1 (p 0.00)",
+   "tone doubtful: 幾 tone 2 sounds like 5 (p 0.35)"
+  ],
+  "audio": "e1bf4ba6fd2c"
+ },
+ "go": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 個 tone 3 sounds like 6 (p 0.07)"
+  ],
+  "audio": "aa3a58ad5ae1"
  },
  "hai-mai": {
   "verdict": "CHECK",

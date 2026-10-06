@@ -140,14 +140,14 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 
 | # | Chinese | Jyutping | English | Audio |
 |---|---|---|---|---|
-| 1 | 百 | baak3 | hundred | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/baak.mp3) |
-| 2 | 千 | cin1 | thousand | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/cin.mp3) |
-| 3 | 萬 | maan6 | ten thousand | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/maan.mp3) |
-| 4 | 兩 | loeng5 | two (of something) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/loeng.mp3) |
-| 5 | 個 | go3 | the everyday measure word | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/go.mp3) |
-| 6 | 第 | dai6 | -th (makes an ordinal) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/dai.mp3) |
-| 7 | 幾多 | gei2 do1 | how many; how much | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/gei-do.mp3) |
-| 8 | 幾多個？ | gei2 do1 go3 | how many (of them)? | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/gei-do-go.mp3) |
+| 1 | 百 | baak3 | hundred | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/baak.mp3) |
+| 2 | 千 | cin1 | thousand | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/cin.mp3) |
+| 3 | 萬 | maan6 | ten thousand | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/maan.mp3) |
+| 4 | 兩 | loeng5 | two (of something) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/loeng.mp3) |
+| 5 | 個 | go3 | the everyday measure word | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/go.mp3) |
+| 6 | 第 | dai6 | -th (makes an ordinal) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/dai.mp3) |
+| 7 | 幾多 | gei2 do1 | how many; how much | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gei-do.mp3) |
+| 8 | 幾多個？ | gei2 do1 go3 | how many (of them)? | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gei-do-go.mp3) |
 | 9 | 零 | ling4 | 0 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n0.mp3) |
 | 10 | 一 | jat1 | 1 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n1.mp3) |
 | 11 | 二 | ji6 | 2 | [▶ play](https://ssullivan.github.io/learn-cantonese/unit4/audio/n2.mp3) |
