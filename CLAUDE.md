@@ -43,17 +43,18 @@ unit<N>/               one unit (see its CLAUDE.md):
 tools/
   site.mjs             shared helpers for the scripts (unitDirs, loadVocab, loadArt, langTools, shouldRetryAzure)
   check.mjs            site checks (its header lists them); --fix writes cache stamps and pages' vocab scripts
+  vocab-fields.mjs     every field a vocab entry may have and its kind of value (text, number, id, ids...), checked by check.mjs
   page-refs.mjs        the vocab groups and ids a page script names (V.verbs, byId['dung'], ctx.words('a')...), which check.mjs
                        resolves against the unit's vocab
   svg.mjs draw.mjs     shared drawing parts; art.mjs → img/*.svg
   tts.mjs review.mjs   vocab → audio (Azure; MiniMax for a `minimax:` voice) → AUDIO-REVIEW.md
   audio-check.mjs      machine checks on clips, by ~/audio-lang-tools (a separate repo)
   stroke-data.mjs stroke-check.mjs strokes-composed.mjs strokes.mjs strokes-hk.json  stroke order (see below)
-  *.test.mjs           run by check.mjs: strokes, pitch, units (borrowing), core, site (retrying), numbers, page-refs
+  *.test.mjs           run by check.mjs: strokes, pitch, units (borrowing), core, site (retrying), numbers, page-refs, vocab-fields
 ```
 
 ## Words, audio and pictures
-- Every word lives once, in `unit<N>/vocab.js`: `{ id, hanzi, jyutping, english, note?, img?, measure?, say?, ssml?, phoneme?, voice?, reply?, when?, words? }` plus the unit's own fields (documented in its header). `id` names its files; `img: false` means no picture. `reply` (ids of good answers) and `when` (situations) feed Reply Match; `words` (the ids a derived sentence is made of) feeds Tiles.round.
+- Every word lives once, in `unit<N>/vocab.js`: `{ id, hanzi, jyutping, english, note?, img?, measure?, say?, ssml?, phoneme?, voice?, reply?, when?, words? }` plus the unit's own fields (documented in its header). Every field is listed with the kind of value it holds in `tools/vocab-fields.mjs`, and check.mjs fails on any other field, a wrong value, or an id that names no entry: add a new field there first. `id` names its files; `img: false` means no picture. `reply` (ids of good answers) and `when` (situations) feed Reply Match; `words` (the ids a derived sentence is made of) feeds Tiles.round.
 - A word belongs to the first unit that teaches it. A later unit borrows it with `Units.word(n, id)` in the derived section of its `vocab.js`; its audio and picture stay in `unit<n>/`. Borrowing a borrowed word keeps its home unit and what was added to it. `Units.word(n, id, as)` borrows under another id when the id is taken. Borrow only from earlier units; never copy a word into a second vocab.js.
 - Derive, don't copy: phrases and sentences are computed at the bottom of `vocab.js` (`Units.sentences`), and get audio like any entry. Numbers, counts and times come from `Canto.number` and `Canto.time`, prices from `Canto.price`, never typed out. Extend `shared/numbers.js` (and `tools/numbers.test.mjs`) when a unit needs a new form.
 - Measure words: a thing's `measure` must match its picture (籠 ↔ `steamer()`, 碟 ↔ `plate()`, 碗 ↔ `bowl()`, 杯 ↔ `cup()`, no dish for the rest); check.mjs enforces it, in a borrowed word's own unit. A borrowed noun can gain a `measure`.

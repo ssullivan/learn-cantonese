@@ -15,6 +15,9 @@
  *   - every .js file compiles
  *   - no site script copies a shared helper (Units.byId, ctx.words,
  *     Game.pic, Game.playOnReveal) instead of using it
+ *   - every vocab entry has only the fields in tools/vocab-fields.mjs, each
+ *     holding its kind of value, and the ids it names (words, reply,
+ *     measure, tool...) are entries
  *   - each unit<N>/vocab.js: unique ids, tone numbers in jyutping,
  *     audio/<id>.mp3 for every entry, a drawing in art.mjs for every
  *     entry without img:false, and no orphan .mp3 files or drawings
@@ -53,6 +56,7 @@ import vm from 'node:vm';
 import { spawnSync } from 'node:child_process';
 import { ROOT, unitDirs, loadVocab, entries, own, loadArt, secrets } from './site.mjs';
 import { inlineScripts, pageReferences } from './page-refs.mjs';
+import { entryProblems } from './vocab-fields.mjs';
 import { RECORDS, readRecords, recordProblem, strokeFile, meta, COMPOSED, composedProblem, composedMeta } from './stroke-data.mjs';
 const fix = process.argv.includes('--fix');
 const problems = [];
@@ -180,6 +184,8 @@ for (const [char, r] of Object.entries(records)) {
   if (p) bad(RECORDS, `${char}: ${p}`);
 }
 const taughtIn = {};
+const homeIdSets = {};
+const homeIds = n => homeIdSets[n] ??= new Set(entries(loadVocab(`unit${n}`) ?? {}).map(e => e.id));
 for (const unit of unitDirs()) {
   const dir = join(ROOT, unit);
   const vocabFile = join(dir, 'vocab.js');
@@ -192,7 +198,11 @@ for (const unit of unitDirs()) {
   for (const e of all) {
     if (ids.has(e.id)) bad(vocabFile, `duplicate id ${e.id}`);
     ids.add(e.id);
-    for (const f of ['id', 'hanzi', 'jyutping', 'english']) if (!e[f]) bad(vocabFile, `${e.id ?? '?'} is missing ${f}`);
+  }
+  for (const e of all) {
+    // A borrowed entry's ids may be its home unit's (unit 18's 蘋果 keeps unit 5's measure).
+    const isId = id => ids.has(id) || (e.unit && homeIds(e.unit).has(id));
+    for (const p of entryProblems(e, isId)) bad(vocabFile, p);
     if (e.jyutping && !/^[a-z]+[1-6]( [a-z]+[1-6])*$/.test(e.jyutping)) bad(vocabFile, `${e.id}: jyutping "${e.jyutping}" needs a tone number on every syllable`);
     if (!own(e, unit)) continue;
     if (!existsSync(join(dir, 'audio', `${e.id}.mp3`))) bad(vocabFile, `${e.id} has no audio (run node tools/tts.mjs ${unit})`);
