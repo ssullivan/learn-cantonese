@@ -62,20 +62,6 @@
   ],
   "audio": "61a293cdef82"
  },
- "fu": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard Fou f o u"
-  ],
-  "audio": "fdcf688421d9"
- },
- "hat": {
-  "verdict": "LISTEN",
-  "notes": [
-   "tone doubtful: 帽 tone 2 sounds like 5 (p 0.07)"
-  ],
-  "audio": "67c2e9e1abd5"
- },
  "hung-ge-coat": {
   "verdict": "LISTEN",
   "notes": [
@@ -206,13 +192,6 @@
   ],
   "audio": "38ca9864ab53"
  },
- "skirt": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 關 gwaan"
-  ],
-  "audio": "df8570071c02"
- },
  "wong-ge-coat": {
   "verdict": "LISTEN",
   "notes": [
@@ -233,12 +212,5 @@
    "tone doubtful: 嘅 tone 3 sounds like 6 (p 0.34)"
   ],
   "audio": "e47e8fbf3273"
- },
- "zoek": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard Chat c h a t"
-  ],
-  "audio": "34028bd54616"
  }
 }

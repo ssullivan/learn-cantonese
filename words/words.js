@@ -561,3 +561,48 @@ Words.add(11, [
   { id: 'cin-min', hanzi: '前面', jyutping: 'cin4 min6', english: 'ahead; in front', img: false },
   { id: 'deoi-min', hanzi: '對面', jyutping: 'deoi3 min6', english: 'opposite; across the road', img: false },
 ]);
+
+// Unit 12 · Colours & Clothes 顏色同衫
+Words.add(12, [
+  // basics
+  { id: 'ngaan-sik', hanzi: '顏色', jyutping: 'ngaan4 sik1', english: 'colour',
+    note: 'Every colour ends in 色: 紅色, 藍色.' },
+  { id: 'daa-baan', hanzi: '打扮', jyutping: 'daa2 baan6', english: 'to dress up; to get ready',
+    note: 'Choosing what to wear.' },
+  { id: 'zoek', hanzi: '著', jyutping: 'zoek3', english: 'to wear (clothes, shoes)', img: false, phoneme: true,
+    note: 'For what you put your body into: 著衫, 著褲, 著鞋.' },
+  { id: 'daai', hanzi: '戴', jyutping: 'daai3', english: 'to wear (a hat, glasses)', img: false,
+    note: 'For what you put on: 戴帽, 戴眼鏡, 戴手錶 (a watch).' },
+  { id: 'leng', hanzi: '靚', jyutping: 'leng3', english: 'pretty; nice-looking', img: false,
+    note: 'For people and things: 好靚.' },
+  // colours
+  { id: 'hung', hanzi: '紅色', jyutping: 'hung4 sik1', english: 'red' },
+  { id: 'caang', hanzi: '橙色', jyutping: 'caang2 sik1', english: 'orange',
+    note: 'The colour of 橙 (Unit 6).' },
+  { id: 'wong', hanzi: '黃色', jyutping: 'wong4 sik1', english: 'yellow' },
+  { id: 'luk', hanzi: '綠色', jyutping: 'luk6 sik1', english: 'green' },
+  { id: 'laam', hanzi: '藍色', jyutping: 'laam4 sik1', english: 'blue' },
+  { id: 'zi2', hanzi: '紫色', jyutping: 'zi2 sik1', english: 'purple' },
+  { id: 'fan-hung', hanzi: '粉紅色', jyutping: 'fan2 hung4 sik1', english: 'pink',
+    note: '"Powder red".' },
+  { id: 'fe', hanzi: '啡色', jyutping: 'fe1 sik1', english: 'brown',
+    note: 'The colour of 咖啡, coffee.' },
+  { id: 'hak', hanzi: '黑色', jyutping: 'hak1 sik1', english: 'black' },
+  { id: 'baak6', hanzi: '白色', jyutping: 'baak6 sik1', english: 'white' },
+  { id: 'fui', hanzi: '灰色', jyutping: 'fui1 sik1', english: 'grey',
+    note: '灰 is ash.' },
+  // clothes
+  { id: 'hat', hanzi: '帽', jyutping: 'mou2', english: 'hat; cap', measure: 'deng',
+    note: 'mou2 in speech. Worn with 戴: 戴帽.' },
+  { id: 'coat', hanzi: '外套', jyutping: 'ngoi6 tou3', english: 'coat; jacket', measure: 'gin',
+    note: 'Literally "outer cover". A top, so 件.' },
+  { id: 'skirt', hanzi: '裙', jyutping: 'kwan4', english: 'skirt; dress', measure: 'tiu',
+    note: 'Long like trousers, so 條.' },
+  { id: 'glasses', hanzi: '眼鏡', jyutping: 'ngaan5 geng2', english: 'glasses', measure: 'fu',
+    note: '鏡 is geng3, but geng2 here. Worn with 戴.' },
+  // measures
+  { id: 'deng', hanzi: '頂', jyutping: 'deng2', english: 'for hats', img: false,
+    note: '頂 is the top: 一頂帽.' },
+  { id: 'fu', hanzi: '副', jyutping: 'fu3', english: 'a pair of (glasses)', img: false,
+    note: 'For a set that goes together: 一副眼鏡.' },
+]);

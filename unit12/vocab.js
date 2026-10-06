@@ -22,54 +22,31 @@ Units.add(12, {
   write: '白色紅',
 
   basics: [
-    { id: 'ngaan-sik', hanzi: '顏色', jyutping: 'ngaan4 sik1', english: 'colour',
-      note: 'Every colour ends in 色: 紅色, 藍色.' },
-    { id: 'daa-baan', hanzi: '打扮', jyutping: 'daa2 baan6', english: 'to dress up; to get ready',
-      note: 'Choosing what to wear.' },
-    { id: 'zoek', hanzi: '著', jyutping: 'zoek3', english: 'to wear (clothes, shoes)', img: false,
-      note: 'For what you put your body into: 著衫, 著褲, 著鞋.' },
-    { id: 'daai', hanzi: '戴', jyutping: 'daai3', english: 'to wear (a hat, glasses)', img: false,
-      note: 'For what you put on: 戴帽, 戴眼鏡, 戴手錶 (a watch).' },
-    { id: 'leng', hanzi: '靚', jyutping: 'leng3', english: 'pretty; nice-looking', img: false,
-      note: 'For people and things: 好靚.' },
+    ...Words.list('ngaan-sik daa-baan zoek daai leng'),
   ],
 
   // fill and line: the colour and its outline, for pictures.
   colours: [
-    { id: 'hung', hanzi: '紅色', jyutping: 'hung4 sik1', english: 'red', fill: '#d6453a', line: '#8f2a22' },
-    { id: 'caang', hanzi: '橙色', jyutping: 'caang2 sik1', english: 'orange', fill: '#ef8a2c', line: '#a8561a',
-      note: 'The colour of 橙 (Unit 6).' },
-    { id: 'wong', hanzi: '黃色', jyutping: 'wong4 sik1', english: 'yellow', fill: '#f2c94c', line: '#9a7a1a' },
-    { id: 'luk', hanzi: '綠色', jyutping: 'luk6 sik1', english: 'green', fill: '#3a9a6e', line: '#26684a' },
-    { id: 'laam', hanzi: '藍色', jyutping: 'laam4 sik1', english: 'blue', fill: '#3f7cc0', line: '#24507f' },
-    { id: 'zi2', hanzi: '紫色', jyutping: 'zi2 sik1', english: 'purple', fill: '#8a5cc0', line: '#5a3a86' },
-    { id: 'fan-hung', hanzi: '粉紅色', jyutping: 'fan2 hung4 sik1', english: 'pink', fill: '#f29bb8', line: '#b0587a',
-      note: '"Powder red".' },
-    { id: 'fe', hanzi: '啡色', jyutping: 'fe1 sik1', english: 'brown', fill: '#8a5a34', line: '#5a3a1e',
-      note: 'The colour of 咖啡, coffee.' },
-    { id: 'hak', hanzi: '黑色', jyutping: 'hak1 sik1', english: 'black', fill: '#2e2e33', line: '#101014' },
-    { id: 'baak6', hanzi: '白色', jyutping: 'baak6 sik1', english: 'white', fill: '#f7f7f5', line: '#8a9aa5' },
-    { id: 'fui', hanzi: '灰色', jyutping: 'fui1 sik1', english: 'grey', fill: '#9aa3aa', line: '#5f6a72',
-      note: '灰 is ash.' },
+    { ...Words.get('hung'), fill: '#d6453a', line: '#8f2a22' },
+    { ...Words.get('caang'), fill: '#ef8a2c', line: '#a8561a' },
+    { ...Words.get('wong'), fill: '#f2c94c', line: '#9a7a1a' },
+    { ...Words.get('luk'), fill: '#3a9a6e', line: '#26684a' },
+    { ...Words.get('laam'), fill: '#3f7cc0', line: '#24507f' },
+    { ...Words.get('zi2'), fill: '#8a5cc0', line: '#5a3a86' },
+    { ...Words.get('fan-hung'), fill: '#f29bb8', line: '#b0587a' },
+    { ...Words.get('fe'), fill: '#8a5a34', line: '#5a3a1e' },
+    { ...Words.get('hak'), fill: '#2e2e33', line: '#101014' },
+    { ...Words.get('baak6'), fill: '#f7f7f5', line: '#8a9aa5' },
+    { ...Words.get('fui'), fill: '#9aa3aa', line: '#5f6a72' },
   ],
 
   // More clothes; 衫, 褲 and 鞋 come from Unit 5 below.
   clothes: [
-    { id: 'hat', measure: 'deng', hanzi: '帽', jyutping: 'mou2', english: 'hat; cap',
-      note: 'mou2 in speech. Worn with 戴: 戴帽.' },
-    { id: 'coat', measure: 'gin', hanzi: '外套', jyutping: 'ngoi6 tou3', english: 'coat; jacket',
-      note: 'Literally "outer cover". A top, so 件.' },
-    { id: 'skirt', measure: 'tiu', hanzi: '裙', jyutping: 'kwan4', english: 'skirt; dress',
-      note: 'Long like trousers, so 條.' },
-    { id: 'glasses', measure: 'fu', hanzi: '眼鏡', jyutping: 'ngaan5 geng2', english: 'glasses',
-      note: '鏡 is geng3, but geng2 here. Worn with 戴.' },
+    ...Words.list('hat coat skirt glasses'),
   ],
 
   measures: [
-    { id: 'deng', hanzi: '頂', jyutping: 'deng2', english: 'for hats', img: false,
-      note: '頂 is the top: 一頂帽.' },
-    { id: 'fu', hanzi: '副', jyutping: 'fu3', english: 'a pair of (glasses)', img: false,
-      note: 'For a set that goes together: 一副眼鏡.' },
+    ...Words.list('deng fu'),
   ],
 });
 

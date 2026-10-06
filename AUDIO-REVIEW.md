@@ -1225,28 +1225,28 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 
 | # | Chinese | Jyutping | English | Audio |
 |---|---|---|---|---|
-| 1 | 顏色 | ngaan4 sik1 | colour | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/ngaan-sik.mp3) |
-| 2 | 打扮 | daa2 baan6 | to dress up; to get ready | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/daa-baan.mp3) |
-| 3 | 著 | zoek3 | to wear (clothes, shoes) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/zoek.mp3) |
-| 4 | 戴 | daai3 | to wear (a hat, glasses) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/daai.mp3) |
-| 5 | 靚 | leng3 | pretty; nice-looking | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/leng.mp3) |
-| 6 | 紅色 | hung4 sik1 | red | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/hung.mp3) |
-| 7 | 橙色 | caang2 sik1 | orange | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/caang.mp3) |
-| 8 | 黃色 | wong4 sik1 | yellow | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/wong.mp3) |
-| 9 | 綠色 | luk6 sik1 | green | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/luk.mp3) |
-| 10 | 藍色 | laam4 sik1 | blue | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/laam.mp3) |
-| 11 | 紫色 | zi2 sik1 | purple | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/zi2.mp3) |
-| 12 | 粉紅色 | fan2 hung4 sik1 | pink | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/fan-hung.mp3) |
-| 13 | 啡色 | fe1 sik1 | brown | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/fe.mp3) |
-| 14 | 黑色 | hak1 sik1 | black | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/hak.mp3) |
-| 15 | 白色 | baak6 sik1 | white | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/baak6.mp3) |
-| 16 | 灰色 | fui1 sik1 | grey | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/fui.mp3) |
-| 17 | 帽 | mou2 | hat; cap | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/hat.mp3) |
-| 18 | 外套 | ngoi6 tou3 | coat; jacket | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/coat.mp3) |
-| 19 | 裙 | kwan4 | skirt; dress | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/skirt.mp3) |
-| 20 | 眼鏡 | ngaan5 geng2 | glasses | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/glasses.mp3) |
-| 21 | 頂 | deng2 | for hats | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/deng.mp3) |
-| 22 | 副 | fu3 | a pair of (glasses) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/fu.mp3) |
+| 1 | 顏色 | ngaan4 sik1 | colour | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ngaan-sik.mp3) |
+| 2 | 打扮 | daa2 baan6 | to dress up; to get ready | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/daa-baan.mp3) |
+| 3 | 著 | zoek3 | to wear (clothes, shoes) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zoek.mp3) |
+| 4 | 戴 | daai3 | to wear (a hat, glasses) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/daai.mp3) |
+| 5 | 靚 | leng3 | pretty; nice-looking | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/leng.mp3) |
+| 6 | 紅色 | hung4 sik1 | red | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hung.mp3) |
+| 7 | 橙色 | caang2 sik1 | orange | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/caang.mp3) |
+| 8 | 黃色 | wong4 sik1 | yellow | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/wong.mp3) |
+| 9 | 綠色 | luk6 sik1 | green | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/luk.mp3) |
+| 10 | 藍色 | laam4 sik1 | blue | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/laam.mp3) |
+| 11 | 紫色 | zi2 sik1 | purple | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zi2.mp3) |
+| 12 | 粉紅色 | fan2 hung4 sik1 | pink | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fan-hung.mp3) |
+| 13 | 啡色 | fe1 sik1 | brown | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fe.mp3) |
+| 14 | 黑色 | hak1 sik1 | black | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hak.mp3) |
+| 15 | 白色 | baak6 sik1 | white | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/baak6.mp3) |
+| 16 | 灰色 | fui1 sik1 | grey | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fui.mp3) |
+| 17 | 帽 | mou2 | hat; cap | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hat.mp3) |
+| 18 | 外套 | ngoi6 tou3 | coat; jacket | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/coat.mp3) |
+| 19 | 裙 | kwan4 | skirt; dress | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/skirt.mp3) |
+| 20 | 眼鏡 | ngaan5 geng2 | glasses | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/glasses.mp3) |
+| 21 | 頂 | deng2 | for hats | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/deng.mp3) |
+| 22 | 副 | fu3 | a pair of (glasses) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fu.mp3) |
 | 23 | 一頂帽 | jat1 deng2 mou2 | a hat | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/one-hat.mp3) |
 | 24 | 一件外套 | jat1 gin6 ngoi6 tou3 | a coat | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/one-coat.mp3) |
 | 25 | 一條裙 | jat1 tiu4 kwan4 | a skirt | [▶ play](https://ssullivan.github.io/learn-cantonese/unit12/audio/one-skirt.mp3) |
