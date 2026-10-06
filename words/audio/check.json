@@ -55,12 +55,26 @@
   ],
   "audio": "949374d7378d"
  },
+ "ci": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Ti t i"
+  ],
+  "audio": "52f96ba459a0"
+ },
  "cin-min": {
   "verdict": "LISTEN",
   "notes": [
    "speech-to-text heard 天天 tin tin"
   ],
   "audio": "3ce7469c67f9"
+ },
+ "cough": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 派 paai"
+  ],
+  "audio": "501e0f8b804e"
  },
  "cow": {
   "verdict": "LISTEN",
@@ -118,6 +132,13 @@
   ],
   "audio": "e0fb4511f081"
  },
+ "ear": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 耳 tone 5 sounds like 6 (p 0.04)"
+  ],
+  "audio": "c920c3f60902"
+ },
  "eaten-yet": {
   "verdict": "CHECK",
   "notes": [
@@ -131,6 +152,13 @@
    "tone: 唔 tone 4 sounds like 5 (p 0.03); 思 tone 3 sounds like 1 (p 0.00)"
   ],
   "audio": "577a947ed73b"
+ },
+ "eye": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 明 ming"
+  ],
+  "audio": "57a0f1017dcb"
  },
  "family": {
   "verdict": "LISTEN",
@@ -146,6 +174,13 @@
    "speech-to-text heard 二 ji"
   ],
   "audio": "ea55a19f1796"
+ },
+ "foot": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Da d a"
+  ],
+  "audio": "41f47b4da2e7"
  },
  "fu": {
   "verdict": "LISTEN",
@@ -239,6 +274,13 @@
   ],
   "audio": "67c2e9e1abd5"
  },
+ "head": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 後 hau"
+  ],
+  "audio": "062ddebfa0ba"
+ },
  "hello": {
   "verdict": "LISTEN",
   "notes": [
@@ -288,6 +330,13 @@
    "speech-to-text heard you y o u"
   ],
   "audio": "88e915f0586f"
+ },
+ "joek": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Ya y a"
+  ],
+  "audio": "64cf345183d4"
  },
  "jyutping": {
   "verdict": "LISTEN",
@@ -361,6 +410,13 @@
   ],
   "audio": "be2314130f81"
  },
+ "mouth": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 跑 paau"
+  ],
+  "audio": "323ef7dc138a"
+ },
  "nei": {
   "verdict": "LISTEN",
   "notes": [
@@ -382,6 +438,13 @@
    "speech-to-text heard nothing "
   ],
   "audio": "721fc7ba4eee"
+ },
+ "nose": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 八 baat"
+  ],
+  "audio": "5585a5aa50cf"
  },
  "nyun": {
   "verdict": "LISTEN",
@@ -510,6 +573,13 @@
   ],
   "audio": "c60cecd53906"
  },
+ "tooth": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 噶 got"
+  ],
+  "audio": "b4632fce655d"
+ },
  "umbrella": {
   "verdict": "LISTEN",
   "notes": [
@@ -559,6 +629,13 @@
    "speech-to-text heard Jo j o"
   ],
   "audio": "36c2019c0cf3"
+ },
+ "zo2": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Jo j o"
+  ],
+  "audio": "9dcb6f5af6e3"
  },
  "zoek": {
   "verdict": "LISTEN",

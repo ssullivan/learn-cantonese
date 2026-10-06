@@ -1434,39 +1434,39 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 
 | # | Chinese | Jyutping | English | Audio |
 |---|---|---|---|---|
-| 1 | 身體 | san1 tai2 | body; health | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/body.mp3) |
-| 2 | 頭 | tau4 | head | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/head.mp3) |
-| 3 | 眼 | ngaan5 | eye | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/eye.mp3) |
-| 4 | 耳仔 | ji5 zai2 | ear | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ear.mp3) |
-| 5 | 鼻 | bei6 | nose | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/nose.mp3) |
-| 6 | 口 | hau2 | mouth | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/mouth.mp3) |
-| 7 | 牙 | ngaa4 | tooth; teeth | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/tooth.mp3) |
-| 8 | 喉嚨 | hau4 lung4 | throat | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/throat.mp3) |
-| 9 | 手 | sau2 | hand; arm | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/hand.mp3) |
-| 10 | 腳 | goek3 | foot; leg | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/foot.mp3) |
-| 11 | 肚 | tou5 | stomach; belly | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/stomach.mp3) |
-| 12 | 背脊 | bui3 zek3 | back | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/back.mp3) |
-| 13 | 痛 | tung3 | to hurt; pain | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/tung3.mp3) |
-| 14 | 醫生 | ji1 sang1 | doctor | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ji-sang.mp3) |
-| 15 | 睇 | tai2 | to look at; to see | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/tai.mp3) |
-| 16 | 藥 | joek6 | medicine | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/joek.mp3) |
-| 17 | 感冒 | gam2 mou6 | a cold; the flu | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/cold.mp3) |
-| 18 | 流 | lau4 | to flow; to run | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/lau.mp3) |
-| 19 | 舒服 | syu1 fuk6 | comfortable; well | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/syu-fuk.mp3) |
-| 20 | 休息 | jau1 sik1 | to rest | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/jau-sik.mp3) |
-| 21 | 好返 | hou2 faan1 | to get better | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/hou-faan.mp3) |
-| 22 | 保重 | bou2 zung6 | take care! | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/bou-zung.mp3) |
-| 23 | 早 | zou2 | early; soon | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/zou.mp3) |
-| 24 | 發燒 | faat3 siu1 | to have a fever | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/fever.mp3) |
-| 25 | 咳 | kat1 | to cough | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/cough.mp3) |
+| 1 | 身體 | san1 tai2 | body; health | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/body.mp3) |
+| 2 | 頭 | tau4 | head | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/head.mp3) |
+| 3 | 眼 | ngaan5 | eye | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/eye.mp3) |
+| 4 | 耳仔 | ji5 zai2 | ear | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ear.mp3) |
+| 5 | 鼻 | bei6 | nose | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/nose.mp3) |
+| 6 | 口 | hau2 | mouth | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/mouth.mp3) |
+| 7 | 牙 | ngaa4 | tooth; teeth | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/tooth.mp3) |
+| 8 | 喉嚨 | hau4 lung4 | throat | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/throat.mp3) |
+| 9 | 手 | sau2 | hand; arm | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hand.mp3) |
+| 10 | 腳 | goek3 | foot; leg | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/foot.mp3) |
+| 11 | 肚 | tou5 | stomach; belly | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/stomach.mp3) |
+| 12 | 背脊 | bui3 zek3 | back | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/back.mp3) |
+| 13 | 痛 | tung3 | to hurt; pain | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/tung3.mp3) |
+| 14 | 醫生 | ji1 sang1 | doctor | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ji-sang.mp3) |
+| 15 | 睇 | tai2 | to look at; to see | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/tai.mp3) |
+| 16 | 藥 | joek6 | medicine | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/joek.mp3) |
+| 17 | 感冒 | gam2 mou6 | a cold; the flu | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/cold.mp3) |
+| 18 | 流 | lau4 | to flow; to run | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/lau.mp3) |
+| 19 | 舒服 | syu1 fuk6 | comfortable; well | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/syu-fuk.mp3) |
+| 20 | 休息 | jau1 sik1 | to rest | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jau-sik.mp3) |
+| 21 | 好返 | hou2 faan1 | to get better | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hou-faan.mp3) |
+| 22 | 保重 | bou2 zung6 | take care! | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/bou-zung.mp3) |
+| 23 | 早 | zou2 | early; soon | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zou.mp3) |
+| 24 | 發燒 | faat3 siu1 | to have a fever | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fever.mp3) |
+| 25 | 咳 | kat1 | to cough | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/cough.mp3) |
 | 26 | 流鼻水 | lau4 bei6 seoi2 | a runny nose | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/lau-nose-water.mp3) |
-| 27 | 咗 | zo2 | (done; has happened) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/zo2.mp3) |
-| 28 | 冇 | mou5 | not have; there isn't | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/mou.mp3) |
-| 29 | 未 | mei6 | not yet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/mei.mp3) |
-| 30 | 日 | jat6 | day (counted) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/jat6.mp3) |
-| 31 | 次 | ci3 | time(s); occasion | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ci.mp3) |
-| 32 | 粒 | nap1 | for pills, sweets, grains | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/nap.mp3) |
-| 33 | 每 | mui5 | every; each | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/mui.mp3) |
+| 27 | 咗 | zo2 | (done; has happened) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zo2.mp3) |
+| 28 | 冇 | mou5 | not have; there isn't | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/mou.mp3) |
+| 29 | 未 | mei6 | not yet | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/mei.mp3) |
+| 30 | 日 | jat6 | day (counted) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jat6.mp3) |
+| 31 | 次 | ci3 | time(s); occasion | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ci.mp3) |
+| 32 | 粒 | nap1 | for pills, sweets, grains | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/nap.mp3) |
+| 33 | 每 | mui5 | every; each | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/mui.mp3) |
 | 34 | 頭痛 | tau4 tung3 | a headache | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/head-tung3.mp3) |
 | 35 | 眼痛 | ngaan5 tung3 | sore eyes | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/eye-tung3.mp3) |
 | 36 | 耳仔痛 | ji5 zai2 tung3 | an earache | [▶ play](https://ssullivan.github.io/learn-cantonese/unit14/audio/ear-tung3.mp3) |

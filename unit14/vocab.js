@@ -20,76 +20,25 @@ Units.add(14, {
   // Body parts. 隻 for one of a pair (and teeth), 個 for the rest, 條 for
   // the long throat.
   body: [
-    { id: 'body', hanzi: '身體', jyutping: 'san1 tai2', english: 'body; health',
-      note: 'Also your health: 身體好 is being healthy.' },
-    { id: 'head', measure: 'go', hanzi: '頭', jyutping: 'tau4', english: 'head' },
-    { id: 'eye', measure: 'zek', hanzi: '眼', jyutping: 'ngaan5', english: 'eye',
-      note: 'As in 眼鏡, glasses (Unit 12).' },
-    { id: 'ear', measure: 'zek', hanzi: '耳仔', jyutping: 'ji5 zai2', english: 'ear',
-      note: '仔 makes it small and friendly, as in 雀仔 (little bird).' },
-    { id: 'nose', measure: 'go', hanzi: '鼻', jyutping: 'bei6', english: 'nose',
-      note: 'Also 鼻哥 bei6 go1.' },
-    { id: 'mouth', hanzi: '口', jyutping: 'hau2', english: 'mouth' },
-    { id: 'tooth', measure: 'zek', hanzi: '牙', jyutping: 'ngaa4', english: 'tooth; teeth' },
-    { id: 'throat', measure: 'tiu', hanzi: '喉嚨', jyutping: 'hau4 lung4', english: 'throat',
-      note: 'Long and thin, so 條: 我條喉嚨.' },
-    { id: 'hand', measure: 'zek', hanzi: '手', jyutping: 'sau2', english: 'hand; arm',
-      note: 'The whole arm, too.' },
-    { id: 'foot', measure: 'zek', hanzi: '腳', jyutping: 'goek3', english: 'foot; leg',
-      note: 'The whole leg, too.' },
-    { id: 'stomach', measure: 'go', hanzi: '肚', jyutping: 'tou5', english: 'stomach; belly' },
-    { id: 'back', hanzi: '背脊', jyutping: 'bui3 zek3', english: 'back',
-      note: '脊 is zek3 in speech.' },
+    ...Words.list('body head eye ear nose mouth tooth throat hand foot stomach back'),
   ],
 
   health: [
-    { id: 'tung3', hanzi: '痛', jyutping: 'tung3', english: 'to hurt; pain', img: false,
-      note: 'After the body part: 頭痛, a headache.' },
-    { id: 'ji-sang', hanzi: '醫生', jyutping: 'ji1 sang1', english: 'doctor',
-      note: '醫 as in 醫院, hospital (Unit 11).' },
-    { id: 'tai', hanzi: '睇', jyutping: 'tai2', english: 'to look at; to see', img: false,
-      note: 'Also to read or watch: 睇書, 睇戲.' },
-    { id: 'joek', hanzi: '藥', jyutping: 'joek6', english: 'medicine',
-      note: 'You "eat" medicine: 食藥, even a syrup.' },
-    { id: 'cold', hanzi: '感冒', jyutping: 'gam2 mou6', english: 'a cold; the flu', img: false,
-      note: 'Catching one takes 咗: 我感冒咗.' },
-    { id: 'lau', hanzi: '流', jyutping: 'lau4', english: 'to flow; to run', img: false },
-    { id: 'syu-fuk', hanzi: '舒服', jyutping: 'syu1 fuk6', english: 'comfortable; well', img: false,
-      note: '唔舒服: unwell, not feeling good.' },
-    { id: 'jau-sik', hanzi: '休息', jyutping: 'jau1 sik1', english: 'to rest' },
-    { id: 'hou-faan', hanzi: '好返', jyutping: 'hou2 faan1', english: 'to get better', img: false,
-      note: '返 is "back": good again.' },
-    { id: 'bou-zung', hanzi: '保重', jyutping: 'bou2 zung6', english: 'take care!', img: false },
-    { id: 'zou', hanzi: '早', jyutping: 'zou2', english: 'early; soon', img: false,
-      note: 'As in 早晨 (Unit 2), "early morning".' },
+    ...Words.list('tung3 ji-sang tai joek cold lau syu-fuk jau-sik hou-faan bou-zung zou'),
   ],
 
   // What's wrong. 流鼻水 is made at the bottom of this file.
   symptoms: [
-    { id: 'fever', hanzi: '發燒', jyutping: 'faat3 siu1', english: 'to have a fever',
-      note: 'Literally "put out heat".' },
-    { id: 'cough', hanzi: '咳', jyutping: 'kat1', english: 'to cough',
-      note: 'Also 咳嗽 kat1 sau3.' },
+    ...Words.list('fever cough'),
   ],
 
   grammar: [
-    { id: 'zo2', hanzi: '咗', jyutping: 'zo2', english: '(done; has happened)', img: false,
-      note: 'Straight after the verb: 食咗藥, took the medicine.' },
-    { id: 'mou', hanzi: '冇', jyutping: 'mou5', english: 'not have; there isn\'t', img: false,
-      note: 'The opposite of 有. Never 唔有.' },
-    { id: 'mei', hanzi: '未', jyutping: 'mei6', english: 'not yet', img: false,
-      note: 'Asks "yet?" at the end: 食咗未呀？ Answers "not yet" on its own.' },
+    ...Words.list('zo2 mou mei'),
   ],
 
   // Counting doses: 一日三次，每次兩粒.
   counting: [
-    { id: 'jat6', hanzi: '日', jyutping: 'jat6', english: 'day (counted)', img: false,
-      note: 'Counted without a measure word: 一日, 兩日.' },
-    { id: 'ci', hanzi: '次', jyutping: 'ci3', english: 'time(s); occasion', img: false,
-      note: 'Counts how often: 三次, three times.' },
-    { id: 'nap', hanzi: '粒', jyutping: 'nap1', english: 'for pills, sweets, grains', img: false,
-      note: 'A measure word for small round things: 兩粒藥.' },
-    { id: 'mui', hanzi: '每', jyutping: 'mui5', english: 'every; each', img: false },
+    ...Words.list('jat6 ci nap mui'),
   ],
 });
 
