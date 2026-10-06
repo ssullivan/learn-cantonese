@@ -2,7 +2,8 @@
  * game.css — styles for games built with game.js. Load after theme.css.
  *
  * .level-list > button.level (level menu), .hud, .timer > .timer-fill,
- * .stage (.locked after answering), .game-feedback, .game-end
+ * .stage (.locked after answering; with a picture in it, its answers
+ * show characters without Jyutping), .game-feedback, .game-end
  * (.perfect: the stars pop in), canvas.celebrate (Game.celebrate),
  * .stars, .btn.small, .speech (a speech bubble), .tray (labelled box
  * of answer buttons), .prompt-pic (big picture to answer about),
@@ -77,6 +78,11 @@
 .timer-fill { height: 100%; background: var(--jade); transform-origin: left; transition: background 0.3s; }
 .timer-fill.low { background: var(--bad); }
 .stage.locked { pointer-events: none; }
+/* A round with a picture is about reading the characters: its answers
+   (choices, tiles, picture labels) show no Jyutping. The answer line after
+   the round still gives it. */
+.stage:has(img) :is(.choice, .tile, .pic-label) .zh :is(.jp, rt) { display: none; }
+.stage:has(img) :is(.choice, .tile) .zh ruby { margin: 0; }
 .game-feedback { min-height: 3.5em; }
 .game-feedback .btn { margin-left: 8px; vertical-align: middle; }
 

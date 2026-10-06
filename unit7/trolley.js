@@ -50,9 +50,9 @@
       Dishes in a steamer are ordered by the ${zh('籠', 'lung4')} (basket), dishes on a plate by the ${zh('碟', 'dip6')},
       and congee by the ${zh('碗', 'wun2')} (bowl).`,
     levels: [
-      { id: 'first-orders', name: 'First orders', blurb: 'One dish at a time from a small trolley, each named in characters and Jyutping.', rounds: 8, time: 15, labels: 'both', round: order({ dishes: 1, trolley: 4 }) },
+      { id: 'first-orders', name: 'First orders', blurb: 'One dish at a time from a small trolley, each named in characters.', rounds: 8, time: 15, labels: 'hanzi', round: order({ dishes: 1, trolley: 4 }) },
       { id: 'measure', name: '一籠, 一碟 or 一碗?', blurb: 'Your turn to order: pick the right measure word.', rounds: 8, time: 0, round: Measures.round({ pool: V.items, vocab: V, choices: 3, prompt: i => `You'd like the ${esc(i.english)}. How do you order it?` }) },
-      { id: 'lunch-rush', name: 'Lunch rush', blurb: 'A bigger trolley and hungrier customers. Dishes named in characters only.', rounds: 10, time: 10, labels: 'hanzi', round: order({ dishes: 1, trolley: 6 }) },
+      { id: 'lunch-rush', name: 'Lunch rush', blurb: 'A bigger trolley, hungrier customers and less time.', rounds: 10, time: 10, labels: 'hanzi', round: order({ dishes: 1, trolley: 6 }) },
       { id: 'big-table', name: 'Big table', blurb: 'Two dishes per order, pictures only. Tap both.', rounds: 8, time: 16, round: order({ dishes: 2, trolley: 6 }) },
     ],
   });

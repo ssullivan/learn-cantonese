@@ -4,7 +4,7 @@ Dishes (steamed, fried and baked, sweet, 粥粉麵飯), 一籠 / 一碟 / 一碗
 
 ## Pages
 - `learn.html`, `lessons.js` (`u7-learn`): **the template** for learn pages.
-- `trolley.html`, `trolley.js` (`u7-trolley`): Trolley Rush: hear customers' orders (唔該，一籠蝦餃！) and serve the right dishes. **The template** for games. Each level's `labels` sets the picture answers' labels (`'both'`, then `'hanzi'`, then none), dropping them as levels get harder.
+- `trolley.html`, `trolley.js` (`u7-trolley`): Trolley Rush: hear customers' orders (唔該，一籠蝦餃！) and serve the right dishes. **The template** for games. Each level's `labels` sets the picture answers' labels (`'hanzi'`, then none), dropping them as levels get harder. Games show no Jyutping on the answers of a round with a picture (`shared/game.css`), so `'both'` would look like `'hanzi'` here.
 - `build.html` (`u7-build`): Build & Say: `Tiles.round` with `say: true`, build an order from tiles, then say it.
 - `tones.html`, `say.html`; `sheet.html`, `write.html`: writes 小心米.
 
