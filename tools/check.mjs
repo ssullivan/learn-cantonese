@@ -20,6 +20,9 @@
  *     entry without img:false, and no orphan .mp3 files or drawings
  *   - a word borrowed with Units.word(n, ...) has its audio and picture
  *     checked in unit n
+ *   - every vocab group and entry id a unit's page scripts name (V.verbs,
+ *     byId['dung'], ctx.words('a', 'b'), Units.word(9, 't0600')...; see
+ *     tools/page-refs.mjs) is in the vocab the page loads
  *   - pages load vocab only between the vocab markers, where --fix writes
  *     shared/numbers.js (if needed), shared/units.js and every earlier
  *     unit's vocab.js and the page's own (every unit's on the review pages)
@@ -49,6 +52,7 @@ import { dirname, join, relative, extname } from 'node:path';
 import vm from 'node:vm';
 import { spawnSync } from 'node:child_process';
 import { ROOT, unitDirs, loadVocab, entries, own, loadArt, secrets } from './site.mjs';
+import { inlineScripts, pageReferences } from './page-refs.mjs';
 import { RECORDS, readRecords, recordProblem, strokeFile, meta, COMPOSED, composedProblem, composedMeta } from './stroke-data.mjs';
 const fix = process.argv.includes('--fix');
 const problems = [];
@@ -244,6 +248,36 @@ for (const unit of unitDirs()) {
   const verdicts = join(dir, 'audio', 'check.json');
   if (existsSync(verdicts)) {
     for (const id of Object.keys(JSON.parse(readFileSync(verdicts, 'utf8')))) if (!ids.has(id)) bad(verdicts, `${id} is not in vocab.js (rerun node tools/audio-check.mjs ${unit})`);
+  }
+}
+
+// Names page scripts take from the vocab: a misspelt group or id is
+// undefined in the browser, and fails only on the step or level using it.
+{
+  const vocabs = {};
+  const vocabOf = unit => vocabs[unit] ??= (() => {
+    try { const v = loadVocab(unit); return v && { v, ids: new Set(entries(v).map(e => e.id)) }; } catch { return null; }
+  })();
+  for (const unit of unitDirs()) {
+    const own = vocabOf(unit);
+    if (!own) continue;
+    const n = +unit.slice(4);
+    for (const name of readdirSync(join(ROOT, unit))) {
+      const file = join(ROOT, unit, name);
+      const scripts = name.endsWith('.js') && name !== 'vocab.js' ? [{ source: readFileSync(file, 'utf8'), line: 1 }]
+        : name.endsWith('.html') ? inlineScripts(readFileSync(file, 'utf8')) : [];
+      for (const script of scripts) {
+        for (const ref of pageReferences(script.source)) {
+          const at = `line ${script.line + ref.line - 1}`;
+          if (ref.kind === 'group' && !(ref.name in own.v)) bad(file, `${at}: V.${ref.name} is not in ${unit}/vocab.js`);
+          if (ref.kind === 'id' && !own.ids.has(ref.name)) bad(file, `${at}: no entry ${ref.name} in ${unit}'s vocab`);
+          if (ref.kind === 'word') {
+            if (ref.unit > n) bad(file, `${at}: Units.word(${ref.unit}, ...) borrows from a later unit`);
+            else if (!vocabOf(`unit${ref.unit}`)?.ids.has(ref.name)) bad(file, `${at}: unit ${ref.unit} has no word ${ref.name}`);
+          }
+        }
+      }
+    }
   }
 }
 

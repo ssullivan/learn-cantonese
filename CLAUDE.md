@@ -43,11 +43,13 @@ unit<N>/               one unit (see its CLAUDE.md):
 tools/
   site.mjs             shared helpers for the scripts (unitDirs, loadVocab, loadArt, langTools, shouldRetryAzure)
   check.mjs            site checks (its header lists them); --fix writes cache stamps and pages' vocab scripts
+  page-refs.mjs        the vocab groups and ids a page script names (V.verbs, byId['dung'], ctx.words('a')...), which check.mjs
+                       resolves against the unit's vocab
   svg.mjs draw.mjs     shared drawing parts; art.mjs → img/*.svg
   tts.mjs review.mjs   vocab → audio (Azure; MiniMax for a `minimax:` voice) → AUDIO-REVIEW.md
   audio-check.mjs      machine checks on clips, by ~/audio-lang-tools (a separate repo)
   stroke-data.mjs stroke-check.mjs strokes-composed.mjs strokes.mjs strokes-hk.json  stroke order (see below)
-  *.test.mjs           run by check.mjs: strokes, pitch, units (borrowing), core, site (retrying), numbers
+  *.test.mjs           run by check.mjs: strokes, pitch, units (borrowing), core, site (retrying), numbers, page-refs
 ```
 
 ## Words, audio and pictures
