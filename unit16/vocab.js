@@ -20,54 +20,22 @@ Units.add(16, {
 
   // The verbs of free time. 打 睇 做 are borrowed below.
   verbs: [
-    { id: 'coeng', hanzi: '唱', jyutping: 'coeng3', english: 'to sing', img: false },
-    { id: 'teng', hanzi: '聽', jyutping: 'teng1', english: 'to listen (to)', img: false,
-      note: 'teng1 when you speak; 聽日 (tomorrow, Unit 9) is ting1.' },
-    { id: 'jau4', hanzi: '游', jyutping: 'jau4', english: 'to swim', img: false },
-    { id: 'haang', hanzi: '行', jyutping: 'haang4', english: 'to walk', img: false,
-      note: 'As in 行路 (Unit 11).' },
-    { id: 'tek', hanzi: '踢', jyutping: 'tek3', english: 'to kick', img: false },
-    { id: 'tiu3', hanzi: '跳', jyutping: 'tiu3', english: 'to jump', img: false },
-    { id: 'jing', hanzi: '影', jyutping: 'jing2', english: 'to take (a photo)', img: false },
-    { id: 'waak', hanzi: '畫', jyutping: 'waak6', english: 'to draw; to paint', img: false,
-      note: 'The verb is waak6; the picture you make is waa2.' },
-    { id: 'caai', hanzi: '踩', jyutping: 'caai2', english: 'to step on; to pedal', img: false },
+    ...Words.list('coeng teng jau4 haang tek tiu3 jing waak caai'),
   ],
 
   // What they are done to. 波 水 are borrowed below.
   things: [
-    { id: 'hei3', hanzi: '戲', jyutping: 'hei3', english: 'a film; a show', img: false },
-    { id: 'gei1', hanzi: '機', jyutping: 'gei1', english: 'a machine; a games console', img: false,
-      note: 'As in 機場 (Unit 11), "machine place".' },
-    { id: 'kei', hanzi: 'K', jyutping: 'kei1', english: 'karaoke (in 唱K)', img: false,
-      note: 'The English letter K, from "karaoke".' },
-    { id: 'go1', hanzi: '歌', jyutping: 'go1', english: 'a song', img: false },
-    { id: 'saan', hanzi: '山', jyutping: 'saan1', english: 'a hill; a mountain', img: false },
+    ...Words.list('hei3 gei1 kei go1 saan'),
     { ...Units.word(1, 'street'), english: 'a street' },
-    { id: 'mou5', hanzi: '舞', jyutping: 'mou5', english: 'a dance', img: false },
-    { id: 'soeng2', hanzi: '相', jyutping: 'soeng2', english: 'a photo', img: false },
-    { id: 'waa', hanzi: '畫', jyutping: 'waa2', english: 'a picture; a painting', img: false,
-      note: 'The same character as the verb 畫 waak6: 畫畫 is waak6 waa2.' },
-    { id: 'daan-ce', hanzi: '單車', jyutping: 'daan1 ce1', english: 'a bicycle', img: false,
-      note: '"Single car": 車 as in Unit 1.' },
+    ...Words.list('mou5 soeng2 waa daan-ce'),
   ],
 
   grammar: [
-    { id: 'zung-ji', hanzi: '鍾意', jyutping: 'zung1 ji3', english: 'to like', img: false,
-      note: 'Before a verb or a thing: 鍾意游水, 鍾意貓. Also written 中意.' },
-    { id: 'zung1', hanzi: '鍾', jyutping: 'zung1', english: '(the first half of 鍾意)', img: false,
-      note: 'Asking A唔A, only the first half comes twice: 鍾唔鍾意.' },
-    { id: 'soeng', hanzi: '想', jyutping: 'soeng2', english: 'to want to; would like to', img: false,
-      note: 'Before the verb: 想去, want to go.' },
+    ...Words.list('zung-ji zung1 soeng'),
   ],
 
   talk: [
-    { id: 'hing-ceoi', hanzi: '興趣', jyutping: 'hing3 ceoi3', english: 'an interest; a hobby', img: false },
-    { id: 'dak-haan', hanzi: '得閒', jyutping: 'dak1 haan4', english: 'free (not busy)', img: false,
-      note: 'Busy is 唔得閒.' },
-    { id: 'zau-mut', hanzi: '周末', jyutping: 'zau1 mut6', english: 'the weekend', img: false },
-    { id: 'jat-cai', hanzi: '一齊', jyutping: 'jat1 cai4', english: 'together', img: false,
-      note: 'Before the verb: 一齊去, go together.' },
+    ...Words.list('hing-ceoi dak-haan zau-mut jat-cai'),
   ],
 });
 

@@ -48,6 +48,13 @@
   ],
   "audio": "5d9dd1e14209"
  },
+ "caai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 差 caa"
+  ],
+  "audio": "5115229178fd"
+ },
  "caat": {
   "verdict": "LISTEN",
   "notes": [
@@ -403,6 +410,13 @@
   ],
   "audio": "847c6f74a264"
  },
+ "kei": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard K k"
+  ],
+  "audio": "f9d1d932877c"
+ },
  "lou-si": {
   "verdict": "LISTEN",
   "notes": [
@@ -637,6 +651,13 @@
   ],
   "audio": "8d1925d04100"
  },
+ "tiu3": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Duw d u w"
+  ],
+  "audio": "a5efa89d3661"
+ },
  "toilet": {
   "verdict": "LISTEN",
   "notes": [
@@ -657,6 +678,13 @@
    "speech-to-text heard 車 ce"
   ],
   "audio": "7c61583d0864"
+ },
+ "waak": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 嘩 waa"
+  ],
+  "audio": "828eed464853"
  },
  "water": {
   "verdict": "LISTEN",

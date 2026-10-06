@@ -1743,31 +1743,31 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 
 | # | Chinese | Jyutping | English | Audio |
 |---|---|---|---|---|
-| 1 | 唱 | coeng3 | to sing | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/coeng.mp3) |
-| 2 | 聽 | teng1 | to listen (to) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/teng.mp3) |
-| 3 | 游 | jau4 | to swim | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/jau4.mp3) |
-| 4 | 行 | haang4 | to walk | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/haang.mp3) |
-| 5 | 踢 | tek3 | to kick | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/tek.mp3) |
-| 6 | 跳 | tiu3 | to jump | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/tiu3.mp3) |
-| 7 | 影 | jing2 | to take (a photo) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/jing.mp3) |
-| 8 | 畫 | waak6 | to draw; to paint | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/waak.mp3) |
-| 9 | 踩 | caai2 | to step on; to pedal | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/caai.mp3) |
-| 10 | 戲 | hei3 | a film; a show | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/hei3.mp3) |
-| 11 | 機 | gei1 | a machine; a games console | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/gei1.mp3) |
-| 12 | K | kei1 | karaoke (in 唱K) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/kei.mp3) |
-| 13 | 歌 | go1 | a song | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/go1.mp3) |
-| 14 | 山 | saan1 | a hill; a mountain | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/saan.mp3) |
-| 15 | 舞 | mou5 | a dance | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/mou5.mp3) |
-| 16 | 相 | soeng2 | a photo | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/soeng2.mp3) |
-| 17 | 畫 | waa2 | a picture; a painting | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/waa.mp3) |
-| 18 | 單車 | daan1 ce1 | a bicycle | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/daan-ce.mp3) |
-| 19 | 鍾意 | zung1 ji3 | to like | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/zung-ji.mp3) |
-| 20 | 鍾 | zung1 | (the first half of 鍾意) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/zung1.mp3) |
-| 21 | 想 | soeng2 | to want to; would like to | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/soeng.mp3) |
-| 22 | 興趣 | hing3 ceoi3 | an interest; a hobby | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/hing-ceoi.mp3) |
-| 23 | 得閒 | dak1 haan4 | free (not busy) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/dak-haan.mp3) |
-| 24 | 周末 | zau1 mut6 | the weekend | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/zau-mut.mp3) |
-| 25 | 一齊 | jat1 cai4 | together | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/jat-cai.mp3) |
+| 1 | 唱 | coeng3 | to sing | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/coeng.mp3) |
+| 2 | 聽 | teng1 | to listen (to) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/teng.mp3) |
+| 3 | 游 | jau4 | to swim | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jau4.mp3) |
+| 4 | 行 | haang4 | to walk | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/haang.mp3) |
+| 5 | 踢 | tek3 | to kick | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/tek.mp3) |
+| 6 | 跳 | tiu3 | to jump | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/tiu3.mp3) |
+| 7 | 影 | jing2 | to take (a photo) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jing.mp3) |
+| 8 | 畫 | waak6 | to draw; to paint | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/waak.mp3) |
+| 9 | 踩 | caai2 | to step on; to pedal | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/caai.mp3) |
+| 10 | 戲 | hei3 | a film; a show | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hei3.mp3) |
+| 11 | 機 | gei1 | a machine; a games console | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gei1.mp3) |
+| 12 | K | kei1 | karaoke (in 唱K) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/kei.mp3) |
+| 13 | 歌 | go1 | a song | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/go1.mp3) |
+| 14 | 山 | saan1 | a hill; a mountain | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/saan.mp3) |
+| 15 | 舞 | mou5 | a dance | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/mou5.mp3) |
+| 16 | 相 | soeng2 | a photo | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/soeng2.mp3) |
+| 17 | 畫 | waa2 | a picture; a painting | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/waa.mp3) |
+| 18 | 單車 | daan1 ce1 | a bicycle | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/daan-ce.mp3) |
+| 19 | 鍾意 | zung1 ji3 | to like | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zung-ji.mp3) |
+| 20 | 鍾 | zung1 | (the first half of 鍾意) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zung1.mp3) |
+| 21 | 想 | soeng2 | to want to; would like to | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/soeng.mp3) |
+| 22 | 興趣 | hing3 ceoi3 | an interest; a hobby | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hing-ceoi.mp3) |
+| 23 | 得閒 | dak1 haan4 | free (not busy) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/dak-haan.mp3) |
+| 24 | 周末 | zau1 mut6 | the weekend | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zau-mut.mp3) |
+| 25 | 一齊 | jat1 cai4 | together | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jat-cai.mp3) |
 | 26 | 睇戲 | tai2 hei3 | to watch a film | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/tai-hei3.mp3) |
 | 27 | 打波 | daa2 bo1 | to play basketball; to play ball | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/daa-ball.mp3) |
 | 28 | 踢波 | tek3 bo1 | to play football | [▶ play](https://ssullivan.github.io/learn-cantonese/unit16/audio/tek-ball.mp3) |

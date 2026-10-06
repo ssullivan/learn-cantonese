@@ -1,11 +1,4 @@
 {
- "caai": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 差 caa"
-  ],
-  "audio": "5115229178fd"
- },
  "caai-daan-ce": {
   "verdict": "CHECK",
   "notes": [
@@ -26,13 +19,6 @@
    "tone: 呀 tone 3 sounds like 1 (p 0.04)"
   ],
   "audio": "741b7c59f230"
- },
- "kei": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard K k"
-  ],
-  "audio": "f9d1d932877c"
  },
  "keoi-m-sik-tiu3-mou5": {
   "verdict": "LISTEN",
@@ -476,20 +462,6 @@
    "tone doubtful: 舞 tone 5 sounds like 2 (p 0.39)"
   ],
   "audio": "5048c18eaeaf"
- },
- "tiu3": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard Duw d u w"
-  ],
-  "audio": "a5efa89d3661"
- },
- "waak": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 嘩 waa"
-  ],
-  "audio": "828eed464853"
  },
  "zau-mut-jat-cai-heoi-coeng-kei-aa": {
   "verdict": "LISTEN",
