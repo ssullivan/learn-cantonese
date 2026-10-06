@@ -581,39 +581,39 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 
 | # | Chinese | Jyutping | English | Audio |
 |---|---|---|---|---|
-| 1 | 飲茶 | jam2 caa4 | yum cha (go for dim sum) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/yum-cha.mp3) |
-| 2 | 點心 | dim2 sam1 | dim sum | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/dim-sum.mp3) |
-| 3 | 蒸 | zing1 | steamed | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/steamed.mp3) |
-| 4 | 煎炸 | zin1 zaa3 | pan-fried & deep-fried | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/fried.mp3) |
-| 5 | 焗 | guk6 | baked | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/baked.mp3) |
-| 6 | 甜 | tim4 | sweet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/sweet.mp3) |
-| 7 | 粥粉麵飯 | zuk1 fan2 min6 faan6 | congee, noodles & rice | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/rice-noodles.mp3) |
-| 8 | 籠 | lung4 | basket | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/lung.mp3) |
-| 9 | 碟 | dip6 | plate | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/dip.mp3) |
-| 10 | 蝦餃 | haa1 gaau2 | shrimp dumpling | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/har-gow.mp3) |
-| 11 | 燒賣 | siu1 maai2 | pork & shrimp dumpling | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/siu-mai.mp3) |
-| 12 | 叉燒包 | caa1 siu1 baau1 | BBQ pork bun | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/char-siu-bao.mp3) |
-| 13 | 腸粉 | coeng2 fan2 | rice noodle roll | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/cheung-fun.mp3) |
-| 14 | 鳳爪 | fung6 zaau2 | chicken feet | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/chicken-feet.mp3) |
-| 15 | 排骨 | paai4 gwat1 | steamed spare ribs | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/spare-ribs.mp3) |
-| 16 | 糯米雞 | no6 mai5 gai1 | sticky rice in lotus leaf | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/lo-mai-gai.mp3) |
-| 17 | 小籠包 | siu2 lung4 baau1 | soup dumpling | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/xiao-long-bao.mp3) |
-| 18 | 牛柏葉 | ngau4 paak3 jip6 | beef tripe | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/beef-tripe.mp3) |
-| 19 | 炸兩 | zaa3 loeng2 | fried dough in rice noodle roll | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/zaa-loeng.mp3) |
-| 20 | 春卷 | ceon1 gyun2 | spring roll | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/spring-roll.mp3) |
-| 21 | 蘿蔔糕 | lo4 baak6 gou1 | turnip cake | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/turnip-cake.mp3) |
-| 22 | 鹹水角 | haam4 seoi2 gok3 | fried sticky rice dumpling | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ham-sui-gok.mp3) |
-| 23 | 叉燒酥 | caa1 siu1 sou1 | BBQ pork puff | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/char-siu-sou.mp3) |
-| 24 | 蛋撻 | daan6 taat1 | egg tart | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/egg-tart.mp3) |
-| 25 | 流沙包 | lau4 saa1 baau1 | custard lava bun | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/lai-wong-bao.mp3) |
-| 26 | 馬拉糕 | maa5 laai1 gou1 | Malay sponge cake | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ma-lai-go.mp3) |
-| 27 | 菠蘿包 | bo1 lo4 baau1 | pineapple bun | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/pineapple-bun.mp3) |
-| 28 | 炒飯 | caau2 faan6 | fried rice | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/fried-rice.mp3) |
-| 29 | 海鮮炒麵 | hoi2 sin1 caau2 min6 | seafood fried noodles | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/seafood-noodles.mp3) |
-| 30 | 乾炒牛河 | gon1 caau2 ngau4 ho2 | dry-fried beef ho fun | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/beef-ho-fun.mp3) |
+| 1 | 飲茶 | jam2 caa4 | yum cha (go for dim sum) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/yum-cha.mp3) |
+| 2 | 點心 | dim2 sam1 | dim sum | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/dim-sum.mp3) |
+| 3 | 蒸 | zing1 | steamed | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/steamed.mp3) |
+| 4 | 煎炸 | zin1 zaa3 | pan-fried & deep-fried | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fried.mp3) |
+| 5 | 焗 | guk6 | baked | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/baked.mp3) |
+| 6 | 甜 | tim4 | sweet | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/sweet.mp3) |
+| 7 | 粥粉麵飯 | zuk1 fan2 min6 faan6 | congee, noodles & rice | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/rice-noodles.mp3) |
+| 8 | 籠 | lung4 | basket | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/lung.mp3) |
+| 9 | 碟 | dip6 | plate | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/dip.mp3) |
+| 10 | 蝦餃 | haa1 gaau2 | shrimp dumpling | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/har-gow.mp3) |
+| 11 | 燒賣 | siu1 maai2 | pork & shrimp dumpling | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/siu-mai.mp3) |
+| 12 | 叉燒包 | caa1 siu1 baau1 | BBQ pork bun | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/char-siu-bao.mp3) |
+| 13 | 腸粉 | coeng2 fan2 | rice noodle roll | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/cheung-fun.mp3) |
+| 14 | 鳳爪 | fung6 zaau2 | chicken feet | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/chicken-feet.mp3) |
+| 15 | 排骨 | paai4 gwat1 | steamed spare ribs | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/spare-ribs.mp3) |
+| 16 | 糯米雞 | no6 mai5 gai1 | sticky rice in lotus leaf | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/lo-mai-gai.mp3) |
+| 17 | 小籠包 | siu2 lung4 baau1 | soup dumpling | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/xiao-long-bao.mp3) |
+| 18 | 牛柏葉 | ngau4 paak3 jip6 | beef tripe | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/beef-tripe.mp3) |
+| 19 | 炸兩 | zaa3 loeng2 | fried dough in rice noodle roll | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zaa-loeng.mp3) |
+| 20 | 春卷 | ceon1 gyun2 | spring roll | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/spring-roll.mp3) |
+| 21 | 蘿蔔糕 | lo4 baak6 gou1 | turnip cake | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/turnip-cake.mp3) |
+| 22 | 鹹水角 | haam4 seoi2 gok3 | fried sticky rice dumpling | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ham-sui-gok.mp3) |
+| 23 | 叉燒酥 | caa1 siu1 sou1 | BBQ pork puff | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/char-siu-sou.mp3) |
+| 24 | 蛋撻 | daan6 taat1 | egg tart | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/egg-tart.mp3) |
+| 25 | 流沙包 | lau4 saa1 baau1 | custard lava bun | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/lai-wong-bao.mp3) |
+| 26 | 馬拉糕 | maa5 laai1 gou1 | Malay sponge cake | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/ma-lai-go.mp3) |
+| 27 | 菠蘿包 | bo1 lo4 baau1 | pineapple bun | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/pineapple-bun.mp3) |
+| 28 | 炒飯 | caau2 faan6 | fried rice | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fried-rice.mp3) |
+| 29 | 海鮮炒麵 | hoi2 sin1 caau2 min6 | seafood fried noodles | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/seafood-noodles.mp3) |
+| 30 | 乾炒牛河 | gon1 caau2 ngau4 ho2 | dry-fried beef ho fun | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/beef-ho-fun.mp3) |
 | 31 | 我要一籠蝦餃 | ngo5 jiu3 jat1 lung4 haa1 gaau2 | I'd like one order of shrimp dumpling | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/ngo-jiu-n1-lung-har-gow.mp3) |
-| 32 | 唔該加水 | m4 goi1 gaa1 seoi2 | more hot water, please | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/more-water.mp3) |
-| 33 | 唔該埋單 | m4 goi1 maai4 daan1 | the bill, please | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/bill.mp3) |
+| 32 | 唔該加水 | m4 goi1 gaa1 seoi2 | more hot water, please | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/more-water.mp3) |
+| 33 | 唔該埋單 | m4 goi1 maai4 daan1 | the bill, please | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/bill.mp3) |
 | 34 | 一籠蝦餃 | jat1 lung4 haa1 gaau2 | shrimp dumpling (1 basket) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-har-gow.mp3) |
 | 35 | 一籠燒賣 | jat1 lung4 siu1 maai2 | pork & shrimp dumpling (1 basket) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-siu-mai.mp3) |
 | 36 | 一籠叉燒包 | jat1 lung4 caa1 siu1 baau1 | BBQ pork bun (1 basket) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit7/audio/one-char-siu-bao.mp3) |

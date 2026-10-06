@@ -6,6 +6,20 @@
   ],
   "audio": "ec5be7faac9e"
  },
+ "beef-ho-fun": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 炒 tone 2 sounds like 5 (p 0.20)"
+  ],
+  "audio": "a8bfd111c041"
+ },
+ "bill": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 5 (p 0.12)"
+  ],
+  "audio": "3e0861b63207"
+ },
  "bui": {
   "verdict": "LISTEN",
   "notes": [
@@ -40,6 +54,13 @@
    "speech-to-text heard d d"
   ],
   "audio": "8f2e63154111"
+ },
+ "dip": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 貼 tip"
+  ],
+  "audio": "2ab390ab45ad"
  },
  "eaten-yet": {
   "verdict": "CHECK",
@@ -178,12 +199,26 @@
   ],
   "audio": "99468c999b8e"
  },
+ "ma-lai-go": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 馬 tone 5 sounds like 2 (p 0.46)"
+  ],
+  "audio": "043426875c4f"
+ },
  "maai6": {
   "verdict": "LISTEN",
   "notes": [
    "speech-to-text heard my m y"
   ],
   "audio": "5453c62db4bc"
+ },
+ "more-water": {
+  "verdict": "LISTEN",
+  "notes": [
+   "tone doubtful: 唔 tone 4 sounds like 6 (p 0.21)"
+  ],
+  "audio": "be2314130f81"
  },
  "nei": {
   "verdict": "LISTEN",
@@ -248,6 +283,13 @@
    "tone: 哋 tone 2 sounds like 6 (p 0.00)"
   ],
   "audio": "0bdfca20e8be"
+ },
+ "sweet": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Tim t i m"
+  ],
+  "audio": "730df1992e9d"
  },
  "tea": {
   "verdict": "LISTEN",
