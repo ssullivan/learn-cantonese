@@ -727,3 +727,50 @@ Words.add(14, [
     note: 'A measure word for small round things: 兩粒藥.' },
   { id: 'mui', hanzi: '每', jyutping: 'mui5', english: 'every; each', img: false },
 ]);
+
+// Unit 15 · Daily Routine 日常
+Words.add(15, [
+  // verbs
+  { id: 'hei', hanzi: '起', jyutping: 'hei2', english: 'to rise; to get up', img: false },
+  { id: 'caat', hanzi: '刷', jyutping: 'caat3', english: 'to brush', img: false,
+    note: 'Often said caat2 too.' },
+  { id: 'sai', hanzi: '洗', jyutping: 'sai2', english: 'to wash', img: false },
+  { id: 'cung', hanzi: '沖', jyutping: 'cung1', english: 'to rinse; to pour water over', img: false },
+  { id: 'faan', hanzi: '返', jyutping: 'faan1', english: 'to go back; to go (to work, school)', img: false, phoneme: true,
+    note: 'Where you go every day: 返工, 返學, 返屋企.' },
+  { id: 'fong', hanzi: '放', jyutping: 'fong3', english: 'to let go; to finish (work, school)', img: false },
+  { id: 'zyu2', hanzi: '煮', jyutping: 'zyu2', english: 'to cook; to boil', img: false },
+  { id: 'zou6', hanzi: '做', jyutping: 'zou6', english: 'to do; to make', img: false },
+  // things
+  { id: 'san', hanzi: '身', jyutping: 'san1', english: 'body', img: false,
+    note: 'As in 身體 (Unit 14). 起身 is "raise the body".' },
+  { id: 'min', hanzi: '面', jyutping: 'min6', english: 'face', img: false,
+    note: 'Also a side, as in 前面 and 對面 (Unit 11).' },
+  { id: 'gung', hanzi: '工', jyutping: 'gung1', english: 'work; a job', img: false },
+  { id: 'hok', hanzi: '學', jyutping: 'hok6', english: 'school; to learn', img: false },
+  { id: 'zou-caan', hanzi: '早餐', jyutping: 'zou2 caan1', english: 'breakfast', img: false,
+    note: '早 is early, as in 早晨 (Unit 2).' },
+  { id: 'aan', hanzi: '晏', jyutping: 'aan3', english: 'lunch (in 食晏)', img: false,
+    note: '晏 is midday, as in 晏晝 (Unit 9).' },
+  { id: 'maan-faan', hanzi: '晚飯', jyutping: 'maan5 faan6', english: 'dinner', img: false },
+  { id: 'din-si', hanzi: '電視', jyutping: 'din6 si6', english: 'television', img: false,
+    note: '電 is electric, as in 電車 (Unit 11).' },
+  { id: 'gaau', hanzi: '覺', jyutping: 'gaau3', english: 'a sleep', img: false,
+    note: 'Read gaau3 in 瞓覺, but gok3 in 感覺 (a feeling).' },
+  { id: 'je', hanzi: '嘢', jyutping: 'je5', english: 'things; stuff', img: false,
+    note: 'As in 乜嘢 (Unit 3). 做嘢 is "do things": to work.' },
+  // grammar
+  { id: 'gan', hanzi: '緊', jyutping: 'gan2', english: '(-ing; happening now)', img: false,
+    note: 'Straight after the verb, like 咗: 食緊飯, eating.' },
+  { id: 'gwo', hanzi: '過', jyutping: 'gwo3', english: '(ever; have done before)', img: false,
+    note: 'Straight after the verb: 去過, have been.' },
+  // order
+  { id: 'tung-soeng', hanzi: '通常', jyutping: 'tung1 soeng4', english: 'usually', img: false },
+  { id: 'sin', hanzi: '先', jyutping: 'sin1', english: 'first', img: false,
+    note: 'Before the verb: 我先刷牙.' },
+  { id: 'jin-hau', hanzi: '然後', jyutping: 'jin4 hau6', english: 'then; after that', img: false },
+  { id: 'zi-cin', hanzi: '之前', jyutping: 'zi1 cin4', english: 'before', img: false,
+    note: 'After what it is before: 瞓覺之前, before bed.' },
+  { id: 'zi-hau', hanzi: '之後', jyutping: 'zi1 hau6', english: 'after', img: false,
+    note: 'After what it is after: 放工之後, after work.' },
+]);

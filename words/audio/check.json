@@ -1,4 +1,11 @@
 {
+ "aan": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 安 on"
+  ],
+  "audio": "48e4907fa3db"
+ },
  "aan-zau": {
   "verdict": "LISTEN",
   "notes": [
@@ -40,6 +47,13 @@
    "speech-to-text heard nothing "
   ],
   "audio": "5d9dd1e14209"
+ },
+ "caat": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 拆 caak"
+  ],
+  "audio": "522c25936364"
  },
  "ceot": {
   "verdict": "LISTEN",
@@ -160,6 +174,13 @@
   ],
   "audio": "57a0f1017dcb"
  },
+ "faan": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 三 saam"
+  ],
+  "audio": "a036dd83ecc6"
+ },
  "family": {
   "verdict": "LISTEN",
   "notes": [
@@ -188,6 +209,14 @@
    "speech-to-text heard Fou f o u"
   ],
   "audio": "fdcf688421d9"
+ },
+ "gaau": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 角 gok",
+   "tone doubtful: 覺 tone 3 sounds like 6 (p 0.23)"
+  ],
+  "audio": "e0a444893bce"
  },
  "gau-nin": {
   "verdict": "LISTEN",
@@ -246,6 +275,13 @@
   ],
   "audio": "a4a514d0eb22"
  },
+ "gwo": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 歌 go"
+  ],
+  "audio": "ce78fcf3f6f3"
+ },
  "haa": {
   "verdict": "LISTEN",
   "notes": [
@@ -281,6 +317,13 @@
   ],
   "audio": "062ddebfa0ba"
  },
+ "hei": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 係 hai"
+  ],
+  "audio": "0aee79351935"
+ },
  "hello": {
   "verdict": "LISTEN",
   "notes": [
@@ -309,6 +352,13 @@
    "tone: 呀 tone 3 sounds like 1 (p 0.00)"
   ],
   "audio": "46dab8e43dc6"
+ },
+ "je": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 啊 aa"
+  ],
+  "audio": "af4114b51a43"
  },
  "jing-man": {
   "verdict": "CHECK",
@@ -396,6 +446,13 @@
   ],
   "audio": "5453c62db4bc"
  },
+ "min": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 明 ming"
+  ],
+  "audio": "dad3ebdf1142"
+ },
  "minibus": {
   "verdict": "LISTEN",
   "notes": [
@@ -481,6 +538,13 @@
   ],
   "audio": "a695ffa98d08"
  },
+ "sai": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 四 sei"
+  ],
+  "audio": "5f831b794672"
+ },
  "seoi": {
   "verdict": "LISTEN",
   "notes": [
@@ -501,6 +565,13 @@
    "tone: 妹 tone 6 sounds like 2 (p 0.00)"
   ],
   "audio": "9f838e5c0c4e"
+ },
+ "sin": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard Sin s i n"
+  ],
+  "audio": "112006226212"
  },
  "siu": {
   "verdict": "LISTEN",
@@ -643,6 +714,13 @@
    "speech-to-text heard Chat c h a t"
   ],
   "audio": "34028bd54616"
+ },
+ "zou6": {
+  "verdict": "LISTEN",
+  "notes": [
+   "speech-to-text heard 州 zau"
+  ],
+  "audio": "7a449d963cfe"
  },
  "zyu": {
   "verdict": "LISTEN",

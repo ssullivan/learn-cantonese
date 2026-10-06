@@ -1533,31 +1533,31 @@ Generated from each unit's `vocab.js` by `tools/review.mjs`: don't edit this fil
 
 | # | Chinese | Jyutping | English | Audio |
 |---|---|---|---|---|
-| 1 | 起 | hei2 | to rise; to get up | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/hei.mp3) |
-| 2 | 刷 | caat3 | to brush | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/caat.mp3) |
-| 3 | 洗 | sai2 | to wash | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/sai.mp3) |
-| 4 | 沖 | cung1 | to rinse; to pour water over | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/cung.mp3) |
-| 5 | 返 | faan1 | to go back; to go (to work, school) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/faan.mp3) |
-| 6 | 放 | fong3 | to let go; to finish (work, school) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/fong.mp3) |
-| 7 | 煮 | zyu2 | to cook; to boil | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/zyu2.mp3) |
-| 8 | 做 | zou6 | to do; to make | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/zou6.mp3) |
-| 9 | 身 | san1 | body | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/san.mp3) |
-| 10 | 面 | min6 | face | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/min.mp3) |
-| 11 | 工 | gung1 | work; a job | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/gung.mp3) |
-| 12 | 學 | hok6 | school; to learn | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/hok.mp3) |
-| 13 | 早餐 | zou2 caan1 | breakfast | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/zou-caan.mp3) |
-| 14 | 晏 | aan3 | lunch (in 食晏) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/aan.mp3) |
-| 15 | 晚飯 | maan5 faan6 | dinner | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/maan-faan.mp3) |
-| 16 | 電視 | din6 si6 | television | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/din-si.mp3) |
-| 17 | 覺 | gaau3 | a sleep | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/gaau.mp3) |
-| 18 | 嘢 | je5 | things; stuff | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/je.mp3) |
-| 19 | 緊 | gan2 | (-ing; happening now) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/gan.mp3) |
-| 20 | 過 | gwo3 | (ever; have done before) | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/gwo.mp3) |
-| 21 | 通常 | tung1 soeng4 | usually | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/tung-soeng.mp3) |
-| 22 | 先 | sin1 | first | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/sin.mp3) |
-| 23 | 然後 | jin4 hau6 | then; after that | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/jin-hau.mp3) |
-| 24 | 之前 | zi1 cin4 | before | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/zi-cin.mp3) |
-| 25 | 之後 | zi1 hau6 | after | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/zi-hau.mp3) |
+| 1 | 起 | hei2 | to rise; to get up | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hei.mp3) |
+| 2 | 刷 | caat3 | to brush | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/caat.mp3) |
+| 3 | 洗 | sai2 | to wash | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/sai.mp3) |
+| 4 | 沖 | cung1 | to rinse; to pour water over | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/cung.mp3) |
+| 5 | 返 | faan1 | to go back; to go (to work, school) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/faan.mp3) |
+| 6 | 放 | fong3 | to let go; to finish (work, school) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/fong.mp3) |
+| 7 | 煮 | zyu2 | to cook; to boil | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zyu2.mp3) |
+| 8 | 做 | zou6 | to do; to make | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zou6.mp3) |
+| 9 | 身 | san1 | body | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/san.mp3) |
+| 10 | 面 | min6 | face | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/min.mp3) |
+| 11 | 工 | gung1 | work; a job | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gung.mp3) |
+| 12 | 學 | hok6 | school; to learn | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/hok.mp3) |
+| 13 | 早餐 | zou2 caan1 | breakfast | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zou-caan.mp3) |
+| 14 | 晏 | aan3 | lunch (in 食晏) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/aan.mp3) |
+| 15 | 晚飯 | maan5 faan6 | dinner | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/maan-faan.mp3) |
+| 16 | 電視 | din6 si6 | television | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/din-si.mp3) |
+| 17 | 覺 | gaau3 | a sleep | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gaau.mp3) |
+| 18 | 嘢 | je5 | things; stuff | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/je.mp3) |
+| 19 | 緊 | gan2 | (-ing; happening now) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gan.mp3) |
+| 20 | 過 | gwo3 | (ever; have done before) | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/gwo.mp3) |
+| 21 | 通常 | tung1 soeng4 | usually | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/tung-soeng.mp3) |
+| 22 | 先 | sin1 | first | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/sin.mp3) |
+| 23 | 然後 | jin4 hau6 | then; after that | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/jin-hau.mp3) |
+| 24 | 之前 | zi1 cin4 | before | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zi-cin.mp3) |
+| 25 | 之後 | zi1 hau6 | after | [▶ play](https://ssullivan.github.io/learn-cantonese/words/audio/zi-hau.mp3) |
 | 26 | 每日 | mui5 jat6 | every day | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/mui-jat6.mp3) |
 | 27 | 起身 | hei2 san1 | to get up | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/hei-san.mp3) |
 | 28 | 刷牙 | caat3 ngaa4 | to brush your teeth | [▶ play](https://ssullivan.github.io/learn-cantonese/unit15/audio/caat-tooth.mp3) |

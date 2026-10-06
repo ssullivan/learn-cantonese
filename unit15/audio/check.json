@@ -1,18 +1,4 @@
 {
- "aan": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 安 on"
-  ],
-  "audio": "48e4907fa3db"
- },
- "caat": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 拆 caak"
-  ],
-  "audio": "522c25936364"
- },
  "caat-zo2-tooth": {
   "verdict": "LISTEN",
   "notes": [
@@ -20,13 +6,6 @@
    "tone doubtful: 牙 tone 4 sounds like 6 (p 0.32)"
   ],
   "audio": "08afad3e2265"
- },
- "faan": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 三 saam"
-  ],
-  "audio": "a036dd83ecc6"
  },
  "faan-zo2-home": {
   "verdict": "CHECK",
@@ -49,28 +28,6 @@
   ],
   "audio": "698ae970313c"
  },
- "gaau": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 角 gok",
-   "tone doubtful: 覺 tone 3 sounds like 6 (p 0.23)"
-  ],
-  "audio": "e0a444893bce"
- },
- "gwo": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 歌 go"
-  ],
-  "audio": "ce78fcf3f6f3"
- },
- "hei": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 係 hai"
-  ],
-  "audio": "0aee79351935"
- },
  "hei-gan-san": {
   "verdict": "CHECK",
   "notes": [
@@ -84,13 +41,6 @@
    "tone doubtful: 起 tone 2 sounds like 5 (p 0.04)"
   ],
   "audio": "ed131999cf87"
- },
- "je": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 啊 aa"
-  ],
-  "audio": "af4114b51a43"
  },
  "keoi-caat-zo2-tooth-mei-aa": {
   "verdict": "CHECK",
@@ -291,13 +241,6 @@
    "tone doubtful: 晚 tone 5 sounds like 2 (p 0.19)"
   ],
   "audio": "9b832e9de5ae"
- },
- "min": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 明 ming"
-  ],
-  "audio": "dad3ebdf1142"
  },
  "mou-heoi-gwo": {
   "verdict": "LISTEN",
@@ -629,13 +572,6 @@
   ],
   "audio": "a6e043f91c5a"
  },
- "sai": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 四 sei"
-  ],
-  "audio": "5f831b794672"
- },
  "sai-gan-hand": {
   "verdict": "LISTEN",
   "notes": [
@@ -665,13 +601,6 @@
   ],
   "audio": "978237f0d526"
  },
- "sin": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard Sin s i n"
-  ],
-  "audio": "112006226212"
- },
  "tai-gan-book": {
   "verdict": "CHECK",
   "notes": [
@@ -699,13 +628,6 @@
    "tone: 睇 tone 2 sounds like 5 (p 0.03)"
   ],
   "audio": "580f57dc7a37"
- },
- "zou6": {
-  "verdict": "LISTEN",
-  "notes": [
-   "speech-to-text heard 州 zau"
-  ],
-  "audio": "7a449d963cfe"
  },
  "zyu2-gan-rice": {
   "verdict": "LISTEN",
