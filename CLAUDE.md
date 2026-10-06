@@ -32,7 +32,7 @@ shared/                every page's code; each file's header comment documents i
   strokes.* write.*    a character stroke by stroke (Strokes.*); Write It (Write.init, Write.judge)
   sheet.*              printable writing sheet (Sheet.init), always ink on white
 words/                 the dictionary: words.js (Words.add(n, [...]): every word, grouped by the unit that teaches it),
-                       art.mjs → img/<id>.svg, audio/ (manifest.json, check.json), like a unit's
+                       img/ (each word's drawing is in its teaching unit's art.mjs), audio/ (manifest.json, check.json)
 unit<N>/               one unit (see its CLAUDE.md):
   vocab.js             Units.add(N, {...}): every word (source of truth; its header documents the unit's fields), and `write`
   art.mjs              its drawings, from tools/svg.mjs parts → img/<id>.svg (tools/draw.mjs)
@@ -65,7 +65,7 @@ tools/
 - Measure words: a thing's `measure` must match its picture (籠 ↔ `steamer()`, 碟 ↔ `plate()`, 碗 ↔ `bowl()`, 杯 ↔ `cup()`, no dish for the rest); check.mjs enforces it, in a borrowed word's own unit. A borrowed noun can gain a `measure`.
 - Jyutping has a tone number on every syllable (`haa1 gaau2`). Double-check changed tones (腸粉 coeng2, 燒賣 maai2) and words with several readings.
 - Colloquial Cantonese (佢, 係, 唔, 咗), not Mandarin or written forms.
-- Pictures: add a drawing to `art.mjs`, run `node tools/draw.mjs` (which also deletes svgs no longer drawn). Reuse or extend `tools/svg.mjs` parts instead of copying markup. 128×128 flat style, fixed colors, transparent background, a `<title>`. Render and look at new drawings before committing.
+- Pictures: add a drawing to `art.mjs` (a dictionary word's goes in the art.mjs of the unit that teaches it, and draw.mjs writes it to `words/img/`), run `node tools/draw.mjs` (which also deletes svgs no longer drawn). Reuse or extend `tools/svg.mjs` parts instead of copying markup. 128×128 flat style, fixed colors, transparent background, a `<title>`. Render and look at new drawings before committing.
 
 ### Audio
 - `node tools/tts.mjs [words|unitN ...] [--only id,id] [--force]` regenerates only entries whose text or voice changed, saving `manifest.json` after every clip. Without `--only` it also moves a renamed entry's clip (and audio-check verdict) to its new id, or from a unit to `words/` when the word moves to the dictionary (both in the same run), and deletes clips of entries that are gone, so renaming or moving costs no new audio. Credentials come from `~/.config/learning-cantonese/config.env` (`AZURE_SPEECH_KEY`, `AZURE_SPEECH_REGION`, `MINIMAX_KEY`), read by `tools/site.mjs`. **Never put a key in any committed file** (code, docs, fixtures, logs, commit messages) and never print one; check.mjs fails if any file holds one.

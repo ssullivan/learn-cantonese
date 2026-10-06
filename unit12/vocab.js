@@ -93,7 +93,7 @@ Units.add(12, {
 (V => {
   const byId = Units.byId(V);
   const measure = Units.byId(V.measures);
-  V.ones.push(...V.clothes.filter(t => !t.unit).map(t => {
+  V.ones.push(...V.clothes.filter(t => Units.teaches(V, t)).map(t => {
     const m = measure[t.measure], { hanzi, jyutping } = Canto.number(1, { measure: m });
     return { id: `one-${t.id}`, thing: t.id, hanzi: hanzi + t.hanzi, jyutping: `${jyutping} ${t.jyutping}`,
       english: t.id === 'glasses' ? 'a pair of glasses' : `a ${t.english.replace(/;.*/, '')}`, img: false };

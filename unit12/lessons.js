@@ -40,7 +40,7 @@
             p('From Unit 5, with their measure words:'),
             ctx.words('shirt', 'trousers', 'shoes'),
             p('And some more:'),
-            ctx.grid(V.clothes.filter(e => !e.unit)),
+            ctx.grid(V.clothes.filter(e => Units.teaches(V, e))),
             p(`A hat is counted with ${zh('頂', 'deng2')}, glasses with ${zh('副', 'fu3')}; a coat is a top (件), a skirt is long (條):`),
             ctx.grid(V.ones),
           );

@@ -166,5 +166,5 @@ Units.add(19, {
   // hong4), 雀仔 (zoek2 otherwise) and 馬騮; and so every count of those
   // animals. (會 and 隻 read that way came out the same as from characters.)
   Units.phonemes(V, ['fish', 'haang', 'bird', 'monkey']);
-  for (const e of [...V.ones, ...V.counts]) if (!e.unit && byId[e.thing].phoneme) e.phoneme = true;
+  for (const e of [...V.ones, ...V.counts]) if (Units.teaches(V, e) && byId[e.thing].phoneme) e.phoneme = true;
 })(window.VOCAB);

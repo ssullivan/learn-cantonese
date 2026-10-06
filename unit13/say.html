@@ -37,7 +37,7 @@
 <script src="../unit9/vocab.js?v=07f5191f"></script>
 <script src="../unit10/vocab.js?v=564b95a2"></script>
 <script src="../unit11/vocab.js?v=8cecda96"></script>
-<script src="../unit12/vocab.js?v=1598387d"></script>
+<script src="../unit12/vocab.js?v=5e9b6bb5"></script>
 <script src="vocab.js?v=f2320863"></script>
 <!-- /vocab -->
 <script>
@@ -45,7 +45,7 @@
   SayIt.init({
     root: document.getElementById('say'),
     key: 'u13-say',
-    pool: [...V.basics, ...V.weather, ...V.feel.filter(e => !e.unit), ...V.seasons, ...V.grammar.filter(e => !e.unit), ...V.things,
+    pool: [...V.basics, ...V.weather, ...V.feel.filter(e => Units.teaches(V, e)), ...V.seasons, ...V.grammar.filter(e => Units.teaches(V, e)), ...V.things,
       ...V.phrases, ...V.degrees.filter(e => e.adj === 'jit'), ...V.advice, ...V.sentences],
   });
 </script>

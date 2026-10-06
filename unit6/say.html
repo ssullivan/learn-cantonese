@@ -38,7 +38,7 @@
   SayIt.init({
     root: document.getElementById('say'),
     key: 'u6-say',
-    pool: [...V.money, ...V.words, ...V.things.filter(t => !t.unit), ...V.cash, ...V.prices.filter(p => p.note), ...V.adjectives, ...V.sentences],
+    pool: [...V.money, ...V.words, ...V.things.filter(t => Units.teaches(V, t)), ...V.cash, ...V.prices.filter(p => p.note), ...V.adjectives, ...V.sentences],
   });
 </script>
 </body>

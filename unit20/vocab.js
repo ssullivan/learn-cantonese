@@ -100,7 +100,7 @@ Units.add(20, {
   const many = t => t.counted?.[1] ?? `${t.english}s`;
 
   // 一條香蕉 for Measures.round (unit 6 has 一個蘋果, 一個橙, 一個西瓜).
-  V.ones.push(...produce.filter(t => !t.unit).map(t => {
+  V.ones.push(...produce.filter(t => Units.teaches(V, t)).map(t => {
     const { hanzi, jyutping } = Canto.number(1, { measure: byId[t.measure] });
     return { id: `one-${t.id}`, thing: t.id, hanzi: hanzi + t.hanzi, jyutping: `${jyutping} ${t.jyutping}`, english: one(t), img: false };
   }));
@@ -165,5 +165,5 @@ Units.add(20, {
   // every 一棵 phrase.
   Units.phonemes(V, ['cin2', 'peng', 'po']);
   byId = Units.byId(V);
-  for (const e of V.ones) if (!e.unit && byId[byId[e.thing].measure].phoneme) e.phoneme = true;
+  for (const e of V.ones) if (Units.teaches(V, e) && byId[byId[e.thing].measure].phoneme) e.phoneme = true;
 })(window.VOCAB);

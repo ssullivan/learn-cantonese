@@ -37,7 +37,7 @@
 <script src="../unit9/vocab.js?v=07f5191f"></script>
 <script src="../unit10/vocab.js?v=564b95a2"></script>
 <script src="../unit11/vocab.js?v=8cecda96"></script>
-<script src="../unit12/vocab.js?v=1598387d"></script>
+<script src="../unit12/vocab.js?v=5e9b6bb5"></script>
 <script src="../unit13/vocab.js?v=f2320863"></script>
 <script src="../unit14/vocab.js?v=507a312f"></script>
 <script src="../unit15/vocab.js?v=74546196"></script>
@@ -50,7 +50,7 @@
     key: 'u16-tones',
     levels: [
       { id: 'words', name: '唱 聽 游 行', blurb: 'The verbs and things of free time.', pool: [...V.verbs, ...V.things, ...V.grammar, ...V.talk], choices: 3 },
-      { id: 'hobbies', name: '興趣', blurb: '睇戲, 打波, 唱K, 游水.', pool: V.hobbies.filter(h => !h.unit), choices: 3 },
+      { id: 'hobbies', name: '興趣', blurb: '睇戲, 打波, 唱K, 游水.', pool: V.hobbies.filter(h => Units.teaches(V, h)), choices: 3 },
       { id: 'likes', name: '鍾意 識', blurb: '我鍾意游水. 我唔識跳舞.', pool: [...V.likes, ...V.cans, ...V.answers], choices: 4 },
       { id: 'sentences', name: 'Sentences', blurb: '你鍾唔鍾意睇戲呀？ 我想去行山.', pool: [...V.asks, ...V.sentences], choices: 4 },
     ],

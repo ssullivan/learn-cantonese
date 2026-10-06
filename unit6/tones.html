@@ -41,7 +41,7 @@
     levels: [
       { id: 'buy-sell', name: '買 or 賣?', blurb: 'maai5 (buy) or maai6 (sell): only tones 5 and 6.', pool: V.words.filter(w => w.id.startsWith('maai')), choices: 2, tones: [5, 6] },
       { id: 'words', name: 'Shopping words', blurb: '錢 蚊 毫 平 貴 要… Three choices.', pool: [...V.money, ...V.words], choices: 3 },
-      { id: 'things', name: 'Things', blurb: '橙, 雞蛋, 西瓜, 麵包 and 好平, 好貴.', pool: [...V.things.filter(t => !t.unit), ...V.adjectives], choices: 4 },
+      { id: 'things', name: 'Things', blurb: '橙, 雞蛋, 西瓜, 麵包 and 好平, 好貴.', pool: [...V.things.filter(t => Units.teaches(V, t)), ...V.adjectives], choices: 4 },
       { id: 'prices', name: 'Prices', blurb: '三蚊半, 百五蚊, 兩百五: three syllables and more.', pool: [...V.cash, ...V.prices], choices: 4 },
     ],
   });

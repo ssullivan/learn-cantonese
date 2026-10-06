@@ -45,7 +45,7 @@
             p('From Unit 8, where they were drinks: 熱奶茶, 凍奶茶. They are the weather too:'),
             ctx.words('jit', 'dung'),
             p('And in between:'),
-            ctx.grid(V.feel.filter(e => !e.unit)),
+            ctx.grid(V.feel.filter(e => Units.teaches(V, e))),
             tip(`<strong>Hear the tone.</strong> ${zh('凍', 'dung3')} (cold) is mid and level; ${zh('冬', 'dung1')} in ${zh('冬天', 'dung1 tin1')} (winter) is high.`),
           );
         },

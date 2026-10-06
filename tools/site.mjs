@@ -17,7 +17,10 @@
  *                    a dictionary word, its unit for one borrowed with
  *                    Units.word, else `here` (the vocab it is in)
  *   own(entry, home) whether they are in that home
- *   loadArt(home)    <home>/art.mjs's { id: svg }, or null if none
+ *   loadArt(home)    the drawings whose svgs go in <home>/img: { id: svg },
+ *                    or null if none. A word's drawing is in the art.mjs of
+ *                    the unit that teaches it, so loadArt("words") gathers
+ *                    them from every unit, and a unit's has only the rest
  *   azureConfig()    { key, region } for Azure Speech, from the environment
  *                    or ~/.config/learning-cantonese/config.env; exits if
  *                    missing (tts.mjs, audio-check.mjs)
@@ -98,9 +101,23 @@ export const homeOf = (entry, here) => entry.taught ? 'words' : entry.unit ? `un
 
 export const own = (entry, home) => homeOf(entry, home) === home;
 
-export async function loadArt(home) {
-  const path = join(ROOT, home, 'art.mjs');
+const artModule = async unit => {
+  const path = join(ROOT, unit, 'art.mjs');
   return existsSync(path) ? (await import(pathToFileURL(path))).default : null;
+};
+
+export async function loadArt(home) {
+  const taughtIn = unit => new Set(entries(loadVocab('words') ?? {}).filter(e => `unit${e.taught}` === unit).map(e => e.id));
+  if (home === 'words') {
+    const drawn = {};
+    for (const unit of unitDirs()) {
+      const art = await artModule(unit), words = taughtIn(unit);
+      for (const [id, svg] of Object.entries(art ?? {})) if (words.has(id)) drawn[id] = svg;
+    }
+    return Object.keys(drawn).length ? drawn : null;
+  }
+  const art = await artModule(home), words = taughtIn(home);
+  return art && Object.fromEntries(Object.entries(art).filter(([id]) => !words.has(id)));
 }
 
 const CONFIG = join(homedir(), '.config/learning-cantonese/config.env');

@@ -37,7 +37,7 @@
 <script src="../unit9/vocab.js?v=07f5191f"></script>
 <script src="../unit10/vocab.js?v=564b95a2"></script>
 <script src="../unit11/vocab.js?v=8cecda96"></script>
-<script src="../unit12/vocab.js?v=1598387d"></script>
+<script src="../unit12/vocab.js?v=5e9b6bb5"></script>
 <script src="../unit13/vocab.js?v=f2320863"></script>
 <script src="../unit14/vocab.js?v=507a312f"></script>
 <script src="../unit15/vocab.js?v=74546196"></script>
@@ -51,7 +51,7 @@
     key: 'u17-tones',
     levels: [
       { id: 'feelings', name: '開心 攰 驚', blurb: 'How you feel.', pool: [...V.feelings, V.nots[0]], choices: 3 },
-      { id: 'words', name: '心情', blurb: 'First halves, and words for talking about feelings.', pool: [...V.halves.filter(h => !h.unit), ...V.talk], choices: 3 },
+      { id: 'words', name: '心情', blurb: 'First halves, and words for talking about feelings.', pool: [...V.halves.filter(h => Units.teaches(V, h)), ...V.talk], choices: 3 },
       { id: 'states', name: '我好攰', blurb: '我好攰. 我唔係好肚餓. 你開唔開心呀？', pool: [...V.states, ...V.asks], choices: 4 },
       { id: 'particles', name: '啦 喇 喎 囉 嘛', blurb: '唔使驚啦. 我肚餓喇. 好凍喎.', pool: [...V.comfort, ...V.particled, ...V.sentences], choices: 4 },
     ],
