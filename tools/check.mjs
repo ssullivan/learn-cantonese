@@ -40,6 +40,11 @@
  *     borrowed): a measure with dish "steamer" needs a steamer() drawing,
  *     "plate" a plate(), and so on; one without a dish, none of them
  *   - img/*.svg match art.mjs exactly (else run node tools/draw.mjs)
+ *   - photos: an entry with photo: true has <home>/photo/<id>.jpg; each
+ *     photo/*.jpg has a credit in photo/credits.json (title, author, a
+ *     Creative Commons licence, its source) and each credit a photo; a
+ *     photo's dish (steamer, plate...) matches the entry's measure, like a
+ *     drawing's; and a unit showing photos links credits/ from its page
  *   - audio/check.json (audio-check's verdicts) names only vocab entries
  *   - AUDIO-REVIEW.md matches the vocab (else run node tools/review.mjs)
  *   - characters to write (a unit's `write`; see tools/stroke-data.mjs):
@@ -63,7 +68,7 @@ import vm from 'node:vm';
 import { spawnSync } from 'node:child_process';
 import { ROOT, unitDirs, homes, homeOf, borrowsFrom, loadVocab, entries, own, loadArt, secrets } from './site.mjs';
 import { inlineScripts, pageReferences } from './page-refs.mjs';
-import { entryProblems } from './vocab-fields.mjs';
+import { entryProblems, fieldProblems, oneOf } from './vocab-fields.mjs';
 import { RECORDS, readRecords, recordProblem, strokeFile, meta, COMPOSED, composedProblem, composedMeta } from './stroke-data.mjs';
 const fix = process.argv.includes('--fix');
 const problems = [];
@@ -197,6 +202,15 @@ const taughtIn = {};
 const wordAt = {}, soundAt = {}; // a word's id, and its hanzi, jyutping and voice: where defined
 const homeIdSets = {};
 const homeIds = home => homeIdSets[home] ??= new Set(entries(loadVocab(home) ?? {}).map(e => e.id));
+// Photos (Canto.imgSrc of a photo: true entry): <home>/photo/<id>.jpg,
+// each credited in photo/credits.json, which credits/ lists.
+const LICENCE = /^(CC0|CC BY(-SA)? (2\.0|2\.5|3\.0|4\.0))$/;
+const CREDIT = { title: 'text', author: 'text', license: 'text', source: 'text', dish: oneOf('steamer', 'plate', 'bowl', 'cup') };
+const creditSets = {};
+const photoCredits = home => creditSets[home] ??= (() => {
+  const file = join(ROOT, home, 'photo', 'credits.json');
+  return existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : {};
+})();
 const listedBy = {}; // unit<n>: ids of the dictionary words its vocab has
 for (const unit of homes()) {
   const dir = join(ROOT, unit);
@@ -217,6 +231,11 @@ for (const unit of homes()) {
     const isId = id => ids.has(id) || homeIds(homeOf(e, unit)).has(id) || homeIds('words').has(id);
     for (const p of entryProblems(e, isId)) bad(vocabFile, p);
     if (e.jyutping && !/^[a-z]+[1-6]( [a-z]+[1-6])*$/.test(e.jyutping)) bad(vocabFile, `${e.id}: jyutping "${e.jyutping}" needs a tone number on every syllable`);
+    if (e.photo) {
+      const home = homeOf(e, unit);
+      if (!existsSync(join(ROOT, home, 'photo', `${e.id}.jpg`))) bad(vocabFile, `${e.id} has photo: true but no ${home}/photo/${e.id}.jpg`);
+      else if (!photoCredits(home)[e.id]) bad(vocabFile, `${e.id}: its photo has no credit in ${home}/photo/credits.json`);
+    }
     if (e.taught && !dictionary) {
       if (e.taught > +unit.slice(4)) bad(vocabFile, `${e.id} is taught in unit ${e.taught}, after this one`);
       (listedBy[unit] ??= new Set()).add(e.id);
@@ -267,6 +286,11 @@ for (const unit of homes()) {
   for (const e of dictionary ? [] : all.filter(e => e.measure)) {
     const m = measures[e.measure];
     if (!m) { bad(vocabFile, `${e.id}: unknown measure ${e.measure}`); continue; }
+    if (e.photo) {
+      const dish = photoCredits(homeOf(e, unit))[e.id]?.dish;
+      if (dish !== m.dish) bad(vocabFile, `${e.id}: ordered by ${m.hanzi} (${m.dish}) but its photo's dish (credits.json) is ${dish ?? 'none'}`);
+      continue;
+    }
     const pic = own(e, unit) ? art[e.id] : (await loadArt(homeOf(e, unit)))?.[e.id];
     const dish = /data-dish="(\w+)"/.exec(pic ?? '')?.[1];
     if (dish !== m.dish) bad(vocabFile, `${e.id}: ordered by ${m.hanzi} (${m.dish}) but drawn on a ${dish ?? 'nothing'}`);
@@ -280,6 +304,15 @@ for (const unit of homes()) {
   const list = sub => existsSync(join(dir, sub)) ? readdirSync(join(dir, sub)) : [];
   for (const f of list('audio')) if (f.endsWith('.mp3') && !ids.has(f.slice(0, -4))) bad(join(dir, 'audio', f), 'orphan (no vocab entry)');
   for (const f of list('img')) if (f.endsWith('.svg') && !art[f.slice(0, -4)]) bad(join(dir, 'img', f), 'orphan (not in art.mjs)');
+  const credits = photoCredits(unit), creditsFile = join(dir, 'photo', 'credits.json');
+  for (const f of list('photo')) if (f !== 'credits.json' && !(f.endsWith('.jpg') && credits[f.slice(0, -4)])) bad(join(dir, 'photo', f), 'no credit in photo/credits.json (or not a .jpg)');
+  for (const [id, credit] of Object.entries(credits)) {
+    if (!existsSync(join(dir, 'photo', `${id}.jpg`))) bad(creditsFile, `${id}: no photo/${id}.jpg`);
+    for (const p of fieldProblems({ id, ...credit }, { id: 'text', ...CREDIT }, ['title', 'author', 'license', 'source'], () => true, 'CREDIT in tools/check.mjs')) bad(creditsFile, p);
+    if (credit.license && !LICENCE.test(credit.license)) bad(creditsFile, `${id}: license "${credit.license}" is not a Creative Commons licence credits/ knows (CC0, CC BY 4.0, CC BY-SA 3.0...)`);
+    if (credit.source && !credit.source.startsWith('https://')) bad(creditsFile, `${id}: source should be the photo's https:// page`);
+  }
+  if (!dictionary && all.some(e => e.photo) && !readFileSync(join(dir, 'index.html'), 'utf8').includes('href="../credits/"')) bad(join(dir, 'index.html'), 'link the photo credits (href="../credits/"): the unit shows photos');
   const verdicts = join(dir, 'audio', 'check.json');
   if (existsSync(verdicts)) {
     for (const id of Object.keys(JSON.parse(readFileSync(verdicts, 'utf8')))) if (!ids.has(id)) bad(verdicts, `${id} is not in ${relative(ROOT, vocabFile)} (rerun node tools/audio-check.mjs ${unit})`);

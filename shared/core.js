@@ -38,7 +38,10 @@
  *                                those easy to mix up with e.n first
  *                                (Canto.near, so load numbers.js), then any
  *                                others
- *   Canto.imgSrc(entry)          "img/<id>.svg"
+ *   Canto.imgSrc(entry)          "img/<id>.svg", or "photo/<id>.jpg" for an
+ *                                entry with photo: true (a unit showing a
+ *                                photo in place of the drawing; credited in
+ *                                photo/credits.json, listed on credits/)
  *   Canto.audioSrc(entry)        "audio/<id>.mp3"; both use ../words/ for a
  *                                dictionary word (Words.get), and ../unit<n>/
  *                                for an entry borrowed from unit n (Units.word)
@@ -157,7 +160,7 @@
   }
 
   const home = entry => entry.taught ? '../words/' : entry.unit ? `../unit${entry.unit}/` : '';
-  const imgSrc = entry => `${home(entry)}img/${entry.id}.svg`;
+  const imgSrc = entry => entry.photo ? `${home(entry)}photo/${entry.id}.jpg` : `${home(entry)}img/${entry.id}.svg`;
   const audioSrc = entry => `${home(entry)}audio/${entry.id}.mp3`;
 
   function play(entries) {

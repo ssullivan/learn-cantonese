@@ -9,6 +9,9 @@
  *   entryProblems(entry, isId) → [messages]: unknown fields, missing
  *                             required ones, and values not of their kind;
  *                             isId(id) says whether an id names an entry
+ *   fieldProblems(record, fields, required, isId, listedIn)
+ *                             the same for any record and field list (a
+ *                             photo credit in tools/check.mjs)
  *
  * Kinds: 'text' (a non-empty string), 'number', 'boolean', 'id' (an entry
  * id); 'texts', 'numbers', 'ids' (non-empty lists of them); oneOf(...values)
@@ -28,6 +31,7 @@ export const FIELDS = {
   id: 'text', hanzi: 'text', jyutping: 'text', english: 'text',
   note: 'text',
   img: oneOf(false),                  // no picture
+  photo: oneOf(true),                 // show photo/<id>.jpg, not the drawing (Canto.imgSrc)
   // Audio (tools/tts.mjs)
   say: 'text',                        // text to speak instead of hanzi
   ssml: 'text',                       // SSML inside <voice>
@@ -112,13 +116,19 @@ function valueProblems(value, kind, isId, where) {
 }
 
 export function entryProblems(entry, isId) {
-  const name = entry.id ?? '?';
-  const problems = REQUIRED.filter(f => !entry[f]).map(f => `${name} is missing ${f}`);
-  for (const [field, value] of Object.entries(entry)) {
-    if (!(field in FIELDS)) { problems.push(`${name}: unknown field ${field} (fields are listed in tools/vocab-fields.mjs)`); continue; }
-    if (value === undefined && !REQUIRED.includes(field)) continue;
-    if (REQUIRED.includes(field) && !value) continue;
-    problems.push(...valueProblems(value, FIELDS[field], isId, `${name}: ${field}`));
+  return fieldProblems(entry, FIELDS, REQUIRED, isId, 'tools/vocab-fields.mjs');
+}
+
+// The problems with any record of named fields (a vocab entry, a photo
+// credit): unknown fields, missing required ones, values not of their kind.
+export function fieldProblems(record, fields, required, isId, listedIn) {
+  const name = record.id ?? '?';
+  const problems = required.filter(f => !record[f]).map(f => `${name} is missing ${f}`);
+  for (const [field, value] of Object.entries(record)) {
+    if (!(field in fields)) { problems.push(`${name}: unknown field ${field} (fields are listed in ${listedIn})`); continue; }
+    if (value === undefined && !required.includes(field)) continue;
+    if (required.includes(field) && !value) continue;
+    problems.push(...valueProblems(value, fields[field], isId, `${name}: ${field}`));
   }
   return problems;
 }

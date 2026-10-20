@@ -15,4 +15,10 @@ Hanzi (https://github.com/skishore/makemeahanzi), whose stroke shapes come from
 Arphic Technology's fonts. It is distributed under the Arphic Public License
 (strokes/ARPHICPL.TXT), not the terms above, and each file says how it was changed.
 
+Exception: the photos in words/photo/ (and any unit's photo/ folder) are not the
+copyright holder's. Each is by the photographer named in that folder's credits.json
+and on the site's credits page (credits/), from Wikimedia Commons, and is distributed
+under the Creative Commons licence named there (CC0, CC BY or CC BY-SA), not the terms
+above. They are scaled down from the originals and otherwise unchanged.
+
 THE WEBSITE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.

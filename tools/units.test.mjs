@@ -37,6 +37,7 @@ const dog = Words.get('dog');
 ok('a word knows the unit that teaches it', dog.taught === 2 && dog.hanzi === '狗', JSON.stringify(dog));
 ok('Words.get copies', (dog.legs = 4) && !('legs' in Words.get('dog')));
 ok('a word\'s files are in words/', Canto.audioSrc(dog) === '../words/audio/dog.mp3' && Canto.imgSrc(dog) === '../words/img/dog.svg', Canto.audioSrc(dog));
+ok('a word shown as a photo is in words/photo/', Canto.imgSrc({ ...dog, photo: true }) === '../words/photo/dog.jpg', Canto.imgSrc({ ...dog, photo: true }));
 ok('Words.list takes space-separated ids', Words.list(' dog  bird ').map(w => w.id).join() === 'dog,bird');
 ok('an unknown word throws', throws(() => Words.get('cow')) && throws(() => Words.list('dog cow')));
 ok('a word added twice throws', throws(() => Words.add(5, [{ id: 'dog' }])));

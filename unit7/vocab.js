@@ -8,7 +8,8 @@
  * Entry fields: id (names its files), hanzi,
  * jyutping, english, note?, img (false = no picture), measure? (id of
  * the measure word used to order it; must match its picture's steamer
- * plate or bowl, which tools/check.mjs verifies),
+ * plate or bowl, which tools/check.mjs verifies), photo? (true: show
+ * the word's photo, words/photo/<id>.jpg, not its drawing),
  * say? (text to speak if not hanzi), ssml? (SSML inside <voice> to
  * force a reading the voice gets wrong).
  */
@@ -60,6 +61,10 @@ Units.add(7, {
     ...Words.list('more-water bill'),
   ],
 });
+
+// Photos: the dishes and 飲茶 show real photos (words/photo/, credited in
+// words/photo/credits.json and on credits/) in place of their drawings.
+(V => { for (const e of [...V.basics, ...V.items]) if (e.img !== false) e.photo = true; })(window.VOCAB);
 
 // Borrowed: 碗 is taught in unit 5; congee comes in a bowl.
 window.VOCAB.measures.push({ ...Words.get('wun'), english: 'bowl',

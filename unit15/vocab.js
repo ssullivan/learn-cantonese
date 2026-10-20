@@ -61,7 +61,7 @@ Units.add(15, {
     ...Words.list('ngo nei keoi mat-je aa'),
     ...Words.list('shirt book rice plane jau'),
     Words.get('jiu'),
-    Units.word(7, 'har-gow'),
+    Words.get('har-gow'),
     ...Words.list('sik6 jam2 milk-tea yuenyeung pineapple-butter spam-egg-noodles'),
     ...Words.list('ji-gaa gei dim sik-faan'),
     Words.get('home'),

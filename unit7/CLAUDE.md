@@ -14,6 +14,9 @@ Groups: `basics`, `groups` (steamed, fried...), `measures` (籠 碟, with 碗 bo
 ## Audio
 `beef-ho-fun` has an `ssml` override; the orders read their numbers with `phoneme`.
 
+## Photos
+The dishes and 飲茶 show real photos (`words/photo/`, credited in `words/photo/credits.json` and on `credits/`), set by `photo: true` at the bottom of `vocab.js`; the unit page's cards use them too and link the credits. Each photo's dish matches the measure: 牛柏葉 and 流沙包 are the photos in a steamer, not the clearer ones on a plate. 海鮮炒麵's is Hong Kong pan-fried noodles with meat: Commons had none with the seafood sauce. The drawings below stay, for the units that borrow these words (unit 15's 蝦餃 is the dictionary's, so it shows the drawing).
+
 ## Drawings
 `steamer`, `plate`, `bowl`, `teapot`, `teacup`, `pineappleBun` from `svg.mjs`. Fried rice is a dome of separate grains (so it can't pass for an omelette); beef tripe is creamy white, not grey.
 

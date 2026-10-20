@@ -1,0 +1,17 @@
+/* Photo credits: a row per photo, its picture beside the word and credit. */
+.credit-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.credit {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.credit img { width: 96px; height: 96px; flex: none; }
+.credit-text { min-width: 0; overflow-wrap: anywhere; }
+.credit-text p { margin: 0 0 4px; }
+.credit-word .hanzi { font-size: 22px; font-weight: 700; }
+.credit-word .en { color: var(--ink-soft); }
+@media (max-width: 560px) { .credit img { width: 72px; height: 72px; } }

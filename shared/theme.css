@@ -19,6 +19,8 @@
  *           so a button under a finger after a tap never looks marked)
  *           .choice-grid > button.choice (text answers), same states;
  *           .choice-grid.nums: numeral answers, two columns even on phones
+ * Photos:   any img from a photo/ folder (Canto.imgSrc) fills its square
+ *           box, cropped, with rounded corners, wherever it is shown
  * Tones:    .tone-chart (Canto.toneChart)
  * Text:     [lang="zh-HK"] gets the Chinese font; .jp is jyutping,
  *           its tone digits are <sup> (see Canto.jyutping in core.js).
@@ -203,6 +205,10 @@ a.card:hover { border-color: var(--accent); }
   background: var(--surface-2);
 }
 .tip strong { color: var(--gold); }
+
+/* Photos (Canto.imgSrc of a photo: true entry): fill the square box the
+   drawings sit in, cropped from the middle. */
+img[src*="photo/"] { object-fit: cover; border-radius: 10px; }
 
 /* Answer buttons */
 .pic-grid, .choice-grid {

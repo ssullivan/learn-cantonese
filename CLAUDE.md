@@ -33,6 +33,8 @@ shared/                every page's code; each file's header comment documents i
   sheet.*              printable writing sheet (Sheet.init), always ink on white
 words/                 the dictionary: words.js (Words.add(n, [...]): every word, grouped by the unit that teaches it),
                        art.mjs (every word's drawing, in a section per teaching unit) → img/, audio/ (manifest.json, check.json)
+                       photo/: <id>.jpg photos a unit shows instead of drawings, each credited in credits.json
+credits/               index.html: every photo the site shows, with its author, source and licence (from credits.json)
 unit<N>/               one unit (see its CLAUDE.md):
   vocab.js             Units.add(N, {...}): the words it uses (Words.get), its own fields on them, its phrases and
                        sentences (its header documents its fields), and `write`
@@ -67,6 +69,7 @@ tools/
 - Measure words: a thing's `measure` must match its picture (籠 ↔ `steamer()`, 碟 ↔ `plate()`, 碗 ↔ `bowl()`, 杯 ↔ `cup()`, no dish for the rest); check.mjs enforces it in each unit that gives a word a measure. A unit can give a word a `measure` it lacks.
 - Jyutping has a tone number on every syllable (`haa1 gaau2`). Double-check changed tones (腸粉 coeng2, 燒賣 maai2) and words with several readings.
 - Colloquial Cantonese (佢, 係, 唔, 咗), not Mandarin or written forms.
+- Photos: a unit can show a word's real photo in place of its drawing by giving its copy `photo: true` (unit 7's dishes); `Canto.imgSrc` then gives `<home>/photo/<id>.jpg`, and theme.css crops it square. Keep the drawing: other units still show it. Every photo is from Wikimedia Commons under CC0, CC BY or CC BY-SA, scaled down (~500px) and otherwise unchanged, with its `{ title, author, license, source, dish? }` in `photo/credits.json` (`dish` must match the entry's measure, like a drawing's); `credits/` lists them, and a unit showing photos links `../credits/` from its page. check.mjs enforces all of it. LICENSE excepts the photos.
 - Pictures: a word's drawing goes in `words/art.mjs`, in the section of the unit that teaches it (a function, so its helpers stay its own; one returns the helpers its unit's phrases share, which that unit's `art.mjs` imports); a phrase's in its unit's `art.mjs`. Run `node tools/draw.mjs` (which also deletes svgs no longer drawn). Reuse or extend `tools/svg.mjs` parts instead of copying markup. 128×128 flat style, fixed colors, transparent background, a `<title>`. Render and look at new drawings before committing.
 
 ### Audio
