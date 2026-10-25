@@ -56,6 +56,7 @@
  *     stroke files;
  *     a unit that teaches writing has sheet.html (shared/sheet.js) and
  *     write.html (shared/write.js), with cards for them on its page
+ *   - sitemap.xml lists every page but the review pages (--fix writes it)
  *   - every tools/*.test.mjs passes
  *   - no file git would commit (tracked, or untracked and not ignored,
  *     dotfiles included) holds the Azure Speech or MiniMax key (when set on
@@ -372,6 +373,28 @@ for (const page of ['review/index.html', 'review/strokes.html']) {
 {
   const { reviewMarkdown, REVIEW_FILE } = await import('./review.mjs');
   if (!existsSync(REVIEW_FILE) || readFileSync(REVIEW_FILE, 'utf8') !== reviewMarkdown()) bad(REVIEW_FILE, 'out of date (run node tools/review.mjs)');
+}
+
+// The sitemap: every page, for search engines, but the review pages (for
+// listeners, not learners). Submitted in Google Search Console.
+{
+  const SITE = 'https://ssullivan.github.io/learn-cantonese/';
+  const SITEMAP = join(ROOT, 'sitemap.xml');
+  const urls = files.filter(f => f.endsWith('.html'))
+    .map(f => relative(ROOT, f).replace(/(^|\/)index\.html$/, '$1'))
+    .filter(page => !page.startsWith('review/'))
+    .sort((a, b) => a.localeCompare(b, 'en', { numeric: true }));
+  const want = [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ...urls.map(page => `  <url><loc>${SITE}${page}</loc></url>`),
+    '</urlset>',
+    '',
+  ].join('\n');
+  if (!existsSync(SITEMAP) || readFileSync(SITEMAP, 'utf8') !== want) {
+    if (fix) { writeFileSync(SITEMAP, want); console.log(`Wrote sitemap.xml (${urls.length} pages).`); }
+    else bad(SITEMAP, 'out of date (run node tools/check.mjs --fix)');
+  }
 }
 
 // Tests

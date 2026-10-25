@@ -10,6 +10,8 @@ Each `unit<N>/CLAUDE.md` holds that unit's specifics: its topic and grammar poin
 ```
 index.html             unit picker, with the roadmap and links to the review pages
 favicon.svg            a bauhinia (洋紫荊), drawn by hand, not generated
+sitemap.xml            every page but review/, for search engines (submitted in Google Search Console); written by
+                       tools/check.mjs --fix. index.html carries Search Console's verification tag: keep it
 review/                index.html: every clip to play and mark (kept in localStorage `audio-review`, "Copy my notes");
                        strokes.html: every taught character stroke by stroke, with stroke-check's verdict
 strokes/<hex>.json     taught characters' strokes in Hong Kong order (by code point: 一 is 4e00), from tools/strokes.mjs;
@@ -49,7 +51,7 @@ unit<N>/               one unit (see its CLAUDE.md):
 tools/
   site.mjs             shared helpers for the scripts (unitDirs, homes: words and the units, loadVocab, homeOf, loadArt,
                        langTools, shouldRetryAzure)
-  check.mjs            site checks (its header lists them); --fix writes cache stamps and pages' vocab scripts
+  check.mjs            site checks (its header lists them); --fix writes cache stamps, pages' vocab scripts and sitemap.xml
   vocab-fields.mjs     every field a vocab entry may have and its kind of value (text, number, id, ids...), checked by check.mjs
   page-refs.mjs        the vocab groups and ids a page script names (V.verbs, byId['dung'], ctx.words('a')...), which check.mjs
                        resolves against the unit's vocab
