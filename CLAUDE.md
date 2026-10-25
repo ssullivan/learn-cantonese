@@ -22,7 +22,8 @@ STROKE-ORDER.md        for people: where stroke order comes from and how it's ch
 shared/                every page's code; each file's header comment documents its API. Read it before using one:
   theme.css            colors (light/dark), fonts, header, pills, buttons, cards, feedback
   core.js              Canto.*: zh, tagZh, jyutping, tones, pick, deck, play, store, picButton, speech...
-  audio.js             Speak.play: MP3s with a zh-HK speechSynthesis fallback
+  audio.js             Speak.play: MP3s with a zh-HK speechSynthesis fallback; Speak.chime, a right answer's sound
+                       (game.js and learn.js play it), muted from the header's toggle (localStorage `sound`)
   units.js             Words.add/get/list (the dictionary); Units.add, Units.word (borrowing), Units.teaches, Units.byId,
                        Units.sentences, Units.phonemes
   numbers.js           Canto.number, price, near, time, nearTime (runs in Node too)

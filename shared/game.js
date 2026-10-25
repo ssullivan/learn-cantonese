@@ -64,6 +64,8 @@
  * levels, plus 10 per answer in the current streak (max +50).
  * Stars: 1 at 50% right, 2 at 80%, 3 for all right. A level unlocks when
  * the one before it has a star. Best score and stars per level are saved.
+ * A right answer chimes (Speak.chime; the page header gets its on/off
+ * toggle), and ctx.play waits for it.
  * A perfect level celebrates: fireworks the first time, petals after, and
  * 好叻呀！ (CHEER, the dictionary word unit 1 teaches) is said.
  */
@@ -86,6 +88,7 @@
   const starText = n => '★'.repeat(n) + '☆'.repeat(3 - n);
 
   function init({ root, key, intro, levels }) {
+    Speak.chimeToggle();
     const store = Canto.store(key, { best: {} });
     const saved = store.get();
     if (!saved.best) saved.best = {};
@@ -198,6 +201,12 @@
             const left = timer ? Math.max(0, 1 - (performance.now() - timer.t0) / timer.ms) : 0;
             stopTimer();
             stage.classList.add('locked');
+            if (correct) {
+              // A clip the reveal plays waits for the chime, unless the
+              // round has been left by then.
+              const chimed = Speak.chime();
+              ctx.play = entries => chimed.then(() => alive && current === ctx ? Canto.play(entries) : undefined);
+            }
             if (ctx.reveal) ctx.reveal();
             let gained = 0;
             if (correct) {

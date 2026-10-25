@@ -37,6 +37,9 @@
  *   Learn.p(html)              <p> element
  *   Learn.tip(html)            callout box element
  *
+ * A right quiz answer chimes (Speak.chime); the page header gets its
+ * on/off toggle.
+ *
  * Progress ({ step, done: [ids] }) is saved under `key`.
  */
 (function () {
@@ -47,6 +50,7 @@
 
   function init(opts) {
     const { root, key, vocab, steps } = opts;
+    Speak.chimeToggle();
     const byId = Units.byId(vocab);
 
     const store = Canto.store(key, { step: 0, done: [] });
@@ -203,7 +207,7 @@
       if (answered) return;
       answered = true;
       const right = o.id === answer.id;
-      if (right) score++;
+      if (right) { score++; Speak.chime(); }
       [...grid.children].forEach(c => { c.disabled = true; });
       b.classList.add(right ? 'right' : 'wrong');
       if (!right) grid.querySelector(`[data-id="${answer.id}"]`).classList.add('right');

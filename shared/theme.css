@@ -6,7 +6,8 @@
  *           Light by default; dark follows prefers-color-scheme.
  * Layout:   .page (centered column, 16px gutter), ending in the
  *           copyright line (.page::after; see LICENSE)
- * Header:   .page-header > a.back, .eyebrow, h1, p.lede
+ * Header:   .page-header > a.back, .eyebrow, h1, p.lede;
+ *           button.chime-toggle (Speak.chimeToggle) floats right
  * Pills:    .pill (small rounded label)
  * Buttons:  .btn, .btn.primary, .btn:disabled
  * Cards:    .card-grid > a.card; div.card.soon for "Coming soon"
@@ -109,6 +110,21 @@ a { color: var(--accent); }
   font-size: 15px;
 }
 .page-header .back:hover { color: var(--accent); }
+/* Speak.chimeToggle: top right of the header, quiet like the back link */
+.chime-toggle {
+  float: right;
+  margin: -4px 0 0 12px;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: none;
+  color: var(--ink-soft);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+.chime-toggle:hover { color: var(--accent); border-color: var(--accent); }
+.chime-toggle:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 .eyebrow {
   margin: 0 0 4px;
   color: var(--accent);
