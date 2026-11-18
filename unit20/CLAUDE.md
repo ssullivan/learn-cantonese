@@ -5,10 +5,11 @@
 ## Pages
 - `learn.html` (`u20-learn`).
 - `market.html`, `market.js` (`u20-market`): Wet Market 街市: hear a fruit or vegetable and find it, sort fruit from vegetables, say one with the right measure word (`Measures.round`), answer 幾多錢一斤呀？ from the sign, hear how many catties someone wants, work out what an order comes to, build sentences. Prices per 斤 come from vocab.js.
+- `read.html`, `read.js` (`u20-read`): Read It 認字: read a fruit or vegetable's characters and tap its picture (with Jyutping, then without, then beside look-alikes), or pick the characters for a picture; a rush of both. Rounds from `Read.round` (shared/read.js); the trick answers are `lookalikes`.
 - `tones.html`, `say.html`; `sheet.html`, `write.html`: writes 斤新共.
 
 ## Words
-Groups: `fruit`, `veg` (each with `kind`: fruit / veg, and `catty`: dollars for one 斤), `words`, `measures` (粒 from unit 14, 棵...), `ones`, `borrowed`, and the derived `weights` (`w05`, `w1`, `w15`...: `Canto.number` with 斤, halves as 半斤 / 斤半), `prices` (`Canto.price`, borrowed from unit 6 where it has them), `perCatty`, `asks`, `orders` (with `thing`, `weight`, `total`), `some`, `sentences`.
+Groups: `fruit`, `veg` (each with `kind`: fruit / veg, and `catty`: dollars for one 斤), `words`, `measures` (粒 from unit 14, 棵...), `ones`, `borrowed`, and the derived `weights` (`w05`, `w1`, `w15`...: `Canto.number` with 斤, halves as 半斤 / 斤半), `prices` (`Canto.price`, borrowed from unit 6 where it has them), `perCatty`, `asks`, `orders` (with `thing`, `weight`, `total`), `some`, `sentences`, and `lookalikes` (earlier words sharing a character with the produce, with pictures: 橙色 菠蘿包 耳仔 多士...; their `measure` dropped, as they are never counted).
 
 ## Audio
 `phoneme: true` on 棵 (`po`), its phrases (`one-choy-sum`, `one-bok-choy`), and 錢 / 平 and every phrase with them.

@@ -8,7 +8,9 @@
  * .stars, .btn.small, .speech (a speech bubble), .tray (labelled box
  * of answer buttons), .prompt-pic (big picture to answer about),
  * .prompt-pic.far (the same, small and faded: "over there"),
- * .prompt-num (big numeral to answer about), .pic-row (a group of small
+ * .prompt-num (big numeral to answer about), .prompt-zh (big characters
+ * to read, read.js; .with-jp puts Jyutping over them), .choice-grid.words
+ * (answers that are characters, big), .pic-row (a group of small
  * pictures to count, in rows of five; smaller inside .choice-grid.groups answers), .tile-line / .tile-bank >
  * button.tile (word tiles, tiles.js; .tile-line.right / .wrong),
  * .stall (a .prompt-pic with an optional .price-tag), .till (a box that
@@ -143,6 +145,14 @@
 .choice-grid.groups .pic-row { margin: 0; justify-content: center; }
 @media (max-width: 420px) { .pic-row img { width: 52px; height: 52px; } }
 .choice-grid.groups .pic-row img { width: 40px; height: 40px; }
+/* A word's characters to read (read.js): no Jyutping, or over each character with .with-jp */
+.prompt-zh { margin: 0 0 16px; font-size: 56px; font-weight: 700; line-height: 1.2; color: var(--accent); }
+.prompt-zh .zh :is(.jp, rt) { display: none; }
+.prompt-zh.with-jp .zh:not(.zh-flat) rt { display: revert; font: 400 18px/1.3 var(--font); color: var(--ink-soft); padding-bottom: 4px; }
+.prompt-zh.with-jp .zh-flat .jp { display: block; font-size: 18px; font-weight: 400; }
+.prompt-zh.with-jp .zh ruby { ruby-position: over; ruby-align: center; margin: 0 0.08em; }
+@media (max-width: 420px) { .prompt-zh { font-size: 44px; } }
+.choice-grid.words .choice { font-size: 28px; font-weight: 700; }
 .prompt-num { margin: 0 0 16px; font-size: 56px; font-weight: 800; line-height: 1.1; color: var(--accent); font-variant-numeric: tabular-nums; }
 
 /* Word tiles (tiles.js) */

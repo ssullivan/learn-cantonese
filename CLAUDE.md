@@ -31,6 +31,7 @@ shared/                every page's code; each file's header comment documents i
   game.*               game engine (Game.init: levels, rounds, timer, stars, unlocks, ctx.draw, labels; Game.choose, pic...)
   tones.js reply.js    Tone Detective (Tones.init), Reply Match (Reply.init)
   tiles.js measures.js rounds for Game.init: sentences from word tiles (Tiles.round), "which measure word?" (Measures.round)
+  read.js              read characters, find the picture, or the other way, beside look-alikes (Read.round)
   pitch.js sayit.*     pitch tracking (Node too); Say It Back (SayIt.init, SayIt.practice)
   strokes.* write.*    a character stroke by stroke (Strokes.*); Write It (Write.init, Write.judge)
   sheet.*              printable writing sheet (Sheet.init), always ink on white
@@ -60,7 +61,7 @@ tools/
   tts.mjs review.mjs   vocab → audio (Azure; MiniMax for a `minimax:` voice) → AUDIO-REVIEW.md
   audio-check.mjs      machine checks on clips, by ~/audio-lang-tools (a separate repo)
   stroke-data.mjs stroke-check.mjs strokes-composed.mjs strokes.mjs strokes-hk.json  stroke order (see below)
-  *.test.mjs           run by check.mjs: strokes, pitch, units (borrowing), core, site (retrying), numbers, page-refs, vocab-fields
+  *.test.mjs           run by check.mjs: strokes, pitch, units (borrowing), core, site (retrying), numbers, page-refs, vocab-fields, read
 ```
 
 ## Words, audio and pictures

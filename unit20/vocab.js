@@ -11,7 +11,8 @@
  * phoneme? (true: tools/tts.mjs reads the jyutping exactly), plus kind
  * ('fruit' or 'veg') and catty (dollars for one 斤 at the market) on
  * the produce, n (catties) on weights, n (dollars) on prices, and thing,
- * weight and total (ids) on orders.
+ * weight and total (ids) on orders. lookalikes: earlier words that share
+ * a character with the produce, the trick answers in Read It.
  *
  * Weights come from Canto.number and prices from Canto.price (borrowed
  * from unit 6 where it has them); phrases and sentences are derived at
@@ -48,6 +49,14 @@ Units.add(20, {
       note: 'Grapes, strawberries, sweets: 一粒提子.' },
     Words.get('po'),
   ],
+
+  // Earlier words that share a character with a fruit or vegetable, each
+  // with a picture: the trick answers in Read It (橙 or 橙色? 菠蘿 or
+  // 菠蘿包? 薯仔 or 耳仔?). Never asked about or counted, so without
+  // their measure words.
+  lookalikes: Words.list(`caang hung fan-hung baak6 pineapple-bun pineapple-butter turnip-cake toast
+    french-toast bus taxi chopsticks son ear rabbit bird hoi-sam soeng-sam hoeng-gong-jan`)
+    .map(({ measure, ...word }) => word),
 });
 
 // Borrowed: 蘋果 橙 西瓜 with their pictures, 個 條 and 啲 (units 4 and 5),
